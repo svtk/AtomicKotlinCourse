@@ -28,7 +28,7 @@ fun convertToRoman(number: Int): String {
     return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
     convertToRoman(23) eq "XXIII"
     convertToRoman(44) eq "XLIV"
     convertToRoman(100) eq "C"

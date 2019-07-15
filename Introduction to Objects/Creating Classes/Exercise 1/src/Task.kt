@@ -7,7 +7,7 @@ fun isPalindrome(s: SimpleString): Boolean {
     return true
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(isPalindrome(SimpleString("mom")))
     println(isPalindrome(SimpleString("mom!")))
 }

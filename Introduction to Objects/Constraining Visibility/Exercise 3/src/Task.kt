@@ -8,7 +8,7 @@ fun printSum(x: Int) {
     println((0..x).sum())
 }
 
-fun main(args: Array<String>) {
+fun main() {
     printSum(-10)
 }
 /* Output:

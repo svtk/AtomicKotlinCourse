@@ -40,7 +40,7 @@ class GameMatrixImpl(width: Int, height: Int) : GameMatrix {
             }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val matrix = GameMatrixImpl(width = 4, height = 5)
     matrix.add(Robot(), Position(x = 1, y = 2))
     matrix.add(Food(), Position(x = 2, y = 3))

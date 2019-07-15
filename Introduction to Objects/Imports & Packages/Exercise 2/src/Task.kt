@@ -1,5 +1,5 @@
 package importsandPackages2
 
-fun main(args: Array<String>) {
+fun main() {
 //    val t = Isosceles
 }

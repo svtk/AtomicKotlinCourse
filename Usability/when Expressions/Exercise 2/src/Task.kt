@@ -11,7 +11,7 @@ fun getTemperatureDescription(temperature: Int): String =
             else -> "Freezing"
         }
 
-fun main(args: Array<String>) {
+fun main() {
     getTemperatureDescription(30) eq "Hot"
     getTemperatureDescription(10) eq "Cool"
     getTemperatureDescription(-30) eq "Freezing"

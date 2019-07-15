@@ -16,7 +16,7 @@ fun printAverage(x: Int) {
     println((0..x).average())
 }
 
-fun main(args: Array<String>) {
+fun main() {
     printSum(-10)
     printAverage(-10)
 }

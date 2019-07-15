@@ -8,7 +8,7 @@ fun drawSquare(width: Int) = buildString {
     }
 }.trim()
 
-fun main(args: Array<String>) {
+fun main() {
     drawSquare(3) eq
             """|***
                |***

@@ -16,7 +16,7 @@ class SimpleTime(
 }
 
 /*
-fun main(args: Array<String>) {
+fun main() {
     val noon = SimpleTime(12)
     noon.toSecondOfDay() eq 12 * 60 * 60
 

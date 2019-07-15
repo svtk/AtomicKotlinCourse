@@ -10,7 +10,7 @@ fun buildAgeToNamesMap(people: List<Person>): Map<Int, List<String>> {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val people = listOf(Person("Alice", 21),
             Person("Bob", 25), Person("Charlie", 25))
 

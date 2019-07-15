@@ -5,7 +5,7 @@ import atomictest.eq
 fun joinComments(s: String): String = 
         s.trimMargin("// ").lines().joinToString("; ")
 
-fun main(args: Array<String>) {
+fun main() {
     val s = """
         // first
         // second

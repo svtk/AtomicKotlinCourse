@@ -28,7 +28,7 @@ fun fibonacciIterative(n: Int): Long {
     return current
 }
 
-fun main(args: Array<String>) {
+fun main() {
     (0..8).map { fibonacciRecursive(it) } eq
             "[0, 1, 1, 2, 3, 5, 8, 13, 21]"
     fibonacciRecursive(22) eq 17711

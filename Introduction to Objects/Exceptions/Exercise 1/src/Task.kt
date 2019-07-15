@@ -12,7 +12,7 @@ fun repeatChar(ch: Char, n: Int): String {
     return s
 }
 
-fun main(args: Array<String>) {
+fun main() {
     repeatChar('a', 4) eq "aaaa"
     capture {
         repeatChar('c', -2)

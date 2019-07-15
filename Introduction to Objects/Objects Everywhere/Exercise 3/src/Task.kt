@@ -15,6 +15,6 @@ fun isPalIgnoreSpecial(s: String): Boolean {
     return isPalIgnoreCase(onlyLetters)
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(isPalIgnoreSpecial("Was It A Rat I Saw? ..."))  // true
 }

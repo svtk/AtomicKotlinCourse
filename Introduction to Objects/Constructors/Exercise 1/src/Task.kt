@@ -35,7 +35,7 @@ class Robot(val fieldSize: Int, var x: Int, var y: Int) {
 }
 
 /*
-fun main(args: Array<String>) {
+fun main() {
     val robot = Robot(10, 1, 1)
     println(robot.getLocation())
     robot.goUp(2)

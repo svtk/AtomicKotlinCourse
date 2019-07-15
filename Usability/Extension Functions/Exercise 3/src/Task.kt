@@ -16,7 +16,7 @@ class Rectangle(
 fun Rectangle.coversZero(): Boolean =
         0 in x..(x + width) && 0 in y..(y + height)
 
-fun main(args: Array<String>) {
+fun main() {
     val first = Rectangle(-1, -1, 2, 2)
     val second = Rectangle(1, 1, 2, 2)
     first.coversZero() eq true

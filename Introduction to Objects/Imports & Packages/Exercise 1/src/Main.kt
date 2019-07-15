@@ -3,7 +3,7 @@ package importsandPackages1
 /*
 import pythagorean.EquilateralTriangle
 
-fun main(args: Array<String>) {
+fun main() {
     val et = EquilateralTriangle(1.0)
     println(et.area())
 }

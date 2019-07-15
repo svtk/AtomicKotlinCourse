@@ -6,7 +6,7 @@ fun checkAnagrams(s1: String, s2: String): Boolean {
     return s1.toList().sorted() == s2.toList().sorted()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     checkAnagrams("thing", "night") eq true
     checkAnagrams("leader", "dealer") eq true
     checkAnagrams("sector", "escort") eq true

@@ -9,7 +9,7 @@ class Strange {
         get() = ++_accesses
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val strange = Strange()
     strange.accesses eq 1
     strange.accesses eq 2

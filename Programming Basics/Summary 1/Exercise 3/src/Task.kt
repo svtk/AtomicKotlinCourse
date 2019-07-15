@@ -12,7 +12,7 @@ fun printPyramid(n: Int) {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     printPyramid(4)
 }
 /* Output:

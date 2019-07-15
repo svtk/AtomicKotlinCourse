@@ -90,7 +90,7 @@ class MazeImpl(
 
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val mazeRepresentation = """
         #####
         #...#

@@ -1,6 +1,6 @@
 package varandval2
 
-fun main(args: Array<String>) {
+fun main() {
     var x = 1
     var y = 2
     val tmp = x

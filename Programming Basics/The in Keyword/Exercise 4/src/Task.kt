@@ -12,7 +12,7 @@ fun isValidIdentifier(s: String): Boolean {
     return true
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(isValidIdentifier("name"))  // true
     println(isValidIdentifier("0name"))  // false
 }

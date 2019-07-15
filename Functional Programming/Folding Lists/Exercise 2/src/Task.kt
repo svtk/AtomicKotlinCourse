@@ -8,7 +8,7 @@ fun <T> List<T>.count(predicate: (T) -> Boolean): Int =
             if (predicate(element)) count + 1 else count
         }
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf(1, -2, 3)
     list.count { it > 0 } eq 2
 }

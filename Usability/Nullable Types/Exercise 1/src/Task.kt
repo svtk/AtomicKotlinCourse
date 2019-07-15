@@ -24,7 +24,7 @@ class Cage(private val maxCapacity: Int) {
             hamsters[name]
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val cage = Cage(1)
     cage.takeHamsterByName("Alice") eq null
 }

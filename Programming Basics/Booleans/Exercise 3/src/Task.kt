@@ -1,5 +1,5 @@
 package booleans3
 
-fun main(args: Array<String>) {
+fun main() {
     println(foo())
 }

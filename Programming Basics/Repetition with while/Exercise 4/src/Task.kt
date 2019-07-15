@@ -2,6 +2,6 @@ package repetitionwithwhile4
 
 fun getFooResult(): Int = 736
 
-fun main(args: Array<String>) {
+fun main() {
     println("Foo result is: ${getFooResult()}")
 }

@@ -10,6 +10,6 @@ fun sum(number: Int): Int {
     return sum
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(sum(10))  // 55
 }

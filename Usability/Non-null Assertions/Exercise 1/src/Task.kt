@@ -9,7 +9,7 @@ fun sumOfFirstAndLast(list: List<Int>): Int =
             else -> list.first() + list.last()
         }
 
-fun main(args: Array<String>) {
+fun main() {
     sumOfFirstAndLast(listOf()) eq 0
     sumOfFirstAndLast(listOf(1)) eq 1
     sumOfFirstAndLast(listOf(1, 2)) eq 3

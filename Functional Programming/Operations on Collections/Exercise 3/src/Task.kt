@@ -6,6 +6,6 @@ fun sum(list: List<Int?>): Int {
     return list.filterNotNull().sum()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     sum(listOf(1, 2, null)) eq 3
 }

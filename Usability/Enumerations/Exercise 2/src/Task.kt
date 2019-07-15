@@ -30,7 +30,7 @@ fun Month.getDays(leapYear: Boolean = false): Int = when (this) {
     February -> if (leapYear) 29 else 28
 }
 
-fun main(args: Array<String>) {
+fun main() {
     January.getAustralianSeason() eq Summer
     May.getAustralianSeason() eq Autumn
 

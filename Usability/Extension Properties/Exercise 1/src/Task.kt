@@ -8,7 +8,7 @@ val <T> List<T>.secondOrNull: T?
 val <T> List<T>.penultimateOrNull: T?
     get() = getOrNull(lastIndex - 1)
 
-fun main(args: Array<String>) {
+fun main() {
     val ints = listOf(1, 2, 3)
     ints.secondOrNull eq 2
     ints.penultimateOrNull eq 2

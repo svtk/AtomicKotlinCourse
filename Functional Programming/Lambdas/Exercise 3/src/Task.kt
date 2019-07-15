@@ -8,7 +8,7 @@ fun registerStudents(names: List<String>, startId: Int = 0): List<Student> {
     return names.mapIndexed { index, name -> Student(startId + index, name) }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val students = listOf("Alice", "Bob")
     registerStudents(students) eq
             listOf(Student(0, "Alice"), Student(1, "Bob"))

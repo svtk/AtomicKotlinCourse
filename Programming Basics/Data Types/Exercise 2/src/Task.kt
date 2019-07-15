@@ -1,6 +1,6 @@
 package dataTypes2
 
-fun main(args: Array<String>) {
+fun main() {
     val s = "Sally" + 5.9
     println(s)
 }

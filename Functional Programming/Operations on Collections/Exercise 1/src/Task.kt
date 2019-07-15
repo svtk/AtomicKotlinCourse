@@ -9,7 +9,7 @@ fun findOldest(people: List<Person>, requiredNumber: Int): List<String> {
             .take(requiredNumber).map { it.name }.sorted()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val people = listOf(
             Person("Bob", 30),
             Person("Charlie", 20),

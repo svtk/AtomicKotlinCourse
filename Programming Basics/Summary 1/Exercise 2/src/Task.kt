@@ -14,6 +14,6 @@ fun reverseDecimal(number: Int): Int {
     return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(reverseDecimal(1234))  // 4321
 }

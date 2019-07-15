@@ -2,7 +2,7 @@ package creatingClasses4
 
 fun task(s: String) = s.capitalize()
 
-fun main(args: Array<String>) {
+fun main() {
     println(task("hi!"))
     println(task("Hi!"))
 }

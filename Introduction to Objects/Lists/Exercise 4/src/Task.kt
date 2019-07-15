@@ -1,6 +1,6 @@
 package lists4
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf(1, 4, "abc")
     println(list)
 }

@@ -9,7 +9,7 @@ fun printHalfPyramid(n: Int) {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     printHalfPyramid(4)
 }
 /* Output:

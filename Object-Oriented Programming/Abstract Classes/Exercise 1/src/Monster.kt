@@ -36,7 +36,7 @@ class Monster : MovableElement() {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val mapRepresentation = """
          #######
         ##     #

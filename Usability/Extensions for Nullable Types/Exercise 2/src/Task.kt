@@ -8,7 +8,7 @@ fun Boolean?.and(that: Boolean?): Boolean? =
 fun Boolean?.or(that: Boolean?): Boolean? =
         if (this != null && that != null) this || that else null
 
-fun main(args: Array<String>) {
+fun main() {
     val b = true
     b.and(null) eq null
     null.or(b) eq null

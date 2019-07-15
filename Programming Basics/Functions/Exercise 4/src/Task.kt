@@ -4,6 +4,6 @@ fun foo(): String {
     return "abc"
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(foo())
 }

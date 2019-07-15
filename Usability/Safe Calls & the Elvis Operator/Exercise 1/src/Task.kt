@@ -18,7 +18,7 @@ data class Address(
 fun Client.comesFromMunich(): Boolean = 
         personalInfo?.address?.city == "Munich"
 
-fun main(args: Array<String>) {
+fun main() {
     val alice = Client("Alice",
             PersonalInfo(address = Address("Germany", "Munich")))
     alice.comesFromMunich() eq true

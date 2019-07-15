@@ -8,6 +8,6 @@ fun getAlphabet(): String {
     return s
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(getAlphabet())  // abcdefghijklmnopqrstuvwxyz
 }

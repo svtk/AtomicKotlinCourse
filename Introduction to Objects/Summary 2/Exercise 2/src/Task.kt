@@ -33,7 +33,7 @@ fun convertFromRoman(roman: String): Int {
     return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
     convertFromRoman("XXIII") eq 23
     convertFromRoman("XLIV") eq 44
     convertFromRoman("C") eq 100

@@ -24,7 +24,7 @@ fun findWinner(first: Rochambeau, second: Rochambeau): Result {
     return SECOND_WINS
 }
 
-fun main(args: Array<String>) {
+fun main() {
     findWinner(ROCK, SCISSORS) eq FIRST_WINS
     findWinner(SCISSORS, ROCK) eq SECOND_WINS
     findWinner(PAPER, PAPER) eq DRAW

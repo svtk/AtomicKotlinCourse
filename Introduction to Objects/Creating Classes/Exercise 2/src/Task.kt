@@ -9,7 +9,7 @@ fun isPalIgnoreCase(s: SimpleString): Boolean {
     return true
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(isPalIgnoreCase(SimpleString("Mom")))
 }
 /* Output:

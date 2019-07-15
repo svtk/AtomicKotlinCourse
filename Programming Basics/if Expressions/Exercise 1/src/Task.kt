@@ -8,6 +8,6 @@ fun checkSign(number: Int): String =
         else
             "zero"
 
-fun main(args: Array<String>) {
+fun main() {
     println(checkSign(-19))  // negative
 }

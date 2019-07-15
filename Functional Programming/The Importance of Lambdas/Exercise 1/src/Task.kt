@@ -8,7 +8,7 @@ fun List<Person>.getNamesOfAdults(): List<String> {
     return filter { it.age > 17 }.map { it.name }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val people = listOf(Person("Alice", 17), Person("Bob", 19))
     people.getNamesOfAdults() eq listOf("Bob")
 }

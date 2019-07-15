@@ -23,7 +23,7 @@ class Robot {
     fun getLocation(): String = "($x,$y)"
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val robot = Robot()
     println(robot.getLocation())
     robot.goRight(1)

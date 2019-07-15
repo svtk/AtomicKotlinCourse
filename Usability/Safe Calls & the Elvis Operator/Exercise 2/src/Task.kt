@@ -24,7 +24,7 @@ fun Client.getFullInfo(): String =  """
        |street: ${checkUnspecified(personalInfo?.address?.street)}
     """.trimMargin()
 
-fun main(args: Array<String>) {
+fun main() {
     val alice = Client("Alice",
             PersonalInfo(
                     email = "alice@gmail.com",

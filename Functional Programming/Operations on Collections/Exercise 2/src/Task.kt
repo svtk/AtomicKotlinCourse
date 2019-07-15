@@ -9,7 +9,7 @@ val operation = { x: Int ->
     // x.toString().contains('5')
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val first = listOf(1, 5, 32, 45, 70, 511)
     first.any(operation) eq true
     first.all(operation) eq false

@@ -16,7 +16,7 @@ fun List<Student>.sortByGradeAndThenByName(): List<Student> = sortedWith(
         compareByDescending(Student::grade)
                 .then(compareBy(Student::surname, Student::name)))
 
-fun main(args: Array<String>) {
+fun main() {
     val people = listOf(
             Student("Alice", "Johnson", 1),
             Student("Bob", "Smith", 2),

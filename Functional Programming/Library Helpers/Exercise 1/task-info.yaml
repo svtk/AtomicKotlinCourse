@@ -4,15 +4,15 @@ files:
   visible: true
   placeholders:
   - offset: 118
-    length: 75
+    length: 70
     placeholder_text: "\n    x.let {\n        it.first = 1\n        it.second = 2\n\
       \        it.third = 3\n    }\n    "
-  - offset: 275
-    length: 52
+  - offset: 270
+    length: 47
     placeholder_text: "\n    y?.let {\n        with(it) {\n            start()\n \
       \           finish()\n        }\n    }\n    "
-  - offset: 387
-    length: 49
+  - offset: 377
+    length: 43
     placeholder_text: "\n    val result = with(z) {\n        init()\n        this\n\
       \    }\n    "
 - name: test/Tests.kt

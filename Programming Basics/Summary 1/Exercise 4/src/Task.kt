@@ -15,7 +15,7 @@ fun printSnake(rows: Int, columns: Int) {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     printSnake(4, 5)
 }
 /* Output:

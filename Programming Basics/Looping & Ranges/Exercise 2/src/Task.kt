@@ -16,6 +16,6 @@ fun sumOfFactorials(n: Int): Long {
     return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(sumOfFactorials(10))  // 4037913
 }

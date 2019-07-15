@@ -11,7 +11,7 @@ fun createAuthorToBooksMap(books: List<Book>): Map<Author, List<Book>> {
     return authors.map { author -> author to books.filter { author in it.authors } }.toMap()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val books = listOf(
             Book("Computer Interfacing with Pascal & C", listOf(Author("Bruce Eckel"))),
             Book("Using C++", listOf(Author("Bruce Eckel"))),

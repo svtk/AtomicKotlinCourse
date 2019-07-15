@@ -17,7 +17,7 @@ fun isPerfect(i: Int): Boolean {
     return i != 1 && 1 + getNonTrivialDivisors(i).sum() == i
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val range = 1..1000
     val even = range.filter(Int::isEven)
     even.size eq 500

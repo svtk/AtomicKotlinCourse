@@ -9,7 +9,7 @@ class Human(
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val human = Human("Rick", 70)
     println(human)
 }

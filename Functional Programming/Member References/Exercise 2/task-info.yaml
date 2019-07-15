@@ -12,13 +12,13 @@ files:
   - offset: 336
     length: 56
     placeholder_text: TODO()
-  - offset: 480
+  - offset: 461
     length: 11
     placeholder_text: TODO()
-  - offset: 544
+  - offset: 525
     length: 12
     placeholder_text: TODO()
-  - offset: 721
+  - offset: 702
     length: 11
     placeholder_text: TODO()
 - name: test/Tests.kt

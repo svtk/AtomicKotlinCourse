@@ -10,7 +10,7 @@ fun getAuthors(books: List<Book>): Set<Author> {
     return books.map { it.author }.toSet()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val books = listOf(
             Book("The Philosopher's Stone", Author("J. K. Rowling")),
             Book("The Chamber of Secrets", Author("J. K. Rowling")),

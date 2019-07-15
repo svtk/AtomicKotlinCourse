@@ -1,6 +1,6 @@
 package loopingandRanges5
 
-fun main(args: Array<String>) {
+fun main() {
     val s = "abcd"
 
 }

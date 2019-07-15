@@ -9,7 +9,7 @@ fun Condition.combine(other: Condition): Condition =
 
 fun List<Condition>.combineAll(): Condition = reduce(Condition::combine)
 
-fun main(args: Array<String>) {
+fun main() {
     val isPositive = Condition { it > 0 }
     val isEven = Condition { it % 2 == 0 }
     val lessThan10 = Condition { it < 10 }

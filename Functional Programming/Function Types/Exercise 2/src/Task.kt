@@ -10,7 +10,7 @@ fun List<Int>.transform2(): List<Int> {
     return mapNotNull { if (it % 2 == 0) it * it else null }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf(1, 2, 3)
     list.transform1() eq listOf(4)
     list.transform2() eq listOf(4)

@@ -10,7 +10,7 @@ fun countOccurrences(list: IntList, number: Int): Int {
     return occurrences
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val list = IntList(listOf(1, 2, 3, 2))
     println(countOccurrences(list, 2))  // 2
 }

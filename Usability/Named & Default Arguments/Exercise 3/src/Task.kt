@@ -6,7 +6,7 @@ fun foo(i: Int, s: String) = "(i = $i, s = $s)"
 
 fun bar(i: Int, s: String) = "(i = $i, s = $s)"
 
-fun main(args: Array<String>) {
+fun main() {
     foo(i = 1, s = "abc") eq "(i = 1, s = abc)"
     foo(2, "def") eq "(i = 2, s = def)"
 

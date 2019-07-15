@@ -7,7 +7,7 @@ fun <T> List<T>.size(): Int =
             length + 1
         }
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf(1, 2, 3)
     list.size() eq 3
 }

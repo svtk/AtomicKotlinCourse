@@ -34,7 +34,7 @@ class Cage(private val maxCapacity: Int) {
 }
 
 /*
-fun main(args: Array<String>) {
+fun main() {
     val cage = Cage(2)
     cage.isEmpty eq true
     cage.put(Hamster("Alice"))

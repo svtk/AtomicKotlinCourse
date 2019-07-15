@@ -1,6 +1,6 @@
 package testing2
 
-fun main(args: Array<String>) {
+fun main() {
 //    println("Uncomment me")
     println("Comment me")
 }

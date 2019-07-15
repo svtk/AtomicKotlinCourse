@@ -12,7 +12,7 @@ fun fibonacciNumbers(): Sequence<Int> {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     fibonacciNumbers().take(10).toList() eq
             listOf(0, 1, 1, 2, 3, 5, 8, 13, 21, 34)
 }

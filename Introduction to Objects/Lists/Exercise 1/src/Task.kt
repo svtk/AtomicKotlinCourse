@@ -12,7 +12,7 @@ fun findMax(list: IntList): Int {
     return max
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val list = IntList(listOf(1, 2, 3, 2))
     findMax(list) eq 3
 }

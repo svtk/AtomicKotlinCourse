@@ -14,6 +14,6 @@ fun getBmiStatus(
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     getBmiStatus(72.57, 1.727) eq "Normal weight"
 }

@@ -6,7 +6,7 @@ fun and(b1: Boolean, b2: Boolean): Boolean =
 fun or(b1: Boolean, b2: Boolean): Boolean =
         if (b1) true else b2
 
-fun main(args: Array<String>) {
+fun main() {
     println(and(true, true)) // true
     println(or(true, false)) // true
 }

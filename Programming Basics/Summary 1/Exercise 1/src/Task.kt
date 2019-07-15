@@ -12,6 +12,6 @@ fun countDigits(number: Int, digit: Int): Int {
     return occurrences
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(countDigits(764241, 4)) // 2
 }

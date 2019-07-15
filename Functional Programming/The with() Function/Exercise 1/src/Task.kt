@@ -8,7 +8,7 @@ fun buildString(action: StringBuilder.() -> Unit): String =
             toString()
         }
 
-fun main(args: Array<String>) {
+fun main() {
     buildString {
         append("Alphabet: ")
         for (ch in 'a'..'z') {

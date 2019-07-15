@@ -1,5 +1,5 @@
 package helloWorld3
 
-fun main(args: Array<String>) {
+fun main() {
     println("Hello, Kotlin!")
 }

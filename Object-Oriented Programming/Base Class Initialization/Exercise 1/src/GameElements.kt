@@ -24,7 +24,7 @@ class Wall : ImmovableElement('#', preventMovement = true)
 
 class Food : ImmovableElement('.', preventMovement = false)
 
-fun main(args: Array<String>) {
+fun main() {
     val wall = Wall()
     wall.symbol eq '#'
     wall.preventMovement eq true

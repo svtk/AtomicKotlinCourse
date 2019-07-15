@@ -1,6 +1,6 @@
 package varargArguments3
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf('a', 'b', 'c', 'd', 'e').subList(1, 3)
     println(list)
 }

@@ -57,7 +57,7 @@ class GameMatrixImpl(
             }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val mazeRepresentation = """
                  ###
                 #

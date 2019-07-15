@@ -18,7 +18,6 @@ fun isReachableRecursive(from: City, to: City): Boolean {
     val connections = mutableSetOf<City>()
 
     fun buildConnections(current: City) {
-        
         if (current in connections) return
         connections += current
 
@@ -27,7 +26,6 @@ fun isReachableRecursive(from: City, to: City): Boolean {
         current.connections.forEach {
             buildConnections(it)
         }
-        
     }
 
     buildConnections(from)
@@ -41,7 +39,6 @@ fun isReachableIterative(from: City, to: City): Boolean {
         val current = citiesToVisit.first()
         citiesToVisit.remove(current)
 
-        
         if (current == to) return true
         if (current in connections) continue
         connections += current
@@ -49,12 +46,11 @@ fun isReachableIterative(from: City, to: City): Boolean {
         current.connections.forEach {
             citiesToVisit += it
         }
-        
     }
     return false
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val dublin = City("Dublin")
     val liverpool = City("Liverpool")
     val manchester = City("Manchester")

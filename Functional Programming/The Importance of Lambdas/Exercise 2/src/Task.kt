@@ -6,6 +6,6 @@ fun filterNonBlank(strings: List<String>): List<String> {
     return strings.filter { it.isNotBlank() }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     filterNonBlank(listOf("", "a", "  ")) eq listOf("a")
 }

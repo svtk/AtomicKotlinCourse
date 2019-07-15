@@ -31,7 +31,7 @@ class Bomb(
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val representation = """
         ###########
         #.........#

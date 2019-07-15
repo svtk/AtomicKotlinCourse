@@ -15,7 +15,7 @@ fun getFriendSuggestions(person: Person): Set<Person> {
             - person.friends - person)
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val alice = Person("Alice")
     val bob = Person("Bob")
     val charlie = Person("Charlie")

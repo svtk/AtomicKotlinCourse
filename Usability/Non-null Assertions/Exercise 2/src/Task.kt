@@ -8,7 +8,7 @@ fun maxEqualsMinInAbsoluteValue(list: List<Int>): Boolean {
     return list.max()!!.absoluteValue == list.min()!!.absoluteValue
 }
 
-fun main(args: Array<String>) {
+fun main() {
     maxEqualsMinInAbsoluteValue(listOf(-10, 1, 10)) eq true
     maxEqualsMinInAbsoluteValue(listOf(10, 10)) eq true
     maxEqualsMinInAbsoluteValue(listOf(-10, 1)) eq false

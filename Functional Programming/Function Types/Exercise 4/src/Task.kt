@@ -3,7 +3,7 @@ package functionTypes4
 fun <A, B, C> ((A) -> B).andThen(action: (B) -> C): (A) -> C =
         { a: A -> action(this(a)) }
 
-fun main(args: Array<String>) {
+fun main() {
     val multiply2: (Int) -> Int = { x: Int -> x * 2 }
     val println: (Int) -> Unit = { i: Int -> println("Result: $i") }
 

@@ -10,7 +10,7 @@ fun <T, R> List<T>.map(transform: (T) -> R): List<R> {
     return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf(1, 2, 3)
     list.map { "$it!" } eq listOf("1!", "2!", "3!")
 }

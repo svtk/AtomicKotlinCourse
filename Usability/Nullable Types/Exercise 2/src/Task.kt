@@ -14,7 +14,7 @@ fun countHexadecimalCodes(codes: List<String>): Map<Int, Int> {
     return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
     countHexadecimalCodes(listOf(
             "1", "3", "7", "8", "A", "B", "F")) eq
             mapOf(1 to 1, 3 to 1, 7 to 1, 8 to 1, 10 to 1, 11 to 1, 15 to 1)

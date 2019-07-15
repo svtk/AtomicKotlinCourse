@@ -14,7 +14,7 @@ fun getCloudinessDescription(cloudiness: Int): String =
                     "Cloudiness value should be between 0 and 100")
         }
 
-fun main(args: Array<String>) {
+fun main() {
     getCloudinessDescription(100) eq "Sunny"
     getCloudinessDescription(70) eq "Mostly Sunny"
     getCloudinessDescription(50) eq "Partly Sunny"

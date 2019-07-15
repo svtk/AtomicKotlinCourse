@@ -5,7 +5,7 @@ import atomictest.eq
 fun <T, R> List<T>.flatMap(f: (T) -> List<R>): List<R> =
         map(f).flatten()
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf(3, 1, 4)
 
     list.flatMap { (0..it).toList() } eq

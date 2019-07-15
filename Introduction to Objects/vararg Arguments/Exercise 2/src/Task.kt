@@ -10,7 +10,7 @@ fun flatten(listOfLists: List<List<String>>): List<String> {
     return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val listOfLists = listOf(listOf("a", "b"), listOf("c", "d"))
     flatten(listOfLists) eq listOf("a", "b", "c", "d")
 }

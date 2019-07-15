@@ -2,6 +2,6 @@ package functions3
 
 fun duplicate(s: String): String = s + s
 
-fun main(args: Array<String>) {
+fun main() {
     println(duplicate("abc"))  // abcabc
 }

@@ -8,6 +8,6 @@ fun factorial(n: Int): Long {
     return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(factorial(10))  // 3628800
 }

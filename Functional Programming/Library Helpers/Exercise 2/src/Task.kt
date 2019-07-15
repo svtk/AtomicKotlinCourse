@@ -24,7 +24,7 @@ fun <T> T.also(block: (T) -> Unit): T {
     return this
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val sb = StringBuilder()
     with (sb) {
         append("0")

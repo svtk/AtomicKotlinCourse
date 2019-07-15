@@ -22,7 +22,6 @@ class Robot(
         return false
     }
 
-
     fun goRight(steps: Int) {
         if (checkSteps(steps)) return
         x += steps
@@ -53,7 +52,7 @@ class Robot(
 }
 
 /*
-fun main(args: Array<String>) {
+fun main() {
     val robot = Robot(10, 1, 1)
     robot.goRight(-1)
 }

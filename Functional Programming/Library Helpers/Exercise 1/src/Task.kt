@@ -12,7 +12,6 @@ fun example1(x: X) {
         second = 2
         third = 3
     }
-    
 }
 
 class Y {
@@ -25,7 +24,6 @@ fun example2(y: Y?) {
         start()
         finish()
     }
-    
 }
 
 class Z {
@@ -33,13 +31,12 @@ class Z {
 }
 
 fun example3(z: Z) {
-     val result = z.apply {
+    val result = z.apply {
         init()
     }
-    
 }
 
-fun main(args: Array<String>) {
+fun main() {
     example1(X())
     example2(Y())
     example3(Z())

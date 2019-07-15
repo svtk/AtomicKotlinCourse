@@ -10,7 +10,7 @@ fun List<Int>.hasZero() = !all { it != 0 }
 fun List<Int>.hasZero1() = !none { it == 0 }
 fun List<Int>.hasZero2() = any { it == 0 }
 
-fun main(args: Array<String>) {
+fun main() {
     val list1 = listOf(1, 2, 3)
     list1.allNonZero() eq true
     list1.allNonZero1() eq true

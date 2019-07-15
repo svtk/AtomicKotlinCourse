@@ -40,7 +40,7 @@ class Robot(
 }
 
 /*
-fun main(args: Array<String>) {
+fun main() {
     val robot = Robot(10, 1, 1)
     // Coordinates should be private:
 //    println(robot.x)

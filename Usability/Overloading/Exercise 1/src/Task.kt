@@ -36,7 +36,7 @@ fun List<Int>.myJoinToString(prefix: String, postfix: String): String {
 }
 */
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf(1, 2, 3)
     list.myJoinToString() eq "1, 2, 3"
     list.myJoinToString("|") eq "1|2|3"

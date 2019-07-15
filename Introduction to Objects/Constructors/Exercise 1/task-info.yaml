@@ -7,7 +7,7 @@ files:
     length: 42
     placeholder_text: /*TODO*/
   - offset: 81
-    length: 221
+    length: 220
     placeholder_text: ""
     dependency:
       section: Introduction to Objects
@@ -16,7 +16,7 @@ files:
       file: src/Task.kt
       placeholder: 1
       is_visible: true
-  - offset: 341
+  - offset: 345
     length: 39
     placeholder_text: TODO()
     dependency:
@@ -26,7 +26,7 @@ files:
       file: src/Task.kt
       placeholder: 2
       is_visible: true
-  - offset: 425
+  - offset: 429
     length: 39
     placeholder_text: TODO()
     dependency:
@@ -36,7 +36,7 @@ files:
       file: src/Task.kt
       placeholder: 3
       is_visible: true
-  - offset: 509
+  - offset: 513
     length: 39
     placeholder_text: TODO()
     dependency:
@@ -46,7 +46,7 @@ files:
       file: src/Task.kt
       placeholder: 4
       is_visible: true
-  - offset: 591
+  - offset: 595
     length: 39
     placeholder_text: TODO()
     dependency:
@@ -56,7 +56,7 @@ files:
       file: src/Task.kt
       placeholder: 5
       is_visible: true
-  - offset: 670
+  - offset: 674
     length: 9
     placeholder_text: TODO()
     dependency:

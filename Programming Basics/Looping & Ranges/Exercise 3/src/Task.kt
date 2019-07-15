@@ -10,6 +10,6 @@ fun sumOfEven(n: Int): Int {
     return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(sumOfEven(10))  // 30
 }

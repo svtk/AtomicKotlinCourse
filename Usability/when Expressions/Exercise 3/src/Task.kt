@@ -17,7 +17,7 @@ fun isBalanced(input: String): Boolean {
     return leftUnmatched == 0
 }
 
-fun main(args: Array<String>) {
+fun main() {
     isBalanced("(()) ()") eq true
     isBalanced(")(") eq false
 }

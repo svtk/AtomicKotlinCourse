@@ -1,4 +1,4 @@
-## Lists (#1)
+## Lists (#3)
 
 Write a function that decides whether two strings are anagrams or not. An
 anagram is a word formed by rearranging the letters of a different word, using

@@ -8,7 +8,7 @@ fun <T> List<T>.any(predicate: (T) -> Boolean): Boolean =
             if (predicate(element)) true else found
         }
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf(1, -2, 3)
     list.any { it < 0 } eq true
 }
