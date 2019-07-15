@@ -1,6 +1,0 @@
-<h2 style="text-align: center;">Maps (#3)</h2><p>If you commonly select an element from a <code>List</code> using a key, it makes sense to
-optimize it and use <code>Map</code> to store the elements instead of a <code>List</code>. At worst,
-finding the right element in the <code>List</code> requires you to iterate over all the
-elements, while <code>Map</code> does the same job in constant time.</p><p>Change the internal implementation of the <code>Cage</code> class to store elements in a
-<code>Map</code> rather than a <code>List</code>. To get an element use the <code>getValue()</code> member
-function, which throws a <code>NoSuchElementException</code> if the key is missing.</p>

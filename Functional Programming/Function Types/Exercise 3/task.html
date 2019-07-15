@@ -1,9 +1,0 @@
-<h2 style="text-align: center;">Function Types (#3)</h2><p>Implement <code>mapIndexedNotNull()</code> function by hand. Like <code>mapNotNull()</code> it applies 
-the given transformation to each element and filters out <code>null</code>s. 
-Like <code>mapIndexed()</code> it bases the transformation on both the element and 
-its index.</p><p>Note the generic types <code>R?</code> (in <code>(Int, T) -&gt; R?</code>) and <code>List&lt;R&gt;</code>.
-Lambda argument may return <code>null</code> as a result, so lambda's return type
-is nullable <code>R?</code>. <code>mapIndexNotNull()</code> returns a list of non-nullable elements, 
-so the function return type is <code>List&lt;R&gt;</code>. To express that <code>R</code> is a non-nullable 
-type, we specify the constraint on a generic type parameter <code>R : Any</code>. Type 
-constraints will be covered in [Generics] later.</p>
