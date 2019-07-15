@@ -1,0 +1,15 @@
+<h2 style="text-align: center;">Mastering the IDE: Rename</h2><p>The IDE simplifies a lot of typical actions. For instance, suppose you want
+to rename a declaration. Inventing a good name for a <code>val</code> or a function is
+difficult, so it's often an iterative process. You may create and use a
+function, but then think up a better name for it.</p><p><span class="control"><code>Find</code></span> and <span class="control"><code>Replace</code></span>
+may lead to unexpected results, because the name might
+appear in different contexts, for instance inside strings or comments. In the
+code example you may see the <code>answer</code> as a name of <code>val</code>, which is a part of the
+string literal as well. If we're talking about renaming functions, it's even
+more complicated, because the function might be used in many files, and doing
+rename properly in many places by hand is a complicated task.</p><p>IDE allows to rename a declaration automatically.
+Put the caret on the <code>val</code> name and press 
+<span class="shortcut">&amp;shortcut:RenameElement;</span>.
+Alternatively, you may choose <span class="control"><code>Refactor</code></span>
+from the application menu, then choose <span class="control"><code>Rename</code></span>.</p><p>Rename the <code>val</code> name to <code>result</code> without renaming "answer" in the string
+literal.</p>

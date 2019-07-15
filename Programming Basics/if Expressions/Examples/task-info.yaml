@@ -1,0 +1,18 @@
+type: theory
+files:
+- name: src/If1.kt
+  visible: true
+- name: src/If2.kt
+  visible: true
+- name: src/If3.kt
+  visible: true
+- name: src/If4.kt
+  visible: true
+- name: src/If5.kt
+  visible: true
+- name: src/If6.kt
+  visible: true
+- name: src/TrueOrFalse.kt
+  visible: true
+- name: src/OneOrTheOther.kt
+  visible: true

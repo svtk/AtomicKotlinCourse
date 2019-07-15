@@ -1,0 +1,14 @@
+type: theory
+files:
+- name: src/ImportClass.kt
+  visible: true
+- name: src/ImportNameChange.kt
+  visible: true
+- name: src/FullyQualify.kt
+  visible: true
+- name: src/ImportEverything.kt
+  visible: true
+- name: src/PythagoreanTheorem.kt
+  visible: true
+- name: src/ImportPythagorean.kt
+  visible: true

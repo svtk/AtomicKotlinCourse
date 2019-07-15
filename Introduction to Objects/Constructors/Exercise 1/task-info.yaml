@@ -1,0 +1,72 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 35
+    length: 42
+    placeholder_text: /*TODO*/
+  - offset: 81
+    length: 221
+    placeholder_text: ""
+    dependency:
+      section: Introduction to Objects
+      lesson: Properties
+      task: Exercise 2
+      file: src/Task.kt
+      placeholder: 1
+      is_visible: true
+  - offset: 341
+    length: 39
+    placeholder_text: TODO()
+    dependency:
+      section: Introduction to Objects
+      lesson: Properties
+      task: Exercise 2
+      file: src/Task.kt
+      placeholder: 2
+      is_visible: true
+  - offset: 425
+    length: 39
+    placeholder_text: TODO()
+    dependency:
+      section: Introduction to Objects
+      lesson: Properties
+      task: Exercise 2
+      file: src/Task.kt
+      placeholder: 3
+      is_visible: true
+  - offset: 509
+    length: 39
+    placeholder_text: TODO()
+    dependency:
+      section: Introduction to Objects
+      lesson: Properties
+      task: Exercise 2
+      file: src/Task.kt
+      placeholder: 4
+      is_visible: true
+  - offset: 591
+    length: 39
+    placeholder_text: TODO()
+    dependency:
+      section: Introduction to Objects
+      lesson: Properties
+      task: Exercise 2
+      file: src/Task.kt
+      placeholder: 5
+      is_visible: true
+  - offset: 670
+    length: 9
+    placeholder_text: TODO()
+    dependency:
+      section: Introduction to Objects
+      lesson: Properties
+      task: Exercise 2
+      file: src/Task.kt
+      placeholder: 6
+      is_visible: true
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Constructors+%2F+Exercise1

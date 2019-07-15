@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/EagerEvaluation.kt
+  visible: true
+- name: src/EagerVsLazyEvaluation.kt
+  visible: true
+- name: src/NoComputationYet.kt
+  visible: true
+- name: src/TerminalOperations.kt
+  visible: true

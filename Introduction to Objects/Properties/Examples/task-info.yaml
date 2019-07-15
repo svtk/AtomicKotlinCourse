@@ -1,0 +1,14 @@
+type: theory
+files:
+- name: src/Cup.kt
+  visible: true
+- name: src/Cup2.kt
+  visible: true
+- name: src/TopLevelProperty.kt
+  visible: true
+- name: src/ChangingAVal.kt
+  visible: true
+- name: src/AnUnchangingVar.kt
+  visible: true
+- name: src/References.kt
+  visible: true

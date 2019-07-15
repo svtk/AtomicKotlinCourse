@@ -1,0 +1,20 @@
+type: theory
+files:
+- name: src/CreatingLists.kt
+  visible: true
+- name: src/ListInit.kt
+  visible: true
+- name: src/Predicates.kt
+  visible: true
+- name: src/Partition.kt
+  visible: true
+- name: src/PairOfLists.kt
+  visible: true
+- name: src/FilterNotNull.kt
+  visible: true
+- name: src/ByOperations.kt
+  visible: true
+- name: src/TakeOrDrop.kt
+  visible: true
+- name: src/OperationsOnSets.kt
+  visible: true

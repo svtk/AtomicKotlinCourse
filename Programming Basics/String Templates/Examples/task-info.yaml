@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/StringTemplates.kt
+  visible: true
+- name: src/StringConcatenation.kt
+  visible: true
+- name: src/ExpressionInTemplate.kt
+  visible: true
+- name: src/TripleQuotes.kt
+  visible: true

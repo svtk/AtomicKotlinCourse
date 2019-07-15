@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/RecordAnimals.kt
+  visible: true
+- name: src/ObserveAnimals.kt
+  visible: true
+- name: src/Cookie.kt
+  visible: true
+- name: src/MultipleRef.kt
+  visible: true

@@ -1,0 +1,12 @@
+type: theory
+files:
+- name: src/Level.kt
+  visible: true
+- name: src/EnumImport.kt
+  visible: true
+- name: src/RecursiveEnumImport.kt
+  visible: true
+- name: src/CheckingOptions.kt
+  visible: true
+- name: src/Direction.kt
+  visible: true

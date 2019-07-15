@@ -1,0 +1,12 @@
+type: theory
+files:
+- name: src/ForIsAStatement.kt
+  visible: true
+- name: src/UnitReturnType.kt
+  visible: true
+- name: src/AssigningAnIf.kt
+  visible: true
+- name: src/PostfixVsPrefix.kt
+  visible: true
+- name: src/ConfusingOperator.kt
+  visible: true

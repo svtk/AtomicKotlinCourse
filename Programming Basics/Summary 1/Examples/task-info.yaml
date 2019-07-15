@@ -1,0 +1,34 @@
+type: theory
+files:
+- name: src/Hello.kt
+  visible: true
+- name: src/BasicFunctions.kt
+  visible: true
+- name: src/Booleans.kt
+  visible: true
+- name: src/IfResult.kt
+  visible: true
+- name: src/IfExpression.kt
+  visible: true
+- name: src/StrTemplates.kt
+  visible: true
+- name: src/ThreeQuotes.kt
+  visible: true
+- name: src/NumberTypes.kt
+  visible: true
+- name: src/Overflow.kt
+  visible: true
+- name: src/Truncation.kt
+  visible: true
+- name: src/While.kt
+  visible: true
+- name: src/DoWhile.kt
+  visible: true
+- name: src/StringIteration.kt
+  visible: true
+- name: src/RangeOfInt.kt
+  visible: true
+- name: src/Membership.kt
+  visible: true
+- name: src/UnitReturn.kt
+  visible: true

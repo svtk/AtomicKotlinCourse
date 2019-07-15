@@ -1,0 +1,12 @@
+type: theory
+files:
+- name: src/RigidHolder.kt
+  visible: true
+- name: src/GenericHolder.kt
+  visible: true
+- name: src/AnyInstead.kt
+  visible: true
+- name: src/GenericFunction.kt
+  visible: true
+- name: src/GenericListExtensions.kt
+  visible: true

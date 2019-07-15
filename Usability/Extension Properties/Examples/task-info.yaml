@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/StringIndices.kt
+  visible: true
+- name: src/GenericListExt.kt
+  visible: true
+- name: src/ListOfStar.kt
+  visible: true
+- name: src/AnyFromListOfStar.kt
+  visible: true

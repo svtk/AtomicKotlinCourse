@@ -1,0 +1,12 @@
+type: theory
+files:
+- name: src/GermanOrdinals.kt
+  visible: true
+- name: src/AnalyzingInput.kt
+  visible: true
+- name: src/MatchingAgainstVals.kt
+  visible: true
+- name: src/MixColors.kt
+  visible: true
+- name: src/BmiWhen.kt
+  visible: true

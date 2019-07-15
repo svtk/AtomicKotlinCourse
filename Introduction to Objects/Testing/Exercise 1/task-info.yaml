@@ -1,0 +1,15 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 108
+    length: 5
+    placeholder_text: x * x
+  - offset: 159
+    length: 17
+    placeholder_text: h / 2 * (x + y)
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Testing+%2F+Exercise1

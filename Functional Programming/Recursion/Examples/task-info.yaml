@@ -1,0 +1,18 @@
+type: theory
+files:
+- name: src/Factorial.kt
+  visible: true
+- name: src/CallStack.kt
+  visible: true
+- name: src/InfiniteRecursion.kt
+  visible: true
+- name: src/RecursionLimits.kt
+  visible: true
+- name: src/Iteration.kt
+  visible: true
+- name: src/TailRecursiveSum.kt
+  visible: true
+- name: src/VerySlowFibonacci.kt
+  visible: true
+- name: src/Fibonacci.kt
+  visible: true

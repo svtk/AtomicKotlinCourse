@@ -1,0 +1,12 @@
+type: theory
+files:
+- name: src/PropertyReference.kt
+  visible: true
+- name: src/SortWith.kt
+  visible: true
+- name: src/FunctionReference.kt
+  visible: true
+- name: src/TopLevelFunctionRef.kt
+  visible: true
+- name: src/ConstructorReference.kt
+  visible: true

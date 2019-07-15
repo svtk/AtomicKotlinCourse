@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/SumViaFold.kt
+  visible: true
+- name: src/FoldVsForLoop.kt
+  visible: true
+- name: src/FoldRight.kt
+  visible: true
+- name: src/FoldAndReduce.kt
+  visible: true

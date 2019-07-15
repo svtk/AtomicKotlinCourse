@@ -1,0 +1,9 @@
+title: AtomicKotlin
+language: English
+summary: The examples and exercises accompanying the AtomicKotlin book
+programming_language: Kotlin
+content:
+- Programming Basics
+- Introduction to Objects
+- Usability
+- Functional Programming

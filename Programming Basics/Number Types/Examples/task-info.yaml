@@ -1,0 +1,24 @@
+type: theory
+files:
+- name: src/InferInt.kt
+  visible: true
+- name: src/Modulus.kt
+  visible: true
+- name: src/IntDivisionTruncates.kt
+  visible: true
+- name: src/OpOrder.kt
+  visible: true
+- name: src/OpOrderParens.kt
+  visible: true
+- name: src/BMI.kt
+  visible: true
+- name: src/IntegerMath.kt
+  visible: true
+- name: src/IntegerOverflow.kt
+  visible: true
+- name: src/LongConstants.kt
+  visible: true
+- name: src/UsingLongs.kt
+  visible: true
+- name: src/BiggestLong.kt
+  visible: true

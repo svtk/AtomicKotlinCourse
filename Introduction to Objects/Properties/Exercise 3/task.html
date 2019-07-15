@@ -1,0 +1,17 @@
+<h2 style="text-align: center;">Mastering the IDE: Extract Property</h2><p>Check yourself: how many times did you use the constant <code>100</code> in the code for
+the previous task? When you write the code, it's better to place  constants
+into <code>val</code>s, so they are easy to change if necessary. If the requirements
+change so that the field's size is <code>1000 x 1000</code>, it's error-prone to change
+the constant more than in one place. It's too easy to change it in one place
+and forget to change it in the other, which can lead to difficult-to-find bugs.</p><p>When a constant appears in multiple places in your code, it's wise to extract
+it into a property. IntelliJ Idea allows you to do this automatically. Select
+the constant <code>10</code> in the code sample, and call
+<span class="control"><code>Extract Property</code></span> action.
+Alternatively, you can use the 
+<span class="shortcut">&amp;shortcut:IntroduceField;</span> shortcut or choose
+<span class="control"><code>Refactor | Extract | Property</code></span> from the main
+menu.</p><p>Select <code>Counter</code> as the target code block in the opened menu, 
+make sure that <span class="control"><code>Replace all occurrences(2)</code></span> is
+chosen, then press <code>Enter</code>. You'll see the constant is now declared as a
+property, which is referenced from member functions. The property is declared
+with the <code>private</code> modifier, which we discuss in one of the next atoms.</p>

@@ -1,0 +1,14 @@
+type: theory
+files:
+- name: src/DereferenceNull.kt
+  visible: true
+- name: src/SafeOperation.kt
+  visible: true
+- name: src/SafeCall.kt
+  visible: true
+- name: src/ElvisOperator.kt
+  visible: true
+- name: src/ElvisCall.kt
+  visible: true
+- name: src/ChainedCalls.kt
+  visible: true

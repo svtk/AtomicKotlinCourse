@@ -1,0 +1,27 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 160
+    length: 41
+    placeholder_text: TODO()
+  - offset: 238
+    length: 57
+    placeholder_text: TODO()
+  - offset: 336
+    length: 56
+    placeholder_text: TODO()
+  - offset: 480
+    length: 11
+    placeholder_text: TODO()
+  - offset: 544
+    length: 12
+    placeholder_text: TODO()
+  - offset: 721
+    length: 11
+    placeholder_text: TODO()
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Functional+Programming+%2F+Member+References+%2F+Exercise2

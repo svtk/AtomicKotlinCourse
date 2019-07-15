@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/TestingExample.kt
+  visible: true
+- name: src/TDDFail.kt
+  visible: true
+- name: src/TDDStillFails.kt
+  visible: true
+- name: src/TDDWorks.kt
+  visible: true

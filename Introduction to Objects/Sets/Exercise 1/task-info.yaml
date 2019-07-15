@@ -1,0 +1,24 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 225
+    length: 158
+    placeholder_text: ""
+  - offset: 435
+    length: 33
+    placeholder_text: TODO()
+  - offset: 522
+    length: 34
+    placeholder_text: TODO()
+  - offset: 612
+    length: 38
+    placeholder_text: TODO()
+  - offset: 704
+    length: 75
+    placeholder_text: TODO()
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Sets+%2F+Exercise1

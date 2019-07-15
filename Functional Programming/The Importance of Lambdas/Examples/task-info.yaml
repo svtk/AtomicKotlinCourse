@@ -1,0 +1,18 @@
+type: theory
+files:
+- name: src/FilterEven.kt
+  visible: true
+- name: src/GreaterThan2.kt
+  visible: true
+- name: src/Filter.kt
+  visible: true
+- name: src/StoringLambda.kt
+  visible: true
+- name: src/Closures.kt
+  visible: true
+- name: src/Closures2.kt
+  visible: true
+- name: src/Closures3.kt
+  visible: true
+- name: src/Sum.kt
+  visible: true

@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/MultiplyByTwo.kt
+  visible: true
+- name: src/SayHello.kt
+  visible: true
+- name: src/MultiplyByThree.kt
+  visible: true
+- name: src/MultiplyByFour.kt
+  visible: true

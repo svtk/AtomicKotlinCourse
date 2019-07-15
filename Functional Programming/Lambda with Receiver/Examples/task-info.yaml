@@ -1,0 +1,14 @@
+type: theory
+files:
+- name: src/StringBuilder.kt
+  visible: true
+- name: src/RegularLambda.kt
+  visible: true
+- name: src/BuildString.kt
+  visible: true
+- name: src/BuildStringAndThis.kt
+  visible: true
+- name: src/Extensions.kt
+  visible: true
+- name: src/Declarations.kt
+  visible: true

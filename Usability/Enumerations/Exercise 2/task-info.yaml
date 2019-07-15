@@ -1,0 +1,18 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 335
+    length: 165
+    placeholder_text: TODO()
+  - offset: 520
+    length: 25
+    placeholder_text: ""
+  - offset: 554
+    length: 168
+    placeholder_text: TODO()
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Enumerations+%2F+Exercise2

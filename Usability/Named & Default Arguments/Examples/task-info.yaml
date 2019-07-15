@@ -1,0 +1,18 @@
+type: theory
+files:
+- name: src/NamedArguments.kt
+  visible: true
+- name: src/ArgumentOrder.kt
+  visible: true
+- name: src/Color2.kt
+  visible: true
+- name: src/Color3.kt
+  visible: true
+- name: src/CreateString.kt
+  visible: true
+- name: src/Evaluation.kt
+  visible: true
+- name: src/CreateString2.kt
+  visible: true
+- name: src/TrimMargin.kt
+  visible: true

@@ -1,0 +1,18 @@
+type: theory
+files:
+- name: src/Lists.kt
+  visible: true
+- name: src/OutOfBounds.kt
+  visible: true
+- name: src/ListUsefulFunction.kt
+  visible: true
+- name: src/ParameterizedTypes.kt
+  visible: true
+- name: src/ParameterizedReturn.kt
+  visible: true
+- name: src/MutableList.kt
+  visible: true
+- name: src/MutListIsList.kt
+  visible: true
+- name: src/MultipleListRefs.kt
+  visible: true

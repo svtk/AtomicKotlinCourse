@@ -1,0 +1,21 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 40
+    length: 1
+    placeholder_text: 0
+  - offset: 61
+    length: 1
+    placeholder_text: 0
+  - offset: 85
+    length: 2
+    placeholder_text: 0
+  - offset: 108
+    length: 3
+    placeholder_text: 0.0
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Number+Types+%2F+Exercise1

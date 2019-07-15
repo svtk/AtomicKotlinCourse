@@ -1,0 +1,6 @@
+type: theory
+files:
+- name: src/EmptyProgram.kt
+  visible: true
+- name: src/HelloWorld.kt
+  visible: true

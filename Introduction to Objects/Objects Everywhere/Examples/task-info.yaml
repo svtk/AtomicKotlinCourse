@@ -1,0 +1,12 @@
+type: theory
+files:
+- name: src/IntRanges.kt
+  visible: true
+- name: src/RangeSum.kt
+  visible: true
+- name: src/Strings.kt
+  visible: true
+- name: src/Conversion.kt
+  visible: true
+- name: src/NumberConversions.kt
+  visible: true

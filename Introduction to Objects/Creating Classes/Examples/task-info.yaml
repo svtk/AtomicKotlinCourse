@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/Animals.kt
+  visible: true
+- name: src/Dog.kt
+  visible: true
+- name: src/Cat.kt
+  visible: true
+- name: src/Hamster.kt
+  visible: true

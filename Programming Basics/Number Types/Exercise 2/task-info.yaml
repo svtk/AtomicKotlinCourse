@@ -1,0 +1,27 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 98
+    length: 13
+    placeholder_text: 0
+  - offset: 138
+    length: 5
+    placeholder_text: TODO()
+  - offset: 160
+    length: 17
+    placeholder_text: 0
+  - offset: 205
+    length: 6
+    placeholder_text: TODO()
+  - offset: 231
+    length: 25
+    placeholder_text: 0
+  - offset: 287
+    length: 6
+    placeholder_text: TODO()
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Number+Types+%2F+Exercise2

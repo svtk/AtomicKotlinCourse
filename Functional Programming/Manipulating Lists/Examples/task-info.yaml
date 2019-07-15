@@ -1,0 +1,14 @@
+type: theory
+files:
+- name: src/Zipper.kt
+  visible: true
+- name: src/ZipAndTransform.kt
+  visible: true
+- name: src/ZippingWithNext.kt
+  visible: true
+- name: src/Flatten.kt
+  visible: true
+- name: src/FlattenAndFlatMap.kt
+  visible: true
+- name: src/WhyFlatMap.kt
+  visible: true

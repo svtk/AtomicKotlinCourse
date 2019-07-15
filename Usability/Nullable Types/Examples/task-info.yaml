@@ -1,0 +1,12 @@
+type: theory
+files:
+- name: src/NullInMaps.kt
+  visible: true
+- name: src/NullableTypes.kt
+  visible: true
+- name: src/NullableInMap.kt
+  visible: true
+- name: src/Dereference.kt
+  visible: true
+- name: src/ExplicitCheck.kt
+  visible: true

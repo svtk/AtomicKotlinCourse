@@ -1,0 +1,14 @@
+type: theory
+files:
+- name: src/ListOf.kt
+  visible: true
+- name: src/VariableArgLists.kt
+  visible: true
+- name: src/VarargSum.kt
+  visible: true
+- name: src/VarargLikeList.kt
+  visible: true
+- name: src/SpreadOperator.kt
+  visible: true
+- name: src/TwoFunctionsWithVarargs.kt
+  visible: true

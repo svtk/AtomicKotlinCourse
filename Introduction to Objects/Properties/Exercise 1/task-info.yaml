@@ -1,0 +1,27 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 39
+    length: 23
+    placeholder_text: /*TODO*/
+  - offset: 102
+    length: 10
+    placeholder_text: TODO()
+  - offset: 157
+    length: 10
+    placeholder_text: TODO()
+  - offset: 212
+    length: 10
+    placeholder_text: TODO()
+  - offset: 265
+    length: 10
+    placeholder_text: TODO()
+  - offset: 315
+    length: 9
+    placeholder_text: TODO()
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Properties+%2F+Exercise1

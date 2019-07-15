@@ -1,0 +1,22 @@
+type: theory
+files:
+- name: src/RepeatThreeTimes.kt
+  visible: true
+- name: src/DefiningRanges.kt
+  visible: true
+- name: src/SumUsingRange.kt
+  visible: true
+- name: src/ForWithRanges.kt
+  visible: true
+- name: src/ForWithCharRange.kt
+  visible: true
+- name: src/IndexIntoString.kt
+  visible: true
+- name: src/AddingIntToChar.kt
+  visible: true
+- name: src/IterateOverString.kt
+  visible: true
+- name: src/HasChar.kt
+  visible: true
+- name: src/Repeat.kt
+  visible: true

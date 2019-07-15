@@ -1,0 +1,18 @@
+type: theory
+files:
+- name: src/SimpleOperation.kt
+  visible: true
+- name: src/FunctionTypeExamples.kt
+  visible: true
+- name: src/AnyFunImplementation.kt
+  visible: true
+- name: src/RepeatByInt.kt
+  visible: true
+- name: src/RepeatVerbose.kt
+  visible: true
+- name: src/DefiningRepeat.kt
+  visible: true
+- name: src/NullableReturnType.kt
+  visible: true
+- name: src/NullableFunctionType.kt
+  visible: true

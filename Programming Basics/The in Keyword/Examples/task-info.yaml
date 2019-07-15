@@ -1,0 +1,16 @@
+type: theory
+files:
+- name: src/MembershipInRange.kt
+  visible: true
+- name: src/MembershipUsingBounds.kt
+  visible: true
+- name: src/IterationVsMembership.kt
+  visible: true
+- name: src/InString.kt
+  visible: true
+- name: src/CharRange.kt
+  visible: true
+- name: src/FloatingPointRange.kt
+  visible: true
+- name: src/StringRange.kt
+  visible: true

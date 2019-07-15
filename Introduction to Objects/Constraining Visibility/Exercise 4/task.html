@@ -1,0 +1,12 @@
+<h2 style="text-align: center;">Mastering the IDE: Extract Function</h2><p>IntelliJ Idea allows you to extract repetitive code into a function. Select the
+following code in the body of the first function:</p><pre><code>if (x &lt;= 0) {
+    println("Incorrect input: $x should be positive")
+    return
+}
+</code></pre><p>Type the <span class="control"><code>Extract Function</code></span> action,
+or use the shortcut <span class="shortcut">&amp;shortcut:ExtractMethod;</span>, 
+or click on the main menu to choose
+<span class="control"><code>Refactor | Extract | Function</code></span>. 
+Type the new function name <code>checkArgument</code> and press
+<span class="shortcut">&amp;shortcut:EditorEnter;</span>.</p><p>Agree to <span class="control"><code>Process Duplicates</code></span>, so that the second 
+occurrence of the same piece of code was also extracted.</p>

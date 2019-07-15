@@ -1,0 +1,15 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 55
+    length: 49
+    placeholder_text: 'fun <T> List<T>.secondOrNull(): T? = TODO()'
+  - offset: 106
+    length: 61
+    placeholder_text: 'fun <T> List<T>.penultimateOrNull(): T? = TODO()'
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Introduction+to+Generics+%2F+Exercise1

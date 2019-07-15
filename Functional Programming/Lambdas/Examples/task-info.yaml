@@ -1,0 +1,24 @@
+type: theory
+files:
+- name: src/BasicLambda.kt
+  visible: true
+- name: src/LambdaTypeInference.kt
+  visible: true
+- name: src/LambdaIt.kt
+  visible: true
+- name: src/Mapping.kt
+  visible: true
+- name: src/OmittingParentheses.kt
+  visible: true
+- name: src/JoinToString.kt
+  visible: true
+- name: src/LambdaAndNamedArgs.kt
+  visible: true
+- name: src/TwoArgLambda.kt
+  visible: true
+- name: src/Underscore.kt
+  visible: true
+- name: src/ListIndicesMap.kt
+  visible: true
+- name: src/ZeroArguments.kt
+  visible: true
