@@ -1,0 +1,35 @@
+type: edu
+files:
+- name: src/GameElements.kt
+  visible: true
+  placeholders:
+  - offset: 491
+    length: 45
+    placeholder_text: |-
+      GameElement {
+
+          override val symbol = '#'
+
+          override val preventMovement = true
+
+          override fun interact(maze: Maze, sameCellElements: Set<GameElement>) {
+              // Default implementation: do nothing
+          }
+      }
+  - offset: 551
+    length: 46
+    placeholder_text: |-
+      GameElement {
+
+          override val symbol = '.'
+
+          override val preventMovement = false
+
+          override fun interact(maze: Maze, sameCellElements: Set<GameElement>) {
+              // Default implementation: do nothing
+          }
+      }
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Object-Oriented+Programming+%2F+Base+Class+Initialization+%2F+Exercise1

@@ -1,0 +1,24 @@
+package `064_Secondary_Constructors`.Exercise1
+
+import atomictest.eq
+import `064_Secondary_Constructors`.Exercise1.Material.*
+
+enum class Material {
+  Ceramic, Metal, Plastic
+}
+
+class GardenItem(
+        val name: String = "Strange Thing",
+        val material: Material = Plastic
+) {
+  override fun toString() = "$material $name"
+}
+
+fun main(args: Array<String>) {
+  GardenItem("Snowman") eq "Plastic Snowman"
+  GardenItem("Elf") eq "Plastic Elf"
+  GardenItem("Gazing Ball", Metal) eq
+    "Metal Gazing Ball"
+  GardenItem(material = Metal) eq
+    "Metal Strange Thing"
+}

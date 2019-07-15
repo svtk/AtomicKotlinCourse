@@ -1,0 +1,6 @@
+type: theory
+files:
+- name: src/RegularClasses.kt
+  visible: true
+- name: src/SealedClasses.kt
+  visible: true

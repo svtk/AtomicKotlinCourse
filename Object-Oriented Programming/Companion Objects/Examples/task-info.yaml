@@ -1,0 +1,14 @@
+type: theory
+files:
+- name: src/CompanionObject.kt
+  visible: true
+- name: src/NamedCompanionObject.kt
+  visible: true
+- name: src/ObjectProperty.kt
+  visible: true
+- name: src/ObjectFunctions.kt
+  visible: true
+- name: src/ObjectCounter.kt
+  visible: true
+- name: src/CompanionFactory.kt
+  visible: true

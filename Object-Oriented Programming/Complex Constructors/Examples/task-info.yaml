@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/Bear.kt
+  visible: true
+- name: src/SimpleConstructor.kt
+  visible: true
+- name: src/InitSection.kt
+  visible: true
+- name: src/GameMatrix.kt
+  visible: true

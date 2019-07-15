@@ -1,0 +1,14 @@
+type: theory
+files:
+- name: src/House1.kt
+  visible: true
+- name: src/House2.kt
+  visible: true
+- name: src/House3.kt
+  visible: true
+- name: src/InheritanceEffects.kt
+  visible: true
+- name: src/MazeComposition.kt
+  visible: true
+- name: src/OneClass.kt
+  visible: true

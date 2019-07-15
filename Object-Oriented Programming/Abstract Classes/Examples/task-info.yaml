@@ -1,0 +1,22 @@
+type: theory
+files:
+- name: src/AbstractKeyword.kt
+  visible: true
+- name: src/Redundant.kt
+  visible: true
+- name: src/StateOfAClass.kt
+  visible: true
+- name: src/NoStateInInterfaces.kt
+  visible: true
+- name: src/NoMultipleInheritance.kt
+  visible: true
+- name: src/MultipleInterfaceInheritance.kt
+  visible: true
+- name: src/InterfaceCollision.kt
+  visible: true
+- name: src/Gadget.kt
+  visible: true
+- name: src/GameElements.kt
+  visible: true
+- name: src/MobileElement.kt
+  visible: true

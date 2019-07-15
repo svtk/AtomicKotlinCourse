@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/SpaceShipControls.kt
+  visible: true
+- name: src/ExplicitDelegation.kt
+  visible: true
+- name: src/DelegatedControls.kt
+  visible: true
+- name: src/ModelingMI.kt
+  visible: true
