@@ -17,4 +17,4 @@ Press <span class="control">`EditorEnter`</span> or click the
 <span class="control">`Refactor`</span> button.
 Note how the callers change: the default value is used for all the callers.
 Now add the same parameter to the `bar` function without specifying
-the default value this time. 
+the default value this time.

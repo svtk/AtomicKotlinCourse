@@ -23,4 +23,4 @@ Select the three lines specifying the map contents and switch to the
 Note that you now have several carets. 
 Try to navigate to the beginning of a line, to the end of a line, or to the end
 of the word to see how these operations are applied to all the carets in all 
-lines. 
+lines.

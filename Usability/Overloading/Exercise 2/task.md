@@ -12,4 +12,4 @@ by pressing the corresponding number on the keyboard.
 which ways to refactor code are available. 
 
 Extract the value `373` inside `f` function implementation to a parameter
-by calling <span class="control">`Refactor this`</span>. 
+by calling <span class="control">`Refactor this`</span>.

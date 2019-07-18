@@ -1,3 +1,3 @@
 ## Manipulating Lists (#6)
 
-Implement `flatten()` using `flatMap()`. 
+Implement `flatten()` using `flatMap()`.

@@ -8,4 +8,4 @@ After the lesson a student can rate it, and these ratings are stored together
 with the other information about the lesson.   
 
 Your first task is to find all the common lessons for a given student and 
-instructor.   
+instructor.

@@ -12,4 +12,4 @@ and `isPerfect` as top-level function. Note that we have this inconsistency
 only to illustrate different types of member references.
 
 You task is to complete the implementations, and pass the corresponding
-property or function reference to different filter invocations in `main`. 
+property or function reference to different filter invocations in `main`.

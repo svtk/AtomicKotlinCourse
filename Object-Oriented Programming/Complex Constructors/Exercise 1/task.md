@@ -9,5 +9,4 @@ For a start, you can reuse the implementation given in book text.
 Note, however, that only one element is stored in a cell there, and in a real
 game several elements can be stored in one cell. Also, the maze representation
 with empty cells at the end of lines isn't supported in the implementation
-in the book. Fix this problem. 
-  
+in the book. Fix this problem.
