@@ -4,9 +4,9 @@ files:
   visible: true
 - name: src/SmartCast.kt
   visible: true
-- name: src/JDog.java
+- name: src/casting/JDog.java
   visible: true
-- name: src/MoreWork.java
+- name: src/casting/MoreWork.java
   visible: true
 - name: src/WhenAndCasting.kt
   visible: true
