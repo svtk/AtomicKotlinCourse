@@ -1,3 +1,3 @@
-## Abstract Classes
+## Objects
 
 Examples accompanying the atom.

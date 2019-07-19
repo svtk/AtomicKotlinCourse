@@ -1,3 +1,3 @@
-## Abstract Classes
+## Companion Objects
 
 Examples accompanying the atom.

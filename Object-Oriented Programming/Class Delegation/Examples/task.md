@@ -1,3 +1,3 @@
-## Abstract Classes
+## Class Delegation
 
 Examples accompanying the atom.
