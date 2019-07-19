@@ -14,6 +14,7 @@ class Bomb(
         val bombPosition = maze.position(this) ?: return
         maze.all().forEach { element ->
             val position = maze.position(element)
+            // TODO: Should or shouldn't?.. (see test)
             if (position != null &&
                     isCloseToBomb(position, bombPosition)){ // &&
 //                    element !is Wall) {
