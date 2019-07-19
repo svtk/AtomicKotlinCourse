@@ -3,13 +3,14 @@ content:
 - Complex Constructors
 - Secondary Constructors
 - Inheritance
+- Composition
 - Base Class Initialization
 - Abstract Classes
 - Dynamic Binding
-- Composition
+- Polymorphism
+- Casting
+- Sealed Classes
 - Objects
 - Companion Objects
 - Class Delegation
-- Sealed Classes
-- Smart Casts
-- Upcasting & Polymorphism
+- Inner & Nested Classes

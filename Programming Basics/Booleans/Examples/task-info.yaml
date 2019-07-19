@@ -1,10 +1,10 @@
 type: theory
 files:
-- name: src/Booleans1.kt
+- name: src/Open1.kt
   visible: true
-- name: src/Booleans2.kt
+- name: src/Open2.kt
   visible: true
-- name: src/Booleans3.kt
+- name: src/Closed.kt
   visible: true
 - name: src/EvaluationOrder.kt
   visible: true

@@ -2,7 +2,7 @@ type: theory
 files:
 - name: src/ListOf.kt
   visible: true
-- name: src/VariableArgLists.kt
+- name: src/VariableArgList.kt
   visible: true
 - name: src/VarargSum.kt
   visible: true
@@ -11,4 +11,8 @@ files:
 - name: src/SpreadOperator.kt
   visible: true
 - name: src/TwoFunctionsWithVarargs.kt
+  visible: true
+- name: src/MainArgs.kt
+  visible: true
+- name: src/MainArgConversion.kt
   visible: true

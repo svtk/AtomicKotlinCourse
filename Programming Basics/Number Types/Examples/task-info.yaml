@@ -10,9 +10,9 @@ files:
   visible: true
 - name: src/OpOrderParens.kt
   visible: true
-- name: src/BMI.kt
+- name: src/BMIMetric.kt
   visible: true
-- name: src/IntegerMath.kt
+- name: src/BMIEnglish.kt
   visible: true
 - name: src/IntegerOverflow.kt
   visible: true

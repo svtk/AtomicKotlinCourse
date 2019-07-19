@@ -1,3 +1,3 @@
-## Objects
+## Polymorphism
 
 Examples accompanying the atom.

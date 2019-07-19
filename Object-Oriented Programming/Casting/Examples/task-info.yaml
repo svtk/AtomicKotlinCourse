@@ -2,11 +2,15 @@ type: theory
 files:
 - name: src/HumanAlice.kt
   visible: true
-- name: src/SmartCasts.kt
+- name: src/SmartCast.kt
   visible: true
 - name: src/JDog.java
   visible: true
 - name: src/MoreWork.java
   visible: true
-- name: src/WhenAndSmartCasts.kt
+- name: src/WhenAndCasting.kt
+  visible: true
+- name: src/Unsafe.kt
+  visible: true
+- name: src/Safe.kt
   visible: true

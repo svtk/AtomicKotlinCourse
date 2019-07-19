@@ -10,3 +10,5 @@ files:
   visible: true
 - name: src/ExplicitCheck.kt
   visible: true
+- name: src/Amphibian.kt
+  visible: true
