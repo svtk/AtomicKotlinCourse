@@ -1,4 +1,4 @@
-## Nullable Types (#1)
+## Nullable Types (#2)
 
 Implement the `countHexadecimalCodes` function which counts the number 
 of times a hexadecimal code occurs in the `codes` list.

@@ -1,7 +1,7 @@
 ## Number Types (#1)
 
-Make sure you understand how arithmetical operations work. Write down your
-answers to the following expressions and then check yourself using Kotlin:
+Guess the results of the following expressions and then check yourself using
+Kotlin:
 
 ```kotlin
 val a = 11 / 3

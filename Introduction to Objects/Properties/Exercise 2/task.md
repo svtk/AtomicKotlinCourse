@@ -1,4 +1,4 @@
-## Properties (#1)
+## Properties (#2)
 
 Now the field the robot can move in is constrained in size to `100 x 100`, but
 at the borders of the field the robot teleports: if the robot is in the cell

@@ -1,4 +1,4 @@
 ## The `in` Keyword (#2)
 
-Rewrite the function that sums only even numbers up to a given number using
-`step`.
+Use `step` to rewrite the function that sums only even numbers up to a given
+number.

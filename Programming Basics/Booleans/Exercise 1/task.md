@@ -1,7 +1,7 @@
 ## Booleans (#1)
 
-Write down your guesses to the answers for the following boolean expressions
-and then check yourself using Kotlin:
+Guess the answers for the following boolean expressions and then check yourself
+using Kotlin:
 
 ```kotlin
 val a = (178 +  131 > 209 + 99) && false

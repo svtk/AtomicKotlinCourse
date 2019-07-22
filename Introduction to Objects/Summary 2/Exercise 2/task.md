@@ -1,4 +1,4 @@
-## Summary 2 (#1)
+## Summary 2 (#2)
 
 Convert from a number in the Roman numeral system into a natural number.
 

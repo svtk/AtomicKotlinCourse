@@ -10,5 +10,6 @@ Kotlin!
 
 Try replacing `println()` with `print()` and see what changes.
 
-Note that tests for all the following tasks assume that you use `println()`,
-not `print()`,  as a default way to display the data on the console.
+Note that tests for all following exercises in this book assume that you use
+`println()`, not `print()`, as a default way to display the data on the
+console.

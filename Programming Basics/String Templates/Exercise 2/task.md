@@ -1,6 +1,6 @@
 ## String Templates (#2)
 
-Implement the `record()` function that constructs a string in a form:
+Implement a `record()` function that returns a string in the form:
 ```index. [status] message```
 
-It should add a line break at the end of the string.
+`record()` should add a line break at the end of the string.
