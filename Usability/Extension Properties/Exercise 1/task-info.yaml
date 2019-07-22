@@ -3,26 +3,12 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 52
-    length: 57
-    placeholder_text: 'val <T> List<T>.secondOrNull: T? get() = null'
-    dependency:
-      section: Usability
-      lesson: Introduction to Generics
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 1
-      is_visible: true
-  - offset: 111
-    length: 74
-    placeholder_text: 'val <T> List<T>.penultimateOrNull: T? get() = null'
-    dependency:
-      section: Usability
-      lesson: Introduction to Generics
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 2
-      is_visible: true
+  - offset: 95
+    length: 12
+    placeholder_text: TODO()
+  - offset: 157
+    length: 24
+    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false
 feedback_link: |

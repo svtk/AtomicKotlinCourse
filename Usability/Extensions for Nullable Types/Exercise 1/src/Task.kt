@@ -6,7 +6,7 @@ fun String?.orEmpty(): String = if (this != null) this else ""
 
 fun main() {
 
-    null.orEmpty() eq ""
+  null.orEmpty() eq ""
 
-    "abc".orEmpty() eq "abc"
+  "abc".orEmpty() eq "abc"
 }

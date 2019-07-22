@@ -3,18 +3,8 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 61
-    length: 81
-    placeholder_text: TODO()
-    dependency:
-      section: Programming Basics
-      lesson: Looping & Ranges
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 1
-      is_visible: true
-  - offset: 186
-    length: 92
+  - offset: 172
+    length: 82
     placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false

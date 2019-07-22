@@ -8,8 +8,8 @@ enum class Material {
 }
 
 class GardenItem(
-        val name: String = "Strange Thing",
-        val material: Material = Plastic
+    val name: String = "Strange Thing",
+    val material: Material = Plastic
 ) {
   override fun toString() = "$material $name"
 }
@@ -18,7 +18,7 @@ fun main() {
   GardenItem("Snowman") eq "Plastic Snowman"
   GardenItem("Elf") eq "Plastic Elf"
   GardenItem("Gazing Ball", Metal) eq
-    "Metal Gazing Ball"
+      "Metal Gazing Ball"
   GardenItem(material = Metal) eq
-    "Metal Strange Thing"
+      "Metal Strange Thing"
 }

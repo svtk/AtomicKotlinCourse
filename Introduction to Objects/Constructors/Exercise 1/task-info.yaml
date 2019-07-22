@@ -3,69 +3,13 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 35
-    length: 42
-    placeholder_text: /*TODO*/
-  - offset: 81
-    length: 220
-    placeholder_text: ""
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 2
-      file: src/Task.kt
-      placeholder: 1
-      is_visible: true
-  - offset: 345
-    length: 39
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 2
-      file: src/Task.kt
-      placeholder: 2
-      is_visible: true
-  - offset: 429
-    length: 39
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 2
-      file: src/Task.kt
-      placeholder: 3
-      is_visible: true
-  - offset: 513
-    length: 39
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 2
-      file: src/Task.kt
-      placeholder: 4
-      is_visible: true
-  - offset: 595
-    length: 39
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 2
-      file: src/Task.kt
-      placeholder: 5
-      is_visible: true
-  - offset: 674
-    length: 9
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 2
-      file: src/Task.kt
-      placeholder: 6
-      is_visible: true
+  - offset: 34
+    length: 46
+    placeholder_text: |2-
+       {
+        var x = 0
+        var y = 0
+        val fieldSize = 100
 - name: test/Tests.kt
   visible: false
 feedback_link: |

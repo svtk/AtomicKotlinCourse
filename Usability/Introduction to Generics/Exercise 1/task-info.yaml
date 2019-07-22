@@ -3,12 +3,12 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 55
-    length: 49
-    placeholder_text: 'fun <T> List<T>.secondOrNull(): T? = TODO()'
-  - offset: 106
-    length: 61
-    placeholder_text: 'fun <T> List<T>.penultimateOrNull(): T? = TODO()'
+  - offset: 92
+    length: 12
+    placeholder_text: TODO()
+  - offset: 148
+    length: 19
+    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false
 feedback_link: |

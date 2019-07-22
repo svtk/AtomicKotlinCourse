@@ -3,40 +3,39 @@ package propertyAccessors1
 import atomictest.eq
 
 class Hamster(val name: String) {
-    override fun toString(): String {
-        return "Hamster('$name')"
-    }
+  override fun toString(): String {
+    return "Hamster('$name')"
+  }
 }
 
 class Cage(private val maxCapacity: Int) {
-    private val hamsters =
-            mutableListOf<Hamster>()
+  private val hamsters =
+      mutableListOf<Hamster>()
 
-    val capacity: Int
-        get() = maxCapacity - hamsters.size
+  val capacity: Int
+    get() = maxCapacity - hamsters.size
 
-    val isFull: Boolean
-        get() = hamsters.size == maxCapacity
+  val isFull: Boolean
+    get() = hamsters.size == maxCapacity
 
-    val isEmpty: Boolean
-        get() = hamsters.isEmpty()
+  val isEmpty: Boolean
+    get() = hamsters.isEmpty()
 
-    fun put(hamster: Hamster): Boolean =
-            if(isFull)
-                false
-            else {
-                hamsters += hamster
-                true
-            }
+  fun put(hamster: Hamster): Boolean =
+      if (isFull)
+        false
+      else {
+        hamsters += hamster
+        true
+      }
 
-    fun takeHamster(): Hamster =
-            hamsters.removeAt(0)
+  fun takeHamster(): Hamster =
+      hamsters.removeAt(0)
 }
 
-/*
 fun main() {
     val cage = Cage(2)
-    cage.isEmpty eq true
+    // cage.isEmpty eq true
     cage.put(Hamster("Alice"))
-    cage.isEmpty eq false
-}*/
+    // cage.isEmpty eq false
+}

@@ -6,9 +6,9 @@ is stored as a pair of coordinates `(x, y)`, where `(0, 0)` is the top-left
 corner:
 
 ```
-(x,y)
-(0,0) (1,0)
-(0,1) (1,1)
+(x, y)
+(0, 0) (1, 0)
+(0, 1) (1, 1)
 ```
 
 Going right increases `x` coordinate, going down increases `y` coordinate,

@@ -1,37 +1,37 @@
 package constructors1
 
 class Robot(val fieldSize: Int, var x: Int, var y: Int) {
-    fun crossBoundary(coordinate: Int): Int {
-        val inBounds = coordinate % fieldSize
-        return if (inBounds < 0) {
-           fieldSize + inBounds
-        }
-        else {
-            inBounds
-        }
-    }
 
-    fun goRight(steps: Int) {
-        x += steps
-        x = crossBoundary(x)
+  fun crossBoundary(coordinate: Int): Int {
+    val inBounds = coordinate % fieldSize
+    return if (inBounds < 0) {
+      fieldSize + inBounds
+    } else {
+      inBounds
     }
+  }
 
-    fun goLeft(steps: Int) {
-        x -= steps
-        x = crossBoundary(x)
-    }
+  fun goRight(steps: Int) {
+    x += steps
+    x = crossBoundary(x)
+  }
 
-    fun goDown(steps: Int) {
-        y += steps
-        y = crossBoundary(y)
-    }
+  fun goLeft(steps: Int) {
+    x -= steps
+    x = crossBoundary(x)
+  }
 
-    fun goUp(steps: Int) {
-        y -= steps
-        y = crossBoundary(y)
-    }
+  fun goDown(steps: Int) {
+    y += steps
+    y = crossBoundary(y)
+  }
 
-    fun getLocation(): String = "($x,$y)"
+  fun goUp(steps: Int) {
+    y -= steps
+    y = crossBoundary(y)
+  }
+
+  fun getLocation(): String = "($x, $y)"
 }
 
 /*
@@ -45,7 +45,7 @@ fun main() {
 }
 */
 /* Output:
-(1,1)
-(1,9)
-(1,9)
+(1, 1)
+(1, 9)
+(1, 9)
 */

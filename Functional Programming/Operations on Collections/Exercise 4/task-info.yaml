@@ -5,25 +5,25 @@ files:
   placeholders:
   - offset: 131
     length: 0
-    placeholder_text: "/*?*/"
+    placeholder_text: /*?*/
   - offset: 138
     length: 7
     placeholder_text: TODO()
   - offset: 178
     length: 1
-    placeholder_text: "/*?*/"
+    placeholder_text: /*?*/
   - offset: 185
     length: 7
     placeholder_text: TODO()
   - offset: 266
     length: 1
-    placeholder_text: "/*?*/"
+    placeholder_text: /*?*/
   - offset: 274
     length: 7
     placeholder_text: TODO()
   - offset: 311
     length: 0
-    placeholder_text: "/*?*/"
+    placeholder_text: /*?*/
   - offset: 317
     length: 7
     placeholder_text: TODO()

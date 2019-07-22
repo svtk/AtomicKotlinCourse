@@ -3,16 +3,9 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 227
-    length: 143
+  - offset: 225
+    length: 141
     placeholder_text: TODO()
-    dependency:
-      section: Usability
-      lesson: Data Classes
-      task: Exercise 2
-      file: src/Task.kt
-      placeholder: 1
-      is_visible: true
 - name: test/Tests.kt
   visible: false
 feedback_link: |

@@ -1,9 +1,9 @@
 package functions4
 
 fun foo(): String {
-    return "abc"
+  return "abc"
 }
 
 fun main() {
-    println(foo())
+  println(foo())
 }

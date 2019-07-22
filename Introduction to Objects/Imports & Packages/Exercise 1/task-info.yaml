@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 138
+    length: 136
     placeholder_text: /*TODO*/
 - name: src/Main.kt
   visible: true

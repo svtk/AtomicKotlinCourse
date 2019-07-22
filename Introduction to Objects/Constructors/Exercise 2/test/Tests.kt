@@ -40,7 +40,7 @@ class TestRobotToString {
         robotHandler.movements()
         val actualString = robotHandler.robot.toString()
         val message = if (robotHandler.loggedMovements.isEmpty()) {
-            "Initial location of the robot should be ($x,$y)"
+            "Initial location of the robot should be ($x, $y)"
         } else {
             "Starting location: ($x, $y), field size: $fieldSize.\n" +
                     "Wrong location after:\n" + robotHandler.loggedMovements
@@ -49,20 +49,18 @@ class TestRobotToString {
     }
 
     @Test
-    fun test1Initial() = testMovements("Robot(x=2,y=3)", 10, 2, 3) {}
+    fun test1Initial() = testMovements("Robot(x=2, y=3)", 10, 2, 3) {}
 
     @Test
-    fun test2Right() = testMovements("Robot(x=3,y=3)", 10, 2, 3) {
+    fun test2Right() = testMovements("Robot(x=3, y=3)", 10, 2, 3) {
         goRight(1)
     }
 
     @Test
-    fun test3Circle() = testMovements("Robot(x=2,y=3)", 10, 2, 3) {
+    fun test3Circle() = testMovements("Robot(x=2, y=3)", 10, 2, 3) {
         goRight(10)
         goLeft(10)
         goDown(10)
         goUp(10)
     }
 }
-
-fun Robot(vararg a: Any?): Robot = TODO()

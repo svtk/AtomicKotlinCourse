@@ -3,29 +3,9 @@ files:
 - name: src/GameMatrix.kt
   visible: true
   placeholders:
-  - offset: 519
-    length: 349
+  - offset: 487
+    length: 287
     placeholder_text: TODO()
-  - offset: 1027
-    length: 29
-    placeholder_text: TODO()
-    dependency:
-      section: Object-Oriented Programming
-      lesson: Interfaces
-      task: Exercise 1
-      file: src/GameMatrix.kt
-      placeholder: 1
-      is_visible: true
-  - offset: 1140
-    length: 29
-    placeholder_text: TODO()
-    dependency:
-      section: Object-Oriented Programming
-      lesson: Interfaces
-      task: Exercise 1
-      file: src/GameMatrix.kt
-      placeholder: 2
-      is_visible: true
 - name: src/GameElements.kt
   visible: true
 - name: test/Tests.kt

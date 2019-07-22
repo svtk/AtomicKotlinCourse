@@ -3,66 +3,23 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 35
-    length: 273
-    placeholder_text: '    /*TODO*/'
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 1
-      is_visible: true
-  - offset: 352
-    length: 39
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 2
-      is_visible: true
-  - offset: 436
-    length: 39
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 3
-      is_visible: true
-  - offset: 520
-    length: 39
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 4
-      is_visible: true
-  - offset: 602
-    length: 39
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 5
-      is_visible: true
-  - offset: 681
-    length: 9
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Properties
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 6
-      is_visible: true
+  - offset: 37
+    length: 226
+    placeholder_text: |-
+      var x = 0
+        var y = 0
+  - offset: 297
+    length: 35
+    placeholder_text: x += steps
+  - offset: 369
+    length: 35
+    placeholder_text: x -= steps
+  - offset: 441
+    length: 35
+    placeholder_text: y += steps
+  - offset: 511
+    length: 35
+    placeholder_text: y -= steps
 - name: test/Tests.kt
   visible: false
 feedback_link: |

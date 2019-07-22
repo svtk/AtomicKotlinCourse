@@ -3,18 +3,8 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 70
-    length: 46
-    placeholder_text: TODO()
-    dependency:
-      section: Programming Basics
-      lesson: if Expressions
-      task: Exercise 3
-      file: src/Task.kt
-      placeholder: 1
-      is_visible: true
-  - offset: 174
-    length: 95
+  - offset: 163
+    length: 89
     placeholder_text: TODO()
 - name: test/output.txt
   visible: false

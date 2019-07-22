@@ -39,7 +39,7 @@ class TestRobotIntro {
         robotHandler.movements()
         val actualLocation = robotHandler.robot.getLocation()
         val message = if (robotHandler.loggedMovements.isEmpty()) {
-            "Initial location of the robot should be (0,0)"
+            "Initial location of the robot should be (0, 0)"
         } else {
             "Wrong location after:\n" + robotHandler.loggedMovements
         }
@@ -47,38 +47,38 @@ class TestRobotIntro {
     }
 
     @Test
-    fun test1Initial() = testMovements("(0,0)") {}
+    fun test1Initial() = testMovements("(0, 0)") {}
 
     @Test
-    fun test2Right() = testMovements("(1,0)") {
+    fun test2Right() = testMovements("(1, 0)") {
         goRight(1)
     }
 
     @Test
-    fun test3Left() = testMovements("(1,0)") {
+    fun test3Left() = testMovements("(1, 0)") {
         goRight(2)
         goLeft(1)
     }
 
     @Test
-    fun test4Down() = testMovements("(0,1)") {
+    fun test4Down() = testMovements("(0, 1)") {
         goDown(1)
     }
 
     @Test
-    fun test5Up() = testMovements("(0,1)") {
+    fun test5Up() = testMovements("(0, 1)") {
         goDown(2)
         goUp(1)
     }
 
     @Test
-    fun test6SeveralSteps() = testMovements("(3,5)") {
+    fun test6SeveralSteps() = testMovements("(3, 5)") {
         goRight(3)
         goDown(5)
     }
 
     @Test
-    fun test7SeveralSteps2() = testMovements("(10,10)") {
+    fun test7SeveralSteps2() = testMovements("(10, 10)") {
         goRight(13)
         goDown(15)
         goUp(5)

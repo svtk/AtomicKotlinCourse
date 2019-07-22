@@ -3,8 +3,8 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 84
-    length: 55
+  - offset: 80
+    length: 45
     placeholder_text: TODO("fold(0) { ??? }")
 - name: test/Tests.kt
   visible: false

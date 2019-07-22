@@ -1,3 +1,3 @@
 ## Constructors (#1)
 
-Make `fieldSize` and the initial coordinates the arguments of the `Robot` class.
+Transform `fieldSize` and the initial coordinates into the arguments of the `Robot` class.

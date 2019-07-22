@@ -3,28 +3,8 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 67
-    length: 17
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Objects Everywhere
-      task: Exercise 2
-      file: src/Task.kt
-      placeholder: 1
-      is_visible: true
-  - offset: 136
-    length: 29
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Objects Everywhere
-      task: Exercise 2
-      file: src/Task.kt
-      placeholder: 2
-      is_visible: true
-  - offset: 216
-    length: 170
+  - offset: 214
+    length: 150
     placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false

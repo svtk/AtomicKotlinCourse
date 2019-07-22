@@ -1,7 +1,7 @@
 ## Enumerations (#2)
 
 Implement two extension functions `Month.getAustralianSeason()` and `Month.getDays(leapYear: Boolean)`.
-The `leapYear` argument should have a default value `false`.
+Note that the `leapYear` argument has a default value `false`.
 
 In Australia, the seasons are defined by grouping the calendar months in the following way:
 

@@ -1,5 +1,5 @@
 package expressionsandStatements1
 
 fun main() {
-    println(println(1))
+  println(println(1))
 }

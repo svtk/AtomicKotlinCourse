@@ -1,17 +1,17 @@
 package sequences2
 
 fun School.getStudentInstructors(
-        student: Student
+    student: Student
 ): Set<Instructor> {
-    return lessons.filter {
-        student in it.students
-    }.mapTo(mutableSetOf()) { it.instructor }
+  return lessons.filter {
+    student in it.students
+  }.mapTo(mutableSetOf()) { it.instructor }
 }
 
 fun School.getStudentsOf(
-        instructor: Instructor
+    instructor: Instructor
 ): Set<Student> {
-    return lessons.filter {
-        instructor == it.instructor
-    }.flatMapTo(mutableSetOf()) { it.students.asSequence() }
+  return lessons.filter {
+    instructor == it.instructor
+  }.flatMapTo(mutableSetOf()) { it.students.asSequence() }
 }

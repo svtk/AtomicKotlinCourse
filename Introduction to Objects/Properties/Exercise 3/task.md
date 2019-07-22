@@ -1,6 +1,6 @@
 ## Mastering the IDE: Extract Property
 
-Check yourself: how many times did you use the constant `100` in the code for
+Think of how many times did you use the constant `100` in the code for
 the previous task? When you write the code, it's better to place  constants
 into `val`s, so they are easy to change if necessary. If the requirements
 change so that the field's size is `1000 x 1000`, it's error-prone to change

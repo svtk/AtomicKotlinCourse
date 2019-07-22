@@ -4,5 +4,5 @@ package stringTemplates3
 fun foo() = 1
 
 fun main() {
-    println(foo())
+  println(foo())
 }

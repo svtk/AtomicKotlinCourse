@@ -3,86 +3,29 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 45
-    length: 92
-    placeholder_text: /*TODO*/
-    dependency:
-      section: Introduction to Objects
-      lesson: Constraining Visibility
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 1
-      is_visible: true
-  - offset: 141
-    length: 447
+  - offset: 322
+    length: 194
     placeholder_text: ""
-    dependency:
-      section: Introduction to Objects
-      lesson: Constraining Visibility
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 2
-      is_visible: true
-  - offset: 632
-    length: 77
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Constraining Visibility
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 3
-      is_visible: true
-  - offset: 754
-    length: 77
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Constraining Visibility
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 4
-      is_visible: true
-  - offset: 876
-    length: 77
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Constraining Visibility
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 5
-      is_visible: true
-  - offset: 996
-    length: 77
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Constraining Visibility
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 6
-      is_visible: true
-  - offset: 1113
-    length: 9
-    placeholder_text: TODO()
-    dependency:
-      section: Introduction to Objects
-      lesson: Constraining Visibility
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 7
-      is_visible: true
-  - offset: 1128
-    length: 44
-    placeholder_text: /*TODO*/
-    dependency:
-      section: Introduction to Objects
-      lesson: Constraining Visibility
-      task: Exercise 1
-      file: src/Task.kt
-      placeholder: 8
-      is_visible: true
+  - offset: 550
+    length: 69
+    placeholder_text: |-
+      x += steps
+        x = crossBoundary(x)
+  - offset: 656
+    length: 69
+    placeholder_text: |-
+      x -= steps
+        x = crossBoundary(x)
+  - offset: 762
+    length: 69
+    placeholder_text: |-
+      y += steps
+        y = crossBoundary(y)
+  - offset: 866
+    length: 69
+    placeholder_text: |-
+      y -= steps
+        y = crossBoundary(y)
 - name: test/Tests.kt
   visible: false
 feedback_link: |

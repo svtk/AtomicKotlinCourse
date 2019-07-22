@@ -8,52 +8,10 @@ files:
     placeholder_text: TODO()
 - name: src/GameMatrix.kt
   visible: true
-  placeholders:
-  - offset: 571
-    length: 29
-    placeholder_text: TODO()
-    dependency:
-      section: Object-Oriented Programming
-      lesson: Interfaces
-      task: Exercise 1
-      file: src/GameMatrix.kt
-      placeholder: 1
-      is_visible: true
-  - offset: 684
-    length: 29
-    placeholder_text: TODO()
-    dependency:
-      section: Object-Oriented Programming
-      lesson: Interfaces
-      task: Exercise 1
-      file: src/GameMatrix.kt
-      placeholder: 2
-      is_visible: true
 - name: src/GameElements.kt
   visible: true
 - name: src/Maze.kt
   visible: true
-  placeholders:
-  - offset: 642
-    length: 349
-    placeholder_text: TODO()
-    dependency:
-      section: Object-Oriented Programming
-      lesson: Inheritance
-      task: Exercise 1
-      file: src/Maze.kt
-      placeholder: 1
-      is_visible: true
-  - offset: 1513
-    length: 125
-    placeholder_text: TODO()
-    dependency:
-      section: Object-Oriented Programming
-      lesson: Inheritance
-      task: Exercise 1
-      file: src/Maze.kt
-      placeholder: 2
-      is_visible: true
 - name: test/Tests.kt
   visible: false
 feedback_link: |

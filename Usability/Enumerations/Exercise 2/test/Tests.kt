@@ -33,8 +33,8 @@ class TestEnumerations {
 
     @Test fun test2Days() {
         for (month in Month.values()) {
-            Assert.assertEquals("Wrong days for $month:", month.expected(false), month.expected(false))
-            Assert.assertEquals("Wrong days for $month in a leap year:", month.expected(true), month.expected(true))
+            Assert.assertEquals("Wrong days for $month:", month.expected(false), month.getDays(false))
+            Assert.assertEquals("Wrong days for $month in a leap year:", month.expected(true), month.getDays(true))
         }
     }
 }
