@@ -1,0 +1,8 @@
+type: theory
+files:
+- name: src/LazySyntax.kt
+  visible: true
+- name: src/LazyInt.kt
+  visible: true
+- name: src/PropertyOptions.kt
+  visible: true

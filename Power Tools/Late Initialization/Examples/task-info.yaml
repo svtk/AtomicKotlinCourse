@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/Bag.kt
+  visible: true
+- name: src/Suitcase.kt
+  visible: true
+- name: src/BetterSuitcase.kt
+  visible: true
+- name: src/FaultySuitcase.kt
+  visible: true

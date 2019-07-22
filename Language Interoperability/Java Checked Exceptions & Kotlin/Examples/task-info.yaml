@@ -1,0 +1,12 @@
+type: theory
+files:
+- name: src/ExceptionHandling/JavaChecked.java
+  visible: true
+- name: src/KotlinChecked.kt
+  visible: true
+- name: src/AnnotateThrows.kt
+  visible: true
+- name: src/ExceptionHandling/CatchChecked.java
+  visible: true
+- name: src/WithCleanup.kt
+  visible: true

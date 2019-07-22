@@ -1,0 +1,6 @@
+type: theory
+files:
+- name: src/Team.kt
+  visible: true
+- name: src/TeamWithTraditions.kt
+  visible: true

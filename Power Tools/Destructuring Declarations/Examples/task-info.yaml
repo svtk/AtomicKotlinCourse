@@ -1,0 +1,12 @@
+type: theory
+files:
+- name: src/Pairs.kt
+  visible: true
+- name: src/PairDestructuring.kt
+  visible: true
+- name: src/Computation.kt
+  visible: true
+- name: src/Tuple.kt
+  visible: true
+- name: src/ForLoop.kt
+  visible: true

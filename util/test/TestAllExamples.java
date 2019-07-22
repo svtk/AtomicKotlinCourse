@@ -12,6 +12,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testVals() {
+        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Examples/src/Vals.kt", ValsKt::main);
+    }
+
+    @Test
     public void testVars() {
         testExample("../AtomicKotlinCourse/Programming Basics/var & val/Examples/src/Vars.kt", VarsKt::main);
     }
@@ -22,8 +27,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testVals() {
-        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Examples/src/Vals.kt", ValsKt::main);
+    public void testInference() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Data Types/Examples/src/Inference.kt", InferenceKt::main);
     }
 
     @Test
@@ -37,16 +42,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testInference() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Data Types/Examples/src/Inference.kt", InferenceKt::main);
-    }
-
-    @Test
-    public void testMultiplyByTwo() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Examples/src/MultiplyByTwo.kt", MultiplyByTwoKt::main);
-    }
-
-    @Test
     public void testSayHello() {
         testExample("../AtomicKotlinCourse/Programming Basics/Functions/Examples/src/SayHello.kt", SayHelloKt::main);
     }
@@ -57,18 +52,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testMultiplyByTwo() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Examples/src/MultiplyByTwo.kt", MultiplyByTwoKt::main);
+    }
+
+    @Test
     public void testMultiplyByFour() {
         testExample("../AtomicKotlinCourse/Programming Basics/Functions/Examples/src/MultiplyByFour.kt", MultiplyByFourKt::main);
-    }
-
-    @Test
-    public void testIf1() {
-        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/If1.kt", If1Kt::main);
-    }
-
-    @Test
-    public void testIf2() {
-        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/If2.kt", If2Kt::main);
     }
 
     @Test
@@ -77,13 +67,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testIf4() {
-        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/If4.kt", If4Kt::main);
-    }
-
-    @Test
-    public void testIf5() {
-        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/If5.kt", If5Kt::main);
+    public void testIf2() {
+        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/If2.kt", If2Kt::main);
     }
 
     @Test
@@ -92,13 +77,28 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testOneOrTheOther() {
+        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/OneOrTheOther.kt", OneOrTheOtherKt::main);
+    }
+
+    @Test
     public void testTrueOrFalse() {
         testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/TrueOrFalse.kt", TrueOrFalseKt::main);
     }
 
     @Test
-    public void testOneOrTheOther() {
-        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/OneOrTheOther.kt", OneOrTheOtherKt::main);
+    public void testIf1() {
+        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/If1.kt", If1Kt::main);
+    }
+
+    @Test
+    public void testIf5() {
+        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/If5.kt", If5Kt::main);
+    }
+
+    @Test
+    public void testIf4() {
+        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Examples/src/If4.kt", If4Kt::main);
     }
 
     @Test
@@ -107,13 +107,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testStringConcatenation() {
-        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Examples/src/StringConcatenation.kt", StringConcatenationKt::main);
+    public void testExpressionInTemplate() {
+        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Examples/src/ExpressionInTemplate.kt", ExpressionInTemplateKt::main);
     }
 
     @Test
-    public void testExpressionInTemplate() {
-        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Examples/src/ExpressionInTemplate.kt", ExpressionInTemplateKt::main);
+    public void testStringConcatenation() {
+        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Examples/src/StringConcatenation.kt", StringConcatenationKt::main);
     }
 
     @Test
@@ -122,28 +122,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testInferInt() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/InferInt.kt", InferIntKt::main);
-    }
-
-    @Test
-    public void testModulus() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/Modulus.kt", ModulusKt::main);
-    }
-
-    @Test
-    public void testIntDivisionTruncates() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/IntDivisionTruncates.kt", IntDivisionTruncatesKt::main);
-    }
-
-    @Test
-    public void testOpOrder() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/OpOrder.kt", OpOrderKt::main);
-    }
-
-    @Test
-    public void testOpOrderParens() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/OpOrderParens.kt", OpOrderParensKt::main);
+    public void testIntegerOverflow() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/IntegerOverflow.kt", IntegerOverflowKt::main);
     }
 
     @Test
@@ -152,18 +132,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testBMIEnglish() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/BMIEnglish.kt", BMIEnglishKt::main);
-    }
-
-    @Test
-    public void testIntegerOverflow() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/IntegerOverflow.kt", IntegerOverflowKt::main);
-    }
-
-    @Test
-    public void testLongConstants() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/LongConstants.kt", LongConstantsKt::main);
+    public void testModulus() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/Modulus.kt", ModulusKt::main);
     }
 
     @Test
@@ -172,18 +142,38 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testIntDivisionTruncates() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/IntDivisionTruncates.kt", IntDivisionTruncatesKt::main);
+    }
+
+    @Test
+    public void testLongConstants() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/LongConstants.kt", LongConstantsKt::main);
+    }
+
+    @Test
+    public void testOpOrder() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/OpOrder.kt", OpOrderKt::main);
+    }
+
+    @Test
+    public void testInferInt() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/InferInt.kt", InferIntKt::main);
+    }
+
+    @Test
     public void testBiggestLong() {
         testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/BiggestLong.kt", BiggestLongKt::main);
     }
 
     @Test
-    public void testOpen1() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Examples/src/Open1.kt", Open1Kt::main);
+    public void testBMIEnglish() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/BMIEnglish.kt", BMIEnglishKt::main);
     }
 
     @Test
-    public void testOpen2() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Examples/src/Open2.kt", Open2Kt::main);
+    public void testOpOrderParens() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Examples/src/OpOrderParens.kt", OpOrderParensKt::main);
     }
 
     @Test
@@ -192,13 +182,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testEvaluationOrder() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Examples/src/EvaluationOrder.kt", EvaluationOrderKt::main);
+    public void testOpen2() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Examples/src/Open2.kt", Open2Kt::main);
     }
 
     @Test
-    public void testWhileLoop() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Examples/src/WhileLoop.kt", WhileLoopKt::main);
+    public void testOpen1() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Examples/src/Open1.kt", Open1Kt::main);
+    }
+
+    @Test
+    public void testEvaluationOrder() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Examples/src/EvaluationOrder.kt", EvaluationOrderKt::main);
     }
 
     @Test
@@ -207,18 +202,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testAssignmentOperators() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Examples/src/AssignmentOperators.kt", AssignmentOperatorsKt::main);
-    }
-
-    @Test
     public void testIncrementOperator() {
         testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Examples/src/IncrementOperator.kt", IncrementOperatorKt::main);
     }
 
     @Test
-    public void testRepeatThreeTimes() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/RepeatThreeTimes.kt", RepeatThreeTimesKt::main);
+    public void testWhileLoop() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Examples/src/WhileLoop.kt", WhileLoopKt::main);
+    }
+
+    @Test
+    public void testAssignmentOperators() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Examples/src/AssignmentOperators.kt", AssignmentOperatorsKt::main);
     }
 
     @Test
@@ -227,8 +222,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testSumUsingRange() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/SumUsingRange.kt", SumUsingRangeKt::main);
+    public void testIterateOverString() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/IterateOverString.kt", IterateOverStringKt::main);
     }
 
     @Test
@@ -237,13 +232,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testForWithCharRange() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/ForWithCharRange.kt", ForWithCharRangeKt::main);
+    public void testRepeat() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/Repeat.kt", RepeatKt::main);
     }
 
     @Test
-    public void testIndexIntoString() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/IndexIntoString.kt", IndexIntoStringKt::main);
+    public void testSumUsingRange() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/SumUsingRange.kt", SumUsingRangeKt::main);
+    }
+
+    @Test
+    public void testRepeatThreeTimes() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/RepeatThreeTimes.kt", RepeatThreeTimesKt::main);
     }
 
     @Test
@@ -252,8 +252,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testIterateOverString() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/IterateOverString.kt", IterateOverStringKt::main);
+    public void testForWithCharRange() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/ForWithCharRange.kt", ForWithCharRangeKt::main);
     }
 
     @Test
@@ -262,8 +262,28 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testRepeat() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/Repeat.kt", RepeatKt::main);
+    public void testIndexIntoString() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Examples/src/IndexIntoString.kt", IndexIntoStringKt::main);
+    }
+
+    @Test
+    public void testInString() {
+        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Examples/src/InString.kt", InStringKt::main);
+    }
+
+    @Test
+    public void testStringRange() {
+        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Examples/src/StringRange.kt", StringRangeKt::main);
+    }
+
+    @Test
+    public void testCharRange() {
+        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Examples/src/CharRange.kt", CharRangeKt::main);
+    }
+
+    @Test
+    public void testFloatingPointRange() {
+        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Examples/src/FloatingPointRange.kt", FloatingPointRangeKt::main);
     }
 
     @Test
@@ -282,26 +302,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testInString() {
-        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Examples/src/InString.kt", InStringKt::main);
-    }
-
-    @Test
-    public void testCharRange() {
-        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Examples/src/CharRange.kt", CharRangeKt::main);
-    }
-
-    @Test
-    public void testFloatingPointRange() {
-        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Examples/src/FloatingPointRange.kt", FloatingPointRangeKt::main);
-    }
-
-    @Test
-    public void testStringRange() {
-        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Examples/src/StringRange.kt", StringRangeKt::main);
-    }
-
-    @Test
     public void testForIsAStatement() {
         testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Examples/src/ForIsAStatement.kt", ForIsAStatementKt::main);
     }
@@ -309,11 +309,6 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testUnitReturnType() {
         testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Examples/src/UnitReturnType.kt", UnitReturnTypeKt::main);
-    }
-
-    @Test
-    public void testAssigningAnIf() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Examples/src/AssigningAnIf.kt", AssigningAnIfKt::main);
     }
 
     @Test
@@ -327,6 +322,51 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testAssigningAnIf() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Examples/src/AssigningAnIf.kt", AssigningAnIfKt::main);
+    }
+
+    @Test
+    public void testDoWhile() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/DoWhile.kt", DoWhileKt::main);
+    }
+
+    @Test
+    public void testWhile() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/While.kt", WhileKt::main);
+    }
+
+    @Test
+    public void testTruncation() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/Truncation.kt", TruncationKt::main);
+    }
+
+    @Test
+    public void testUnitReturn() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/UnitReturn.kt", UnitReturnKt::main);
+    }
+
+    @Test
+    public void testMembership() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/Membership.kt", MembershipKt::main);
+    }
+
+    @Test
+    public void testIfExpression() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/IfExpression.kt", IfExpressionKt::main);
+    }
+
+    @Test
+    public void testStringIteration() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/StringIteration.kt", StringIterationKt::main);
+    }
+
+    @Test
+    public void testStrTemplates() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/StrTemplates.kt", StrTemplatesKt::main);
+    }
+
+    @Test
     public void testHello() {
         testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/Hello.kt", HelloKt::main);
     }
@@ -337,23 +377,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testBooleans() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/Booleans.kt", BooleansKt::main);
-    }
-
-    @Test
     public void testIfResult() {
         testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/IfResult.kt", IfResultKt::main);
     }
 
     @Test
-    public void testIfExpression() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/IfExpression.kt", IfExpressionKt::main);
-    }
-
-    @Test
-    public void testStrTemplates() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/StrTemplates.kt", StrTemplatesKt::main);
+    public void testRangeOfInt() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/RangeOfInt.kt", RangeOfIntKt::main);
     }
 
     @Test
@@ -372,48 +402,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testTruncation() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/Truncation.kt", TruncationKt::main);
-    }
-
-    @Test
-    public void testWhile() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/While.kt", WhileKt::main);
-    }
-
-    @Test
-    public void testDoWhile() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/DoWhile.kt", DoWhileKt::main);
-    }
-
-    @Test
-    public void testStringIteration() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/StringIteration.kt", StringIterationKt::main);
-    }
-
-    @Test
-    public void testRangeOfInt() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/RangeOfInt.kt", RangeOfIntKt::main);
-    }
-
-    @Test
-    public void testMembership() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/Membership.kt", MembershipKt::main);
-    }
-
-    @Test
-    public void testUnitReturn() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/UnitReturn.kt", UnitReturnKt::main);
-    }
-
-    @Test
-    public void testIntRanges() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Examples/src/IntRanges.kt", IntRangesKt::main);
-    }
-
-    @Test
-    public void testRangeSum() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Examples/src/RangeSum.kt", RangeSumKt::main);
+    public void testBooleans() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Examples/src/Booleans.kt", BooleansKt::main);
     }
 
     @Test
@@ -422,13 +412,23 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testConversion() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Examples/src/Conversion.kt", ConversionKt::main);
+    public void testNumberConversions() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Examples/src/NumberConversions.kt", NumberConversionsKt::main);
     }
 
     @Test
-    public void testNumberConversions() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Examples/src/NumberConversions.kt", NumberConversionsKt::main);
+    public void testRangeSum() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Examples/src/RangeSum.kt", RangeSumKt::main);
+    }
+
+    @Test
+    public void testIntRanges() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Examples/src/IntRanges.kt", IntRangesKt::main);
+    }
+
+    @Test
+    public void testConversion() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Examples/src/Conversion.kt", ConversionKt::main);
     }
 
     @Test
@@ -452,18 +452,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testCup() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Examples/src/Cup.kt", CupKt::main);
-    }
-
-    @Test
     public void testCup2() {
         testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Examples/src/Cup2.kt", Cup2Kt::main);
-    }
-
-    @Test
-    public void testChangingAVal() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Examples/src/ChangingAVal.kt", ChangingAValKt::main);
     }
 
     @Test
@@ -474,6 +464,26 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testReferences() {
         testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Examples/src/References.kt", ReferencesKt::main);
+    }
+
+    @Test
+    public void testCup() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Examples/src/Cup.kt", CupKt::main);
+    }
+
+    @Test
+    public void testChangingAVal() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Examples/src/ChangingAVal.kt", ChangingAValKt::main);
+    }
+
+    @Test
+    public void testDisplayAlienSpecies() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Examples/src/DisplayAlienSpecies.kt", DisplayAlienSpeciesKt::main);
+    }
+
+    @Test
+    public void testGoodAlien() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Examples/src/GoodAlien.kt", GoodAlienKt::main);
     }
 
     @Test
@@ -492,21 +502,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testDisplayAlienSpecies() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Examples/src/DisplayAlienSpecies.kt", DisplayAlienSpeciesKt::main);
-    }
-
-    @Test
-    public void testGoodAlien() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Examples/src/GoodAlien.kt", GoodAlienKt::main);
-    }
-
-    @Test
-    public void testObserveAnimals() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Examples/src/ObserveAnimals.kt", ObserveAnimalsKt::main);
-    }
-
-    @Test
     public void testCookie() {
         testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Examples/src/Cookie.kt", CookieKt::main);
     }
@@ -514,6 +509,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testMultipleRef() {
         testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Examples/src/MultipleRef.kt", MultipleRefKt::main);
+    }
+
+    @Test
+    public void testObserveAnimals() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Examples/src/ObserveAnimals.kt", ObserveAnimalsKt::main);
     }
 
     @Test
@@ -527,11 +527,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testFullyQualify() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Imports & Packages/Examples/src/FullyQualify.kt", FullyQualifyKt::main);
-    }
-
-    @Test
     public void testImportEverything() {
         testExample("../AtomicKotlinCourse/Introduction to Objects/Imports & Packages/Examples/src/ImportEverything.kt", ImportEverythingKt::main);
     }
@@ -542,18 +537,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testTestingExample() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Examples/src/TestingExample.kt", TestingExampleKt::main);
-    }
-
-    @Test
-    public void testTDDFail() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Examples/src/TDDFail.kt", testing1.TDDFailKt::main);
-    }
-
-    @Test
-    public void testTDDStillFails() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Examples/src/TDDStillFails.kt", testing2.TDDStillFailsKt::main);
+    public void testFullyQualify() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Imports & Packages/Examples/src/FullyQualify.kt", FullyQualifyKt::main);
     }
 
     @Test
@@ -562,13 +547,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testToIntException() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Exceptions/Examples/src/ToIntException.kt", ToIntExceptionKt::main);
+    public void testTDDStillFails() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Examples/src/TDDStillFails.kt", testing2.TDDStillFailsKt::main);
     }
 
     @Test
-    public void testIntroducingCapture() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Exceptions/Examples/src/IntroducingCapture.kt", IntroducingCaptureKt::main);
+    public void testTDDFail() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Examples/src/TDDFail.kt", testing1.TDDFailKt::main);
+    }
+
+    @Test
+    public void testTestingExample() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Examples/src/TestingExample.kt", TestingExampleKt::main);
     }
 
     @Test
@@ -577,8 +567,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testAverageIncome() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Exceptions/Examples/src/AverageIncome.kt", firstversion.AverageIncomeKt::main);
+    public void testToIntException() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Exceptions/Examples/src/ToIntException.kt", ToIntExceptionKt::main);
     }
 
     @Test
@@ -592,28 +582,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testLists() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/Lists.kt", ListsKt::main);
+    public void testIntroducingCapture() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Exceptions/Examples/src/IntroducingCapture.kt", IntroducingCaptureKt::main);
     }
 
     @Test
-    public void testOutOfBounds() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/OutOfBounds.kt", OutOfBoundsKt::main);
-    }
-
-    @Test
-    public void testListUsefulFunction() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/ListUsefulFunction.kt", ListUsefulFunctionKt::main);
-    }
-
-    @Test
-    public void testParameterizedTypes() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/ParameterizedTypes.kt", ParameterizedTypesKt::main);
-    }
-
-    @Test
-    public void testParameterizedReturn() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/ParameterizedReturn.kt", ParameterizedReturnKt::main);
+    public void testAverageIncome() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Exceptions/Examples/src/AverageIncome.kt", firstversion.AverageIncomeKt::main);
     }
 
     @Test
@@ -627,13 +602,33 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testParameterizedTypes() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/ParameterizedTypes.kt", ParameterizedTypesKt::main);
+    }
+
+    @Test
+    public void testParameterizedReturn() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/ParameterizedReturn.kt", ParameterizedReturnKt::main);
+    }
+
+    @Test
+    public void testLists() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/Lists.kt", ListsKt::main);
+    }
+
+    @Test
     public void testMultipleListRefs() {
         testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/MultipleListRefs.kt", MultipleListRefsKt::main);
     }
 
     @Test
-    public void testListOf() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/ListOf.kt", ListOfKt::main);
+    public void testListUsefulFunction() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/ListUsefulFunction.kt", ListUsefulFunctionKt::main);
+    }
+
+    @Test
+    public void testOutOfBounds() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Examples/src/OutOfBounds.kt", OutOfBoundsKt::main);
     }
 
     @Test
@@ -642,8 +637,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testVarargSum() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/VarargSum.kt", VarargSumKt::main);
+    public void testListOf() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/ListOf.kt", ListOfKt::main);
     }
 
     @Test
@@ -657,13 +652,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testTwoFunctionsWithVarargs() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/TwoFunctionsWithVarargs.kt", TwoFunctionsWithVarargsKt::main);
+    public void testMainArgs() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/MainArgs.kt", MainArgsKt::main);
     }
 
     @Test
-    public void testMainArgs() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/MainArgs.kt", MainArgsKt::main);
+    public void testVarargSum() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/VarargSum.kt", VarargSumKt::main);
+    }
+
+    @Test
+    public void testTwoFunctionsWithVarargs() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/TwoFunctionsWithVarargs.kt", TwoFunctionsWithVarargsKt::main);
     }
 
     @Test
@@ -672,8 +672,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testSets() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Examples/src/Sets.kt", SetsKt::main);
+    public void testMutableSet() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Examples/src/MutableSet.kt", MutableSetKt::main);
     }
 
     @Test
@@ -682,13 +682,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testMutableSet() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Examples/src/MutableSet.kt", MutableSetKt::main);
+    public void testSets() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Examples/src/Sets.kt", SetsKt::main);
     }
 
     @Test
-    public void testMaps() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Examples/src/Maps.kt", MapsKt::main);
+    public void testGetValue() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Examples/src/GetValue.kt", GetValueKt::main);
     }
 
     @Test
@@ -702,18 +702,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testGetValue() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Examples/src/GetValue.kt", GetValueKt::main);
-    }
-
-    @Test
     public void testContactMap() {
         testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Examples/src/ContactMap.kt", ContactMapKt::main);
     }
 
     @Test
-    public void testData() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Examples/src/Data.kt", propertyaccessors.DataKt::main);
+    public void testMaps() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Examples/src/Maps.kt", MapsKt::main);
     }
 
     @Test
@@ -732,23 +727,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testData() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Examples/src/Data.kt", propertyaccessors.DataKt::main);
+    }
+
+    @Test
     public void testHamsters() {
         testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Examples/src/Hamsters.kt", propertyaccessors.HamstersKt::main);
-    }
-
-    @Test
-    public void testUseALibrary() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/UseALibrary.kt", UseALibraryKt::main);
-    }
-
-    @Test
-    public void testUsingAtomicTest() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/UsingAtomicTest.kt", UsingAtomicTestKt::main);
-    }
-
-    @Test
-    public void testListCollection() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ListCollection.kt", ListCollectionKt::main);
     }
 
     @Test
@@ -757,53 +742,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testTemperature() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/Temperature.kt", TemperatureKt::main);
-    }
-
-    @Test
-    public void testTicTacToe() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/TicTacToe.kt", TicTacToeKt::main);
-    }
-
-    @Test
-    public void testWildAnimals() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/WildAnimals.kt", WildAnimalsKt::main);
-    }
-
-    @Test
-    public void testBoxes() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/Boxes.kt", BoxesKt::main);
-    }
-
-    @Test
-    public void testJetPack() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/JetPack.kt", JetPackKt::main);
-    }
-
-    @Test
-    public void testToDoubleException() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ToDoubleException.kt", ToDoubleExceptionKt::main);
-    }
-
-    @Test
-    public void testAtomicTestCapture() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/AtomicTestCapture.kt", AtomicTestCaptureKt::main);
-    }
-
-    @Test
-    public void testQuadratic() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/Quadratic.kt", QuadraticKt::main);
-    }
-
-    @Test
-    public void testMutableVsReadonlyList() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/MutableVsReadonlyList.kt", MutableVsReadonlyListKt::main);
-    }
-
-    @Test
-    public void testMultipleListReferences() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/MultipleListReferences.kt", MultipleListReferencesKt::main);
+    public void testUsingAtomicTest() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/UsingAtomicTest.kt", UsingAtomicTestKt::main);
     }
 
     @Test
@@ -812,23 +752,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testExplicitTyping() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ExplicitTyping.kt", ExplicitTypingKt::main);
+    public void testMutableVsReadonlyList() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/MutableVsReadonlyList.kt", MutableVsReadonlyListKt::main);
     }
 
     @Test
-    public void testVarArgs() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/VarArgs.kt", VarArgsKt::main);
-    }
-
-    @Test
-    public void testArraySpread() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ArraySpread.kt", ArraySpreadKt::main);
-    }
-
-    @Test
-    public void testColorSet() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ColorSet.kt", ColorSetKt::main);
+    public void testJetPack() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/JetPack.kt", JetPackKt::main);
     }
 
     @Test
@@ -837,8 +767,28 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testPropertyReadWrite() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/PropertyReadWrite.kt", summary2.PropertyReadWriteKt::main);
+    public void testToDoubleException() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ToDoubleException.kt", ToDoubleExceptionKt::main);
+    }
+
+    @Test
+    public void testTicTacToe() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/TicTacToe.kt", TicTacToeKt::main);
+    }
+
+    @Test
+    public void testListCollection() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ListCollection.kt", ListCollectionKt::main);
+    }
+
+    @Test
+    public void testExplicitTyping() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ExplicitTyping.kt", ExplicitTypingKt::main);
+    }
+
+    @Test
+    public void testQuadratic() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/Quadratic.kt", QuadraticKt::main);
     }
 
     @Test
@@ -847,8 +797,63 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testBoxes() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/Boxes.kt", BoxesKt::main);
+    }
+
+    @Test
+    public void testWildAnimals() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/WildAnimals.kt", WildAnimalsKt::main);
+    }
+
+    @Test
+    public void testArraySpread() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ArraySpread.kt", ArraySpreadKt::main);
+    }
+
+    @Test
+    public void testTemperature() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/Temperature.kt", TemperatureKt::main);
+    }
+
+    @Test
+    public void testAtomicTestCapture() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/AtomicTestCapture.kt", AtomicTestCaptureKt::main);
+    }
+
+    @Test
+    public void testMultipleListReferences() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/MultipleListReferences.kt", MultipleListReferencesKt::main);
+    }
+
+    @Test
+    public void testUseALibrary() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/UseALibrary.kt", UseALibraryKt::main);
+    }
+
+    @Test
+    public void testVarArgs() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/VarArgs.kt", VarArgsKt::main);
+    }
+
+    @Test
+    public void testColorSet() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ColorSet.kt", ColorSetKt::main);
+    }
+
+    @Test
+    public void testPropertyReadWrite() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/PropertyReadWrite.kt", summary2.PropertyReadWriteKt::main);
+    }
+
+    @Test
     public void testForControl() {
         testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/ForControl.kt", ForControlKt::main);
+    }
+
+    @Test
+    public void testDoLabeled() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/DoLabeled.kt", DoLabeledKt::main);
     }
 
     @Test
@@ -862,18 +867,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testForLabeled() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/ForLabeled.kt", ForLabeledKt::main);
-    }
-
-    @Test
     public void testWhileLabeled() {
         testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/WhileLabeled.kt", WhileLabeledKt::main);
     }
 
     @Test
-    public void testDoLabeled() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/DoLabeled.kt", DoLabeledKt::main);
+    public void testForLabeled() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/ForLabeled.kt", ForLabeledKt::main);
     }
 
     @Test
@@ -882,8 +882,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testQuote() {
-        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Examples/src/Quote.kt", other.QuoteKt::main);
+    public void testBookExtensions() {
+        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Examples/src/BookExtensions.kt", BookExtensionsKt::main);
     }
 
     @Test
@@ -892,18 +892,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testBookExtensions() {
-        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Examples/src/BookExtensions.kt", BookExtensionsKt::main);
-    }
-
-    @Test
-    public void testNamedArguments() {
-        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/NamedArguments.kt", color1.NamedArgumentsKt::main);
-    }
-
-    @Test
-    public void testArgumentOrder() {
-        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/ArgumentOrder.kt", color1.ArgumentOrderKt::main);
+    public void testQuote() {
+        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Examples/src/Quote.kt", other.QuoteKt::main);
     }
 
     @Test
@@ -912,18 +902,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testColor3() {
-        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/Color3.kt", color3.Color3Kt::main);
-    }
-
-    @Test
-    public void testCreateString() {
-        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/CreateString.kt", CreateStringKt::main);
-    }
-
-    @Test
-    public void testEvaluation() {
-        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/Evaluation.kt", EvaluationKt::main);
+    public void testNamedArguments() {
+        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/NamedArguments.kt", color1.NamedArgumentsKt::main);
     }
 
     @Test
@@ -932,13 +912,43 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testColor3() {
+        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/Color3.kt", color3.Color3Kt::main);
+    }
+
+    @Test
+    public void testArgumentOrder() {
+        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/ArgumentOrder.kt", color1.ArgumentOrderKt::main);
+    }
+
+    @Test
+    public void testCreateString() {
+        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/CreateString.kt", CreateStringKt::main);
+    }
+
+    @Test
     public void testTrimMargin() {
         testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/TrimMargin.kt", TrimMarginKt::main);
     }
 
     @Test
+    public void testEvaluation() {
+        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Examples/src/Evaluation.kt", EvaluationKt::main);
+    }
+
+    @Test
+    public void testOverloadingAdd() {
+        testExample("../AtomicKotlinCourse/Usability/Overloading/Examples/src/OverloadingAdd.kt", OverloadingAddKt::main);
+    }
+
+    @Test
     public void testOverloading() {
         testExample("../AtomicKotlinCourse/Usability/Overloading/Examples/src/Overloading.kt", OverloadingKt::main);
+    }
+
+    @Test
+    public void testWithDefaultArguments() {
+        testExample("../AtomicKotlinCourse/Usability/Overloading/Examples/src/WithDefaultArguments.kt", withdefaultarguments.WithDefaultArgumentsKt::main);
     }
 
     @Test
@@ -952,18 +962,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testWithDefaultArguments() {
-        testExample("../AtomicKotlinCourse/Usability/Overloading/Examples/src/WithDefaultArguments.kt", withdefaultarguments.WithDefaultArgumentsKt::main);
-    }
-
-    @Test
     public void testOverloadedVsDefaultArg() {
         testExample("../AtomicKotlinCourse/Usability/Overloading/Examples/src/OverloadedVsDefaultArg.kt", overloadingvsdefaultargs.OverloadedVsDefaultArgKt::main);
     }
 
     @Test
-    public void testOverloadingAdd() {
-        testExample("../AtomicKotlinCourse/Usability/Overloading/Examples/src/OverloadingAdd.kt", OverloadingAddKt::main);
+    public void testMixColors() {
+        testExample("../AtomicKotlinCourse/Usability/when Expressions/Examples/src/MixColors.kt", MixColorsKt::main);
     }
 
     @Test
@@ -972,18 +977,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testAnalyzingInput() {
-        testExample("../AtomicKotlinCourse/Usability/when Expressions/Examples/src/AnalyzingInput.kt", AnalyzingInputKt::main);
-    }
-
-    @Test
     public void testMatchingAgainstVals() {
         testExample("../AtomicKotlinCourse/Usability/when Expressions/Examples/src/MatchingAgainstVals.kt", MatchingAgainstValsKt::main);
     }
 
     @Test
-    public void testMixColors() {
-        testExample("../AtomicKotlinCourse/Usability/when Expressions/Examples/src/MixColors.kt", MixColorsKt::main);
+    public void testAnalyzingInput() {
+        testExample("../AtomicKotlinCourse/Usability/when Expressions/Examples/src/AnalyzingInput.kt", AnalyzingInputKt::main);
     }
 
     @Test
@@ -1007,23 +1007,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testCheckingOptions() {
-        testExample("../AtomicKotlinCourse/Usability/Enumerations/Examples/src/CheckingOptions.kt", CheckingOptionsKt::main);
-    }
-
-    @Test
     public void testDirection() {
         testExample("../AtomicKotlinCourse/Usability/Enumerations/Examples/src/Direction.kt", enumerations.DirectionKt::main);
     }
 
     @Test
-    public void testSimple() {
-        testExample("../AtomicKotlinCourse/Usability/Data Classes/Examples/src/Simple.kt", SimpleKt::main);
-    }
-
-    @Test
-    public void testDataClasses() {
-        testExample("../AtomicKotlinCourse/Usability/Data Classes/Examples/src/DataClasses.kt", dataclasses.DataClassesKt::main);
+    public void testCheckingOptions() {
+        testExample("../AtomicKotlinCourse/Usability/Enumerations/Examples/src/CheckingOptions.kt", CheckingOptionsKt::main);
     }
 
     @Test
@@ -1032,13 +1022,28 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testDataClasses() {
+        testExample("../AtomicKotlinCourse/Usability/Data Classes/Examples/src/DataClasses.kt", dataclasses.DataClassesKt::main);
+    }
+
+    @Test
+    public void testSimple() {
+        testExample("../AtomicKotlinCourse/Usability/Data Classes/Examples/src/Simple.kt", SimpleKt::main);
+    }
+
+    @Test
+    public void testExplicitCheck() {
+        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Examples/src/ExplicitCheck.kt", ExplicitCheckKt::main);
+    }
+
+    @Test
     public void testNullInMaps() {
         testExample("../AtomicKotlinCourse/Usability/Nullable Types/Examples/src/NullInMaps.kt", NullInMapsKt::main);
     }
 
     @Test
-    public void testNullableTypes() {
-        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Examples/src/NullableTypes.kt", NullableTypesKt::main);
+    public void testAmphibian() {
+        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Examples/src/Amphibian.kt", AmphibianKt::main);
     }
 
     @Test
@@ -1052,13 +1057,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testExplicitCheck() {
-        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Examples/src/ExplicitCheck.kt", ExplicitCheckKt::main);
+    public void testNullableTypes() {
+        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Examples/src/NullableTypes.kt", NullableTypesKt::main);
     }
 
     @Test
-    public void testAmphibian() {
-        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Examples/src/Amphibian.kt", AmphibianKt::main);
+    public void testElvisCall() {
+        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Examples/src/ElvisCall.kt", elvisoperator.ElvisCallKt::main);
     }
 
     @Test
@@ -1072,8 +1077,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testSafeCall() {
-        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Examples/src/SafeCall.kt", safecalls.SafeCallKt::main);
+    public void testChainedCalls() {
+        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Examples/src/ChainedCalls.kt", safecalls.ChainedCallsKt::main);
     }
 
     @Test
@@ -1082,18 +1087,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testElvisCall() {
-        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Examples/src/ElvisCall.kt", elvisoperator.ElvisCallKt::main);
-    }
-
-    @Test
-    public void testChainedCalls() {
-        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Examples/src/ChainedCalls.kt", safecalls.ChainedCallsKt::main);
-    }
-
-    @Test
-    public void testNonNullAssert() {
-        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Examples/src/NonNullAssert.kt", NonNullAssertKt::main);
+    public void testSafeCall() {
+        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Examples/src/SafeCall.kt", safecalls.SafeCallKt::main);
     }
 
     @Test
@@ -1102,13 +1097,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testValueFromMap() {
-        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Examples/src/ValueFromMap.kt", ValueFromMapKt::main);
+    public void testNonNullAssert() {
+        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Examples/src/NonNullAssert.kt", NonNullAssertKt::main);
     }
 
     @Test
-    public void testStringIsNullOr() {
-        testExample("../AtomicKotlinCourse/Usability/Extensions for Nullable Types/Examples/src/StringIsNullOr.kt", StringIsNullOrKt::main);
+    public void testValueFromMap() {
+        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Examples/src/ValueFromMap.kt", ValueFromMapKt::main);
     }
 
     @Test
@@ -1122,13 +1117,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testRigidHolder() {
-        testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Examples/src/RigidHolder.kt", introgenerics.RigidHolderKt::main);
-    }
-
-    @Test
-    public void testGenericHolder() {
-        testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Examples/src/GenericHolder.kt", introgenerics.GenericHolderKt::main);
+    public void testStringIsNullOr() {
+        testExample("../AtomicKotlinCourse/Usability/Extensions for Nullable Types/Examples/src/StringIsNullOr.kt", StringIsNullOrKt::main);
     }
 
     @Test
@@ -1137,23 +1127,23 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testGenericFunction() {
-        testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Examples/src/GenericFunction.kt", introgenerics.GenericFunctionKt::main);
-    }
-
-    @Test
     public void testGenericListExtensions() {
         testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Examples/src/GenericListExtensions.kt", introgenerics.GenericListExtensionsKt::main);
     }
 
     @Test
-    public void testStringIndices() {
-        testExample("../AtomicKotlinCourse/Usability/Extension Properties/Examples/src/StringIndices.kt", extensionproperties.StringIndicesKt::main);
+    public void testGenericHolder() {
+        testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Examples/src/GenericHolder.kt", introgenerics.GenericHolderKt::main);
     }
 
     @Test
-    public void testGenericListExt() {
-        testExample("../AtomicKotlinCourse/Usability/Extension Properties/Examples/src/GenericListExt.kt", extensionproperties.GenericListExtKt::main);
+    public void testGenericFunction() {
+        testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Examples/src/GenericFunction.kt", introgenerics.GenericFunctionKt::main);
+    }
+
+    @Test
+    public void testRigidHolder() {
+        testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Examples/src/RigidHolder.kt", introgenerics.RigidHolderKt::main);
     }
 
     @Test
@@ -1162,58 +1152,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testGenericListExt() {
+        testExample("../AtomicKotlinCourse/Usability/Extension Properties/Examples/src/GenericListExt.kt", extensionproperties.GenericListExtKt::main);
+    }
+
+    @Test
     public void testAnyFromListOfStar() {
         testExample("../AtomicKotlinCourse/Usability/Extension Properties/Examples/src/AnyFromListOfStar.kt", extensionproperties.AnyFromListOfStarKt::main);
     }
 
     @Test
-    public void testBasicLambda() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/BasicLambda.kt", BasicLambdaKt::main);
-    }
-
-    @Test
-    public void testLambdaTypeInference() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/LambdaTypeInference.kt", LambdaTypeInferenceKt::main);
-    }
-
-    @Test
-    public void testLambdaIt() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/LambdaIt.kt", LambdaItKt::main);
-    }
-
-    @Test
-    public void testMapping() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/Mapping.kt", MappingKt::main);
-    }
-
-    @Test
-    public void testOmittingParentheses() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/OmittingParentheses.kt", OmittingParenthesesKt::main);
-    }
-
-    @Test
-    public void testJoinToString() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/JoinToString.kt", JoinToStringKt::main);
-    }
-
-    @Test
-    public void testLambdaAndNamedArgs() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/LambdaAndNamedArgs.kt", LambdaAndNamedArgsKt::main);
-    }
-
-    @Test
-    public void testTwoArgLambda() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/TwoArgLambda.kt", TwoArgLambdaKt::main);
-    }
-
-    @Test
-    public void testUnderscore() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/Underscore.kt", UnderscoreKt::main);
-    }
-
-    @Test
-    public void testListIndicesMap() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/ListIndicesMap.kt", ListIndicesMapKt::main);
+    public void testStringIndices() {
+        testExample("../AtomicKotlinCourse/Usability/Extension Properties/Examples/src/StringIndices.kt", extensionproperties.StringIndicesKt::main);
     }
 
     @Test
@@ -1222,13 +1172,58 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testFilterEven() {
-        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/FilterEven.kt", FilterEvenKt::main);
+    public void testOmittingParentheses() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/OmittingParentheses.kt", OmittingParenthesesKt::main);
     }
 
     @Test
-    public void testGreaterThan2() {
-        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/GreaterThan2.kt", GreaterThan2Kt::main);
+    public void testLambdaIt() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/LambdaIt.kt", LambdaItKt::main);
+    }
+
+    @Test
+    public void testTwoArgLambda() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/TwoArgLambda.kt", TwoArgLambdaKt::main);
+    }
+
+    @Test
+    public void testLambdaAndNamedArgs() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/LambdaAndNamedArgs.kt", LambdaAndNamedArgsKt::main);
+    }
+
+    @Test
+    public void testBasicLambda() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/BasicLambda.kt", BasicLambdaKt::main);
+    }
+
+    @Test
+    public void testMapping() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/Mapping.kt", MappingKt::main);
+    }
+
+    @Test
+    public void testListIndicesMap() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/ListIndicesMap.kt", ListIndicesMapKt::main);
+    }
+
+    @Test
+    public void testJoinToString() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/JoinToString.kt", JoinToStringKt::main);
+    }
+
+    @Test
+    public void testLambdaTypeInference() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/LambdaTypeInference.kt", LambdaTypeInferenceKt::main);
+    }
+
+    @Test
+    public void testUnderscore() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Examples/src/Underscore.kt", UnderscoreKt::main);
+    }
+
+    @Test
+    public void testFilterEven() {
+        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/FilterEven.kt", FilterEvenKt::main);
     }
 
     @Test
@@ -1237,18 +1232,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testStoringLambda() {
-        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/StoringLambda.kt", StoringLambdaKt::main);
-    }
-
-    @Test
-    public void testClosures() {
-        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/Closures.kt", ClosuresKt::main);
-    }
-
-    @Test
-    public void testClosures2() {
-        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/Closures2.kt", Closures2Kt::main);
+    public void testGreaterThan2() {
+        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/GreaterThan2.kt", GreaterThan2Kt::main);
     }
 
     @Test
@@ -1262,23 +1247,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testCreatingLists() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/CreatingLists.kt", CreatingListsKt::main);
+    public void testClosures2() {
+        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/Closures2.kt", Closures2Kt::main);
     }
 
     @Test
-    public void testListInit() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/ListInit.kt", ListInitKt::main);
+    public void testStoringLambda() {
+        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/StoringLambda.kt", StoringLambdaKt::main);
     }
 
     @Test
-    public void testPredicates() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/Predicates.kt", PredicatesKt::main);
-    }
-
-    @Test
-    public void testPartition() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/Partition.kt", PartitionKt::main);
+    public void testClosures() {
+        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/Closures.kt", ClosuresKt::main);
     }
 
     @Test
@@ -1287,8 +1267,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testFilterNotNull() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/FilterNotNull.kt", FilterNotNullKt::main);
+    public void testPartition() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/Partition.kt", PartitionKt::main);
+    }
+
+    @Test
+    public void testListInit() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/ListInit.kt", ListInitKt::main);
     }
 
     @Test
@@ -1302,28 +1287,23 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testFilterNotNull() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/FilterNotNull.kt", FilterNotNullKt::main);
+    }
+
+    @Test
+    public void testPredicates() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/Predicates.kt", PredicatesKt::main);
+    }
+
+    @Test
     public void testOperationsOnSets() {
         testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/OperationsOnSets.kt", OperationsOnSetsKt::main);
     }
 
     @Test
-    public void testPropertyReference() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Examples/src/PropertyReference.kt", memberreferences1.PropertyReferenceKt::main);
-    }
-
-    @Test
-    public void testSortWith() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Examples/src/SortWith.kt", memberreferences1.SortWithKt::main);
-    }
-
-    @Test
-    public void testFunctionReference() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Examples/src/FunctionReference.kt", memberreferences2.FunctionReferenceKt::main);
-    }
-
-    @Test
-    public void testTopLevelFunctionRef() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Examples/src/TopLevelFunctionRef.kt", memberreferences2.TopLevelFunctionRefKt::main);
+    public void testCreatingLists() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Examples/src/CreatingLists.kt", CreatingListsKt::main);
     }
 
     @Test
@@ -1332,28 +1312,23 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testSimpleOperation() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/SimpleOperation.kt", SimpleOperationKt::main);
+    public void testTopLevelFunctionRef() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Examples/src/TopLevelFunctionRef.kt", memberreferences2.TopLevelFunctionRefKt::main);
     }
 
     @Test
-    public void testFunctionTypeExamples() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/FunctionTypeExamples.kt", FunctionTypeExamplesKt::main);
+    public void testSortWith() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Examples/src/SortWith.kt", memberreferences1.SortWithKt::main);
     }
 
     @Test
-    public void testAnyFunImplementation() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/AnyFunImplementation.kt", AnyFunImplementationKt::main);
+    public void testPropertyReference() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Examples/src/PropertyReference.kt", memberreferences1.PropertyReferenceKt::main);
     }
 
     @Test
-    public void testRepeatByInt() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/RepeatByInt.kt", RepeatByIntKt::main);
-    }
-
-    @Test
-    public void testRepeatVerbose() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/RepeatVerbose.kt", RepeatVerboseKt::main);
+    public void testFunctionReference() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Examples/src/FunctionReference.kt", memberreferences2.FunctionReferenceKt::main);
     }
 
     @Test
@@ -1362,8 +1337,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testNullableReturnType() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/NullableReturnType.kt", NullableReturnTypeKt::main);
+    public void testAnyFunImplementation() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/AnyFunImplementation.kt", AnyFunImplementationKt::main);
+    }
+
+    @Test
+    public void testRepeatVerbose() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/RepeatVerbose.kt", RepeatVerboseKt::main);
     }
 
     @Test
@@ -1372,13 +1352,33 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testZipper() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Examples/src/Zipper.kt", ZipperKt::main);
+    public void testRepeatByInt() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/RepeatByInt.kt", RepeatByIntKt::main);
+    }
+
+    @Test
+    public void testFunctionTypeExamples() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/FunctionTypeExamples.kt", FunctionTypeExamplesKt::main);
+    }
+
+    @Test
+    public void testNullableReturnType() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/NullableReturnType.kt", NullableReturnTypeKt::main);
+    }
+
+    @Test
+    public void testSimpleOperation() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Examples/src/SimpleOperation.kt", SimpleOperationKt::main);
     }
 
     @Test
     public void testZipAndTransform() {
         testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Examples/src/ZipAndTransform.kt", manipulatinglists.ZipAndTransformKt::main);
+    }
+
+    @Test
+    public void testWhyFlatMap() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Examples/src/WhyFlatMap.kt", manipulatinglists.WhyFlatMapKt::main);
     }
 
     @Test
@@ -1397,23 +1397,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testWhyFlatMap() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Examples/src/WhyFlatMap.kt", manipulatinglists.WhyFlatMapKt::main);
-    }
-
-    @Test
-    public void testGroupBy() {
-        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Examples/src/GroupBy.kt", GroupByKt::main);
-    }
-
-    @Test
-    public void testGroupByVsFilter() {
-        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Examples/src/GroupByVsFilter.kt", GroupByVsFilterKt::main);
-    }
-
-    @Test
-    public void testAssociateBy() {
-        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Examples/src/AssociateBy.kt", AssociateByKt::main);
+    public void testZipper() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Examples/src/Zipper.kt", ZipperKt::main);
     }
 
     @Test
@@ -1422,8 +1407,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testFilteringMap() {
-        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Examples/src/FilteringMap.kt", FilteringMapKt::main);
+    public void testGroupBy() {
+        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Examples/src/GroupBy.kt", GroupByKt::main);
     }
 
     @Test
@@ -1432,13 +1417,23 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testAssociateBy() {
+        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Examples/src/AssociateBy.kt", AssociateByKt::main);
+    }
+
+    @Test
+    public void testFilteringMap() {
+        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Examples/src/FilteringMap.kt", FilteringMapKt::main);
+    }
+
+    @Test
     public void testSimilarOperation() {
         testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Examples/src/SimilarOperation.kt", SimilarOperationKt::main);
     }
 
     @Test
-    public void testStringBuilder() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambda with Receiver/Examples/src/StringBuilder.kt", StringBuilderKt::main);
+    public void testGroupByVsFilter() {
+        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Examples/src/GroupByVsFilter.kt", GroupByVsFilterKt::main);
     }
 
     @Test
@@ -1447,18 +1442,23 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testBuildString() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambda with Receiver/Examples/src/BuildString.kt", BuildStringKt::main);
-    }
-
-    @Test
     public void testBuildStringAndThis() {
         testExample("../AtomicKotlinCourse/Functional Programming/Lambda with Receiver/Examples/src/BuildStringAndThis.kt", BuildStringAndThisKt::main);
     }
 
     @Test
+    public void testBuildString() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambda with Receiver/Examples/src/BuildString.kt", BuildStringKt::main);
+    }
+
+    @Test
     public void testDeclarations() {
         testExample("../AtomicKotlinCourse/Functional Programming/Lambda with Receiver/Examples/src/Declarations.kt", lambdawithreceiver.DeclarationsKt::main);
+    }
+
+    @Test
+    public void testStringBuilder() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambda with Receiver/Examples/src/StringBuilder.kt", StringBuilderKt::main);
     }
 
     @Test
@@ -1472,6 +1472,31 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testResultOfApply() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/ResultOfApply.kt", libraryhelpers.ResultOfApplyKt::main);
+    }
+
+    @Test
+    public void testApplyVsAlso() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/ApplyVsAlso.kt", libraryhelpers.ApplyVsAlsoKt::main);
+    }
+
+    @Test
+    public void testLet() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/Let.kt", libraryhelpers.LetKt::main);
+    }
+
+    @Test
+    public void testAlso() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/Also.kt", libraryhelpers.AlsoKt::main);
+    }
+
+    @Test
+    public void testCheckingArgument() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/CheckingArgument.kt", libraryhelpers.CheckingArgumentKt::main);
+    }
+
+    @Test
     public void testNullableReceiver() {
         testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/NullableReceiver.kt", libraryhelpers.NullableReceiverKt::main);
     }
@@ -1482,38 +1507,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testResultOfApply() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/ResultOfApply.kt", libraryhelpers.ResultOfApplyKt::main);
-    }
-
-    @Test
     public void testApplyIfNotNull() {
         testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/ApplyIfNotNull.kt", libraryhelpers.ApplyIfNotNullKt::main);
-    }
-
-    @Test
-    public void testAlso() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/Also.kt", libraryhelpers.AlsoKt::main);
-    }
-
-    @Test
-    public void testApplyVsAlso() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/ApplyVsAlso.kt", libraryhelpers.ApplyVsAlsoKt::main);
-    }
-
-    @Test
-    public void testCheckingArgument() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/CheckingArgument.kt", libraryhelpers.CheckingArgumentKt::main);
-    }
-
-    @Test
-    public void testLet() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Library Helpers/Examples/src/Let.kt", libraryhelpers.LetKt::main);
-    }
-
-    @Test
-    public void testEagerEvaluation() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Sequences/Examples/src/EagerEvaluation.kt", EagerEvaluationKt::main);
     }
 
     @Test
@@ -1532,18 +1527,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testNumberSequence1() {
-        testExample("../AtomicKotlinCourse/Functional Programming/More Library Functions/Examples/src/NumberSequence1.kt", NumberSequence1Kt::main);
+    public void testEagerEvaluation() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Sequences/Examples/src/EagerEvaluation.kt", EagerEvaluationKt::main);
     }
 
     @Test
     public void testInputLines1() {
         testExample("../AtomicKotlinCourse/Functional Programming/More Library Functions/Examples/src/InputLines1.kt", InputLines1Kt::main);
-    }
-
-    @Test
-    public void testInputLines2() {
-        testExample("../AtomicKotlinCourse/Functional Programming/More Library Functions/Examples/src/InputLines2.kt", InputLines2Kt::main);
     }
 
     @Test
@@ -1562,23 +1552,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testNumberSequence1() {
+        testExample("../AtomicKotlinCourse/Functional Programming/More Library Functions/Examples/src/NumberSequence1.kt", NumberSequence1Kt::main);
+    }
+
+    @Test
     public void testReadingNameWithIf() {
         testExample("../AtomicKotlinCourse/Functional Programming/More Library Functions/Examples/src/ReadingNameWithIf.kt", ReadingNameWithIfKt::main);
     }
 
     @Test
-    public void testLocalFunctions() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Examples/src/LocalFunctions.kt", LocalFunctionsKt::main);
-    }
-
-    @Test
-    public void testLocalExtensions() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Examples/src/LocalExtensions.kt", LocalExtensionsKt::main);
-    }
-
-    @Test
-    public void testLocalFunctionReference() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Examples/src/LocalFunctionReference.kt", localfunctions.LocalFunctionReferenceKt::main);
+    public void testInputLines2() {
+        testExample("../AtomicKotlinCourse/Functional Programming/More Library Functions/Examples/src/InputLines2.kt", InputLines2Kt::main);
     }
 
     @Test
@@ -1592,8 +1577,28 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testReturnInsideLambda() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Examples/src/ReturnInsideLambda.kt", localfunctions.ReturnInsideLambdaKt::main);
+    }
+
+    @Test
+    public void testLocalFunctions() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Examples/src/LocalFunctions.kt", LocalFunctionsKt::main);
+    }
+
+    @Test
     public void testLabeledReturn() {
         testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Examples/src/LabeledReturn.kt", LabeledReturnKt::main);
+    }
+
+    @Test
+    public void testLocalExtensions() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Examples/src/LocalExtensions.kt", LocalExtensionsKt::main);
+    }
+
+    @Test
+    public void testLocalFunctionReference() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Examples/src/LocalFunctionReference.kt", localfunctions.LocalFunctionReferenceKt::main);
     }
 
     @Test
@@ -1602,23 +1607,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testReturnInsideLambda() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Examples/src/ReturnInsideLambda.kt", localfunctions.ReturnInsideLambdaKt::main);
-    }
-
-    @Test
     public void testHelperFunction() {
         testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Examples/src/HelperFunction.kt", localfunctions.HelperFunctionKt::main);
-    }
-
-    @Test
-    public void testSumViaFold() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Examples/src/SumViaFold.kt", SumViaFoldKt::main);
-    }
-
-    @Test
-    public void testFoldVsForLoop() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Examples/src/FoldVsForLoop.kt", FoldVsForLoopKt::main);
     }
 
     @Test
@@ -1627,13 +1617,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testSumViaFold() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Examples/src/SumViaFold.kt", SumViaFoldKt::main);
+    }
+
+    @Test
     public void testFoldAndReduce() {
         testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Examples/src/FoldAndReduce.kt", FoldAndReduceKt::main);
     }
 
     @Test
-    public void testFactorial() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/Factorial.kt", recursion.FactorialKt::main);
+    public void testFoldVsForLoop() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Examples/src/FoldVsForLoop.kt", FoldVsForLoopKt::main);
     }
 
     @Test
@@ -1642,8 +1637,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testInfiniteRecursion() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/InfiniteRecursion.kt", recursion.InfiniteRecursionKt::main);
+    public void testFactorial() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/Factorial.kt", recursion.FactorialKt::main);
+    }
+
+    @Test
+    public void testFibonacci() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/Fibonacci.kt", recursion.FibonacciKt::main);
     }
 
     @Test
@@ -1652,23 +1652,23 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testIteration() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/Iteration.kt", iteration.IterationKt::main);
-    }
-
-    @Test
     public void testTailRecursiveSum() {
         testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/TailRecursiveSum.kt", tailrecursion.TailRecursiveSumKt::main);
     }
 
     @Test
-    public void testVerySlowFibonacci() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/VerySlowFibonacci.kt", slowfibonacci.VerySlowFibonacciKt::main);
+    public void testIteration() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/Iteration.kt", iteration.IterationKt::main);
     }
 
     @Test
-    public void testFibonacci() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/Fibonacci.kt", recursion.FibonacciKt::main);
+    public void testInfiniteRecursion() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/InfiniteRecursion.kt", recursion.InfiniteRecursionKt::main);
+    }
+
+    @Test
+    public void testVerySlowFibonacci() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Examples/src/VerySlowFibonacci.kt", slowfibonacci.VerySlowFibonacciKt::main);
     }
 
     @Test
@@ -1682,8 +1682,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testBear() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Examples/src/Bear.kt", complexconstructors.BearKt::main);
+    public void testInitSection() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Examples/src/InitSection.kt", complexconstructors.InitSectionKt::main);
     }
 
     @Test
@@ -1692,13 +1692,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testInitSection() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Examples/src/InitSection.kt", complexconstructors.InitSectionKt::main);
+    public void testGameMatrix() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Examples/src/GameMatrix.kt", complexconstructors.GameMatrixKt::main);
     }
 
     @Test
-    public void testGameMatrix() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Examples/src/GameMatrix.kt", complexconstructors.GameMatrixKt::main);
+    public void testBear() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Examples/src/Bear.kt", complexconstructors.BearKt::main);
     }
 
     @Test
@@ -1727,18 +1727,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testHouse() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Base Class Initialization/Examples/src/House.kt", baseclassinit.HouseKt::main);
-    }
-
-    @Test
     public void testOtherConstructors() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Base Class Initialization/Examples/src/OtherConstructors.kt", baseclassinit.OtherConstructorsKt::main);
     }
 
     @Test
-    public void testStateOfAClass() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/StateOfAClass.kt", abstractstate.StateOfAClassKt::main);
+    public void testHouse() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Base Class Initialization/Examples/src/House.kt", baseclassinit.HouseKt::main);
+    }
+
+    @Test
+    public void testGadget() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/Gadget.kt", GadgetKt::main);
     }
 
     @Test
@@ -1747,8 +1747,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testGadget() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/Gadget.kt", GadgetKt::main);
+    public void testStateOfAClass() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/StateOfAClass.kt", abstractstate.StateOfAClassKt::main);
     }
 
     @Test
@@ -1762,28 +1762,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testDessert2() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Polymorphism/Examples/src/Dessert2.kt", polymorphism.Dessert2Kt::main);
-    }
-
-    @Test
     public void testDowncasting() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Polymorphism/Examples/src/Downcasting.kt", polymorphism.DowncastingKt::main);
     }
 
     @Test
-    public void testHumanAlice() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Casting/Examples/src/HumanAlice.kt", casting.HumanAliceKt::main);
-    }
-
-    @Test
-    public void testSmartCast() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Casting/Examples/src/SmartCast.kt", casting.SmartCastKt::main);
-    }
-
-    @Test
-    public void testWhenAndCasting() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Casting/Examples/src/WhenAndCasting.kt", casting.WhenAndCastingKt::main);
+    public void testDessert2() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Polymorphism/Examples/src/Dessert2.kt", polymorphism.Dessert2Kt::main);
     }
 
     @Test
@@ -1792,8 +1777,23 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testSmartCast() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Casting/Examples/src/SmartCast.kt", casting.SmartCastKt::main);
+    }
+
+    @Test
     public void testSafe() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Casting/Examples/src/Safe.kt", casting.SafeKt::main);
+    }
+
+    @Test
+    public void testWhenAndCasting() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Casting/Examples/src/WhenAndCasting.kt", casting.WhenAndCastingKt::main);
+    }
+
+    @Test
+    public void testHumanAlice() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Casting/Examples/src/HumanAlice.kt", casting.HumanAliceKt::main);
     }
 
     @Test
@@ -1807,6 +1807,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testObjectNesting() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Objects/Examples/src/ObjectNesting.kt", ObjectNestingKt::main);
+    }
+
+    @Test
     public void testObjectKeyword() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Objects/Examples/src/ObjectKeyword.kt", ObjectKeywordKt::main);
     }
@@ -1817,23 +1822,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testObjectNesting() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Objects/Examples/src/ObjectNesting.kt", ObjectNestingKt::main);
+    public void testObjectProperty() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Examples/src/ObjectProperty.kt", ObjectPropertyKt::main);
     }
 
     @Test
     public void testCompanionObject() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Examples/src/CompanionObject.kt", CompanionObjectKt::main);
-    }
-
-    @Test
-    public void testNamedCompanionObject() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Examples/src/NamedCompanionObject.kt", NamedCompanionObjectKt::main);
-    }
-
-    @Test
-    public void testObjectProperty() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Examples/src/ObjectProperty.kt", ObjectPropertyKt::main);
     }
 
     @Test
@@ -1852,6 +1847,16 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testNamedCompanionObject() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Examples/src/NamedCompanionObject.kt", NamedCompanionObjectKt::main);
+    }
+
+    @Test
+    public void testModelingMI() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Class Delegation/Examples/src/ModelingMI.kt", ModelingMIKt::main);
+    }
+
+    @Test
     public void testExplicitDelegation() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Class Delegation/Examples/src/ExplicitDelegation.kt", ExplicitDelegationKt::main);
     }
@@ -1862,12 +1867,532 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testModelingMI() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Class Delegation/Examples/src/ModelingMI.kt", ModelingMIKt::main);
+    public void testLabeledThis() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inner & Nested Classes/Examples/src/LabeledThis.kt", labeledthis.LabeledThisKt::main);
     }
 
     @Test
-    public void testLabeledThis() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inner & Nested Classes/Examples/src/LabeledThis.kt", labeledthis.LabeledThisKt::main);
+    public void testTryFinally() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/TryFinally.kt", exceptionhandling.TryFinallyKt::main);
+    }
+
+    @Test
+    public void testNewException() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/NewException.kt", exceptionhandling.NewExceptionKt::main);
+    }
+
+    @Test
+    public void testGuaranteedCleanup() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/GuaranteedCleanup.kt", GuaranteedCleanupKt::main);
+    }
+
+    @Test
+    public void testDefiningExceptions() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/DefiningExceptions.kt", exceptionhandling.DefiningExceptionsKt::main);
+    }
+
+    @Test
+    public void testLibraryException() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/LibraryException.kt", exceptionhandling.LibraryExceptionKt::main);
+    }
+
+    @Test
+    public void testHandlers() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/Handlers.kt", exceptionhandling.HandlersKt::main);
+    }
+
+    @Test
+    public void testHierarchy() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/Hierarchy.kt", exceptionhandling.HierarchyKt::main);
+    }
+
+    @Test
+    public void testRequireNotNull() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/RequireNotNull.kt", checkinstructions.RequireNotNullKt::main);
+    }
+
+    @Test
+    public void testPostconditions() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/Postconditions.kt", checkinstructions.PostconditionsKt::main);
+    }
+
+    @Test
+    public void testSingleArgRequire() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/SingleArgRequire.kt", checkinstructions.SingleArgRequireKt::main);
+    }
+
+    @Test
+    public void testGetTrace() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/GetTrace.kt", checkinstructions.GetTraceKt::main);
+    }
+
+    @Test
+    public void testLocalFile() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/LocalFile.kt", checkinstructions.LocalFileKt::main);
+    }
+
+    @Test
+    public void testFail() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/The Nothing Type/Examples/src/Fail.kt", nothingtype.FailKt::main);
+    }
+
+    @Test
+    public void testTodo() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/The Nothing Type/Examples/src/Todo.kt", nothingtype.TodoKt::main);
+    }
+
+    @Test
+    public void testCheckObject2() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/The Nothing Type/Examples/src/CheckObject2.kt", nothingtype.CheckObject2Kt::main);
+    }
+
+    @Test
+    public void testCheckObject() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/The Nothing Type/Examples/src/CheckObject.kt", nothingtype.CheckObjectKt::main);
+    }
+
+    @Test
+    public void testCloseable() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/Closeable.kt", resourcecleanup.CloseableKt::main);
+    }
+
+    @Test
+    public void testUseLines() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/UseLines.kt", resourcecleanup.UseLinesKt::main);
+    }
+
+    @Test
+    public void testUsable() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/Usable.kt", resourcecleanup.UsableKt::main);
+    }
+
+    @Test
+    public void testForEachLine() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/ForEachLine.kt", resourcecleanup.ForEachLineKt::main);
+    }
+
+    @Test
+    public void testUseAtomicLog() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Examples/src/UseAtomicLog.kt", UseAtomicLogKt::main);
+    }
+
+    @Test
+    public void testBasicLogging() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Examples/src/BasicLogging.kt", logging.BasicLoggingKt::main);
+    }
+
+    @Test
+    public void testSimpleLoggingStrategy() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Examples/src/SimpleLoggingStrategy.kt", logging.SimpleLoggingStrategyKt::main);
+    }
+
+    @Test
+    public void testBasic() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Unit Testing/Examples/src/Basic.kt", BasicKt::main);
+    }
+
+    @Test
+    public void testTeaPartyTexting() {
+        testExample("../AtomicKotlinCourse/Concurrency/async and await/Examples/src/TeaPartyTexting.kt", asyncandawait.TeaPartyTextingKt::main);
+    }
+
+    @Test
+    public void testLazySequence() {
+        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/LazySequence.kt", LazySequenceKt::main);
+    }
+
+    @Test
+    public void testCompareDelayingTask() {
+        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/CompareDelayingTask.kt", CompareDelayingTaskKt::main);
+    }
+
+    @Test
+    public void testHelloCoroutines() {
+        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/HelloCoroutines.kt", HelloCoroutinesKt::main);
+    }
+
+    @Test
+    public void testCompareSlowFib() {
+        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/CompareSlowFib.kt", CompareSlowFibKt::main);
+    }
+
+    @Test
+    public void testLaunchMany() {
+        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/LaunchMany.kt", LaunchManyKt::main);
+    }
+
+    @Test
+    public void testLaunchManyTimed() {
+        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/LaunchManyTimed.kt", LaunchManyTimedKt::main);
+    }
+
+    @Test
+    public void testFibonacciSequence() {
+        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/FibonacciSequence.kt", FibonacciSequenceKt::main);
+    }
+
+    @Test
+    public void testColorBlend() {
+        testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/ColorBlend.kt", colorblend.ColorBlendKt::main);
+    }
+
+    @Test
+    public void testImmutableBlendMap2() {
+        testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/ImmutableBlendMap2.kt", immutableblendmap2.ImmutableBlendMap2Kt::main);
+    }
+
+    @Test
+    public void testXYZMap() {
+        testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/XYZMap.kt", xyzmap.XYZMapKt::main);
+    }
+
+    @Test
+    public void testMutableBlendMap2() {
+        testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/MutableBlendMap2.kt", mutableblendmap2.MutableBlendMap2Kt::main);
+    }
+
+    @Test
+    public void testImmutableBlendMap3() {
+        testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/ImmutableBlendMap3.kt", immutableblendmap3.ImmutableBlendMap3Kt::main);
+    }
+
+    @Test
+    public void testMutableBlendMap() {
+        testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/MutableBlendMap.kt", mutableblendmap.MutableBlendMapKt::main);
+    }
+
+    @Test
+    public void testImmutableBlendMap() {
+        testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/ImmutableBlendMap.kt", immutableblendmap.ImmutableBlendMapKt::main);
+    }
+
+    @Test
+    public void testDataClassCopy() {
+        testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/DataClassCopy.kt", DataClassCopyKt::main);
+    }
+
+    @Test
+    public void testXYZFlatMap() {
+        testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/XYZFlatMap.kt", xyzflatmap.XYZFlatMapKt::main);
+    }
+
+    @Test
+    public void testKeyFailure() {
+        testExample("../AtomicKotlinCourse/Power Tools/Hashing/Examples/src/KeyFailure.kt", KeyFailureKt::main);
+    }
+
+    @Test
+    public void testSimpleHashing() {
+        testExample("../AtomicKotlinCourse/Power Tools/Hashing/Examples/src/SimpleHashing.kt", SimpleHashingKt::main);
+    }
+
+    @Test
+    public void testHashCodeFailure() {
+        testExample("../AtomicKotlinCourse/Power Tools/Hashing/Examples/src/HashCodeFailure.kt", HashCodeFailureKt::main);
+    }
+
+    @Test
+    public void testPets() {
+        testExample("../AtomicKotlinCourse/Power Tools/Hashing/Examples/src/Pets.kt", hashing.PetsKt::main);
+    }
+
+    @Test
+    public void testEasyKeys() {
+        testExample("../AtomicKotlinCourse/Power Tools/Hashing/Examples/src/EasyKeys.kt", hashing.EasyKeysKt::main);
+    }
+
+    @Test
+    public void testStringHashCode() {
+        testExample("../AtomicKotlinCourse/Power Tools/Hashing/Examples/src/StringHashCode.kt", StringHashCodeKt::main);
+    }
+
+    @Test
+    public void testUnpredictableHashing() {
+        testExample("../AtomicKotlinCourse/Power Tools/Hashing/Examples/src/UnpredictableHashing.kt", UnpredictableHashingKt::main);
+    }
+
+    @Test
+    public void testComputation() {
+        testExample("../AtomicKotlinCourse/Power Tools/Destructuring Declarations/Examples/src/Computation.kt", destructuring.ComputationKt::main);
+    }
+
+    @Test
+    public void testPairDestructuring() {
+        testExample("../AtomicKotlinCourse/Power Tools/Destructuring Declarations/Examples/src/PairDestructuring.kt", destructuring.PairDestructuringKt::main);
+    }
+
+    @Test
+    public void testForLoop() {
+        testExample("../AtomicKotlinCourse/Power Tools/Destructuring Declarations/Examples/src/ForLoop.kt", ForLoopKt::main);
+    }
+
+    @Test
+    public void testTuple() {
+        testExample("../AtomicKotlinCourse/Power Tools/Destructuring Declarations/Examples/src/Tuple.kt", destructuring.TupleKt::main);
+    }
+
+    @Test
+    public void testPairs() {
+        testExample("../AtomicKotlinCourse/Power Tools/Destructuring Declarations/Examples/src/Pairs.kt", destructuring.PairsKt::main);
+    }
+
+    @Test
+    public void testMemberOperator() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Examples/src/MemberOperator.kt", operatoroverloading.MemberOperatorKt::main);
+    }
+
+    @Test
+    public void testBackticks() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Examples/src/Backticks.kt", BackticksKt::main);
+    }
+
+    @Test
+    public void testStringInvoke() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Examples/src/StringInvoke.kt", StringInvokeKt::main);
+    }
+
+    @Test
+    public void testSwearing() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Examples/src/Swearing.kt", SwearingKt::main);
+    }
+
+    @Test
+    public void testAllOperators() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Examples/src/AllOperators.kt", operatoroverloading.AllOperatorsKt::main);
+    }
+
+    @Test
+    public void testInvoke() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Examples/src/Invoke.kt", InvokeKt::main);
+    }
+
+    @Test
+    public void testMolecule() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Examples/src/Molecule.kt", MoleculeKt::main);
+    }
+
+    @Test
+    public void testNum() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Examples/src/Num.kt", operatoroverloading.NumKt::main);
+    }
+
+    @Test
+    public void testCompareTo() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Examples/src/CompareTo.kt", usingoperators.CompareToKt::main);
+    }
+
+    @Test
+    public void testOperatorPlus() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Examples/src/OperatorPlus.kt", OperatorPlusKt::main);
+    }
+
+    @Test
+    public void testNewAngle() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Examples/src/NewAngle.kt", NewAngleKt::main);
+    }
+
+    @Test
+    public void testUnexpected() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Examples/src/Unexpected.kt", UnexpectedKt::main);
+    }
+
+    @Test
+    public void testDestructuringMap() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Examples/src/DestructuringMap.kt", usingoperators.DestructuringMapKt::main);
+    }
+
+    @Test
+    public void testDestructuringData() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Examples/src/DestructuringData.kt", usingoperators.DestructuringDataKt::main);
+    }
+
+    @Test
+    public void testImmutableAndPlus() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Examples/src/ImmutableAndPlus.kt", ImmutableAndPlusKt::main);
+    }
+
+    @Test
+    public void testDestructuringDuo() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Examples/src/DestructuringDuo.kt", DestructuringDuoKt::main);
+    }
+
+    @Test
+    public void testPropertyOptions() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lazy Initialization/Examples/src/PropertyOptions.kt", lazyinitialization.PropertyOptionsKt::main);
+    }
+
+    @Test
+    public void testLazySyntax() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lazy Initialization/Examples/src/LazySyntax.kt", lazyinitialization.LazySyntaxKt::main);
+    }
+
+    @Test
+    public void testLazyInt() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lazy Initialization/Examples/src/LazyInt.kt", LazyIntKt::main);
+    }
+
+    @Test
+    public void testFaultySuitcase() {
+        testExample("../AtomicKotlinCourse/Power Tools/Late Initialization/Examples/src/FaultySuitcase.kt", lateinitialization.FaultySuitcaseKt::main);
+    }
+
+    @Test
+    public void testBetterSuitcase() {
+        testExample("../AtomicKotlinCourse/Power Tools/Late Initialization/Examples/src/BetterSuitcase.kt", lateinitialization.BetterSuitcaseKt::main);
+    }
+
+    @Test
+    public void testSuitcase() {
+        testExample("../AtomicKotlinCourse/Power Tools/Late Initialization/Examples/src/Suitcase.kt", lateinitialization.SuitcaseKt::main);
+    }
+
+    @Test
+    public void testNickName() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/NickName.kt", propertydelegation.NickNameKt::main);
+    }
+
+    @Test
+    public void testFibonacciProperty() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/FibonacciProperty.kt", FibonacciPropertyKt::main);
+    }
+
+    @Test
+    public void testTeamWithTraditions() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation Tools/Examples/src/TeamWithTraditions.kt", TeamWithTraditionsKt::main);
+    }
+
+    @Test
+    public void testTeam() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation Tools/Examples/src/Team.kt", TeamKt::main);
+    }
+
+    @Test
+    public void testSpeakers() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/More about Generics/Examples/src/Speakers.kt", generics.SpeakersKt::main);
+    }
+
+    @Test
+    public void testBasicGenerics() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/More about Generics/Examples/src/BasicGenerics.kt", generics.BasicGenericsKt::main);
+    }
+
+    @Test
+    public void testPerform() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/More about Generics/Examples/src/Perform.kt", generics.PerformKt::main);
+    }
+
+    @Test
+    public void testHolder() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/More about Generics/Examples/src/Holder.kt", generics.HolderKt::main);
+    }
+
+    @Test
+    public void testCarHolder() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/More about Generics/Examples/src/CarHolder.kt", generics.CarHolderKt::main);
+    }
+
+    @Test
+    public void testGenericSpeakers() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/More about Generics/Examples/src/GenericSpeakers.kt", generics.GenericSpeakersKt::main);
+    }
+
+    @Test
+    public void testContravariance() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/Variance & Star Projections/Examples/src/Contravariance.kt", variance.ContravarianceKt::main);
+    }
+
+    @Test
+    public void testCovariantReturnTypes() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/Variance & Star Projections/Examples/src/CovariantReturnTypes.kt", variance.CovariantReturnTypesKt::main);
+    }
+
+    @Test
+    public void testSameReturnTypes() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/Variance & Star Projections/Examples/src/SameReturnTypes.kt", variance.SameReturnTypesKt::main);
+    }
+
+    @Test
+    public void testBird() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/Variance & Star Projections/Examples/src/Bird.kt", variance.BirdKt::main);
+    }
+
+    @Test
+    public void testErasedTypeEquivalence() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/Erasure & Reification/Examples/src/ErasedTypeEquivalence.kt", ErasedTypeEquivalenceKt::main);
+    }
+
+    @Test
+    public void testTypeOfT() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/Erasure & Reification/Examples/src/TypeOfT.kt", generics.TypeOfTKt::main);
+    }
+
+    @Test
+    public void testInfo() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/Reflection/Examples/src/Info.kt", InfoKt::main);
+    }
+
+    @Test
+    public void testSolid() {
+        testExample("../AtomicKotlinCourse/Advanced Topics/Reflection/Examples/src/Solid.kt", SolidKt::main);
+    }
+
+    @Test
+    public void testBigFibonacci() {
+        testExample("../AtomicKotlinCourse/Language Interoperability/Mixing Kotlin & Java/Examples/src/BigFibonacci.kt", adaptingjava.BigFibonacciKt::main);
+    }
+
+    @Test
+    public void testExtensionsToJavaClass() {
+        testExample("../AtomicKotlinCourse/Language Interoperability/Mixing Kotlin & Java/Examples/src/ExtensionsToJavaClass.kt", fromkotlin.ExtensionsToJavaClassKt::main);
+    }
+
+    @Test
+    public void testUseBeanClass() {
+        testExample("../AtomicKotlinCourse/Language Interoperability/Mixing Kotlin & Java/Examples/src/UseBeanClass.kt", UseBeanClassKt::main);
+    }
+
+    @Test
+    public void testRandom() {
+        testExample("../AtomicKotlinCourse/Language Interoperability/Mixing Kotlin & Java/Examples/src/Random.kt", RandomKt::main);
+    }
+
+    @Test
+    public void testKotlinChecked() {
+        //testExample("../AtomicKotlinCourse/Language Interoperability/Java Checked Exceptions & Kotlin/Examples/src/KotlinChecked.kt", KotlinCheckedKt::main);
+    }
+
+    @Test
+    public void testWithCleanup() {
+        //testExample("../AtomicKotlinCourse/Language Interoperability/Java Checked Exceptions & Kotlin/Examples/src/WithCleanup.kt", withfunction.WithCleanupKt::main);
+    }
+
+    @Test
+    public void testPlatformTypes() {
+        testExample("../AtomicKotlinCourse/Language Interoperability/Nullable Types & Java/Examples/src/PlatformTypes.kt", PlatformTypesKt::main);
+    }
+
+    @Test
+    public void testNPEOnPlatformType() {
+        testExample("../AtomicKotlinCourse/Language Interoperability/Nullable Types & Java/Examples/src/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
+    }
+
+    @Test
+    public void testAnnotatedJava() {
+        testExample("../AtomicKotlinCourse/Language Interoperability/Nullability Annotations/Examples/src/AnnotatedJava.kt", nullabilityannotations.AnnotatedJavaKt::main);
+    }
+
+    @Test
+    public void testReadOnlyCollections() {
+        testExample("../AtomicKotlinCourse/Language Interoperability/Collections & Java/Examples/src/ReadOnlyCollections.kt", ReadOnlyCollectionsKt::main);
+    }
+
+    @Test
+    public void testHiddenArrayList() {
+        testExample("../AtomicKotlinCourse/Language Interoperability/Collections & Java/Examples/src/HiddenArrayList.kt", HiddenArrayListKt::main);
+    }
+
+    @Test
+    public void testJavaList() {
+        testExample("../AtomicKotlinCourse/Language Interoperability/Collections & Java/Examples/src/JavaList.kt", JavaListKt::main);
     }
 }

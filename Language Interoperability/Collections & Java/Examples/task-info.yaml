@@ -1,0 +1,12 @@
+type: theory
+files:
+- name: src/HiddenArrayList.kt
+  visible: true
+- name: src/ImmutableByDefault.kt
+  visible: true
+- name: src/CollectionStructure.kt
+  visible: true
+- name: src/JavaList.kt
+  visible: true
+- name: src/ReadOnlyCollections.kt
+  visible: true

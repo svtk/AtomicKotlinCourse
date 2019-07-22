@@ -1,0 +1,18 @@
+type: theory
+files:
+- name: src/Num.kt
+  visible: true
+- name: src/MemberOperator.kt
+  visible: true
+- name: src/Molecule.kt
+  visible: true
+- name: src/AllOperators.kt
+  visible: true
+- name: src/Invoke.kt
+  visible: true
+- name: src/StringInvoke.kt
+  visible: true
+- name: src/Backticks.kt
+  visible: true
+- name: src/Swearing.kt
+  visible: true

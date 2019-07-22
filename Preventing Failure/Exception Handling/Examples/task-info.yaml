@@ -1,0 +1,16 @@
+type: theory
+files:
+- name: src/DefiningExceptions.kt
+  visible: true
+- name: src/Handlers.kt
+  visible: true
+- name: src/Hierarchy.kt
+  visible: true
+- name: src/LibraryException.kt
+  visible: true
+- name: src/NewException.kt
+  visible: true
+- name: src/TryFinally.kt
+  visible: true
+- name: src/GuaranteedCleanup.kt
+  visible: true

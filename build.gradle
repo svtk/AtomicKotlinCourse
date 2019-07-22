@@ -23,6 +23,18 @@ allprojects {
     dependencies {
         compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
         compile "org.jetbrains.kotlin:kotlin-reflect"
+
+        // coroutines
+        def coroutines_version = '1.2.1'
+        compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+        compile "org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:$coroutines_version"
+
+        // Logging support for samples:
+        compile 'io.github.microutils:kotlin-logging:1.6.24'
+        compile 'org.slf4j:slf4j-simple:1.8.0-beta4'
+
+        compile 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
+        compile 'org.jetbrains.kotlin:kotlin-test-junit5'
     }
     compileKotlin.destinationDir = compileJava.destinationDir
     compileKotlin {

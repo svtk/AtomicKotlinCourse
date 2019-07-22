@@ -1,0 +1,6 @@
+type: theory
+files:
+- name: src/NickName.kt
+  visible: true
+- name: src/FibonacciProperty.kt
+  visible: true

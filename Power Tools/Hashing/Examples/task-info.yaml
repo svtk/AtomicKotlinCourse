@@ -1,0 +1,16 @@
+type: theory
+files:
+- name: src/SimpleHashing.kt
+  visible: true
+- name: src/UnpredictableHashing.kt
+  visible: true
+- name: src/Pets.kt
+  visible: true
+- name: src/KeyFailure.kt
+  visible: true
+- name: src/HashCodeFailure.kt
+  visible: true
+- name: src/StringHashCode.kt
+  visible: true
+- name: src/EasyKeys.kt
+  visible: true
