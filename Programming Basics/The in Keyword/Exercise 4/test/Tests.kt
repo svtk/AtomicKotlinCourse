@@ -16,21 +16,29 @@ class TestValidIdentifier {
         Assert.assertFalse("'$s' is not a valid identifier", isValidIdentifier(s))
     }
 
-    @Test fun test1Simple() = checkValidIdentifier("name")
+    @Test fun test01Simple() = checkValidIdentifier("name")
 
-    @Test fun test2StartsWithUnderscore() = checkValidIdentifier("_name")
+    @Test fun test02StartsWithUnderscore() = checkValidIdentifier("_name")
 
-    @Test fun test3Underscore() = checkValidIdentifier("_")
+    @Test fun test03Underscore() = checkValidIdentifier("_")
 
-    @Test fun test4ContainsDigits() = checkValidIdentifier("n01")
+    @Test fun test04ContainsDigits() = checkValidIdentifier("n01")
 
-    @Test fun test5UpperCase() = checkValidIdentifier("NNN")
+    @Test fun test05UpperCase() = checkValidIdentifier("NNN")
 
-    @Test fun test6Valid() = checkValidIdentifier("_N01")
+    @Test fun test06Valid() = checkValidIdentifier("_N01")
 
-    @Test fun test7Empty() = checkInvalidIdentifier("")
+    @Test fun test07Empty() = checkInvalidIdentifier("")
 
-    @Test fun test8StartsWithDigit() = checkInvalidIdentifier("1_")
+    @Test fun test08StartsWithDigit() = checkInvalidIdentifier("0name")
 
-    @Test fun test9ContainsIllegalCharacters() = checkInvalidIdentifier("&%$")
+    @Test fun test09ContainsIllegalCharacters() = checkInvalidIdentifier("&%$")
+
+    @Test fun test10FirstIllegal() = checkInvalidIdentifier("1_")
+
+    @Test fun test11SomeIllegal() = checkInvalidIdentifier("na me")
+
+    @Test fun test12SomeIllegal() = checkInvalidIdentifier("name.")
+
+    @Test fun test13SomeIllegal() = checkInvalidIdentifier(".name")
 }
