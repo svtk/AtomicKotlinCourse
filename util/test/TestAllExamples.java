@@ -1987,11 +1987,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testBasic() {
-        testExample("../AtomicKotlinCourse/Preventing Failure/Unit Testing/Examples/src/Basic.kt", BasicKt::main);
-    }
-
-    @Test
     public void testTeaPartyTexting() {
         testExample("../AtomicKotlinCourse/Concurrency/async and await/Examples/src/TeaPartyTexting.kt", asyncandawait.TeaPartyTextingKt::main);
     }
