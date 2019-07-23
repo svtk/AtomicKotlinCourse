@@ -71,6 +71,6 @@ abstract class AbstractTestExamples {
 
     private fun testNoErrors(main: Consumer<Array<String>>) {
         val output = runAndGetOutput(main)
-        Assert.assertFalse("[Error]:", output.contains("Program completed with errors:\n$output"))
+        Assert.assertFalse("Program completed with errors:\n$output", output.contains("[Error]:"))
     }
 }

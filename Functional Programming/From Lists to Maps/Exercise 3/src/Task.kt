@@ -11,5 +11,8 @@ fun main() {
   val people = listOf(Person("Alice", 21),
       Person("Bob", 25), Person("Charlie", 25))
 
-  people.associateBy(Person::name) eq ""
+  people.associateBy(Person::name) eq
+      "{Alice=Person(name=Alice, age=21), " +
+      "Bob=Person(name=Bob, age=25), " +
+      "Charlie=Person(name=Charlie, age=25)}"
 }

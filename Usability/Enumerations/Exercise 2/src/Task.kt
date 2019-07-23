@@ -35,6 +35,6 @@ fun main() {
   May.getAustralianSeason() eq Autumn
 
   January.getDays() eq 31
-  February.getDays(leapYear = false) eq 29
+  February.getDays(leapYear = false) eq 28
   February.getDays(leapYear = true) eq 29
 }

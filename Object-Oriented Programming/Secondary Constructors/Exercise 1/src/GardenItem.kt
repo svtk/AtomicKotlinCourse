@@ -1,7 +1,7 @@
-package `064_Secondary_Constructors`.Exercise1
+package secondaryConstructors1
 
 import atomictest.eq
-import `064_Secondary_Constructors`.Exercise1.Material.*
+import secondaryConstructors1.Material.*
 
 enum class Material {
   Ceramic, Metal, Plastic

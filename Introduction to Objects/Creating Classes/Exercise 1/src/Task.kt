@@ -13,4 +13,5 @@ fun main() {
 }
 /* Output:
 true
+false
 */

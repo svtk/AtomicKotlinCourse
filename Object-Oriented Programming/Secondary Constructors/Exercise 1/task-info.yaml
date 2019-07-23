@@ -3,22 +3,22 @@ files:
 - name: src/GardenItem.kt
   visible: true
   placeholders:
-  - offset: 178
+  - offset: 146
     length: 146
     placeholder_text: |-
       class GardenItem(
-              val name: String
+          val name: String
       ) {
         var material: Material = Plastic
 
         constructor(
-                name: String, material: Material
+            name: String, material: Material
         ) : this(name) {
           this.material = material
         }
 
         constructor(
-                material: Material
+            material: Material
         ) : this("Strange Thing", material)
 
         override fun toString() = "$material $name"
