@@ -8,9 +8,9 @@ fun isPalIgnoreCase(s: String): Boolean =
 
 fun isPalIgnoreSpecial(s: String): Boolean {
   var onlyLetters = ""
-  for (c in s) {
-    if (c in 'a'..'z' || c in 'A'..'Z') {
-      onlyLetters += c
+  for (ch in s) {
+    if (ch in 'a'..'z' || ch in 'A'..'Z') {
+      onlyLetters += ch
     }
   }
   return isPalIgnoreCase(onlyLetters)
