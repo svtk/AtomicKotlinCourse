@@ -317,13 +317,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testConfusingOperator() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Examples/src/ConfusingOperator.kt", ConfusingOperatorKt::main);
+    public void testAssigningAnIf() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Examples/src/AssigningAnIf.kt", AssigningAnIfKt::main);
     }
 
     @Test
-    public void testAssigningAnIf() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Examples/src/AssigningAnIf.kt", AssigningAnIfKt::main);
+    public void testConfusing() {
+        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Examples/src/Confusing.kt", ConfusingKt::main);
     }
 
     @Test

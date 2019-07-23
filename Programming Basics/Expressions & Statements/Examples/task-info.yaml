@@ -8,5 +8,5 @@ files:
   visible: true
 - name: src/PostfixVsPrefix.kt
   visible: true
-- name: src/ConfusingOperator.kt
+- name: src/Confusing.kt
   visible: true
