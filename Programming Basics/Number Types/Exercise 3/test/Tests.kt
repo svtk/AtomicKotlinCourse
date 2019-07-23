@@ -24,4 +24,6 @@ class TestNumberTypes3 {
     @Test fun test3CelsiusToFahrenheit() = checkCelsiusToFahrenheit(5.0, -15)
 
     @Test fun test4CelsiusToFahrenheit() = checkCelsiusToFahrenheit(68.0, 20)
+
+    @Test fun test5CelsiusToFahrenheit() = checkCelsiusToFahrenheit(69.8, 21)
 }
