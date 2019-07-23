@@ -32,9 +32,6 @@ allprojects {
         // Logging support for samples:
         compile 'io.github.microutils:kotlin-logging:1.6.24'
         compile 'org.slf4j:slf4j-simple:1.8.0-beta4'
-
-        compile 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
-        compile 'org.jetbrains.kotlin:kotlin-test-junit5'
     }
     compileKotlin.destinationDir = compileJava.destinationDir
     compileKotlin {

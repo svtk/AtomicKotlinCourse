@@ -1,4 +1,0 @@
-type: theory
-files:
-- name: src/Basic.kt
-  visible: true
