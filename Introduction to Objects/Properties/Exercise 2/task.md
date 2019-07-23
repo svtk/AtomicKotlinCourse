@@ -15,5 +15,9 @@ the borders of the field are "looped": if the robot is in the cell
 Modify all the functions `goRight`, `goLeft`, `goDown` and `goUp` to 
 support this behavior.
 
-HINT: Using auxiliary function for checking the boundaries will remove
+<div class="hint">
+
+Using auxiliary function for checking the boundaries will remove
 code repetition and simplify the resulting code.
+
+</div>

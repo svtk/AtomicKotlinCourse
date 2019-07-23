@@ -9,5 +9,9 @@ Some examples:
 "dad" is a palindrome
 "street" is not a palindrome
 
-HINT: `String`'s `reversed` member function may prove useful here.
+<div class="hint">
+
+`String`'s `reversed` member function may prove useful here.
 Use `==` to check whether two strings are equal.
+
+</div>

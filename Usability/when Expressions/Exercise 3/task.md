@@ -17,6 +17,10 @@ Some examples:
 * `( ()() )` is balanced
 * `*()` leads to `IllegalArgumentException`
 
-HINT: Iterate over the string and count the number of left braces which are
+<div class="hint">
+
+Iterate over the string and count the number of left braces which are
 unmatched on each step. At the end, this number should be 0. If it is less than
 zero at some point, the string is unbalanced.
+
+</div>

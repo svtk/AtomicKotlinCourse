@@ -7,6 +7,10 @@ It returns a map from an integer corresponding to each hexadecimal code in
 The function ignores the strings in input which don't represent hexadecimal
 codes.
 
-HINT: To convert a string representing a hexadecimal code to a number use 
+<div class="hint">
+
+To convert a string representing a hexadecimal code to a number use 
 the `toIntOrNull(radix: Int)` extension function on String, passing 
 `16` as an argument.
+
+</div>

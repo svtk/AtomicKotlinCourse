@@ -4,7 +4,9 @@ Convert from a number in the Roman numeral system into a natural number.
 
 For instance: XXIII = 23, XLIV = 44, C = 100.
 
-HINT: You can simply iterate over each numeral in the Roman representation and
+<div class="hint">
+
+You can simply iterate over each numeral in the Roman representation and
 calculate the answer! Traverse a Roman number in reverse order a single numeral
 at a time (for example, `IV` are two different numerals) and store the maximum
 numeral found so far. If the next Roman numeral is more or equal than the current
@@ -22,3 +24,5 @@ than the updated maximum `X`:
 | X       | 50              | - 10   |
 
 The result is `+ 5 - 1 + 50 - 10 = 44`
+
+</div>

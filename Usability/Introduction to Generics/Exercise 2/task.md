@@ -6,4 +6,8 @@ that returns a new list containing the same elements in a reversed order.
 Note that the standard library already contains the `reversed` function,
 but your task is to implement this function from scratch.
 
-HINT: Use `N downTo 0` to iterate through indexes in a reversed order.
+<div class="hint">
+
+Use `N downTo 0` to iterate through indexes in a reversed order.
+
+</div>

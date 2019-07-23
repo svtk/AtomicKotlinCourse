@@ -15,4 +15,8 @@ Your code should remain unchanged for different initializers, like `var x =
 "first"`, `var y = "second"`. Thus saying just `x = 2`, `y = 1` is not the
 expected solution.
 
-HINT: You may need to introduce a third auxiliary `val`.
+<div class="hint">
+
+You may need to introduce a third auxiliary `val`.
+
+</div>
