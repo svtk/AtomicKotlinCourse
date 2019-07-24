@@ -1,5 +1,11 @@
 ## Function Types (#2)
 
-Replace the code that calls first `filter()`, then `map()` with one invocation 
-of the function `mapNotNull()`. Complete the implementation of `transform2()` 
-function so that it worked similarly to `transform1()`.
+Rewrite the following function by using only one `mapNotNull` call:
+
+```kotlin
+fun List<Int>.transform(): List<Int> = 
+    filter { it % 2 == 0 }.map { it * it }
+```
+
+It's possible to replace the code calling first `filter()`, then `map()`
+with one invocation of the function `mapNotNull()`.

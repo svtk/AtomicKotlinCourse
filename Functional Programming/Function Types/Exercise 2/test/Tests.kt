@@ -12,8 +12,8 @@ class TestMapNotNull {
     ) {
         Assert.assertEquals("Wrong result for $list:",
                 list.filter { it % 2 == 0 }.map { it * it },
-                list.transform2())
-        list.transform1()
+                list.transformVersion2())
+        list.transformVersion1()
     }
 
     @Test

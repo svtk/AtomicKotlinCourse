@@ -1,3 +1,3 @@
 ## Function Types (#1)
 
-Implement `map()` function by hand.
+Implement `List.map()` function by hand.
