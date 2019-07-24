@@ -5,13 +5,33 @@ files:
   placeholders:
   - offset: 273
     length: 14
-    placeholder_text: TODO()
+    placeholder_text: mutableListOf<Hamster>()
   - offset: 403
     length: 32
-    placeholder_text: TODO()
-  - offset: 513
-    length: 23
-    placeholder_text: TODO()
+    placeholder_text: hamsters += hamster
+  - offset: 505
+    length: 31
+    placeholder_text: |-
+      {
+          for (hamster in hamsters) {
+            if (hamster.name == name) {
+              return hamster
+            }
+          }
+          throw NoSuchElementException("No hamster called $name")
+        }
+  - offset: 572
+    length: 29
+    placeholder_text: |-
+      {
+          var hamsterWithGivenName: Hamster? = null
+          for (hamster in hamsters) {
+            if (hamster.name == name) {
+              hamsterWithGivenName = hamster
+            }
+          }
+          hamsters.remove(hamsterWithGivenName)
+        }
 - name: test/Tests.kt
   visible: false
 feedback_link: |

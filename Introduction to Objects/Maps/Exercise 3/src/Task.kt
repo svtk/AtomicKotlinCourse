@@ -23,14 +23,18 @@ class Cage(private val maxCapacity: Int) {
 
   fun takeHamsterByName(name: String): Hamster =
       hamsters.getValue(name)
+
+  fun removeHamster(name: String) =
+      hamsters.remove(name)
 }
 
 fun main() {
   val cage = Cage(2)
   cage.put(Hamster("Alice")) eq true
   cage.takeHamsterByName("Alice") eq "Hamster('Alice')"
+  cage.removeHamster("Alice")
   capture {
-    cage.takeHamsterByName("Bob")
+    cage.takeHamsterByName("Alice")
   } eq "NoSuchElementException: " +
-      "Key Bob is missing in the map."
+      "Key Alice is missing in the map."
 }
