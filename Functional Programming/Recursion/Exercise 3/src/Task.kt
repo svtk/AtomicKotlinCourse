@@ -14,40 +14,50 @@ fun addConnection(first: City, second: City) {
   second.connections += first
 }
 
-fun isReachableRecursive(from: City, to: City): Boolean {
+fun City.getAllReachableRecursive(): Set<City> {
+  // stores all the cities reachable from the the given city:
   val connections = mutableSetOf<City>()
 
-  fun buildConnections(current: City) {
+  // add all connections reachable
+  // from 'current' city to 'connections' set
+  fun addConnectionsFrom(current: City) {
     if (current in connections) return
     connections += current
 
-    if (current == to) return
-
     current.connections.forEach {
-      buildConnections(it)
+      addConnectionsFrom(it)
     }
   }
 
-  buildConnections(from)
-  return to in connections
+  addConnectionsFrom(this)
+  return connections
 }
 
-fun isReachableIterative(from: City, to: City): Boolean {
+fun City.getAllReachableIterative(): Set<City> {
+  // stores all the cities reachable from the given city
   val connections = mutableSetOf<City>()
-  val citiesToVisit = mutableSetOf(from)
-  while (citiesToVisit.isNotEmpty()) {
-    val current = citiesToVisit.first()
-    citiesToVisit.remove(current)
+  // stores all the cities which direct connections are to be analyzed
+  val toBeAnalyzed = mutableSetOf(this)
 
-    if (current == to) return true
+  // for each 'current' city from 'toBeAnalyzed' set:
+    // unmark it (remove from 'to be analyzed' set)
+    // if it's already in 'connections', do nothing
+    // add it to 'connections'
+    // mark all its connections as 'to be analyzed'
+  while (toBeAnalyzed.isNotEmpty()) {
+    val current = toBeAnalyzed.first()
+
+    toBeAnalyzed.remove(current)
+
     if (current in connections) continue
+
     connections += current
 
     current.connections.forEach {
-      citiesToVisit += it
+      toBeAnalyzed += it
     }
   }
-  return false
+  return connections
 }
 
 fun main() {
@@ -59,9 +69,13 @@ fun main() {
   addConnection(liverpool, manchester)
   addConnection(manchester, leeds)
 
-  isReachableRecursive(liverpool, leeds) eq true
-  isReachableRecursive(liverpool, dublin) eq false
+  liverpool.getAllReachableRecursive() eq
+      setOf(liverpool, manchester, leeds)
+  dublin.getAllReachableRecursive() eq
+      setOf(dublin)
 
-  isReachableIterative(liverpool, leeds) eq true
-  isReachableIterative(liverpool, dublin) eq false
+  liverpool.getAllReachableIterative() eq
+      setOf(liverpool, manchester, leeds)
+  dublin.getAllReachableIterative() eq
+      setOf(dublin)
 }
