@@ -4,6 +4,8 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import java.io.ByteArrayOutputStream
+import java.io.PrintStream
 import kotlin.math.sqrt
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -35,4 +37,14 @@ class TestEquilateralTriangle {
 
     @Test
     fun testArea4() = checkArea(4.0)
+
+    @Test
+    fun testMain() {
+        val byteArrayOutputStream = ByteArrayOutputStream()
+        System.setOut(PrintStream(byteArrayOutputStream))
+        main()
+        Assert.assertEquals(
+            "'main' function in 'Main.kt' should print 'et.area()' value",
+            "0.4330127018922193", byteArrayOutputStream.toString().trim())
+    }
 }

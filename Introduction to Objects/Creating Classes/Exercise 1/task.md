@@ -8,8 +8,15 @@ with regular `String`s.
 
 <div class="hint">
 
-Iterate over string indices (they form a range from `0` to `length - 1`)
-and for every index `i` make sure the character by the `i` index is the same as
-the character by the `length - 1 - i` index.
+For every character make sure that it equals the character standing
+on the same place from the end. 
+
+For example, for the string `"abcba"` of length 5 you compare:
+- the first character and the last one: `s[0]='a'` with `s[4]='a'`
+- the second character and the second from the end: `s[1]='b'` with `s[3]='b'`
+- the third character and the third from the end: `s[2]='c'` with `s[2]='c'`
+
+Since all the corresponding characters are equal, the given string is
+a palindrome. 
 
 </div>
