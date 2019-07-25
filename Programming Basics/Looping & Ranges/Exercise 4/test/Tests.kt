@@ -14,10 +14,10 @@ class TestHalfPyramid {
         System.setOut(PrintStream(byteArrayOutputStream))
         printHalfPyramid(n)
         Assert.assertEquals("Incorrect output for n = $n:",
-                expected, byteArrayOutputStream.toString())
+                expected.trim(), byteArrayOutputStream.toString().trim())
     }
 
-    @Test fun testPyramid1() = checkOutput(1, "#\n")
+    @Test fun testPyramid1() = checkOutput(1, "#")
 
     @Test fun testPyramid2() = checkOutput(2,
             """
