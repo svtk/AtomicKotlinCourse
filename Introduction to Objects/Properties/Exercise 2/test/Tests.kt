@@ -47,43 +47,43 @@ class TestRobotTeleportation {
     }
 
     @Test
-    fun test1Sample() = testMovements("(90,99)") {
+    fun test1Sample() = testMovements("(90, 99)") {
         goUp(1)
         goLeft(10)
     }
 
     @Test
-    fun test2Left() = testMovements("(70,0)") {
+    fun test2Left() = testMovements("(70, 0)") {
         goLeft(30)
     }
 
     @Test
-    fun test3Up() = testMovements("(0,99)") {
+    fun test3Up() = testMovements("(0, 99)") {
         goUp(1)
     }
 
     @Test
-    fun test4Left() = testMovements("(70,0)") {
+    fun test4Left() = testMovements("(70, 0)") {
         goLeft(130)
     }
 
     @Test
-    fun test5Up() = testMovements("(0,99)") {
+    fun test5Up() = testMovements("(0, 99)") {
         goUp(101)
     }
 
     @Test
-    fun test6Right() = testMovements("(10,0)") {
+    fun test6Right() = testMovements("(10, 0)") {
         goRight(110)
     }
 
     @Test
-    fun test7Down() = testMovements("(0,20)") {
+    fun test7Down() = testMovements("(0, 20)") {
         goDown(120)
     }
 
     @Test
-    fun test8SeveralSteps() = testMovements("(10,10)") {
+    fun test8SeveralSteps() = testMovements("(10, 10)") {
         goRight(313)
         goDown(415)
         goUp(505)

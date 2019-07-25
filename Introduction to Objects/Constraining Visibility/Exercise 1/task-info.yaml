@@ -9,12 +9,12 @@ files:
   - offset: 82
     length: 11
     placeholder_text: var
-  - offset: 131
-    length: 11
-    placeholder_text: fun
   - offset: 106
     length: 11
     placeholder_text: var
+  - offset: 131
+    length: 11
+    placeholder_text: fun
 - name: test/Tests.kt
   visible: false
 feedback_link: |

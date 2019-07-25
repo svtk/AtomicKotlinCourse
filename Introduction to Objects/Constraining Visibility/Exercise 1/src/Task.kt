@@ -34,9 +34,9 @@ class Robot(
     y = crossBoundary(y)
   }
 
-  fun getLocation(): String = "($x,$y)"
+  fun getLocation(): String = "($x, $y)"
 
-  override fun toString() = "Robot(x=$x,y=$y)"
+  override fun toString() = "Robot(x=$x, y=$y)"
 }
 
 fun main() {

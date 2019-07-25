@@ -40,7 +40,7 @@ class TestEnumerations {
         robotHandler.movements()
         val actualLocation = robotHandler.robot.location
         val message = if (robotHandler.loggedMovements.isEmpty()) {
-            "Initial location of the robot should be (0,0)"
+            "Initial location of the robot should be (0, 0)"
         } else {
             "Wrong location after:\n" + robotHandler.loggedMovements
         }
@@ -48,38 +48,38 @@ class TestEnumerations {
     }
 
     @Test
-    fun testInitial() = testMovements("(0,0)") {}
+    fun testInitial() = testMovements("(0, 0)") {}
 
     @Test
-    fun testRight() = testMovements("(1,0)") {
+    fun testRight() = testMovements("(1, 0)") {
         goRight(1)
     }
 
     @Test
-    fun testLeft() = testMovements("(1,0)") {
+    fun testLeft() = testMovements("(1, 0)") {
         goRight(2)
         goLeft(1)
     }
 
     @Test
-    fun testDown() = testMovements("(0,1)") {
+    fun testDown() = testMovements("(0, 1)") {
         goDown(1)
     }
 
     @Test
-    fun testUp() = testMovements("(0,1)") {
+    fun testUp() = testMovements("(0, 1)") {
         goDown(2)
         goUp(1)
     }
 
     @Test
-    fun testSeveralSteps() = testMovements("(3,5)") {
+    fun testSeveralSteps() = testMovements("(3, 5)") {
         goRight(3)
         goDown(5)
     }
 
     @Test
-    fun testSeveralSteps2() = testMovements("(10,10)") {
+    fun testSeveralSteps2() = testMovements("(10, 10)") {
         goRight(13)
         goDown(15)
         goUp(5)
