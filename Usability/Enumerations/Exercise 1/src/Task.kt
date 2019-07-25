@@ -20,7 +20,7 @@ class Robot {
   }
 
   val location: String
-    get() = "($x,$y)"
+    get() = "($x, $y)"
 }
 
 fun main() {
@@ -32,7 +32,7 @@ fun main() {
   println(robot.location)
 }
 /* Output:
-(0,0)
-(1,0)
-(1,2)
+(0, 0)
+(1, 0)
+(1, 2)
 */
