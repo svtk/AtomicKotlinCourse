@@ -2,6 +2,7 @@ package dataTypes
 
 fun main() {
   var answer = 42
-  // Type mismatch error
+  // Type mismatch error:
 //  answer = "unknown"
+  println("Type mismatch")
 }
