@@ -3,18 +3,33 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 110
-    length: 56
-    placeholder_text: "\n    x.let {\n        it.first = 1\n        it.second = 2\n\
-      \        it.third = 3\n    }\n    "
-  - offset: 242
-    length: 37
-    placeholder_text: "\n    y?.let {\n        with(it) {\n            start()\n \
-      \           finish()\n        }\n    }\n    "
-  - offset: 335
-    length: 37
-    placeholder_text: "\n    val result = with(z) {\n        init()\n        this\n\
-      \    }\n    "
+  - offset: 118
+    length: 72
+    placeholder_text: |-
+      x.let {
+          it.first = 1
+          it.second = 2
+          it.third = 3
+        }
+        return "let"
+  - offset: 274
+    length: 52
+    placeholder_text: |-
+      y?.let {
+          with(it) {
+            start()
+            finish()
+          }
+        }
+        return "let & with"
+  - offset: 390
+    length: 72
+    placeholder_text: |-
+      val result = with(z) {
+          init()
+          this
+        }
+        return "with"
 - name: test/Tests.kt
   visible: false
 feedback_link: |

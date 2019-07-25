@@ -6,12 +6,13 @@ class X {
   var third = 0
 }
 
-fun example1(x: X) {
+fun example1(x: X): String {
   with(x) {
     first = 1
     second = 2
     third = 3
   }
+  return "with"
 }
 
 class Y {
@@ -19,21 +20,24 @@ class Y {
   fun finish() {}
 }
 
-fun example2(y: Y?) {
+fun example2(y: Y?): String {
   y?.run {
     start()
     finish()
   }
+  return "run"
 }
 
 class Z {
   fun init() {}
 }
 
-fun example3(z: Z) {
+fun example3(z: Z): String {
   val result = z.apply {
     init()
   }
+  println(result)
+  return "apply"
 }
 
 fun main() {
