@@ -1,8 +1,8 @@
 ## Library Helpers (#2)
 
-Implement all the helper functions `run`, `let`, `apply`, `also`.
+Implement all the helper functions `with`, `run`, `let`, `apply`, `also`.
 
-| `receiver.<helper function> { ... }` | Take lambda with receiver:<br>`{ .. this .. }` | Take regular lambda:<br>`{ .. it .. }` |
+|                                      | Take lambda with receiver:<br>`{ .. this .. }` | Take regular lambda:<br>`{ .. it .. }` |
 |:------------------------------------:|:----------------------------------------------:|:--------------------------------------:|
-| **Return result of the lambda**      | `run`                                          | `let`                                  |
+| **Return result <br>of the lambda**  | `with`, `run`                                          | `let`                                  |
 | **Return receiver**                  | `apply`                                        | `also`                                 |
