@@ -2,7 +2,7 @@ package extensionsforNullableTypes1
 
 import atomictest.eq
 
-fun String?.orEmpty(): String = if (this != null) this else ""
+fun String?.orEmpty(): String = this ?: ""
 
 fun main() {
 
