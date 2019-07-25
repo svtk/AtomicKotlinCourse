@@ -1,76 +1,72 @@
 import org.junit.Assert
+import util.LINE_SEPARATOR
+import util.normalizeLineSeparators
 import java.io.*
 import java.util.function.Consumer
 
 abstract class AbstractTestExamples {
-    protected fun testExample(fileName: String, main: Runnable) {
-        testExample(fileName, Consumer { main.run() })
+  protected fun testExample(fileName: String, main: Runnable) {
+    testExample(fileName, Consumer { main.run() })
+  }
+
+  protected fun testExample(fileName: String, main: Consumer<Array<String>>) {
+    val exampleCode = File(fileName).readText()
+    val outputComment = "/* Output:"
+    if (exampleCode.contains(outputComment)) {
+      val output = extractOutput(exampleCode, outputComment)
+      testOutput(output, main, trim = true)
     }
-
-    val LINE_SEPARATOR = System.getProperty("line.separator")
-
-    fun String.normalizeLineSeparators(): String {
-        return replace("\\R".toRegex(), LINE_SEPARATOR)
+    val inputOutputComment = "/* Input/Output:"
+    if (exampleCode.contains(inputOutputComment)) {
+      val inputAndOutput = extractOutput(exampleCode, inputOutputComment)
+      testInputOutput(inputAndOutput, main)
+    } else {
+      testNoErrors(main)
     }
+  }
 
-    protected fun testExample(fileName: String, main: Consumer<Array<String>>) {
-        val exampleCode = File(fileName).readText()
-        val outputComment = "/* Output:"
-        if (exampleCode.contains(outputComment)) {
-            val output = extractOutput(exampleCode, outputComment)
-            testOutput(output, main, trim = true)
-        }
-        val inputOutputComment = "/* Input/Output:"
-        if (exampleCode.contains(inputOutputComment)) {
-            val inputAndOutput = extractOutput(exampleCode, inputOutputComment)
-            testInputOutput(inputAndOutput, main)
-        } else {
-            testNoErrors(main)
-        }
+  protected fun testExercise(outputFileName: String, main: Consumer<Array<String>>) {
+    val output = File(outputFileName).readText()
+    testOutput(output, main, trim = false)
+  }
+
+  private fun extractOutput(exampleCode: String, outputComment: String) =
+      exampleCode.substringAfter(outputComment).substringBefore("*/").trim()
+
+  private fun testOutput(output: String, main: Consumer<Array<String>>, trim: Boolean) {
+    val result = runAndGetOutput(main).let {
+      if (trim) it.trim() else it
     }
+    Assert.assertEquals(result.normalizeLineSeparators(), output.normalizeLineSeparators())
+  }
 
-    protected fun testExercise(outputFileName: String, main: Consumer<Array<String>>) {
-        val output = File(outputFileName).readText()
-        testOutput(output, main, trim = false)
-    }
+  private fun runAndGetOutput(main: Consumer<Array<String>>): String {
+    val out = ByteArrayOutputStream()
+    System.setOut(PrintStream(out))
 
-    private fun extractOutput(exampleCode: String, outputComment: String) =
-            exampleCode.substringAfter(outputComment).substringBefore("*/").trim()
+    main.accept(arrayOf())
 
-    private fun testOutput(output: String, main: Consumer<Array<String>>, trim: Boolean) {
-        val result = runAndGetOutput(main).let {
-            if (trim) it.trim() else it
-        }
-        Assert.assertEquals(result.normalizeLineSeparators(), output.normalizeLineSeparators())
-    }
+    return out.toString()
+  }
 
-    private fun runAndGetOutput(main: Consumer<Array<String>>): String {
-        val out = ByteArrayOutputStream()
-        System.setOut(PrintStream(out))
+  private fun testInputOutput(inputAndOutput: String, main: Consumer<Array<String>>) {
+    val (inputLines, outputLines) = inputAndOutput.lines().partition { it.startsWith(">>>") }
+    val input = inputLines.joinToString(LINE_SEPARATOR) { it.substringAfter(">>> ") }
+    val output = outputLines.joinToString(LINE_SEPARATOR)
 
-        main.accept(arrayOf())
+    val inputStream = ByteArrayInputStream(input.toByteArray())
+    System.setIn(inputStream)
 
-        return out.toString()
-    }
+    val out = ByteArrayOutputStream()
+    System.setOut(PrintStream(out))
 
-    private fun testInputOutput(inputAndOutput: String, main: Consumer<Array<String>>) {
-        val (inputLines, outputLines) = inputAndOutput.lines().partition { it.startsWith(">>>") }
-        val input = inputLines.map { it.substringAfter(">>> ") }.joinToString(LINE_SEPARATOR)
-        val output = outputLines.joinToString(LINE_SEPARATOR)
+    main.accept(arrayOf())
 
-        val inputStream = ByteArrayInputStream(input.toByteArray())
-        System.setIn(inputStream)
+    Assert.assertEquals(out.toString().trim().normalizeLineSeparators(), output.normalizeLineSeparators())
+  }
 
-        val out = ByteArrayOutputStream()
-        System.setOut(PrintStream(out))
-
-        main.accept(arrayOf())
-
-        Assert.assertEquals(out.toString().trim().normalizeLineSeparators(), output.normalizeLineSeparators())
-    }
-
-    private fun testNoErrors(main: Consumer<Array<String>>) {
-        val output = runAndGetOutput(main)
-        Assert.assertFalse("Program completed with errors:\n$output", output.contains("[Error]:"))
-    }
+  private fun testNoErrors(main: Consumer<Array<String>>) {
+    val output = runAndGetOutput(main)
+    Assert.assertFalse("Program completed with errors:\n$output", output.contains("[Error]:"))
+  }
 }

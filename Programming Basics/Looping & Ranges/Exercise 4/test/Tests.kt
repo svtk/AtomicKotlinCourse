@@ -1,9 +1,9 @@
 package loopingandRanges4
 
-import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.assertEqualsForOutput
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 
@@ -13,8 +13,8 @@ class TestHalfPyramid {
         val byteArrayOutputStream = ByteArrayOutputStream()
         System.setOut(PrintStream(byteArrayOutputStream))
         printHalfPyramid(n)
-        Assert.assertEquals("Incorrect output for n = $n:",
-                expected.trim(), byteArrayOutputStream.toString().trim())
+        assertEqualsForOutput("Incorrect output for n = $n:",
+                expected, byteArrayOutputStream)
     }
 
     @Test fun testPyramid1() = checkOutput(1, "#")

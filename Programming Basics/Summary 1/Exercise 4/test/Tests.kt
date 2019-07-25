@@ -1,9 +1,9 @@
 package summary4
 
-import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.assertEqualsForOutput
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 
@@ -13,8 +13,8 @@ class TestSnake {
         val byteArrayOutputStream = ByteArrayOutputStream()
         System.setOut(PrintStream(byteArrayOutputStream))
         printSnake(rows, columns)
-        Assert.assertEquals("Incorrect output for rows = $rows, columns = $columns:",
-                expected, byteArrayOutputStream.toString())
+        assertEqualsForOutput("Incorrect output for rows = $rows, columns = $columns:",
+                expected, byteArrayOutputStream)
     }
 
     @Test fun testSnake2() = checkOutput(2,2,
