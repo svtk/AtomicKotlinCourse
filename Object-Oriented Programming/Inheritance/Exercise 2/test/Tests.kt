@@ -4,31 +4,32 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestBomb {
-    private fun checkMaze(
-            bombPosition: Position,
-            mazeRepresentation: String,
-            afterDestroy: String,
-            prefixMessage: String? = null
-    ) {
-        val maze = MazeImpl(mazeRepresentation)
-        val robot = Robot()
-        maze.add(robot, bombPosition)
-        val bomb = maze.allAt(bombPosition)
-                .filterIsInstance<Bomb>().single()
-        bomb.interact(maze, setOf(robot))
+  private fun checkMaze(
+      bombPosition: Position,
+      mazeRepresentation: String,
+      afterDestroy: String,
+      prefixMessage: String? = null
+  ) {
+    val maze = MazeImpl(mazeRepresentation)
+    val robot = Robot()
+    maze.add(robot, bombPosition)
+    val bomb = maze.allAt(bombPosition)
+        .filterIsInstance<Bomb>().single()
+    bomb.interact(maze, setOf(robot))
 
-        Assert.assertEquals("${prefixMessage ?: ""} " +
-                "Wrong result after exploding a bomb for the following maze:\n$mazeRepresentation",
-                afterDestroy,
-                maze.toString())
-    }
+    Assert.assertEquals("${prefixMessage ?: ""} " +
+        "Wrong result after exploding a bomb for the following maze:\n$mazeRepresentation",
+        afterDestroy,
+        maze.toString())
+  }
 
-    @Test
-    fun test1Sample() = checkMaze(Position(5, 4),
-            """
+  @Test(timeout = TIMEOUT)
+  fun test1Sample() = checkMaze(Position(5, 4),
+      """
         ###########
         #.........#
         #.........#
@@ -39,7 +40,7 @@ class TestBomb {
         #.........#
         ###########
         """.trimIndent(),
-            """
+      """
         ###########
         #.........#
         #.... ....#
@@ -50,11 +51,11 @@ class TestBomb {
         #.........#
         ###########
         """.trimIndent()
-    )
+  )
 
-    @Test
-    fun test2() = checkMaze(Position(5, 4),
-            """
+  @Test(timeout = TIMEOUT)
+  fun test2() = checkMaze(Position(5, 4),
+      """
         ###########
         #.........#
         #.........#
@@ -65,7 +66,7 @@ class TestBomb {
         #.........#
         ###########
         """.trimIndent(),
-            """
+      """
         ###########
         #.........#
         #.........#
@@ -76,11 +77,11 @@ class TestBomb {
         #.........#
         ###########
         """.trimIndent()
-    )
+  )
 
-    @Test
-    fun test3() = checkMaze(Position(5, 4),
-            """
+  @Test(timeout = TIMEOUT)
+  fun test3() = checkMaze(Position(5, 4),
+      """
         ###########
         #.........#
         #.........#
@@ -91,7 +92,7 @@ class TestBomb {
         #.........#
         ###########
         """.trimIndent(),
-            """
+      """
         ###########
         #.........#
         #.........#
@@ -102,11 +103,11 @@ class TestBomb {
         #.........#
         ###########
         """.trimIndent()
-    )
+  )
 
-    @Test
-    fun test4() = checkMaze(Position(5, 4),
-            """
+  @Test(timeout = TIMEOUT)
+  fun test4() = checkMaze(Position(5, 4),
+      """
         ###########
         #.........#
         #.........#
@@ -117,7 +118,7 @@ class TestBomb {
         #.........#
         ###########
         """.trimIndent(),
-            """
+      """
         ###########
         #.........#
         #.........#
@@ -128,11 +129,11 @@ class TestBomb {
         #.........#
         ###########
         """.trimIndent()
-    )
+  )
 
-    @Test
-    fun test5() = checkMaze(Position(5, 4),
-            """
+  @Test(timeout = TIMEOUT)
+  fun test5() = checkMaze(Position(5, 4),
+      """
         ###########
         #.........#
         #.........#
@@ -143,7 +144,7 @@ class TestBomb {
         #.........#
         ###########
         """.trimIndent(),
-            """
+      """
         ###########
         #.........#
         #...   ...#
@@ -154,11 +155,11 @@ class TestBomb {
         #.........#
         ###########
         """.trimIndent()
-    )
+  )
 
-    // TODO: Should or shouldn't?..
+  // TODO: Should or shouldn't?..
 /*
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test6() = checkMaze(Position(2, 2),
             """
         #####

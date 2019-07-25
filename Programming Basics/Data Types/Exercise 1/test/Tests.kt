@@ -2,11 +2,12 @@ package dataTypes
 
 import org.junit.Assert
 import org.junit.Test
+import util.TIMEOUT
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 
 class Tests {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun checkOutput() {
     val byteArrayOutputStream = ByteArrayOutputStream()
     System.setOut(PrintStream(byteArrayOutputStream))
@@ -17,7 +18,7 @@ class Tests {
         output.isNotEmpty())
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun checkTypeMismatch() {
     val byteArrayOutputStream = ByteArrayOutputStream()
     System.setOut(PrintStream(byteArrayOutputStream))

@@ -3,6 +3,7 @@ package constrainingVisibility2
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.assertEqualsForOutput
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
@@ -61,22 +62,22 @@ class TestRobotIncorrectInput {
   }
 
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1Right() = testWrongArgumentOutput {
     goRight(-5)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2Left() = testWrongArgumentOutput {
     goLeft(0)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test3Up() = testWrongArgumentOutput {
     goUp(-10)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test4Down() = testWrongArgumentOutput {
     goDown(-50)
   }

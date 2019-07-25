@@ -3,6 +3,8 @@ package util
 import org.junit.Assert
 import java.io.ByteArrayOutputStream
 
+const val TIMEOUT = 3000L
+
 val LINE_SEPARATOR: String = System.getProperty("line.separator")
 
 fun String.normalizeLineSeparators(): String {

@@ -4,40 +4,41 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestRomanNumerals {
-    private fun checkNumber(number: Int, roman: String) {
-        Assert.assertEquals("Wrong result for $number:", roman, convertToRoman(number))
-    }
+  private fun checkNumber(number: Int, roman: String) {
+    Assert.assertEquals("Wrong result for $number:", roman, convertToRoman(number))
+  }
 
-    @Test
-    fun test01Sample1() = checkNumber(23, "XXIII")
+  @Test(timeout = TIMEOUT)
+  fun test01Sample1() = checkNumber(23, "XXIII")
 
-    @Test
-    fun test02Sample2() = checkNumber(44, "XLIV")
+  @Test(timeout = TIMEOUT)
+  fun test02Sample2() = checkNumber(44, "XLIV")
 
-    @Test
-    fun test0Sample3() = checkNumber(100, "C")
+  @Test(timeout = TIMEOUT)
+  fun test0Sample3() = checkNumber(100, "C")
 
-    @Test
-    fun test04Sample4() = checkNumber(2018, "MMXVIII")
+  @Test(timeout = TIMEOUT)
+  fun test04Sample4() = checkNumber(2018, "MMXVIII")
 
-    @Test
-    fun test05VII() = checkNumber(7, "VII")
+  @Test(timeout = TIMEOUT)
+  fun test05VII() = checkNumber(7, "VII")
 
-    @Test
-    fun test06XXXIX() = checkNumber(39, "XXXIX")
+  @Test(timeout = TIMEOUT)
+  fun test06XXXIX() = checkNumber(39, "XXXIX")
 
-    @Test
-    fun test07DCLXXXIII() = checkNumber(683, "DCLXXXIII")
+  @Test(timeout = TIMEOUT)
+  fun test07DCLXXXIII() = checkNumber(683, "DCLXXXIII")
 
-    @Test
-    fun test08MCMXCIX() = checkNumber(1999, "MCMXCIX")
+  @Test(timeout = TIMEOUT)
+  fun test08MCMXCIX() = checkNumber(1999, "MCMXCIX")
 
-    @Test
-    fun test09CDXCIV() = checkNumber(494, "CDXCIV")
+  @Test(timeout = TIMEOUT)
+  fun test09CDXCIV() = checkNumber(494, "CDXCIV")
 
-    @Test
-    fun test10MDLV() = checkNumber(1555, "MDLV")
+  @Test(timeout = TIMEOUT)
+  fun test10MDLV() = checkNumber(1555, "MDLV")
 }
