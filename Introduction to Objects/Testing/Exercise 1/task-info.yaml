@@ -9,6 +9,9 @@ files:
   - offset: 159
     length: 17
     placeholder_text: h / 2 * (x + y)
+  - offset: 257
+    length: 116
+    placeholder_text: // add more tests
 - name: test/Tests.kt
   visible: false
 feedback_link: |
