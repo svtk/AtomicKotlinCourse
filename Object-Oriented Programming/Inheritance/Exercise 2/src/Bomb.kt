@@ -14,17 +14,15 @@ class Bomb(
         val bombPosition = maze.position(this) ?: return
         maze.all().forEach { element ->
             val position = maze.position(element)
-            // TODO: Should or shouldn't?.. (see test)
             if (position != null &&
-                    isCloseToBomb(position, bombPosition)){ // &&
-//                    element !is Wall) {
+                    isCloseToBomb(position, bombPosition)) {
                 maze.destroy(element)
             }
         }
     }
 
     private fun isCloseToBomb(position: Position, bombPosition: Position) =
-            2 * distance(position, bombPosition) <= diameter + 0.0000001
+            2 * distance(position, bombPosition) < diameter + 0.0000001
 
     private fun distance(from: Position, to: Position): Double {
         fun sqr(i: Int) = i.toDouble().pow(2)

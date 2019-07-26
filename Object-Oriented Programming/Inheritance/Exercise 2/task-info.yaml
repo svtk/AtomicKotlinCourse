@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 294
-    length: 446
+    length: 344
     placeholder_text: TODO()
 - name: src/GameMatrix.kt
   visible: true

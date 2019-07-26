@@ -23,7 +23,7 @@ class MazeImpl(
     private val matrix: GameMatrix =
             GameMatrixImpl(width, height)
 
-    private val elementToPosition = mutableMapOf<GameElement, Position>()
+    private val positions = mutableMapOf<GameElement, Position>()
 
     init {
         val lines = representation.lines()
@@ -40,11 +40,11 @@ class MazeImpl(
 
     private fun add(element: GameElement, position: Position) {
         matrix.add(element, position)
-        elementToPosition[element] = position
+        positions[element] = position
     }
 
     override fun all(): Set<GameElement> {
-        return elementToPosition.keys.toSet()
+        return positions.keys.toSet()
     }
 
     override fun allAt(position: Position): Set<GameElement> {
@@ -52,12 +52,12 @@ class MazeImpl(
     }
 
     override fun position(element: GameElement): Position? =
-            elementToPosition[element]
+            positions[element]
 
     override fun destroy(element: GameElement) {
         val position = position(element) ?: return
         matrix.remove(element, position)
-        elementToPosition.remove(element)
+        positions.remove(element)
     }
 
     override fun toString(): String {
@@ -71,7 +71,7 @@ class MazeImpl(
                 val position = Position(x, y)
                 val elements = matrix.elementsAt(position)
                 elements.forEach { element ->
-                    val storedPosition = elementToPosition[element]
+                    val storedPosition = positions[element]
                     if (storedPosition != position) {
                         throw AssertionError("Inconsistent stored positions for element $element: " +
                                 "$storedPosition != $position")
@@ -79,7 +79,7 @@ class MazeImpl(
                 }
             }
         }
-        for ((element, position) in elementToPosition) {
+        for ((element, position) in positions) {
             val elements = matrix.elementsAt(position)
             if (!elements.contains(element)) {
                 throw AssertionError("Inconsistent stored positions for element $element: " +

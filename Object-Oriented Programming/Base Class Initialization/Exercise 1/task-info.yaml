@@ -3,27 +3,27 @@ files:
 - name: src/GameElements.kt
   visible: true
   placeholders:
-  - offset: 491
-    length: 45
+  - offset: 478
+    length: 38
     placeholder_text: |-
       GameElement {
 
           override val symbol = '#'
 
-          override val preventMovement = true
+          override val sharesCell = false
 
           override fun interact(maze: Maze, sameCellElements: Set<GameElement>) {
               // Default implementation: do nothing
           }
       }
-  - offset: 551
-    length: 46
+  - offset: 531
+    length: 37
     placeholder_text: |-
       GameElement {
 
           override val symbol = '.'
 
-          override val preventMovement = false
+          override val sharesCell = true
 
           override fun interact(maze: Maze, sameCellElements: Set<GameElement>) {
               // Default implementation: do nothing

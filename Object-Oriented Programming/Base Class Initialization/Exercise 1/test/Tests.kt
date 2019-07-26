@@ -7,20 +7,20 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestImmovableElement {
+class TestStaticElement {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val wall = Wall()
     Assert.assertEquals("Wrong value for wall.symbol", '#', wall.symbol)
-    Assert.assertEquals("Wrong value for wall.preventMovement", true, wall.preventMovement)
+    Assert.assertEquals("Wrong value for wall.sharesCell", false, wall.sharesCell)
 
     val food = Food()
     Assert.assertEquals("Wrong value for food.symbol", '.', food.symbol)
-    Assert.assertEquals("Wrong value for food.preventMovement", false, food.preventMovement)
+    Assert.assertEquals("Wrong value for food.sharesCell", true, food.sharesCell)
 
     val elements: List<Any> = listOf(wall, food)
-    Assert.assertTrue("Wall and Food should extend ImmovableElement", elements.all {
-      (it is ImmovableElement)
+    Assert.assertTrue("Wall and Food should extend StaticElement", elements.all {
+      (it is StaticElement)
     })
   }
 }

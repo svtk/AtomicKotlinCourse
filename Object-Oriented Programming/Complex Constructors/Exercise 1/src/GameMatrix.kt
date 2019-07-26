@@ -59,15 +59,18 @@ class GameMatrixImpl(
 
 fun main() {
   val mazeRepresentation = """
-                 ###
-                #
-                #R #
+     ###
+    #
+    #R #
 
-                ####
-            """.trimIndent()
+    ####
+    """.trimIndent()
   val matrix = GameMatrixImpl(
-      width = 4, height = 5, representation = mazeRepresentation)
+      width = 4, height = 5,
+      representation = mazeRepresentation)
   // trim lasting whitespaces to have the same representation
-  matrix.toString().lines().joinToString("\n") { it.trimEnd() } eq
+  matrix
+      .toString().lines()
+      .joinToString("\n") { it.trimEnd() } eq
       mazeRepresentation
 }

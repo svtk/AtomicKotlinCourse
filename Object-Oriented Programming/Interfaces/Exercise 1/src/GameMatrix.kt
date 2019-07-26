@@ -35,6 +35,9 @@ class GameMatrixImpl(width: Int, height: Int) : GameMatrix {
   override fun toString() =
       cells.joinToString("\n") { row ->
         row.joinToString("") { elements ->
+          // As we can't display several elements on the one cell
+          // as one character, for simplicity
+          // we display only the last one
           "${elements.lastOrNull()?.symbol ?: ' '}"
         }.trimEnd()
       }
@@ -54,11 +57,11 @@ fun main() {
   }
   matrix.toString() eq
       """
-                ####
-                #  #
-                #R #
-                # .#
-                ####
-            """.trimIndent()
+      ####
+      #  #
+      #R #
+      # .#
+      ####
+      """.trimIndent()
   matrix.elementsAt(Position(1, 2)).singleOrNull()?.symbol eq 'R'
 }

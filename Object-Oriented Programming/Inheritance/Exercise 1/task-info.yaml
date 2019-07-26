@@ -3,8 +3,8 @@ files:
 - name: src/Maze.kt
   visible: true
   placeholders:
-  - offset: 1555
-    length: 125
+  - offset: 1523
+    length: 117
     placeholder_text: TODO()
 - name: src/GameMatrix.kt
   visible: true

@@ -6,36 +6,36 @@ interface Maze
 
 interface GameElement {
     val symbol: Char
-    val preventMovement: Boolean
+    val sharesCell: Boolean
 
     fun interact(maze: Maze, sameCellElements: Set<GameElement>)
 }
 
-open class ImmovableElement(
+open class StaticElement(
         override val symbol: Char,
-        override val preventMovement: Boolean
+        override val sharesCell: Boolean
 ) : GameElement {
     override fun interact(maze: Maze, sameCellElements: Set<GameElement>) {
         // Default implementation: do nothing
     }
 }
 
-class Wall : ImmovableElement('#', preventMovement = true)
+class Wall : StaticElement('#', sharesCell = false)
 
-class Food : ImmovableElement('.', preventMovement = false)
+class Food : StaticElement('.', sharesCell = true)
 
 fun main() {
     val wall = Wall()
     wall.symbol eq '#'
-    wall.preventMovement eq true
+    wall.sharesCell eq false
 
     val food = Food()
     food.symbol eq '.'
-    food.preventMovement eq false
+    food.sharesCell eq true
 
-    // Wall and Food should extend ImmovableElement
+    // Wall and Food should extend StaticElement
     val elements: List<Any> = listOf(wall, food)
     elements.forEach {
-        (it is ImmovableElement) eq true
+        (it is StaticElement) eq true
     }
 }
