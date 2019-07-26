@@ -32,6 +32,9 @@ files:
           }
           hamsters.remove(hamsterWithGivenName)
         }
+  - offset: 237
+    length: 27
+    placeholder_text: MutableList<Hamster>
 - name: test/Tests.kt
   visible: false
 feedback_link: |
