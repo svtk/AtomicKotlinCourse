@@ -17,6 +17,6 @@ For example, for the string `"abcba"` of length 5 you compare:
 - the third character and the third from the end: `s[2]='c'` with `s[2]='c'`
 
 Since all the corresponding characters are equal, the given string is
-a palindrome. 
+a palindrome.
 
 </div>

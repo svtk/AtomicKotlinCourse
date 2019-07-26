@@ -14,7 +14,7 @@ and don't store milliseconds in `Long`, you'll get overflow:
 ```kotlin
 // computation in Int ends with integer overflow:
 1_000_000_000 * 60 = -129542144
-// computation in Long is ok:  
+// computation in Long works correctly:  
 1_000_000_000 * 60L = 60000000000L
 ```
 

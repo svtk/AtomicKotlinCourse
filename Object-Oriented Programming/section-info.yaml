@@ -3,8 +3,8 @@ content:
 - Complex Constructors
 - Secondary Constructors
 - Inheritance
-- Composition
 - Base Class Initialization
+- Composition
 - Abstract Classes
 - Dynamic Binding
 - Polymorphism

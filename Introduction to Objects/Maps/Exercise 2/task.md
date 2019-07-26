@@ -11,4 +11,4 @@ by a given name and return it.
 If there's no hamster with a given name, it should throw a `NoSuchElementException`.
 
 Implement the `removeHamster()` function that should find a hamster
-by a given name and remove it. 
+by a given name and remove it.

@@ -1,5 +1,7 @@
 type: theory
 files:
+- name: src/Bear.kt
+  visible: true
 - name: src/Arg.kt
   visible: true
 - name: src/VisibleArgs.kt

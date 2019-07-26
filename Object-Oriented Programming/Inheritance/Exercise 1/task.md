@@ -1,12 +1,7 @@
 ## Inheritance (#1)
 
-`MazeImpl` keeps the record of positions of all the elements added to
-`ElementMatrix` by storing a map from an element to position.
+`MazeImpl` additionally keeps the record of positions of all the elements added to
+`GameMatrix` by storing a `positions` map from an element to position.
 
-Note that the logic reading the maze was moved from its representation to `MazeImpl` 
-class, so that information about elements was added correctly to both
-`matrix` and `elementToPosition` Map. Edit it if necessary by using 
-the private member function `addElement()`. 
-
-Implement the `destroyElement()` function which should remove the element both
-from `matrix` and from the auxiliary `elementToPosition` map.
+Implement the `Maze.destroy(GameElement)` function which should remove
+the element both from `matrix` and from the auxiliary `positions` map.
