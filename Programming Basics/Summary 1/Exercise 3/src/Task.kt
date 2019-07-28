@@ -1,6 +1,6 @@
 package summary3
 
-fun printPyramid(n: Int) {
+fun printTriangle(n: Int) {
   for (i in 1..n) {
     repeat(n - i) {
       print(' ')
@@ -13,7 +13,7 @@ fun printPyramid(n: Int) {
 }
 
 fun main() {
-  printPyramid(4)
+  printTriangle(4)
 }
 /* Output:
    #
