@@ -1,11 +1,12 @@
-package creatingClasses3
+package creatingClasses4
+
+fun task(s: String) = s.capitalize()
 
 fun main() {
-  val ss = SimpleString("abc")
-  println(ss.get(0))
-  println(ss.length())
+  println(task("hi!"))
+  println(task("Hi!"))
 }
 /* Output:
-a
-3
-*/
+Hi!
+Hi!
+ */

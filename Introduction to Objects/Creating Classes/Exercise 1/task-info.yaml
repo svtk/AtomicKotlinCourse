@@ -3,11 +3,9 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 73
-    length: 109
-    placeholder_text: TODO()
-- name: src/SimpleString.kt
-  visible: true
+  - offset: 26
+    length: 296
+    placeholder_text: // create Robot class
 - name: test/Tests.kt
   visible: false
 feedback_link: |

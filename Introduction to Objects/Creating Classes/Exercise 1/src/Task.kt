@@ -1,17 +1,29 @@
 package creatingClasses1
 
-fun isPalindrome(s: SimpleString): Boolean {
-  for (i in 0 until s.length()) {
-    if (s.get(i) != s.get(s.length() - 1 - i)) return false
+class Robot {
+  fun goRight(steps: Int) {
+    println("going right $steps steps")
   }
-  return true
+
+  fun goLeft(steps: Int) {
+    println("going left $steps steps")
+  }
+
+  fun goDown(steps: Int) {
+    println("going down $steps steps")
+  }
+
+  fun goUp(steps: Int) {
+    println("going up $steps steps")
+  }
 }
 
 fun main() {
-  println(isPalindrome(SimpleString("mom")))
-  println(isPalindrome(SimpleString("mom!")))
+  /*
+  val robot = Robot()
+  robot.goUp(11)
+   */
 }
 /* Output:
-true
-false
+going up 11 steps
 */

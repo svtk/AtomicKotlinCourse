@@ -1,17 +1,11 @@
-package creatingClasses2
-
-fun isPalIgnoreCase(s: SimpleString): Boolean {
-  for (i in 0 until s.length()) {
-    val first = s.get(i).toLowerCase()
-    val second = s.get(s.length() - 1 - i).toLowerCase()
-    if (first != second) return false
-  }
-  return true
-}
+package creatingClasses3
 
 fun main() {
-  println(isPalIgnoreCase(SimpleString("Mom")))
+  val s = "abc"
+  println(s.toUpperCase())
+  println(s.toLowerCase())
 }
 /* Output:
-true
+a
+3
 */

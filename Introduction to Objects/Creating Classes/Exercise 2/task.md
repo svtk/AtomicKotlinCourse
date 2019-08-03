@@ -1,9 +1,13 @@
-## Creating Classes (#2)
+## Mastering the IDE: Quick Documentation
 
-Implement an `isPalIgnoreCase()` function that takes a `String` argument.
+The <span class="control">`Quick Documentation`</span> action produces 
+information about a symbol, such as a function or a class. 
+Press <span class="shortcut">&shortcut:QuickJavaDoc;</span> when the caret 
+is on a class or a function, and IntelliJ Idea will show you the available
+documentation for this function or class.
 
-<div class="hint">
+Call <span class="control">`Quick Documentation`</span> action 
+for the `String` class and its `toUpperCase()` and `toLowerCase()` functions.
 
-Use `toLowerCase()` on `Char` to compare characters in lower case.
-
-</div>
+Press <span class="shortcut">&shortcut:EditorEscape;</span> to close the 
+quick documentation pop-up.

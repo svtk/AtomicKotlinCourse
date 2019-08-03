@@ -1,42 +1,61 @@
 package creatingClasses1
 
-import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.assertEqualsForOutput
 import util.TIMEOUT
+import java.io.ByteArrayOutputStream
+import java.io.PrintStream
+import java.lang.AssertionError
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSimpleStringPalindrome {
-  private fun checkPalindrome(s: String, expected: Boolean) {
-    Assert.assertEquals("""Wrong result for calling isPalindrome() on SimpleString("$s"):""",
-        expected, isPalindrome(SimpleString(s)))
+
+  @Test(timeout = TIMEOUT)
+  fun testRobot() {
+    createRobotInstance()
+  }
+
+  fun testDirection(direction: String, steps: Int) {
+    val (robotClass, robot) = createRobotInstance()
+
+    val goMethod =
+        try {
+          robotClass.getMethod("go$direction", Int::class.java)
+        } catch (e: NoSuchMethodException) {
+          throw AssertionError("Can't find the 'go$direction(steps: Int)' member function in 'Robot' class")
+        }
+
+    val byteArrayOutputStream = ByteArrayOutputStream()
+    System.setOut(PrintStream(byteArrayOutputStream))
+
+    goMethod.invoke(robot, steps)
+    assertEqualsForOutput("Incorrect output for 'go$direction' method",
+        "going ${direction.decapitalize()} $steps steps",
+        byteArrayOutputStream)
+  }
+
+  private fun createRobotInstance(): Pair<Class<out Any>, Any> {
+    val robotClass =
+        try {
+          ClassLoader.getSystemClassLoader().loadClass("creatingClasses1.Robot")
+        } catch (e: ClassNotFoundException) {
+          throw AssertionError("Can't find the 'Robot' class in 'creatingClasses1' package")
+        }
+    val robot = robotClass.constructors.first().newInstance()
+    return Pair(robotClass, robot)
   }
 
   @Test(timeout = TIMEOUT)
-  fun testPalindrome1() = checkPalindrome("mom", true)
+  fun testRight() = testDirection("Right", 11)
 
   @Test(timeout = TIMEOUT)
-  fun testPalindrome2() = checkPalindrome("dad", true)
+  fun testLeft() = testDirection("Left", 37)
 
   @Test(timeout = TIMEOUT)
-  fun testPalindrome3() = checkPalindrome("street", false)
+  fun testUp() = testDirection("Up", 4)
 
   @Test(timeout = TIMEOUT)
-  fun testPalindrome4() = checkPalindrome("brr", false)
-
-  @Test(timeout = TIMEOUT)
-  fun testPalindrome5() = checkPalindrome("A", true)
-
-  @Test(timeout = TIMEOUT)
-  fun testPalindrome6() = checkPalindrome("rr", true)
-
-  @Test(timeout = TIMEOUT)
-  fun testPalindrome7() = checkPalindrome("abccba", true)
-
-  @Test(timeout = TIMEOUT)
-  fun testPalindrome8() = checkPalindrome("abcba", true)
-
-  @Test(timeout = TIMEOUT)
-  fun testPalindrome9() = checkPalindrome("qwertyuiopoiuytrewq", true)
+  fun testDown() = testDirection("Down", 8)
 }
