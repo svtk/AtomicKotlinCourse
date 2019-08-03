@@ -1,10 +1,10 @@
 package creatingClasses4
 
-fun task(s: String) = s.capitalize()
+fun cap(s: String) = s.capitalize()
 
 fun main() {
-  println(task("hi!"))
-  println(task("Hi!"))
+  println(cap("hi!"))
+  println(cap("Hi!"))
 }
 /* Output:
 Hi!
