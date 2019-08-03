@@ -12,9 +12,9 @@ For instance, if you convert one billion hours to milliseconds
 and don't store milliseconds in `Long`, you'll get overflow:
 
 ```kotlin
-// computation in Int ends with integer overflow:
+// Int computation causes integer overflow:
 1_000_000_000 * 60 = -129542144
-// computation in Long works correctly:  
+// Long computation succeeds:
 1_000_000_000 * 60L = 60000000000L
 ```
 

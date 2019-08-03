@@ -1,7 +1,7 @@
 ## Summary 1 (#2)
 
-Reverse a decimal number using a while loop. An auxiliary `worker` variable
-will help you iteratively produce the `result`:
+Reverse the digits in a decimal number using a while loop. An auxiliary
+`worker` variable will help you iteratively produce the `result`:
 
 | Worker     | Result |
 |------------|--------|

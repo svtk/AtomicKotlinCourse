@@ -1,3 +1,3 @@
 ## Objects Everywhere (#4)
 
-Reverse an integer number using String conversion.
+Reverse an integer number using string conversion.

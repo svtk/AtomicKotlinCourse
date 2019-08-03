@@ -1,6 +1,6 @@
 ## Creating Classes (#2)
 
-Implement an `isPalIgnoreCase()` function that takes a `SimpleString` argument.
+Implement an `isPalIgnoreCase()` function that takes a `String` argument.
 
 <div class="hint">
 

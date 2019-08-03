@@ -9,5 +9,5 @@ Display a table filled with numbers in a form of snake. For rows = 3, columns =
  6 7 8
 ```
 
-For proper alignment use `"%3d".format(number)` to place additional spaces
+For proper alignment use `"%3d".format(number)` to place any necessary spaces
 before the number.

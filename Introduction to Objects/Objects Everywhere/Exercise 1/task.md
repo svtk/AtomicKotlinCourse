@@ -1,17 +1,18 @@
 ## Objects Everywhere (#1)
 
-Palindromes are words or phrases that read the same forward and backward. Some
-examples include "mom" and "dad." Write a function to test words or phrases for
-palindromes.
+Palindromes are words or phrases that read the same forward and backward. For
+example:
 
-Some examples:
-"mom" is a palindrome
-"dad" is a palindrome
-"street" is not a palindrome
+- "mom" is a palindrome
+- "dad" is a palindrome
+- "rotator" is a palindrome
+- "street" is *not* a palindrome
+
+Write a function that checks whether a word or phrase is a palindrome.
 
 <div class="hint">
 
-`String`'s `reversed` member function may prove useful here.
-Use `==` to check whether two strings are equal.
+`String`'s `reversed()` member function may prove useful here. Use `==`
+to check whether two strings are equal.
 
 </div>

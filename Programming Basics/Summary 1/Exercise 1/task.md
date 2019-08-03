@@ -1,25 +1,24 @@
 ## Summary 1 (#1)
 
-Count the number of occurrences of a given digit in a decimal number using a
-`while` loop.
+Write a function that uses a `while` loop to count the occurrences of a given
+digit within a decimal number. Place the decimal number in a variable called
+`worker`. Each pass through the loop tests the right-most digit of `worker`,
+then at the end of the loop, removes that right-most digit from `worker`.
+The `occurrences` variable contains the number of occurrences of the digit you
+seek.
 
-Each pass through the loop should place the first digits of the initial number
-into an auxiliary `worker` variable, while the `occurrences` variable should
-contain the rest of the number's digits.
-
-The table below demonstrates the values for each loop while finding occurrences
+This table shows the values during each loop while finding occurrences
 of `1` in `121341`:
 
-| Worker  | Rest   | Occurrences |
-| ------- |--------|-------------|
-| 121341  | -      | 0           |
-| 12134   | 1      | 0           |
-| 1213    | 41     | 1           |
-| 121     | 341    | 1           |
-| 12      | 1341   | 2           |
-| 1       | 21341  | 2           |
-| -       | 121341 | 3           |
+| `worker` | Removed | `occurrences` |
+|----------|---------|---------------|
+| 121341   | -       | 0             |
+| 12134    | 1       | 1             |
+| 1213     | 41      | 1             |
+| 121      | 341     | 1             |
+| 12       | 1341    | 2             |
+| 1        | 21341   | 2             |
+| -        | 121341  | 3             |
 
-`occurrences` show how many `1` digits are in the `rest` number. The `rest`
-number is present in the table for clarity, but you don't need to store it in a
-separate variable.
+The "Removed" values are in the table for clarity, but you don't need a
+"Removed" variable in your solution.
