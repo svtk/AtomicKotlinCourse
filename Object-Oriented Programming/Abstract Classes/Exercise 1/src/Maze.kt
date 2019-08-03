@@ -106,5 +106,5 @@ fun Maze.isPassable(position: Position): Boolean {
         return false
     }
     val elementsAtNewPosition = allAt(position)
-    return elementsAtNewPosition.none { it.preventMovement }
+    return elementsAtNewPosition.none { it.sharesCell }
 }

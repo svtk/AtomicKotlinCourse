@@ -4,11 +4,11 @@ import abstractClasses1.Move.*
 
 abstract class MovableElement : GameElement {
 
-    override val preventMovement: Boolean get() = false
+  override val sharesCell: Boolean get() = false
 
-    abstract fun makeMove(currentPosition: Position, maze: Maze): Position
+  abstract fun makeMove(currentPosition: Position, maze: Maze): Position
 
-    override fun toString() = symbol.toString()
+  override fun toString() = symbol.toString()
 }
 
 enum class Move {

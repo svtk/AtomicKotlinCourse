@@ -2,14 +2,14 @@ package abstractClasses1
 
 interface GameElement {
     val symbol: Char
-    val preventMovement: Boolean
+    val sharesCell: Boolean
 
     fun interact(maze: Maze, sameCellElements: Set<GameElement>)
 }
 
 open class ImmovableElement(
         override val symbol: Char,
-        override val preventMovement: Boolean
+        override val sharesCell: Boolean
 ) : GameElement {
     override fun interact(maze: Maze, sameCellElements: Set<GameElement>) {
         // Default implementation: do nothing
@@ -18,9 +18,9 @@ open class ImmovableElement(
     override fun toString() = symbol.toString()
 }
 
-class Wall : ImmovableElement('#', preventMovement = true)
+class Wall : ImmovableElement('#', sharesCell = false)
 
-class Food : ImmovableElement('.', preventMovement = false)
+class Food : ImmovableElement('.', sharesCell = true)
 
 fun createGameElement(char: Char?): GameElement? = when (char) {
     '#' -> Wall()
