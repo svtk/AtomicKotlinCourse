@@ -7,10 +7,10 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestPersonsMap {
+class TestMazeImpl {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
-    val matrix = GameMatrixImpl(width = 4, height = 5)
+    val matrix = MazeImpl(width = 4, height = 5)
     matrix.add(Robot(), Position(x = 1, y = 2))
     matrix.add(Food(), Position(x = 2, y = 3))
     for (i in 0..4) {
@@ -31,7 +31,7 @@ class TestPersonsMap {
             """.trimIndent(),
         matrix.toString())
     Assert.assertEquals("Wrong result for the sample. At Position(1, 2) should be Robot",
-        'R', matrix.elementsAt(Position(1, 2)).singleOrNull()?.symbol)
+        'R', matrix.allAt(Position(1, 2)).singleOrNull()?.symbol)
   }
 
   private fun createGameElement(char: Char): GameElement? = when (char) {
@@ -47,7 +47,7 @@ class TestPersonsMap {
     val lengths = lines.map { it.length }
     val width = lengths.first()
 
-    val matrix = GameMatrixImpl(width, height)
+    val matrix = MazeImpl(width, height)
     for (y in 0 until height) {
       for (x in 0 until width) {
         val ch = lines[y][x]

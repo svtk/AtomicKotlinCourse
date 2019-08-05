@@ -6,7 +6,7 @@ class Robot: GameElement {
 
   override fun playTurn(maze: Maze) {
     val position = maze.position(this) 
-        ?: emptySet()
+        ?: return
     val cellElements = maze.allAt(position)
     cellElements
       .filterIsInstance<Food>()
