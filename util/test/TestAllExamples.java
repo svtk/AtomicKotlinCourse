@@ -1697,8 +1697,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testGameMatrix() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Examples/src/GameMatrix.kt", complexconstructors.GameMatrixKt::main);
+    public void testMazeImpl() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Examples/src/MazeImpl.kt", complexconstructors.MazeImplKt::main);
     }
 
     @Test
@@ -3172,12 +3172,12 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testGameMatrix1() {
+    public void testGameMatrix() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Interfaces/Exercise 1/src/GameMatrix.kt", interfaces1.GameMatrixKt::main);
     }
 
     @Test
-    public void testGameMatrix2() {
+    public void testGameMatrix1() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Exercise 1/src/GameMatrix.kt", complexConstructors1.GameMatrixKt::main);
     }
 

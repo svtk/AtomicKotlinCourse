@@ -18,14 +18,14 @@ class TestPersonsMap {
                 ####
             """.trimIndent()
 
-    val matrix = GameMatrixImpl(
+    val matrix = MazeImpl(
         width = 4, height = 5, representation = mazeRepresentation)
     Assert.assertEquals("Wrong result for the sample:", mazeRepresentation,
         matrix.toString().lines().joinToString("\n") { it.trimEnd() })
   }
 
   private fun checkMaze(width: Int, height: Int, maze: String) {
-    val matrix = GameMatrixImpl(width, height, maze)
+    val matrix = MazeImpl(width, height, maze)
     Assert.assertEquals("Wrong result for the maze:", maze,
         matrix.toString().lines().joinToString("\n") { it.trimEnd() })
   }

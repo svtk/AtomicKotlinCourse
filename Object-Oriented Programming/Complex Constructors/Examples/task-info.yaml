@@ -4,5 +4,5 @@ files:
   visible: true
 - name: src/InitSection.kt
   visible: true
-- name: src/GameMatrix.kt
+- name: src/MazeImpl.kt
   visible: true
