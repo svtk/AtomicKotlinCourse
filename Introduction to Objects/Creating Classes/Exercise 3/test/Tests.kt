@@ -9,7 +9,7 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestCapitalize() {
   private fun testString(s: String) {
-    Assert.assertEquals("""Wrong result for task("$s"):""", s.capitalize(), task(s))
+    Assert.assertEquals("""Wrong result for task("$s"):""", s.capitalize(), cap(s))
   }
 
   @Test(timeout = TIMEOUT)
