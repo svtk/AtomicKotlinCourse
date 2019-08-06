@@ -3,7 +3,7 @@ files:
 - name: src/GameElements.kt
   visible: true
   placeholders:
-  - offset: 478
+  - offset: 406
     length: 38
     placeholder_text: |-
       GameElement {
@@ -12,11 +12,11 @@ files:
 
           override val sharesCell = false
 
-          override fun interact(maze: Maze, sameCellElements: Set<GameElement>) {
+          override fun playTurn(maze: Maze) {
               // Default implementation: do nothing
           }
       }
-  - offset: 531
+  - offset: 459
     length: 37
     placeholder_text: |-
       GameElement {
@@ -25,7 +25,7 @@ files:
 
           override val sharesCell = true
 
-          override fun interact(maze: Maze, sameCellElements: Set<GameElement>) {
+          override fun playTurn(maze: Maze) {
               // Default implementation: do nothing
           }
       }
