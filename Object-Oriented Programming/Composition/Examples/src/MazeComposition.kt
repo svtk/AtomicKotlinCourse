@@ -2,36 +2,22 @@
 package prefercomposition
 
 interface Element
-class Position
+interface Move
+data class Position(val x: Int, val y: Int)
 
-interface GameMatrix { /* ... */ }
-
-class GameMatrixImpl(
-  width: Int, height: Int
-): GameMatrix {
-
-  private val cells = MutableList(height) {
-    MutableList(width) {
-      mutableSetOf<Element>()
-    }
-  }
-  
-  // Functions implementing GameMatrix
+interface Maze {
+  fun all(): Set<Element>
+  fun allAt(position: Position): Set<Element>
+  fun position(element: Element): Position?
+  fun add(element: Element, position: Position)
+  fun remove(element: Element)
 }
 
-interface Maze { /* ... */ }
-
-class MazeImpl(
-  val representation: String,
-  val width: Int,
-  val height: Int
-): Maze {
-
-  private val matrix: GameMatrix =
-    GameMatrixImpl(width, height)
-
-  private val positions =
-    mutableMapOf<Element, Position>()
-
-  // Functions implementing Maze ...
+interface Game {
+  val maze: Maze
+  fun playMove(move: Move)
+  fun playTurn()
+  fun gameOver(): Boolean
+  fun hasWon(): Boolean
+  fun score(): Int
 }

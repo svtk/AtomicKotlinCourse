@@ -6,9 +6,11 @@ files:
   visible: true
 - name: src/House3.kt
   visible: true
+- name: src/IntroducingGame.kt
+  visible: true
 - name: src/InheritanceEffects.kt
   visible: true
-- name: src/MazeComposition.kt
+- name: src/MergingTwoInterfaces.kt
   visible: true
-- name: src/OneClass.kt
+- name: src/MazeComposition.kt
   visible: true
