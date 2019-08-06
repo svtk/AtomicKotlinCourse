@@ -1,4 +1,4 @@
-package inheritance1
+package inheritance2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,83 +7,172 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestGameMatrix {
-  @Test(timeout = TIMEOUT)
-  fun test1Sample() {
-    val representation = """
-        #####
-        #...#
-        #   #
-        #####
-            """.trimIndent()
-    val maze = MazeImpl(representation)
-
-    Assert.assertEquals("Wrong result for the sample before destroying element:",
-        representation, maze.toString())
-
-    val element = maze.allAt(Position(x = 2, y = 1)).single()
-    maze.destroy(element)
-
-    Assert.assertEquals("Wrong result for the sample after destroying element:",
-        """
-        #####
-        #. .#
-        #   #
-        #####
-            """.trimIndent(), maze.toString())
-  }
-
+class TestBomb {
   private fun checkMaze(
-      positionsToDestroy: List<Position>,
+      bombPosition: Position,
       mazeRepresentation: String,
-      afterDestroy: String
+      afterDestroy: String,
+      prefixMessage: String? = null
   ) {
     val maze = MazeImpl(mazeRepresentation)
-    positionsToDestroy
-        .flatMap { maze.allAt(it) }
-        .forEach { maze.destroy(it) }
-    Assert.assertEquals("Wrong result for a maze $mazeRepresentation\n" +
-        "after destroying elements at $positionsToDestroy:",
+    val robot = Robot()
+    maze.add(robot, bombPosition)
+    val bomb = maze.allAt(bombPosition)
+        .filterIsInstance<Bomb>().single()
+    bomb.playTurn(maze)
+
+    Assert.assertEquals("${prefixMessage ?: ""} " +
+        "Wrong result after exploding a bomb for the following maze:\n$mazeRepresentation",
         afterDestroy,
         maze.toString())
   }
 
   @Test(timeout = TIMEOUT)
-  fun test2() = checkMaze(listOf(Position(1, 1)),
+  fun test1Sample() = checkMaze(Position(5, 4),
       """
-                ....
-                ....
-                ....
-            """.trimIndent(),
+      ###########
+      #.........#
+      #.........#
+      #.........#
+      #....4....#
+      #.........#
+      #.........#
+      #.........#
+      ###########
+      """.trimIndent(),
       """
-                ....
-                . ..
-                ....
-            """.trimIndent())
+      ###########
+      #.........#
+      #.... ....#
+      #...   ...#
+      #..     ..#
+      #...   ...#
+      #.... ....#
+      #.........#
+      ###########
+      """.trimIndent()
+  )
 
   @Test(timeout = TIMEOUT)
-  fun test3() = checkMaze(listOf(Position(1, 1), Position(1, 2), Position(2, 1), Position(2, 2)),
+  fun test2() = checkMaze(Position(5, 4),
       """
-                ....
-                ....
-                ....
-            """.trimIndent(),
+      ###########
+      #.........#
+      #.........#
+      #.........#
+      #....1....#
+      #.........#
+      #.........#
+      #.........#
+      ###########
+      """.trimIndent(),
       """
-                ....
-                .  .
-                .  .
-            """.trimIndent())
+      ###########
+      #.........#
+      #.........#
+      #.........#
+      #.... ....#
+      #.........#
+      #.........#
+      #.........#
+      ###########
+      """.trimIndent()
+  )
 
   @Test(timeout = TIMEOUT)
-  fun test4() = checkMaze(listOf(Position(1, 1)),
+  fun test3() = checkMaze(Position(5, 4),
       """
-                ####
-                #R #
-                ####
-            """.trimIndent(),
+      ###########
+      #.........#
+      #.........#
+      #.........#
+      #....2....#
+      #.........#
+      #.........#
+      #.........#
+      ###########
+      """.trimIndent(),
       """
-                ####
-                #  #
-                ####
-            """.trimIndent())
+      ###########
+      #.........#
+      #.........#
+      #.... ....#
+      #...   ...#
+      #.... ....#
+      #.........#
+      #.........#
+      ###########
+      """.trimIndent()
+  )
+
+  @Test(timeout = TIMEOUT)
+  fun test4() = checkMaze(Position(5, 4),
+      """
+      ###########
+      #.........#
+      #.........#
+      #.........#
+      #....3....#
+      #.........#
+      #.........#
+      #.........#
+      ###########
+      """.trimIndent(),
+      """
+      ###########
+      #.........#
+      #.........#
+      #...   ...#
+      #...   ...#
+      #...   ...#
+      #.........#
+      #.........#
+      ###########
+      """.trimIndent()
+  )
+
+  @Test(timeout = TIMEOUT)
+  fun test5() = checkMaze(Position(5, 4),
+      """
+      ###########
+      #.........#
+      #.........#
+      #.........#
+      #....5....#
+      #.........#
+      #.........#
+      #.........#
+      ###########
+      """.trimIndent(),
+      """
+      ###########
+      #.........#
+      #...   ...#
+      #..     ..#
+      #..     ..#
+      #..     ..#
+      #...   ...#
+      #.........#
+      ###########
+      """.trimIndent()
+  )
+
+  @Test(timeout = TIMEOUT)
+  fun test6() = checkMaze(Position(2, 2),
+      """
+      #####
+      #####
+      # 3##
+      #####
+      #####
+      """.trimIndent(),
+      """
+      #####
+      #   #
+      #   #
+      #   #
+      #####
+      """.trimIndent(),
+      "Walls should also be exploded"
+  )
 }

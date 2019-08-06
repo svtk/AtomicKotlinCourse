@@ -1,113 +1,75 @@
-package inheritance1
+package inheritance2
 
-import atomictest.eq
+data class Position(val x: Int, val y: Int)
 
-/* The simplified version of Maze interface which doesn't yet support movement */
 interface Maze {
-    fun all(): Set<GameElement>
-
-    fun allAt(position: Position): Set<GameElement>
-
-    fun destroy(element: GameElement)
-
-    fun position(element: GameElement): Position?
+  val width: Int
+  val height: Int
+  fun all(): Set<GameElement>
+  fun allAt(position: Position): Set<GameElement>
+  fun position(element: GameElement): Position?
+  fun add(element: GameElement, position: Position)
+  fun remove(element: GameElement)
 }
 
 class MazeImpl(
-        val representation: String
+    representation: String
 ) : Maze {
+  override val width: Int
+  override val height: Int
 
-    val width = representation.lines().maxBy { it.length }?.length ?: 0
-    val height = representation.lines().size
+  private val cells: List<List<MutableSet<GameElement>>>
+  private val positions = mutableMapOf<GameElement, Position>()
 
-    private val matrix: GameMatrix =
-            GameMatrixImpl(width, height)
-
-    private val positions = mutableMapOf<GameElement, Position>()
-
-    init {
-        val lines = representation.lines()
-        for (y in 0 until height) {
-            for (x in 0 until width) {
-                val ch = lines.getOrNull(y)?.getOrNull(x)
-                val element = createGameElement(ch)
-                if (element != null) {
-                    add(element, Position(x, y))
-                }
-            }
+  init {
+    val lines = representation.lines()
+    height = lines.size
+    width = lines.maxBy { it.length }?.length ?: 0
+    cells = List(height) {
+      List(width) { mutableSetOf<GameElement>() }
+    }
+    for (y in 0 until height) {
+      for (x in 0 until width) {
+        val ch = lines.getOrNull(y)?.getOrNull(x)
+        val element = createGameElement(ch)
+        if (element != null) {
+          add(element, Position(x, y))
         }
+      }
     }
+  }
 
-    private fun add(element: GameElement, position: Position) {
-        matrix.add(element, position)
-        positions[element] = position
-    }
+  private fun elements(position: Position): MutableSet<GameElement> {
+    return cells[position.y][position.x]
+  }
 
-    override fun all(): Set<GameElement> {
-        return positions.keys.toSet()
-    }
+  override fun all(): Set<GameElement> {
+    return positions.keys.toSet()
+  }
 
-    override fun allAt(position: Position): Set<GameElement> {
-        return matrix.elementsAt(position)
-    }
+  override fun allAt(position: Position): Set<GameElement> {
+    return elements(position)
+  }
 
-    override fun position(element: GameElement): Position? =
-            positions[element]
+  override fun position(element: GameElement): Position? {
+    return positions[element]
+  }
 
-    override fun destroy(element: GameElement) {
-        val position = position(element) ?: return
-        matrix.remove(element, position)
-        positions.remove(element)
-    }
+  override fun add(element: GameElement, position: Position) {
+    elements(position) += element
+    positions[element] = position
+  }
 
-    override fun toString(): String {
-        assertConsistentState()
-        return matrix.toString()
-    }
+  override fun remove(element: GameElement) {
+    val position = position(element) ?: return
+    elements(position) -= element
+    positions.remove(element)
+  }
 
-    private fun assertConsistentState() {
-        for (x in 0 until width) {
-            for (y in 0 until height) {
-                val position = Position(x, y)
-                val elements = matrix.elementsAt(position)
-                elements.forEach { element ->
-                    val storedPosition = positions[element]
-                    if (storedPosition != position) {
-                        throw AssertionError("Inconsistent stored positions for element $element: " +
-                                "$storedPosition != $position")
-                    }
-                }
-            }
-        }
-        for ((element, position) in positions) {
-            val elements = matrix.elementsAt(position)
-            if (!elements.contains(element)) {
-                throw AssertionError("Inconsistent stored positions for element $element: " +
-                        "no such element at $position")
-            }
-        }
-    }
-
-}
-
-fun main() {
-    val mazeRepresentation = """
-        #####
-        #...#
-        #   #
-        #####
-        """.trimIndent()
-    val maze = MazeImpl(mazeRepresentation)
-
-    maze.toString() eq mazeRepresentation
-
-    val element = maze.allAt(Position(x = 2, y = 1)).single()
-    maze.destroy(element)
-
-    maze.toString() eq """
-        #####
-        #. .#
-        #   #
-        #####
-        """.trimIndent()
+  override fun toString() =
+      cells.joinToString("\n") { row ->
+        row.joinToString("") { elements ->
+          "${elements.lastOrNull()?.symbol ?: ' '}"
+        }.trimEnd()
+      }
 }

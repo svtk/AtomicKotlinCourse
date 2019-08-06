@@ -1,28 +1,50 @@
-package inheritance1
+package inheritance2
 
 interface GameElement {
-    val symbol: Char
-    fun interact(maze: Maze, sameCellElements: Set<GameElement>)
+  val symbol: Char
+  fun playTurn(maze: Maze)
 }
 
-open class ImmovableElement : GameElement {
-    override fun interact(maze: Maze, sameCellElements: Set<GameElement>) {
-        // Default implementation: do nothing
-    }
+open class StaticElement : GameElement {
+  override fun playTurn(maze: Maze) {
+    // Default implementation: do nothing
+  }
 
-    override val symbol: Char get() = ' '
+  override val symbol: Char
+    get() = ' '
 }
 
-class Wall : ImmovableElement() {
-    override val symbol get() = '#'
+class Wall : StaticElement() {
+  override val symbol get() = '#'
 }
 
-class Food : ImmovableElement() {
-    override val symbol get() = '.'
+class Food : StaticElement() {
+  override val symbol get() = '.'
+}
+
+class Robot : GameElement {
+  private var eatenFoodItems: Int = 0
+
+  override val symbol: Char
+    get() = 'R'
+
+  override fun playTurn(maze: Maze) {
+    val position = maze.position(this)
+        ?: return
+    val cellElements = maze.allAt(position)
+    cellElements
+        .filterIsInstance<Food>()
+        .forEach { food ->
+          eatenFoodItems++
+          maze.remove(food)
+        }
+  }
 }
 
 fun createGameElement(char: Char?): GameElement? = when (char) {
-    '#' -> Wall()
-    '.' -> Food()
-    else -> null
+  '#' -> Wall()
+  '.' -> Food()
+  'R' -> Robot()
+  in '0'..'9' -> Bomb(char!! - '0')
+  else -> null
 }

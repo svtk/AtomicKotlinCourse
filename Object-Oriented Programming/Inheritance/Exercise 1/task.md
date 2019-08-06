@@ -1,7 +1,8 @@
 ## Inheritance (#1)
 
-`MazeImpl` additionally keeps the record of positions of all the elements added to
-`GameMatrix` by storing a `positions` map from an element to position.
+Implement a more powerful version of the bomb: the one with a diameter of 
+the explosion. All the cells that are close enough to the bomb must be destroyed.
+The bomb should explode when any movable element steps to the same cell.
 
-Implement the `Maze.destroy(GameElement)` function which should remove
-the element both from `matrix` and from the auxiliary `positions` map.
+Use the provided auxiliary function `isCloseToBomb()` to check whether
+an element is close enough to the bomb to be destroyed.

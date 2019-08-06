@@ -1,7 +1,8 @@
 ## Complex Constructors (#1)
 
-Add the primary constructor that initializes a maze contents using 
-the maze representation in a string.
+Modify the primary constructor of the `MazeImpl` class to 
+initialize a maze contents using only the maze representation in a string.
+Calculate `width` and `height` properties based on the maze representation.
 Use the auxiliary function `createGameElement()` (defined in `GameElements.kt`)
 to create an element by using a given character.
 

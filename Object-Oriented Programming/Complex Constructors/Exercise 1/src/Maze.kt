@@ -5,6 +5,8 @@ import atomictest.eq
 data class Position(val x: Int, val y: Int)
 
 interface Maze {
+  val width: Int
+  val height: Int
   fun all(): Set<GameElement>
   fun allAt(position: Position): Set<GameElement>
   fun position(element: GameElement): Position?
@@ -13,17 +15,21 @@ interface Maze {
 }
 
 class MazeImpl(
-    width: Int,
-    height: Int,
     representation: String
 ) : Maze {
-  private val cells = List(height) {
-    List(width) { mutableSetOf<GameElement>() }
-  }
+  override val width: Int
+  override val height: Int
+
+  private val cells: List<List<MutableSet<GameElement>>>
   private val positions = mutableMapOf<GameElement, Position>()
 
   init {
     val lines = representation.lines()
+    height = lines.size
+    width = lines.maxBy { it.length }?.length ?: 0
+    cells = List(height) {
+      List(width) { mutableSetOf<GameElement>() }
+    }
     for (y in 0 until height) {
       for (x in 0 until width) {
         val ch = lines.getOrNull(y)?.getOrNull(x)
@@ -78,9 +84,7 @@ fun main() {
 
     ####
     """.trimIndent()
-  val matrix = MazeImpl(
-      width = 4, height = 5,
-      representation = mazeRepresentation)
+  val matrix = MazeImpl(mazeRepresentation)
   // trim whitespaces at the end of each line
   // to have equal representation
   matrix

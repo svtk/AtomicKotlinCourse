@@ -1713,12 +1713,12 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testGreatApe() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance/Examples/src/GreatApe.kt", inheritance.GreatApeKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance/Examples/src/GreatApe.kt", inheritance.ape1.GreatApeKt::main);
     }
 
     @Test
     public void testGreatApe2() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance/Examples/src/GreatApe2.kt", GreatApe2Kt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance/Examples/src/GreatApe2.kt", inheritance.ape2.GreatApe2Kt::main);
     }
 
     @Test
@@ -3172,8 +3172,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testGameMatrix1() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Exercise 1/src/GameMatrix.kt", complexConstructors1.GameMatrixKt::main);
+    public void testMaze() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Complex Constructors/Exercise 1/src/Maze.kt", complexConstructors1.MazeKt::main);
     }
 
     @Test
@@ -3182,13 +3182,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testMaze() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance/Exercise 1/src/Maze.kt", inheritance1.MazeKt::main);
-    }
-
-    @Test
     public void testBomb() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance/Exercise 2/src/Bomb.kt", inheritance2.BombKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance/Exercise 1/src/Bomb.kt", inheritance2.BombKt::main);
     }
 
     @Test

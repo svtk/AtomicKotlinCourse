@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestPersonsMap {
+class TestMazeImpl {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val mazeRepresentation = """
@@ -18,14 +18,13 @@ class TestPersonsMap {
                 ####
             """.trimIndent()
 
-    val matrix = MazeImpl(
-        width = 4, height = 5, representation = mazeRepresentation)
+    val matrix = MazeImpl(mazeRepresentation)
     Assert.assertEquals("Wrong result for the sample:", mazeRepresentation,
         matrix.toString().lines().joinToString("\n") { it.trimEnd() })
   }
 
   private fun checkMaze(width: Int, height: Int, maze: String) {
-    val matrix = MazeImpl(width, height, maze)
+    val matrix = MazeImpl(maze)
     Assert.assertEquals("Wrong result for the maze:", maze,
         matrix.toString().lines().joinToString("\n") { it.trimEnd() })
   }

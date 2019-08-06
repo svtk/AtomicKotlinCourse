@@ -1,14 +1,17 @@
 type: edu
 files:
-- name: src/GameMatrix.kt
-  visible: true
-  placeholders:
-  - offset: 586
-    length: 287
-    placeholder_text: TODO()
 - name: src/GameElements.kt
   visible: true
 - name: test/Tests.kt
   visible: false
+- name: src/Maze.kt
+  visible: true
+  placeholders:
+  - offset: 681
+    length: 38
+    placeholder_text: 0 // TODO
+  - offset: 807
+    length: 248
+    placeholder_text: TODO()
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Object-Oriented+Programming+%2F+Complex+Constructors+%2F+Exercise1

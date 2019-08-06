@@ -1,14 +1,14 @@
 type: edu
 files:
-- name: src/Maze.kt
+- name: src/Bomb.kt
   visible: true
   placeholders:
-  - offset: 1523
-    length: 117
+  - offset: 243
+    length: 252
     placeholder_text: TODO()
-- name: src/GameMatrix.kt
-  visible: true
 - name: src/GameElements.kt
+  visible: true
+- name: src/Maze.kt
   visible: true
 - name: test/Tests.kt
   visible: false
