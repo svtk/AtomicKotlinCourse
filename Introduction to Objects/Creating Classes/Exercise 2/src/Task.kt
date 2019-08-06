@@ -1,11 +1,11 @@
 package creatingClasses3
 
 fun main() {
-  val s = "abc"
+  val s = "Hello!"
   println(s.toUpperCase())
   println(s.toLowerCase())
 }
 /* Output:
-a
-3
+HELLO!
+hello!
 */
