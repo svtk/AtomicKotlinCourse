@@ -1,6 +1,6 @@
 package summary4
 
-fun printSnake(rows: Int, columns: Int) {
+fun showSnake(rows: Int, columns: Int) {
   val width = (rows * columns).toString().length + 1
   for (i in 0 until rows) {
     for (j in 0 until columns) {
@@ -16,7 +16,7 @@ fun printSnake(rows: Int, columns: Int) {
 }
 
 fun main() {
-  printSnake(4, 5)
+  showSnake(4, 5)
 }
 /* Output:
   0  1  2  3  4
