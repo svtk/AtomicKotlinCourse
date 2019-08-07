@@ -28,6 +28,20 @@ class TestRobotMoves {
     )
   }
 
+  private fun checkImpossibleMove(
+      move: Move,
+      initial: String
+  ) {
+    val maze = MazeImpl(initial.trimIndent())
+    val robot = maze.all().filterIsInstance<Robot>().single()
+    val position = robot.makeMove(move, maze)
+
+    Assert.assertNull(
+        "The $move move should be impossible for \n$initial",
+        position
+    )
+  }
+
   @Test(timeout = TIMEOUT)
   fun testRight() {
     checkMove(
@@ -102,14 +116,10 @@ class TestRobotMoves {
 
   @Test(timeout = TIMEOUT)
   fun testImpossibleMoves() {
-    Move.values().forEach {
-      checkMove(
+    listOf(RIGHT, LEFT, UP, DOWN).forEach {
+      checkImpossibleMove(
           it,
           initial = """
-            ###
-            #R#
-            ###""",
-          expected = """
             ###
             #R#
             ###""")
