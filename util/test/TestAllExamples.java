@@ -1738,7 +1738,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testGadget() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/Gadget.kt", GadgetKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/Gadget.kt", abstractclasses.GadgetKt::main);
     }
 
     @Test
@@ -3192,7 +3192,7 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testMonster() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Exercise 1/src/Monster.kt", abstractClasses1.MonsterKt::main);
+    public void testRobot() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Exercise 1/src/Robot.kt", abstractClasses1.RobotKt::main);
     }
 }

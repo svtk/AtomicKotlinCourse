@@ -1,20 +1,18 @@
 type: edu
 files:
-- name: src/Monster.kt
-  visible: true
-  placeholders:
-  - offset: 590
-    length: 394
-    placeholder_text: TODO()
-- name: src/GameMatrix.kt
-  visible: true
 - name: src/GameElements.kt
   visible: true
 - name: src/Maze.kt
   visible: true
-- name: src/MovableElement.kt
-  visible: true
 - name: test/Tests.kt
   visible: false
+- name: src/MazeEx.kt
+  visible: true
+- name: src/Robot.kt
+  visible: true
+  placeholders:
+  - offset: 563
+    length: 196
+    placeholder_text: TODO()
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Object-Oriented+Programming+%2F+Abstract+Classes+%2F+Exercise1

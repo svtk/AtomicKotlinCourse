@@ -1,4 +1,5 @@
 // Abstract/AbstractKeyword.kt
+package abstractclasses
 
 abstract class Property {
   abstract val x: Int

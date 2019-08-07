@@ -1,4 +1,5 @@
 // Abstract/Gadget.kt
+package abstractclasses
 import atomictest.eq
 
 interface Gadget {

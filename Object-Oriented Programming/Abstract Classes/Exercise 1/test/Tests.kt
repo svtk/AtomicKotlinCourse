@@ -1,5 +1,6 @@
 package abstractClasses1
 
+import abstractClasses1.Move.*
 import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
@@ -7,194 +8,111 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestMonster {
-  @Test(timeout = TIMEOUT)
-  fun test1Sample() {
-    val representation = """
-         #######
-        ##     #
-        #   ####
-        #   #
-        #####
-        """.trimIndent()
-    val maze = MazeImpl(representation)
-    var moves = 0
-
-    val monster = Monster()
-    var currentMonsterPosition = Position(x = 1, y = 3)
-    maze.add(monster, currentMonsterPosition)
-    Assert.assertEquals("Wrong result for the sample after $moves moves:",
-        """
-                 #######
-                ##     #
-                #   ####
-                #M  #
-                #####
-                """.trimIndent(),
-        maze.toString())
-
-
-    // after 1 move
-    moves++
-    currentMonsterPosition = monster.makeMove(currentMonsterPosition, maze)
-    maze.move(monster, currentMonsterPosition)
-    Assert.assertEquals("Wrong result for the sample after $moves moves:",
-        """
-                 #######
-                ##     #
-                #   ####
-                # M #
-                #####
-                """.trimIndent(),
-        maze.toString())
-
-    // after 2 more moves
-    moves += 2
-    repeat(2) {
-      currentMonsterPosition = monster.makeMove(currentMonsterPosition, maze)
-      maze.move(monster, currentMonsterPosition)
-    }
-    Assert.assertEquals("Wrong result for the sample after $moves moves:",
-        """
-                 #######
-                ##     #
-                #  M####
-                #   #
-                #####
-                """.trimIndent(),
-        maze.toString())
-
-    // after 5 more moves
-    moves += 5
-    repeat(5) {
-      currentMonsterPosition = monster.makeMove(currentMonsterPosition, maze)
-      maze.move(monster, currentMonsterPosition)
-    }
-    Assert.assertEquals("Wrong result for the sample after $moves moves:",
-        """
-                 #######
-                ##   M #
-                #   ####
-                #   #
-                #####
-                """.trimIndent(),
-        maze.toString())
-  }
-
-  private fun checkMonsterMovement(
-      maps: Map<Int, String>
+class TestRobotMoves {
+  private fun checkMove(
+      move: Move,
+      initial: String,
+      expected: String
   ) {
-    val initialMap = maps.getValue(0)
-
-    val maze = MazeImpl(initialMap)
-
-    val monster = maze.all()
-        .filterIsInstance<Monster>()
-        .first()
-    var currentMonsterPosition = maze.position(monster)!!
-
-    maze.add(monster, currentMonsterPosition)
-    val maxMoves = maps.keys.max()!!
-    for (move in 1..maxMoves) {
-      currentMonsterPosition = monster.makeMove(currentMonsterPosition, maze)
-      maze.move(monster, currentMonsterPosition)
-      if (move in maps) {
-        Assert.assertEquals("Wrong result after $move moves for\n$initialMap",
-            maps.getValue(move),
-            maze.toString())
-      }
+    val maze = MazeImpl(initial.trimIndent())
+    val robot = maze.all().filterIsInstance<Robot>().single()
+    val position = robot.makeMove(move, maze)
+    if (position != null) {
+      maze.remove(robot)
+      maze.add(robot, position)
     }
+    Assert.assertEquals(
+        "Wrong result for\n$initial",
+        expected.trimIndent(),
+        maze.toString()
+    )
   }
 
   @Test(timeout = TIMEOUT)
-  fun test2() {
-    checkMonsterMovement(mapOf(
-        0 to """
-                ####
-                #  #
-                #M #
-                ####
-                """.trimIndent(),
-        1 to """
-                ####
-                #  #
-                # M#
-                ####
-                """.trimIndent(),
-        2 to """
-                ####
-                # M#
-                #  #
-                ####
-                """.trimIndent(),
-        3 to """
-                ####
-                #M #
-                #  #
-                ####
-                """.trimIndent(),
-        4 to """
-                ####
-                #  #
-                #M #
-                ####
-                """.trimIndent()
-    ))
+  fun testRight() {
+    checkMove(
+        RIGHT,
+        initial = """
+            #####
+            #   #
+            # R #
+            #   #
+            #####""",
+        expected = """
+            #####
+            #   #
+            #  R#
+            #   #
+            #####""")
   }
 
+  @Test(timeout = TIMEOUT)
+  fun testLeft() {
+    checkMove(
+        LEFT,
+        initial = """
+            #####
+            #   #
+            # R #
+            #   #
+            #####""",
+        expected = """
+            #####
+            #   #
+            #R  #
+            #   #
+            #####""")
+  }
 
   @Test(timeout = TIMEOUT)
-  fun test3() {
-    checkMonsterMovement(mapOf(
-        0 to """
-                ########
-                #    # #
-                #   ## #
-                #M     #
-                ########
-                """.trimIndent(),
-        5 to """
-                ########
-                #    # #
-                #   ## #
-                #     M#
-                ########
-                """.trimIndent(),
-        7 to """
-                ########
-                #    #M#
-                #   ## #
-                #      #
-                ########
-                """.trimIndent(),
-        13 to """
-                ########
-                #    # #
-                #  M## #
-                #      #
-                ########
-                """.trimIndent(),
-        15 to """
-                ########
-                #   M# #
-                #   ## #
-                #      #
-                ########
-                """.trimIndent(),
-        18 to """
-                ########
-                #M   # #
-                #   ## #
-                #      #
-                ########
-                """.trimIndent(),
-        20 to """
-                ########
-                #    # #
-                #   ## #
-                #M     #
-                ########
-                """.trimIndent()
-    ))
+  fun testUp() {
+    checkMove(
+        UP,
+        initial = """
+            #####
+            #   #
+            # R #
+            #   #
+            #####""",
+        expected = """
+            #####
+            # R #
+            #   #
+            #   #
+            #####""")
+  }
+
+  @Test(timeout = TIMEOUT)
+  fun testDown() {
+    checkMove(
+        DOWN,
+        initial = """
+            #####
+            #   #
+            # R #
+            #   #
+            #####""",
+        expected = """
+            #####
+            #   #
+            #   #
+            # R #
+            #####""")
+  }
+
+  @Test(timeout = TIMEOUT)
+  fun testImpossibleMoves() {
+    Move.values().forEach {
+      checkMove(
+          it,
+          initial = """
+            ###
+            #R#
+            ###""",
+          expected = """
+            ###
+            #R#
+            ###""")
+    }
   }
 }

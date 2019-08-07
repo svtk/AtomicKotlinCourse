@@ -1,30 +1,44 @@
 package abstractClasses1
 
 interface GameElement {
-    val symbol: Char
-    val sharesCell: Boolean
-
-    fun interact(maze: Maze, sameCellElements: Set<GameElement>)
+  val symbol: Char
+  val sharesCell: Boolean
+  fun playTurn(maze: Maze)
 }
 
-open class ImmovableElement(
-        override val symbol: Char,
-        override val sharesCell: Boolean
+abstract class StaticElement(
+    override val sharesCell: Boolean
 ) : GameElement {
-    override fun interact(maze: Maze, sameCellElements: Set<GameElement>) {
-        // Default implementation: do nothing
-    }
-
-    override fun toString() = symbol.toString()
+  override fun playTurn(maze: Maze) {
+    // Default implementation: do nothing
+  }
 }
 
-class Wall : ImmovableElement('#', sharesCell = false)
+class Wall : StaticElement(sharesCell = false) {
+  override val symbol get() = '#'
+}
 
-class Food : ImmovableElement('.', sharesCell = true)
+class Food : StaticElement(sharesCell = true) {
+  override val symbol get() = '.'
+}
+
+abstract class MobileElement : GameElement {
+  override val sharesCell: Boolean
+    get() = true
+
+  abstract fun makeMove(
+      move: Move, maze: Maze): Position?
+
+  override fun toString() = symbol.toString()
+}
+
+enum class Move {
+  UP, RIGHT, DOWN, LEFT, WAIT
+}
 
 fun createGameElement(char: Char?): GameElement? = when (char) {
-    '#' -> Wall()
-    '.' -> Food()
-    'M' -> Monster()
-    else -> null
+  '#' -> Wall()
+  '.' -> Food()
+  'R' -> Robot()
+  else -> null
 }

@@ -1,33 +1,33 @@
 package abstractClasses1
 
+data class Position(val x: Int, val y: Int)
+
 interface Maze {
     val width: Int
     val height: Int
-
     fun all(): Set<GameElement>
-
     fun allAt(position: Position): Set<GameElement>
-
-    fun destroy(element: GameElement)
-
     fun position(element: GameElement): Position?
-
-    fun move(element: GameElement, newPosition: Position)
+    fun add(element: GameElement, position: Position)
+    fun remove(element: GameElement)
 }
 
 class MazeImpl(
-        val representation: String
+    representation: String
 ) : Maze {
+    override val width: Int
+    override val height: Int
 
-    override val width = representation.lines().maxBy { it.length }?.length ?: 0
-    override val height = representation.lines().size
-
-    private val matrix: GameMatrix = GameMatrixImpl(width, height)
-
-    private val elementToPosition = mutableMapOf<GameElement, Position>()
+    private val cells: List<List<MutableSet<GameElement>>>
+    private val positions = mutableMapOf<GameElement, Position>()
 
     init {
         val lines = representation.lines()
+        height = lines.size
+        width = lines.maxBy { it.length }?.length ?: 0
+        cells = List(height) {
+            List(width) { mutableSetOf<GameElement>() }
+        }
         for (y in 0 until height) {
             for (x in 0 until width) {
                 val ch = lines.getOrNull(y)?.getOrNull(x)
@@ -39,72 +39,37 @@ class MazeImpl(
         }
     }
 
-    fun add(element: GameElement, position: Position) {
-        matrix.add(element, position)
-        elementToPosition[element] = position
+    private fun elements(position: Position): MutableSet<GameElement> {
+        return cells[position.y][position.x]
     }
 
     override fun all(): Set<GameElement> {
-        return elementToPosition.keys.toSet()
+        return positions.keys.toSet()
     }
 
     override fun allAt(position: Position): Set<GameElement> {
-        return matrix.elementsAt(position)
+        return elements(position)
     }
 
-    override fun position(element: GameElement): Position? =
-            elementToPosition[element]
+    override fun position(element: GameElement): Position? {
+        return positions[element]
+    }
 
-    override fun destroy(element: GameElement) {
+    override fun add(element: GameElement, position: Position) {
+        elements(position) += element
+        positions[element] = position
+    }
+
+    override fun remove(element: GameElement) {
         val position = position(element) ?: return
-        matrix.remove(element, position)
-        elementToPosition.remove(element)
+        elements(position) -= element
+        positions.remove(element)
     }
 
-    override fun move(element: GameElement, newPosition: Position) {
-        if (!isPassable(newPosition)) {
-            throw IllegalStateException("Impossible move for element '${element.symbol}': $newPosition")
+    override fun toString() =
+        cells.joinToString("\n") { row ->
+            row.joinToString("") { elements ->
+                "${elements.lastOrNull()?.symbol ?: ' '}"
+            }.trimEnd()
         }
-        val oldPosition = position(element)
-        if (oldPosition == null || newPosition == oldPosition) return
-        matrix.add(element, newPosition)
-        matrix.remove(element, oldPosition)
-        elementToPosition[element] = newPosition
-    }
-
-    override fun toString(): String {
-        assertConsistentState()
-        return matrix.toString()
-    }
-
-    private fun assertConsistentState() {
-        for (x in 0 until width) {
-            for (y in 0 until height) {
-                val position = Position(x, y)
-                val elements = matrix.elementsAt(position)
-                elements.forEach { element ->
-                    val storedPosition = elementToPosition[element]
-                    if (storedPosition != position) {
-                        throw AssertionError("Inconsistent stored positions for element $element: " +
-                                "$storedPosition != $position")
-                    }
-                }
-            }
-        }
-        for ((element, position) in elementToPosition) {
-            val elements = matrix.elementsAt(position)
-            if (!elements.contains(element)) {
-                throw AssertionError("Inconsistent stored positions for element $element: " +
-                        "no such element at $position")
-            }
-        }
-    }
-}
-
-fun Maze.isPassable(position: Position): Boolean {
-    if (position.x !in (0 until width) || position.y !in (0 until height)) {
-        return false
-    }
-    val elementsAtNewPosition = allAt(position)
-    return elementsAtNewPosition.none { it.sharesCell }
 }
