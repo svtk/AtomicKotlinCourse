@@ -4,64 +4,64 @@ import atomictest.eq
 
 class Robot : MobileElement() {
 
-    private var eatenFoodItems: Int = 0
+  private var eatenFoodItems: Int = 0
 
-    override val symbol: Char
-        get() = 'R'
+  override val symbol: Char
+    get() = 'R'
 
-    override fun playTurn(maze: Maze) {
-        val position = maze.position(this) ?: return
-        val cellElements = maze.allAt(position)
-        cellElements
-            .filterIsInstance<Food>()
-            .forEach { food ->
-                eatenFoodItems++
-                maze.remove(food)
-            }
-    }
+  override fun playTurn(maze: Maze) {
+    val position = maze.position(this) ?: return
+    val cellElements = maze.allAt(position)
+    cellElements
+        .filterIsInstance<Food>()
+        .forEach { food ->
+          eatenFoodItems++
+          maze.remove(food)
+        }
+  }
 
-    override fun makeMove(move: Move, maze: Maze): Position? {
-        val currentPosition = maze.position(this) ?: return null
-        val newPosition = currentPosition.applyMove(move)
-        if (!maze.isPassable(newPosition)) return null
-        return newPosition
-    }
+  override fun makeMove(move: Move, maze: Maze): Position? {
+    val currentPosition = maze.position(this) ?: return null
+    val newPosition = currentPosition.applyMove(move)
+    if (!maze.isPassable(newPosition)) return null
+    return newPosition
+  }
 }
 
 fun main() {
-    val mapRepresentation = """
+  val mapRepresentation = """
         #####
         #   #
         #  ##
         """.trimIndent()
-    val maze = MazeImpl(mapRepresentation)
-    maze.toString() eq mapRepresentation
+  val maze = MazeImpl(mapRepresentation)
+  maze.toString() eq mapRepresentation
 
-    val robot =  Robot()
+  val robot = Robot()
 
-    fun updateRobotPosition(position: Position?) {
-        if (position != null) {
-            maze.remove(robot)
-            maze.add(robot, position)
-        }
+  fun updateRobotPosition(position: Position?) {
+    if (position != null) {
+      maze.remove(robot)
+      maze.add(robot, position)
     }
+  }
 
-    updateRobotPosition(Position(x = 2, y = 1))
-    maze.toString() eq """
+  updateRobotPosition(Position(x = 2, y = 1))
+  maze.toString() eq """
         #####
         # R #
         #  ##
         """.trimIndent()
 
 
-    updateRobotPosition(robot.makeMove(Move.DOWN, maze))
-    maze.toString() eq """
+  updateRobotPosition(robot.makeMove(Move.DOWN, maze))
+  maze.toString() eq """
         #####
         #   #
         # R##
         """.trimIndent()
 
-    // The right move is impossible:
-    val position = robot.makeMove(Move.RIGHT, maze)
-    position eq null
+  // The right move is impossible:
+  val position = robot.makeMove(Move.RIGHT, maze)
+  position eq null
 }
