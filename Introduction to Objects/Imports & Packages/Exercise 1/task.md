@@ -2,7 +2,7 @@
 
 Create the class `EquilateralTriangle` in a `package pythagorean`.
 `EquilateralTriangle` should take `side` of type `Double`
-as a constructor argument. 
+as a constructor argument.
 Then define a member function `area()` which calculates
 the triangle area using the formula `sqrt(3.0) / 4 * side * side`.
 
