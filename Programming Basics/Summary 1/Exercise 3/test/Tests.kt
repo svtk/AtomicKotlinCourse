@@ -9,11 +9,11 @@ import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestPyramid {
+class TestTriangle {
   private fun checkOutput(n: Int, expected: String) {
     val byteArrayOutputStream = ByteArrayOutputStream()
     System.setOut(PrintStream(byteArrayOutputStream))
-    printPyramid(n)
+    printTriangle(n)
     assertEqualsForOutput("Incorrect output for n = $n:",
         expected, byteArrayOutputStream)
   }

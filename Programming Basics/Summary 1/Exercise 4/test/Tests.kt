@@ -13,7 +13,7 @@ class TestSnake {
   private fun checkOutput(rows: Int, columns: Int, expected: String) {
     val byteArrayOutputStream = ByteArrayOutputStream()
     System.setOut(PrintStream(byteArrayOutputStream))
-    printSnake(rows, columns)
+    showSnake(rows, columns)
     assertEqualsForOutput("Incorrect output for rows = $rows, columns = $columns:",
         expected, byteArrayOutputStream)
   }
