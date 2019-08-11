@@ -6,9 +6,10 @@ content:
 - Base Class Initialization
 - Composition
 - Abstract Classes
-- Dynamic Binding
+- Upcasting
 - Polymorphism
-- Casting
+- Designing with Inheritance
+- Downcasting
 - Sealed Classes
 - Objects
 - Companion Objects
