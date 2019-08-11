@@ -1,9 +1,17 @@
-## Mastering the IDE: Quick Documentation in the Completion List
+## Creating Classes (#1)
 
-The <span class="control">`Quick Documentation`</span> shortcut 
-<span class="shortcut">&shortcut:QuickJavaDoc;</span> 
-can be used not only in the editor but in the code completion popup list as well.
+Create the `Robot` class with the following four member functions:
+`goRight`, `goLeft`, `goDown` and `goUp`.
+Each of these functions should take an integer `steps` as a parameter
+and print one the following phrases to the console:
 
-Using this feature, find the function for `String` that upper-cases only its
-first letter, or returns the original string if it's already starts with an
-upper case letter.
+```
+going right N steps
+```
+
+or 
+
+```
+going left N steps
+```
+and so on accordingly, where N is the provided number of steps.

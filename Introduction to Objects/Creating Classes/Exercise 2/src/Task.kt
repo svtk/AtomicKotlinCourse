@@ -1,11 +1,7 @@
-package creatingClasses3
+package creatingClasses4
 
-fun main() {
-  val s = "Hello!"
-  println(s.toUpperCase())
-  println(s.toLowerCase())
+class Foo {
+  fun bar() {
+    println(toString())
+  }
 }
-/* Output:
-HELLO!
-hello!
-*/
