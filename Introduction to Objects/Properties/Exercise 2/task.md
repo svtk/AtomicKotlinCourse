@@ -1,23 +1,19 @@
-## Properties (#2)
+## Properties (#1)
 
-Now the field the robot can move in is constrained in size to `100 x 100`, but
-the borders of the field are "looped": if the robot is in the cell
-`(0, 0)` and goes up 1 step, it arrives at the cell `(0, 99)`.
+Implement the member functions of the `Robot` class. A `Robot` starts in the
+`(0, 0)` cell and can move to the right, to the left, down and up. Its location
+is stored as a pair of coordinates `(x, y)`, where `(0, 0)` is the top-left
+corner:
 
 ```
-(0, 0)
-// goUp(1)
-(0, 99)
-// goLeft(10)
-(90, 99)
+(x, y)
+(0, 0) (1, 0)
+(0, 1) (1, 1)
 ```
 
-Modify all the functions `goRight`, `goLeft`, `goDown` and `goUp` to 
-support this behavior.
+Going right increases `x` coordinate, going down increases `y` coordinate,
+going left and up decreases `x` and `y` coordinates accordingly.
 
-<div class="hint">
-
-Using auxiliary function for checking the boundaries will remove
-code repetition and simplify the resulting code.
-
-</div>
+Implement `goRight()`, `goLeft()`, `goUp()`, `goDown()` and `getLocation()`
+member functions. `getLocation()` should return the coordinates as a string
+`(x, y)`.

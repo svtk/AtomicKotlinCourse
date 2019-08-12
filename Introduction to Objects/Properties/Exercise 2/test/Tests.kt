@@ -1,4 +1,4 @@
-package properties2
+package properties1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRobotTeleportation {
+class TestRobotIntro {
   class RobotHandler {
     val robot: Robot = Robot()
     val loggedMovements = StringBuilder()
@@ -40,7 +40,7 @@ class TestRobotTeleportation {
     robotHandler.movements()
     val actualLocation = robotHandler.robot.getLocation()
     val message = if (robotHandler.loggedMovements.isEmpty()) {
-      "Initial location of the robot should be (0,0)"
+      "Initial location of the robot should be (0, 0)"
     } else {
       "Wrong location after:\n" + robotHandler.loggedMovements
     }
@@ -48,46 +48,41 @@ class TestRobotTeleportation {
   }
 
   @Test(timeout = TIMEOUT)
-  fun test1Sample() = testMovements("(90, 99)") {
+  fun test1Initial() = testMovements("(0, 0)") {}
+
+  @Test(timeout = TIMEOUT)
+  fun test2Right() = testMovements("(1, 0)") {
+    goRight(1)
+  }
+
+  @Test(timeout = TIMEOUT)
+  fun test3Left() = testMovements("(1, 0)") {
+    goRight(2)
+    goLeft(1)
+  }
+
+  @Test(timeout = TIMEOUT)
+  fun test4Down() = testMovements("(0, 1)") {
+    goDown(1)
+  }
+
+  @Test(timeout = TIMEOUT)
+  fun test5Up() = testMovements("(0, 1)") {
+    goDown(2)
     goUp(1)
-    goLeft(10)
   }
 
   @Test(timeout = TIMEOUT)
-  fun test2Left() = testMovements("(70, 0)") {
-    goLeft(30)
+  fun test6SeveralSteps() = testMovements("(3, 5)") {
+    goRight(3)
+    goDown(5)
   }
 
   @Test(timeout = TIMEOUT)
-  fun test3Up() = testMovements("(0, 99)") {
-    goUp(1)
-  }
-
-  @Test(timeout = TIMEOUT)
-  fun test4Left() = testMovements("(70, 0)") {
-    goLeft(130)
-  }
-
-  @Test(timeout = TIMEOUT)
-  fun test5Up() = testMovements("(0, 99)") {
-    goUp(101)
-  }
-
-  @Test(timeout = TIMEOUT)
-  fun test6Right() = testMovements("(10, 0)") {
-    goRight(110)
-  }
-
-  @Test(timeout = TIMEOUT)
-  fun test7Down() = testMovements("(0, 20)") {
-    goDown(120)
-  }
-
-  @Test(timeout = TIMEOUT)
-  fun test8SeveralSteps() = testMovements("(10, 10)") {
-    goRight(313)
-    goDown(415)
-    goUp(505)
-    goLeft(703)
+  fun test7SeveralSteps2() = testMovements("(10, 10)") {
+    goRight(13)
+    goDown(15)
+    goUp(5)
+    goLeft(3)
   }
 }

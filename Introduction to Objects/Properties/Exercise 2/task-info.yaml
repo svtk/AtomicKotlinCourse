@@ -4,23 +4,24 @@ files:
   visible: true
   placeholders:
   - offset: 37
-    length: 226
-    placeholder_text: |-
-      var x = 0
-        var y = 0
-  - offset: 297
-    length: 35
-    placeholder_text: x += steps
-  - offset: 369
-    length: 35
-    placeholder_text: x -= steps
-  - offset: 441
-    length: 35
-    placeholder_text: y += steps
-  - offset: 511
-    length: 35
-    placeholder_text: y -= steps
+    length: 21
+    placeholder_text: /*TODO*/
+  - offset: 92
+    length: 10
+    placeholder_text: TODO()
+  - offset: 139
+    length: 10
+    placeholder_text: TODO()
+  - offset: 186
+    length: 10
+    placeholder_text: TODO()
+  - offset: 231
+    length: 10
+    placeholder_text: TODO()
+  - offset: 277
+    length: 10
+    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false
 feedback_link: |
-  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Properties+%2F+Exercise2
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Properties+%2F+Exercise1
