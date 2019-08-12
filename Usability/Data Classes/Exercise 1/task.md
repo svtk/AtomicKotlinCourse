@@ -1,7 +1,4 @@
-This is the markdown document.
+## Data Classes (#1)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create a data class for an airline ticket {{to conform to the needs of the
+teaching system, we need to specify the field names and types and class name }}

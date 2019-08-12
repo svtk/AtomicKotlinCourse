@@ -1,17 +1,15 @@
-## Creating Classes (#1)
+## Creating Classes (#3)
 
-Create the `Robot` class with the following four member functions:
-`goRight`, `goLeft`, `goDown` and `goUp`.
-Each of these functions should take an integer `steps` as a parameter
-and print one the following phrases to the console:
-
-```
-going right N steps
-```
-
-or 
+Create a `Robot` class with the following four member functions:
+`goRight(steps: Int)`, `goLeft(steps: Int)`, `goDown(steps: Int)` and
+`goUp(steps: Int)`. Each function should display one of the following phrases
+on the console:
 
 ```
-going left N steps
+Right N steps
+Left N steps
+Down N steps
+Up N steps
 ```
-and so on accordingly, where N is the provided number of steps.
+
+where N is the provided number of steps.

@@ -1,8 +1,8 @@
-## Properties (#2)
+## Properties (#3)
 
-Now the field the robot can move in is constrained in size to `100 x 100`, but
-the borders of the field are "looped": if the robot is in the cell
-`(0, 0)` and goes up 1 step, it arrives at the cell `(0, 99)`.
+The robot can move in a field with size `100 x 100`. The borders of this field
+are "looped": if the robot is in cell `(0, 0)` and moves up one step, it
+arrives in cell `(0, 99)`.
 
 ```
 (0, 0)
@@ -12,8 +12,8 @@ the borders of the field are "looped": if the robot is in the cell
 (90, 99)
 ```
 
-Modify all the functions `goRight`, `goLeft`, `goDown` and `goUp` to 
-support this behavior.
+Modify `goRight()`, `goLeft()`, `goUp()` and `goDown()` to implement this
+behavior.
 
 <div class="hint">
 

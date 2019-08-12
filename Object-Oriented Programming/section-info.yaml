@@ -5,11 +5,11 @@ content:
 - Inheritance
 - Base Class Initialization
 - Abstract Classes
-- Composition
-- Class Delegation
 - Upcasting
 - Polymorphism
+- Composition
 - Designing with Inheritance
+- Class Delegation
 - Downcasting
 - Sealed Classes
 - Inner & Nested Classes
