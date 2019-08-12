@@ -1,5 +1,5 @@
 // Casting/WhenAndCasting.kt
-package casting
+package downcasting
 import atomictest.eq
 
 fun acceptAny(a: Any) =

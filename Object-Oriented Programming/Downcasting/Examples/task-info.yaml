@@ -4,13 +4,17 @@ files:
   visible: true
 - name: src/SmartCast.kt
   visible: true
-- name: src/casting/JDog.java
-  visible: true
-- name: src/casting/MoreWork.java
-  visible: true
 - name: src/WhenAndCasting.kt
+  visible: true
+- name: src/WhenAndHierarchy.kt
   visible: true
 - name: src/Unsafe.kt
   visible: true
 - name: src/Safe.kt
+  visible: true
+- name: src/CheckType.kt
+  visible: true
+- name: src/FilterIsInstance.kt
+  visible: true
+- name: src/Game.kt
   visible: true

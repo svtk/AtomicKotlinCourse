@@ -1,3 +1,3 @@
-## Dynamic Binding
+## Downcasting
 
 Examples accompanying the atom.

@@ -1,8 +1,8 @@
 type: theory
 files:
-- name: src/Dessert.kt
+- name: src/Pet.kt
   visible: true
-- name: src/Dessert2.kt
+- name: src/Playing.kt
   visible: true
-- name: src/Downcasting.kt
+- name: src/GameImpl.kt
   visible: true

@@ -1,5 +1,5 @@
 // Casting/Safe.kt
-package casting
+package downcasting
 import atomictest.eq
 
 fun dogBarkSafe(a: Any) =

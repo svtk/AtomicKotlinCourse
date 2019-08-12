@@ -11,8 +11,6 @@ abstract class MobileElement : GameElement {
 
   abstract fun makeMove(             // [1]
       move: Move, maze: Maze): Position?
-
-  override fun toString() = symbol.toString()
 }
 
 class Robot: MobileElement() {
