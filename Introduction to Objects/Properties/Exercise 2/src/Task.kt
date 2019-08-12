@@ -1,4 +1,4 @@
-package properties1
+package properties2
 
 class Robot {
   var x = 0

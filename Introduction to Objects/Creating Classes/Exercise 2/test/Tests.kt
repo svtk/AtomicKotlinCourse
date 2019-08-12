@@ -2,31 +2,24 @@ package creatingClasses2
 
 import org.junit.Assert
 import org.junit.Test
+import util.loadClass
+import util.loadMethod
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
+import kotlin.reflect.full.createInstance
 
 class TestGiraffe {
   @Test
   fun testSolution() {
-    val giraffeClass =
-        try {
-          ClassLoader.getSystemClassLoader().loadClass("creatingClasses2.Giraffe")
-        } catch (e: ClassNotFoundException) {
-          throw AssertionError("Can't find the 'Giraffe' class in 'creatingClasses2' package")
-        }
-    val giraffeInstance = giraffeClass.constructors.first().newInstance()
+    val giraffeClass = loadClass("creatingClasses2", "Giraffe")
+    val giraffeInstance = giraffeClass.createInstance()
 
-    val displayIDMethod =
-        try {
-          giraffeClass.getMethod("displayID")
-        } catch (e: NoSuchMethodException) {
-          throw AssertionError("Can't find the 'displayID()' member function in 'Giraffe' class")
-        }
+    val displayIDMethod = loadMethod(giraffeClass, "displayID")
 
     val byteArrayOutputStream = ByteArrayOutputStream()
     System.setOut(PrintStream(byteArrayOutputStream))
 
-    displayIDMethod.invoke(giraffeInstance)
+    displayIDMethod.call(giraffeInstance)
 
     val output = byteArrayOutputStream.toString().trim()
     val message = "The 'displayID' function should display the address of the object, " +

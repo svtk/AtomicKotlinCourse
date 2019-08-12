@@ -1,4 +1,4 @@
-package properties3
+package properties4
 
 class Counter {
   var value = 0

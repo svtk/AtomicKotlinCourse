@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 26
-    length: 296
+    length: 272
     placeholder_text: // create Robot class
 - name: test/Tests.kt
   visible: false

@@ -1,4 +1,4 @@
-package properties2
+package properties3
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

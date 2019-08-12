@@ -2,19 +2,19 @@ package creatingClasses3
 
 class Robot {
   fun goRight(steps: Int) {
-    println("going right $steps steps")
+    println("Right $steps steps")
   }
 
   fun goLeft(steps: Int) {
-    println("going left $steps steps")
+    println("Left $steps steps")
   }
 
   fun goDown(steps: Int) {
-    println("going down $steps steps")
+    println("Down $steps steps")
   }
 
   fun goUp(steps: Int) {
-    println("going up $steps steps")
+    println("Up $steps steps")
   }
 }
 
