@@ -1,4 +1,7 @@
 content:
+- Lambda with Receiver
+- The with() Function
+- Library Helpers
 - Immutability
 - Hashing
 - Destructuring Declarations
