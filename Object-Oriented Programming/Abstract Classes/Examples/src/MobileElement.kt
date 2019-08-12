@@ -1,5 +1,6 @@
 // Abstract/MobileElement.kt
 package abstractclasses
+import atomictest.eq
 
 enum class Move {
   UP, RIGHT, DOWN, LEFT, WAIT
@@ -23,4 +24,10 @@ class Robot: MobileElement() {
     // Return new position
     return null
   }
+}
+
+fun main() {
+  val robot = Robot()
+  robot.symbol eq 'R'
+  robot.sharesCell eq true
 }

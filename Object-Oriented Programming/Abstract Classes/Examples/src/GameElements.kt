@@ -1,6 +1,8 @@
 // Abstract/GameElements.kt
 package abstractclasses
 
+import atomictest.eq
+
 interface Maze
 interface Position
 
@@ -22,4 +24,10 @@ class Wall :
   StaticElement(sharesCell = false) { // [2]
   override val symbol: Char
     get() = '#'                       // [3]
+}
+
+fun main() {
+  val wall = Wall()
+  wall.symbol eq '#'
+  wall.sharesCell eq false
 }

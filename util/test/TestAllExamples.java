@@ -1662,8 +1662,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testMobileElement() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/MobileElement.kt", abstractclasses.MobileElementKt::main);
+    }
+
+    @Test
     public void testGadget() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/Gadget.kt", abstractclasses.GadgetKt::main);
+    }
+
+    @Test
+    public void testGameElements() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/GameElements.kt", abstractclasses.GameElementsKt::main);
     }
 
     @Test
@@ -1769,6 +1779,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testHumanAlice() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Downcasting/Examples/src/HumanAlice.kt", downcasting.HumanAliceKt::main);
+    }
+
+    @Test
+    public void testGame() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Downcasting/Examples/src/Game.kt", downcasting.GameKt::main);
     }
 
     @Test
@@ -3197,7 +3212,7 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testGameElements() {
+    public void testGameElements1() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Base Class Initialization/Exercise 1/src/GameElements.kt", baseClassInitialization1.GameElementsKt::main);
     }
 
