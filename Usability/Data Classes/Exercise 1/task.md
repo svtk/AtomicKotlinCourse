@@ -1,5 +1,7 @@
-## Data Classes (#1)
+This is the markdown document.
 
-Check your understanding of how sets stores instances of data classes.
-Guess the size of sets `set1` and `set2`.
-You can easily check your guess by printing the contents of the sets.
+Write your task text here
+
+<div class="hint">
+  Hints can be added anywhere in task text: type "hint" and press Tab.
+</div>
