@@ -12,6 +12,7 @@ content:
 - Designing with Inheritance
 - Downcasting
 - Sealed Classes
+- Inner & Nested Classes
+- More about Generics
 - Objects
 - Companion Objects
-- Inner & Nested Classes
