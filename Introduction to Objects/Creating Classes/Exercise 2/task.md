@@ -1,5 +1,15 @@
 ## Creating Classes (#2)
 
-Create a class `Giraffe` with a single member function `id` that displays the
-address of the object. Make three different instances of this class, and display
-all the different addresses to the console.
+Create a class `Giraffe` with a single member function `displayID` that displays
+the address of the object. Call `substringAfter()` member function of String
+to extract the address from the default object representation.
+Run the following code and compare the addresses:
+
+```kotlin
+val giraffe1 = Giraffe()
+val giraffe2 = Giraffe()
+val giraffe3 = Giraffe()
+giraffe1.displayID()
+giraffe2.displayID()
+giraffe3.displayID()
+```

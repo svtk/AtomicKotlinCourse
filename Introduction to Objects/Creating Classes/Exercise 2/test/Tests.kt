@@ -2,36 +2,36 @@ package creatingClasses2
 
 import org.junit.Assert
 import org.junit.Test
-import util.assertEqualsForOutput
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
-import java.lang.AssertionError
 
-class TestFoo {
+class TestGiraffe {
   @Test
   fun testSolution() {
-    val fooClass =
+    val giraffeClass =
         try {
-          ClassLoader.getSystemClassLoader().loadClass("creatingClasses4.Foo")
+          ClassLoader.getSystemClassLoader().loadClass("creatingClasses2.Giraffe")
         } catch (e: ClassNotFoundException) {
-          throw AssertionError("Can't find the 'Foo' class in 'creatingClasses4' package")
+          throw AssertionError("Can't find the 'Giraffe' class in 'creatingClasses2' package")
         }
-    val foo = fooClass.constructors.first().newInstance()
+    val giraffeInstance = giraffeClass.constructors.first().newInstance()
 
-    val barMethod =
+    val displayIDMethod =
         try {
-          fooClass.getMethod("bar")
+          giraffeClass.getMethod("displayID")
         } catch (e: NoSuchMethodException) {
-          throw AssertionError("Can't find the 'bar()' member function in 'Foo' class")
+          throw AssertionError("Can't find the 'displayID()' member function in 'Giraffe' class")
         }
 
     val byteArrayOutputStream = ByteArrayOutputStream()
     System.setOut(PrintStream(byteArrayOutputStream))
 
-    barMethod.invoke(foo)
+    displayIDMethod.invoke(giraffeInstance)
 
-    val output = byteArrayOutputStream.toString()
-    Assert.assertTrue("The output should contain @ sign", '@' in output)
-    Assert.assertTrue("The output should contain 'Foo'", "Foo" in output)
+    val output = byteArrayOutputStream.toString().trim()
+    val message = "The 'displayID' function should display the address of the object, " +
+        "something like '30c7da1e'\n" +
+        "was: $output"
+    Assert.assertTrue(message, output.toIntOrNull(16) != null)
   }
 }
