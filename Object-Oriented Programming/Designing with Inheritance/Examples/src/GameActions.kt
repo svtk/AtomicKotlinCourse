@@ -1,5 +1,7 @@
-// DesigningWithInheritance/GameElement.kt
-package designingwithinheritance
+// DesigningWithInheritance/GameActions.kt
+package designingwithinheritance.actions
+
+interface Maze
 
 interface GameAction
 

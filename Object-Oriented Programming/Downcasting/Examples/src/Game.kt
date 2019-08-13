@@ -8,11 +8,14 @@ enum class Move {
 interface Element {
   fun playTurn()
 }
-interface MovableElement : Element {
+
+interface MobileElement : Element {
   fun makeMove(move: Move): Position
 }
+
 data class Position(val x: Int, val y: Int)
-class Robot : MovableElement {
+
+class Robot : MobileElement {
   private var eatenFoodItems = 0
   override fun playTurn() {
     println("Robot eats food")
@@ -53,10 +56,10 @@ class GameImpl: Game {
 
   override fun score(): Int {
     val robot = maze.all()
-      .find { it is Robot }               // [1]
-      ?: return 0                         // [2]
-    return (robot as Robot)               // [3]
-      .score() * 100 - turns              // [4]
+      .find { it is Robot }             // [1]
+      ?: return 0                       // [2]
+    return (robot as Robot)             // [3]
+      .score() * 100 - turns            // [4]
   }
 
   override fun playTurn() {
@@ -67,10 +70,10 @@ class GameImpl: Game {
  
   override fun playMove(move: Move) {
     turns++
-    val movableElements = maze.all()
-      .filterIsInstance<MovableElement>() // [5]
-    movableElements.forEach {
-      val position = it.makeMove(move)    // [6]
+    val mobileElements = maze.all()
+      .filterIsInstance<MobileElement>() // [5]
+    mobileElements.forEach {
+      val position = it.makeMove(move)   // [6]
       // update element position
     } 
   }

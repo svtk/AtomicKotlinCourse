@@ -7,5 +7,5 @@ fun main() {
     Dog(), Alien()) 
   val dog = group
     .find { it is Dog } as Dog?      // [1]
-  dog?.bark() eq "yip!"              // [2]
+  dog?.bark() eq "Yip!"              // [2]
 }

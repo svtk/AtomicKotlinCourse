@@ -1767,11 +1767,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testWhenAndCasting() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Downcasting/Examples/src/WhenAndCasting.kt", downcasting.WhenAndCastingKt::main);
-    }
-
-    @Test
     public void testFilterIsInstance() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Downcasting/Examples/src/FilterIsInstance.kt", downcasting.FilterIsInstanceKt::main);
     }

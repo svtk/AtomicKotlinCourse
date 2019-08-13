@@ -4,8 +4,6 @@ files:
   visible: true
 - name: src/SmartCast.kt
   visible: true
-- name: src/WhenAndCasting.kt
-  visible: true
 - name: src/WhenAndHierarchy.kt
   visible: true
 - name: src/Unsafe.kt

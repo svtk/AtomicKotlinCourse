@@ -36,21 +36,13 @@ class MazeImpl: MutableMaze {
   }
 }
 
-class Food : GameElement {
-  override fun playTurn(maze: Maze): Set<GameAction> {
-    // do nothing
-    return setOf()
-  }
+interface GameElement
 
+class Food : GameElement {
   override fun toString() = "Food"
 }
 
 class Robot : GameElement {
-  override fun playTurn(maze: Maze): Set<GameAction> {
-    // if there's food in the same cell
-    return setOf(DestroyAction(Food()))
-  }
-
   override fun toString() = "Robot"
 }
 

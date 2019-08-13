@@ -6,18 +6,18 @@ interface Maze {
   fun all(): Set<GameElement>
 }
 
+class MazeImpl(
+  val elements: Set<GameElement>
+) : Maze {
+  override fun all() = elements
+}
+
 class Game(val maze: Maze) {
   fun play() {
     maze.all().forEach { element ->
       element.playTurn()
     }
   }
-}
-
-class MazeImpl(
-  val elements: Set<GameElement>
-) : Maze {
-  override fun all() = elements
 }
 
 fun main() {

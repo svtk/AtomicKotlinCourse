@@ -6,13 +6,6 @@ fun play(gameElement: GameElement) {
   gameElement.playTurn()
 }
 
-fun moveAround(mobileElement: MobileElement) {
-  println("Moving around:")
-  mobileElement.makeMove(Move.RIGHT)
-  mobileElement.makeMove(Move.RIGHT)
-  mobileElement.makeMove(Move.UP)
-}
-
 fun main() {
   val robot = Robot()
   val wall = Wall() 
@@ -20,7 +13,6 @@ fun main() {
   play(robot)
   play(wall)
   play(bomb)
-  moveAround(robot)
 }
 /* Output:
 Playing turn:
@@ -29,8 +21,4 @@ Playing turn:
 Static element does nothing
 Playing turn:
 Bomb blows up some elements
-Moving around:
-Robot goes RIGHT
-Robot goes RIGHT
-Robot goes UP
 */

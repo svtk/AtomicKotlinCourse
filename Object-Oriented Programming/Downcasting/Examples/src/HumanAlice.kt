@@ -5,7 +5,7 @@ import atomictest.eq
 interface LivingBeing
 
 class Human : LivingBeing {
-  fun greeting() = "I'm Human"
+  fun greeting() = "I'm Human."
 }
 
 class Alien : LivingBeing
@@ -15,7 +15,7 @@ fun main() {
   if (smb is Human) {
     // Code in this block assumes
     // smb is an Human object
-    smb.greeting() eq "I'm Human" // [2]
+    smb.greeting() eq "I'm Human." // [2]
   }
   if (smb is Alien) {             // [3]
     // code here won't be called

@@ -10,5 +10,5 @@ files:
   visible: true
 - name: src/MutableMaze.kt
   visible: true
-- name: src/GameElement.kt
+- name: src/GameActions.kt
   visible: true
