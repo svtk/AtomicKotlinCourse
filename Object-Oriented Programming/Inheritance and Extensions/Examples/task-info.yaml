@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/GadgetMembers.kt
+  visible: true
+- name: src/GadgetExtensions.kt
+  visible: true
+- name: src/KeepingMazeSimple.kt
+  visible: true
+- name: src/Auxiliary.kt
+  visible: true

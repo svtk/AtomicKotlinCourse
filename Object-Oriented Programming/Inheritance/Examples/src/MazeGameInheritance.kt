@@ -37,8 +37,11 @@ class Bomb: StaticElement() {
   override fun playTurn(maze: Maze) {
     val position = maze.position(this)
         ?: return
-    maze.allAt(position).forEach { // [3]
-      maze.remove(it)
+    val all = maze.allAt(position)
+    if (all.size > 1) {      // [3]
+      all.forEach {          // [4]
+        maze.remove(it)
+      }
     }
   }
 }

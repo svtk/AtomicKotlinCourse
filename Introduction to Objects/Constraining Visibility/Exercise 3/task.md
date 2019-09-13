@@ -1,7 +1,13 @@
 ## Constraining Visibility (#3)
 
 A `Robot` can only move forward. Check that the `steps` argument is a positive
-number. If `steps` is negative or zero, each of the functions  `goRight()`,
-`goLeft()`, `goDown()` and `goUp()` shouldn't update the location and should
-only display on the console: `"Incorrect input: $steps, the number of steps
-should be positive."`
+number. For `right()`, `left()`, `down()` and `up()`, a negative or zero
+`steps` argument should not update the location. Instead it should produce
+console output:
+
+```
+"Incorrect steps argument: $steps; must be positive."
+```
+
+In `main()`, test the steps using positive, negative and zero values of
+`steps`.

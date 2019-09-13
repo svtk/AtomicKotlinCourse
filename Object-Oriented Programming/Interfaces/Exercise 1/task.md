@@ -1,8 +1,8 @@
 ## Interfaces (#1)
 
-Complete the implementation of `MazeImpl`.
-It stores elements in a two-dimensional list of the size `height * width`,
-which is implemented as a list of Lists (where the outer list is of `height` 
+The `MazeImpl` class implements the `Maze` interface.
+It stores game elements in a "table" of the size `height * width`,
+which is backed by a list of Lists (where the outer list is of `height` 
 size and each inner list is of `width` size).
 In each cell, a set of elements is stored. 
 `MazeImpl` additionally keeps the record of positions of all the elements

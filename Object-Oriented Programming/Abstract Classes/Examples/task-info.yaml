@@ -14,9 +14,11 @@ files:
   visible: true
 - name: src/InterfaceCollision.kt
   visible: true
-- name: src/Gadget.kt
-  visible: true
 - name: src/GameElements.kt
   visible: true
 - name: src/MobileElement.kt
+  visible: true
+- name: src/Implementations.kt
+  visible: true
+- name: src/WithPropertyAccessor.kt
   visible: true

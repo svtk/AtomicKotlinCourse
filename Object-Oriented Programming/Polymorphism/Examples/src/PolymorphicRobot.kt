@@ -1,5 +1,5 @@
-// Polymorphism/Playing.kt
-package polymorphism 
+// Polymorphism/PolymorphicRobot.kt
+package polymorphism.polymorphicrobot 
 import upcasting.*
 
 fun play(gameElement: GameElement) {
@@ -21,21 +21,13 @@ fun checkScore(robot: Robot) {
 
 fun main() {
   val robot = Robot()
-  val wall = Wall() 
-  val bomb = Bomb()
   play(robot)
-  play(wall)
-  play(bomb)
   moveAround(robot)
   checkScore(robot)
 }
 /* Output:
 Playing turn:
 Robot eats some food
-Playing turn:
-Static element does nothing
-Playing turn:
-Bomb blows up some elements
 Moving around:
 Robot goes RIGHT
 Robot goes RIGHT

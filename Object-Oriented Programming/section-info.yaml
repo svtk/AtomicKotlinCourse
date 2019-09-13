@@ -8,6 +8,7 @@ content:
 - Upcasting
 - Polymorphism
 - Composition
+- Inheritance and Extensions
 - Designing with Inheritance
 - Class Delegation
 - Downcasting

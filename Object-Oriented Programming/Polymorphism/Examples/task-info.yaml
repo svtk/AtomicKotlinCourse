@@ -2,7 +2,9 @@ type: theory
 files:
 - name: src/Pet.kt
   visible: true
-- name: src/Playing.kt
-  visible: true
 - name: src/GameImpl.kt
+  visible: true
+- name: src/PolymorphicRobot.kt
+  visible: true
+- name: src/PolymorphicPlay.kt
   visible: true

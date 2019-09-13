@@ -14,7 +14,7 @@ class MazeImpl(
 
 class Game(val maze: Maze) {
   fun play() {
-    maze.all().forEach { element ->
+    maze.all().forEach { element ->   // [1]
       element.playTurn()
     }
   }

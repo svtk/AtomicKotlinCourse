@@ -10,5 +10,5 @@ files:
   visible: true
 - name: src/DisplayAlienSpecies.kt
   visible: true
-- name: src/GoodAlien.kt
+- name: src/Scientist.kt
   visible: true
