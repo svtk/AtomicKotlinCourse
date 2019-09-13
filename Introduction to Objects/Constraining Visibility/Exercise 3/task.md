@@ -1,4 +1,4 @@
-## Constraining Visibility (#2)
+## Constraining Visibility (#3)
 
 A `Robot` can only move forward. Check that the `steps` argument is a positive
 number. If `steps` is negative or zero, each of the functions  `goRight()`,
