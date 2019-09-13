@@ -1,8 +1,32 @@
-type: ide
+type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 322
+    length: 194
+    placeholder_text: ""
+  - offset: 550
+    length: 69
+    placeholder_text: |-
+      x += steps
+        x = crossBoundary(x)
+  - offset: 656
+    length: 69
+    placeholder_text: |-
+      x -= steps
+        x = crossBoundary(x)
+  - offset: 762
+    length: 69
+    placeholder_text: |-
+      y += steps
+        y = crossBoundary(y)
+  - offset: 866
+    length: 69
+    placeholder_text: |-
+      y -= steps
+        y = crossBoundary(y)
 - name: test/Tests.kt
   visible: false
 feedback_link: |
-  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Constraining+Visibility+%2F+Exercise3
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Constraining+Visibility+%2F+Exercise2

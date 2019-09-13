@@ -1,16 +1,7 @@
-## Mastering the IDE: Extend Selection
+## Constraining Visibility (#2)
 
-When you apply refactorings like <span class="control">`Extract Property`</span>, 
-you need to select the expression that you'd like to extract, which might be 
-quite complicated.
-
-The <span class="control">`Extend Selection`</span> action accessible with the
-<span class="shortcut">&shortcut:EditorSelectWord;</span> shortcut is very
-helpful here: it selects the outside expression, increasing the selection by
-each step. The reverse action is called
-<span class="control">`Shrink selection`</span> and is accessible by
-<span class="shortcut">&shortcut:EditorUnSelectWord;</span>.
-
-Try putting the caret on line `println("Incorrect input: $x should be
-positive")` and extend and shrink the selection to see how it works.
-Continue to extend the selection until the whole file is selected.
+A `Robot` can only move forward. Check that the `steps` argument is a positive
+number. If `steps` is negative or zero, each of the functions  `goRight()`,
+`goLeft()`, `goDown()` and `goUp()` shouldn't update the location and should
+only display on the console: `"Incorrect input: $steps, the number of steps
+should be positive."`

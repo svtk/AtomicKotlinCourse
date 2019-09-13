@@ -14,47 +14,33 @@ class Robot(
     }
   }
 
-  private fun checkSteps(steps: Int): Boolean {
-    if (steps <= 0) {
-      println("Incorrect input: $steps, the number of steps should be positive.")
-      return true
-    }
-    return false
-  }
-
   fun goRight(steps: Int) {
-    if (checkSteps(steps)) return
     x += steps
     x = crossBoundary(x)
   }
 
   fun goLeft(steps: Int) {
-    if (checkSteps(steps)) return
     x -= steps
     x = crossBoundary(x)
   }
 
   fun goDown(steps: Int) {
-    if (checkSteps(steps)) return
     y += steps
     y = crossBoundary(y)
   }
 
   fun goUp(steps: Int) {
-    if (checkSteps(steps)) return
     y -= steps
     y = crossBoundary(y)
   }
 
   fun getLocation(): String = "($x, $y)"
 
-  override fun toString() = "Robot(x=$x,y = $y)"
+  override fun toString() = "Robot(x=$x, y=$y)"
 }
 
 fun main() {
-    val robot = Robot(10, 1, 1)
-    robot.goRight(-1)
+  val robot = Robot(10, 1, 1)
+  // Should be "can't access x" error:
+//  println(robot.x)
 }
-/* Output:
-Incorrect input: -1, the number of steps should be positive.
-*/

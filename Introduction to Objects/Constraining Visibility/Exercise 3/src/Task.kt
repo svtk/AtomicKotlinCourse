@@ -1,16 +1,60 @@
 package constrainingVisibility3
 
-fun printSum(x: Int) {
-    if (x <= 0) {
-        println("Incorrect input: $x should be positive")
-        return
+class Robot(
+    private val fieldSize: Int,
+    private var x: Int,
+    private var y: Int
+) {
+  private fun crossBoundary(coordinate: Int): Int {
+    val inBounds = coordinate % fieldSize
+    return if (inBounds < 0) {
+      fieldSize + inBounds
+    } else {
+      inBounds
     }
-    println((0..x).sum())
+  }
+
+  private fun checkSteps(steps: Int): Boolean {
+    if (steps <= 0) {
+      println("Incorrect input: $steps, the number of steps should be positive.")
+      return true
+    }
+    return false
+  }
+
+  fun goRight(steps: Int) {
+    if (checkSteps(steps)) return
+    x += steps
+    x = crossBoundary(x)
+  }
+
+  fun goLeft(steps: Int) {
+    if (checkSteps(steps)) return
+    x -= steps
+    x = crossBoundary(x)
+  }
+
+  fun goDown(steps: Int) {
+    if (checkSteps(steps)) return
+    y += steps
+    y = crossBoundary(y)
+  }
+
+  fun goUp(steps: Int) {
+    if (checkSteps(steps)) return
+    y -= steps
+    y = crossBoundary(y)
+  }
+
+  fun getLocation(): String = "($x, $y)"
+
+  override fun toString() = "Robot(x=$x,y = $y)"
 }
 
 fun main() {
-    printSum(-10)
+    val robot = Robot(10, 1, 1)
+    robot.goRight(-1)
 }
 /* Output:
-Incorrect input: -10 should be positive
+Incorrect input: -1, the number of steps should be positive.
 */

@@ -1,21 +1,16 @@
-## Mastering the IDE: Extract Function
+## Mastering the IDE: Extend Selection
 
-IntelliJ Idea allows you to extract repetitive code into a function. Select the
-following code in the body of the first function:
+When you apply refactorings like <span class="control">`Extract Property`</span>, 
+you need to select the expression that you'd like to extract, which might be 
+quite complicated.
 
-```
-if (x <= 0) {
-    println("Incorrect input: $x should be positive")
-    return
-}
-```
+The <span class="control">`Extend Selection`</span> action accessible with the
+<span class="shortcut">&shortcut:EditorSelectWord;</span> shortcut is very
+helpful here: it selects the outside expression, increasing the selection by
+each step. The reverse action is called
+<span class="control">`Shrink selection`</span> and is accessible by
+<span class="shortcut">&shortcut:EditorUnSelectWord;</span>.
 
-Type the <span class="control">`Extract Function`</span> action,
-or use the shortcut <span class="shortcut">&shortcut:ExtractMethod;</span>, 
-or click on the main menu to choose
-<span class="control">`Refactor | Extract | Function`</span>. 
-Type the new function name `checkArgument` and press
-<span class="shortcut">&shortcut:EditorEnter;</span>.
- 
-Agree to <span class="control">`Process Duplicates`</span>, so that the second 
-occurrence of the same piece of code was also extracted.
+Try putting the caret on line `println("Incorrect input: $x should be
+positive")` and extend and shrink the selection to see how it works.
+Continue to extend the selection until the whole file is selected.

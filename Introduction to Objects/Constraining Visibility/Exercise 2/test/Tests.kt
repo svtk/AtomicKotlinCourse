@@ -1,86 +1,31 @@
 package constrainingVisibility2
 
-import org.junit.FixMethodOrder
+import org.junit.Assert
 import org.junit.Test
-import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import util.assertEqualsForOutput
-import java.io.ByteArrayOutputStream
-import java.io.PrintStream
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRobotIncorrectInput {
-  class RobotHandler() {
-    val robot: Robot = Robot(10, 0, 0)
-    val loggedMovements = StringBuilder()
-    var loggedSteps: Int? = null
-
-    fun goRight(steps: Int) {
-      robot.goRight(steps)
-      loggedMovements.appendln("goRight($steps)")
-      loggedSteps = steps
-    }
-
-    fun goLeft(steps: Int) {
-      robot.goLeft(steps)
-      loggedMovements.appendln("goLeft($steps)")
-      loggedSteps = steps
-    }
-
-    fun goDown(steps: Int) {
-      robot.goDown(steps)
-      loggedMovements.appendln("goDown($steps)")
-      loggedSteps = steps
-    }
-
-    fun goUp(steps: Int) {
-      robot.goUp(steps)
-      loggedMovements.appendln("goUp($steps)")
-      loggedSteps = steps
-    }
-  }
-
-  private fun getErrorMessageText(steps: Int?) =
-      "Incorrect input: $steps, the number of steps should be positive."
-
-  private fun testWrongArgumentOutput(movements: RobotHandler.() -> Unit) {
-    val byteArrayOutputStream = ByteArrayOutputStream()
-    System.setOut(PrintStream(byteArrayOutputStream))
-
-    val robotHandler = RobotHandler()
-    robotHandler.movements()
-
-    val steps = robotHandler.loggedSteps
-    val incorrectOutput = "Incorrect output after:\n" + robotHandler.loggedMovements
-    if (byteArrayOutputStream.toString().isEmpty()) {
-      throw AssertionError(incorrectOutput + "\nThe message " +
-          "\"${getErrorMessageText(steps)}\" should be printed to the console")
-    }
-    assertEqualsForOutput(incorrectOutput,
-        getErrorMessageText(steps),
-        byteArrayOutputStream)
-  }
-
-
+class TestRobotPrivateMembers {
   @Test(timeout = TIMEOUT)
-  fun test1Right() = testWrongArgumentOutput {
-    goRight(-5)
-  }
+  fun testCheckAllThePropertiesArePrivate() {
+    val robotMethods = setOf("goRight", "goLeft", "goDown", "goUp", "getLocation")
+    val objectMethods = setOf("wait", "equals", "toString", "hashCode", "getClass", "notify", "notifyAll")
+    val publicMethods = robotMethods + objectMethods
 
-  @Test(timeout = TIMEOUT)
-  fun test2Left() = testWrongArgumentOutput {
-    goLeft(0)
-  }
+    val robotClass = Robot::class.java
+    val otherMethods = robotClass.methods.filter { it.name !in publicMethods }.map { it.name }
 
-  @Test(timeout = TIMEOUT)
-  fun test3Up() = testWrongArgumentOutput {
-    goUp(-10)
-  }
-
-  @Test(timeout = TIMEOUT)
-  fun test4Down() = testWrongArgumentOutput {
-    goDown(-50)
+    val (getters, methods) = otherMethods
+        .filterNot { it.startsWith("set") }
+        .partition { it.startsWith("get") }
+    val properties = getters.map { it.substringAfter("get").decapitalize() }
+    val message = buildString {
+      properties.forEach {
+        appendln("The property '$it' should be private")
+      }
+      methods.forEach {
+        appendln("The member function '$it' should be private")
+      }
+    }
+    Assert.assertTrue(message, otherMethods.isEmpty())
   }
 }
-
-fun Robot(vararg a: Any?): Robot = TODO()

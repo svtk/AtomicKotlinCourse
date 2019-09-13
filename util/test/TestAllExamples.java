@@ -2738,22 +2738,22 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask59() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 1/src/Task.kt", constrainingVisibility1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 1/src/Task.kt", constrainingVisibility2.TaskKt::main);
     }
 
     @Test
     public void testTask60() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 2/src/Task.kt", constrainingVisibility2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 2/src/Task.kt", constrainingVisibility3.TaskKt::main);
     }
 
     @Test
     public void testTask61() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 3/src/Task.kt", constrainingVisibility3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 3/src/Task.kt", constrainingVisibility4.TaskKt::main);
     }
 
     @Test
     public void testTask62() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 4/src/Task.kt", constrainingVisibility4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 4/src/Task.kt", constrainingVisibility5.TaskKt::main);
     }
 
     @Test
