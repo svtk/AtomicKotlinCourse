@@ -1,7 +1,7 @@
 package constrainingVisibility1
 
-class Alien(val name: String, val species: Int, private var planet: String) {
-   fun morePlanet(newPlanet: String) {
+class Alien(val name: String, val species: String, private var planet: String) {
+   fun movePlanet(newPlanet: String) {
      planet = newPlanet
    }
 

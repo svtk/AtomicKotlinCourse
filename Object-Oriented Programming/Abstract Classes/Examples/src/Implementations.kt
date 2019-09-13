@@ -5,7 +5,7 @@ import atomictest.eq
 interface Parent {
   val ch: Char
   fun f(): Int
-  fun g() = "ch = $n; f() = ${f()}" 
+  fun g() = "ch = $ch; f() = ${f()}"
 }
 
 class Actual(

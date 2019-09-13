@@ -1,5 +1,6 @@
 // InheritanceAndExtensions/Auxiliary.kt
 package inheritanceandextensions.auxiliary
+import inheritanceAndExtensions.*
 
 fun sameCellElements(
   maze: Maze,

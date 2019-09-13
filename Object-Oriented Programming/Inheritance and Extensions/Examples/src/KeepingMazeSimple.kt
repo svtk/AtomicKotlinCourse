@@ -1,12 +1,19 @@
 // InheritanceAndExtensions/KeepingMazeSimple.kt
-package inheritanceandextensions
+package inheritanceAndExtensions
+
+interface GameElement {
+  val sharesCell: Boolean
+}
+data class Position(val x: Int, val y: Int)
 
 interface Maze {
-  fun all(): Set<Element>
-  fun allAt(position: Position): Set<Element>
-  fun position(element: Element): Position?
-  fun add(element: Element, position: Position)
-  fun remove(element: Element)
+  val width: Int
+  val height: Int
+  fun all(): Set<GameElement>
+  fun allAt(position: Position): Set<GameElement>
+  fun position(element: GameElement): Position?
+  fun add(element: GameElement, position: Position)
+  fun remove(element: GameElement)
 }
 
 fun Maze.sameCellElements(

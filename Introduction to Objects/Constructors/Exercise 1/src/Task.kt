@@ -1,7 +1,7 @@
 package constructors1
 
 class Floating(val d: Double) {
-  override fun toString(): String = d
+  override fun toString(): String = d.toString()
 }
 
 fun main() {
