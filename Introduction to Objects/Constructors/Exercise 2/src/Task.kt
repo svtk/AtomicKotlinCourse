@@ -1,4 +1,4 @@
-package constructors1
+package constructors2
 
 class Robot(val fieldSize: Int, var x: Int, var y: Int) {
 
