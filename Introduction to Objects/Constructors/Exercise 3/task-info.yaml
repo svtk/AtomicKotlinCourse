@@ -1,12 +1,12 @@
-type: ide
+type: edu
 files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 81
-    length: 80
-    placeholder_text: /*TODO*/
+  - offset: 595
+    length: 45
+    placeholder_text: /* Implement toString */
 - name: test/Tests.kt
   visible: false
 feedback_link: |
-  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Constructors+%2F+Exercise3
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Constructors+%2F+Exercise2

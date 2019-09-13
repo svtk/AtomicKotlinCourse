@@ -1,6 +1,7 @@
-package constructors2
+package constructors1
 
 class Robot(val fieldSize: Int, var x: Int, var y: Int) {
+
   fun crossBoundary(coordinate: Int): Int {
     val inBounds = coordinate % fieldSize
     return if (inBounds < 0) {
@@ -31,14 +32,20 @@ class Robot(val fieldSize: Int, var x: Int, var y: Int) {
   }
 
   fun getLocation(): String = "($x, $y)"
-
-  override fun toString() = "Robot(x=$x, y=$y)"
 }
 
+/*
 fun main() {
-  val robot = Robot(10, 1, 1)
-  println(robot)
+    val robot = Robot(10, 1, 1)
+    println(robot.getLocation())
+    robot.goUp(2)
+    println(robot.getLocation())
+    robot.goLeft(10)
+    println(robot.getLocation())
 }
+*/
 /* Output:
-Robot(x=1, y=1)
+(1, 1)
+(1, 9)
+(1, 9)
 */

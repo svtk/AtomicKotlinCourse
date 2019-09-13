@@ -1,0 +1,12 @@
+type: ide
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 81
+    length: 80
+    placeholder_text: /*TODO*/
+- name: test/Tests.kt
+  visible: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Constructors+%2F+Exercise3
