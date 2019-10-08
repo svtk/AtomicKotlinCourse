@@ -46,7 +46,7 @@ class TestGroceryCart {
 
   @Test(timeout = TIMEOUT)
   fun test2Trivial() {
-    val groceryCart = setOf("beef", "apple", "beans", "vodka")
+    val groceryCart = setOf("beef", "apple", "beans", "beer")
 
     checkMeatPercentage(25.0, groceryCart)
     checkFruitPercentage(25.0, groceryCart)
