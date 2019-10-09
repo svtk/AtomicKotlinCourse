@@ -2,6 +2,7 @@ package util
 
 import org.junit.Assert
 import java.io.ByteArrayOutputStream
+import java.io.PrintStream
 import kotlin.reflect.KClass
 import kotlin.reflect.KFunction
 import kotlin.reflect.KProperty
@@ -16,8 +17,22 @@ fun String.normalizeLineSeparators(): String {
   return replace("\\R".toRegex(), LINE_SEPARATOR)
 }
 
-fun assertEqualsForOutput(message: String, expected: String, actual: ByteArrayOutputStream) {
-  Assert.assertEquals(message, expected.trim().normalizeLineSeparators(), actual.toString().trim().normalizeLineSeparators())
+inline fun runAndGetSystemOutput(action: () -> Unit): String {
+  val byteArrayOutputStream = ByteArrayOutputStream()
+  System.setOut(PrintStream(byteArrayOutputStream))
+
+  action()
+
+  return byteArrayOutputStream.toString()
+}
+
+inline fun runAndCheckSystemOutput(message: String, expectedOutput: String, action: () -> Unit) {
+  val actual = runAndGetSystemOutput(action)
+  checkSystemOutput(message, expectedOutput, actual)
+}
+
+fun checkSystemOutput(message: String, expected: String, actual: String) {
+  Assert.assertEquals(message, expected.trim().normalizeLineSeparators(), actual.trim().normalizeLineSeparators())
 }
 
 fun loadClass(packageName: String, className: String): KClass<*> {

@@ -4,23 +4,21 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import util.assertEqualsForOutput
-import java.io.ByteArrayOutputStream
-import java.io.PrintStream
+import util.runAndCheckSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSnake {
   private fun checkOutput(rows: Int, columns: Int, expected: String) {
-    val byteArrayOutputStream = ByteArrayOutputStream()
-    System.setOut(PrintStream(byteArrayOutputStream))
-    showSnake(rows, columns)
-    assertEqualsForOutput("Incorrect output for rows = $rows, columns = $columns:",
-        expected, byteArrayOutputStream)
+    runAndCheckSystemOutput(
+      "Incorrect output for rows = $rows, columns = $columns:",
+      expected) {
+      showSnake(rows, columns)
+    }
   }
 
   @Test(timeout = TIMEOUT)
   fun testSnake2() = checkOutput(2, 2,
-      """
+    """
                 | 0 1
                 | 3 2
                 |
@@ -28,7 +26,7 @@ class TestSnake {
 
   @Test(timeout = TIMEOUT)
   fun testSnake3() = checkOutput(3, 3,
-      """
+    """
                 | 0 1 2
                 | 5 4 3
                 | 6 7 8
@@ -37,7 +35,7 @@ class TestSnake {
 
   @Test(timeout = TIMEOUT)
   fun testSnake4() = checkOutput(4, 5,
-      """
+    """
                 |  0  1  2  3  4
                 |  9  8  7  6  5
                 | 10 11 12 13 14
@@ -47,7 +45,7 @@ class TestSnake {
 
   @Test(timeout = TIMEOUT)
   fun testSnake5() = checkOutput(10, 11,
-      """
+    """
                 |   0   1   2   3   4   5   6   7   8   9  10
                 |  21  20  19  18  17  16  15  14  13  12  11
                 |  22  23  24  25  26  27  28  29  30  31  32

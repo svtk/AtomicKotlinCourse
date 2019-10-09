@@ -4,9 +4,8 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import util.assertEqualsForOutput
-import java.io.ByteArrayOutputStream
-import java.io.PrintStream
+import util.checkSystemOutput
+import util.runAndGetSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestRobotIncorrectInput {
@@ -44,21 +43,21 @@ class TestRobotIncorrectInput {
       "Incorrect input: $steps, the number of steps should be positive."
 
   private fun testWrongArgumentOutput(movements: RobotHandler.() -> Unit) {
-    val byteArrayOutputStream = ByteArrayOutputStream()
-    System.setOut(PrintStream(byteArrayOutputStream))
-
     val robotHandler = RobotHandler()
-    robotHandler.movements()
+
+    val output = runAndGetSystemOutput {
+      robotHandler.movements()
+    }
 
     val steps = robotHandler.loggedSteps
-    val incorrectOutput = "Incorrect output after:\n" + robotHandler.loggedMovements
-    if (byteArrayOutputStream.toString().isEmpty()) {
-      throw AssertionError(incorrectOutput + "\nThe message " +
+    val message = "Incorrect output after:\n" + robotHandler.loggedMovements
+    if (output.isEmpty()) {
+      throw AssertionError(message + "\nThe message " +
           "\"${getErrorMessageText(steps)}\" should be printed to the console")
     }
-    assertEqualsForOutput(incorrectOutput,
+    checkSystemOutput(message,
         getErrorMessageText(steps),
-        byteArrayOutputStream)
+        output)
   }
 
 

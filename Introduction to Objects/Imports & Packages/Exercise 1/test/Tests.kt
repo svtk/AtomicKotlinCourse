@@ -5,9 +5,7 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import util.assertEqualsForOutput
-import java.io.ByteArrayOutputStream
-import java.io.PrintStream
+import util.runAndCheckSystemOutput
 import kotlin.math.sqrt
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -24,7 +22,7 @@ class TestEquilateralTriangle {
 
     val areaMethod = triangleClass.getMethod("area")
     val areaResult = areaMethod.invoke(et) as? Double
-        ?: throw AssertionError("area member function should return Double as a result")
+      ?: throw AssertionError("area member function should return Double as a result")
     Assert.assertEquals("Wrong result for side $side", expected, areaResult, 0.00000000000001)
   }
 
@@ -42,11 +40,10 @@ class TestEquilateralTriangle {
 
   @Test(timeout = TIMEOUT)
   fun testMain() {
-    val byteArrayOutputStream = ByteArrayOutputStream()
-    System.setOut(PrintStream(byteArrayOutputStream))
-    main()
-    assertEqualsForOutput(
-        "'main' function in 'Main.kt' should print 'et.area()' value",
-        "0.4330127018922193", byteArrayOutputStream)
+    runAndCheckSystemOutput(
+      "'main' function in 'Main.kt' should print 'et.area()' value",
+      "0.4330127018922193") {
+      main()
+    }
   }
 }

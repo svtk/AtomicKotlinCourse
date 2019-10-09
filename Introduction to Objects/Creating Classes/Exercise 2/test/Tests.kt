@@ -4,8 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.loadClass
 import util.loadMethod
-import java.io.ByteArrayOutputStream
-import java.io.PrintStream
+import util.runAndGetSystemOutput
 import kotlin.reflect.full.createInstance
 
 class TestGiraffe {
@@ -16,15 +15,13 @@ class TestGiraffe {
 
     val displayIDMethod = loadMethod(giraffeClass, "displayID")
 
-    val byteArrayOutputStream = ByteArrayOutputStream()
-    System.setOut(PrintStream(byteArrayOutputStream))
+    val output = runAndGetSystemOutput {
+      displayIDMethod.call(giraffeInstance)
+    }
 
-    displayIDMethod.call(giraffeInstance)
-
-    val output = byteArrayOutputStream.toString().trim()
     val message = "The 'displayID' function should display the address of the object, " +
         "something like '30c7da1e'\n" +
         "was: $output"
-    Assert.assertTrue(message, output.toIntOrNull(16) != null)
+    Assert.assertTrue(message, output.trim().toIntOrNull(16) != null)
   }
 }

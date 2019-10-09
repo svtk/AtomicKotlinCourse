@@ -4,18 +4,16 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import util.assertEqualsForOutput
-import java.io.ByteArrayOutputStream
-import java.io.PrintStream
+import util.runAndCheckSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestTriangle {
   private fun checkOutput(n: Int, expected: String) {
-    val byteArrayOutputStream = ByteArrayOutputStream()
-    System.setOut(PrintStream(byteArrayOutputStream))
-    printTriangle(n)
-    assertEqualsForOutput("Incorrect output for n = $n:",
-        expected, byteArrayOutputStream)
+    runAndCheckSystemOutput(
+      "Incorrect output for n = $n:",
+      expected) {
+      printTriangle(n)
+    }
   }
 
   @Test(timeout = TIMEOUT)
@@ -23,7 +21,7 @@ class TestTriangle {
 
   @Test(timeout = TIMEOUT)
   fun testPyramid2() = checkOutput(2,
-      """
+    """
                 | #
                 |###
                 |
@@ -31,7 +29,7 @@ class TestTriangle {
 
   @Test(timeout = TIMEOUT)
   fun testPyramid3() = checkOutput(3,
-      """
+    """
                 |  #
                 | ###
                 |#####
@@ -40,7 +38,7 @@ class TestTriangle {
 
   @Test(timeout = TIMEOUT)
   fun testPyramid4() = checkOutput(4,
-      """
+    """
                 |   #
                 |  ###
                 | #####
@@ -50,7 +48,7 @@ class TestTriangle {
 
   @Test(timeout = TIMEOUT)
   fun testPyramid6() = checkOutput(6,
-      """
+    """
                 |     #
                 |    ###
                 |   #####
@@ -59,5 +57,4 @@ class TestTriangle {
                 |###########
                 |
             """.trimMargin())
-
 }

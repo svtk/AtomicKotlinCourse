@@ -1,8 +1,7 @@
 import org.junit.Assert
 import org.junit.Test
 import stringTemplates3.show
-import java.io.ByteArrayOutputStream
-import java.io.PrintStream
+import util.runAndCheckSystemOutput
 import kotlin.reflect.KFunction
 import kotlin.reflect.KParameter
 
@@ -22,9 +21,6 @@ class TestShowFunction {
   }
 
   private fun testArguments(showMethod: KFunction<*>, i: Int, s: String, c: Char, d: Double) {
-    val byteArrayOutputStream = ByteArrayOutputStream()
-    System.setOut(PrintStream(byteArrayOutputStream))
-
     val message = "Incorrect output for 'show' function call"
     val expectedOutput = """
         i: $i
@@ -32,10 +28,9 @@ class TestShowFunction {
         c: '$c'
         d: $d
       """.trimIndent()
-    showMethod.call(i, s, c, d)
-
-    val output = byteArrayOutputStream.toString().trim()
-    Assert.assertEquals(message, expectedOutput, output)
+    runAndCheckSystemOutput(message, expectedOutput) {
+      showMethod.call(i, s, c, d)
+    }
   }
 
   private fun checkParameter(i: KParameter, expectedName: String, expectedType: String) {

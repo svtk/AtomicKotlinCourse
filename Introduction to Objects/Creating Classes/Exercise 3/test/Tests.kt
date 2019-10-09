@@ -4,11 +4,9 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import util.assertEqualsForOutput
+import util.runAndCheckSystemOutput
 import util.loadClass
 import util.loadMethod
-import java.io.ByteArrayOutputStream
-import java.io.PrintStream
 import kotlin.reflect.full.createInstance
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -23,15 +21,12 @@ class TestSimpleStringPalindrome {
   private fun testDirection(direction: String, steps: Int) {
     val robotClass = loadClass("creatingClasses3", "Robot")
     val robot = robotClass.createInstance()
-
     val goMethod = loadMethod(robotClass, "go$direction")
-    val byteArrayOutputStream = ByteArrayOutputStream()
-    System.setOut(PrintStream(byteArrayOutputStream))
 
-    goMethod.call(robot, steps)
-    assertEqualsForOutput("Incorrect output for 'go$direction' method",
-        "$direction $steps steps",
-        byteArrayOutputStream)
+    runAndCheckSystemOutput("Incorrect output for 'go$direction' method",
+      "$direction $steps steps") {
+      goMethod.call(robot, steps)
+    }
   }
 
   @Test(timeout = TIMEOUT)
