@@ -1,6 +1,8 @@
 package stringTemplates4
 
+// foo
+fun foo() = 1
+
 fun main() {
-  val answer = 42
-  println("The answer is $answer")
+  println(foo())
 }
