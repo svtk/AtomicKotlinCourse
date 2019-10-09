@@ -1,16 +1,13 @@
-## Mastering the IDE: Project Tool Window
+## Mastering the IDE: Tool Windows
 
-The icons at the top of the <span class="control">`Project`</span> Tool Window
-allow to perform several convenient operations.
-For example, you can locate the currently opened file in the 
-<span class="control">`Project`</span> Tool Window by clicking on the
-<span class="control">`Scroll from Source`</span> icon.
+The <span class="control">`Project`</span> window showing the course structure 
+on the left and <span class="control">`Task description`</span> window on the 
+right are called *tool windows*. You can adjust their size by clicking on the 
+boundary and moving it. You can hide the tool window from the view temporarily
+to make better use of the screen: click the "hide" button (the one with an 
+arrow)  at the top right corner of the tool window. To show it again, choose 
+its name by clicking  on the right or left side of the screen or by choosing it
+in the <span class="control">`View | Tool Windows`</span> application menu.
 
-Alternatively, press <span class="shortcut">&shortcut:SelectIn;</span> or choose
-<span class="control">`Navigate | Select in...`</span> from the menu above. 
-Then choose <span class="control">`Project View`</span> in the open menu.
-
-Press the <span class="control">`Collapse All`</span> button on the 
-<span class="control">`Project`</span> Tool Window to hide all the
-project content, then open the current file by trying all the options listed
-above.
+Hide the <span class="control">`Task description`</span> tool window and 
+then open it again.

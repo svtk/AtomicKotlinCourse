@@ -1,13 +1,22 @@
-## Mastering the IDE: Tool Windows
+## `var` & `val` (#2)
 
-The <span class="control">`Project`</span> window showing the course structure 
-on the left and <span class="control">`Task description`</span> window on the 
-right are called *tool windows*. You can adjust their size by clicking on the 
-boundary and moving it. You can hide the tool window from the view temporarily
-to make better use of the screen: click the "hide" button (the one with an 
-arrow)  at the top right corner of the tool window. To show it again, choose 
-its name by clicking  on the right or left side of the screen or by choosing it
-in the <span class="control">`View | Tool Windows`</span> application menu.
+Declare two `var`s: `x` and `y`. Swap their contents (you can first try saying
+`x = y`, `y = x` and then fix the erroneous solution):
 
-Hide the <span class="control">`Task description`</span> tool window and 
-then open it again.
+```kotlin
+var x = 1
+var y = 2
+// swap
+println(x) // 2
+println(y) // 1
+```
+
+Your code should remain unchanged for different initializers, like `var x =
+"first"`, `var y = "second"`. Thus saying just `x = 2`, `y = 1` is not the
+expected solution.
+
+<div class="hint">
+
+You may need to introduce a third auxiliary `val`.
+
+</div>

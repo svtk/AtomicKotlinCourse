@@ -1,5 +1,11 @@
-package varandval3
+package varandval2
 
 fun main() {
-  println("Hello, Kotlin!")
+  var x = 1
+  var y = 2
+  val tmp = x
+  x = y
+  y = tmp
+  println(x)
+  println(y)
 }
