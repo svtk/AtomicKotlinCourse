@@ -1,0 +1,12 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 36
+    length: 40
+    placeholder_text: |-
+      println("Hello,")
+        println("Kotlin!")
+- name: test/output.txt
+  visible: false
