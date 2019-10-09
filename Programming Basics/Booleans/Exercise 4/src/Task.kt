@@ -1,4 +1,4 @@
-package booleans3
+package booleans4
 
 fun main() {
   println(foo())

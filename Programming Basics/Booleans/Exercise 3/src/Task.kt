@@ -1,4 +1,4 @@
-package booleans2
+package booleans3
 
 fun and(b1: Boolean, b2: Boolean): Boolean =
     if (b1) b2 else false
