@@ -1,17 +1,15 @@
 package repetitionwithwhile2
 
-fun sumOfEven(n: Int): Int {
-  var result = 0
+fun sum(number: Int): Int {
+  var sum = 0
   var i = 0
-  while (i <= n) {
-    if (i % 2 == 0) {
-      result += i
-    }
+  while (i <= number) {
+    sum += i
     i++
   }
-  return result
+  return sum
 }
 
 fun main() {
-  println(sumOfEven(10))  // 30
+  println(sum(10))  // 55
 }

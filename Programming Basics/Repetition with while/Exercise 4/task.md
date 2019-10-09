@@ -1,14 +1,13 @@
-## Mastering the IDE: Extract Variable
+## Mastering the IDE: Moving the Caret
 
-IntelliJ IDEA can extract a `val` or `var` automatically.
-Select the expression `getFooResult()` inside a string template 
-and then do one of the following:
-* invoke <span class="control">`Find action`</span> (by pressing <span class="shortcut">&shortcut:GotoAction;</span>), 
-then type `Extract variable` to find the corresponding action; 
-* press <span class="shortcut">&shortcut:IntroduceVariable;</span>;
-* or choose <span class="control">`Refactor | Extract | Variable...`</span> 
-in the application menu.
+You can move the caret over the words. The same works for selecting text:
 
-Type the name of the new variable. IntelliJ IDEA tries to suggest a name
-based on the expression. Press 
-<span class="shortcut">&shortcut:EditorEnter;</span> to finish.
+| Operation                            | Shortcut                                                                 | Description                                       |
+|--------------------------------------|--------------------------------------------------------------------------|---------------------------------------------------|
+| Move to Next Word                    | <span class="shortcut">&shortcut:EditorNextWord;</span>                  | Move the caret to the next word.                  |
+| Move to Previous Word                | <span class="shortcut">&shortcut:EditorPreviousWord;</span>              | Move the caret to the previous word.              |
+| Move to Next Word with Selection     | <span class="shortcut">&shortcut:EditorNextWordWithSelection;</span>     | Move the caret to the next word, selecting it.    |
+| Move to Previous Word with Selection | <span class="shortcut">&shortcut:EditorPreviousWordWithSelection;</span> | Move the caret to the previous word, selecting it.|
+
+Select `getFooResult()` by moving the caret over words and extract it into  a
+`val foo` by hand. Next we'll discuss how to extract a variable automatically.

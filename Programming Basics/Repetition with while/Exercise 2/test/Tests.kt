@@ -7,34 +7,24 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSumOfEven {
-  @Test(timeout = TIMEOUT)
-  fun test1() {
-    Assert.assertEquals("sumOfEven(1) should be 0",
-        0, sumOfEven(1))
+class TestRepetitionWithWhile {
+  private fun checkSum(i: Int) {
+    val expectedSum = (1..i).sum()
+    Assert.assertEquals("sum($i) should be $expectedSum", expectedSum, sum(i))
   }
 
   @Test(timeout = TIMEOUT)
-  fun test2() {
-    Assert.assertEquals("sumOfEven(2) should be 2",
-        2, sumOfEven(2))
-  }
+  fun testSum1() = checkSum(1)
 
   @Test(timeout = TIMEOUT)
-  fun test3() {
-    Assert.assertEquals("sumOfEven(4) should be 6",
-        6, sumOfEven(4))
-  }
+  fun testSum2() = checkSum(2)
 
   @Test(timeout = TIMEOUT)
-  fun test4() {
-    Assert.assertEquals("sumOfEven(20) should be 110",
-        110, sumOfEven(20))
-  }
+  fun testSum3() = checkSum(5)
 
   @Test(timeout = TIMEOUT)
-  fun test5() {
-    Assert.assertEquals("sumOfEven(21) should be 110",
-        110, sumOfEven(21))
-  }
+  fun testSum4() = checkSum(10)
+
+  @Test(timeout = TIMEOUT)
+  fun testSum5() = checkSum(100)
 }

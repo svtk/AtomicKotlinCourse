@@ -1,7 +1,17 @@
 package repetitionwithwhile3
 
-fun getFooResult(): Int = 736
+fun sumOfEven(n: Int): Int {
+  var result = 0
+  var i = 0
+  while (i <= n) {
+    if (i % 2 == 0) {
+      result += i
+    }
+    i++
+  }
+  return result
+}
 
 fun main() {
-  println("Foo result is: ${getFooResult()}")
+  println(sumOfEven(10))  // 30
 }
