@@ -14,8 +14,8 @@ class TestTakingHamster {
   fun test1SampleSuccess() {
     val cage = Cage(2)
     cage.put(Hamster("Alice"))
-    Assert.assertEquals("'takeHamsterByName' should return a hamster with a given name",
-        "Hamster('Alice')", cage.takeHamsterByName("Alice").toString())
+    Assert.assertEquals("'get' should return a hamster with a given name",
+        "Hamster('Alice')", cage.get("Alice").toString())
   }
 
   @Test(timeout = TIMEOUT)
@@ -23,7 +23,7 @@ class TestTakingHamster {
     val cage = Cage(2)
     cage.put(Hamster("Alice"))
     try {
-      cage.takeHamsterByName("Bob")
+      cage.get("Bob")
     } catch (e: NoSuchElementException) {
       Assert.assertEquals("Expected 'NoSuchElementException' when the cage doesn't contain a hamster with a given name:",
           e.javaClass.simpleName + (e.message?.let { ": $it" } ?: ""),
@@ -35,11 +35,11 @@ class TestTakingHamster {
   fun test3HamsterIsRemoved() {
     val cage = Cage(2)
     cage.put(Hamster("Alice"))
-    cage.removeHamster("Alice")
+    cage.remove("Alice")
     try {
-      cage.takeHamsterByName("Alice")
+      cage.get("Alice")
     } catch (e: NoSuchElementException) {
-      Assert.assertEquals("'removeHamster' should remove the hamster from the cage",
+      Assert.assertEquals("'remove' should remove the hamster from the cage",
           e.javaClass.simpleName + (e.message?.let { ": $it" } ?: ""),
           "NoSuchElementException: No hamster called Alice")
     }
