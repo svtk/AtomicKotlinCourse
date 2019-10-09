@@ -1,4 +1,4 @@
-package dataTypes
+package dataTypes1
 
 fun main() {
   var answer = 42
