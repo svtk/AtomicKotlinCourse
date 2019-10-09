@@ -1,26 +1,16 @@
-## Mastering the IDE: Basic Editing
+## Mastering the IDE: Run
 
-In IntelliJ IDEA you can use typical OS shortcuts to perform basic editing,
-like "copy", "paste" or "undo" operations:
+IntelliJ IDEA is a powerful tool which allows you to carry out common actions
+in an efficient way. Running the `main()` function is an example of such an
+action, and IntelliJ IDEA allows you to do that by clicking a shortcut. A
+shortcut is a special key combination that causes a specific command to be
+executed. Throughout this course, you'll learn common shortcuts.
 
-| Operation | Shortcut                                        | Description                                                   |
-|-----------|-------------------------------------------------|---------------------------------------------------------------|
-| Cut	    | <span class="shortcut">&shortcut:$Cut;</span>   | Cut a current line or a selected code block to the Clipboard. |
-| Copy	    | <span class="shortcut">&shortcut:$Copy;</span>  | Copy a current line or a selected code block to the Clipboard.|
-| Paste	    | <span class="shortcut">&shortcut:$Paste;</span> | Paste from the Clipboard to the caret location.               |
-| Undo	    | <span class="shortcut">&shortcut:$Undo;</span>  | Undo last operation.                                          |
-| Redo	    | <span class="shortcut">&shortcut:$Redo;</span>  | Redo last undone operation.                                   |
+IntelliJ Idea is a *keyboard-centric IDE*, which means you can perform all
+actions using only the keyboard. We recommend learning to do everything
+with keyboard shortcuts.
 
-To select text, press Shift (⇧) while moving the caret around the text. 
-Then you can move the caret up, down, left or right with selection, or move it to the end or
-to the beginning of a line:
-
-| Operation                         | Shortcut                                                              | Description                                                   |
-|-----------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------|
-| Up with Selection                 | <span class="shortcut">&shortcut:EditorUpWithSelection;</span>        | Move the caret one line up selecting the text.                |
-| Right with Selection              | <span class="shortcut">&shortcut:EditorRightWithSelection;</span>     | Move the caret one character to the right selecting the text. |
-| Move to Line End with Selection   | <span class="shortcut">&shortcut:EditorTextEndWithSelection;</span>   | Move the caret to the end of line, selecting the text.        |
-| Move to Line Start with Selection | <span class="shortcut">&shortcut:EditorTextStartWithSelection;</span> | Move the caret to the beginning of line, selecting the text.  |
-
-Duplicate the line `println("Hello, Kotlin!")` in the example by selecting it 
-and then copy-pasting it.
+Click on the icon next to the `main()` function to see what shortcut is
+used by your operating system to run `main()`. The key combination appears 
+right after `run 'TaskKt'`. Run the `main()` function by first choosing 
+`run 'TaskKt'`, then pressing the shortcut.
