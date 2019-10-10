@@ -1,8 +1,6 @@
-type: ide
+type: edu
 files:
 - name: src/Task.kt
   visible: true
 - name: test/Tests.kt
   visible: false
-feedback_link: |
-  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Property+Accessors+%2F+Exercise3

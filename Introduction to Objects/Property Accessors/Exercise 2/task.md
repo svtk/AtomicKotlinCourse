@@ -1,13 +1,7 @@
-## Property Accessors (#2)
+This is the markdown document.
 
-Implement a strange property `accesses` which counts how many times this
-property was accessed.  Note that it returns a new value each time.
+Write your task text here
 
 <div class="hint">
-
-Introduce an auxiliary `private` property to store the value and
-increment this value in a getter of the `accesses` property on each access. The
-Kotlin style guide recommends naming such auxiliary property starting with an
-underscore: `_accesses`.
-
+  Hints can be added anywhere in task text: type "hint" and press Tab.
 </div>
