@@ -1,9 +1,7 @@
-## Exceptions (#1)
+This is the markdown document.
 
-Implement the function `repeatChar()` that returns a `String` consisting of a
-character repeated a number of times specified by a function argument. The
-function should throw an exception if the caller asks to repeat a character a
-negative number of times.
+Write your task text here
 
-Throw an exception with the message `"Count 'n' must be non-negative, but was xxx."`
-where xxx should be replaced with the actual number.
+<div class="hint">
+  Hints can be added anywhere in task text: type "hint" and press Tab.
+</div>
