@@ -1,4 +1,4 @@
-## Imports & Packages (#1)
+## Imports & Packages (#3)
 
 Create the class `EquilateralTriangle` in a `package pythagorean`.
 `EquilateralTriangle` should take `side` of type `Double`

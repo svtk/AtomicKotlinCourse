@@ -6,7 +6,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 import util.runAndCheckSystemOutput
 import util.loadClass
-import util.loadMethod
+import util.loadMemberFunction
 import kotlin.reflect.full.createInstance
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -21,7 +21,7 @@ class TestSimpleStringPalindrome {
   private fun testDirection(direction: String, steps: Int) {
     val robotClass = loadClass("creatingClasses3", "Robot")
     val robot = robotClass.createInstance()
-    val goMethod = loadMethod(robotClass, "go$direction")
+    val goMethod = loadMemberFunction(robotClass, "go$direction")
 
     runAndCheckSystemOutput("Incorrect output for 'go$direction' method",
       "$direction $steps steps") {

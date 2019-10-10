@@ -1,0 +1,8 @@
+type: edu
+files:
+- name: test/Tests.kt
+  visible: false
+- name: src/bbb.kt
+  visible: true
+- name: src/aaa.kt
+  visible: true

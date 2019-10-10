@@ -1,6 +1,6 @@
 type: edu
 files:
-- name: test/output.txt
+- name: test/Tests.kt
   visible: false
 - name: src/ccc.kt
   visible: true

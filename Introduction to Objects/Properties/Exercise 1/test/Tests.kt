@@ -3,8 +3,8 @@ package properties1
 import org.junit.Assert
 import org.junit.Test
 import util.loadClass
-import util.loadMethod
-import util.loadProperty
+import util.loadMemberFunction
+import util.loadMemberProperty
 import kotlin.reflect.KClass
 import kotlin.reflect.full.createInstance
 
@@ -19,7 +19,7 @@ class TestProperties {
     testPropertyValue("c", 0, xClass, instance)
 
     val addMethodName = "add"
-    val addMethod = loadMethod(xClass, addMethodName)
+    val addMethod = loadMemberFunction(xClass, addMethodName)
     val result = addMethod.call(instance)
     val sumValue = 45
     testPropertyValue("c", sumValue, xClass, instance)
@@ -29,7 +29,7 @@ class TestProperties {
   }
 
   private fun testPropertyValue(propertyName: String, value: Any, someClass: KClass<*>, someInstance: Any?) {
-    val property = loadProperty(someClass, propertyName)
+    val property = loadMemberProperty(someClass, propertyName)
 
     val result = property.call(someInstance)
 

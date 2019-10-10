@@ -1,27 +1,29 @@
-package importsandPackages1
+package importsandPackages3
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
+import util.loadClass
+import util.loadMemberFunction
 import util.runAndCheckSystemOutput
 import kotlin.math.sqrt
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestEquilateralTriangle {
   private fun checkArea(side: Double) {
-    val triangleClass = ClassLoader.getSystemClassLoader().loadClass("pythagorean.EquilateralTriangle")
+    val triangleClass = loadClass("pythagorean", "EquilateralTriangle")
     val constructors = triangleClass.constructors
-    if (constructors.isEmpty()) {
-      throw AssertionError("The class EquilateralTriangle should have a constructor")
+    if (constructors.size != 1) {
+      throw AssertionError("The class EquilateralTriangle should have one constructor")
     }
-    val constructor = constructors[0]
-    val et = constructor.newInstance(side)
+    val constructor = constructors.first()
+    val et = constructor.call(side)
     val expected = sqrt(3.0) / 4 * side * side
 
-    val areaMethod = triangleClass.getMethod("area")
-    val areaResult = areaMethod.invoke(et) as? Double
+    val areaMethod = loadMemberFunction(triangleClass, "area")
+    val areaResult = areaMethod.call(et) as? Double
       ?: throw AssertionError("area member function should return Double as a result")
     Assert.assertEquals("Wrong result for side $side", expected, areaResult, 0.00000000000001)
   }

@@ -3,7 +3,7 @@ package creatingClasses2
 import org.junit.Assert
 import org.junit.Test
 import util.loadClass
-import util.loadMethod
+import util.loadMemberFunction
 import util.runAndGetSystemOutput
 import kotlin.reflect.full.createInstance
 
@@ -13,7 +13,7 @@ class TestGiraffe {
     val giraffeClass = loadClass("creatingClasses2", "Giraffe")
     val giraffeInstance = giraffeClass.createInstance()
 
-    val displayIDMethod = loadMethod(giraffeClass, "displayID")
+    val displayIDMethod = loadMemberFunction(giraffeClass, "displayID")
 
     val output = runAndGetSystemOutput {
       displayIDMethod.call(giraffeInstance)
