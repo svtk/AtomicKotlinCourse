@@ -1,7 +1,9 @@
-This is the markdown document.
+## Summary 2 (#1)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create three packages in three different files, but in the same directory.
+Define a top-level function and a class in each file. Put `main()` in a fourth
+file. Import the first package using the package name only (without additional
+qualification), then access its function and class in `main()`. Import the
+second package using a `*`, then access its function and class in `main()`.
+Import the third package using fully-qualified names, then access its function
+and class in `main()`.

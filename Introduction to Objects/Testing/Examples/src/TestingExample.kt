@@ -5,14 +5,14 @@ fun main() {
   val v1 = 11
   val v2 = "Ontology"
 
-  // Test expressions using 'eq' ("equals"):
+  // 'eq' means "equals":
   v1 eq 11
   v2 eq "Ontology"
 
   // 'neq' means "not equal"
   v2 neq "Epistimology"
 
-  // Error: Epistimology != Ontology
+  // [Error] Epistimology != Ontology
   // v2 eq "Epistimology"
 }
 /* Output:

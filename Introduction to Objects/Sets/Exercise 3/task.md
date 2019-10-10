@@ -1,6 +1,6 @@
-## Sets (#1)
+## Sets (#3)
 
-We declared several categories of products that can be bought in a grocery
-store. Implement functions calculating what percentage of your list is in each
-category, including an "other" category for products that don't match any
-category.
+In the solution we've created three `Set`s (`meats`, `fruits`, `vegetables`)
+representing different categories of products in a grocery store. Write
+functions to calculate the percentage of your list in each category, including
+an "other" for products that don't match any category.

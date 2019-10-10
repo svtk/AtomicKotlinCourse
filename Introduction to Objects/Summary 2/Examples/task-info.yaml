@@ -26,8 +26,6 @@ files:
   visible: true
 - name: src/Quadratic.kt
   visible: true
-- name: src/MutableVsReadonlyList.kt
-  visible: true
 - name: src/MultipleListReferences.kt
   visible: true
 - name: src/ListOfStrings.kt
@@ -44,5 +42,7 @@ files:
   visible: true
 - name: src/PropertyReadWrite.kt
   visible: true
-- name: src/GettersAndSetter.kt
+- name: src/ReadonlyVsMutableList.kt
+  visible: true
+- name: src/GetterAndSetter.kt
   visible: true

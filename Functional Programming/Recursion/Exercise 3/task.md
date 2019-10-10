@@ -1,4 +1,4 @@
-## Recursion (#2)
+## Recursion (#3)
 
-As an exercise, implement `fibonacci()` as an iterative function, 
-without any recursion. The tail recursive version is given for comparison.
+Implement `fibonacci()` as an iterative function, without recursion. The
+tail recursive version is given for comparison.

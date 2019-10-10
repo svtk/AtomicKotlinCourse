@@ -1,13 +1,12 @@
-## Summary 1 (#12)
+## Summary 1 (#4)
 
-Display a triangle. For n = 6 the function `showTriangle()` should produce the
-following:
+Write a function `first()` that has an *expression body* starting with `if`.
+`first()` takes three `Boolean` arguments and "ands" them together to produce
+the result. Write `second()` to do the same but "or" all three arguments. In
+`main()`, display the result of combining `first()` and `second()` using both
+"and" and "or":
 
-```
-     #
-    ###
-   #####
-  #######
- #########
-###########
-```
+| `first()` Arguments | `second()` Arguments |
+|---------------------|----------------------|
+| true, true, true    | false, false, false  |
+| true, false, true   | false, true, false   |

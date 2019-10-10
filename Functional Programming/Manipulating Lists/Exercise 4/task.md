@@ -14,7 +14,7 @@ Bob - Charlie
 is a friend of Alice's friend Bob and isn't yet a friend of Alice.
 
 No friend suggestions for Alice in the following case, Bob and Charlie are
-already her friends: 
+already her friends:
 
 ```text
 Alice - Bob

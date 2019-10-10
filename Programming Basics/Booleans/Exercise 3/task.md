@@ -1,5 +1,5 @@
-## Booleans (#2)
+## Booleans (#3)
 
-Using only `if` expressions, write functions to implement `and` and `or`,
-taking two Boolean arguments and returning the same results as the built-in
-`&&` and `||` operators.
+Using only `if` expressions, write functions `and()` and `or()`. Each function
+takes two `Boolean` arguments and returns the same results as the built-in `&&`
+and `||` operators.

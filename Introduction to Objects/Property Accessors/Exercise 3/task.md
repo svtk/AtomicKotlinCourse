@@ -1,7 +1,6 @@
-This is the markdown document.
+## Property Accessors (#3)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Start with `Default.kt` and change the class name to `GS`. Make `i` `private`,
+and add a member function `change(n: Int)` that changes `i` to the value of
+`n`. Add a `toString()` that produces the value of `i`, and modify `main()`
+appropriately.

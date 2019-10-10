@@ -1,7 +1,6 @@
-This is the markdown document.
+## Exceptions (#2)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Write a function called `abort()` that takes a `String` argument, then throws a
+plain `Exception` object, passing the `abort()` argument to the `Exception`
+constructor. In `main()`, call `abort()` with an argument of `"Stop!"` and use
+`capture` to verify the result.

@@ -1,7 +1,5 @@
 type: theory
 files:
-- name: src/Lists.kt
-  visible: true
 - name: src/UsingLists.kt
   visible: true
 - name: src/Drinks.kt
@@ -11,4 +9,6 @@ files:
 - name: src/MutableMaze.kt
   visible: true
 - name: src/GameActions.kt
+  visible: true
+- name: src/ListInterfaces.kt
   visible: true

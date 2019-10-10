@@ -523,27 +523,27 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testImportClass() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Imports & Packages/Examples/src/ImportClass.kt", ImportClassKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Examples/src/ImportClass.kt", ImportClassKt::main);
     }
 
     @Test
     public void testImportNameChange() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Imports & Packages/Examples/src/ImportNameChange.kt", ImportNameChangeKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Examples/src/ImportNameChange.kt", ImportNameChangeKt::main);
     }
 
     @Test
     public void testImportEverything() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Imports & Packages/Examples/src/ImportEverything.kt", ImportEverythingKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Examples/src/ImportEverything.kt", ImportEverythingKt::main);
     }
 
     @Test
     public void testImportPythagorean() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Imports & Packages/Examples/src/ImportPythagorean.kt", ImportPythagoreanKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Examples/src/ImportPythagorean.kt", ImportPythagoreanKt::main);
     }
 
     @Test
     public void testFullyQualify() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Imports & Packages/Examples/src/FullyQualify.kt", FullyQualifyKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Examples/src/FullyQualify.kt", FullyQualifyKt::main);
     }
 
     @Test
@@ -638,42 +638,42 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testVariableArgList() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/VariableArgList.kt", VariableArgListKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Examples/src/VariableArgList.kt", VariableArgListKt::main);
     }
 
     @Test
     public void testListOf() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/ListOf.kt", ListOfKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Examples/src/ListOf.kt", ListOfKt::main);
     }
 
     @Test
     public void testVarargLikeList() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/VarargLikeList.kt", VarargLikeListKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Examples/src/VarargLikeList.kt", VarargLikeListKt::main);
     }
 
     @Test
     public void testSpreadOperator() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/SpreadOperator.kt", SpreadOperatorKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Examples/src/SpreadOperator.kt", SpreadOperatorKt::main);
     }
 
     @Test
     public void testMainArgs() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/MainArgs.kt", MainArgsKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Examples/src/MainArgs.kt", MainArgsKt::main);
     }
 
     @Test
     public void testVarargSum() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/VarargSum.kt", VarargSumKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Examples/src/VarargSum.kt", VarargSumKt::main);
     }
 
     @Test
     public void testTwoFunctionsWithVarargs() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/TwoFunctionsWithVarargs.kt", TwoFunctionsWithVarargsKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Examples/src/TwoFunctionsWithVarargs.kt", TwoFunctionsWithVarargsKt::main);
     }
 
     @Test
     public void testMainArgConversion() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Examples/src/MainArgConversion.kt", MainArgConversionKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Examples/src/MainArgConversion.kt", MainArgConversionKt::main);
     }
 
     @Test
@@ -752,13 +752,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testListOfStrings() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ListOfStrings.kt", ListOfStringsKt::main);
+    public void testGetterAndSetter() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/GetterAndSetter.kt", summary2.GetterAndSetterKt::main);
     }
 
     @Test
-    public void testMutableVsReadonlyList() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/MutableVsReadonlyList.kt", MutableVsReadonlyListKt::main);
+    public void testReadonlyVsMutableList() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ReadonlyVsMutableList.kt", ReadonlyVsMutableListKt::main);
+    }
+
+    @Test
+    public void testListOfStrings() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/ListOfStrings.kt", ListOfStringsKt::main);
     }
 
     @Test
@@ -794,11 +799,6 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testQuadratic() {
         testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/Quadratic.kt", QuadraticKt::main);
-    }
-
-    @Test
-    public void testGettersAndSetter() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Examples/src/GettersAndSetter.kt", summary2.GettersAndSetterKt::main);
     }
 
     @Test
@@ -987,8 +987,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testAnalyzingInput() {
-        testExample("../AtomicKotlinCourse/Usability/when Expressions/Examples/src/AnalyzingInput.kt", AnalyzingInputKt::main);
+    public void testAnalyzeInput() {
+        testExample("../AtomicKotlinCourse/Usability/when Expressions/Examples/src/AnalyzeInput.kt", AnalyzeInputKt::main);
     }
 
     @Test
@@ -1667,11 +1667,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testGameElements() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/GameElements.kt", abstractclasses.GameElementsKt::main);
-    }
-
-    @Test
     public void testImplementations() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/Implementations.kt", abstractclasses.ImplementationsKt::main);
     }
@@ -1684,6 +1679,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testStateOfAClass() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/StateOfAClass.kt", abstractstate.StateOfAClassKt::main);
+    }
+
+    @Test
+    public void testGameElementsHierarchy() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Examples/src/GameElementsHierarchy.kt", abstractclasses.GameElementsHierarchyKt::main);
     }
 
     @Test
@@ -1952,6 +1952,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testQuadraticRequire() {
+        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/QuadraticRequire.kt", checkinstructions.QuadraticRequireKt::main);
+    }
+
+    @Test
     public void testLocalFile() {
         //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/LocalFile.kt", checkinstructions.LocalFileKt::main);
     }
@@ -2048,42 +2053,42 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testResultOfApply() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Examples/src/ResultOfApply.kt", libraryhelpers.ResultOfApplyKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Examples/src/ResultOfApply.kt", scopefunctions.ResultOfApplyKt::main);
     }
 
     @Test
     public void testApplyVsAlso() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Examples/src/ApplyVsAlso.kt", libraryhelpers.ApplyVsAlsoKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Examples/src/ApplyVsAlso.kt", scopefunctions.ApplyVsAlsoKt::main);
     }
 
     @Test
     public void testLet() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Examples/src/Let.kt", libraryhelpers.LetKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Examples/src/Let.kt", scopefunctions.LetKt::main);
     }
 
     @Test
     public void testAlso() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Examples/src/Also.kt", libraryhelpers.AlsoKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Examples/src/Also.kt", scopefunctions.AlsoKt::main);
     }
 
     @Test
     public void testCheckingArgument() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Examples/src/CheckingArgument.kt", libraryhelpers.CheckingArgumentKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Examples/src/CheckingArgument.kt", scopefunctions.CheckingArgumentKt::main);
     }
 
     @Test
     public void testNullableReceiver() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Examples/src/NullableReceiver.kt", libraryhelpers.NullableReceiverKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Examples/src/NullableReceiver.kt", scopefunctions.NullableReceiverKt::main);
     }
 
     @Test
     public void testResultOfWith() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Examples/src/ResultOfWith.kt", libraryhelpers.ResultOfWithKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Examples/src/ResultOfWith.kt", scopefunctions.ResultOfWithKt::main);
     }
 
     @Test
     public void testApplyIfNotNull() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Examples/src/ApplyIfNotNull.kt", libraryhelpers.ApplyIfNotNullKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Examples/src/ApplyIfNotNull.kt", scopefunctions.ApplyIfNotNullKt::main);
     }
 
     @Test
@@ -2322,143 +2327,68 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testTeaPartyTexting() {
-        testExample("../AtomicKotlinCourse/Concurrency/async and await/Examples/src/TeaPartyTexting.kt", asyncandawait.TeaPartyTextingKt::main);
-    }
-
-    @Test
-    public void testLazySequence() {
-        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/LazySequence.kt", LazySequenceKt::main);
-    }
-
-    @Test
-    public void testCompareDelayingTask() {
-        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/CompareDelayingTask.kt", CompareDelayingTaskKt::main);
-    }
-
-    @Test
-    public void testHelloCoroutines() {
-        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/HelloCoroutines.kt", HelloCoroutinesKt::main);
-    }
-
-    @Test
-    public void testCompareSlowFib() {
-        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/CompareSlowFib.kt", CompareSlowFibKt::main);
-    }
-
-    @Test
-    public void testLaunchMany() {
-        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/LaunchMany.kt", LaunchManyKt::main);
-    }
-
-    @Test
-    public void testLaunchManyTimed() {
-        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/LaunchManyTimed.kt", LaunchManyTimedKt::main);
-    }
-
-    @Test
-    public void testFibonacciSequence() {
-        //testExample("../AtomicKotlinCourse/Concurrency/Coroutines/Examples/src/FibonacciSequence.kt", FibonacciSequenceKt::main);
-    }
-
-    @Test
-    public void testContravariance() {
-        testExample("../AtomicKotlinCourse/Advanced Topics/Variance & Star Projections/Examples/src/Contravariance.kt", variance.ContravarianceKt::main);
-    }
-
-    @Test
-    public void testCovariantReturnTypes() {
-        testExample("../AtomicKotlinCourse/Advanced Topics/Variance & Star Projections/Examples/src/CovariantReturnTypes.kt", variance.CovariantReturnTypesKt::main);
-    }
-
-    @Test
-    public void testSameReturnTypes() {
-        testExample("../AtomicKotlinCourse/Advanced Topics/Variance & Star Projections/Examples/src/SameReturnTypes.kt", variance.SameReturnTypesKt::main);
-    }
-
-    @Test
-    public void testBird() {
-        testExample("../AtomicKotlinCourse/Advanced Topics/Variance & Star Projections/Examples/src/Bird.kt", variance.BirdKt::main);
-    }
-
-    @Test
-    public void testErasedTypeEquivalence() {
-        testExample("../AtomicKotlinCourse/Advanced Topics/Erasure & Reification/Examples/src/ErasedTypeEquivalence.kt", ErasedTypeEquivalenceKt::main);
-    }
-
-    @Test
-    public void testTypeOfT() {
-        testExample("../AtomicKotlinCourse/Advanced Topics/Erasure & Reification/Examples/src/TypeOfT.kt", generics.TypeOfTKt::main);
-    }
-
-    @Test
-    public void testInfo() {
-        testExample("../AtomicKotlinCourse/Advanced Topics/Reflection/Examples/src/Info.kt", InfoKt::main);
-    }
-
-    @Test
-    public void testSolid() {
-        testExample("../AtomicKotlinCourse/Advanced Topics/Reflection/Examples/src/Solid.kt", SolidKt::main);
-    }
-
-    @Test
-    public void testBigFibonacci() {
-        testExample("../AtomicKotlinCourse/Language Interoperability/Mixing Kotlin & Java/Examples/src/BigFibonacci.kt", adaptingjava.BigFibonacciKt::main);
-    }
-
-    @Test
-    public void testExtensionsToJavaClass() {
-        testExample("../AtomicKotlinCourse/Language Interoperability/Mixing Kotlin & Java/Examples/src/ExtensionsToJavaClass.kt", fromkotlin.ExtensionsToJavaClassKt::main);
-    }
-
-    @Test
-    public void testUseBeanClass() {
-        testExample("../AtomicKotlinCourse/Language Interoperability/Mixing Kotlin & Java/Examples/src/UseBeanClass.kt", UseBeanClassKt::main);
-    }
-
-    @Test
-    public void testRandom() {
-        testExample("../AtomicKotlinCourse/Language Interoperability/Mixing Kotlin & Java/Examples/src/Random.kt", RandomKt::main);
-    }
-
-    @Test
-    public void testKotlinChecked() {
-        //testExample("../AtomicKotlinCourse/Language Interoperability/Java Checked Exceptions & Kotlin/Examples/src/KotlinChecked.kt", KotlinCheckedKt::main);
-    }
-
-    @Test
-    public void testWithCleanup() {
-        //testExample("../AtomicKotlinCourse/Language Interoperability/Java Checked Exceptions & Kotlin/Examples/src/WithCleanup.kt", withfunction.WithCleanupKt::main);
-    }
-
-    @Test
-    public void testPlatformTypes() {
-        testExample("../AtomicKotlinCourse/Language Interoperability/Nullable Types & Java/Examples/src/PlatformTypes.kt", PlatformTypesKt::main);
-    }
-
-    @Test
-    public void testNPEOnPlatformType() {
-        testExample("../AtomicKotlinCourse/Language Interoperability/Nullable Types & Java/Examples/src/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
-    }
-
-    @Test
     public void testAnnotatedJava() {
-        testExample("../AtomicKotlinCourse/Language Interoperability/Nullability Annotations/Examples/src/AnnotatedJava.kt", nullabilityannotations.AnnotatedJavaKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/AnnotatedJava.kt", nullabilityannotations.AnnotatedJavaKt::main);
     }
 
     @Test
     public void testReadOnlyCollections() {
-        testExample("../AtomicKotlinCourse/Language Interoperability/Collections & Java/Examples/src/ReadOnlyCollections.kt", ReadOnlyCollectionsKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/ReadOnlyCollections.kt", ReadOnlyCollectionsKt::main);
+    }
+
+    @Test
+    public void testPlatformTypes() {
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/PlatformTypes.kt", PlatformTypesKt::main);
+    }
+
+    @Test
+    public void testKotlinChecked() {
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/KotlinChecked.kt", KotlinCheckedKt::main);
     }
 
     @Test
     public void testHiddenArrayList() {
-        testExample("../AtomicKotlinCourse/Language Interoperability/Collections & Java/Examples/src/HiddenArrayList.kt", HiddenArrayListKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/HiddenArrayList.kt", HiddenArrayListKt::main);
+    }
+
+    @Test
+    public void testBigFibonacci() {
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/BigFibonacci.kt", adaptingjava.BigFibonacciKt::main);
+    }
+
+    @Test
+    public void testExtensionsToJavaClass() {
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/ExtensionsToJavaClass.kt", fromkotlin.ExtensionsToJavaClassKt::main);
+    }
+
+    @Test
+    public void testWithCleanup() {
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/WithCleanup.kt", withfunction.WithCleanupKt::main);
     }
 
     @Test
     public void testJavaList() {
-        testExample("../AtomicKotlinCourse/Language Interoperability/Collections & Java/Examples/src/JavaList.kt", JavaListKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/JavaList.kt", JavaListKt::main);
+    }
+
+    @Test
+    public void testUseBeanClass() {
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/UseBeanClass.kt", UseBeanClassKt::main);
+    }
+
+    @Test
+    public void testRandom() {
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/Random.kt", RandomKt::main);
+    }
+
+    @Test
+    public void testNPEOnPlatformType() {
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
+    }
+
+    @Test
+    public void testModule2() {
+        testExample("../AtomicKotlinCourse/Power Tools/Appendix C: Modules and the internal Keyword/Examples/src/Module2.kt", module2.Module2Kt::main);
     }
 
     @Test
@@ -2483,737 +2413,767 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask4() {
-        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 1/src/Task.kt", varandval1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Hello, World!/Exercise 5/src/Task.kt", helloWorld5.TaskKt::main);
     }
 
     @Test
     public void testTask5() {
-        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 2/src/Task.kt", varandval2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 1/src/Task.kt", varandval1.TaskKt::main);
+    }
+
+    @Test
+    public void testCcc() {
+        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 2/src/ccc.kt", cccKt::main);
     }
 
     @Test
     public void testTask6() {
-        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 3/src/Task.kt", varandval3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 3/src/Task.kt", varandval2.TaskKt::main);
     }
 
     @Test
     public void testTask7() {
-        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 4/src/Task.kt", varandval4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 4/src/Task.kt", varandval3.TaskKt::main);
     }
 
     @Test
     public void testTask8() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Data Types/Exercise 1/src/Task.kt", dataTypes.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 5/src/Task.kt", varandval4.TaskKt::main);
     }
 
     @Test
     public void testTask9() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Data Types/Exercise 2/src/Task.kt", dataTypes2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Data Types/Exercise 1/src/Task.kt", dataTypes1.TaskKt::main);
     }
 
     @Test
     public void testTask10() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Exercise 1/src/Task.kt", functions1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Data Types/Exercise 4/src/Task.kt", dataTypes4.TaskKt::main);
     }
 
     @Test
     public void testTask11() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Exercise 2/src/Task.kt", functions2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Exercise 1/src/Task.kt", functions1.TaskKt::main);
     }
 
     @Test
     public void testTask12() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Exercise 3/src/Task.kt", functions3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Exercise 2/src/Task.kt", functions2.TaskKt::main);
     }
 
     @Test
     public void testTask13() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Exercise 4/src/Task.kt", functions4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Exercise 3/src/Task.kt", functions3.TaskKt::main);
     }
 
     @Test
     public void testTask14() {
-        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Exercise 1/src/Task.kt", ifExpressions1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Exercise 4/src/Task.kt", functions4.TaskKt::main);
     }
 
     @Test
     public void testTask15() {
-        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Exercise 2/src/Task.kt", ifExpressions2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Exercise 1/src/Task.kt", ifExpressions1.TaskKt::main);
     }
 
     @Test
     public void testTask16() {
-        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Exercise 3/src/Task.kt", ifExpressions3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Exercise 2/src/Task.kt", ifExpressions2.TaskKt::main);
     }
 
     @Test
     public void testTask17() {
-        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Exercise 4/src/Task.kt", ifExpressions4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Exercise 3/src/Task.kt", ifExpressions3.TaskKt::main);
     }
 
     @Test
     public void testTask18() {
-        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 1/src/Task.kt", stringTemplates1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Exercise 4/src/Task.kt", ifExpressions4.TaskKt::main);
     }
 
     @Test
     public void testTask19() {
-        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 2/src/Task.kt", stringTemplates2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 1/src/Task.kt", stringTemplates1.TaskKt::main);
     }
 
     @Test
     public void testTask20() {
-        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 3/src/Task.kt", stringTemplates3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 2/src/Task.kt", stringTemplates2.TaskKt::main);
     }
 
     @Test
     public void testTask21() {
-        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 4/src/Task.kt", stringTemplates4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 3/src/Task.kt", stringTemplates3.TaskKt::main);
     }
 
     @Test
     public void testTask22() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Exercise 3/src/Task.kt", numberTypes3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 4/src/Task.kt", stringTemplates4.TaskKt::main);
     }
 
     @Test
     public void testTask23() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Exercise 4/src/Task.kt", numberTypes4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 5/src/Task.kt", stringTemplates5.TaskKt::main);
     }
 
     @Test
     public void testTask24() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Exercise 5/src/Task.kt", numberTypes5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Exercise 3/src/Task.kt", numberTypes3.TaskKt::main);
     }
 
     @Test
     public void testTask25() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Exercise 2/src/Task.kt", booleans2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Exercise 4/src/Task.kt", numberTypes4.TaskKt::main);
     }
 
     @Test
     public void testTask26() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Exercise 3/src/Task.kt", booleans3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Exercise 5/src/Task.kt", numberTypes5.TaskKt::main);
     }
 
     @Test
     public void testTask27() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 1/src/Task.kt", repetitionwithwhile1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Exercise 2/src/Task.kt", booleans2.TaskKt::main);
     }
 
     @Test
     public void testTask28() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 2/src/Task.kt", repetitionwithwhile2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Exercise 3/src/Task.kt", booleans3.TaskKt::main);
     }
 
     @Test
     public void testTask29() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 3/src/Task.kt", repetitionwithwhile3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Exercise 4/src/Task.kt", booleans4.TaskKt::main);
     }
 
     @Test
     public void testTask30() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 4/src/Task.kt", repetitionwithwhile4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 1/src/Task.kt", repetitionwithwhile1.TaskKt::main);
     }
 
     @Test
     public void testTask31() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 1/src/Task.kt", loopingandRanges1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 2/src/Task.kt", repetitionwithwhile2.TaskKt::main);
     }
 
     @Test
     public void testTask32() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 2/src/Task.kt", loopingandRanges2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 3/src/Task.kt", repetitionwithwhile3.TaskKt::main);
     }
 
     @Test
     public void testTask33() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 3/src/Task.kt", loopingandRanges3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 4/src/Task.kt", repetitionwithwhile4.TaskKt::main);
     }
 
     @Test
     public void testTask34() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 4/src/Task.kt", loopingandRanges4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 5/src/Task.kt", repetitionwithwhile5.TaskKt::main);
     }
 
     @Test
     public void testTask35() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 5/src/Task.kt", loopingandRanges5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 1/src/Task.kt", loopingandRanges1.TaskKt::main);
     }
 
     @Test
     public void testTask36() {
-        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Exercise 1/src/Task.kt", theinKeyword1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 2/src/Task.kt", loopingandRanges2.TaskKt::main);
     }
 
     @Test
     public void testTask37() {
-        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Exercise 2/src/Task.kt", theinKeyword2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 3/src/Task.kt", loopingandRanges3.TaskKt::main);
     }
 
     @Test
     public void testTask38() {
-        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Exercise 3/src/Task.kt", theinKeyword3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 4/src/Task.kt", loopingandRanges4.TaskKt::main);
     }
 
     @Test
     public void testTask39() {
-        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Exercise 4/src/Task.kt", theinKeyword4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 5/src/Task.kt", loopingandRanges5.TaskKt::main);
     }
 
     @Test
     public void testTask40() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Exercise 1/src/Task.kt", expressionsandStatements1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Exercise 1/src/Task.kt", theinKeyword1.TaskKt::main);
     }
 
     @Test
     public void testTask41() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Exercise 2/src/Task.kt", expressionsandStatements2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Exercise 2/src/Task.kt", theinKeyword2.TaskKt::main);
     }
 
     @Test
     public void testTask42() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 1/src/Task.kt", summary1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Exercise 3/src/Task.kt", theinKeyword3.TaskKt::main);
     }
 
     @Test
     public void testTask43() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 2/src/Task.kt", summary2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/The in Keyword/Exercise 4/src/Task.kt", theinKeyword4.TaskKt::main);
     }
 
     @Test
     public void testTask44() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 3/src/Task.kt", summary3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Exercise 1/src/Task.kt", expressionsandStatements1.TaskKt::main);
     }
 
     @Test
     public void testTask45() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 4/src/Task.kt", summary4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Exercise 2/src/Task.kt", expressionsandStatements2.TaskKt::main);
     }
 
     @Test
     public void testTask46() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 1/src/Task.kt", objectsEverywhere1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 10/src/Task.kt", summary10.TaskKt::main);
     }
 
     @Test
     public void testTask47() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 2/src/Task.kt", objectsEverywhere2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 11/src/Task.kt", summary11.TaskKt::main);
     }
 
     @Test
     public void testTask48() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 3/src/Task.kt", objectsEverywhere3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 12/src/Task.kt", summary12.TaskKt::main);
     }
 
     @Test
     public void testTask49() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 4/src/Task.kt", objectsEverywhere4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 13/src/Task.kt", summary13.TaskKt::main);
     }
 
     @Test
     public void testTask50() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 5/src/Task.kt", objectsEverywhere5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 1/src/Task.kt", objectsEverywhere1.TaskKt::main);
     }
 
     @Test
     public void testTask51() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Creating Classes/Exercise 2/src/Task.kt", creatingClasses2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 2/src/Task.kt", objectsEverywhere2.TaskKt::main);
     }
 
     @Test
     public void testTask52() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Creating Classes/Exercise 4/src/Task.kt", creatingClasses4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 3/src/Task.kt", objectsEverywhere3.TaskKt::main);
     }
 
     @Test
     public void testTask53() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Creating Classes/Exercise 5/src/Task.kt", creatingClasses5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 4/src/Task.kt", objectsEverywhere4.TaskKt::main);
     }
 
     @Test
     public void testTask54() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Exercise 1/src/Task.kt", properties1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 5/src/Task.kt", objectsEverywhere5.TaskKt::main);
     }
 
     @Test
     public void testTask55() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Exercise 2/src/Task.kt", properties2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Creating Classes/Exercise 2/src/Task.kt", creatingClasses2.TaskKt::main);
     }
 
     @Test
     public void testTask56() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Exercise 3/src/Task.kt", properties3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Creating Classes/Exercise 4/src/Task.kt", creatingClasses4.TaskKt::main);
     }
 
     @Test
     public void testTask57() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Exercise 1/src/Task.kt", constructors1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Creating Classes/Exercise 5/src/Task.kt", creatingClasses5.TaskKt::main);
     }
 
     @Test
     public void testTask58() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Exercise 3/src/Task.kt", constructors3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Exercise 1/src/Task.kt", properties1.TaskKt::main);
     }
 
     @Test
     public void testTask59() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Exercise 4/src/Task.kt", constructors4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Exercise 2/src/Task.kt", properties2.TaskKt::main);
     }
 
     @Test
     public void testTask60() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 1/src/Task.kt", constrainingVisibility1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Properties/Exercise 3/src/Task.kt", properties3.TaskKt::main);
     }
 
     @Test
     public void testTask61() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 2/src/Task.kt", constrainingVisibility2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Exercise 1/src/Task.kt", constructors1.TaskKt::main);
     }
 
     @Test
     public void testTask62() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 3/src/Task.kt", constrainingVisibility3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Exercise 3/src/Task.kt", constructors3.TaskKt::main);
     }
 
     @Test
     public void testTask63() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 4/src/Task.kt", constrainingVisibility4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Exercise 4/src/Task.kt", constructors4.TaskKt::main);
     }
 
     @Test
     public void testTask64() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 5/src/Task.kt", constrainingVisibility5.TaskKt::main);
-    }
-
-    @Test
-    public void testMain() {
-        //testExample("../AtomicKotlinCourse/Introduction to Objects/Imports & Packages/Exercise 1/src/Main.kt", importsandPackages1.MainKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 1/src/Task.kt", constrainingVisibility1.TaskKt::main);
     }
 
     @Test
     public void testTask65() {
-        //testExample("../AtomicKotlinCourse/Introduction to Objects/Imports & Packages/Exercise 2/src/Task.kt", importsandPackages2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 2/src/Task.kt", constrainingVisibility2.TaskKt::main);
     }
 
     @Test
     public void testTask66() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Exercise 1/src/Task.kt", testing1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 3/src/Task.kt", constrainingVisibility3.TaskKt::main);
     }
 
     @Test
     public void testTask67() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Exercise 2/src/Task.kt", testing2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 4/src/Task.kt", constrainingVisibility4.TaskKt::main);
     }
 
     @Test
     public void testTask68() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Exceptions/Exercise 1/src/Task.kt", exceptions1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 5/src/Task.kt", constrainingVisibility5.TaskKt::main);
+    }
+
+    @Test
+    public void testCcc1() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Exercise 2/src/ccc.kt", ccc.cccKt::main);
+    }
+
+    @Test
+    public void testMain() {
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Exercise 3/src/Main.kt", importsandPackages3.MainKt::main);
     }
 
     @Test
     public void testTask69() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 1/src/Task.kt", lists1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Exercise 4/src/Task.kt", importsandPackages4.TaskKt::main);
     }
 
     @Test
     public void testTask70() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 2/src/Task.kt", lists2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Exercise 3/src/Task.kt", testing3.TaskKt::main);
     }
 
     @Test
     public void testTask71() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 3/src/Task.kt", lists3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Exercise 4/src/Task.kt", testing4.TaskKt::main);
     }
 
     @Test
     public void testTask72() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 4/src/Task.kt", lists4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Exceptions/Exercise 3/src/Task.kt", exceptions3.TaskKt::main);
     }
 
     @Test
     public void testTask73() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Exercise 1/src/Task.kt", varargArguments1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 1/src/Task.kt", lists1.TaskKt::main);
     }
 
     @Test
     public void testTask74() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Exercise 2/src/Task.kt", varargArguments2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 2/src/Task.kt", lists2.TaskKt::main);
     }
 
     @Test
     public void testTask75() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/vararg Arguments/Exercise 3/src/Task.kt", varargArguments3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 4/src/Task.kt", lists4.TaskKt::main);
     }
 
     @Test
     public void testTask76() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Exercise 1/src/Task.kt", sets1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 5/src/Task.kt", lists5.TaskKt::main);
     }
 
     @Test
     public void testTask77() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Exercise 2/src/Task.kt", sets2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Exercise 3/src/Task.kt", varargArguments3.TaskKt::main);
     }
 
     @Test
     public void testTask78() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Exercise 3/src/Task.kt", sets3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Exercise 4/src/Task.kt", varargArguments4.TaskKt::main);
     }
 
     @Test
     public void testTask79() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Exercise 1/src/Task.kt", maps1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Variable Argument Lists/Exercise 6/src/Task.kt", varargArguments6.TaskKt::main);
     }
 
     @Test
     public void testTask80() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Exercise 2/src/Task.kt", maps2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Exercise 1/src/Task.kt", sets1.TaskKt::main);
     }
 
     @Test
     public void testTask81() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Exercise 3/src/Task.kt", maps3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Exercise 3/src/Task.kt", sets3.TaskKt::main);
     }
 
     @Test
     public void testTask82() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Exercise 4/src/Task.kt", maps4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Exercise 4/src/Task.kt", sets4.TaskKt::main);
     }
 
     @Test
     public void testTask83() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Exercise 1/src/Task.kt", propertyAccessors1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Exercise 1/src/Task.kt", maps1.TaskKt::main);
     }
 
     @Test
     public void testTask84() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Exercise 2/src/Task.kt", propertyAccessors2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Exercise 2/src/Task.kt", maps2.TaskKt::main);
     }
 
     @Test
     public void testTask85() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Exercise 3/src/Task.kt", propertyAccessors3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Exercise 3/src/Task.kt", maps3.TaskKt::main);
     }
 
     @Test
     public void testTask86() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Exercise 1/src/Task.kt", summary21.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Exercise 4/src/Task.kt", maps4.TaskKt::main);
     }
 
     @Test
     public void testTask87() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Exercise 2/src/Task.kt", summary22.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Exercise 1/src/Task.kt", propertyAccessors1.TaskKt::main);
     }
 
     @Test
     public void testTask88() {
-        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 1/src/Task.kt", extensionFunctions1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Exercise 4/src/Task.kt", propertyAccessors4.TaskKt::main);
     }
 
     @Test
     public void testTask89() {
-        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 2/src/Task.kt", extensionFunctions2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Exercise 5/src/Task.kt", propertyAccessors5.TaskKt::main);
     }
 
     @Test
     public void testTask90() {
-        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 3/src/Task.kt", extensionFunctions3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Exercise 13/src/Task.kt", summaryII13.TaskKt::main);
     }
 
     @Test
     public void testTask91() {
-        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 4/src/Task.kt", extensionFunctions4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Summary 2/Exercise 14/src/Task.kt", summaryII14.TaskKt::main);
     }
 
     @Test
     public void testTask92() {
-        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Exercise 2/src/Task.kt", namedandDefaultArguments2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 1/src/Task.kt", extensionFunctions1.TaskKt::main);
     }
 
     @Test
     public void testTask93() {
-        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Exercise 3/src/Task.kt", namedandDefaultArguments3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 2/src/Task.kt", extensionFunctions2.TaskKt::main);
     }
 
     @Test
     public void testTask94() {
-        testExample("../AtomicKotlinCourse/Usability/Overloading/Exercise 1/src/Task.kt", overloading1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 3/src/Task.kt", extensionFunctions3.TaskKt::main);
     }
 
     @Test
     public void testTask95() {
-        testExample("../AtomicKotlinCourse/Usability/Overloading/Exercise 2/src/Task.kt", overloading2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 4/src/Task.kt", extensionFunctions4.TaskKt::main);
     }
 
     @Test
     public void testTask96() {
-        testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 1/src/Task.kt", whenExpressions1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Exercise 3/src/Task.kt", namedandDefaultArguments3.TaskKt::main);
     }
 
     @Test
     public void testTask97() {
-        testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 2/src/Task.kt", whenExpressions2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Exercise 4/src/Task.kt", namedandDefaultArguments4.TaskKt::main);
     }
 
     @Test
     public void testTask98() {
-        testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 3/src/Task.kt", whenExpressions3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Overloading/Exercise 1/src/Task.kt", overloading1.TaskKt::main);
     }
 
     @Test
     public void testTask99() {
-        testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 4/src/Task.kt", whenExpressions4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Overloading/Exercise 2/src/Task.kt", overloading2.TaskKt::main);
     }
 
     @Test
     public void testTask100() {
-        testExample("../AtomicKotlinCourse/Usability/Enumerations/Exercise 1/src/Task.kt", enumerations1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 1/src/Task.kt", whenExpressions1.TaskKt::main);
     }
 
     @Test
     public void testTask101() {
-        testExample("../AtomicKotlinCourse/Usability/Enumerations/Exercise 2/src/Task.kt", enumerations2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 2/src/Task.kt", whenExpressions2.TaskKt::main);
     }
 
     @Test
     public void testTask102() {
-        testExample("../AtomicKotlinCourse/Usability/Enumerations/Exercise 3/src/Task.kt", enumerations3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 3/src/Task.kt", whenExpressions3.TaskKt::main);
     }
 
     @Test
     public void testTask103() {
-        testExample("../AtomicKotlinCourse/Usability/Data Classes/Exercise 2/src/Task.kt", dataClasses2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 4/src/Task.kt", whenExpressions4.TaskKt::main);
     }
 
     @Test
     public void testTask104() {
-        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Exercise 1/src/Task.kt", nullableTypes1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Enumerations/Exercise 1/src/Task.kt", enumerations1.TaskKt::main);
     }
 
     @Test
     public void testTask105() {
-        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Exercise 2/src/Task.kt", nullableTypes2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Enumerations/Exercise 2/src/Task.kt", enumerations2.TaskKt::main);
     }
 
     @Test
     public void testTask106() {
-        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Exercise 1/src/Task.kt", safeCallsandTheElvisOperator1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Enumerations/Exercise 3/src/Task.kt", enumerations3.TaskKt::main);
     }
 
     @Test
     public void testTask107() {
-        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Exercise 2/src/Task.kt", safeCallsandTheElvisOperator2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Data Classes/Exercise 2/src/Task.kt", dataClasses2.TaskKt::main);
     }
 
     @Test
     public void testTask108() {
-        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Exercise 1/src/Task.kt", nonnullAssertions1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Exercise 1/src/Task.kt", nullableTypes1.TaskKt::main);
     }
 
     @Test
     public void testTask109() {
-        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Exercise 2/src/Task.kt", nonnullAssertions2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Exercise 2/src/Task.kt", nullableTypes2.TaskKt::main);
     }
 
     @Test
     public void testTask110() {
-        testExample("../AtomicKotlinCourse/Usability/Extensions for Nullable Types/Exercise 1/src/Task.kt", extensionsforNullableTypes1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Exercise 1/src/Task.kt", safeCallsandTheElvisOperator1.TaskKt::main);
     }
 
     @Test
     public void testTask111() {
-        testExample("../AtomicKotlinCourse/Usability/Extensions for Nullable Types/Exercise 2/src/Task.kt", extensionsforNullableTypes2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Exercise 2/src/Task.kt", safeCallsandTheElvisOperator2.TaskKt::main);
     }
 
     @Test
     public void testTask112() {
-        testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Exercise 1/src/Task.kt", introductiontoGenerics1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Exercise 1/src/Task.kt", nonnullAssertions1.TaskKt::main);
     }
 
     @Test
     public void testTask113() {
-        testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Exercise 2/src/Task.kt", introductiontoGenerics2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Exercise 2/src/Task.kt", nonnullAssertions2.TaskKt::main);
     }
 
     @Test
     public void testTask114() {
-        testExample("../AtomicKotlinCourse/Usability/Extension Properties/Exercise 1/src/Task.kt", extensionProperties1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Extensions for Nullable Types/Exercise 1/src/Task.kt", extensionsforNullableTypes1.TaskKt::main);
     }
 
     @Test
     public void testTask115() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Exercise 1/src/Task.kt", lambdas1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Extensions for Nullable Types/Exercise 2/src/Task.kt", extensionsforNullableTypes2.TaskKt::main);
     }
 
     @Test
     public void testTask116() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Exercise 2/src/Task.kt", lambdas2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Exercise 1/src/Task.kt", introductiontoGenerics1.TaskKt::main);
     }
 
     @Test
     public void testTask117() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Exercise 3/src/Task.kt", lambdas3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Exercise 2/src/Task.kt", introductiontoGenerics2.TaskKt::main);
     }
 
     @Test
     public void testTask118() {
-        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Exercise 1/src/Task.kt", theImportanceofLambdas1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Extension Properties/Exercise 1/src/Task.kt", extensionProperties1.TaskKt::main);
     }
 
     @Test
     public void testTask119() {
-        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Exercise 2/src/Task.kt", theImportanceofLambdas2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Exercise 1/src/Task.kt", lambdas1.TaskKt::main);
     }
 
     @Test
     public void testTask120() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Exercise 1/src/Task.kt", operationsonCollections1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Exercise 2/src/Task.kt", lambdas2.TaskKt::main);
     }
 
     @Test
     public void testTask121() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Exercise 2/src/Task.kt", operationsonCollections2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Lambdas/Exercise 3/src/Task.kt", lambdas3.TaskKt::main);
     }
 
     @Test
     public void testTask122() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Exercise 3/src/Task.kt", operationsonCollections3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Exercise 1/src/Task.kt", theImportanceofLambdas1.TaskKt::main);
     }
 
     @Test
     public void testTask123() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Exercise 4/src/Task.kt", operationsonCollections4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Exercise 2/src/Task.kt", theImportanceofLambdas2.TaskKt::main);
     }
 
     @Test
     public void testTask124() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Exercise 1/src/Task.kt", memberReferences01.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Exercise 1/src/Task.kt", operationsonCollections1.TaskKt::main);
     }
 
     @Test
     public void testTask125() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Exercise 2/src/Task.kt", memberReferences02.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Exercise 2/src/Task.kt", operationsonCollections2.TaskKt::main);
     }
 
     @Test
     public void testTask126() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Exercise 1/src/Task.kt", functionTypes1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Exercise 3/src/Task.kt", operationsonCollections3.TaskKt::main);
     }
 
     @Test
     public void testTask127() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Exercise 2/src/Task.kt", functionTypes2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Operations on Collections/Exercise 4/src/Task.kt", operationsonCollections4.TaskKt::main);
     }
 
     @Test
     public void testTask128() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Exercise 3/src/Task.kt", functionTypes3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Exercise 1/src/Task.kt", memberReferences01.TaskKt::main);
     }
 
     @Test
     public void testTask129() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Exercise 4/src/Task.kt", functionTypes4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Exercise 2/src/Task.kt", memberReferences02.TaskKt::main);
     }
 
     @Test
     public void testTask130() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 1/src/Task.kt", manipulatingLists1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Exercise 1/src/Task.kt", functionTypes1.TaskKt::main);
     }
 
     @Test
     public void testTask131() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 2/src/Task.kt", manipulatingLists2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Exercise 2/src/Task.kt", functionTypes2.TaskKt::main);
     }
 
     @Test
     public void testTask132() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 3/src/Task.kt", manipulatingLists3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Exercise 3/src/Task.kt", functionTypes3.TaskKt::main);
     }
 
     @Test
     public void testTask133() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 4/src/Task.kt", manipulatingLists4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Function Types/Exercise 4/src/Task.kt", functionTypes4.TaskKt::main);
     }
 
     @Test
     public void testTask134() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 5/src/Task.kt", manipulatingLists5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 1/src/Task.kt", manipulatingLists1.TaskKt::main);
     }
 
     @Test
     public void testTask135() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 6/src/Task.kt", manipulatingLists6.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 2/src/Task.kt", manipulatingLists2.TaskKt::main);
     }
 
     @Test
     public void testTask136() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 7/src/Task.kt", manipulatingLists7.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 3/src/Task.kt", manipulatingLists3.TaskKt::main);
     }
 
     @Test
     public void testTask137() {
-        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Exercise 1/src/Task.kt", fromListstoMaps01.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 4/src/Task.kt", manipulatingLists4.TaskKt::main);
     }
 
     @Test
     public void testTask138() {
-        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Exercise 2/src/Task.kt", fromListstoMaps02.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 5/src/Task.kt", manipulatingLists5.TaskKt::main);
     }
 
     @Test
     public void testTask139() {
-        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Exercise 3/src/Task.kt", fromListstoMaps03.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 6/src/Task.kt", manipulatingLists6.TaskKt::main);
     }
 
     @Test
     public void testTask140() {
-        testExample("../AtomicKotlinCourse/Functional Programming/More Library Functions/Exercise 1/src/Task.kt", moreLibraryFunctions1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Exercise 7/src/Task.kt", manipulatingLists7.TaskKt::main);
     }
 
     @Test
     public void testTask141() {
-        testExample("../AtomicKotlinCourse/Functional Programming/More Library Functions/Exercise 2/src/Task.kt", moreLibraryFunctions2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Exercise 1/src/Task.kt", fromListstoMaps01.TaskKt::main);
     }
 
     @Test
     public void testTask142() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Exercise 1/src/Task.kt", functionsInsideFunctions1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Exercise 2/src/Task.kt", fromListstoMaps02.TaskKt::main);
     }
 
     @Test
     public void testTask143() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Exercise 1/src/Task.kt", foldingLists01.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/From Lists to Maps/Exercise 3/src/Task.kt", fromListstoMaps03.TaskKt::main);
     }
 
     @Test
     public void testTask144() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Exercise 2/src/Task.kt", foldingLists02.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/More Library Functions/Exercise 1/src/Task.kt", moreLibraryFunctions1.TaskKt::main);
     }
 
     @Test
     public void testTask145() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Exercise 3/src/Task.kt", foldingLists3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/More Library Functions/Exercise 2/src/Task.kt", moreLibraryFunctions2.TaskKt::main);
     }
 
     @Test
     public void testTask146() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Exercise 4/src/Task.kt", foldingLists4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Functions Inside Functions/Exercise 1/src/Task.kt", functionsInsideFunctions1.TaskKt::main);
     }
 
     @Test
     public void testTask147() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Exercise 1/src/Task.kt", recursion1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Exercise 1/src/Task.kt", foldingLists01.TaskKt::main);
     }
 
     @Test
     public void testTask148() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Exercise 2/src/Task.kt", recursion2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Exercise 2/src/Task.kt", foldingLists02.TaskKt::main);
     }
 
     @Test
     public void testTask149() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Exercise 3/src/Task.kt", foldingLists3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask150() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Folding Lists/Exercise 4/src/Task.kt", foldingLists4.TaskKt::main);
+    }
+
+    @Test
+    public void testTask151() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Exercise 2/src/Task.kt", recursion2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask152() {
         testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Exercise 3/src/Task.kt", recursion3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask153() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Recursion/Exercise 4/src/Task.kt", recursion4.TaskKt::main);
     }
 
     @Test
@@ -3237,7 +3197,7 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testGameElements1() {
+    public void testGameElements() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Base Class Initialization/Exercise 1/src/GameElements.kt", baseClassInitialization1.GameElementsKt::main);
     }
 
@@ -3247,42 +3207,27 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testTask150() {
+    public void testTask154() {
         testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Exercise 1/src/Task.kt", lambdawithReceiver1.TaskKt::main);
     }
 
     @Test
-    public void testTask151() {
+    public void testTask155() {
         testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Exercise 2/src/Task.kt", lambdawithReceiver2.TaskKt::main);
     }
 
     @Test
-    public void testTask152() {
+    public void testTask156() {
         testExample("../AtomicKotlinCourse/Power Tools/The with() Function/Exercise 1/src/Task.kt", thewithFunction1.TaskKt::main);
     }
 
     @Test
-    public void testTask153() {
+    public void testTask157() {
         testExample("../AtomicKotlinCourse/Power Tools/The with() Function/Exercise 2/src/Task.kt", thewithFunction2.TaskKt::main);
     }
 
     @Test
-    public void testTask154() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Exercise 1/src/Task.kt", libraryHelpers1.TaskKt::main);
-    }
-
-    @Test
-    public void testTask155() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Exercise 2/src/Task.kt", libraryHelpers2.TaskKt::main);
-    }
-
-    @Test
-    public void testTask156() {
-        testExample("../AtomicKotlinCourse/Power Tools/Library Helpers/Exercise 3/src/Task.kt", libraryhelpers.TaskKt::main);
-    }
-
-    @Test
-    public void testTask157() {
+    public void testTask158() {
         testExample("../AtomicKotlinCourse/Power Tools/Hashing/Exercise 1/src/Task.kt", dataClasses1.TaskKt::main);
     }
 }

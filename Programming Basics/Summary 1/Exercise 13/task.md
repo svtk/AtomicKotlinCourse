@@ -1,13 +1,6 @@
-## Summary 1 (#13)
+## Summary 1 (#5)
 
-Display a table filled with numbers in a form of snake. For rows = 3, columns =
-3 the function `showSnake()` should produce the following:
-
-```
- 0 1 2
- 5 4 3
- 6 7 8
-```
-
-For proper alignment use `"%3d".format(number)` to place any necessary spaces
-before the number.
+Modify `first()` and `second()` from the previous exercise so they produce
+`String` results using a `String` template, substituting the values of the
+arguments and showing the result by calculating an expression within the
+template. Test them using the same arguments from the table above.

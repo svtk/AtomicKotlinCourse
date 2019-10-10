@@ -1,7 +1,7 @@
-## `var` & `val` (#2)
+## `var` & `val` (#3)
 
-Declare two `var`s: `x` and `y`. Swap their contents (you can first try saying
-`x = y`, `y = x` and then fix the erroneous solution):
+Define two `var`s: `x` and `y`. Swap their contents. First try `x = y`, `y =
+x`, then fix the erroneous solution:
 
 ```kotlin
 var x = 1

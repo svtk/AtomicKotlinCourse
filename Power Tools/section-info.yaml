@@ -1,7 +1,7 @@
 content:
 - Lambda with Receiver
 - The with() Function
-- Library Helpers
+- Scope Functions
 - Immutability
 - Hashing
 - Destructuring Declarations
@@ -11,3 +11,5 @@ content:
 - Late Initialization
 - Property Delegation
 - Property Delegation Tools
+- Appendix B: Java Interoperability
+- Appendix C: Modules and the internal Keyword

@@ -1,14 +1,12 @@
 ## Maps (#2)
 
-The `Cage` class is designed to store hamsters. 
-`Cage` has a fixed size, so you can't put a hamster in there if it's already full. 
+`Cage` objects store `Hamster`s. `Cage` has a fixed size, so you can't put
+another `Hamster` in a `Cage` if it's already full.
 
-For this task, hamsters are stored in a list.
-In the next task, `Map` will be used instead of `List`.
+For this exercise, `Hamster`s are stored in a `List`. In the next exercise,
+`Map` will be used instead of `List`.
 
-Implement the `takeHamsterByName()` function that should find a hamster
-by a given name and return it.
-If there's no hamster with a given name, it should throw a `NoSuchElementException`.
+Implement `get(name: String)` to return the `Hamster` with `name`. If there's
+no `Hamster` with that `name`, throw `NoSuchElementException`.
 
-Implement the `removeHamster()` function that should find a hamster
-by a given name and remove it.
+Implement `remove(name: String)` to remove the `Hamster` with `name`.

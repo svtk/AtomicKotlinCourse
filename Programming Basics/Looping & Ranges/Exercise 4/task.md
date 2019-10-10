@@ -1,7 +1,7 @@
 ## Looping & Ranges (#4)
 
-Display half of a pyramid. For an argument of 6 the function
-`showHalfPyramid()` should display the following:
+Display half of a triangle. For an argument of 6 the function
+`showHalfTriangle()` should display the following:
 
 ```
 #

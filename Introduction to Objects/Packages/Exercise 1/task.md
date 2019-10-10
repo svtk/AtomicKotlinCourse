@@ -1,4 +1,4 @@
-## Imports & Packages (#1)
+## Packages (#1)
 
 Create a `package` named `aaa`, and a file in that `package` containing a `val
 x = 10`, a top-level function `fa()` that takes an `Int` argument and returns

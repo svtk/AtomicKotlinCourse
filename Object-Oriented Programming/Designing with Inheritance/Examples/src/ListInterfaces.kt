@@ -1,4 +1,4 @@
-// DesigningWithInheritance/Lists.kt
+// DesigningWithInheritance/ListInterfaces.kt
 package designingwithinheritance.lists
 
 interface List<E> {

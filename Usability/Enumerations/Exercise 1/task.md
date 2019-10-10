@@ -1,11 +1,9 @@
 ## Enumerations (#1)
 
-This task refactors the `Robot` class used in the section II:
-it replaces four functions `goRight`, `goLeft`, `goDown` and `goUp` 
-with one function `go` that takes a `Direction` argument which specifies 
-the direction of movement.
-
-Implement the `go` function.
+This task refactors the `Robot` class used in section II. Replace the four
+functions `right()`, `left()`, `down()` and `up()`  with one function `go()`
+that takes an additional `Direction` argument specifying the direction of
+movement.
 
 The location is stored as a pair of coordinates `(x, y)`, where `(0, 0)` is the top-left
 corner:
@@ -16,5 +14,5 @@ corner:
 (0, 1) (1, 1)
 ```
 
-Going right increases `x` coordinate, going down increases `y` coordinate,
-going left and up decreases `x` and `y` coordinates accordingly.
+Moving right increases the `x` coordinate, moving down increases the `y`
+coordinate, moving left and up decrease the `x` and `y` coordinates.

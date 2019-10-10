@@ -1,7 +1,4 @@
-This is the markdown document.
+## Lists (#3)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+In `MultipleListRefs.kt`, remove the type declaration on `second` (that is, use
+type inference) and show that the result can be mutated.

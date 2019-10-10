@@ -1,12 +1,4 @@
-## Summary 1 (#2)
+## Summary 1 (#3)
 
-Reverse the digits in a decimal number using a while loop. An auxiliary
-`worker` variable will help you iteratively produce the `result`:
-
-| Worker     | Result |
-|------------|--------|
-| 1234       | 0      |
-| 123        | 4      |
-| 12         | 43     |
-| 1          | 432    |
-| 0          | 4321   |
+Create a function `other()` that takes a `String` argument and returns a
+`String` containing every other letter of the argument.

@@ -1,7 +1,7 @@
-This is the markdown document.
+## `break` & `continue` (#2)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+In `main()`, write a labeled `for` loop that counts down from six to zero,
+using `label1` as the name of the loop. If the loop counter is four,
+`continue`. If it's two, `break`. Place calls to `trace()` from the previous
+exercise to ensure that the behavior is what you expect. See what happens if
+you remove the labels from `break` and `continue`.

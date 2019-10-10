@@ -1,7 +1,5 @@
-This is the markdown document.
+## Summary 1 (#8)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Display every fifth number in the range from zero to one hundred. The solution
+provides `textBlock`, a triple-quoted block of text---display every fifth
+non-whitespace character in that text.

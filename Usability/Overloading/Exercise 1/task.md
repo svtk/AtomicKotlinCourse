@@ -11,5 +11,4 @@ fun List<Int>.myJoinToString(separator: String, prefix: String): String
 fun List<Int>.myJoinToString(prefix: String, postfix: String): String
 ```
 
-Uncomment the commented `myJoinToString()` function and see the error the 
-compiler gives.
+Uncomment the commented `myJoinToString()` function and see what error you get.

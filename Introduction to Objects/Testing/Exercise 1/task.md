@@ -1,7 +1,10 @@
-This is the markdown document.
+## Testing (#1)
 
-Write your task text here
+Write a function `f()` that simply returns 47. Import `atomictest` and test
+`f()` using both `eq` and `neq`.
 
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Write a function `g()` that takes an `n: Int` argument and returns `n * 3`. Use
+`eq` to test for arguments of `1`, `0`, and `-1`.
+
+Write a function `h()` that takes a `d: Double` argument and returns `d *
+&pi:`. Use `eq` to test for arguments of `&pi:`, `0.0`, and `-&pi:`.

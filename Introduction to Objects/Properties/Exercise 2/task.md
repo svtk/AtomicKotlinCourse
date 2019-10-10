@@ -10,8 +10,8 @@ right, left, up and down. Its location is stored as a pair of coordinates
 (0, 1) (1, 1)
 ```
 
-Going right increases the `x` coordinate, going down increases the `y`
-coordinate, while going left and up decrease the `x` and `y` coordinates.
+Moving right increases the `x` coordinate, moving down increases the `y`
+coordinate, while moving left and up decrease the `x` and `y` coordinates.
 
 Create the member functions `right()`, `left()`, `up()` and `down()`, each of
 which takes a `steps` argument. Create another member function `getLocation()`

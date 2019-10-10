@@ -13,7 +13,7 @@ class Person(val name: String)
 
 fun main() {
   val set1 = setOf(
-      Person("Alice"), 
+      Person("Alice"),
       Person("Alice"))
   val set2 = setOf(
       Contact("Alice", "123-456"),

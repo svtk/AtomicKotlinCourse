@@ -1,10 +1,10 @@
-// Summary2/MutableVsReadonlyList.kt
+// Summary2/ReadonlyVsMutableList.kt
 import atomictest.eq
 
 fun main() {
   val ints = listOf(5, 13, 9)
   // ints.add(11) // 'add()' not available
-  for (i in ints)
+  for(i in ints)
     if(i > 10)
       println(i)
 

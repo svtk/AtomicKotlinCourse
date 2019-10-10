@@ -1,10 +1,9 @@
-## Imports & Packages (#3)
+## Packages (#3)
 
-Create the class `EquilateralTriangle` in a `package pythagorean`.
-`EquilateralTriangle` should take `side` of type `Double`
-as a constructor argument.
-Then define a member function `area()` which calculates
-the triangle area using the formula `sqrt(3.0) / 4 * side * side`.
+Create a class `EquilateralTriangle` as part of the `package pythagorean`.
+`EquilateralTriangle` should take a constructor argument `side: Double`. Define
+a member function `area()` which calculates the triangle area using the formula
+`sqrt(3.0) / 4 * side * side`.
 
-Then uncomment the code of the `main` function inside `Main.kt`.
-Import the `EquilateralTriangle` class to make the code compile.
+Uncomment the code in the `main()` function in `Main.kt`. Import the
+`EquilateralTriangle` class to make the code compile and run successfully.

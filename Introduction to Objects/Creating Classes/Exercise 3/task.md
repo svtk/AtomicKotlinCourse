@@ -1,8 +1,10 @@
 ## Creating Classes (#3)
 
+{{ This appears to be duplicated in the following atom }}
+
 Create a `Robot` class with the following four member functions:
-`goRight(steps: Int)`, `goLeft(steps: Int)`, `goDown(steps: Int)` and
-`goUp(steps: Int)`. Each function should display one of the following phrases
+`right(steps: Int)`, `left(steps: Int)`, `down(steps: Int)` and
+`up(steps: Int)`. Each function should display one of the following phrases
 on the console:
 
 ```

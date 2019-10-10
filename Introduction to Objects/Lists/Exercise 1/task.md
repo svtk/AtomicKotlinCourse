@@ -1,11 +1,9 @@
 ## Lists (#1)
 
-The Kotlin standard library contains many functions to work with lists.
-However, it's still a good exercise to implement some of them by hand.
+The Kotlin standard library contains many functions that work with `Lists`.
+It's a good exercise to implement some of them by hand.
 
-Find the maximum value in a list of natural numbers. If the list is empty,
-return zero.
-
-The function `findMax()` takes `IntList` as an argument. `IntList` is a toy
-class that only allows you to iterate over a list's contents, get its size and
-access elements by index.
+Write a function `findMax()` that finds the maximum value in a `List` of
+natural numbers. If the `List` is empty, return zero. `findMax()` takes
+`IntList` as an argument---this is a toy class that only allows you to
+iterate over a `List`'s contents, get its size and access elements by index.

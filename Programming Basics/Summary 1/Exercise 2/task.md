@@ -1,7 +1,3 @@
-This is the markdown document.
+## Summary 1 (#6)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Modify `Overflow.kt` so it tests `Long` and `Double` in the same way.

@@ -1,4 +1,4 @@
-## Recursion (#3)
+## Recursion (#4)
 
 Implement the `City.getAllReachable` function that builds
 a set of all cities reachable from a given one:
@@ -13,7 +13,7 @@ The direct connections for each `City` are stored in `City.connections` property
 The `getAllReachable` function should return all the cities reachable
 from the given city via other cities.
 We'll say that the city is reachable from itself, so it should be also present
-in the resulting set. 
+in the resulting set.
 
 For instance, look at the following connections graph:
 

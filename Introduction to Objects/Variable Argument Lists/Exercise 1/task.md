@@ -1,7 +1,4 @@
-This is the markdown document.
+## Variable Argument Lists (#1)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Attempt to compile a function that takes two `vararg` arguments, and see what
+error message you get.

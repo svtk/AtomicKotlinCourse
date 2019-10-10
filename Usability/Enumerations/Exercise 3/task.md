@@ -1,4 +1,4 @@
 ## Enumerations (#3)
 
-Implement the `findWinner` function which determines the winner in 
-the Rock–paper–scissors game.
+Implement a `findWinner()` function to determine the winner in the
+rock–paper–scissors game.

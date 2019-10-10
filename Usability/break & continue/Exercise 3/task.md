@@ -1,7 +1,5 @@
-This is the markdown document.
+## `break` & `continue` (#3)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Modify the previous exercise by nesting the `label1` loop in an identical outer
+`label2` `for` loop. If the inner loop counter is one, `break` out to the end
+of the `label2` loop.

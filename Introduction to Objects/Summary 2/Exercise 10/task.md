@@ -1,7 +1,5 @@
-This is the markdown document.
+## Summary 2 (#2)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create a class named `Boring` with three member functions: `a()` returns
+`1.618`, `b()` returns "ratio", and `c()` returns `11`. Test `Boring` using
+`atomictest`.

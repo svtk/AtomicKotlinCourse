@@ -1,7 +1,5 @@
-This is the markdown document.
+## Sets (#2)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Generate random `Int`s from 1 through 25 and place the results in a `Set`.
+Discover an approximate value for the minimum number of randomly-generated
+`Int`s required before the `Set` contains all values 1 through 25.

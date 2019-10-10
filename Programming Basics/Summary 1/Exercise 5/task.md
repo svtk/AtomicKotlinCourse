@@ -1,7 +1,5 @@
-This is the markdown document.
+## Summary 1 (#9)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Write a function `testRange(d: Double)` which determines whether `d` is between
+`25.0` and `40.0`. Write a function `testBlock(c: Char)` which determines
+whether `c` is present in `textBlock` from the previous exercise.

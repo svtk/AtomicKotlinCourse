@@ -1,8 +1,9 @@
-## Named & Default Arguments (#2)
+## Named & Default Arguments (#3)
 
-Implement the `joinComments` function which joins
-the comment text using `;` as a separator.
-It removes the slashes with the whitespace after the slashes (`// `).
- 
-Use the function `lines` on String which splits this String into a list of lines
-delimited by any of the `new line` character sequences.
+Implement a `joinComments()` function which takes a `String` argument
+containing comment text. `joinComments()` joins the comment text using `;` as a
+separator. It removes the comment slashes along with any whitespace after the
+slashes (`// `).
+
+Hint: Use the extension function `lines()` to split a `String` into a list of
+lines.

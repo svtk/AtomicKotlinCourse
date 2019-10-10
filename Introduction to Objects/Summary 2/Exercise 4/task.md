@@ -1,7 +1,5 @@
-This is the markdown document.
+## Summary 2 (#9)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create two functions `va1()` and `va2()` which each take a variable argument
+list of `Int`s. In `va1()`, call `va2()`, passing `va1()`s argument list to
+`va2()`.

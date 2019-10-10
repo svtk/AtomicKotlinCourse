@@ -1,3 +1,4 @@
 ## Extension Functions (#1)
 
-Implement the `wrapInTag` function that wraps a string in a specified xml tag.
+Implement a `wrapInTag()` extension function that wraps a `String` in an XML
+tag specified by the argument. (See Wikipedia for an overview of XML).

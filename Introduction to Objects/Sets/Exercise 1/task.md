@@ -1,10 +1,10 @@
-## Sets (#2)
+## Sets (#1)
 
-Check whether a string has all unique characters.
+Check whether a `String` has all unique characters.
 
 <div class="hint">
 
-Convert a string to a set of characters to check whether
-the size of the resulting set has decreased.
+Convert a `String` to a `Set` of characters and check whether the `Set`
+is smaller than the length of the original `String`.
 
 </div>

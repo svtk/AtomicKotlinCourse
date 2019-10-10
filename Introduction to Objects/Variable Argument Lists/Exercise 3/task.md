@@ -1,11 +1,12 @@
-## `vararg` Arguments (#1)
+## Variable Argument Lists (#3)
 
-Implement the function `listOfChunks()` that takes `vararg` arguments  of
-`String` type and creates a list of lists. All nested lists except the last one
-should have the same size specified as an argument.
+Write a function `listOfChunks()` that takes `vararg` arguments of `String`
+type and creates a `List` of `List`s of characters. `listOfChunks()` first
+argument is the chunk size, and all nested `List`s except the last one will
+have this size.
 
 <div class="hint">
 
-Use the library function `chunked()` on List.
+Use the standard library function `chunked()` on `List`.
 
 </div>

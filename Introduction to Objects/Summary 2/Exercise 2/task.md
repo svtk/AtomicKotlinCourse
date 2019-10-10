@@ -1,7 +1,6 @@
-This is the markdown document.
+## Summary 2 (#7)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create a `BoringHolder2` class that has a constructor argument to set the
+maximum number of `Boring` objects that can be held. Add read-only `size` and
+`full` properties. If the user calls `add()` when it's `full`, throw an
+`IllegalAccessException`. Test `BoringHolder2` using `atomictest`.

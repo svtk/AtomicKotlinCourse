@@ -18,7 +18,7 @@ fun quadraticZeroes(
   val underRadical = b * b - 4 * a * c
   if (underRadical < 0)
     throw IllegalArgumentException(
-      "underRadical is negative")
+      "Negative underRadical: $underRadical")
   val squareRoot = sqrt(underRadical)
   val root1 = (-b - squareRoot) / 2 * a
   val root2 = (-b + squareRoot) / 2 * a
@@ -33,7 +33,7 @@ fun main() {
   capture {
     quadraticZeroes(3.0, 4.0, 5.0)
   } eq "IllegalArgumentException: " +
-    "underRadical is negative"
+    "Negative underRadical: -44.0"
   val roots = quadraticZeroes(3.0, 8.0, 5.0)
   roots.root1 eq -15.0
   roots.root2 eq -9.0

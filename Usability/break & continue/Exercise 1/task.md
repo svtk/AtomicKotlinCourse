@@ -1,7 +1,7 @@
-This is the markdown document.
+## `break` & `continue` (#1)
 
-Write your task text here
+Write a function `trace(val id: Int)` that displays its argument.
 
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+In `main()`, write an infinite loop using `while(true)`. Call `trace(1)` before
+entering the infinite loop and `trace(2)` right after entering. Next call
+break, and `trace(3)` after the close of the infinite loop.

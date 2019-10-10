@@ -1,7 +1,4 @@
-This is the markdown document.
+## Summary 1 (#1)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Demonstrate that semicolons are optional by adding a second `println()`
+statement. Put a semicolon on one `println()` and no semicolon on the other.

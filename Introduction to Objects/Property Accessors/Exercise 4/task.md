@@ -1,13 +1,19 @@
-## Property Accessors (#2)
+## Property Accessors (#4)
 
-Implement a strange property `accesses` which counts how many times this
-property was accessed.  Note that it returns a new value each time.
+Create a class `AccessCounter` containing a property `accesses` which tells how
+many times this property was accessed.
 
 <div class="hint">
 
-Introduce an auxiliary `private` property to store the value and
-increment this value in a getter of the `accesses` property on each access. The
-Kotlin style guide recommends naming such auxiliary property starting with an
-underscore: `_accesses`.
+`accesses` calculates a new value each time it is accessed.
+
+</div>
+
+<div class="hint">
+
+Introduce an auxiliary `private _accesses` property to store the number
+of accesses. For each access, increment `_accesses` in its getter. The Kotlin
+style guide recommends that you name auxiliary properties with a leading
+underscore.
 
 </div>

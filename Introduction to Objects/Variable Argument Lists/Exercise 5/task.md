@@ -1,7 +1,4 @@
-This is the markdown document.
+## Variable Argument Lists (#5)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Install the command-line version of Kotlin, then compile and test the examples
+in the "Command-Line Arguments" section.

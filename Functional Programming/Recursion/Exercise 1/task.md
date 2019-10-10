@@ -1,7 +1,5 @@
-This is the markdown document.
+## Recursion (#1)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Write a function called `simulation()` which takes a `String` called `group`
+and an `Int` called `level`. It displays `"Simulation: $group Reality: level"`,
+then calls itself with `level - 1` as long as `level` is greater than zero.

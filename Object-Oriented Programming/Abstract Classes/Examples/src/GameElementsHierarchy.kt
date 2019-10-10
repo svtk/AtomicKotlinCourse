@@ -1,4 +1,4 @@
-// Abstract/GameElements.kt
+// Abstract/GameElementsHierarchy.kt
 package abstractclasses
 
 import atomictest.eq
@@ -13,7 +13,7 @@ interface GameElement {
 }
 
 abstract class StaticElement(
-  override val sharesCell: Boolean    // [1]    
+  override val sharesCell: Boolean    // [1]
 ) : GameElement {
   override fun playTurn(maze: Maze) {
     // Default implementation: do nothing

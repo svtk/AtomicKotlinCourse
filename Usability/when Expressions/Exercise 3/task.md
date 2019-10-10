@@ -1,13 +1,12 @@
 ## `when` Expressions (#3)
 
-Implement the function `isBalanced` that takes an argument of a string consisting
-of parentheses like `()(())` and checks whether each opening symbol has
-a corresponding closing symbol and the pairs of parentheses are properly
-nested.
+Implement the function `isBalanced()` that takes a `String` argument
+consisting of parentheses like `()(())`. `isBalanced()` checks whether each
+opening symbol has a corresponding closing symbol and if the pairs of
+parentheses are properly nested.
 
-An input string can contain whitespaces which should be ignored.
-If it contains any other characters besides parentheses and whitespaces,
-`IllegalArgumentException` should be thrown.
+Ignore whitespaces in the input string. If it contains any other characters
+besides parentheses and whitespaces, throw `IllegalArgumentException`.
 
 Some examples:
 
@@ -20,7 +19,7 @@ Some examples:
 <div class="hint">
 
 Iterate over the string and count the number of left braces which are
-unmatched on each step. At the end, this number should be 0. If it is less than
-zero at some point, the string is unbalanced.
+unmatched on each step. At the end, this number should be 0. If the number is
+ever less than zero, the string is unbalanced.
 
 </div>

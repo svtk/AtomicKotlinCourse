@@ -3,7 +3,7 @@
 Rewrite the following function by using only one `mapNotNull` call:
 
 ```kotlin
-fun List<Int>.transform(): List<Int> = 
+fun List<Int>.transform(): List<Int> =
     filter { it % 2 == 0 }.map { it * it }
 ```
 

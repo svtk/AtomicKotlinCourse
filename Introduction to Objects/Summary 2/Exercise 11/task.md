@@ -1,7 +1,5 @@
-This is the markdown document.
+## Summary 2 (#3)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create an immutable `List` containing three `Boring` objects from the previous
+exercise. Show that you can't add any more `Boring` objects to the `List`. Now
+create an empty mutable `List` and add three `Boring` objects to the `List`.

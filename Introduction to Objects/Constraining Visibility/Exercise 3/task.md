@@ -3,11 +3,11 @@
 A `Robot` can only move forward. Check that the `steps` argument is a positive
 number. For `right()`, `left()`, `down()` and `up()`, a negative or zero
 `steps` argument should not update the location. Instead it should produce
-console output:
+console output using this string:
 
 ```
-"Incorrect steps argument: $steps; must be positive."
+"steps argument must be positive, is $steps"
 ```
 
-In `main()`, test the steps using positive, negative and zero values of
+In `main()`, test your code using positive, negative and zero values of
 `steps`.

@@ -1,7 +1,4 @@
-This is the markdown document.
+## Testing (#2)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Modify Exercise 1 so that `f()`, `g()` and `h()` are all members of a `class`
+named `Klass`. Notice the slight difference in your test code.

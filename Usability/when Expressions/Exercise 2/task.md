@@ -1,8 +1,8 @@
 ## `when` Expressions (#2)
 
-Create a method `getTemperatureDescription` that takes a temperature in 
-Celsius as an argument and returns the according description 
-("Hot", "Warm", "Cool", "Cold" or "Freezing"):
+Create a function `getTemperatureDescription()` that takes a temperature in
+Celsius as an argument and returns the corresponding description ("Hot",
+"Warm", "Cool", "Cold" or "Freezing"):
 
 | Description     | Temperature      |
 |-----------------|------------------|
@@ -12,4 +12,4 @@ Celsius as an argument and returns the according description
 | Cold            | from -5 to 4 C   |
 | Freezing        | Below -5 C       |
 
-There are no upper or lower bounds on argument.
+There are no upper or lower bounds on the argument.
