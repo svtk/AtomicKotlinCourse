@@ -3,13 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 603
-    length: 131
-    placeholder_text: TODO()
-  - offset: 1333
-    length: 204
+  - offset: 357
+    length: 130
     placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false
 feedback_link: |
-  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Functional+Programming+%2F+Recursion+%2F+Exercise3
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Functional+Programming+%2F+Recursion+%2F+Exercise2

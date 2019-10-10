@@ -1,3 +1,7 @@
-## Recursion (#1)
+This is the markdown document.
 
-Implement `factorial()` using an auxiliary tail recursive function.
+Write your task text here
+
+<div class="hint">
+  Hints can be added anywhere in task text: type "hint" and press Tab.
+</div>

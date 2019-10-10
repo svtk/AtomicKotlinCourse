@@ -2,80 +2,44 @@ package recursion3
 
 import atomictest.eq
 
-class City(val name: String) {
-  val connections = mutableListOf<City>()
-
-  override fun toString() = "($name, " +
-      "connections: ${connections.map { it.name }})"
-}
-
-fun addConnection(first: City, second: City) {
-  first.connections += second
-  second.connections += first
-}
-
-fun City.getAllReachableRecursive(): Set<City> {
-  // stores all the cities reachable from the the given city:
-  val connections = mutableSetOf<City>()
-
-  // add all connections reachable
-  // from 'current' city to 'connections' set
-  fun addConnectionsFrom(current: City) {
-    if (current in connections) return
-    connections += current
-
-    current.connections.forEach {
-      addConnectionsFrom(it)
-    }
+// For comparison
+fun fibonacciRecursive(n: Int): Long {
+  tailrec fun fibonacci(
+      n: Int,
+      current: Long,
+      next: Long
+  ): Long {
+    if (n == 0) return current
+    return fibonacci(
+        n - 1, next, current + next)
   }
 
-  addConnectionsFrom(this)
-  return connections
+  return fibonacci(n, 0L, 1L)
 }
 
-fun City.getAllReachableIterative(): Set<City> {
-  // stores all the cities reachable from the given city
-  val connections = mutableSetOf<City>()
-  // stores all the cities which direct connections are to be analyzed
-  val toBeAnalyzed = mutableSetOf(this)
-
-  // for each 'current' city from 'toBeAnalyzed' set:
-    // unmark it (remove from 'to be analyzed' set)
-    // if it's already in 'connections', do nothing
-    // add it to 'connections'
-    // mark all its connections as 'to be analyzed'
-  while (toBeAnalyzed.isNotEmpty()) {
-    val current = toBeAnalyzed.first()
-
-    toBeAnalyzed.remove(current)
-
-    if (current in connections) continue
-
-    connections += current
-
-    current.connections.forEach {
-      toBeAnalyzed += it
-    }
+fun fibonacciIterative(n: Int): Long {
+  var current = 0L
+  var next = 1L
+  repeat(n) {
+    val new = current + next
+    current = next
+    next = new
   }
-  return connections
+  return current
 }
 
 fun main() {
-  val dublin = City("Dublin")
-  val liverpool = City("Liverpool")
-  val manchester = City("Manchester")
-  val leeds = City("Leeds")
+  (0..8).map { fibonacciRecursive(it) } eq
+      "[0, 1, 1, 2, 3, 5, 8, 13, 21]"
+  fibonacciRecursive(22) eq 17711
+  fibonacciRecursive(50) eq 12586269025
 
-  addConnection(liverpool, manchester)
-  addConnection(manchester, leeds)
+  (0..8).map { fibonacciIterative(it) } eq
+      "[0, 1, 1, 2, 3, 5, 8, 13, 21]"
+  fibonacciIterative(22) eq 17711
+  fibonacciIterative(50) eq 12586269025
 
-  liverpool.getAllReachableRecursive() eq
-      setOf(liverpool, manchester, leeds)
-  dublin.getAllReachableRecursive() eq
-      setOf(dublin)
-
-  liverpool.getAllReachableIterative() eq
-      setOf(liverpool, manchester, leeds)
-  dublin.getAllReachableIterative() eq
-      setOf(dublin)
+  println(fibonacciIterative(17))
+  println(fibonacciIterative(33))
+  println(fibonacciIterative(39))
 }

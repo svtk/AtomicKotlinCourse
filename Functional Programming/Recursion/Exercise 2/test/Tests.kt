@@ -7,29 +7,22 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestPersonsMap {
-  @Test(timeout = TIMEOUT)
-  fun test1Sample() {
-    Assert.assertEquals("Wrong result for sample",
-        "[0, 1, 1, 2, 3, 5, 8, 13, 21]",
-        (0..8).map { fibonacciIterative(it) }.toString())
-    Assert.assertEquals("Wrong result for sample",
-        17711, fibonacciIterative(22))
-    Assert.assertEquals("Wrong result for sample",
-        12586269025, fibonacciIterative(50))
-  }
-
-  private fun checkNumber(n: Int, fib: Long) {
-    Assert.assertEquals("Wrong Fibonacci value for $n",
-        fib, fibonacciIterative(n))
+class TestFactorial {
+  private fun check(number: Long, expected: Long) {
+    Assert.assertEquals("Wrong result for 'factorial($number)'",
+        expected,
+        factorial(number))
   }
 
   @Test(timeout = TIMEOUT)
-  fun test2() = checkNumber(17, 1597)
+  fun test1Sample() = check(3, 6)
 
   @Test(timeout = TIMEOUT)
-  fun test3() = checkNumber(33, 3524578)
+  fun test2Sample() = check(4, 24)
 
   @Test(timeout = TIMEOUT)
-  fun test4() = checkNumber(39, 63245986)
+  fun test3Sample() = check(11, 39916800)
+
+  @Test(timeout = TIMEOUT)
+  fun test4() = check(13, 6227020800)
 }
