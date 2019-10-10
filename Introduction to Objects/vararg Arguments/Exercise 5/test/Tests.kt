@@ -1,4 +1,4 @@
-package varargArguments2
+package varargArguments5
 
 import org.junit.Assert
 import org.junit.Test
