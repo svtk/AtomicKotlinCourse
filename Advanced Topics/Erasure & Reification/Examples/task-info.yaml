@@ -1,6 +1,0 @@
-type: theory
-files:
-- name: src/ErasedTypeEquivalence.kt
-  visible: true
-- name: src/TypeOfT.kt
-  visible: true

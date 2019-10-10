@@ -1,6 +1,0 @@
-type: theory
-files:
-- name: src/javacode/AnnotatedJTool.java
-  visible: true
-- name: src/AnnotatedJava.kt
-  visible: true

@@ -1,8 +1,0 @@
-type: theory
-files:
-- name: src/Name.kt
-  visible: true
-- name: src/Solid.kt
-  visible: true
-- name: src/Info.kt
-  visible: true
