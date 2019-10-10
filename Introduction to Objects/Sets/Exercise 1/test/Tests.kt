@@ -7,60 +7,31 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestGroceryCart {
-  private fun checkPercentage(
-      percentage: Double,
-      groceryCart: Set<String>,
-      percentFunction: (Set<String>) -> Double,
-      functionName: String
-  ) {
-    Assert.assertEquals("$functionName is wrong for $groceryCart", percentage, percentFunction(groceryCart), 0.000000001)
-  }
-
-  private fun checkMeatPercentage(percentage: Double, groceryCart: Set<String>) {
-    checkPercentage(percentage, groceryCart, ::percentMeat, "percentMeat")
-  }
-
-  private fun checkFruitPercentage(percentage: Double, groceryCart: Set<String>) {
-    checkPercentage(percentage, groceryCart, ::percentFruit, "percentFruit")
-  }
-
-  private fun checkVeggiesPercentage(percentage: Double, groceryCart: Set<String>) {
-    checkPercentage(percentage, groceryCart, ::percentVeggies, "percentVeggies")
-  }
-
-  private fun checkOtherPercentage(percentage: Double, groceryCart: Set<String>) {
-    checkPercentage(percentage, groceryCart, ::percentOther, "percentOther")
+class TestUniqueCharacters {
+  private fun checkUniqueCharacters(s: String, isUnique: Boolean) {
+    val message = if (isUnique) {
+      "This string $s has unique characters"
+    } else {
+      "This string $s has not unique characters"
+    }
+    Assert.assertEquals(message, isUnique, hasUniqueCharacters(s))
   }
 
   @Test(timeout = TIMEOUT)
-  fun test1Sample() {
-    val groceryCart = setOf("apple", "pretzels", "bread", "orange", "beef",
-        "beans", "asparagus", "sweet potatoes", "spinach", "carrots")
-
-    checkMeatPercentage(10.0, groceryCart)
-    checkFruitPercentage(20.0, groceryCart)
-    checkVeggiesPercentage(50.0, groceryCart)
-    checkOtherPercentage(20.0, groceryCart)
-  }
+  fun test1OneCharacter() = checkUniqueCharacters("a", true)
 
   @Test(timeout = TIMEOUT)
-  fun test2Trivial() {
-    val groceryCart = setOf("beef", "apple", "beans", "beer")
-
-    checkMeatPercentage(25.0, groceryCart)
-    checkFruitPercentage(25.0, groceryCart)
-    checkVeggiesPercentage(25.0, groceryCart)
-    checkOtherPercentage(25.0, groceryCart)
-  }
+  fun test2TwoCharacters() = checkUniqueCharacters("aa", false)
 
   @Test(timeout = TIMEOUT)
-  fun test3Another() {
-    val groceryCart = setOf("apple", "orange", "kiwi",
-        "sweet potatoes", "asparagus", "spinach", "buckwheat", "condensed milk")
-    checkMeatPercentage(0.0, groceryCart)
-    checkFruitPercentage(37.5, groceryCart)
-    checkVeggiesPercentage(37.5, groceryCart)
-    checkOtherPercentage(25.0, groceryCart)
-  }
+  fun test3Sample() = checkUniqueCharacters("abcd", true)
+
+  @Test(timeout = TIMEOUT)
+  fun test4Sample() = checkUniqueCharacters("abcb", false)
+
+  @Test(timeout = TIMEOUT)
+  fun test5Alphabet() = checkUniqueCharacters(('a'..'z').joinToString(""), true)
+
+  @Test(timeout = TIMEOUT)
+  fun test6Comma() = checkUniqueCharacters(('a'..'c').joinToString(), false)
 }

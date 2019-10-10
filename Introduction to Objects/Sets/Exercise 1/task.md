@@ -1,6 +1,10 @@
-## Sets (#1)
+## Sets (#2)
 
-We declared several categories of products that can be bought in a grocery
-store. Implement functions calculating what percentage of your list is in each
-category, including an "other" category for products that don't match any
-category.
+Check whether a string has all unique characters.
+
+<div class="hint">
+
+Convert a string to a set of characters to check whether
+the size of the resulting set has decreased.
+
+</div>

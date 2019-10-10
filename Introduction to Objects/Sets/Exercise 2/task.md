@@ -1,10 +1,7 @@
-## Sets (#2)
+This is the markdown document.
 
-Check whether a string has all unique characters.
+Write your task text here
 
 <div class="hint">
-
-Convert a string to a set of characters to check whether
-the size of the resulting set has decreased.
-
+  Hints can be added anywhere in task text: type "hint" and press Tab.
 </div>
