@@ -1,4 +1,4 @@
-## Summary 1 (#4)
+## Summary 1 (#13)
 
 Display a table filled with numbers in a form of snake. For rows = 3, columns =
 3 the function `showSnake()` should produce the following:

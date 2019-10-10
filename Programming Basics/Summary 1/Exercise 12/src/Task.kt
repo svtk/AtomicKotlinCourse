@@ -1,4 +1,4 @@
-package summary3
+package summary12
 
 fun printTriangle(n: Int) {
   for (i in 1..n) {

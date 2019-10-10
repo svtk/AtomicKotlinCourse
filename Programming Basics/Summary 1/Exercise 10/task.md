@@ -1,4 +1,4 @@
-## Summary 1 (#1)
+## Summary 1 (#10)
 
 Write a function that uses a `while` loop to count the occurrences of a given
 digit within a decimal number. Place the decimal number in a variable called

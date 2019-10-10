@@ -1,4 +1,4 @@
-package summary1
+package summary10
 
 fun countDigits(number: Int, digit: Int): Int {
   var worker = number
