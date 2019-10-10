@@ -8,17 +8,17 @@ files:
   visible: true
 - name: src/NoStateInInterfaces.kt
   visible: true
+- name: src/Implementations.kt
+  visible: true
+- name: src/WithPropertyAccessor.kt
+  visible: true
 - name: src/NoMultipleInheritance.kt
   visible: true
 - name: src/MultipleInterfaceInheritance.kt
   visible: true
 - name: src/InterfaceCollision.kt
   visible: true
-- name: src/MobileElement.kt
-  visible: true
-- name: src/Implementations.kt
-  visible: true
-- name: src/WithPropertyAccessor.kt
-  visible: true
 - name: src/GameElementsHierarchy.kt
+  visible: true
+- name: src/MobileElement.kt
   visible: true

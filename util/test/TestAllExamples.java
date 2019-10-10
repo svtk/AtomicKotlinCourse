@@ -2327,71 +2327,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testAnnotatedJava() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/AnnotatedJava.kt", nullabilityannotations.AnnotatedJavaKt::main);
-    }
-
-    @Test
-    public void testReadOnlyCollections() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/ReadOnlyCollections.kt", ReadOnlyCollectionsKt::main);
-    }
-
-    @Test
-    public void testPlatformTypes() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/PlatformTypes.kt", PlatformTypesKt::main);
-    }
-
-    @Test
-    public void testKotlinChecked() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/KotlinChecked.kt", KotlinCheckedKt::main);
-    }
-
-    @Test
-    public void testHiddenArrayList() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/HiddenArrayList.kt", HiddenArrayListKt::main);
-    }
-
-    @Test
-    public void testBigFibonacci() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/BigFibonacci.kt", adaptingjava.BigFibonacciKt::main);
-    }
-
-    @Test
-    public void testExtensionsToJavaClass() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/ExtensionsToJavaClass.kt", fromkotlin.ExtensionsToJavaClassKt::main);
-    }
-
-    @Test
-    public void testWithCleanup() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/WithCleanup.kt", withfunction.WithCleanupKt::main);
-    }
-
-    @Test
-    public void testJavaList() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/JavaList.kt", JavaListKt::main);
-    }
-
-    @Test
-    public void testUseBeanClass() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/UseBeanClass.kt", UseBeanClassKt::main);
-    }
-
-    @Test
-    public void testRandom() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/Random.kt", RandomKt::main);
-    }
-
-    @Test
-    public void testNPEOnPlatformType() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix B: Java Interoperability/Examples/src/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
-    }
-
-    @Test
-    public void testModule2() {
-        testExample("../AtomicKotlinCourse/Power Tools/Appendix C: Modules and the internal Keyword/Examples/src/Module2.kt", module2.Module2Kt::main);
-    }
-
-    @Test
     public void testTask() {
         testExample("../AtomicKotlinCourse/Programming Basics/Hello, World!/Exercise 1/src/Task.kt", helloWorld1.TaskKt::main);
     }
@@ -2423,7 +2358,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testCcc() {
-        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 2/src/ccc.kt", cccKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 2/src/ccc.kt", CccKt::main);
     }
 
     @Test
@@ -2743,7 +2678,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testCcc1() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Exercise 2/src/ccc.kt", ccc.cccKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Exercise 2/src/ccc.kt", ccc.CccKt::main);
     }
 
     @Test

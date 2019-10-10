@@ -26,6 +26,8 @@ files:
   visible: true
 - name: src/Quadratic.kt
   visible: true
+- name: src/ReadonlyVsMutableList.kt
+  visible: true
 - name: src/MultipleListReferences.kt
   visible: true
 - name: src/ListOfStrings.kt
@@ -41,8 +43,6 @@ files:
 - name: src/ASCIIMap.kt
   visible: true
 - name: src/PropertyReadWrite.kt
-  visible: true
-- name: src/ReadonlyVsMutableList.kt
   visible: true
 - name: src/GetterAndSetter.kt
   visible: true

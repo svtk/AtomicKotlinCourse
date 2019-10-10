@@ -1,5 +1,7 @@
 type: theory
 files:
+- name: src/QuadraticRequire.kt
+  visible: true
 - name: src/LocalFile.kt
   visible: true
 - name: src/GetTrace.kt
@@ -9,6 +11,4 @@ files:
 - name: src/RequireNotNull.kt
   visible: true
 - name: src/Postconditions.kt
-  visible: true
-- name: src/QuadraticRequire.kt
   visible: true
