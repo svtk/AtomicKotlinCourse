@@ -4,11 +4,11 @@ content:
 - Properties
 - Constructors
 - Constraining Visibility
-- Imports & Packages
+- Packages
 - Testing
 - Exceptions
 - Lists
-- vararg Arguments
+- Variable Argument Lists
 - Sets
 - Maps
 - Property Accessors
