@@ -1,10 +1,7 @@
-## Named & Default Arguments (#1)
+This is the markdown document.
 
-Define a class `SimpleTime` that stores the time passed from the beginning 
-of the day. 
-It should take four arguments: hours, minutes, seconds and nanoseconds,
-where each argument has the default value of zero.
+Write your task text here
 
-Implement two member functions: `toSecondOfDay` and `toNanoOfDay`
-returning the number of seconds and nanoseconds accordingly 
-passed from the beginning of the day.
+<div class="hint">
+  Hints can be added anywhere in task text: type "hint" and press Tab.
+</div>
