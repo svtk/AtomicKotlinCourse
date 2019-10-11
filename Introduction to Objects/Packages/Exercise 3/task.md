@@ -1,7 +1,7 @@
 ## Packages (#3)
 
 Create a class `EquilateralTriangle` as part of the `package pythagorean`.
-`EquilateralTriangle` should take a constructor argument `side: Double`. Define
+`EquilateralTriangle` should take a constructor parameter `side: Double`. Define
 a member function `area()` which calculates the triangle area using the formula
 `sqrt(3.0) / 4 * side * side`.
 

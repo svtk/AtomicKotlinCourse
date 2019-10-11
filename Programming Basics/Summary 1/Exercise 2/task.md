@@ -1,3 +1,4 @@
-## Summary 1 (#6)
+## Summary 1 (#2)
 
-Modify `Overflow.kt` so it tests `Long` and `Double` in the same way.
+Define `var x = 1`. Now define `val y = x` and `val z = y`. Modify `x` and
+display all three.

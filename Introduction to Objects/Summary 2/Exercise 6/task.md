@@ -1,7 +1,6 @@
-This is the markdown document.
+## Summary 2 (#6)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create a class called `BoringHolder` which has a property `List<Boring>`. Make
+the setter for this property `private`. Make the getter return a copy of the
+`List`. Include an `add()` member function that appends its argument to the
+`List`. Test `BoringHolder` using `atomictest`.

@@ -1,7 +1,5 @@
-This is the markdown document.
+## Summary 1 (#7)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Modify `While.kt` to replace the call to `testCondition()` with an inline `++`
+increment (remove the increment in the `while` body) and a `Boolean` test,
+producing the same output.

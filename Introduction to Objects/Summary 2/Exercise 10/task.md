@@ -1,5 +1,4 @@
-## Summary 2 (#2)
+## Summary 2 (#10)
 
-Create a class named `Boring` with three member functions: `a()` returns
-`1.618`, `b()` returns "ratio", and `c()` returns `11`. Test `Boring` using
-`atomictest`.
+Modify Exercise 8 to create `MapSet`, where the property is a `Map` of `Set`.
+Perform the rest of Exercise 8 unchanged.

@@ -1,4 +1,4 @@
-## Summary 2 (#10)
+## Summary 2 (#5)
 
-Modify Exercise 8 to create `MapSet`, where the property is a `Map` of `Set`.
-Perform the rest of Exercise 8 unchanged.
+Show that the constructor parameters for `Boring2` become `public` properties.
+In a new version called `Boring3`, make those properties `private`.

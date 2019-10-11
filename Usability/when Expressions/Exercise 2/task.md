@@ -1,7 +1,7 @@
 ## `when` Expressions (#2)
 
 Create a function `getTemperatureDescription()` that takes a temperature in
-Celsius as an argument and returns the corresponding description ("Hot",
+Celsius as a parameter and returns the corresponding description ("Hot",
 "Warm", "Cool", "Cold" or "Freezing"):
 
 | Description     | Temperature      |

@@ -1,6 +1,6 @@
 ## Exceptions (#3)
 
-Implement a function named `repeatChar()` that takes arguments `c` (the
+Implement a function named `repeatChar()` that takes parameters `c` (the
 character to be repeated) and `n` (the number of times to repeat it) and
 returns a `String` consisting of `c` repeated `n` times. The function throws an
 `IllegalArgumentException` if the caller asks to repeat a character a negative

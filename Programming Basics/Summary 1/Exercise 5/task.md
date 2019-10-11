@@ -1,5 +1,6 @@
-## Summary 1 (#9)
+## Summary 1 (#5)
 
-Write a function `testRange(d: Double)` which determines whether `d` is between
-`25.0` and `40.0`. Write a function `testBlock(c: Char)` which determines
-whether `c` is present in `textBlock` from the previous exercise.
+Modify `first()` and `second()` from the previous exercise so they produce
+`String` results using a `String` template, substituting the values of the
+parameters and showing the result by calculating an expression within the
+template. Test them using the same arguments from the table above.

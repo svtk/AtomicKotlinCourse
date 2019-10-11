@@ -1,5 +1,4 @@
-## Summary 1 (#7)
+## Summary 1 (#3)
 
-Modify `While.kt` to replace the call to `testCondition()` with an inline `++`
-increment (remove the increment in the `while` body) and a `Boolean` test,
-producing the same output.
+Create a function `other()` that takes a `String` parameter and returns a
+`String` containing every other letter of the parameter.

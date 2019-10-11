@@ -2,4 +2,4 @@
 
 We continue developing the `Robot` class from the exercises in the previous
 atom. Convert `fieldSize` and the initial coordinates into `Robot` constructor
-arguments. Verify that the previous `main()` tests still work.
+parameters. Verify that the previous `main()` tests still work.

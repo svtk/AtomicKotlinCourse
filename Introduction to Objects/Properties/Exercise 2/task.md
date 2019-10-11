@@ -14,6 +14,6 @@ Moving right increases the `x` coordinate, moving down increases the `y`
 coordinate, while moving left and up decrease the `x` and `y` coordinates.
 
 Create the member functions `right()`, `left()`, `up()` and `down()`, each of
-which takes a `steps` argument. Create another member function `getLocation()`
+which takes a `steps` parameter. Create another member function `getLocation()`
 that returns the coordinates as a string `(x, y)`. Write a `main()` to test
 `Robot`.
