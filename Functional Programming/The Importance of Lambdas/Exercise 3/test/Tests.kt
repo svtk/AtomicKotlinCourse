@@ -1,4 +1,4 @@
-package summary3
+package theImportanceofLambdas3
 
 import org.junit.Assert
 import org.junit.Test
