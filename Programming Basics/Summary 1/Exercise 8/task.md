@@ -1,5 +1,5 @@
 ## Summary 1 (#8)
 
-Display every fifth number in the range from zero to one hundred. The solution
-provides `textBlock`, a triple-quoted block of text---display every fifth
-non-whitespace character in that text.
+Implement the function `everyFifth` which should display every fifth number
+in the given range. For instance, `everyFifth(11, 30)` should display the
+numbers `15`, `20`, `25`, and `30`.
