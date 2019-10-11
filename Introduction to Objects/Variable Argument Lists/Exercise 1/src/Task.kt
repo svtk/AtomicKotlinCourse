@@ -1,1 +1,5 @@
-// type your solution here
+package variableArgumentLists1
+
+fun main() {
+  println("Multiple vararg-parameters are prohibited")
+}

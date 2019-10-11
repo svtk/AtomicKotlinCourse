@@ -1,11 +1,15 @@
-package varargArguments1
+package variableArgumentLists1
 
 import org.junit.Assert
 import org.junit.Test
+import util.runAndGetSystemOutput
 
-class Test {
-    @Test fun testSolution() {
-        //TODO: implement your test here
-        Assert.assertTrue("Tests not implemented for the task", false)
+class TestVarargs1 {
+    @Test fun testMessageInOutput() {
+        val output = runAndGetSystemOutput {
+            main()
+        }
+        val message = "Multiple vararg-parameters are prohibited"
+        Assert.assertTrue("The output should contain '$message'.\nWas: $output", message in output)
     }
 }
