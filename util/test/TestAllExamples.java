@@ -2838,7 +2838,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask99() {
-        testExample("../AtomicKotlinCourse/Usability/Overloading/Exercise 2/src/Task.kt", overloading2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Overloading/Exercise 4/src/Task.kt", overloading4.TaskKt::main);
     }
 
     @Test
