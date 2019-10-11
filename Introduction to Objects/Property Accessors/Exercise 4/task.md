@@ -7,7 +7,11 @@ many times this property was accessed.
 
 `accesses` calculates a new value each time it is accessed.
 
-HINT: Introduce an auxiliary `private _accesses` property to store the number
+</div>
+
+<div class="hint">
+
+Introduce an auxiliary `private _accesses` property to store the number
 of accesses. For each access, increment `_accesses` in its getter. The Kotlin
 style guide recommends that you name auxiliary properties with a leading
 underscore.

@@ -10,7 +10,7 @@ import util.TIMEOUT
 class TestNumberOfAccesses {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
-    val strange = Strange()
+    val strange = AccessCounter()
     Assert.assertEquals("'strange.accesses' should increment the value on each access",
         listOf(1, 2, 3),
         listOf(strange.accesses, strange.accesses, strange.accesses))
@@ -18,7 +18,7 @@ class TestNumberOfAccesses {
 
   @Test(timeout = TIMEOUT)
   fun test2More() {
-    val strange = Strange()
+    val strange = AccessCounter()
     Assert.assertEquals("'strange.accesses' should increment the value on each access",
         listOf(1, 2, 3, 4, 5, 6),
         listOf(strange.accesses, strange.accesses, strange.accesses,
@@ -26,7 +26,7 @@ class TestNumberOfAccesses {
   }
 
   private fun checkRepeat(n: Int) {
-    val strange = Strange()
+    val strange = AccessCounter()
     repeat(n) {
       strange.accesses
     }

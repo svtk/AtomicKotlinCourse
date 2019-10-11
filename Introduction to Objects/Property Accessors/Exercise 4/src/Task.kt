@@ -2,7 +2,7 @@ package propertyAccessors4
 
 import atomictest.eq
 
-class Strange {
+class AccessCounter {
   private var _accesses = 0
 
   val accesses: Int
@@ -10,12 +10,12 @@ class Strange {
 }
 
 fun main() {
-  val strange = Strange()
+  val strange = AccessCounter()
   strange.accesses eq 1
   strange.accesses eq 2
   strange.accesses eq 3
 
-  val strange2 = Strange()
+  val strange2 = AccessCounter()
   repeat(10) {
     strange2.accesses
   }
