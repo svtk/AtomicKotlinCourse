@@ -1,3 +1,4 @@
+import atomictest.ERROR_TAG
 import org.junit.Assert
 import util.LINE_SEPARATOR
 import util.normalizeLineSeparators
@@ -67,6 +68,6 @@ abstract class AbstractTestExamples {
 
   private fun testNoErrors(main: Consumer<Array<String>>) {
     val output = runAndGetOutput(main)
-    Assert.assertFalse("Program completed with errors:\n$output", output.contains("[Error]:"))
+    Assert.assertFalse("Program completed with errors:\n$output", output.contains(ERROR_TAG))
   }
 }
