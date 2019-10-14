@@ -97,3 +97,7 @@ fun loadToplevelFunction(fileFacade: KFileFacade, functionName: String): Method 
 fun loadToplevelPropertyGetter(fileFacade: KFileFacade, propertyName: String): Method {
   return loadToplevelMember(fileFacade, propertyName, true)
 }
+
+fun untestable() {
+  Assert.assertTrue("No tests: tests always pass", true)
+}
