@@ -12,11 +12,11 @@ files:
   visible: true
 - name: src/XYZFlatMap.kt
   visible: true
-- name: src/ImmutableBlendMap.kt
-  visible: true
-- name: src/ImmutableBlendMap2.kt
-  visible: true
-- name: src/ImmutableBlendMap3.kt
-  visible: true
 - name: src/DataClassCopy.kt
+  visible: true
+- name: src/ReadOnlyBlendMap.kt
+  visible: true
+- name: src/ReadOnlyBlendMap2.kt
+  visible: true
+- name: src/ReadOnlyBlendMap3.kt
   visible: true

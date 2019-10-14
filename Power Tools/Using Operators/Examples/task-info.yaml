@@ -6,8 +6,6 @@ files:
   visible: true
 - name: src/Unexpected.kt
   visible: true
-- name: src/ImmutableAndPlus.kt
-  visible: true
 - name: src/CompareTo.kt
   visible: true
 - name: src/DestructuringDuo.kt
@@ -15,4 +13,6 @@ files:
 - name: src/DestructuringMap.kt
   visible: true
 - name: src/DestructuringData.kt
+  visible: true
+- name: src/ReadOnlyAndPlus.kt
   visible: true

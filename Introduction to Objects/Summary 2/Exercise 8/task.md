@@ -1,5 +1,7 @@
 ## Summary 2 (#8)
 
+{{ :UNTESTABLE Don't really understand what solution is expected here. }}
+
 Create a class `MapList` containing a property which is a `Map` of `List`s
 containing `String`s. The keys for the `Map` are also `String`s. The solution
 provides a function `initialize()` which, every time you call it, returns a

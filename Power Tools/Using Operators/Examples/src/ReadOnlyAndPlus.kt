@@ -1,4 +1,4 @@
-// UsingOperators/ImmutableAndPlus.kt
+// UsingOperators/ReadOnlyAndPlus.kt
 import atomictest.eq
 
 fun main() {

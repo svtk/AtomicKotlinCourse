@@ -1,6 +1,6 @@
 ## Summary 1 (#7)
 
-{{ :UNTESTABLE (to some extent) 
+{{ :UNTESTABLE (to some extent)
 Don't really understand what solution is expected. Also, the current test
 passes even without any changes: I can only test the produced output (which
 doesn't change) }}

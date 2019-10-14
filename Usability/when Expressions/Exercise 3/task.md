@@ -1,6 +1,6 @@
 ## `when` Expressions (#3)
 
-Implement the function `isBalanced()` that takes a `String` argument
+Implement the function `isBalanced()` that takes a `String` parameter
 consisting of parentheses like `()(())`. `isBalanced()` checks whether each
 opening symbol has a corresponding closing symbol and if the pairs of
 parentheses are properly nested.

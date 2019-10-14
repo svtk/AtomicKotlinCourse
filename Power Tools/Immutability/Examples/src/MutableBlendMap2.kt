@@ -11,7 +11,7 @@ class BlendMap {
     for(a in Color.values())
       for(b in Color.values())
         map[a to b] = colorblend.blend(a, b)
-    imap = map.toMap()  // Immutable Map
+    imap = map.toMap()  // Read-only Map
   }
   fun blend(a: Color, b: Color) = imap[a to b]
 }

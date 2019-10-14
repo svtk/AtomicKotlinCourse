@@ -1,5 +1,5 @@
-// Immutability/ImmutableBlendMap3.kt
-package immutableblendmap3
+// Immutability/ReadOnlyBlendMap3.kt
+package readonlyblendmap3
 import paintcolors.Color
 
 class BlendMap {

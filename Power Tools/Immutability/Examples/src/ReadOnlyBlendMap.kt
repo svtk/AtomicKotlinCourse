@@ -1,10 +1,12 @@
-// Immutability/ImmutableBlendMap2.kt
-package immutableblendmap2
+// Immutability/ReadOnlyBlendMap.kt
+package readonlyblendmap
 import paintcolors.Color
 
-val blendMap = Color.values().flatMap {
+val combinations = Color.values().flatMap {
   a -> Color.values().map { b -> a to b }
-}.map {
+}
+
+val blendMap = combinations.map {
   it to colorblend.blend(it.first, it.second)
 }.toMap()
 
