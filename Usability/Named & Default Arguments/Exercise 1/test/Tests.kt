@@ -2,27 +2,21 @@ package nameAndDefaultArguments1
 
 import org.junit.Assert
 import org.junit.Test
-import kotlin.reflect.KParameter
+import util.checkParameters
 
 class TestRectangle {
   @Test
   fun testBuildingClass() {
     val rectangleClass = Rectangle::class
     val constructor = rectangleClass.constructors.first()
-    val parameters = constructor.parameters
-    Assert.assertEquals("Expected 3 parameters for 'Rectangle' constructor", 3, parameters.size)
 
-    fun checkParameter(ordinal: String, name: String, type: String, param: KParameter) {
-      Assert.assertEquals("Expected the $ordinal parameter named '$name'",
-        name, param.name)
-      Assert.assertEquals("Expected the parameter '$name' of type '$type'",
-        type, param.type.toString())
-    }
-    val (side1, side2, color) = parameters
-    checkParameter("first", "side1", "kotlin.Double", side1)
-    checkParameter("second", "side2", "kotlin.Double", side2)
-    checkParameter("third", "color", "kotlin.String", color)
+    checkParameters(constructor, mapOf(
+      "side1" to "kotlin.Double",
+      "side2" to "kotlin.Double",
+      "color" to "kotlin.String"
+    ), "'Rectangle' constructor")
 
+    val (side1, side2, color) = constructor.parameters
     fun testValues(map: Map<String, Any>) {
       val paramMap = map.mapKeys { (paramName, _) ->
         when (paramName) {

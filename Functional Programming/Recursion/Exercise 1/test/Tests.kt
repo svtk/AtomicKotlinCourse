@@ -1,11 +1,30 @@
 package recursion1
 
-import org.junit.Assert
 import org.junit.Test
+import util.checkParameters
+import util.runAndCheckSystemOutput
 
-class Test {
-    @Test fun testSolution() {
-        //TODO: implement your test here
-        Assert.assertTrue("Tests not implemented for the task", false)
+class TestRecursion {
+  private fun expectedOutput(group: String, n: Int) = buildString {
+    (n downTo 0).forEach {
+      appendln("Simulation: $group Reality: $it")
     }
+  }
+
+  @Test
+  fun test() {
+    testSimulation("FOO", 8)
+    testSimulation("bar", 13)
+    testSimulation("bar", 0)
+  }
+
+  private fun testSimulation(group: String, level: Int) {
+    val simulationFunction = ::simulation
+    checkParameters(simulationFunction, mapOf("group" to "kotlin.String", "level" to "kotlin.Int"))
+
+    runAndCheckSystemOutput("Wrong result for 'simulation(\"$group\", $level)'",
+      expectedOutput(group, level)) {
+      simulationFunction.call(group, level)
+    }
+  }
 }

@@ -6,6 +6,7 @@ import java.io.PrintStream
 import java.lang.reflect.Method
 import kotlin.reflect.KClass
 import kotlin.reflect.KFunction
+import kotlin.reflect.KParameter
 import kotlin.reflect.KProperty
 import kotlin.reflect.full.memberFunctions
 import kotlin.reflect.full.memberProperties
@@ -89,6 +90,38 @@ private fun loadToplevelMember(fileFacade: KFileFacade, memberName: String, isGe
     error()
   }
 }
+
+fun checkParameters(
+  function: KFunction<*>,
+  params: Map<String, String>,
+  funcName: String = "function '${function.name}'"
+) {
+  Assert.assertEquals("${funcName.capitalize()} is expected to have ${params.size} parameters",
+    params.size, function.parameters.size)
+
+  val expectedParams = params.toList()
+  function.parameters.forEachIndexed { index, kParameter ->
+    val (name, type) = expectedParams[index]
+
+    checkParameter(index, name, type, kParameter, funcName)
+  }
+}
+
+private fun checkParameter(index: Int, name: String, type: String, param: KParameter, funcName: String) {
+  val ordinal = when (index) {
+    0 -> "first"
+    1 -> "second"
+    2 -> "third"
+    3 -> "forth"
+    5 -> "fifth"
+    else -> "$index"
+  }
+  Assert.assertEquals("Expected the $ordinal parameter named '$name' for ${funcName.decapitalize()}",
+    name, param.name)
+  Assert.assertEquals("Expected the parameter '$name' of type '$type' for ${funcName.decapitalize()}",
+    type, param.type.toString())
+}
+
 
 fun loadToplevelFunction(fileFacade: KFileFacade, functionName: String): Method {
   return loadToplevelMember(fileFacade, functionName, false)
