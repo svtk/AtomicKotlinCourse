@@ -4,3 +4,7 @@ files:
   visible: false
 - name: src/ccc.kt
   visible: true
+  placeholders:
+  - offset: 13
+    length: 35
+    placeholder_text: // TODO

@@ -2,5 +2,17 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 21
+    length: 142
+    placeholder_text: |-
+      fun erroneousCode() {
+        // Uncomment this line to get an exception:
+        // val i = "1$".toInt()        // [1]
+      }
+
+      fun main() {
+        erroneousCode()
+      }
 - name: test/Tests.kt
   visible: false

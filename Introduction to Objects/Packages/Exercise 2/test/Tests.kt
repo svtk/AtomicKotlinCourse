@@ -1,9 +1,9 @@
 package importsandPackages2
 
-import org.junit.Assert
 import org.junit.Test
+import util.untestable
 
-class TestCcc {
-    @Test fun test() {
-    }
+class Test {
+    @Test
+    fun test() = untestable()
 }
