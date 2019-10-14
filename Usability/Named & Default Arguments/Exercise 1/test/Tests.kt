@@ -10,7 +10,7 @@ class TestRectangle {
     val rectangleClass = Rectangle::class
     val constructor = rectangleClass.constructors.first()
 
-    checkParameters(constructor, mapOf(
+    checkParameters(constructor, listOf(
       "side1" to "kotlin.Double",
       "side2" to "kotlin.Double",
       "color" to "kotlin.String"

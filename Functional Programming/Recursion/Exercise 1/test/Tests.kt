@@ -20,7 +20,7 @@ class TestRecursion {
 
   private fun testSimulation(group: String, level: Int) {
     val simulationFunction = ::simulation
-    checkParameters(simulationFunction, mapOf("group" to "kotlin.String", "level" to "kotlin.Int"))
+    checkParameters(simulationFunction, listOf("group" to "kotlin.String", "level" to "kotlin.Int"))
 
     runAndCheckSystemOutput("Wrong result for 'simulation(\"$group\", $level)'",
       expectedOutput(group, level)) {

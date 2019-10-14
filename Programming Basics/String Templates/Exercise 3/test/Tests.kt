@@ -1,6 +1,7 @@
 import org.junit.Assert
 import org.junit.Test
 import stringTemplates3.show
+import util.checkParameters
 import util.runAndCheckSystemOutput
 import kotlin.reflect.KFunction
 import kotlin.reflect.KParameter
@@ -9,13 +10,12 @@ class TestShowFunction {
   @Test
   fun testShow() {
     val showMethod = ::show
-    Assert.assertEquals("'show' method should have 4 parameters", 4, showMethod.parameters.size)
-    val (i, s, c, d) = showMethod.parameters
-    checkParameter(i, "i", "kotlin.Int")
-    checkParameter(s, "s", "kotlin.String")
-    checkParameter(c, "c", "kotlin.Char")
-    checkParameter(d, "d", "kotlin.Double")
-
+    checkParameters(showMethod, listOf(
+      "i" to "kotlin.Int",
+      "s" to "kotlin.String",
+      "c" to "kotlin.Char",
+      "d" to "kotlin.Double"
+    ))
     testArguments(showMethod, 1, "abc", 'd', 2.0)
     testArguments(showMethod, 193, "string", '&', -7.51)
   }

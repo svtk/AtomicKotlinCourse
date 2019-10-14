@@ -8,7 +8,7 @@ fun show(i: Int, s: String, c: Char, d: Double) {
 }
 
 fun main() {
-  show(1, "abc", 'd', 2.0)
+//  show(1, "abc", 'd', 2.0)
 }
 /* Expected output:
 i: 1

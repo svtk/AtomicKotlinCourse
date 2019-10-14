@@ -9,7 +9,7 @@ fun displayContent(s: String) {
 }
 
 fun main() {
-  displayContent("abc")
+//  displayContent("abc")
 }
 /* Expected output:
 a

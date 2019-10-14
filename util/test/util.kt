@@ -93,10 +93,10 @@ private fun loadToplevelMember(fileFacade: KFileFacade, memberName: String, isGe
 
 fun checkParameters(
   function: KFunction<*>,
-  params: Map<String, String>,
+  params: List<Pair<String, String>>,
   funcName: String = "function '${function.name}'"
 ) {
-  Assert.assertEquals("${funcName.capitalize()} is expected to have ${params.size} parameters",
+  Assert.assertEquals("${funcName.capitalize()} is expected to have ${params.size} parameter(s)",
     params.size, function.parameters.size)
 
   val expectedParams = params.toList()
@@ -116,10 +116,16 @@ private fun checkParameter(index: Int, name: String, type: String, param: KParam
     5 -> "fifth"
     else -> "$index"
   }
-  Assert.assertEquals("Expected the $ordinal parameter named '$name' for ${funcName.decapitalize()}",
-    name, param.name)
-  Assert.assertEquals("Expected the parameter '$name' of type '$type' for ${funcName.decapitalize()}",
-    type, param.type.toString())
+  if (name.isNotEmpty()) {
+    Assert.assertEquals("Expected the $ordinal parameter named '$name' for ${funcName.decapitalize()}",
+      name, param.name)
+    Assert.assertEquals("Expected the parameter '$name' of type '$type' for ${funcName.decapitalize()}",
+      type, param.type.toString())
+  }
+  else {
+    Assert.assertEquals("Expected the $ordinal parameter of type '$type' for ${funcName.decapitalize()}",
+      type, param.type.toString())
+  }
 }
 
 
