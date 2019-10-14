@@ -1,7 +1,8 @@
-This is the markdown document.
+## Expressions & Statements (#3)
 
-Write your task text here
+Write a function `n()` which multiplies its two `Int` parameters and returns
+the result. Combine it with `g()` as follows:
 
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+```kotlin
+val r = n(n(g(1, 1), g(2, 2)), g(3, 3))
+```

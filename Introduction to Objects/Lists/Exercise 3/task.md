@@ -1,6 +1,6 @@
 ## Lists (#3)
 
-{{ :UNTESTABLE }}
+{{ :UNTESTABLE Can't test "show"; no specific output/result is expected }}
 
 In `MultipleListRefs.kt`, remove the type declaration on `second` (that is, use
 type inference) and show that the result can be mutated.

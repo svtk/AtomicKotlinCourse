@@ -1,9 +1,8 @@
-import org.junit.Assert
+package expressionsAndStatements4
+
 import org.junit.Test
+import util.untestable
 
 class Test {
-    @Test fun testSolution() {
-        //TODO: implement your test here
-        Assert.assertTrue("Tests not implemented for the task", false)
-    }
+    @Test fun test() = untestable()
 }

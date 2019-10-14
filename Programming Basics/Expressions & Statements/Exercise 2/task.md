@@ -1,7 +1,9 @@
-This is the markdown document.
+## Expressions & Statements (#2)
 
-Write your task text here
+Write three functions:
 
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+- `f()` calls `println()` to display `"f()"`
+- `g()` takes two `Int` parameters and returns the sum.
+- `h()` takes two `String` parameters and returns them, concatenated.
+
+Assign the result of each function to a `val`, and specify the type.

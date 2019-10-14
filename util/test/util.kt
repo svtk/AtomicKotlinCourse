@@ -122,7 +122,9 @@ private fun checkParameter(index: Int, name: String, type: String, param: KParam
     Assert.assertEquals("Expected the parameter '$name' of type '$type' for ${funcName.decapitalize()}",
       type, param.type.toString())
   }
-  else {
+  // type is empty for first parameter of member functions, where class instance is passes at first
+  // this case isn't tested explicitly to avoid mysterious messages for students
+  else if (type.isNotEmpty()) {
     Assert.assertEquals("Expected the $ordinal parameter of type '$type' for ${funcName.decapitalize()}",
       type, param.type.toString())
   }
@@ -139,4 +141,12 @@ fun loadToplevelPropertyGetter(fileFacade: KFileFacade, propertyName: String): M
 
 fun untestable() {
   Assert.assertTrue("No tests: tests always pass", true)
+}
+
+inline fun checkMainIsImplemented(main: () -> Unit) {
+  try {
+    main()
+  } catch (e: NotImplementedError) {
+    throw AssertionError("The 'main' function is not implemented")
+  }
 }

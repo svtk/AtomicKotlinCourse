@@ -4,5 +4,13 @@ files:
   visible: false
 - name: src/bbb.kt
   visible: true
+  placeholders:
+  - offset: 13
+    length: 58
+    placeholder_text: // TODO
 - name: src/aaa.kt
   visible: true
+  placeholders:
+  - offset: 13
+    length: 79
+    placeholder_text: // TODO
