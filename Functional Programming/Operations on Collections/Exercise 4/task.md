@@ -6,3 +6,6 @@ the other to implement the same functionality. Implement the functions
 `allNonZero()` checks that all the elements in the list are non-zero;
 `hasZero()` checks that the list contains `zero` element. The implementations
 using `all()` are given in the solution.
+
+Note that you can add negation if necessary before the `all`, `none` or `any`
+function invocation.
