@@ -4,7 +4,10 @@ files:
   visible: true
   placeholders:
   - offset: 20
-    length: 235
+    length: 24
+    placeholder_text: // TODO
+  - offset: 61
+    length: 192
     placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false

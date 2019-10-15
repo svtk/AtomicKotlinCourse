@@ -6,5 +6,8 @@ files:
   visible: true
   placeholders:
   - offset: 13
-    length: 35
+    length: 12
+    placeholder_text: // TODO
+  - offset: 42
+    length: 4
     placeholder_text: // TODO
