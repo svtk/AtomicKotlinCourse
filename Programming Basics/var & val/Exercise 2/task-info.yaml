@@ -1,4 +1,4 @@
-type: edu
+type: output
 files:
 - name: test/output.txt
   visible: false
