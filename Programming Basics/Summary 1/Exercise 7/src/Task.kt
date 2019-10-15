@@ -10,6 +10,6 @@ fun main() {
     }
   }
 }
-/* Expected output:
+/* Output:
 ..........
 */

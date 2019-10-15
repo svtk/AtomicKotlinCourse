@@ -13,7 +13,7 @@ fun everyFifthNonWhitespace(s: String) {
 fun main() {
   everyFifthNonWhitespace("abc d e fgh ik")
 }
-/* Expected output:
+/* Output:
 e
 k
 */

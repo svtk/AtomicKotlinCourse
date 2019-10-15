@@ -15,6 +15,6 @@ fun other(s: String): String {
 fun main() {
   println(other("cement"))
 }
-/* Expected output:
+/* Output:
 cmn
 */

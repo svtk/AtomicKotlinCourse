@@ -13,6 +13,6 @@ fun main() {
   val human = Human("Rick", 70)
   println(human)
 }
-/* Expected output:
+/* Output:
 Human(name='Rick', age=70)
 */

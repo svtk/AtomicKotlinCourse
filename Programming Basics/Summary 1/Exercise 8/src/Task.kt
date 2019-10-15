@@ -11,7 +11,7 @@ fun everyFifth(start: Int, end: Int) {
 fun main() {
   everyFifth(11, 30)
 }
-/* Expected output:
+/* Output:
 15
 20
 25
