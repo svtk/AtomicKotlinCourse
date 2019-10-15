@@ -1,6 +1,6 @@
 ## Variable Argument Lists (#2)
 
-{{ :UNTESTABLE }}
+{{ :UNTESTABLE No specific result / output is expected }}
 
 Write a function `first()` with a `vararg` parameter of `Int` as the *first*
 parameter, and a `String` as the second parameter. Test it with three

@@ -1,6 +1,6 @@
 ## Summary 2 (#1)
 
-{{ :UNTESTABLE }}
+{{ :UNTESTABLE No names are given, no output or result is expected }}
 
 Create three packages in three different files, but in the same directory.
 Define a top-level function and a class in each file. Put `main()` in a fourth

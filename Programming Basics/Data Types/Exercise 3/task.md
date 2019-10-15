@@ -1,6 +1,6 @@
 ## Data Types (#3)
 
-{{ :UNTESTABLE }}
+{{ :UNTESTABLE No specific output is expected }}
 
 Attempt to combine the various `val`s defined in `Types.kt` using the `+`
 operator. Only combine two at a time, and assign each combination to a `val`

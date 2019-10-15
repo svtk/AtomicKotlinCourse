@@ -1,6 +1,6 @@
 ## `break` & `continue` (#2)
 
-{{ UNTESTABLE: There's no expected output which can be tested }}
+{{ :UNTESTABLE: There's no expected output which can be tested }}
 
 In `main()`, write a labeled `for` loop that counts down from six to zero,
 using `label1` as the name of the loop. If the loop counter is four,
