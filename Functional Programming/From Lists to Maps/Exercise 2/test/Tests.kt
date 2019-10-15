@@ -1,4 +1,4 @@
-package fromListstoMaps02
+package fromListsToMaps2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

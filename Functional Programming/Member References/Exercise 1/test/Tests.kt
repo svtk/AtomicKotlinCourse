@@ -1,4 +1,4 @@
-package memberReferences01
+package memberReferences1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

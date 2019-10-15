@@ -1,3 +1,5 @@
+package varAndVal2
+
 fun main() {
   var a = 10
   val b = a

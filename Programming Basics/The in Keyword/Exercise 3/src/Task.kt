@@ -1,4 +1,4 @@
-package theinKeyword3
+package theInKeyword3
 
 fun isLowerCase(ch: Char): Boolean = ch in 'a'..'z'
 

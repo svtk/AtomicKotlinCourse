@@ -1,4 +1,4 @@
-package foldingLists02
+package foldingLists2
 
 import atomictest.eq
 

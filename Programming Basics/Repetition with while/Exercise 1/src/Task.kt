@@ -1,4 +1,4 @@
-package repetitionwithwhile1
+package repetitionWithWhile1
 
 fun displayContent(s: String) {
   var i = 0

@@ -1,4 +1,4 @@
-package summary6
+package summaryI6
 
 fun testLong() {
   println(Long.MAX_VALUE + 1)

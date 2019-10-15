@@ -1,4 +1,4 @@
-package lambdawithReceiver1
+package lambdaWithReceiver1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

@@ -1,5 +1,6 @@
+package stringTemplates3
+
 import org.junit.Test
-import stringTemplates3.show
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 import kotlin.reflect.KFunction

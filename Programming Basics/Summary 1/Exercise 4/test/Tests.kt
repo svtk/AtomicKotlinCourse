@@ -1,4 +1,4 @@
-package summary4
+package summaryI4
 
 import org.junit.Assert
 import org.junit.Test

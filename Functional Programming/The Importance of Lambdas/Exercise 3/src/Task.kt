@@ -1,4 +1,4 @@
-package theImportanceofLambdas3
+package theImportanceOfLambdas3
 
 fun other(s: String): String =
   s.filterIndexed { index, _ -> index % 2 == 0 }

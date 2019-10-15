@@ -1,4 +1,4 @@
-package summary3
+package summaryI3
 
 fun other(s: String): String {
   var index = 0

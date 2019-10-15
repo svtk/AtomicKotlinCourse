@@ -1,4 +1,4 @@
-package theinKeyword2
+package theInKeyword2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

@@ -1,4 +1,4 @@
-package summary2
+package summaryI2
 
 fun main() {
   var x = 1

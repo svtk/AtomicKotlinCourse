@@ -1,4 +1,4 @@
-package varargArguments5
+package variableArgumentLists5
 
 import org.junit.Test
 import util.untestable

@@ -1,4 +1,4 @@
-package importsandPackages3
+package packages3
 
 import pythagorean.EquilateralTriangle
 

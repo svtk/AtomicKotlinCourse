@@ -1,4 +1,4 @@
-package foldingLists01
+package foldingLists1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

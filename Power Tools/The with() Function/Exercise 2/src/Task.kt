@@ -1,4 +1,4 @@
-package thewithFunction2
+package theWithFunction2
 
 import atomictest.eq
 

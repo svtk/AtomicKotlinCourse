@@ -1,4 +1,4 @@
-package dataClasses1
+package hashing1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

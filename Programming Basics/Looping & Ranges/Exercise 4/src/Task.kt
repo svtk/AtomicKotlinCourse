@@ -1,4 +1,4 @@
-package loopingandRanges4
+package loopingAndRanges4
 
 fun printHalfPyramid(n: Int) {
   for (i in 1..n) {

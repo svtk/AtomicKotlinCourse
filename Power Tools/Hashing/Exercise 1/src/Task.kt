@@ -1,4 +1,4 @@
-package dataClasses1
+package hashing1
 
 data class Contact(
     val name: String,

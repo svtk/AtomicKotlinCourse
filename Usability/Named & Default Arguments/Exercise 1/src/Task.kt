@@ -1,4 +1,4 @@
-package nameAndDefaultArguments1
+package namedAndDefaultArguments1
 
 class Rectangle(
   val side1: Double = 1.0,

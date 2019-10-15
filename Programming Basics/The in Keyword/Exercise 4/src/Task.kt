@@ -1,4 +1,4 @@
-package theinKeyword4
+package theInKeyword4
 
 fun isValidCharacter(ch: Char): Boolean = ch == '_' ||
     ch in 'a'..'z' || ch in 'A'..'Z' ||

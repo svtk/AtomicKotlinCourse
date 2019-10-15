@@ -1,4 +1,4 @@
-package nameAndDefaultArguments1
+package namedAndDefaultArguments1
 
 import org.junit.Assert
 import org.junit.Test

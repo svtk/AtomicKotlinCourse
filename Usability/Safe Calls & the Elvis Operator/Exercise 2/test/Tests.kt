@@ -1,4 +1,4 @@
-package safeCallsandTheElvisOperator2
+package safeCallsAndTheElvisOperator2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

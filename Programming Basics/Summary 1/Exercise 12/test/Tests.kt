@@ -1,4 +1,4 @@
-package summary12
+package summaryI12
 
 import org.junit.FixMethodOrder
 import org.junit.Test

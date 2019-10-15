@@ -1,4 +1,4 @@
-package varandval2
+package varAndVal3
 
 fun main() {
   var x = 1

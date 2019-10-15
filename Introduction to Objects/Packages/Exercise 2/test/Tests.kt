@@ -1,4 +1,4 @@
-package importsandPackages2
+package packages2
 
 import org.junit.Test
 import util.untestable

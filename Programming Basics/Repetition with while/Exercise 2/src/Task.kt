@@ -1,4 +1,4 @@
-package repetitionwithwhile2
+package repetitionWithWhile2
 
 fun sum(number: Int): Int {
   var sum = 0

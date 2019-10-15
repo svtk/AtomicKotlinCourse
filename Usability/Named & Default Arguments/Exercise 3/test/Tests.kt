@@ -1,4 +1,4 @@
-package namedandDefaultArguments3
+package namedAndDefaultArguments3
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
