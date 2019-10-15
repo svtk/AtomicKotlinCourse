@@ -1,6 +1,9 @@
 ## Summary 2 (#7)
 
-Create a `BoringHolder2` class that has a constructor parameter that sets the
-maximum number of `Boring` objects that can be held. Add read-only `size` and
-`full` properties. If the user calls `add()` when it's `full`, throw an
-`IllegalAccessException`. Test `BoringHolder2` using `atomictest`.
+{{ afaiu, IllegalAccessException is thrown by java reflection API when there's
+not enough access rights and is not supposed to be used in custom code }}
+
+Create a `FixedSizeHolder` class that has a constructor parameter that
+sets the maximum number of `String` objects that can be held. Add read-only
+`size` and `full` properties. If the user calls `add()` when it's `full`, throw
+an `IllegalStateException`. Test `FixedSizeHolder` using `atomictest`.
