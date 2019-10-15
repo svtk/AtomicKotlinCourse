@@ -91,19 +91,43 @@ private fun loadToplevelMember(fileFacade: KFileFacade, memberName: String, isGe
   }
 }
 
-fun checkParameters(
-  function: KFunction<*>,
-  params: List<Pair<String, String>>,
-  funcName: String = "function '${function.name}'"
+fun checkParametersOfConstructor(
+  constructor: KFunction<*>,
+  kClass: KClass<*>,
+  params: List<Pair<String, String>>
 ) {
-  Assert.assertEquals("${funcName.capitalize()} is expected to have ${params.size} parameter(s)",
+  checkParameters("constructor of '${kClass.simpleName}'", constructor, params)
+}
+
+fun checkParametersOfTopLevelFunction(
+  function: KFunction<*>,
+  params: List<Pair<String, String>>
+) {
+  checkParameters("function '${function.name}'", function, params)
+}
+
+fun checkParametersOfMemberFunction(
+  function: KFunction<*>,
+  params: List<Pair<String, String>>
+) {
+  checkParametersOfTopLevelFunction(function,
+    listOf("" to "") // this parameter refers to a class and ignored while checking
+      + params)
+}
+
+private fun checkParameters(
+  funcOrConstructorName: String,
+  function: KFunction<*>,
+  params: List<Pair<String, String>>
+) {
+  Assert.assertEquals("${funcOrConstructorName.capitalize()} is expected to have ${params.size} parameter(s)",
     params.size, function.parameters.size)
 
   val expectedParams = params.toList()
   function.parameters.forEachIndexed { index, kParameter ->
     val (name, type) = expectedParams[index]
 
-    checkParameter(index, name, type, kParameter, funcName)
+    checkParameter(index, name, type, kParameter, funcOrConstructorName)
   }
 }
 

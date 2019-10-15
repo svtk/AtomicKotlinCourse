@@ -2,5 +2,12 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 69
+    length: 45
+    placeholder_text: 'fun abort(s: String) {}'
+  - offset: 131
+    length: 54
+    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false

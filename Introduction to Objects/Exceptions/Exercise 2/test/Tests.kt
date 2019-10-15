@@ -22,13 +22,13 @@ class TestAbort {
     abort("My message")
   }
 
-    @Test
-    fun test3() {
-        runAndCheckSystemOutput(
-          "Wrong output after running 'main'",
-          "Exception: Stop!"
-        ) {
-            main()
-        }
+  @Test
+  fun test3() {
+    runAndCheckSystemOutput(
+      "Wrong output after running 'main'",
+      "Exception: Stop!"
+    ) {
+      main()
     }
+  }
 }

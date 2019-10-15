@@ -2,7 +2,7 @@ package nameAndDefaultArguments1
 
 import org.junit.Assert
 import org.junit.Test
-import util.checkParameters
+import util.checkParametersOfConstructor
 
 class TestRectangle {
   @Test
@@ -10,11 +10,11 @@ class TestRectangle {
     val rectangleClass = Rectangle::class
     val constructor = rectangleClass.constructors.first()
 
-    checkParameters(constructor, listOf(
+    checkParametersOfConstructor(constructor, rectangleClass, listOf(
       "side1" to "kotlin.Double",
       "side2" to "kotlin.Double",
       "color" to "kotlin.String"
-    ), "'Rectangle' constructor")
+    ))
 
     val (side1, side2, color) = constructor.parameters
     fun testValues(map: Map<String, Any>) {

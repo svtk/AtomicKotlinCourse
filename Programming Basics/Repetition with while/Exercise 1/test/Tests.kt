@@ -1,14 +1,14 @@
 package repetitionwithwhile1
 
 import org.junit.Test
-import util.checkParameters
+import util.checkParametersOfTopLevelFunction
 import util.checkSystemOutput
 import util.runAndGetSystemOutput
 
 class TestDisplayContent {
     private fun testInput(s: String) {
         val displayContentFunc = ::displayContent
-        checkParameters(displayContentFunc, listOf("" to "kotlin.String"))
+        checkParametersOfTopLevelFunction(displayContentFunc, listOf("" to "kotlin.String"))
         val output = runAndGetSystemOutput {
             displayContentFunc.call(s)
         }

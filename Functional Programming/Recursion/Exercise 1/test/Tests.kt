@@ -1,7 +1,7 @@
 package recursion1
 
 import org.junit.Test
-import util.checkParameters
+import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 
 class TestRecursion {
@@ -20,7 +20,7 @@ class TestRecursion {
 
   private fun testSimulation(group: String, level: Int) {
     val simulationFunction = ::simulation
-    checkParameters(simulationFunction, listOf("group" to "kotlin.String", "level" to "kotlin.Int"))
+    checkParametersOfTopLevelFunction(simulationFunction, listOf("group" to "kotlin.String", "level" to "kotlin.Int"))
 
     runAndCheckSystemOutput("Wrong result for 'simulation(\"$group\", $level)'",
       expectedOutput(group, level)) {

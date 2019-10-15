@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
-import util.checkParameters
+import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 import util.runAndGetSystemOutput
 import kotlin.reflect.KFunction
@@ -39,7 +39,7 @@ class TestBooleans {
     first: Boolean,
     second: Boolean
   ) {
-    checkParameters(showFunc, listOf("first" to "kotlin.Boolean", "second" to "kotlin.Boolean"))
+    checkParametersOfTopLevelFunction(showFunc, listOf("first" to "kotlin.Boolean", "second" to "kotlin.Boolean"))
     runAndCheckSystemOutput("Wrong output for '${showFunc.name}($first, $second)'",
       expectedOutput) {
       showFunc.call(first, second)
