@@ -1,4 +1,4 @@
-package nonNullAssertions1
+package nonNullAssertions.exercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

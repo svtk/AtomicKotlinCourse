@@ -1,4 +1,4 @@
-package summaryII7
+package summaryII.exercise7
 
 import org.junit.Assert
 import org.junit.Test

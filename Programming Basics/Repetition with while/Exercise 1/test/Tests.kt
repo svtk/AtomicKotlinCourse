@@ -1,4 +1,4 @@
-package repetitionWithWhile1
+package repetitionWithWhile.exercise1
 
 import org.junit.Test
 import util.checkParametersOfTopLevelFunction

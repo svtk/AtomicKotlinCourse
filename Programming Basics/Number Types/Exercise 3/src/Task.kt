@@ -1,4 +1,4 @@
-package numberTypes3
+package numberTypes.exercise3
 
 fun convertFahrenheitToCelsius(f: Int): Double =
     (f - 32) * 5.0 / 9

@@ -1,4 +1,4 @@
-package dataTypes1
+package dataTypes.exercise1
 
 fun main() {
   var answer = 42

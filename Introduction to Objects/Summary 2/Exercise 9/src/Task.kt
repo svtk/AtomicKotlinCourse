@@ -1,4 +1,4 @@
-package summaryII9
+package summaryII.exercise9
 
 fun va1(vararg ints: Int) {
   va2(*ints)

@@ -1,4 +1,4 @@
-package objectsEverywhere2
+package objectsEverywhere.exercise2
 
 fun isPalindrome(s: String): Boolean =
     s.reversed() == s

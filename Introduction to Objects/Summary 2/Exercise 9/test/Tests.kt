@@ -1,4 +1,4 @@
-package summaryII9
+package summaryII.exercise9
 
 import org.junit.Test
 import util.untestable

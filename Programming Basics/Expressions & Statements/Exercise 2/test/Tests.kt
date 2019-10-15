@@ -1,4 +1,4 @@
-package expressionsAndStatements2
+package expressionsAndStatements.exercise2
 
 import org.junit.Assert
 import org.junit.Test

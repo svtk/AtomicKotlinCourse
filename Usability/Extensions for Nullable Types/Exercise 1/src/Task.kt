@@ -1,4 +1,4 @@
-package extensionsForNullableTypes1
+package extensionsForNullableTypes.exercise1
 
 import atomictest.eq
 

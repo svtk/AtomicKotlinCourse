@@ -1,4 +1,4 @@
-package constrainingVisibility1
+package constrainingVisibility.exercise1
 
 class Alien(val name: String, val species: String, private var planet: String) {
    fun movePlanet(newPlanet: String) {

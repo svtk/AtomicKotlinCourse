@@ -1,4 +1,4 @@
-package propertyAccessors3
+package propertyAccessors.exercise3
 
 import org.junit.Assert
 import org.junit.Test

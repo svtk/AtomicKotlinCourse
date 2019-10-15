@@ -1,4 +1,4 @@
-package namedAndDefaultArguments2
+package namedAndDefaultArguments.exercise2
 
 import atomictest.eq
 

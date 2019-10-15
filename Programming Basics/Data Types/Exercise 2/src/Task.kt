@@ -1,1 +1,1 @@
-package dataTypes2
+package dataTypes.exercise2

@@ -1,4 +1,4 @@
-package stringTemplates2
+package stringTemplates.exercise2
 
 fun record(index: Int, status: String, message: String): String =
     "$index. [$status] $message\n"

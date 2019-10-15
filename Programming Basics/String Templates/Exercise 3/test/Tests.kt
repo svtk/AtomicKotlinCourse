@@ -1,4 +1,4 @@
-package stringTemplates3
+package stringTemplates.exercise3
 
 import org.junit.Test
 import util.checkParametersOfTopLevelFunction

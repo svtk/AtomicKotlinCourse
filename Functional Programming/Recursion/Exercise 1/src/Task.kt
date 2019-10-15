@@ -1,4 +1,4 @@
-package recursion1
+package recursion.exercise1
 
 tailrec fun simulation(group: String, level: Int) {
   println("Simulation: $group Reality: $level")

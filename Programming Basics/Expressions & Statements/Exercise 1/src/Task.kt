@@ -1,4 +1,4 @@
-package expressionsAndStatements1
+package expressionsAndStatements.exercise1
 
 fun main() {
   println(println(1))

@@ -1,4 +1,4 @@
-package abstractClasses1
+package abstractClasses.exercise1
 
 fun Maze.isPassable(position: Position): Boolean {
   if (position.x !in (0 until width) || position.y !in (0 until height)) {

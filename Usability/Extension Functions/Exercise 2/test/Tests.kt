@@ -1,4 +1,4 @@
-package extensionFunctions2
+package extensionFunctions.exercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

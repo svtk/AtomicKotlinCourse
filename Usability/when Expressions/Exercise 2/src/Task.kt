@@ -1,4 +1,4 @@
-package whenExpressions2
+package whenExpressions.exercise2
 
 import atomictest.eq
 

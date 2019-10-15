@@ -1,4 +1,4 @@
-package properties1
+package properties.exercise1
 
 class X {
   val a = 3

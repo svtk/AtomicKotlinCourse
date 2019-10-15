@@ -1,1 +1,1 @@
-package summaryII6
+package summaryII.exercise6

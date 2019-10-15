@@ -1,6 +1,6 @@
-package summaryII3
+package summaryII.exercise3
 
-import summaryII2.Boring
+import summaryII.exercise2.Boring
 
 fun main() {
   val list = listOf(Boring(), Boring(), Boring())

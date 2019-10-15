@@ -1,4 +1,4 @@
-package recursion2
+package recursion.exercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 36
+  - offset: 45
     length: 40
     placeholder_text: |-
       println("Hello,")

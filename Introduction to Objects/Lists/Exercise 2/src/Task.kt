@@ -1,4 +1,4 @@
-package lists2
+package lists.exercise2
 
 fun countOccurrences(list: IntList, number: Int): Int {
   var occurrences = 0

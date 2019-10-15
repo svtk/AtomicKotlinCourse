@@ -1,4 +1,4 @@
-package loopingAndRanges2
+package loopingAndRanges.exercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

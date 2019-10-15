@@ -9,10 +9,10 @@ files:
 - name: src/Main.kt
   visible: true
   placeholders:
-  - offset: 19
+  - offset: 28
     length: 38
     placeholder_text: '     '
-  - offset: 74
+  - offset: 83
     length: 76
     placeholder_text: |-
       /*

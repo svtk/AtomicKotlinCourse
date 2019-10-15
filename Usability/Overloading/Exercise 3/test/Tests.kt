@@ -1,4 +1,4 @@
-package overloading3
+package overloading.exercise3
 
 import org.junit.Test
 import util.untestable

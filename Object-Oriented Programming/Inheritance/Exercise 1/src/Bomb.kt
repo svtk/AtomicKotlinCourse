@@ -1,4 +1,4 @@
-package inheritance1
+package inheritance.exercise1
 
 import atomictest.eq
 import kotlin.math.pow

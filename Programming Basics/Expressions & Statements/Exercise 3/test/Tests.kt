@@ -1,4 +1,4 @@
-package expressionsAndStatements3
+package expressionsAndStatements.exercise3
 
 import org.junit.Test
 import util.untestable

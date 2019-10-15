@@ -1,1 +1,1 @@
-package expressionsAndStatements3
+package expressionsAndStatements.exercise3

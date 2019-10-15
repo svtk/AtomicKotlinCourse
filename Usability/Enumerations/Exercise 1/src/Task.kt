@@ -1,6 +1,6 @@
-package enumerations1
+package enumerations.exercise1
 
-import enumerations1.Direction.*
+import enumerations.exercise1.Direction.*
 
 enum class Direction {
   UP, DOWN, LEFT, RIGHT

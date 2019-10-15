@@ -1,4 +1,4 @@
-package booleans1
+package booleans.exercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

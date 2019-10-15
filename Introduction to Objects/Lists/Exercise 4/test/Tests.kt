@@ -1,4 +1,4 @@
-package lists4
+package lists.exercise4
 
 import org.junit.Assert
 import org.junit.Test

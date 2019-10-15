@@ -1,4 +1,4 @@
-package helloWorld3
+package helloWorld.exercise3
 
 fun main() {
   //println("Hello,")

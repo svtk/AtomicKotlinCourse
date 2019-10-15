@@ -1,4 +1,4 @@
-package inheritance1
+package inheritance.exercise1
 
 interface GameElement {
   val symbol: Char

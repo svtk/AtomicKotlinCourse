@@ -1,4 +1,4 @@
-package complexConstructors1
+package complexConstructors.exercise1
 
 interface GameElement {
   val symbol: Char

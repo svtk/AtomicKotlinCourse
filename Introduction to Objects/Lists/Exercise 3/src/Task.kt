@@ -1,1 +1,1 @@
-package lists3
+package lists.exercise3

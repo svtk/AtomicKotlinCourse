@@ -1,4 +1,4 @@
-package lists3
+package lists.exercise3
 
 import org.junit.Test
 import util.untestable

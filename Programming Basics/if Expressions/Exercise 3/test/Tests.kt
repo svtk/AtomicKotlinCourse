@@ -1,4 +1,4 @@
-package ifExpressions3
+package ifExpressions.exercise3
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

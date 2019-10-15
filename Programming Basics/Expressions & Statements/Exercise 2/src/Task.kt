@@ -1,4 +1,4 @@
-package expressionsAndStatements2
+package expressionsAndStatements.exercise2
 
 fun f() = println("f()")
 

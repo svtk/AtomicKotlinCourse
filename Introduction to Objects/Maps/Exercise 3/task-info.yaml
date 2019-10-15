@@ -3,16 +3,16 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 237
+  - offset: 246
     length: 27
     placeholder_text: MutableList<Hamster>
-  - offset: 273
+  - offset: 282
     length: 14
     placeholder_text: mutableListOf<Hamster>()
-  - offset: 403
+  - offset: 412
     length: 32
     placeholder_text: hamsters += hamster
-  - offset: 491
+  - offset: 500
     length: 31
     placeholder_text: |-
       {
@@ -23,7 +23,7 @@ files:
           }
           throw NoSuchElementException("No hamster called $name")
         }
-  - offset: 551
+  - offset: 560
     length: 29
     placeholder_text: |-
       {

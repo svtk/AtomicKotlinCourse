@@ -1,4 +1,4 @@
-package lists2
+package lists.exercise2
 
 class IntList(private val list: List<Int>) : Iterable<Int> {
 

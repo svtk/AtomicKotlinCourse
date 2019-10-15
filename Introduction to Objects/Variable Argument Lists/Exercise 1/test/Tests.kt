@@ -1,4 +1,4 @@
-package variableArgumentLists1
+package variableArgumentLists.exercise1
 
 import org.junit.Assert
 import org.junit.Test

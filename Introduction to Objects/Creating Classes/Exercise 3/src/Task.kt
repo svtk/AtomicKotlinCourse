@@ -1,4 +1,4 @@
-package creatingClasses3
+package creatingClasses.exercise3
 
 class Robot {
   fun goRight(steps: Int) {

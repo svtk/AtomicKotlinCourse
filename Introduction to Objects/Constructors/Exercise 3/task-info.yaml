@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 595
+  - offset: 604
     length: 45
     placeholder_text: /* Implement toString */
 - name: test/Tests.kt

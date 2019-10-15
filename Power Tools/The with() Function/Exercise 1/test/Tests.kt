@@ -1,4 +1,4 @@
-package theWithFunction1
+package theWithFunction.exercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

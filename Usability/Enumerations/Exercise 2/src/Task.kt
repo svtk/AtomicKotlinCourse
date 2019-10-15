@@ -1,8 +1,8 @@
-package enumerations2
+package enumerations.exercise2
 
 import atomictest.eq
-import enumerations2.Month.*
-import enumerations2.Season.*
+import enumerations.exercise2.Month.*
+import enumerations.exercise2.Season.*
 
 enum class Month {
   January, February, March, April,

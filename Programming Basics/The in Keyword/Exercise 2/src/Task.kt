@@ -1,4 +1,4 @@
-package theInKeyword2
+package theInKeyword.exercise2
 
 fun sumOfEven(n: Int): Int {
   var result = 0

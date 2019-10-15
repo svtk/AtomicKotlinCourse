@@ -1,4 +1,4 @@
-package constructors1
+package constructors.exercise1
 
 class Floating(val d: Double) {
   override fun toString(): String = d.toString()

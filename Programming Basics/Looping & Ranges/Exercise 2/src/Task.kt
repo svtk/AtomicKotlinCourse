@@ -1,4 +1,4 @@
-package loopingAndRanges2
+package loopingAndRanges.exercise2
 
 fun factorial(n: Int): Long {
   var result = 1L

@@ -1,4 +1,4 @@
-package breakAndContinue2
+package breakAndContinue.exercise2
 
 import org.junit.Test
 import util.untestable

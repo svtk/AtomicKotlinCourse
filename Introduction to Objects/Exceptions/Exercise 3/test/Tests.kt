@@ -1,4 +1,4 @@
-package exceptions3
+package exceptions.exercise3
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

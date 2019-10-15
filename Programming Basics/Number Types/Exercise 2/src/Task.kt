@@ -1,4 +1,4 @@
-package numberTypes2
+package numberTypes.exercise2
 
 val million: Int = 1_000_000
 val millionType: String = "Int"

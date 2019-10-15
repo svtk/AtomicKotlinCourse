@@ -1,4 +1,4 @@
-package interfaces1
+package interfaces.exercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

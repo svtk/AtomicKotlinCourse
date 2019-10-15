@@ -1,4 +1,4 @@
-package sequences1
+package sequences.exercise1
 
 fun School.getCommonLessons(
     instructor: Instructor,

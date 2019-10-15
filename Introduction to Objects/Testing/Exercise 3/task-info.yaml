@@ -3,13 +3,13 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 108
+  - offset: 117
     length: 5
     placeholder_text: x * x
-  - offset: 159
+  - offset: 168
     length: 17
     placeholder_text: h / 2 * (x + y)
-  - offset: 257
+  - offset: 266
     length: 116
     placeholder_text: // add more tests
 - name: test/Tests.kt

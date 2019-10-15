@@ -1,4 +1,4 @@
-package constrainingVisibility3
+package constrainingVisibility.exercise3
 
 import org.junit.FixMethodOrder
 import org.junit.Test

@@ -1,4 +1,4 @@
-package introductionToGenerics1
+package introductionToGenerics.exercise1
 
 import atomictest.eq
 

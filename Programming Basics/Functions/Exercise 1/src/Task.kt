@@ -1,4 +1,4 @@
-package functions1
+package functions.exercise1
 
 fun getSquare(i: Int): Int = i * i
 

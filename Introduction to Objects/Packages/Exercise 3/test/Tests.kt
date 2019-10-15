@@ -1,4 +1,4 @@
-package packages3
+package packages.exercise3
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

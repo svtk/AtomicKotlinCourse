@@ -1,4 +1,4 @@
-package repetitionWithWhile3
+package repetitionWithWhile.exercise3
 
 fun sumOfEven(n: Int): Int {
   var result = 0

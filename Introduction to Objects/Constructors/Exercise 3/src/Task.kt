@@ -1,4 +1,4 @@
-package constructors3
+package constructors.exercise3
 
 class Robot(val fieldSize: Int, var x: Int, var y: Int) {
   fun crossBoundary(coordinate: Int): Int {

@@ -1,4 +1,4 @@
-package testing1
+package testing.exercise1
 
 import org.junit.Test
 import util.untestable

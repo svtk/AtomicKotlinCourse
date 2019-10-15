@@ -1,4 +1,4 @@
-package summaryI10
+package summaryI.exercise10
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

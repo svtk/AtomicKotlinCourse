@@ -1,4 +1,4 @@
-package recursion1
+package recursion.exercise1
 
 import org.junit.Test
 import util.checkParametersOfTopLevelFunction

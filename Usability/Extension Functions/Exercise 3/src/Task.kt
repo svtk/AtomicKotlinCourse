@@ -1,4 +1,4 @@
-package extensionFunctions3
+package extensionFunctions.exercise3
 
 import atomictest.eq
 

@@ -1,1 +1,1 @@
-package dataClasses1
+package dataClasses.exercise1

@@ -1,4 +1,4 @@
-package objectsEverywhere4
+package objectsEverywhere.exercise4
 
 fun reverseDecimal(number: Int): Int = number.toString().reversed().toInt()
 

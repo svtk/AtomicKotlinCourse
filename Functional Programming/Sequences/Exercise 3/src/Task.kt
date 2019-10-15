@@ -1,4 +1,4 @@
-package sequences3
+package sequences.exercise3
 
 fun School.getAverageRatingForInstructor(instructor: Instructor): Double =
     lessons

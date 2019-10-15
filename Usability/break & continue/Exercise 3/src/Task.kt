@@ -1,4 +1,4 @@
-package breakAndContinue3
+package breakAndContinue.exercise3
 
 fun main() {
   label2@ for (i in 6 downTo 0) {

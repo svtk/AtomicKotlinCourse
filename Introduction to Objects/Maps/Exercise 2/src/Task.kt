@@ -1,4 +1,4 @@
-package maps2
+package maps.exercise2
 
 import atomictest.capture
 import atomictest.eq

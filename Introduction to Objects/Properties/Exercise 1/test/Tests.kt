@@ -1,4 +1,4 @@
-package properties1
+package properties.exercise1
 
 import org.junit.Assert
 import org.junit.Test

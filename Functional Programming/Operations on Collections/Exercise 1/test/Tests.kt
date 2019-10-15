@@ -1,4 +1,4 @@
-package operationsOnCollections1
+package operationsOnCollections.exercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

@@ -1,7 +1,7 @@
-package enumerations3
+package enumerations.exercise3
 
-import enumerations3.Result.*
-import enumerations3.Rochambeau.*
+import enumerations.exercise3.Result.*
+import enumerations.exercise3.Rochambeau.*
 import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test

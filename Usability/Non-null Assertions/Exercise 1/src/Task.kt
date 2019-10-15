@@ -1,4 +1,4 @@
-package nonNullAssertions1
+package nonNullAssertions.exercise1
 
 import atomictest.eq
 

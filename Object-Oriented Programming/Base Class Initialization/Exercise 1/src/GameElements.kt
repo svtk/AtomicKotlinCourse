@@ -1,4 +1,4 @@
-package baseClassInitialization1
+package baseClassInitialization.exercise1
 
 import atomictest.eq
 

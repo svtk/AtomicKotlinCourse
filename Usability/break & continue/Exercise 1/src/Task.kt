@@ -1,4 +1,4 @@
-package breakAndContinue1
+package breakAndContinue.exercise1
 
 fun trace(id: Int) {
   println(id)

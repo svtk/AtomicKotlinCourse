@@ -1,4 +1,4 @@
-package summaryI9
+package summaryI.exercise9
 
 import org.junit.Test
 import util.runAndCheckSystemOutput

@@ -1,4 +1,4 @@
-package functionsInsideFunctions1
+package functionsInsideFunctions.exercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

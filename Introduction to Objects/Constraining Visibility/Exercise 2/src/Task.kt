@@ -1,4 +1,4 @@
-package constrainingVisibility2
+package constrainingVisibility.exercise2
 
 class Robot(
     private val fieldSize: Int,

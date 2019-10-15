@@ -1,4 +1,4 @@
-package moreLibraryFunctions2
+package moreLibraryFunctions.exercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

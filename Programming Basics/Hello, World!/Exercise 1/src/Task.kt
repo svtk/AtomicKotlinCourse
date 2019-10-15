@@ -1,4 +1,4 @@
-package helloWorld1
+package helloWorld.exercise1
 
 fun main() {
   println("Hello, Kotlin!")

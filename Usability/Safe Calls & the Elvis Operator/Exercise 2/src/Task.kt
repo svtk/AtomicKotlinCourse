@@ -1,4 +1,4 @@
-package safeCallsAndTheElvisOperator2
+package safeCallsAndTheElvisOperator.exercise2
 
 data class Client(
     val name: String,

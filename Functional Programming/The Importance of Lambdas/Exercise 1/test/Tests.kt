@@ -1,4 +1,4 @@
-package theImportanceOfLambdas1
+package theImportanceOfLambdas.exercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

@@ -1,4 +1,4 @@
-package overloading1
+package overloading.exercise1
 
 import atomictest.eq
 

@@ -1,4 +1,4 @@
-package repetitionWithWhile2
+package repetitionWithWhile.exercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

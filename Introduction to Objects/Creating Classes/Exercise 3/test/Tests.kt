@@ -1,4 +1,4 @@
-package creatingClasses3
+package creatingClasses.exercise3
 
 import org.junit.FixMethodOrder
 import org.junit.Test

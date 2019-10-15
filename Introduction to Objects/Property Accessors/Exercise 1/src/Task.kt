@@ -1,4 +1,4 @@
-package propertyAccessors1
+package propertyAccessors.exercise1
 
 import atomictest.eq
 

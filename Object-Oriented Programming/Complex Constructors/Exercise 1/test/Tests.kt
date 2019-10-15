@@ -1,4 +1,4 @@
-package complexConstructors1
+package complexConstructors.exercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

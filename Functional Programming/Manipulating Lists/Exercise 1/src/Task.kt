@@ -1,4 +1,4 @@
-package manipulatingLists1
+package manipulatingLists.exercise1
 
 import atomictest.eq
 

@@ -1,4 +1,4 @@
-package sequences4
+package sequences.exercise4
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

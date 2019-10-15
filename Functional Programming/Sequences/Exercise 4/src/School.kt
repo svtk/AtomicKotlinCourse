@@ -1,4 +1,4 @@
-package sequences4
+package sequences.exercise4
 
 data class Instructor(val name: String)
 

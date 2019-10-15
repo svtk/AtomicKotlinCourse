@@ -1,4 +1,4 @@
-package summaryI9
+package summaryI.exercise9
 
 fun everyFifthNonWhitespace(s: String) {
   var i = 1

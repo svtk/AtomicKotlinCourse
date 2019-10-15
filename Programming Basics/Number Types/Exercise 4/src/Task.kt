@@ -1,4 +1,4 @@
-package numberTypes4
+package numberTypes.exercise4
 
 fun convertToMilliseconds(hours: Int, minutes: Int, seconds: Int): Long =
     (((hours * 60L + minutes) * 60) + seconds) * 1000
