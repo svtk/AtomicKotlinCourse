@@ -6,7 +6,5 @@ files:
   - offset: 33
     length: 80
     placeholder_text: TODO()
-- name: test/Tests.kt
-  visible: false
 - name: test/output.txt
   visible: false

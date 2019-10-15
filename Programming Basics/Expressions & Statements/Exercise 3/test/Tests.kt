@@ -4,5 +4,6 @@ import org.junit.Test
 import util.untestable
 
 class Test {
-    @Test fun test() = untestable()
+  @Test
+  fun test() = untestable()
 }
