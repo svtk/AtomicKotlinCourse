@@ -1,1 +1,1 @@
-package propertyAccessors.exercise2
+package propertyAccessorsExercise2

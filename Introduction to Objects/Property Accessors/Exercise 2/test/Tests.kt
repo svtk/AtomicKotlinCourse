@@ -1,4 +1,4 @@
-package propertyAccessors.exercise2
+package propertyAccessorsExercise2
 
 import org.junit.Test
 import util.untestable

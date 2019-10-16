@@ -1,4 +1,4 @@
-package exceptions.exercise2
+package exceptionsExercise2
 
 import atomictest.capture
 import atomictest.eq

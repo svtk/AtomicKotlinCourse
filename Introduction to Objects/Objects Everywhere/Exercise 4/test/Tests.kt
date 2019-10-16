@@ -1,4 +1,4 @@
-package objectsEverywhere.exercise4
+package objectsEverywhereExercise4
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

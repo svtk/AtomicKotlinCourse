@@ -1,4 +1,4 @@
-package stringTemplates.exercise3
+package stringTemplatesExercise3
 
 fun show(i: Int, s: String, c: Char, d: Double) {
   println("i: $i")

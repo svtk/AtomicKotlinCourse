@@ -1,4 +1,4 @@
-package operationsOnCollections.exercise2
+package operationsOnCollectionsExercise2
 
 import atomictest.eq
 

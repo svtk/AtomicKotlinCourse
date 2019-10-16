@@ -1,4 +1,4 @@
-package variableArgumentLists.exercise2
+package variableArgumentListsExercise2
 
 import org.junit.Test
 import util.untestable

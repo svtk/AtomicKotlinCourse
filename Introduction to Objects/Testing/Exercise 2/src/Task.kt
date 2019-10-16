@@ -1,1 +1,1 @@
-package testing.exercise2
+package testingExercise2

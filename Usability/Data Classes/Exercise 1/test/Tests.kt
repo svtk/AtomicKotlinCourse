@@ -1,4 +1,4 @@
-package dataClasses.exercise1
+package dataClassesExercise1
 
 import org.junit.Test
 import util.untestable

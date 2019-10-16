@@ -1,4 +1,4 @@
-package theInKeyword.exercise3
+package theInKeywordExercise3
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

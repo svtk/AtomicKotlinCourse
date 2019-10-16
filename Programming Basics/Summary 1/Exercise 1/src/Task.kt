@@ -1,1 +1,1 @@
-package summaryI.exercise1
+package summaryIExercise1

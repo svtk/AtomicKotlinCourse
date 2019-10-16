@@ -1,7 +1,7 @@
-package maps.exercise3
+package mapsExercise3
 
-import maps.exercise2.Cage
-import maps.exercise2.Hamster
+import mapsExercise2.Cage
+import mapsExercise2.Hamster
 import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test

@@ -1,4 +1,4 @@
-package exceptions.exercise1
+package exceptionsExercise1
 
 import org.junit.Test
 import util.untestable

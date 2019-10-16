@@ -1,4 +1,4 @@
-package booleans.exercise1
+package booleansExercise1
 
 // (178 + 131 > 209 + 99) && false
 val a: Boolean = false

@@ -1,4 +1,4 @@
-package ifExpressions.exercise2
+package ifExpressionsExercise2
 
 fun abs(number: Int): Int =
   if (number > 0) number else -number

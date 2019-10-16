@@ -3,7 +3,7 @@ files:
 - name: src/GameElements.kt
   visible: true
   placeholders:
-  - offset: 415
+  - offset: 414
     length: 38
     placeholder_text: |-
       GameElement {
@@ -16,7 +16,7 @@ files:
               // Default implementation: do nothing
           }
       }
-  - offset: 468
+  - offset: 467
     length: 37
     placeholder_text: |-
       GameElement {

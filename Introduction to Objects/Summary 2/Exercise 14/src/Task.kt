@@ -1,4 +1,4 @@
-package summaryII.exercise14
+package summaryIIExercise14
 
 import atomictest.eq
 

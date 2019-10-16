@@ -1,4 +1,4 @@
-package theImportanceOfLambdas.exercise1
+package theImportanceOfLambdasExercise1
 
 import atomictest.eq
 

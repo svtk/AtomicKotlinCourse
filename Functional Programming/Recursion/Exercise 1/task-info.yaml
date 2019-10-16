@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 29
+  - offset: 28
     length: 147
     placeholder_text: tailrec fun simulation() { TODO() }
 - name: test/Tests.kt

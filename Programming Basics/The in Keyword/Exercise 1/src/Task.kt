@@ -1,4 +1,4 @@
-package theInKeyword.exercise1
+package theInKeywordExercise1
 
 fun getAlphabet(): String {
   var s = ""

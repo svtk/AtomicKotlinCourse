@@ -1,4 +1,4 @@
-package safeCallsAndTheElvisOperator.exercise1
+package safeCallsAndTheElvisOperatorExercise1
 
 import atomictest.eq
 

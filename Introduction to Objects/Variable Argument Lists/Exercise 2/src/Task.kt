@@ -1,1 +1,1 @@
-package variableArgumentLists.exercise2
+package variableArgumentListsExercise2

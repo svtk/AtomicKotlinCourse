@@ -3,10 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 78
+  - offset: 77
     length: 45
     placeholder_text: 'fun abort(s: String) {}'
-  - offset: 140
+  - offset: 139
     length: 54
     placeholder_text: TODO()
 - name: test/Tests.kt

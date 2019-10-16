@@ -1,4 +1,4 @@
-package whenExpressions.exercise1
+package whenExpressionsExercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

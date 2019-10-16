@@ -3,16 +3,16 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 59
+  - offset: 58
     length: 11
     placeholder_text: val
-  - offset: 91
+  - offset: 90
     length: 11
     placeholder_text: var
-  - offset: 115
+  - offset: 114
     length: 11
     placeholder_text: var
-  - offset: 140
+  - offset: 139
     length: 11
     placeholder_text: fun
 - name: test/Tests.kt

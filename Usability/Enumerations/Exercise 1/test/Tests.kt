@@ -1,6 +1,6 @@
-package enumerations.exercise1
+package enumerationsExercise1
 
-import enumerations.exercise1.Direction.*
+import enumerationsExercise1.Direction.*
 import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test

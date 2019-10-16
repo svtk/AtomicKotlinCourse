@@ -1,4 +1,4 @@
-package stringTemplates.exercise1
+package stringTemplatesExercise1
 
 fun findMax(first: Int, second: Int): Int =
     if (first > second) first else second

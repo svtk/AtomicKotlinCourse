@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 30
+  - offset: 29
     length: 106
     placeholder_text: |-
       fun erroneousCode() {

@@ -1,4 +1,4 @@
-package breakAndContinue.exercise3
+package breakAndContinueExercise3
 
 import org.junit.Assert
 import org.junit.Test

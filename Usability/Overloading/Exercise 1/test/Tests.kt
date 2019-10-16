@@ -1,4 +1,4 @@
-package overloading.exercise1
+package overloadingExercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

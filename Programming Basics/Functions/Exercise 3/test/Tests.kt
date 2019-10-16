@@ -1,4 +1,4 @@
-package functions.exercise3
+package functionsExercise3
 
 import org.junit.Assert
 import org.junit.Test

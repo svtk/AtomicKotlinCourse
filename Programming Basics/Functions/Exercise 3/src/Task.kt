@@ -1,4 +1,4 @@
-package functions.exercise3
+package functionsExercise3
 
 fun duplicate(s: String): String = s + s
 

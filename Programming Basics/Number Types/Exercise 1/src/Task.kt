@@ -1,4 +1,4 @@
-package numberTypes.exercise1
+package numberTypesExercise1
 
 // 11 / 3
 val a = 3

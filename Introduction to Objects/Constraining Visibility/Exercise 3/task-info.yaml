@@ -3,25 +3,25 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 331
+  - offset: 330
     length: 194
     placeholder_text: ""
-  - offset: 559
+  - offset: 558
     length: 69
     placeholder_text: |-
       x += steps
         x = crossBoundary(x)
-  - offset: 665
+  - offset: 664
     length: 69
     placeholder_text: |-
       x -= steps
         x = crossBoundary(x)
-  - offset: 771
+  - offset: 770
     length: 69
     placeholder_text: |-
       y += steps
         y = crossBoundary(y)
-  - offset: 875
+  - offset: 874
     length: 69
     placeholder_text: |-
       y -= steps

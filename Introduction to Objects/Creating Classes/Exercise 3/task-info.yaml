@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 35
+  - offset: 34
     length: 272
     placeholder_text: // create Robot class
 - name: test/Tests.kt

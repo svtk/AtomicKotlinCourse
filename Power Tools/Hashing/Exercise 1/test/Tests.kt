@@ -1,4 +1,4 @@
-package hashing.exercise1
+package hashingExercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

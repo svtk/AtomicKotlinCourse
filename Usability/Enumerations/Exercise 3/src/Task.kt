@@ -1,8 +1,8 @@
-package enumerations.exercise3
+package enumerationsExercise3
 
 import atomictest.eq
-import enumerations.exercise3.Result.*
-import enumerations.exercise3.Rochambeau.*
+import enumerationsExercise3.Result.*
+import enumerationsExercise3.Rochambeau.*
 
 enum class Rochambeau {
   ROCK, PAPER, SCISSORS

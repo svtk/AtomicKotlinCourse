@@ -1,4 +1,4 @@
-package creatingClasses.exercise2
+package creatingClassesExercise2
 
 class Giraffe {
   fun displayID() {

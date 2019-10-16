@@ -1,4 +1,4 @@
-package creatingClasses.exercise1
+package creatingClassesExercise1
 
 class SomeClass {
   fun a() {

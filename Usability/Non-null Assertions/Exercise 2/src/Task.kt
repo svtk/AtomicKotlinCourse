@@ -1,4 +1,4 @@
-package nonNullAssertions.exercise2
+package nonNullAssertionsExercise2
 
 import atomictest.eq
 import kotlin.math.absoluteValue

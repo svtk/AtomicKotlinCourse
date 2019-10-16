@@ -1,4 +1,4 @@
-package summaryI.exercise11
+package summaryIExercise11
 
 fun reverseDecimal(number: Int): Int {
   var worker = number

@@ -1,4 +1,4 @@
-package memberReferences.exercise2
+package memberReferencesExercise2
 
 import atomictest.eq
 

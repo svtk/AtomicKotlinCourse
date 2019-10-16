@@ -1,4 +1,4 @@
-package inheritance.exercise1
+package inheritanceExercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

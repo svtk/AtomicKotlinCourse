@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 37
+  - offset: 36
     length: 364
     placeholder_text: |-
       class Default {

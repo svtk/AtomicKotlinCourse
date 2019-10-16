@@ -1,4 +1,4 @@
-package ifExpressions.exercise1
+package ifExpressionsExercise1
 
 fun checkSign(number: Int): String =
   if (number > 0)

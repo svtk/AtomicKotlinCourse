@@ -1,4 +1,4 @@
-package propertyAccessors.exercise3
+package propertyAccessorsExercise3
 
 class GS {
   private var i: Int = 0

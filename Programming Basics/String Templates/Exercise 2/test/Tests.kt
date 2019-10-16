@@ -1,4 +1,4 @@
-package stringTemplates.exercise2
+package stringTemplatesExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

@@ -1,4 +1,4 @@
-package sets.exercise2
+package setsExercise2
 
 import kotlin.random.Random
 

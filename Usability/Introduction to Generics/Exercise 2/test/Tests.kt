@@ -1,4 +1,4 @@
-package introductionToGenerics.exercise2
+package introductionToGenericsExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

@@ -3,10 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 35
+  - offset: 43
     length: 204
     placeholder_text: class Rectangle
-  - offset: 280
+  - offset: 288
     length: 692
     placeholder_text: // TODO
 - name: test/Tests.kt

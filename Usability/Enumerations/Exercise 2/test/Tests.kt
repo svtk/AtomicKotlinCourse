@@ -1,7 +1,7 @@
-package enumerations.exercise2
+package enumerationsExercise2
 
-import enumerations.exercise2.Month.*
-import enumerations.exercise2.Season.*
+import enumerationsExercise2.Month.*
+import enumerationsExercise2.Season.*
 import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test

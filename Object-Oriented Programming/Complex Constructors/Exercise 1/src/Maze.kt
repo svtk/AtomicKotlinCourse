@@ -1,4 +1,4 @@
-package complexConstructors.exercise1
+package complexConstructorsExercise1
 
 import atomictest.eq
 

@@ -1,4 +1,4 @@
-package functionsInsideFunctions.exercise1
+package functionsInsideFunctionsExercise1
 
 import atomictest.eq
 

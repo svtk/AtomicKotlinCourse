@@ -1,4 +1,4 @@
-package functions.exercise2
+package functionsExercise2
 
 fun getSum(a: Double, b: Double, c: Double): Double = a + b + c
 

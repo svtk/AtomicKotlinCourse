@@ -1,4 +1,4 @@
-package variableArgumentLists.exercise3
+package variableArgumentListsExercise3
 
 import atomictest.eq
 

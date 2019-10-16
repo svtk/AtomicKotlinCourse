@@ -1,4 +1,4 @@
-package loopingAndRanges.exercise3
+package loopingAndRangesExercise3
 
 fun sumOfEven(n: Int): Int {
   var result = 0

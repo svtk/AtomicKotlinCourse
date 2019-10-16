@@ -1,4 +1,4 @@
-package nullableTypes.exercise1
+package nullableTypesExercise1
 
 import atomictest.eq
 

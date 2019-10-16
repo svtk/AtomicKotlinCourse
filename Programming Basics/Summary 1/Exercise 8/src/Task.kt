@@ -1,4 +1,4 @@
-package summaryI.exercise8
+package summaryIExercise8
 
 fun everyFifth(start: Int, end: Int) {
   for (i in start..end) {

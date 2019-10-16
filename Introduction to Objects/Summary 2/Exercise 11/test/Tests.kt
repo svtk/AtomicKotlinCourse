@@ -1,9 +1,9 @@
-package summaryII.exercise11
+package summaryIIExercise11
 
 import org.junit.Assert
 import org.junit.Test
-import summaryII.exercise11.TestTemperature.MeasureSystem.CELSIUS
-import summaryII.exercise11.TestTemperature.MeasureSystem.FAHRENHEIT
+import summaryIIExercise11.TestTemperature.MeasureSystem.CELSIUS
+import summaryIIExercise11.TestTemperature.MeasureSystem.FAHRENHEIT
 import util.loadMemberProperty
 import kotlin.reflect.KMutableProperty
 import kotlin.reflect.KProperty

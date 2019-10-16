@@ -1,4 +1,4 @@
-package summaryI.exercise4
+package summaryIExercise4
 
 fun first(a: Boolean, b: Boolean, c: Boolean): Boolean =
   if (a) b && c else false

@@ -1,4 +1,4 @@
-package lambdas.exercise3
+package lambdasExercise3
 
 import atomictest.eq
 

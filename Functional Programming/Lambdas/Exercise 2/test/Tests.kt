@@ -1,4 +1,4 @@
-package lambdas.exercise2
+package lambdasExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

@@ -1,4 +1,4 @@
-package extensionsForNullableTypes.exercise1
+package extensionsForNullableTypesExercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

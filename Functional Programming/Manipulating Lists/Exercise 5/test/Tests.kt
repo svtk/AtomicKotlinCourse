@@ -1,4 +1,4 @@
-package manipulatingLists.exercise5
+package manipulatingListsExercise5
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

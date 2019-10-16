@@ -1,4 +1,4 @@
-package baseClassInitialization.exercise1
+package baseClassInitializationExercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

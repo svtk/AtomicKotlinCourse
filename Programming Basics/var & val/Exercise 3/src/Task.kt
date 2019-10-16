@@ -1,4 +1,4 @@
-package varAndVal.exercise3
+package varAndValExercise3
 
 fun main() {
   var x = 1

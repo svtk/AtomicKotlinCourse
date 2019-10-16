@@ -1,4 +1,4 @@
-package exceptions.exercise1
+package exceptionsExercise1
 
 fun erroneousCode() {
   // Uncomment this line to get an exception:

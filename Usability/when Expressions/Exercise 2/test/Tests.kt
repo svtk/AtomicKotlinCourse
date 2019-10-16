@@ -1,4 +1,4 @@
-package whenExpressions.exercise2
+package whenExpressionsExercise2
 
 import org.junit.Assert
 import org.junit.Test

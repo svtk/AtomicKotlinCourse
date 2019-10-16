@@ -1,4 +1,4 @@
-package inheritance.exercise1
+package inheritanceExercise1
 
 data class Position(val x: Int, val y: Int)
 

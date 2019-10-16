@@ -1,4 +1,4 @@
-package varAndVal.exercise1
+package varAndValExercise1
 
 fun main() {
   var answer = 42

@@ -1,4 +1,4 @@
-package summaryI.exercise6
+package summaryIExercise6
 
 fun testLong() {
   println(Long.MAX_VALUE + 1)

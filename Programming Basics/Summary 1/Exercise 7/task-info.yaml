@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 92
+  - offset: 91
     length: 69
     placeholder_text: |-
       while (testCondition(i)) {

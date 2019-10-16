@@ -1,4 +1,4 @@
-package theWithFunction.exercise1
+package theWithFunctionExercise1
 
 import atomictest.eq
 

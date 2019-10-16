@@ -1,4 +1,4 @@
-package properties.exercise3
+package propertiesExercise3
 
 class Robot {
   var x = 0

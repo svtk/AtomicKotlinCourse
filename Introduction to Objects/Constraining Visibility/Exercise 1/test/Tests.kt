@@ -1,4 +1,4 @@
-package constrainingVisibility.exercise1
+package constrainingVisibilityExercise1
 
 import org.junit.Assert
 import org.junit.Test

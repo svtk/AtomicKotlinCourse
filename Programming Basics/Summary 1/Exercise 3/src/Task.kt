@@ -1,4 +1,4 @@
-package summaryI.exercise3
+package summaryIExercise3
 
 fun other(s: String): String {
   var index = 0

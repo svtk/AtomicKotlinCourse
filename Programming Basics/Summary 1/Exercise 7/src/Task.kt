@@ -1,4 +1,4 @@
-package summaryI.exercise7
+package summaryIExercise7
 
 fun testCondition(i: Int) = i < 100
 

@@ -1,4 +1,4 @@
-package propertyAccessors.exercise4
+package propertyAccessorsExercise4
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

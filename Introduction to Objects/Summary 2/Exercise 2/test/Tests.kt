@@ -1,4 +1,4 @@
-package summaryII.exercise2
+package summaryIIExercise2
 
 import org.junit.Assert
 import org.junit.Test

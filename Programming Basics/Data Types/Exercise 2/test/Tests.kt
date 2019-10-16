@@ -1,4 +1,4 @@
-package dataTypes.exercise2
+package dataTypesExercise2
 
 import org.junit.Test
 import util.untestable

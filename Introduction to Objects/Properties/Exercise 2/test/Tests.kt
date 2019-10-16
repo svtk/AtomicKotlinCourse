@@ -1,4 +1,4 @@
-package properties.exercise2
+package propertiesExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

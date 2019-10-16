@@ -1,4 +1,4 @@
-package booleans.exercise2
+package booleansExercise2
 
 fun showAnd(first: Boolean, second: Boolean) {
   println("$first && $second == ${first && second}")

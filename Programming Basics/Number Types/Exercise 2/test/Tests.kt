@@ -1,4 +1,4 @@
-package numberTypes.exercise2
+package numberTypesExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

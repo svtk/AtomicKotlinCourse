@@ -1,4 +1,4 @@
-package repetitionWithWhile.exercise1
+package repetitionWithWhileExercise1
 
 fun displayContent(s: String) {
   var i = 0

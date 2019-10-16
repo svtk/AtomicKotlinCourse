@@ -1,4 +1,4 @@
-package sets.exercise2
+package setsExercise2
 
 import org.junit.Assert
 import org.junit.Test

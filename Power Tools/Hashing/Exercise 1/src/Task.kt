@@ -1,4 +1,4 @@
-package hashing.exercise1
+package hashingExercise1
 
 data class Contact(
     val name: String,

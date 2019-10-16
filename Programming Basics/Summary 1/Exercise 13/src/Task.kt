@@ -1,4 +1,4 @@
-package summaryI.exercise13
+package summaryIExercise13
 
 fun showSnake(rows: Int, columns: Int) {
   val width = (rows * columns).toString().length + 1

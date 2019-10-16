@@ -1,4 +1,4 @@
-package dataTypes.exercise1
+package dataTypesExercise1
 
 import org.junit.Assert
 import org.junit.Test

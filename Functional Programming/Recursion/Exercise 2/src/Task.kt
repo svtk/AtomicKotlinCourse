@@ -1,4 +1,4 @@
-package recursion.exercise2
+package recursionExercise2
 
 import atomictest.eq
 

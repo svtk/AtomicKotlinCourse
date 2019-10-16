@@ -1,4 +1,4 @@
-package testing.exercise3
+package testingExercise3
 
 import atomictest.eq
 

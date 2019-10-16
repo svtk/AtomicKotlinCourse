@@ -1,4 +1,4 @@
-package summaryII.exercise7
+package summaryIIExercise7
 
 import atomictest.*
 

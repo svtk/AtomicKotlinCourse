@@ -1,4 +1,4 @@
-package summaryI.exercise2
+package summaryIExercise2
 
 fun main() {
   var x = 1
