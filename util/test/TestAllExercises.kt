@@ -1,6 +1,6 @@
 import org.junit.Test
 
-class RunJUnitTests : AbstractRunJUnitTests() {
+class TestAllExercises : AbstractTestExercises() {
 
   @Test
   fun testHelloWorldExercise1() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World!/Exercise 1/test/output.txt"){ helloWorldExercise1.main() }
