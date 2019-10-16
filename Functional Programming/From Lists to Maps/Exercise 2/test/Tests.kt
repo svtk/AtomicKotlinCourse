@@ -1,4 +1,4 @@
-package fromListsToMaps.exercise2
+package fromListsToMapsExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

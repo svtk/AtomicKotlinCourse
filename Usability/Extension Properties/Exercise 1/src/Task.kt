@@ -1,4 +1,4 @@
-package extensionProperties.exercise1
+package extensionPropertiesExercise1
 
 import atomictest.eq
 

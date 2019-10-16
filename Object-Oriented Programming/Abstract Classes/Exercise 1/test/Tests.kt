@@ -1,6 +1,6 @@
-package abstractClasses.exercise1
+package abstractClassesExercise1
 
-import abstractClasses.exercise1.Move.*
+import abstractClassesExercise1.Move.*
 import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test

@@ -1,4 +1,4 @@
-package abstractClasses.exercise1
+package abstractClassesExercise1
 
 data class Position(val x: Int, val y: Int)
 

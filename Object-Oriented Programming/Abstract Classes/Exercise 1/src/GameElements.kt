@@ -1,4 +1,4 @@
-package abstractClasses.exercise1
+package abstractClassesExercise1
 
 interface GameElement {
   val symbol: Char

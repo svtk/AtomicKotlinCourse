@@ -1,4 +1,4 @@
-package lambdaWithReceiver.exercise1
+package lambdaWithReceiverExercise1
 
 import atomictest.eq
 

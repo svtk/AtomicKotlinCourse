@@ -1,4 +1,4 @@
-package secondaryConstructors.exercise1
+package secondaryConstructorsExercise1
 
 import org.junit.Assert
 import org.junit.Test

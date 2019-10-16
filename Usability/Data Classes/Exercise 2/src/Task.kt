@@ -1,4 +1,4 @@
-package dataClasses.exercise2
+package dataClassesExercise2
 
 import atomictest.eq
 

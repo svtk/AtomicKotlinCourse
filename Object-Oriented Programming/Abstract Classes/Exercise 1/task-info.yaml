@@ -11,7 +11,7 @@ files:
 - name: src/Robot.kt
   visible: true
   placeholders:
-  - offset: 518
+  - offset: 517
     length: 184
     placeholder_text: TODO()
 feedback_link: |
