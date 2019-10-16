@@ -15,8 +15,8 @@ class SimpleTime(
         (toSecondOfDay() * 1000000000L) + nanoseconds
 }
 
-/*
 fun main() {
+/*
     val noon = SimpleTime(12)
     noon.toSecondOfDay() eq 12 * 60 * 60
 
@@ -28,5 +28,5 @@ fun main() {
 
     val halfPastSeven = SimpleTime(hours = 6, minutes = 30)
     halfPastSeven.toNanoOfDay() eq (6 * 60 + 30) * 60 * 1000000000L
-}
 */
+}
