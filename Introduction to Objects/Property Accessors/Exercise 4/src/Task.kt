@@ -10,14 +10,14 @@ class AccessCounter {
 }
 
 fun main() {
-  val strange = AccessCounter()
-  strange.accesses eq 1
-  strange.accesses eq 2
-  strange.accesses eq 3
+  val counter = AccessCounter()
+  counter.accesses eq 1
+  counter.accesses eq 2
+  counter.accesses eq 3
 
-  val strange2 = AccessCounter()
+  val counter2 = AccessCounter()
   repeat(10) {
-    strange2.accesses
+    counter2.accesses
   }
-  strange2.accesses eq 11
+  counter2.accesses eq 11
 }
