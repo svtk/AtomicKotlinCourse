@@ -11,11 +11,11 @@ class Cage(private val maxCapacity: Int) {
   val capacity: Int
     get() = maxCapacity - hamsters.size
 
-  val isFull: Boolean
+  val full: Boolean
     get() = hamsters.size == maxCapacity
 
   fun put(hamster: Hamster): Boolean =
-      if (isFull)
+      if (full)
         false
       else {
         hamsters += hamster
@@ -28,11 +28,11 @@ class Cage(private val maxCapacity: Int) {
 
 fun main() {
   val cage = Cage(maxCapacity = 2)
-  cage.isFull eq false
+  cage.full eq false
   cage.capacity eq 2
   cage.put(Hamster("Alice")) eq true
   cage.put(Hamster("Bob")) eq true
-  cage.isFull eq true
+  cage.full eq true
   cage.capacity eq 0
   cage.put(Hamster("Charlie")) eq false
   cage.takeHamster()

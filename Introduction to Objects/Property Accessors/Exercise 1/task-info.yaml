@@ -3,9 +3,9 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 392
-    length: 51
-    placeholder_text: /*TODO*/
+  - offset: 368
+    length: 49
+    placeholder_text: /* add 'empty' property here */
 - name: test/Tests.kt
   visible: false
 feedback_link: |
