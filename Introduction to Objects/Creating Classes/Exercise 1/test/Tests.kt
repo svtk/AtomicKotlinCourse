@@ -10,7 +10,7 @@ import kotlin.reflect.full.createInstance
 class TestSomeClass {
   @Test
   fun testSolution() {
-    val someClass = loadClass("creatingClasses1", "SomeClass")
+    val someClass = loadClass("creatingClassesExercise1", "SomeClass")
     val someInstance = someClass.createInstance()
 
     testMethod("a", someClass, someInstance)

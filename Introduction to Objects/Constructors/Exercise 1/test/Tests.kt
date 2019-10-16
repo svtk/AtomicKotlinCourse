@@ -9,7 +9,7 @@ import util.loadClass
 class TestFloating {
   @Test
   fun test1() {
-    val floatingClass = loadClass("constructors1", "Floating")
+    val floatingClass = loadClass("constructorsExercise1", "Floating")
     val floatingConstructor = floatingClass.constructors.first()
     checkParametersOfConstructor(floatingConstructor, floatingClass, listOf("d" to "kotlin.Double"))
     val floatingInstance = floatingConstructor.call(1.0)

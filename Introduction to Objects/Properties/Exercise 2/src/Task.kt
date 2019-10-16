@@ -4,19 +4,19 @@ class Robot {
   var x = 0
   var y = 0
 
-  fun goRight(steps: Int) {
+  fun right(steps: Int) {
     x += steps
   }
 
-  fun goLeft(steps: Int) {
+  fun left(steps: Int) {
     x -= steps
   }
 
-  fun goDown(steps: Int) {
+  fun down(steps: Int) {
     y += steps
   }
 
-  fun goUp(steps: Int) {
+  fun up(steps: Int) {
     y -= steps
   }
 
@@ -26,9 +26,9 @@ class Robot {
 fun main() {
   val robot = Robot()
   println(robot.getLocation())
-  robot.goRight(1)
+  robot.right(1)
   println(robot.getLocation())
-  robot.goDown(2)
+  robot.down(2)
   println(robot.getLocation())
 }
 /* Output:

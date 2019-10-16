@@ -11,22 +11,22 @@ class Robot(val fieldSize: Int, var x: Int, var y: Int) {
     }
   }
 
-  fun goRight(steps: Int) {
+  fun right(steps: Int) {
     x += steps
     x = crossBoundary(x)
   }
 
-  fun goLeft(steps: Int) {
+  fun left(steps: Int) {
     x -= steps
     x = crossBoundary(x)
   }
 
-  fun goDown(steps: Int) {
+  fun down(steps: Int) {
     y += steps
     y = crossBoundary(y)
   }
 
-  fun goUp(steps: Int) {
+  fun up(steps: Int) {
     y -= steps
     y = crossBoundary(y)
   }
@@ -34,17 +34,17 @@ class Robot(val fieldSize: Int, var x: Int, var y: Int) {
   fun getLocation(): String = "($x, $y)"
 }
 
-/*
 fun main() {
+/*
     val robot = Robot(10, 1, 1)
     println(robot.getLocation())
-    robot.goUp(2)
+    robot.up(2)
     println(robot.getLocation())
-    robot.goLeft(10)
+    robot.left(10)
     println(robot.getLocation())
-}
 */
-/* Output:
+}
+/* Expected output:
 (1, 1)
 (1, 9)
 (1, 9)

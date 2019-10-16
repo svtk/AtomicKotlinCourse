@@ -6,19 +6,19 @@ files:
   - offset: 45
     length: 21
     placeholder_text: /*TODO*/
-  - offset: 100
+  - offset: 98
     length: 10
     placeholder_text: TODO()
-  - offset: 147
+  - offset: 143
     length: 10
     placeholder_text: TODO()
-  - offset: 194
+  - offset: 188
     length: 10
     placeholder_text: TODO()
-  - offset: 239
+  - offset: 231
     length: 10
     placeholder_text: TODO()
-  - offset: 285
+  - offset: 277
     length: 10
     placeholder_text: TODO()
 - name: test/Tests.kt

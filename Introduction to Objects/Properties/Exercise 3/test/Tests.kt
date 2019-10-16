@@ -13,24 +13,24 @@ class TestRobotTeleportation {
     val loggedMovements = StringBuilder()
 
     fun goRight(steps: Int) {
-      robot.goRight(steps)
+      robot.right(steps)
       loggedMovements.appendln("goRight($steps)")
     }
 
     fun goLeft(steps: Int) {
-      robot.goLeft(steps)
+      robot.left(steps)
       loggedMovements.appendln("goLeft($steps)")
 
     }
 
     fun goDown(steps: Int) {
-      robot.goDown(steps)
+      robot.down(steps)
       loggedMovements.appendln("goDown($steps)")
 
     }
 
     fun goUp(steps: Int) {
-      robot.goUp(steps)
+      robot.up(steps)
       loggedMovements.appendln("goUp($steps)")
     }
   }

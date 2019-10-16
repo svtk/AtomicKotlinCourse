@@ -16,31 +16,31 @@ class Robot(
 
   private fun checkSteps(steps: Int): Boolean {
     if (steps <= 0) {
-      println("Incorrect input: $steps, the number of steps should be positive.")
+      println("steps argument must be positive, is $steps")
       return true
     }
     return false
   }
 
-  fun goRight(steps: Int) {
+  fun right(steps: Int) {
     if (checkSteps(steps)) return
     x += steps
     x = crossBoundary(x)
   }
 
-  fun goLeft(steps: Int) {
+  fun left(steps: Int) {
     if (checkSteps(steps)) return
     x -= steps
     x = crossBoundary(x)
   }
 
-  fun goDown(steps: Int) {
+  fun down(steps: Int) {
     if (checkSteps(steps)) return
     y += steps
     y = crossBoundary(y)
   }
 
-  fun goUp(steps: Int) {
+  fun up(steps: Int) {
     if (checkSteps(steps)) return
     y -= steps
     y = crossBoundary(y)
@@ -53,8 +53,8 @@ class Robot(
 
 fun main() {
     val robot = Robot(10, 1, 1)
-    robot.goRight(-1)
+    robot.right(-1)
 }
 /* Output:
-Incorrect input: -1, the number of steps should be positive.
+steps argument must be positive, is -1
 */

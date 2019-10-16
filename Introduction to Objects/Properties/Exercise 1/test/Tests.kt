@@ -11,7 +11,7 @@ import kotlin.reflect.full.createInstance
 class TestProperties {
   @Test
   fun testSolution() {
-    val xClass = loadClass("properties1", "X")
+    val xClass = loadClass("propertiesExercise1", "X")
     val instance = xClass.createInstance()
 
     testPropertyValue("a", 3, xClass, instance)

@@ -14,22 +14,22 @@ class Robot(
     }
   }
 
-  fun goRight(steps: Int) {
+  fun right(steps: Int) {
     x += steps
     x = crossBoundary(x)
   }
 
-  fun goLeft(steps: Int) {
+  fun left(steps: Int) {
     x -= steps
     x = crossBoundary(x)
   }
 
-  fun goDown(steps: Int) {
+  fun down(steps: Int) {
     y += steps
     y = crossBoundary(y)
   }
 
-  fun goUp(steps: Int) {
+  fun up(steps: Int) {
     y -= steps
     y = crossBoundary(y)
   }

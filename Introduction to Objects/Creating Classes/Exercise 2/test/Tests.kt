@@ -10,7 +10,7 @@ import kotlin.reflect.full.createInstance
 class TestGiraffe {
   @Test
   fun testSolution() {
-    val giraffeClass = loadClass("creatingClasses2", "Giraffe")
+    val giraffeClass = loadClass("creatingClassesExercise2", "Giraffe")
     val giraffeInstance = giraffeClass.createInstance()
 
     val displayIDMethod = loadMemberFunction(giraffeClass, "displayID")

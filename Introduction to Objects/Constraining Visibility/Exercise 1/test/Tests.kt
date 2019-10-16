@@ -7,7 +7,7 @@ import util.*
 class TestAlien {
   @Test
   fun test1() {
-    val alienClass = loadClass("constrainingVisibility1", "Alien")
+    val alienClass = loadClass("constrainingVisibilityExercise1", "Alien")
     val alienConstructor = alienClass.constructors.first()
     checkParametersOfConstructor(alienConstructor, alienClass, listOf(
       "name" to "kotlin.String",

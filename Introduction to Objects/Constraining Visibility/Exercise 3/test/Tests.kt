@@ -15,32 +15,32 @@ class TestRobotIncorrectInput {
     var loggedSteps: Int? = null
 
     fun goRight(steps: Int) {
-      robot.goRight(steps)
-      loggedMovements.appendln("goRight($steps)")
+      robot.right(steps)
+      loggedMovements.appendln("right($steps)")
       loggedSteps = steps
     }
 
     fun goLeft(steps: Int) {
-      robot.goLeft(steps)
-      loggedMovements.appendln("goLeft($steps)")
+      robot.left(steps)
+      loggedMovements.appendln("left($steps)")
       loggedSteps = steps
     }
 
     fun goDown(steps: Int) {
-      robot.goDown(steps)
-      loggedMovements.appendln("goDown($steps)")
+      robot.down(steps)
+      loggedMovements.appendln("down($steps)")
       loggedSteps = steps
     }
 
     fun goUp(steps: Int) {
-      robot.goUp(steps)
-      loggedMovements.appendln("goUp($steps)")
+      robot.up(steps)
+      loggedMovements.appendln("up($steps)")
       loggedSteps = steps
     }
   }
 
   private fun getErrorMessageText(steps: Int?) =
-      "Incorrect input: $steps, the number of steps should be positive."
+      "steps argument must be positive, is $steps"
 
   private fun testWrongArgumentOutput(movements: RobotHandler.() -> Unit) {
     val robotHandler = RobotHandler()

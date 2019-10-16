@@ -4,24 +4,24 @@ files:
   visible: true
   placeholders:
   - offset: 330
-    length: 194
+    length: 172
     placeholder_text: ""
-  - offset: 558
+  - offset: 534
     length: 69
     placeholder_text: |-
       x += steps
         x = crossBoundary(x)
-  - offset: 664
+  - offset: 638
     length: 69
     placeholder_text: |-
       x -= steps
         x = crossBoundary(x)
-  - offset: 770
+  - offset: 742
     length: 69
     placeholder_text: |-
       y += steps
         y = crossBoundary(y)
-  - offset: 874
+  - offset: 844
     length: 69
     placeholder_text: |-
       y -= steps

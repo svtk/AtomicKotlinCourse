@@ -7,7 +7,7 @@ import util.TIMEOUT
 class TestRobotPrivateMembers {
   @Test(timeout = TIMEOUT)
   fun testCheckAllThePropertiesArePrivate() {
-    val robotMethods = setOf("goRight", "goLeft", "goDown", "goUp", "getLocation")
+    val robotMethods = setOf("right", "left", "down", "up", "getLocation")
     val objectMethods = setOf("wait", "equals", "toString", "hashCode", "getClass", "notify", "notifyAll")
     val publicMethods = robotMethods + objectMethods
 

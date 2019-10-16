@@ -8,16 +8,16 @@ files:
     placeholder_text: |-
       var x = 0
         var y = 0
-  - offset: 305
+  - offset: 303
     length: 35
     placeholder_text: x += steps
-  - offset: 377
+  - offset: 373
     length: 35
     placeholder_text: x -= steps
-  - offset: 449
+  - offset: 443
     length: 35
     placeholder_text: y += steps
-  - offset: 519
+  - offset: 511
     length: 35
     placeholder_text: y -= steps
 - name: test/Tests.kt

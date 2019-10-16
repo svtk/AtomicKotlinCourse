@@ -13,25 +13,25 @@ class TestRobotIntro {
     val loggedMovements = StringBuilder()
 
     fun goRight(steps: Int) {
-      robot.goRight(steps)
-      loggedMovements.appendln("goRight($steps)")
+      robot.right(steps)
+      loggedMovements.appendln("right($steps)")
     }
 
     fun goLeft(steps: Int) {
-      robot.goLeft(steps)
-      loggedMovements.appendln("goLeft($steps)")
+      robot.left(steps)
+      loggedMovements.appendln("left($steps)")
 
     }
 
     fun goDown(steps: Int) {
-      robot.goDown(steps)
-      loggedMovements.appendln("goDown($steps)")
+      robot.down(steps)
+      loggedMovements.appendln("down($steps)")
 
     }
 
     fun goUp(steps: Int) {
-      robot.goUp(steps)
-      loggedMovements.appendln("goUp($steps)")
+      robot.up(steps)
+      loggedMovements.appendln("up($steps)")
     }
   }
 

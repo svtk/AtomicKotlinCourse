@@ -14,22 +14,22 @@ class Robot {
     }
   }
 
-  fun goRight(steps: Int) {
+  fun right(steps: Int) {
     x += steps
     x = crossBoundary(x)
   }
 
-  fun goLeft(steps: Int) {
+  fun left(steps: Int) {
     x -= steps
     x = crossBoundary(x)
   }
 
-  fun goDown(steps: Int) {
+  fun down(steps: Int) {
     y += steps
     y = crossBoundary(y)
   }
 
-  fun goUp(steps: Int) {
+  fun up(steps: Int) {
     y -= steps
     y = crossBoundary(y)
   }
@@ -40,9 +40,9 @@ class Robot {
 fun main() {
   val robot = Robot()
   println(robot.getLocation())
-  robot.goUp(1)
+  robot.up(1)
   println(robot.getLocation())
-  robot.goLeft(10)
+  robot.left(10)
   println(robot.getLocation())
 }
 /* Output:

@@ -10,34 +10,34 @@ import util.loadMemberFunction
 import kotlin.reflect.full.createInstance
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSimpleStringPalindrome {
+class TestCreatingRobot {
 
   @Test(timeout = TIMEOUT)
   fun testRobot() {
-    val robotClass = loadClass("creatingClasses3", "Robot")
+    val robotClass = loadClass("creatingClassesExercise3", "Robot")
     robotClass.createInstance()
   }
 
   private fun testDirection(direction: String, steps: Int) {
-    val robotClass = loadClass("creatingClasses3", "Robot")
+    val robotClass = loadClass("creatingClassesExercise3", "Robot")
     val robot = robotClass.createInstance()
-    val goMethod = loadMemberFunction(robotClass, "go$direction")
+    val goMethod = loadMemberFunction(robotClass, direction)
 
-    runAndCheckSystemOutput("Incorrect output for 'go$direction' method",
-      "$direction $steps steps") {
+    runAndCheckSystemOutput("Incorrect output for '$direction' method",
+      "${direction.capitalize()} $steps steps") {
       goMethod.call(robot, steps)
     }
   }
 
   @Test(timeout = TIMEOUT)
-  fun testRight() = testDirection("Right", 11)
+  fun testRight() = testDirection("right", 11)
 
   @Test(timeout = TIMEOUT)
-  fun testLeft() = testDirection("Left", 37)
+  fun testLeft() = testDirection("left", 37)
 
   @Test(timeout = TIMEOUT)
-  fun testUp() = testDirection("Up", 4)
+  fun testUp() = testDirection("up", 4)
 
   @Test(timeout = TIMEOUT)
-  fun testDown() = testDirection("Down", 8)
+  fun testDown() = testDirection("down", 8)
 }

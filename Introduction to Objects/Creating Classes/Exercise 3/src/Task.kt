@@ -1,29 +1,29 @@
 package creatingClassesExercise3
 
 class Robot {
-  fun goRight(steps: Int) {
+  fun right(steps: Int) {
     println("Right $steps steps")
   }
 
-  fun goLeft(steps: Int) {
+  fun left(steps: Int) {
     println("Left $steps steps")
   }
 
-  fun goDown(steps: Int) {
+  fun down(steps: Int) {
     println("Down $steps steps")
   }
 
-  fun goUp(steps: Int) {
+  fun up(steps: Int) {
     println("Up $steps steps")
   }
 }
 
-/*
 fun main() {
+/*
   val robot = Robot()
   robot.goUp(11)
+*/
 }
- */
-/* Output:
-going up 11 steps
+/* Expected output:
+Up 11 steps
 */
