@@ -5,11 +5,19 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
+import util.loadClass
+import util.checkParametersOfConstructor
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestConstructorsExercise2 {
   class RobotHandler(fieldSize: Int, var x: Int, var y: Int) {
-    val robot: Robot = Robot(fieldSize, x, y)
+    val robot: Robot = run {
+      val robotClass = loadClass("constructorsExercise2", "Robot")
+      val robotConstructor = robotClass.constructors.first()
+      checkParametersOfConstructor(robotConstructor, robotClass,
+        listOf("fieldSize" to "kotlin.Int", "x" to "kotlin.Int", "y" to "kotlin.Int"))
+      robotConstructor.call(fieldSize, x, y) as Robot
+    }
     val loggedMovements = StringBuilder()
 
     fun goRight(steps: Int) {
@@ -44,7 +52,7 @@ class TestConstructorsExercise2 {
       "Initial location of the robot should be ($x, $y)"
     } else {
       "Starting location: ($x, $y), field size: $fieldSize.\n" +
-          "Wrong location after:\n" + robotHandler.loggedMovements
+        "Wrong location after:\n" + robotHandler.loggedMovements
     }
     Assert.assertEquals(message, location, actualLocation)
   }
@@ -65,5 +73,3 @@ class TestConstructorsExercise2 {
     goUp(10)
   }
 }
-
-fun Robot(vararg a: Any?): Robot = TODO()

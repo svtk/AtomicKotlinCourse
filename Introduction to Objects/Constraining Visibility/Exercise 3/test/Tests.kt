@@ -9,7 +9,7 @@ import util.runAndGetSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestConstrainingVisibilityExercise3 {
-  class RobotHandler() {
+  class RobotHandler {
     val robot: Robot = Robot(10, 0, 0)
     val loggedMovements = StringBuilder()
     var loggedSteps: Int? = null
@@ -81,5 +81,3 @@ class TestConstrainingVisibilityExercise3 {
     goDown(-50)
   }
 }
-
-fun Robot(vararg a: Any?): Robot = TODO()
