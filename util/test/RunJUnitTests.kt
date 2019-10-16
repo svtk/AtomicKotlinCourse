@@ -3,6 +3,24 @@ import org.junit.Test
 class RunJUnitTests : AbstractRunJUnitTests() {
 
   @Test
+  fun testHelloWorldExercise1() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World!/Exercise 1/test/output.txt"){ helloWorldExercise1.main() }
+
+  @Test
+  fun testHelloWorldExercise2() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World!/Exercise 2/test/output.txt"){ helloWorldExercise2.main() }
+
+  @Test
+  fun testHelloWorldExercise3() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World!/Exercise 3/test/output.txt"){ helloWorldExercise3.main() }
+
+  @Test
+  fun testVarAndValExercise1() = testOutput("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 1/test/output.txt"){ varAndValExercise1.main() }
+
+  @Test
+  fun testVarAndValExercise2() = testOutput("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 2/test/output.txt"){ varAndValExercise2.main() }
+
+  @Test
+  fun testVarAndValExercise3() = testOutput("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 3/test/output.txt"){ varAndValExercise3.main() }
+
+  @Test
   fun testDataTypesExercise1() = testClass(dataTypesExercise1.TestDataTypesExercise1::class)
 
   @Test
@@ -28,6 +46,9 @@ class RunJUnitTests : AbstractRunJUnitTests() {
 
   @Test
   fun testIfExpressionsExercise3() = testClass(ifExpressionsExercise3.TestIfExpressionsExercise3::class)
+
+  @Test
+  fun testStringTemplatesExercise1() = testOutput("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 1/test/output.txt"){ stringTemplatesExercise1.main() }
 
   @Test
   fun testStringTemplatesExercise2() = testClass(stringTemplatesExercise2.TestStringTemplatesExercise2::class)
@@ -90,6 +111,9 @@ class RunJUnitTests : AbstractRunJUnitTests() {
   fun testTheInKeywordExercise4() = testClass(theInKeywordExercise4.TestTheInKeywordExercise4::class)
 
   @Test
+  fun testExpressionsAndStatementsExercise1() = testOutput("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Exercise 1/test/output.txt"){ expressionsAndStatementsExercise1.main() }
+
+  @Test
   fun testExpressionsAndStatementsExercise2() = testClass(expressionsAndStatementsExercise2.TestExpressionsAndStatementsExercise2::class)
 
   @Test
@@ -97,6 +121,9 @@ class RunJUnitTests : AbstractRunJUnitTests() {
 
   @Test
   fun testSummaryIExercise1() = testClass(summaryIExercise1.TestSummaryIExercise1::class)
+
+  @Test
+  fun testSummaryIExercise2() = testOutput("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 2/test/output.txt"){ summaryIExercise2.main() }
 
   @Test
   fun testSummaryIExercise3() = testClass(summaryIExercise3.TestSummaryIExercise3::class)
@@ -304,6 +331,9 @@ class RunJUnitTests : AbstractRunJUnitTests() {
 
   @Test
   fun testSummaryIIExercise14() = testClass(summaryIIExercise14.TestSummaryIIExercise14::class)
+
+  @Test
+  fun testBreakAndContinueExercise1() = testOutput("../AtomicKotlinCourse/Usability/break & continue/Exercise 1/test/output.txt"){ breakAndContinueExercise1.main() }
 
   @Test
   fun testBreakAndContinueExercise2() = testClass(breakAndContinueExercise2.TestBreakAndContinueExercise2::class)
