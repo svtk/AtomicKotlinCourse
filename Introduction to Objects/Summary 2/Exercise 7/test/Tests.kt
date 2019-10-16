@@ -18,7 +18,7 @@ class TestSummaryIIExercise7 {
       fullProperty: KProperty<*>
     ) -> Unit
   ) {
-    val holderClass = loadClass("summaryII7", "FixedSizeHolder")
+    val holderClass = loadClass("summaryIIExercise7", "FixedSizeHolder")
     val constructor = holderClass.constructors.first()
     checkParametersOfConstructor(constructor, holderClass, listOf("" to "kotlin.Int"))
     val holderInstance = constructor.call(size)
