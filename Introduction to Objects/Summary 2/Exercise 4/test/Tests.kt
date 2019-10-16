@@ -9,7 +9,7 @@ import kotlin.reflect.full.primaryConstructor
 class TestBoring2 {
   @Test
   fun test1Functions() {
-    val boringClass = loadClass("summaryII4", "Boring2")
+    val boringClass = loadClass("summaryIIExerciseExercise4", "Boring2")
     val aFunction = loadMemberFunction(boringClass, "a")
     val bFunction = loadMemberFunction(boringClass, "b")
     val cFunction = loadMemberFunction(boringClass, "c")

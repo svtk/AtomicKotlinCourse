@@ -10,7 +10,7 @@ import kotlin.reflect.full.createInstance
 class TestBoring {
   @Test
   fun test1Functions() {
-    val boringClass = loadClass("summaryII2", "Boring")
+    val boringClass = loadClass("summaryIIExercise2", "Boring")
     val aFunction = loadMemberFunction(boringClass, "a")
     val bFunction = loadMemberFunction(boringClass, "b")
     val cFunction = loadMemberFunction(boringClass, "c")
