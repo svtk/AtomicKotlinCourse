@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.mapIndexedNotNull as mapIndexedNotNullLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestMapIndexedNotNullImpl {
+class TestFunctionTypesExercise3 {
   private fun <T, R : Any> check(
       list: List<T>,
       predicateStr: String,

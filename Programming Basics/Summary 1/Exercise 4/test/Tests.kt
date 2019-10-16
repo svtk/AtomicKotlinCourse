@@ -3,7 +3,7 @@ package summaryIExercise4
 import org.junit.Assert
 import org.junit.Test
 
-class TestFirstSecond {
+class TestSummaryIExercise4 {
   private fun testFirst(a: Boolean, b: Boolean, c: Boolean) {
     Assert.assertEquals("Wrong result for 'first($a, $b, $c)'",
       first(a, b, c), a && b && c)

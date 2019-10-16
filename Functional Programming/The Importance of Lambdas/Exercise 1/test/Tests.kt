@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestAdults {
+class TestTheImportanceOfLambdasExercise1 {
   private fun checkNames(people: List<Person>) {
     Assert.assertEquals("Wrong result for $people:",
         people.filter { it.age > 17 }.map { it.name },

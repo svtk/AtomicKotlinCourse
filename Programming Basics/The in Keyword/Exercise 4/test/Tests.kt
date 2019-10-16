@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestValidIdentifier {
+class TestTheInKeywordExercise4 {
 
   private fun checkValidIdentifier(s: String) {
     Assert.assertTrue("'$s' is a valid identifier", isValidIdentifier(s))

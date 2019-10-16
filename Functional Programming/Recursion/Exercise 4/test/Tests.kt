@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestReachable {
+class TestRecursionExercise4 {
   private fun checkSample(from: City, result: Set<City>) {
     Assert.assertEquals("Wrong result for sample '${from.name}.getAllReachableRecursive()'", result,
         from.getAllReachableRecursive())

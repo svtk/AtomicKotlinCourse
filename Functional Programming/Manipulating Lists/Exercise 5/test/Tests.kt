@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.flatMap as flatMapLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFlatMap {
+class TestManipulatingListsExercise5 {
   private fun <T, R> checkFlatMap(
       list: List<T>,
       transform: (T) -> List<R>

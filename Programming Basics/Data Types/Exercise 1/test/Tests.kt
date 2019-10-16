@@ -5,7 +5,7 @@ import org.junit.Test
 import util.TIMEOUT
 import util.runAndGetSystemOutput
 
-class Tests {
+class TestDataTypesExercise1 {
   @Test(timeout = TIMEOUT)
   fun checkOutput() {
     val output = runAndGetSystemOutput {

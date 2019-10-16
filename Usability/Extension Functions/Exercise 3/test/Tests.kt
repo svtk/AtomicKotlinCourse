@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRectangle {
+class TestExtensionFunctionsExercise3 {
   private fun message(rectangle: Rectangle, expected: Boolean) =
       "Wrong result for rectangle $rectangle; it should${if (expected) "" else "n't"} cover zero:"
 

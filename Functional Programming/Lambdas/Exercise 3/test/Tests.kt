@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRegisterStudents {
+class TestLambdasExercise3 {
   private fun checkRegisterStudents(names: List<String>, startId: Int) {
     Assert.assertEquals("Wrong result for startId = $startId, names = $names:",
         names.mapIndexed { index, name -> Student(index + startId, name) },

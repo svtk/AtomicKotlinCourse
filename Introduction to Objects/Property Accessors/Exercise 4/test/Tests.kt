@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestNumberOfAccesses {
+class TestPropertyAccessorsExercise4 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val strange = AccessCounter()

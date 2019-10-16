@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFilterNonBlank {
+class TestTheImportanceOfLambdasExercise2 {
   private fun checkList(strings: List<String>) {
     Assert.assertEquals("Wrong result for $strings",
         strings.filter { it.isNotBlank() },

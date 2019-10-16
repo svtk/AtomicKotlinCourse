@@ -3,7 +3,7 @@ package variableArgumentListsExercise2
 import org.junit.Test
 import util.untestable
 
-class Test {
+class TestVariableArgumentListsExercise2 {
     @Test
     fun test() = untestable()
 }

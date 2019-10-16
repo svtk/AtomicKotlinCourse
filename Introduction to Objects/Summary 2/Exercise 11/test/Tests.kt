@@ -8,7 +8,7 @@ import util.loadMemberProperty
 import kotlin.reflect.KMutableProperty
 import kotlin.reflect.KProperty
 
-class TestTemperature {
+class TestSummaryIIExercise11 {
   private enum class MeasureSystem(val title: String) {
     FAHRENHEIT("fahrenheit"), CELSIUS("celsius");
 

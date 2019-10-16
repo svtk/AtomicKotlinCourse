@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestClassesAndObjects3 {
+class TestObjectsEverywhereExercise3 {
   private fun checkPalindrome(s: String, expected: Boolean) {
     Assert.assertEquals("""Wrong result for isPalIgnoreSpecial("$s"):""", expected, isPalIgnoreSpecial(s))
   }

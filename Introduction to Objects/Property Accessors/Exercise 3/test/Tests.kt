@@ -10,7 +10,7 @@ import kotlin.reflect.KClass
 import kotlin.reflect.KVisibility
 import kotlin.reflect.full.createInstance
 
-class TestPropertyAccessors3 {
+class TestPropertyAccessorsExercise3 {
 
     private fun loadGSClass(): KClass<*> =
       loadClass("propertyAccessorsExercise3", "GS")

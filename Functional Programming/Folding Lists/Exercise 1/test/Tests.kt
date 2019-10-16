@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSize {
+class TestFoldingListsExercise1 {
   private fun <T> checkSize(list: List<T>) {
     Assert.assertEquals("Wrong 'size' for $list:", list.size, list.size())
   }

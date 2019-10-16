@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.*
 
-class TestAlien {
+class TestConstrainingVisibilityExercise1 {
   @Test
   fun test1() {
     val alienClass = loadClass("constrainingVisibilityExercise1", "Alien")

@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.associateBy as associateByLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestPersonsMap {
+class TestFromListsToMapsExercise3 {
   private fun <T, R> check(
       list: List<T>,
       keySelector: (T) -> R,

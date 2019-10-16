@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestEmptiness {
+class TestPropertyAccessorsExercise1 {
   @Test(timeout = TIMEOUT)
   fun testSample() {
     val cage = Cage(2)

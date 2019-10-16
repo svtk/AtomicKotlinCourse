@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestForLoops3 {
+class TestTheInKeywordExercise3 {
   @Test(timeout = TIMEOUT)
   fun test1LowerCaseC() {
     Assert.assertTrue("'c' is a lower case letter", isLowerCase('c'))

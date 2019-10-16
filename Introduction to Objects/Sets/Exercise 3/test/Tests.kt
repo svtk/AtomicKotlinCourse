@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestGroceryCart {
+class TestSetsExercise3 {
   private fun checkPercentage(
       percentage: Double,
       groceryCart: Set<String>,

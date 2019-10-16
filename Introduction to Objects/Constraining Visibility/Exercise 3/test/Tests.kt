@@ -8,7 +8,7 @@ import util.checkSystemOutput
 import util.runAndGetSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRobotIncorrectInput {
+class TestConstrainingVisibilityExercise3 {
   class RobotHandler() {
     val robot: Robot = Robot(10, 0, 0)
     val loggedMovements = StringBuilder()

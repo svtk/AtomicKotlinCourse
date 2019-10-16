@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestAlphabet {
+class TestTheInKeywordExercise1 {
   @Test(timeout = TIMEOUT)
   fun test1() {
     Assert.assertEquals("abcdefghijklmnopqrstuvwxyz", getAlphabet())

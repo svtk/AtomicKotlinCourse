@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBalancedBraces {
+class TestWhenExpressionsExercise3 {
   private fun checkBalanced(s: String, expected: Boolean) {
     Assert.assertEquals("isBalanced($s) should return $expected", isBalanced(s), expected)
   }

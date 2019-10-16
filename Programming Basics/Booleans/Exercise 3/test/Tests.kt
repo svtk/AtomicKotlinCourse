@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBooleans2 {
+class TestBooleansExercise3 {
 
   private fun checkAnd(b1: Boolean, b2: Boolean) {
     Assert.assertEquals("and($b1, $b2) should be ${b1 && b2}", b1 && b2, and(b1, b2))

@@ -1,20 +1,23 @@
 ## Properties (#3)
 
-The `Robot` from the previous exercise moves within a square field of size
-`fieldSize x fieldSize`. The borders of this field are "looped": for a
-`fieldSize` of 100, if the robot is in cell `(0, 0)` and moves up one step, it
-arrives in cell `(0, 99)`.
+The `Robot` now can move within a square field of size `100 x 100`.
+The borders of this field are "looped": if the robot is in cell `(0, 0)` and
+moves up one step, it arrives in cell `(0, 99)`.
 
 ```
 (0, 0)
-// goUp(1)
+// up(1)
 (0, 99)
-// goLeft(10)
+// left(10)
 (90, 99)
 ```
 
-Modify `right()`, `left()`, `up()` and `down()` to implement this behavior. Use
-an auxiliary member function named `crossBoundary()` to check the boundaries.
-This eliminates repetition and simplifies the resulting code.
+Modify `right()`, `left()`, `up()` and `down()` to implement this behavior.
 
-Write a `main()` to test `Robot`.
+<div class="hint">
+
+Use an auxiliary member function named  to check the boundaries. You can
+name it `crossBoundary()`. This eliminates repetition and simplifies the
+resulting code.
+
+</div>

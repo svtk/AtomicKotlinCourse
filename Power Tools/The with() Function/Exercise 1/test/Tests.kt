@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.text.buildString as buildStringLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBuildStringViaWith {
+class TestTheWithFunctionExercise1 {
   private fun check(
       message: String,
       action: StringBuilder.() -> Unit

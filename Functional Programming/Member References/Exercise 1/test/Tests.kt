@@ -8,7 +8,7 @@ import util.TIMEOUT
 import java.util.*
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestMapImpl {
+class TestMemberReferencesExercise1 {
   private fun check(
       list: List<Student>
   ) {

@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 
-class TestRobotPrivateMembers {
+class TestConstrainingVisibilityExercise2 {
   @Test(timeout = TIMEOUT)
   fun testCheckAllThePropertiesArePrivate() {
     val robotMethods = setOf("right", "left", "down", "up", "getLocation")

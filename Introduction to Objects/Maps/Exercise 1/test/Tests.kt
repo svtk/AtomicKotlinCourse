@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestContactMap {
+class TestMapsExercise1 {
   private fun checkBuildingMap(contactList: List<Contact>) {
     Assert.assertEquals("Incorrect result for $contactList:", contactList.associateBy { it.number }, buildNumberToContactMap(contactList))
   }

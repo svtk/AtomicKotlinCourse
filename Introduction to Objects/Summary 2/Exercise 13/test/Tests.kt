@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRomanNumerals {
+class TestSummaryIIExercise13 {
   private fun checkNumber(number: Int, roman: String) {
     Assert.assertEquals("Wrong result for $number:", roman, convertToRoman(number))
   }

@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestWrappingInATag {
+class TestExtensionFunctionsExercise1 {
   private fun checkWrapping(tagName: String, string: String) {
     Assert.assertEquals("Wrong result for $tagName:",
         "<$tagName>$string</$tagName>", string.wrapInTag(tagName))

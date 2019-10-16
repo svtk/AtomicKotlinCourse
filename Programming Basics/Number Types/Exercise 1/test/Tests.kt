@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestNumberTypes1 {
+class TestNumberTypesExercise1 {
   @Test(timeout = TIMEOUT)
   fun testA() {
     Assert.assertEquals(3, a)

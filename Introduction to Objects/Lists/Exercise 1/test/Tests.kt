@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestMaxInList {
+class TestListsExercise1 {
   private fun checkMaximum(list: List<Int>, max: Int) {
     val intList = IntList(list)
     Assert.assertEquals("Incorrect maximum for $intList", max, findMax(intList))

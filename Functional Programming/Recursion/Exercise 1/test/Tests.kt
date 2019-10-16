@@ -4,7 +4,7 @@ import org.junit.Test
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 
-class TestRecursion {
+class TestRecursionExercise1 {
   private fun expectedOutput(group: String, n: Int) = buildString {
     (n downTo 0).forEach {
       appendln("Simulation: $group Reality: $it")

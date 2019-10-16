@@ -6,7 +6,7 @@ import util.checkMainIsImplemented
 import util.checkParametersOfConstructor
 import util.loadClass
 
-class TestFloating {
+class TestConstructorsExercise1 {
   @Test
   fun test1() {
     val floatingClass = loadClass("constructorsExercise1", "Floating")

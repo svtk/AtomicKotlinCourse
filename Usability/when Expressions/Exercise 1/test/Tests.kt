@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestCloudiness {
+class TestWhenExpressionsExercise1 {
   private fun expected(cloudiness: Int): String =
       when (cloudiness) {
         in 81..100 -> "Sunny"

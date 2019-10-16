@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestCountOccurrences {
+class TestListsExercise2 {
 
   private fun checkOccurrences(list: List<Int>, number: Int, result: Int) {
     val intList = IntList(list)

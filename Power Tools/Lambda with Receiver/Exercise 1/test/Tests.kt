@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestDrawSquare {
+class TestLambdaWithReceiverExercise1 {
   private fun check(width: Int) {
     Assert.assertEquals("Wrong result for width = $width:",
         buildString {

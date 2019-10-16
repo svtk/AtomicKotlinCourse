@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBooks {
+class TestLambdasExercise2 {
   private fun checkBooks(books: List<Book>, authors: Set<Author>) {
     Assert.assertEquals("Wrong result for $books:", getAuthors(books), authors)
   }

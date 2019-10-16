@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestMapImpl {
+class TestManipulatingListsExercise2 {
   private fun <T> check(
       list: List<T>
   ) {

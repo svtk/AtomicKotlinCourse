@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSumOfEven {
+class TestTheInKeywordExercise2 {
   @Test(timeout = TIMEOUT)
   fun test1() {
     Assert.assertEquals("sumOfEven(1) should be 0",

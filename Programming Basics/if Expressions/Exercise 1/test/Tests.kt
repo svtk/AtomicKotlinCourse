@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestIfExpressions1 {
+class TestIfExpressionsExercise1 {
   private fun checkFunction(number: Int, sign: String) {
     Assert.assertEquals("""checkSign($number) should return "$sign"""",
         sign, checkSign(number))

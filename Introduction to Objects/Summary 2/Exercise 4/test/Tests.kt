@@ -6,7 +6,7 @@ import util.loadClass
 import util.loadMemberFunction
 import kotlin.reflect.full.primaryConstructor
 
-class TestBoring2 {
+class TestSummaryIIExercise4 {
   @Test
   fun test1Functions() {
     val boringClass = loadClass("summaryIIExerciseExercise4", "Boring2")

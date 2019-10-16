@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBooleans1 {
+class TestBooleansExercise1 {
   @Test(timeout = TIMEOUT)
   fun testA() {
     Assert.assertFalse(a)

@@ -7,7 +7,7 @@ import util.loadMemberFunction
 import util.runAndGetSystemOutput
 import kotlin.reflect.full.createInstance
 
-class TestBoring {
+class TestSummaryIIExercise2 {
   @Test
   fun test1Functions() {
     val boringClass = loadClass("summaryIIExercise2", "Boring")

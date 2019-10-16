@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestStaticElement {
+class TestBaseClassInitializationExercise1 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val wall = Wall()

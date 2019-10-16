@@ -5,7 +5,7 @@ import org.junit.Test
 import org.junit.rules.ExpectedException
 import util.runAndCheckSystemOutput
 
-class TestAbort {
+class TestExceptionsExercise2 {
   @Rule
   @JvmField
   val thrown: ExpectedException = ExpectedException.none()

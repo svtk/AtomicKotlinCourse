@@ -8,7 +8,7 @@ import util.loadMemberProperty
 import kotlin.reflect.KClass
 import kotlin.reflect.full.createInstance
 
-class TestProperties {
+class TestPropertiesExercise1 {
   @Test
   fun testSolution() {
     val xClass = loadClass("propertiesExercise1", "X")

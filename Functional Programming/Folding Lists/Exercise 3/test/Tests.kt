@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.any as anyLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestMapImpl {
+class TestFoldingListsExercise3 {
   private fun <T> checkAny(list: List<T>, predicateString: String, predicate: (T) -> Boolean) {
     Assert.assertEquals("Wrong 'any' implementation. Wrong result for checking $predicateString in $list:", list.anyLibrary(predicate), list.any(predicate))
   }

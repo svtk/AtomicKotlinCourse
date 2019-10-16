@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFactorial {
+class TestLoopingAndRangesExercise1 {
 
   @Test(timeout = TIMEOUT)
   fun test1() {

@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestHamstersAndNullableTypes {
+class TestNullableTypesExercise1 {
   @Test(timeout = TIMEOUT)
   fun test1SampleSuccess() {
     val cage = Cage(1)

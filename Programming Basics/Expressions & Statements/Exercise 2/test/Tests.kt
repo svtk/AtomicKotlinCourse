@@ -6,7 +6,7 @@ import util.checkMainIsImplemented
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 
-class Test {
+class TestExpressionsAndStatementsExercise2 {
     @Test
     fun test1f() {
         val fFunc = ::f

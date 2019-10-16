@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.flatMap as flatMapLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFriendSuggestions {
+class TestManipulatingListsExercise4 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val alice = Person("Alice")

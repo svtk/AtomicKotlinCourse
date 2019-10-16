@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestOddEven {
+class TestExtensionFunctionsExercise2 {
   private fun checkQuality(
       number: Int,
       message: String,

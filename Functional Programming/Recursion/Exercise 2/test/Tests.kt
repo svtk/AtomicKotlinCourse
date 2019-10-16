@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFactorial {
+class TestRecursionExercise2 {
   private fun check(number: Long, expected: Long) {
     Assert.assertEquals("Wrong result for 'factorial($number)'",
         expected,

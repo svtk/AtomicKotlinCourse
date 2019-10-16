@@ -3,7 +3,7 @@ package summaryIExercise7
 import org.junit.Test
 import util.runAndCheckSystemOutput
 
-class TestWhile {
+class TestSummaryIExercise7 {
   @Test
   fun test() {
     runAndCheckSystemOutput(

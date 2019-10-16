@@ -1,7 +1,7 @@
 ## Testing (#1)
 
 {{ :UNTESTABLE I can test the behavior of f, g and h, but can't test
-how they were tested with eq and neq unless the specific requiements / initial
+how they were tested with eq and neq unless the specific requirements / initial
 data is given }}
 
 Write a function `f()` that simply returns 47. Import `atomictest` and test

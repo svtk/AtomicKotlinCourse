@@ -3,7 +3,7 @@ package summaryIExercise8
 import org.junit.Test
 import util.runAndCheckSystemOutput
 
-class TestEveryFifth {
+class TestSummaryIExercise8 {
     private fun testOutput(start: Int, end: Int) {
         val expected = (start..end)
           .filterIndexed { index, _ -> index % 5 == 4 }

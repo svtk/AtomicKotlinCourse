@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 
-class TestLisOfChunks {
+class TestVariableArgumentListsExercise3 {
 
   private fun checkListOfChunks(size: Int, vararg elements: String) {
     Assert.assertEquals("Incorrect result for size = $size, elements = ${elements.toList()}.",

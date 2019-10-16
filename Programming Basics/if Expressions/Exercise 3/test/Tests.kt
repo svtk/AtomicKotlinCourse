@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestIfExpressions3 {
+class TestIfExpressionsExercise3 {
   private fun checkFunction(first: Int, second: Int) {
     val max = if (first > second) first else second
     Assert.assertEquals("findMax($first, $second) should return $max",

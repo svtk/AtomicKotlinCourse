@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.untestable
 
-class Test {
+class TestBreakAndContinueExercise3 {
     @Test
     fun test() = untestable()
 }

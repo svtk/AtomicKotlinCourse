@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestOrEmpty {
+class TestExtensionsForNullableTypesExercise1 {
   private fun checkExpectedValue(s: String?, value: String) {
     Assert.assertEquals("Wrong value for $s:", value, s.orEmpty())
   }

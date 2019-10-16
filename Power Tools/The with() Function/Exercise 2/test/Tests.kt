@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestWith2Function {
+class TestTheWithFunctionExercise2 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val window = Window("my")

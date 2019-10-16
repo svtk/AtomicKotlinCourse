@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestReverseNumber {
+class TestObjectsEverywhereExercise4 {
   private fun checkReverse(number: Int, expected: Int) {
     Assert.assertEquals("Wrong result for reversing $number:",
         expected, reverseDecimal(number))

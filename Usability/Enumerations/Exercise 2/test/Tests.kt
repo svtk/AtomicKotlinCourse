@@ -9,7 +9,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestEnumerations {
+class TestEnumerationsExercise2 {
   private val seasons: Map<Month, Season> = mapOf(
       December to Summer, January to Summer, February to Summer,
       March to Autumn, April to Autumn, May to Autumn,

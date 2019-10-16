@@ -3,7 +3,7 @@ package summaryIExercise9
 import org.junit.Test
 import util.runAndCheckSystemOutput
 
-class TestEveryFifthText {
+class TestSummaryIExercise9 {
   private fun testInput(s: String) {
     val expected = s.toList()
       .filter { it != ' ' }

@@ -5,7 +5,7 @@ import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 import kotlin.reflect.KFunction
 
-class TestShowFunction {
+class TestStringTemplatesExercise3 {
   @Test
   fun testShow() {
     val showFunc = ::show

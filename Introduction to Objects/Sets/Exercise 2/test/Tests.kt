@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.runAndGetSystemOutput
 
-class TestExperiment {
+class TestSetsExercise2 {
   @Test
   fun test1Experiment() {
     Assert.assertTrue("The 'experiment' function should return a positive number", experiment() > 0)

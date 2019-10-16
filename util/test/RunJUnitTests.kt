@@ -2,8 +2,8 @@ import org.junit.Test
 
 class RunJUnitTests : AbstractRunJUnitTests() {
   @Test
-  fun testIfExpressions2() = testClass(ifExpressionsExercise2.TestIfExpressions2::class)
+  fun testIfExpressions2() = testClass(ifExpressionsExercise2.TestIfExpressionsExercise2::class)
 
   @Test
-  fun testIfExpressions3() = testClass(ifExpressionsExercise3.TestIfExpressions3::class)
+  fun testIfExpressions3() = testClass(ifExpressionsExercise3.TestIfExpressionsExercise3::class)
 }

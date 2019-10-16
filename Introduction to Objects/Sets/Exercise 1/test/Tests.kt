@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestUniqueCharacters {
+class TestSetsExercise1 {
   private fun checkUniqueCharacters(s: String, isUnique: Boolean) {
     val message = if (isUnique) {
       "This string $s has unique characters"

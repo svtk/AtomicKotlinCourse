@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRepetitionWithWhile {
+class TestRepetitionWithWhileExercise2 {
   private fun checkSum(i: Int) {
     val expectedSum = (1..i).sum()
     Assert.assertEquals("sum($i) should be $expectedSum", expectedSum, sum(i))

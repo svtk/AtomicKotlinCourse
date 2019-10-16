@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBooksExample {
+class TestManipulatingListsExercise3 {
   @Test(timeout = TIMEOUT)
   fun test2SimpleOneBookOneAuthor() {
     val book = Book("Book", listOf(Author("Author")))

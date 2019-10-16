@@ -8,7 +8,7 @@ import util.TIMEOUT
 import java.time.LocalTime
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSimpleTime {
+class TestNamedAndDefaultArgumentsExercise2 {
   private fun testSimpleTime(
       hours: Int,
       minutes: Int = 0,

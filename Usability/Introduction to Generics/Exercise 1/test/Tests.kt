@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSecond {
+class TestIntroductionToGenericsExercise1 {
   private fun <T> checkSecondFunctions(list: List<T>, second: T?, penultimate: T?) {
     Assert.assertEquals("Wrong `second` element for $list:",
         list.secondOrNull(), second)

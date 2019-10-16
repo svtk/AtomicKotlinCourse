@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestMapImpl {
+class TestMemberReferencesExercise2 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val range = 1..1000

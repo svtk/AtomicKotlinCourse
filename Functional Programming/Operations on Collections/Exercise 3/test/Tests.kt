@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestOperations {
+class TestOperationsOnCollectionsExercise3 {
   private fun check(list: List<Int?>) {
     Assert.assertEquals("Wrong result for $list",
         list.filterNotNull().sum(),

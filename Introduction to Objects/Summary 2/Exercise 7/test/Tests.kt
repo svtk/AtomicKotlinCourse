@@ -8,7 +8,7 @@ import kotlin.reflect.KClass
 import kotlin.reflect.KFunction
 import kotlin.reflect.KProperty
 
-class TestFixedSizeHolder {
+class TestSummaryIIExercise7 {
   private inline fun testHolderClass(
     size: Int,
     action: (

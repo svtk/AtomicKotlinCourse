@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.any as anyLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestConditions {
+class TestFoldingListsExercise4 {
 
   private fun checkSample(isEvenPositiveAndLessThan10: Condition, result: Boolean, value: Int) {
     Assert.assertEquals("Wrong result for 'isEvenPositiveAndLessThan10.check(8)'",

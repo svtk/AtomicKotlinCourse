@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.groupBy as groupByLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestPersonsMap {
+class TestFromListsToMapsExercise2 {
   private fun <T, R> check(
       list: List<T>,
       keySelector: (T) -> R,

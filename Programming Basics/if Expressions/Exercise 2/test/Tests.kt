@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestIfExpressions2 {
+class TestIfExpressionsExercise2 {
   private fun checkFunction(number: Int) {
     val abs = if (number > 0) number else -number
     Assert.assertEquals("abs($number) should return $abs",

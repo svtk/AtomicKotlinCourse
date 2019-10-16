@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestCountingHexadecimalCodes {
+class TestNullableTypesExercise2 {
   private fun testCountingHexadecimalCodes(codes: List<String>, expected: Map<Int, Int>) {
     Assert.assertEquals("Wrong result for $codes:", expected, countHexadecimalCodes(codes))
   }

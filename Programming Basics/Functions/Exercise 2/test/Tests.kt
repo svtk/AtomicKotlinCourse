@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 
-class TestFunctions2 {
+class TestFunctionsExercise2 {
   private fun checkFunction(a: Double, b: Double, c: Double) {
     val sum = a + b + c
     Assert.assertEquals("getSum($a, $b, $c) should return $sum",

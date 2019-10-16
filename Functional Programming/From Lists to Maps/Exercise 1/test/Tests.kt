@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestPersonsMap {
+class TestFromListsToMapsExercise1 {
   private fun check(
       list: List<Person>
   ) {

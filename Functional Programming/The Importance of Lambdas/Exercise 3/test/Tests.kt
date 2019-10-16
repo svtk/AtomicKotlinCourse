@@ -3,7 +3,7 @@ package theImportanceOfLambdasExercise3
 import org.junit.Assert
 import org.junit.Test
 
-class TestOther {
+class TestTheImportanceOfLambdasExercise3 {
     private fun testString(s: String) {
         Assert.assertEquals("Wrong result for '$s'",
           s.filterIndexed { index, _ -> index % 2 == 0 }, other(s))

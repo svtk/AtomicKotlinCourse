@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestOverloading {
+class TestOverloadingExercise1 {
 
   private fun testList(actual: String, expected: String) {
     Assert.assertEquals("Wrong result: ", expected, actual)

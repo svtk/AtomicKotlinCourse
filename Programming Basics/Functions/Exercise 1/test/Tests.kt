@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 
-class TestFunctions1 {
+class TestFunctionsExercise1 {
   private fun testFunction(i: Int) {
     Assert.assertEquals("getSquare($i) should return ${i * i}",
         i * i, getSquare(i))

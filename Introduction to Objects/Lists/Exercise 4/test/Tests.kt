@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 
-class TestAnagrams {
+class TestListsExercise4 {
   fun testAnagrams(word: String, anagram: String) =
       Assert.assertTrue("'$word' and '$anagram' should be anagrams", checkAnagrams(word, anagram))
 

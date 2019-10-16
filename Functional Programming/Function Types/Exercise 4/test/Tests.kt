@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestAndThen {
+class TestFunctionTypesExercise4 {
   private fun <A, B, C> check(
       arg: A,
       f: (A) -> B,

@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.reversed as reversedLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestGenerics {
+class TestIntroductionToGenericsExercise2 {
   private fun <T> checkReversed(list: List<T>) {
     Assert.assertEquals("Wrong result for $list",
         list.reversed(), list.reversedLibrary()

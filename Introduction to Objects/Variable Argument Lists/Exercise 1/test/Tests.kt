@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.runAndGetSystemOutput
 
-class TestVarargs1 {
+class TestVariableArgumentListsExercise1 {
   @Test
   fun testMessageInOutput() {
     val output = runAndGetSystemOutput {

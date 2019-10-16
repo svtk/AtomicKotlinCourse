@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.flatten as flattenLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFlatten {
+class TestManipulatingListsExercise6 {
   private fun <T> checkFlatten(
       list: List<List<T>>
   ) {

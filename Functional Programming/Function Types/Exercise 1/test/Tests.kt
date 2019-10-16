@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.map as mapLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestMapImpl {
+class TestFunctionTypesExercise1 {
   private fun <T, R> check(
       list: List<T>,
       predicateStr: String,

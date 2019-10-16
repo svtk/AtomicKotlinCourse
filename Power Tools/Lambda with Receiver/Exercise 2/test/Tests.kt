@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBuildList {
+class TestLambdaWithReceiverExercise2 {
   private fun check(
       message: String,
       action: MutableList<Int>.() -> Unit

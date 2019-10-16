@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSumOfFactorials {
+class TestLoopingAndRangesExercise2 {
   @Test(timeout = TIMEOUT)
   fun test1() {
     Assert.assertEquals("sumOfFactorials(1) should be 1",

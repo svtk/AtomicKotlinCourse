@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.filter as filterLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFilter {
+class TestManipulatingListsExercise7 {
   private fun <T> checkFilter(
       list: List<T>,
       predicate: (T) -> Boolean

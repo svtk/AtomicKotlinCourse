@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 
-class TestFlatten {
+class TestVariableArgumentListsExercise4 {
 
   private fun checkFlatten(vararg args: List<String>) {
     val list = args.toList()

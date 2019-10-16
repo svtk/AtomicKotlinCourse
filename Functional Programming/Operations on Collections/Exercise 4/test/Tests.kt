@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestOperations {
+class TestOperationsOnCollectionsExercise4 {
   private fun check(list: List<Int>) {
     val nonZero = list.all { it != 0 }
     Assert.assertEquals("Wrong result for 'allNonZero($list)'", nonZero, list.allNonZero())

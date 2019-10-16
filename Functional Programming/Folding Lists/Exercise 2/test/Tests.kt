@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.count as countLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestCount {
+class TestFoldingListsExercise2 {
   private fun <T> checkCount(list: List<T>, predicateString: String, predicate: (T) -> Boolean) {
     Assert.assertEquals("Wrong implementation for 'count'. Wrong result for counting $predicateString in $list", list.countLibrary(predicate), list.count(predicate))
   }

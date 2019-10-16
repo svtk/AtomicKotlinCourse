@@ -7,7 +7,7 @@ import util.loadMemberFunction
 import kotlin.reflect.KClass
 import kotlin.reflect.full.createInstance
 
-class TestSomeClass {
+class TestCreatingClassesExercise1 {
   @Test
   fun testSolution() {
     val someClass = loadClass("creatingClassesExercise1", "SomeClass")

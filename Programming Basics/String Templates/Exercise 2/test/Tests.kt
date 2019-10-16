@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestStringTemplates2 {
+class TestStringTemplatesExercise2 {
   private fun checkRecord(index: Int, status: String, message: String) {
     val record = "$index. [$status] $message\n"
     Assert.assertEquals("""record($index, "$status", "$message") should return $record""",

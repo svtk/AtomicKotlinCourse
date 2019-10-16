@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSetsSize {
+class TestHashingExercise1 {
   @Test(timeout = TIMEOUT)
   fun testSizeOfFirstSet() {
     Assert.assertTrue("Wrong answer for set1", getSet1Size() == 2)

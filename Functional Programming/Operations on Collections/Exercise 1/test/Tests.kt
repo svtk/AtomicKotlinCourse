@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSecond {
+class TestOperationsOnCollectionsExercise1 {
   private fun checkOldest(list: List<Person>, requiredNumber: Int) {
     Assert.assertEquals("Wrong result for requiredNumber = $requiredNumber in $list:",
         list.sortedByDescending { it.age }

@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestClientFromMunich {
+class TestSafeCallsAndTheElvisOperatorExercise1 {
   @Test(timeout = TIMEOUT)
   fun test1SampleFromMunich() {
     val client = Client("Alice",

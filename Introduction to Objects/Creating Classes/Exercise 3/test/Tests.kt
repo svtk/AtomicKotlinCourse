@@ -10,7 +10,7 @@ import util.loadMemberFunction
 import kotlin.reflect.full.createInstance
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestCreatingRobot {
+class TestCreatingClassesExercise3 {
 
   @Test(timeout = TIMEOUT)
   fun testRobot() {

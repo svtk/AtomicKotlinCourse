@@ -3,7 +3,7 @@ package breakAndContinueExercise2
 import org.junit.Test
 import util.untestable
 
-class Test {
+class TestBreakAndContinueExercise2 {
   @Test
   fun test() = untestable()
 }

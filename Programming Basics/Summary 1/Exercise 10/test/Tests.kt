@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestCountDigits {
+class TestSummaryIExercise10 {
   private fun checkCountDigits(number: Int, digit: Int, expected: Int) {
     Assert.assertEquals("Wrong number of `$digit` digits in the `$number` number",
         expected, countDigits(number, digit))

@@ -7,7 +7,7 @@ import util.TIMEOUT
 import util.runAndCheckSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestTriangle {
+class TestSummaryIExercise12 {
   private fun checkOutput(n: Int, expected: String) {
     runAndCheckSystemOutput(
       "Incorrect output for n = $n:",

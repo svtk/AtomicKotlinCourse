@@ -8,7 +8,7 @@ import util.loadToplevelFunction
 import util.loadToplevelPropertyGetter
 import kotlin.reflect.full.createInstance
 
-class TestDifferentPackages {
+class TestPackagesExercise1 {
   @Test
   fun test1Val() {
     val aaaFileFacade = loadFileFacade("aaa", "aaa")

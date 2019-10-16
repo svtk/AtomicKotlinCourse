@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRobotIntro {
+class TestPropertiesExercise2 {
   class RobotHandler {
     val robot: Robot = Robot()
     val loggedMovements = StringBuilder()

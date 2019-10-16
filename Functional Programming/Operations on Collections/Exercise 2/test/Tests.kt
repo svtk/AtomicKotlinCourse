@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSecond {
+class TestOperationsOnCollectionsExercise2 {
   @Test(timeout = TIMEOUT)
   fun testSample() {
     fun message(functionName: String) = "Wrong result for '$functionName':"

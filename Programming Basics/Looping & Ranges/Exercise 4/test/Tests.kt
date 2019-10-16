@@ -7,7 +7,7 @@ import util.TIMEOUT
 import util.runAndCheckSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestHalfPyramid {
+class TestLoopingAndRangesExercise4 {
   private fun checkOutput(n: Int, expected: String) {
     runAndCheckSystemOutput(
       "Incorrect output for n = $n:",

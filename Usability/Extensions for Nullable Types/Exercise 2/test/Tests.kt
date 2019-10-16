@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestExtensionsForNullable {
+class TestExtensionsForNullableTypesExercise2 {
 
   private fun checkValues(receiver: Boolean?, argument: Boolean?) {
     Assert.assertEquals("Wrong result for $receiver.and($argument)",

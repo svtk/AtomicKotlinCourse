@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestNumberTypes3 {
+class TestNumberTypesExercise3 {
   private fun checkFahrenheitToCelsius(C: Double, F: Int) {
     Assert.assertEquals("$F F should be $C C",
         C, convertFahrenheitToCelsius(F), 0.0001)

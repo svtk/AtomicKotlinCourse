@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 
-class TestTemperature {
+class TestWhenExpressionsExercise2 {
   private fun expected(temperature: Int): String =
       when {
         temperature >= 25 -> "Hot"

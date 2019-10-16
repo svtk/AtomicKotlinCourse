@@ -3,7 +3,7 @@ package packagesExercise2
 import org.junit.Test
 import util.untestable
 
-class Test {
+class TestPackagesExercise2 {
     @Test
     fun test() = untestable()
 }

@@ -7,7 +7,7 @@ import util.TIMEOUT
 import util.runAndCheckSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSnake {
+class TestSummaryIExercise13 {
   private fun checkOutput(rows: Int, columns: Int, expected: String) {
     runAndCheckSystemOutput(
       "Incorrect output for rows = $rows, columns = $columns:",

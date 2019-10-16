@@ -10,7 +10,7 @@ import util.runAndGetSystemOutput
 import kotlin.reflect.KFunction
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBooleans {
+class TestBooleansExercise2 {
   // TODO: test output for different errors
   @Test
   fun test1ShowFunctions() {

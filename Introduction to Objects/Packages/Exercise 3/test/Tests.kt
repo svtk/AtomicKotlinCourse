@@ -11,7 +11,7 @@ import util.runAndCheckSystemOutput
 import kotlin.math.sqrt
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestEquilateralTriangle {
+class TestPackagesExercise3 {
   private fun checkArea(side: Double) {
     val triangleClass = loadClass("pythagorean", "EquilateralTriangle")
     val constructors = triangleClass.constructors

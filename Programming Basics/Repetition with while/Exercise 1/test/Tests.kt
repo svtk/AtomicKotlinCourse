@@ -5,7 +5,7 @@ import util.checkParametersOfTopLevelFunction
 import util.checkSystemOutput
 import util.runAndGetSystemOutput
 
-class TestDisplayContent {
+class TestRepetitionWithWhileExercise1 {
     private fun testInput(s: String) {
         val displayContentFunc = ::displayContent
         checkParametersOfTopLevelFunction(displayContentFunc, listOf("" to "kotlin.String"))

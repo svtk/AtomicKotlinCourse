@@ -9,7 +9,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestEnumerationsRochambeau {
+class TestEnumerationsExercise3 {
   private fun checkResult(first: Rochambeau, second: Rochambeau, expected: Result) {
     Assert.assertEquals("Wrong answer for 'findWinner($first, $second)':",
         expected, findWinner(first, second))

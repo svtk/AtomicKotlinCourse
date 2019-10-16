@@ -7,7 +7,7 @@ import util.loadMemberFunction
 import util.runAndGetSystemOutput
 import kotlin.reflect.full.createInstance
 
-class TestGiraffe {
+class TestCreatingClassesExercise2 {
   @Test
   fun testSolution() {
     val giraffeClass = loadClass("creatingClassesExercise2", "Giraffe")

@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestMazeImpl {
+class TestInterfacesExercise1 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val matrix = MazeImpl(width = 4, height = 5)

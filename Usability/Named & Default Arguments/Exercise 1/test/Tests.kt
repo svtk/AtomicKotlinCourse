@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.checkParametersOfConstructor
 
-class TestRectangle {
+class TestNamedAndDefaultArgumentsExercise1 {
   @Test
   fun testBuildingClass() {
     val rectangleClass = Rectangle::class

@@ -8,7 +8,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRobotMoves {
+class TestAbstractClassesExercise1 {
   private fun checkMove(
       move: Move,
       initial: String,

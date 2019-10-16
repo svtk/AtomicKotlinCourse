@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 
-class TestGardenItem {
+class TestSecondaryConstructorsExercise1 {
   @Test(timeout = TIMEOUT)
   fun test() {
     Assert.assertEquals("GardenItem class should define only one constructor",

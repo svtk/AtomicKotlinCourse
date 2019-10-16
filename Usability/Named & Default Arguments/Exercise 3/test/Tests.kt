@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestComments {
+class TestNamedAndDefaultArgumentsExercise3 {
   private fun testJoiningComments(expected: String, string: String) {
     Assert.assertEquals("Wrong result for $string:", expected, joinComments(string))
   }

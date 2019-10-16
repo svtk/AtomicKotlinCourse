@@ -3,7 +3,7 @@ package summaryIExercise6
 import org.junit.Test
 import util.runAndCheckSystemOutput
 
-class TestOverflow {
+class TestSummaryIExercise6 {
   @Test
   fun test1Long() {
     runAndCheckSystemOutput(
