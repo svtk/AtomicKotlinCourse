@@ -28,7 +28,7 @@ abstract class TestSchool {
 }
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestLargestClass : TestSchool() {
+class TestSequencesExercise5 : TestSchool() {
   private fun checkInstructorsWithLargestClass(
       schoolLessons: List<Lesson>,
       instructors: List<Char>

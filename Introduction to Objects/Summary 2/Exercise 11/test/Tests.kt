@@ -2,8 +2,6 @@ package summaryIIExercise11
 
 import org.junit.Assert
 import org.junit.Test
-import summaryIIExercise11.TestTemperature.MeasureSystem.CELSIUS
-import summaryIIExercise11.TestTemperature.MeasureSystem.FAHRENHEIT
 import util.loadMemberProperty
 import kotlin.reflect.KMutableProperty
 import kotlin.reflect.KProperty
@@ -36,21 +34,21 @@ class TestSummaryIIExercise11 {
 
   @Test
   fun test1Fahrenheit() {
-    testChange(TempValue(90.0, FAHRENHEIT), TempValue(90.0, FAHRENHEIT))
+    testChange(TempValue(90.0, MeasureSystem.FAHRENHEIT), TempValue(90.0, MeasureSystem.FAHRENHEIT))
   }
 
   @Test
   fun test2Celsius() {
-    testChange(TempValue(30.0, CELSIUS), TempValue(30.0, CELSIUS))
+    testChange(TempValue(30.0, MeasureSystem.CELSIUS), TempValue(30.0, MeasureSystem.CELSIUS))
   }
 
   @Test
   fun test3Change() {
-    testChange(TempValue(86.0, FAHRENHEIT), TempValue(30.0, CELSIUS))
+    testChange(TempValue(86.0, MeasureSystem.FAHRENHEIT), TempValue(30.0, MeasureSystem.CELSIUS))
   }
 
   @Test
   fun test4Change() {
-    testChange(TempValue(30.0, CELSIUS), TempValue(86.0, FAHRENHEIT))
+    testChange(TempValue(30.0, MeasureSystem.CELSIUS), TempValue(86.0, MeasureSystem.FAHRENHEIT))
   }
 }
