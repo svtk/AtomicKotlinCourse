@@ -18,7 +18,7 @@ class TestPropertyAccessorsExercise1 {
     val cage = Cage(2)
     Assert.assertEquals("'cage.empty' should return 'true' for an empty cage", true, cage.accessEmptyProperty())
     cage.put(Hamster("Alice"))
-    Assert.assertEquals("'cage.empty' should return 'false' for a non-empty cage", true, cage.accessEmptyProperty())
+    Assert.assertEquals("'cage.empty' should return 'false' for a non-empty cage", false, cage.accessEmptyProperty())
   }
 
   @Test(timeout = TIMEOUT)
