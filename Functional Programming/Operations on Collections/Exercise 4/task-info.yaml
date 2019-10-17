@@ -4,27 +4,27 @@ files:
   visible: true
   placeholders:
   - offset: 139
-    length: 0
-    placeholder_text: /*?*/
-  - offset: 146
-    length: 7
-    placeholder_text: TODO()
-  - offset: 186
     length: 1
     placeholder_text: /*?*/
-  - offset: 193
+  - offset: 147
     length: 7
     placeholder_text: TODO()
-  - offset: 274
+  - offset: 187
     length: 1
     placeholder_text: /*?*/
-  - offset: 282
+  - offset: 194
     length: 7
     placeholder_text: TODO()
-  - offset: 319
-    length: 0
+  - offset: 275
+    length: 1
     placeholder_text: /*?*/
-  - offset: 325
+  - offset: 283
+    length: 7
+    placeholder_text: TODO()
+  - offset: 320
+    length: 1
+    placeholder_text: /*?*/
+  - offset: 327
     length: 7
     placeholder_text: TODO()
 - name: test/Tests.kt
