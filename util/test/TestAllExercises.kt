@@ -3,7 +3,7 @@ import org.junit.Test
 class TestAllExercises : AbstractTestExercises() {
 
   @Test
-  fun testHelloWorldExercise1() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World!/Exercise 1/test/output.txt"){ helloWorldExercise1.main() }
+  fun testHelloWorldExercise1() = testClass(helloWorldExercise1.TestHelloWorldExercise1::class)
 
   @Test
   fun testHelloWorldExercise2() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World!/Exercise 2/test/output.txt"){ helloWorldExercise2.main() }
