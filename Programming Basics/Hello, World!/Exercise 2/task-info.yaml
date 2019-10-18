@@ -5,7 +5,7 @@ files:
   placeholders:
   - offset: 44
     length: 38
-    placeholder_text: TODO()
+    placeholder_text: // TODO
 - name: test/output.txt
   visible: false
 feedback_link: |

@@ -5,7 +5,7 @@ files:
   placeholders:
   - offset: 43
     length: 91
-    placeholder_text: TODO()
+    placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false
 feedback_link: |
