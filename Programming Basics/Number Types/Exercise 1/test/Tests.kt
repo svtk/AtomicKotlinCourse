@@ -10,21 +10,21 @@ import util.TIMEOUT
 class TestNumberTypesExercise1 {
   @Test(timeout = TIMEOUT)
   fun testA() {
-    Assert.assertEquals(3, a)
+    Assert.assertEquals("Wrong result for 'a'", 3, a)
   }
 
   @Test(timeout = TIMEOUT)
   fun testB() {
-    Assert.assertEquals(2, b)
+    Assert.assertEquals("Wrong result for 'b'", 2, b)
   }
 
   @Test(timeout = TIMEOUT)
   fun testC() {
-    Assert.assertEquals(11, c)
+    Assert.assertEquals("Wrong result for 'c'", 11, c)
   }
 
   @Test(timeout = TIMEOUT)
   fun testD() {
-    Assert.assertEquals(1.2, d.toDouble(), 0.0001)
+    Assert.assertEquals("Wrong result for 'd'", 1.2, d.toDouble(), 0.0001)
   }
 }

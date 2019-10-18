@@ -2,5 +2,15 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 48
+    length: 3
+    placeholder_text: '''?'''
+  - offset: 74
+    length: 3
+    placeholder_text: '''?'''
+  - offset: 99
+    length: 3
+    placeholder_text: '''?'''
 - name: test/Tests.kt
   visible: false

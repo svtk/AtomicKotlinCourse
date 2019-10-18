@@ -1,7 +1,7 @@
 package creatingClasses4
 
 fun main() {
-  val s = "Hello!"
+  val s: String = "Hello!"
   println(s.toUpperCase())
   println(s.toLowerCase())
 }

@@ -24,7 +24,7 @@ class TestAllExercises : AbstractTestExercises() {
   fun testDataTypesExercise1() = testClass(dataTypesExercise1.TestDataTypesExercise1::class)
 
   @Test
-  fun testDataTypesExercise2() = testClass(dataTypesExercise2.TestDataTypesExercise2::class)
+  fun testDataTypesExercise2() = testOutput("../AtomicKotlinCourse/Programming Basics/Data Types/Exercise 2/test/output.txt"){ dataTypesExercise2.main() }
 
   @Test
   fun testDataTypesExercise3() = testClass(dataTypesExercise3.TestDataTypesExercise3::class)

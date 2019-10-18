@@ -1,0 +1,4 @@
+The type that can be combined with every other type using '+':
+String
+The type that can't be combined with itself using '+':
+Boolean

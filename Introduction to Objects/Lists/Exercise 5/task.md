@@ -1,4 +1,6 @@
-## Mastering the IDE: Quick Documentation on a Variable
+## Mastering the IDE: TODO
+
+Quick Documentation on a Variable
 
 You can press <span class="shortcut">&shortcut:QuickJavaDoc;</span>
 or run a <span class="control">`Quick Documentation`</span> action 

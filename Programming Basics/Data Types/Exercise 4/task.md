@@ -1,10 +1,12 @@
-## Mastering the IDE: "Specify Type" Intention
+## Mastering the IDE: Checking the inferred variable type
 
-IntelliJ IDEA helps you automatically add type specifications for `val`s and 
-`var`s. Put the caret right after `s` and press
-<span class="shortcut">&shortcut:ShowIntentionActions;</span>. This is 
-the shortcut for <span class="control">`Show intention actions`</span>. 
-Choose <span class="control">`Specify type explicitly`</span> in the dropdown menu.
+In the accompanying example, all the type declarations from `Types.kt` are 
+removed. Verify that Kotlin successfully infers the types.
 
-Different intention actions are available in different contexts, depending on
-where you put the caret.
+You can press <span class="shortcut">&shortcut:QuickJavaDoc;</span>
+while having the caret on an identifier to check the type Kotlin infers
+for this identifier.
+
+Press <span class="shortcut">&shortcut:EditorEscape;</span> to close the pop-up.
+
+Check the types of all the declared variables in the example.
