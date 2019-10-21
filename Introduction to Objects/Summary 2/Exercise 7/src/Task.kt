@@ -1,31 +1,36 @@
 package summaryIIExercise7
 
-import atomictest.*
+import atomictest.eq
 
-class FixedSizeHolder(private val limit: Int) {
-  private val list = mutableListOf<Any>()
+val intToRomanNumeralMap: Map<Int, String> = mapOf(
+    1000 to "M",
+    900 to "CM",
+    500 to "D",
+    400 to "CD",
+    100 to "C",
+    90 to "XC",
+    50 to "L",
+    40 to "XL",
+    10 to "X",
+    9 to "IX",
+    5 to "V",
+    4 to "IV",
+    1 to "I")
 
-  val size: Int
-    get() = list.size
-
-  val full: Boolean
-    get() = list.size == limit
-
-  fun add(a: Any) {
-    if (full) throw IllegalStateException("The container is full")
-    list += a
+fun convertToRoman(number: Int): String {
+  var result = ""
+  var remainder = number
+  for ((int, roman) in intToRomanNumeralMap) {
+    val times = remainder / int
+    result += roman.repeat(times)
+    remainder %= int
   }
+  return result
 }
 
 fun main() {
-/*
-  val holder = FixedSizeHolder(2)
-  holder.add("What is the answer?")
-  holder.add(42)
-  holder.full eq true
-  holder.size eq 2
-  capture {
-    holder.add("!!!")
-  } eq "IllegalStateException: The container is full"
-*/
+  convertToRoman(23) eq "XXIII"
+  convertToRoman(44) eq "XLIV"
+  convertToRoman(100) eq "C"
+  convertToRoman(2018) eq "MMXVIII"
 }

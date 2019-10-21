@@ -1,27 +1,27 @@
 ## Summary 2 (#8)
 
-Create a `Dictionary` class that stores the translations for the given words.
-It should define `addTranslations` member function taking two `String` parameters:
-the first one is the word, the second one is the translations for this word
-separated by a whitespace. If the word is already present in the dictionary,
-`addTranslations` should throw `IllegalArgumentException` with the message 
-`"Dictionary already has translations for '$word'"`.
-
-`Dictionary` also should define `translations` member property which is a
-read-only `Map` of `List`s containing `String`s. The keys for the `Map` are
-also `String`s. Note that the contents of the dictionary isn't expected to be
-modified via this property, therefore it's read-only.
+Convert from a number in the Roman numeral system into a natural number. For
+example: XXIII = 23, XLIV = 44, C = 100.
 
 <div class="hint">
 
-Use `split(" ")` on `String` to split words by a whitespace.
+You can simply iterate over each numeral in the Roman representation and
+calculate the answer! Traverse a Roman number in reverse order, a single
+numeral at a time (for example, `IV` contains two numerals) and store the
+maximum numeral found so far. If the next Roman numeral is more or equal than
+the current maximum numeral, add it to the result; if it's less than the
+maximum, subtract it instead. For instance, to convert `XLIV = 44`, iterate
+over `VILX` which is the reverse of `XLIV`. You add `V`(`5`) and `L`(`50`), but
+subtract `1`(`I`) because it's less than the current maximum `V`, and subtract
+`10`(`X`) because it's less than the updated maximum `X`:
 
-</div>
+| numeral | current maximum | action |
+| ------- |-----------------|--------|
+| V       | 5               | + 5    |
+| I       | 5               | - 1    |
+| L       | 50              | + 50   |
+| X       | 50              | - 10   |
 
-<div class="hint"> 
-
-Define a second auxiliary property `_translations` to store a mutable map
-of translations. `translations` should simply return the value of 
-`_translations` but have a different type, read-only Map.
+The result is `+ 5 - 1 + 50 - 10 = 44`
 
 </div>

@@ -1,85 +1,44 @@
 package summaryIIExercise7
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
-import util.*
-import java.lang.reflect.InvocationTargetException
-import kotlin.reflect.KClass
-import kotlin.reflect.KFunction
-import kotlin.reflect.KProperty
+import org.junit.runners.MethodSorters
+import util.TIMEOUT
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIIExercise7 {
-  private inline fun testHolderClass(
-    size: Int,
-    action: (
-      holderClass: KClass<*>,
-      holderInstance: Any,
-      addFunction: KFunction<*>,
-      fullProperty: KProperty<*>
-    ) -> Unit
-  ) {
-    val holderClass = loadClass("summaryIIExercise7", "FixedSizeHolder")
-    val constructor = holderClass.constructors.first()
-    checkParametersOfConstructor(constructor, holderClass, listOf("" to "kotlin.Int"))
-    val holderInstance = constructor.call(size)
-
-    val addFunction = loadMemberFunction(holderClass, "add")
-    checkParametersOfMemberFunction(addFunction, listOf("" to "kotlin.Any"))
-    val fullProperty = loadMemberProperty(holderClass, "full")
-    action(holderClass, holderInstance, addFunction, fullProperty)
+  private fun checkNumber(number: Int, roman: String) {
+    Assert.assertEquals("Wrong result for $number:", roman, convertToRoman(number))
   }
 
-  @Test
-  fun test1() = testHolderClass(2) { holderClass, holderInstance, addFunction, fullProperty ->
-    addFunction.call(holderInstance, "abc")
-    Assert.assertEquals("The holder of size 2 is expected to be not full after adding one element",
-      false, fullProperty.getter.call(holderInstance))
+  @Test(timeout = TIMEOUT)
+  fun test01Sample1() = checkNumber(23, "XXIII")
 
-    addFunction.call(holderInstance, 2)
-    Assert.assertEquals("The holder of size 2 is expected to be full after adding two elements",
-      true, fullProperty.getter.call(holderInstance))
+  @Test(timeout = TIMEOUT)
+  fun test02Sample2() = checkNumber(44, "XLIV")
 
-    val message = "The holder is expected to throw 'IllegalStateException' " +
-      "on adding a new element when it's full"
+  @Test(timeout = TIMEOUT)
+  fun test0Sample3() = checkNumber(100, "C")
 
-    try {
-      addFunction.call(holderInstance, '3')
-      throw AssertionError(message)
-    } catch (e: InvocationTargetException) {
-      if (e.targetException !is IllegalStateException) {
-        // different exceptions
-        throw AssertionError(message + " Was: ${e.targetException::class}")
-      }
-    }
-  }
+  @Test(timeout = TIMEOUT)
+  fun test04Sample4() = checkNumber(2018, "MMXVIII")
 
-  @Test
-  fun test2() = testHolderClass(10) { holderClass, holderInstance, addFunction, fullProperty ->
-      repeat(5) {
-        addFunction.call(holderInstance, it)
-      }
-      Assert.assertEquals("The holder of size 2 is expected to be not full after adding five elements",
-        false, fullProperty.getter.call(holderInstance))
+  @Test(timeout = TIMEOUT)
+  fun test05VII() = checkNumber(7, "VII")
 
-      repeat(5) {
-          addFunction.call(holderInstance, "$it")
-      }
+  @Test(timeout = TIMEOUT)
+  fun test06XXXIX() = checkNumber(39, "XXXIX")
 
-      Assert.assertEquals("The holder of size 10 is expected to be full after adding ten elements",
-      true, fullProperty.getter.call(holderInstance))
+  @Test(timeout = TIMEOUT)
+  fun test07DCLXXXIII() = checkNumber(683, "DCLXXXIII")
 
-    val message = "The holder is expected to throw 'IllegalStateException' " +
-      "on adding a new element when it's full"
+  @Test(timeout = TIMEOUT)
+  fun test08MCMXCIX() = checkNumber(1999, "MCMXCIX")
 
-    try {
-      addFunction.call(holderInstance, 11)
-      throw AssertionError(message)
-    } catch (e: InvocationTargetException) {
-      if (e.targetException !is IllegalStateException) {
-        // different exceptions
-        throw AssertionError(message + " Was: ${e.targetException::class}")
-      }
-    }
-  }
+  @Test(timeout = TIMEOUT)
+  fun test09CDXCIV() = checkNumber(494, "CDXCIV")
 
+  @Test(timeout = TIMEOUT)
+  fun test10MDLV() = checkNumber(1555, "MDLV")
 }

@@ -1,16 +1,35 @@
 package summaryIIExercise4
 
+import atomictest.capture
 import atomictest.eq
+import java.lang.IllegalArgumentException
 
-class Boring2(val a: Double, val b: String, val c: Int) {
-  fun a() = a
-  fun b() = b
-  fun c() = c
+class Dictionary {
+  private val _translations = mutableMapOf<String, List<String>>()
+
+  val translations: Map<String, List<String>>
+    get() = _translations
+
+  fun addTranslations(word: String, values: String) {
+    if (_translations.contains(word)) {
+      throw IllegalArgumentException("Dictionary already has translations for '$word'")
+    }
+    _translations[word] = values.split(" ")
+  }
 }
 
 fun main() {
-  val boring2 = Boring2(1.0, "abc", 3)
-  boring2.a() eq 1.0
-  boring2.b() eq "abc"
-  boring2.c() eq 3
+  val dictionary = Dictionary()
+  dictionary.addTranslations("apple", "Apfel")
+  dictionary.addTranslations("cake", "Kuchen Torte")
+
+  dictionary.translations eq mapOf("apple" to listOf("Apfel"),
+    "cake" to listOf("Kuchen", "Torte"))
+
+  capture {
+    dictionary.addTranslations("cake", "Törtchen")
+  } eq "IllegalArgumentException: Dictionary already has translations for 'cake'"
+
+  // shouldn't compile:
+//  dictionary.translations.remove("apple")
 }

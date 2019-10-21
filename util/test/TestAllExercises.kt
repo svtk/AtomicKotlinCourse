@@ -246,9 +246,6 @@ class TestAllExercises : AbstractTestExercises() {
   fun testVariableArgumentListsExercise4() = testClass(variableArgumentListsExercise4.TestVariableArgumentListsExercise4::class)
 
   @Test
-  fun testVariableArgumentListsExercise5() = testClass(variableArgumentListsExercise5.TestVariableArgumentListsExercise5::class)
-
-  @Test
   fun testSetsExercise1() = testClass(setsExercise1.TestSetsExercise1::class)
 
   @Test
@@ -301,24 +298,6 @@ class TestAllExercises : AbstractTestExercises() {
 
   @Test
   fun testSummaryIIExercise8() = testClass(summaryIIExercise8.TestSummaryIIExercise8::class)
-
-  @Test
-  fun testSummaryIIExercise9() = testClass(summaryIIExercise9.TestSummaryIIExercise9::class)
-
-  @Test
-  fun testSummaryIIExercise10() = testClass(summaryIIExercise10.TestSummaryIIExercise10::class)
-
-  @Test
-  fun testSummaryIIExercise11() = testClass(summaryIIExercise11.TestSummaryIIExercise11::class)
-
-  @Test
-  fun testSummaryIIExercise12() = testClass(summaryIIExercise12.TestSummaryIIExercise12::class)
-
-  @Test
-  fun testSummaryIIExercise13() = testClass(summaryIIExercise13.TestSummaryIIExercise13::class)
-
-  @Test
-  fun testSummaryIIExercise14() = testClass(summaryIIExercise14.TestSummaryIIExercise14::class)
 
   @Test
   fun testBreakAndContinueExercise1() = testOutput("../AtomicKotlinCourse/Usability/break & continue/Exercise 1/test/output.txt"){ breakAndContinueExercise1.main() }

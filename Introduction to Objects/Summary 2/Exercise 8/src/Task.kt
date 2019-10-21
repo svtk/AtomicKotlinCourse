@@ -1,35 +1,40 @@
 package summaryIIExercise8
 
-import atomictest.capture
 import atomictest.eq
-import java.lang.IllegalArgumentException
 
-class Dictionary {
-  private val _translations = mutableMapOf<String, List<String>>()
+val romanNumeralToIntMap: Map<String, Int> = mapOf(
+    "M" to 1000,
+    "CM" to 900,
+    "D" to 500,
+    "CD" to 400,
+    "C" to 100,
+    "XC" to 90,
+    "L" to 50,
+    "XL" to 40,
+    "X" to 10,
+    "IX" to 9,
+    "V" to 5,
+    "IV" to 4,
+    "I" to 1)
 
-  val translations: Map<String, List<String>>
-    get() = _translations
-
-  fun addTranslations(word: String, values: String) {
-    if (_translations.contains(word)) {
-      throw IllegalArgumentException("Dictionary already has translations for '$word'")
+fun convertFromRoman(roman: String): Int {
+  var result = 0
+  var max = 0
+  for (romanNumeral in roman.reversed()) {
+    val int = romanNumeralToIntMap.getValue("$romanNumeral")
+    if (int >= max) {
+      result += int
+      max = int
+    } else {
+      result -= int
     }
-    _translations[word] = values.split(" ")
   }
+  return result
 }
 
 fun main() {
-  val dictionary = Dictionary()
-  dictionary.addTranslations("apple", "Apfel")
-  dictionary.addTranslations("cake", "Kuchen Torte")
-
-  dictionary.translations eq mapOf("apple" to listOf("Apfel"),
-    "cake" to listOf("Kuchen", "Torte"))
-
-  capture {
-    dictionary.addTranslations("cake", "Törtchen")
-  } eq "IllegalArgumentException: Dictionary already has translations for 'cake'"
-
-  // shouldn't compile:
-//  dictionary.translations.remove("apple")
+  convertFromRoman("XXIII") eq 23
+  convertFromRoman("XLIV") eq 44
+  convertFromRoman("C") eq 100
+  convertFromRoman("MMXVIII") eq 2018
 }

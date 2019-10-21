@@ -1,75 +1,44 @@
 package summaryIIExercise8
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
-import util.checkParametersOfMemberFunction
-import util.loadClass
-import util.loadMemberFunction
-import util.loadMemberProperty
-import java.lang.reflect.InvocationTargetException
-import kotlin.reflect.KFunction
-import kotlin.reflect.KProperty
-import kotlin.reflect.full.createInstance
+import org.junit.runners.MethodSorters
+import util.TIMEOUT
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIIExercise8 {
-  private fun testDictionary(
-    test: (
-      instance: Any?,
-      addTranslationsFunc: KFunction<*>,
-      translationsProp: KProperty<*>
-    ) -> Unit
-  ) {
-    val dictionaryClass = loadClass("summaryIIExercise8", "Dictionary")
-    val addTranslationsFunc = loadMemberFunction(dictionaryClass, "addTranslations")
-      checkParametersOfMemberFunction(addTranslationsFunc, listOf("" to "kotlin.String", "" to "kotlin.String"))
-    val translationsProperty = loadMemberProperty(dictionaryClass, "translations")
-
-    val instance = dictionaryClass.createInstance()
-    test(instance, addTranslationsFunc, translationsProperty)
+  private fun checkNumber(number: Int, roman: String) {
+    Assert.assertEquals("Wrong result for $roman:", number, convertFromRoman(roman))
   }
 
-  private fun testAddingValues(expected: Map<String, List<String>>) =
-    testDictionary { instance, addTranslationsFunc, translationsProp ->
-      // cat Katze
-      // tree Baum
-      // party Party Fest Partei
-      // doubt zweifeln bezweifeln anzweifeln
+  @Test(timeout = TIMEOUT)
+  fun test01Sample1() = checkNumber(23, "XXIII")
 
-      for ((key, values) in expected) {
-        addTranslationsFunc.call(instance, key, values.joinToString(" "))
-      }
-      val code = buildString {
-        for ((key, values) in expected) {
-          appendln("addTranslations(\"$key\", \"${values.joinToString(" ")}\")")
-        }
-      }
+  @Test(timeout = TIMEOUT)
+  fun test02Sample2() = checkNumber(44, "XLIV")
 
-      val actual = translationsProp.getter.call(instance)
-      Assert.assertEquals("Wrong result after applying\n$code",
-        expected, actual)
-    }
+  @Test(timeout = TIMEOUT)
+  fun test0Sample3() = checkNumber(100, "C")
 
-  @Test
-  fun testOneValue() = testAddingValues(mapOf("cat" to listOf("Katze")))
+  @Test(timeout = TIMEOUT)
+  fun test04Sample4() = checkNumber(2018, "MMXVIII")
 
-  @Test
-  fun testTwoValues() = testAddingValues(mapOf("cat" to listOf("Katze"), "tree" to listOf("Baum")))
+  @Test(timeout = TIMEOUT)
+  fun test05VII() = checkNumber(7, "VII")
 
-  @Test
-  fun testManyTranslations() = testAddingValues(mapOf("party" to listOf("Party", "Fest", "Partei")))
+  @Test(timeout = TIMEOUT)
+  fun test06XXXIX() = checkNumber(39, "XXXIX")
 
-  @Test
-  fun testRepetitiveValues() {
-      testDictionary { instance, addTranslationsFunc, translationsProp ->
-          addTranslationsFunc.call(instance, "cat", "Katze")
-          try {
-              addTranslationsFunc.call(instance, "cat", "Katze")
-              throw AssertionError("'addTranslations()' function should throw an exception for repetitive key")
-          } catch (e: InvocationTargetException) {
-              Assert.assertEquals("Wrong exception message",
-                "Dictionary already has translations for 'cat'",
-                e.targetException.message)
-          }
-      }
-  }
+  @Test(timeout = TIMEOUT)
+  fun test07DCLXXXIII() = checkNumber(683, "DCLXXXIII")
+
+  @Test(timeout = TIMEOUT)
+  fun test08MCMXCIX() = checkNumber(1999, "MCMXCIX")
+
+  @Test(timeout = TIMEOUT)
+  fun test09CDXCIV() = checkNumber(494, "CDXCIV")
+
+  @Test(timeout = TIMEOUT)
+  fun test10MDLV() = checkNumber(1555, "MDLV")
 }

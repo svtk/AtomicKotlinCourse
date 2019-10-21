@@ -2,5 +2,9 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 49
+    length: 288
+    placeholder_text: class FixedSizeHolder
 - name: test/Tests.kt
   visible: false

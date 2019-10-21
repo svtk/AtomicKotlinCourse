@@ -1,4 +1,4 @@
-package summaryIIExercise11
+package summaryIIExercise6
 
 import org.junit.Assert
 import org.junit.Test
@@ -6,7 +6,7 @@ import util.loadMemberProperty
 import kotlin.reflect.KMutableProperty
 import kotlin.reflect.KProperty
 
-class TestSummaryIIExercise11 {
+class TestSummaryIIExercise6 {
   private enum class MeasureSystem(val title: String) {
     FAHRENHEIT("fahrenheit"), CELSIUS("celsius");
 

@@ -1,35 +1,41 @@
 package summaryIIExercise2
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
+import util.checkParametersOfConstructor
 import util.loadClass
 import util.loadMemberFunction
 import util.runAndGetSystemOutput
-import kotlin.reflect.full.createInstance
+import kotlin.reflect.full.primaryConstructor
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIIExercise2 {
   @Test
   fun test1Functions() {
-    val boringClass = loadClass("summaryIIExercise2", "Boring")
+    val boringClass = loadClass("summaryIIExercise42", "Boring2")
     val aFunction = loadMemberFunction(boringClass, "a")
     val bFunction = loadMemberFunction(boringClass, "b")
     val cFunction = loadMemberFunction(boringClass, "c")
-    val instance = boringClass.createInstance()
-    fun message(fName: String, value: String) = "The '$fName()' function should return $value"
-    Assert.assertEquals(message("a", "1.618"), 1.618, aFunction.call(instance))
-    Assert.assertEquals(message("b", "ratio"), "ratio", bFunction.call(instance))
-    Assert.assertEquals(message("c", "11"), 11, cFunction.call(instance))
+    val constructor = boringClass.primaryConstructor
+      ?: throw AssertionError("The Boring2 class doesn't have a primary constructor")
+    Assert.assertEquals("The Boring2 primary constructor should have 3 parameters",
+      3, constructor.parameters.size)
+    checkParametersOfConstructor(constructor, boringClass,
+      listOf("" to "kotlin.Double", "" to "kotlin.String", "" to "kotlin.Int"))
+
+    val instance = constructor.call(6.0, "abc", 55)
+    fun message(fName: String, value: String) =
+      "The '$fName()' function should return $value for 'Boring2(6.0, \"abc\", 55)'"
+    Assert.assertEquals(message("a", "6.0"), 6.0, aFunction.call(instance))
+    Assert.assertEquals(message("b", "abc"), "abc", bFunction.call(instance))
+    Assert.assertEquals(message("c", "55"), 55, cFunction.call(instance))
   }
 
   @Test
   fun test2Main() {
-    val output = runAndGetSystemOutput {
-      main()
-    }
-
-    fun message(fName: String) = "The result of '$fName()' function call should be checked in 'main' using 'eq'"
-    Assert.assertTrue(message("a"), "1.618" in output)
-    Assert.assertTrue(message("b"), "ratio" in output)
-    Assert.assertTrue(message("c"), "11" in output)
+    val output = runAndGetSystemOutput(::main)
+    Assert.assertTrue("Expected some tests on 'Boring2'", output.isNotEmpty())
   }
 }
