@@ -1,14 +1,10 @@
-## Lists (#4)
+## Mastering the IDE: TODO
 
-Write a function to determine whether two strings are anagrams. An anagram is a
-word formed by rearranging the letters of a different word, using all the
-original letters exactly once.
+Quick Documentation on a Variable
 
-<div class="hint">
+You can press <span class="shortcut">&shortcut:QuickJavaDoc;</span>
+or run a <span class="control">`Quick Documentation`</span> action 
+while having the caret on an identifier to check the type the compiler infers
+for this identifier.
 
-Compare two sorted `Lists` of characters obtained from two strings.
-Convert a string to a `List` by calling `toList()`. If the `Lists` are equal,
-the words are anagrams. For example, for two anagrams "terrain" and "trainer"
-the sorted character `List` will be `[a, e, i, n, r, r, t]`.
-
-</div>
+Check the type of the `list` identifier in the example.

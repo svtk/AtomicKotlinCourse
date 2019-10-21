@@ -2773,12 +2773,12 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask87() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 4/src/Task.kt", listsExercise4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 3/src/Task.kt", listsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask88() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 5/src/Task.kt", lists5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 4/src/Task.kt", lists5.TaskKt::main);
     }
 
     @Test

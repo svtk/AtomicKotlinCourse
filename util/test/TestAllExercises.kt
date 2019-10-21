@@ -234,9 +234,6 @@ class TestAllExercises : AbstractTestExercises() {
   fun testListsExercise3() = testClass(listsExercise3.TestListsExercise3::class)
 
   @Test
-  fun testListsExercise4() = testClass(listsExercise4.TestListsExercise4::class)
-
-  @Test
   fun testVariableArgumentListsExercise1() = testClass(variableArgumentListsExercise1.TestVariableArgumentListsExercise1::class)
 
   @Test
