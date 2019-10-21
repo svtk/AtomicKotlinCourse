@@ -22,11 +22,13 @@ class Accessible {
 }
 
 fun main() {
+/*
   val accessible = Accessible()
   accessible.mutable = "abc"
   accessible.readOnly eq "abc"
+*/
 }
-/* Output:
+/* Expected output:
 mutable:set
 readOnly:get
 mutable:get

@@ -2,5 +2,9 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 58
+    length: 279
+    placeholder_text: '// TODO: create class Accessible'
 - name: test/Tests.kt
   visible: false
