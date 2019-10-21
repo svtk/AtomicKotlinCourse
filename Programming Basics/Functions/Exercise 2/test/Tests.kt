@@ -1,9 +1,12 @@
 package functionsExercise2
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestFunctionsExercise2 {
   private fun checkFunction(a: Double, b: Double, c: Double) {
     val sum = a + b + c

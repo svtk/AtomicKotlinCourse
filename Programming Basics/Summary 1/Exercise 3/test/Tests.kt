@@ -1,8 +1,11 @@
 package summaryIExercise3
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIExercise3 {
   private fun testFirst(a: Boolean, b: Boolean, c: Boolean) {
     Assert.assertEquals("Wrong result for 'first($a, $b, $c)'",

@@ -1,7 +1,9 @@
 package summaryIIExercise4
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.checkParametersOfMemberFunction
 import util.loadClass
 import util.loadMemberFunction
@@ -11,6 +13,7 @@ import kotlin.reflect.KFunction
 import kotlin.reflect.KProperty
 import kotlin.reflect.full.createInstance
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIIExercise4 {
   private fun testDictionary(
     test: (
@@ -50,16 +53,16 @@ class TestSummaryIIExercise4 {
     }
 
   @Test
-  fun testOneValue() = testAddingValues(mapOf("cat" to listOf("Katze")))
+  fun test1OneValue() = testAddingValues(mapOf("cat" to listOf("Katze")))
 
   @Test
-  fun testTwoValues() = testAddingValues(mapOf("cat" to listOf("Katze"), "tree" to listOf("Baum")))
+  fun test2TwoValues() = testAddingValues(mapOf("cat" to listOf("Katze"), "tree" to listOf("Baum")))
 
   @Test
-  fun testManyTranslations() = testAddingValues(mapOf("party" to listOf("Party", "Fest", "Partei")))
+  fun test3ManyTranslations() = testAddingValues(mapOf("party" to listOf("Party", "Fest", "Partei")))
 
   @Test
-  fun testRepetitiveValues() {
+  fun test4RepetitiveValues() {
       testDictionary { instance, addTranslationsFunc, translationsProp ->
           addTranslationsFunc.call(instance, "cat", "Katze")
           try {

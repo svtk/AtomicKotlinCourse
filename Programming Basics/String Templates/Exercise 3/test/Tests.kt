@@ -1,10 +1,13 @@
 package stringTemplatesExercise3
 
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 import kotlin.reflect.KFunction
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestStringTemplatesExercise3 {
   @Test
   fun testShow() {

@@ -1,10 +1,13 @@
 package repetitionWithWhileExercise1
 
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.checkParametersOfTopLevelFunction
 import util.checkSystemOutput
 import util.runAndGetSystemOutput
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestRepetitionWithWhileExercise1 {
     private fun testInput(s: String) {
         val displayContentFunc = ::displayContent

@@ -1,8 +1,11 @@
 package summaryIExercise4
 
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.runAndCheckSystemOutput
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIExercise4 {
   @Test
   fun test1Long() {

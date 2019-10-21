@@ -1,13 +1,16 @@
 package summaryIIExercise3
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.*
 import java.lang.reflect.InvocationTargetException
 import kotlin.reflect.KClass
 import kotlin.reflect.KFunction
 import kotlin.reflect.KProperty
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIIExercise3 {
   private inline fun testHolderClass(
     size: Int,

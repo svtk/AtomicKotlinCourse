@@ -1,9 +1,12 @@
 package variableArgumentListsExercise4
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestVariableArgumentListsExercise4 {
 
   private fun checkFlatten(vararg args: List<String>) {
@@ -12,14 +15,14 @@ class TestVariableArgumentListsExercise4 {
   }
 
   @Test(timeout = TIMEOUT)
-  fun testSameList() = checkFlatten(listOf("a", "b"), listOf("c"))
+  fun test1SameList() = checkFlatten(listOf("a", "b"), listOf("c"))
 
   @Test(timeout = TIMEOUT)
-  fun testSmallerList() = checkFlatten(listOf("a"))
+  fun test2SmallerList() = checkFlatten(listOf("a"))
 
   @Test(timeout = TIMEOUT)
-  fun testFixedNumberOfElements() = checkFlatten(listOf("a", "b"), listOf("c", "d"))
+  fun test3FixedNumberOfElements() = checkFlatten(listOf("a", "b"), listOf("c", "d"))
 
   @Test(timeout = TIMEOUT)
-  fun testExtraElements() = checkFlatten(listOf("a", "b"), listOf("c", "d"), listOf("e"))
+  fun test4ExtraElements() = checkFlatten(listOf("a", "b"), listOf("c", "d"), listOf("e"))
 }

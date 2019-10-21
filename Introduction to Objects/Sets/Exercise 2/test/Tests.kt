@@ -1,9 +1,12 @@
 package setsExercise2
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.runAndGetSystemOutput
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSetsExercise2 {
   @Test
   fun test1Experiment() {

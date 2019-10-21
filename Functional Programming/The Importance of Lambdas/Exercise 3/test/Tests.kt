@@ -1,8 +1,11 @@
 package theImportanceOfLambdasExercise3
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestTheImportanceOfLambdasExercise3 {
     private fun testString(s: String) {
         Assert.assertEquals("Wrong result for '$s'",

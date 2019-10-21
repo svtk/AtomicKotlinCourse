@@ -1,12 +1,15 @@
 package creatingClassesExercise1
 
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.runAndCheckSystemOutput
 import util.loadClass
 import util.loadMemberFunction
 import kotlin.reflect.KClass
 import kotlin.reflect.full.createInstance
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestCreatingClassesExercise1 {
   @Test
   fun testSolution() {

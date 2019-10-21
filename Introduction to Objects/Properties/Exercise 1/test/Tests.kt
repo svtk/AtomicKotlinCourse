@@ -1,13 +1,16 @@
 package propertiesExercise1
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.loadClass
 import util.loadMemberFunction
 import util.loadMemberProperty
 import kotlin.reflect.KClass
 import kotlin.reflect.full.createInstance
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestPropertiesExercise1 {
   @Test
   fun testSolution() {

@@ -1,12 +1,15 @@
 package summaryIIExercise1
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.loadClass
 import util.loadMemberFunction
 import util.runAndGetSystemOutput
 import kotlin.reflect.full.createInstance
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIIExercise1 {
   @Test
   fun test1Functions() {

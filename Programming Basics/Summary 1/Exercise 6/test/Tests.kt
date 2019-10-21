@@ -1,8 +1,11 @@
 package summaryIExercise6
 
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.runAndCheckSystemOutput
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIExercise6 {
   private fun testInput(s: String) {
     val expected = s.toList()

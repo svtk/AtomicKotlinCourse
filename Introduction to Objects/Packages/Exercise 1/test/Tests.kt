@@ -1,11 +1,14 @@
 package packagesExercise1
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.*
 import kotlin.reflect.full.createInstance
 import ccc.main as cccmain
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestPackagesExercise1 {
   @Test
   fun test1Val() {

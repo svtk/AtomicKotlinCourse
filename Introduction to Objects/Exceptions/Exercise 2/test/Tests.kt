@@ -1,10 +1,13 @@
 package exceptionsExercise2
 
+import org.junit.FixMethodOrder
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.ExpectedException
+import org.junit.runners.MethodSorters
 import util.runAndCheckSystemOutput
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestExceptionsExercise2 {
   @Rule
   @JvmField

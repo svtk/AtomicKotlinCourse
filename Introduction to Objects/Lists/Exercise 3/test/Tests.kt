@@ -1,14 +1,17 @@
 package listsExercise3
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestListsExercise3 {
-  fun testAnagrams(word: String, anagram: String) =
+  private fun testAnagrams(word: String, anagram: String) =
       Assert.assertTrue("'$word' and '$anagram' should be anagrams", checkAnagrams(word, anagram))
 
-  fun testNotAnagrams(word: String, other: String) =
+  private fun testNotAnagrams(word: String, other: String) =
       Assert.assertFalse("'$word' and '$other' should not be anagrams", checkAnagrams(word, other))
 
   @Test(timeout = TIMEOUT)

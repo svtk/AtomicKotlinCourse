@@ -1,9 +1,12 @@
 package recursionExercise1
 
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestRecursionExercise1 {
   private fun expectedOutput(group: String, n: Int) = buildString {
     (n downTo 0).forEach {
