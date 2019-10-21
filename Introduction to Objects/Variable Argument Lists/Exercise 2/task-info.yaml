@@ -2,5 +2,9 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 40
+    length: 78
+    placeholder_text: fun printArgs() {}
 - name: test/Tests.kt
   visible: false

@@ -5,8 +5,8 @@ fun printArgs(s: String, vararg ints: Int) {
 }
 
 fun main() {
-  printArgs("Numbers: ", 1, 2, 3)
+//  printArgs("Numbers: ", 1, 2, 3)
 }
-/* Output:
+/* Expected output:
 Numbers: [1, 2, 3]
  */
