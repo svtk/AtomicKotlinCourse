@@ -5,9 +5,9 @@ files:
   placeholders:
   - offset: 50
     length: 69
-    placeholder_text: // TODO
+    placeholder_text: // add Boring class
   - offset: 136
     length: 86
-    placeholder_text: // TODO
+    placeholder_text: // test Boring
 - name: test/Tests.kt
   visible: false

@@ -1,7 +1,6 @@
 ## Summary 2 (#9)
 
-{{ :UNTESTABLE without the specified behaviour of the va2 function }}
-
 Create two functions `va1()` and `va2()` which each take a variable argument
-list of `Int`s. In `va1()`, call `va2()`, passing `va1()`s argument list to
-`va2()`.
+list of `Int`s. `va1()` should display `"va1:"` to the console and then display
+its arguments each on a new line. `va2()` should display `"va2:"` and then pass
+its argument list to `va1()`.

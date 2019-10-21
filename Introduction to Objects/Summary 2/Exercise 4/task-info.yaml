@@ -2,5 +2,12 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 50
+    length: 101
+    placeholder_text: // add Boring2 class
+  - offset: 168
+    length: 99
+    placeholder_text: TODO() // test Boring2
 - name: test/Tests.kt
   visible: false
