@@ -6,11 +6,20 @@ files:
   visible: true
   placeholders:
   - offset: 13
-    length: 58
+    length: 55
     placeholder_text: // TODO
 - name: src/aaa.kt
   visible: true
   placeholders:
   - offset: 13
     length: 79
+    placeholder_text: // TODO
+- name: src/task.kt
+  visible: true
+  placeholders:
+  - offset: 13
+    length: 12
+    placeholder_text: // TODO
+  - offset: 42
+    length: 13
     placeholder_text: // TODO

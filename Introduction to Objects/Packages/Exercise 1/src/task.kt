@@ -3,5 +3,5 @@ package ccc
 import bbb.*
 
 fun main() {
-  g(1)
+  println(g(1))
 }

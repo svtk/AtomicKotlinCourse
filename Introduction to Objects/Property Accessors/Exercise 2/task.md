@@ -1,8 +1,9 @@
 ## Property Accessors (#2)
 
-{{ :UNTESTABLE and unsolvable: it's impossible to create a 'writeOnly' property }}
+Create a class `Accessible` containing `String` properties `mutable` and
+`readOnly`. Add the appropriate custom property accessors to make each
+property fit its name.
 
-Create a class `Accessible` containing `String` properties `readWrite`,
-`readOnly` and `writeOnly`. Add the appropriate property accessors to make each
-property fit its name. Include `println()` statements to show that the
-accessors are being called.
+`mutable` property should be initialized with an empty string, and its accessors
+should print `mutable:get` and `mutable:set`. `readOnly` property should print 
+`readOnly:get` and return the value of `mutable`.

@@ -1,12 +1,11 @@
 ## Expressions & Statements (#2)
 
-{{ :UNTESTABLE partly: the second part can't be tested without providing names
-of vals and initial arguments for functions }} 
+Write three functions using expression body syntax:
 
-Write three functions:
-
-- `f()` calls `println()` to display `"f()"`
-- `g()` takes two `Int` parameters and returns the sum.
-- `h()` takes two `String` parameters and returns them, concatenated.
+- `f()` takes two `Int` parameters and returns the sum.
+- `g()` takes two `String` parameters and returns them, concatenated.
+- `h()` calls `println()` to display `"h()"`.
 
 In 'main', assign the result of each function to a `val`, and specify the type.
+Then display to the console the types of all the functions `f`, `g` and `h`,
+each one in a new line.

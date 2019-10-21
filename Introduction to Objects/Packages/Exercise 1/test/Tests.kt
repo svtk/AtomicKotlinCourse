@@ -2,11 +2,9 @@ package packagesExercise1
 
 import org.junit.Assert
 import org.junit.Test
-import util.loadClass
-import util.loadFileFacade
-import util.loadToplevelFunction
-import util.loadToplevelPropertyGetter
+import util.*
 import kotlin.reflect.full.createInstance
+import ccc.main as cccmain
 
 class TestPackagesExercise1 {
   @Test
@@ -34,11 +32,17 @@ class TestPackagesExercise1 {
   }
 
   @Test
-  fun test4OtherPackage() {
+  fun test4BbbPackage() {
     val bbbFileFacade = loadFileFacade(packageName = "bbb", fileName = "bbb")
     val gFun = loadToplevelFunction(bbbFileFacade, "g")
-    val actual = gFun.invoke(Object(), 10)
+    val actual = gFun.invoke(Object(), 2)
 
-    Assert.assertEquals("Wrong result for calling 'bbb.g()'", "K 10 100", actual)
+    Assert.assertEquals("Wrong result for calling 'bbb.g(2)'", "K 20", actual)
+  }
+
+  @Test
+  fun test5CccPackage(){
+    runAndCheckSystemOutput("Wrong output for calling 'main' in 'ccc'",
+      "K 10", ::cccmain)
   }
 }

@@ -2,4 +2,4 @@ package bbb
 
 import aaa.*
 
-fun g(i: Int): String = "${K()} $x ${fa(i)}"
+fun g(i: Int): String = "${K()} ${fa(i)}"

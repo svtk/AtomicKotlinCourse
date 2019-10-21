@@ -1,13 +1,16 @@
 package expressionsAndStatementsExercise2
 
-fun f() = println("f()")
+fun f(i: Int, j: Int) = i + j
 
-fun g(i: Int, j: Int) = i + j
+fun g(s1: String, s2: String) = s1 + s2
 
-fun h(s1: String, s2: String) = s1 + s2
+fun h() = println("h()")
 
 fun main() {
-  val fVal: Unit = f()
-  val gVal: Int = g(1, 2)
-  val hVal: String = h("a", "bc")
+  val fVal: Int = f(1, 2)
+  val gVal: String = g("a", "bc")
+  val hVal: Unit = h()
+  println("Int")
+  println("String")
+  println("Unit")
 }

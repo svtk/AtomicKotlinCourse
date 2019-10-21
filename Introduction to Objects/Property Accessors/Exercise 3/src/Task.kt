@@ -1,29 +1,25 @@
 package propertyAccessorsExercise3
 
-class GS {
-  private var i: Int = 0
-    get() {
-      println("get()")
-      return field         // [1]
-    }
-    set(value) {
-      println("set($value)")
-      field = value        // [2]
-    }
-  fun change(n: Int) {
-    i = n
-  }
+import atomictest.eq
 
-  override fun toString(): String = "$i"
+class MessageStorage {
+  private val _messages = mutableListOf<String>()
+
+  val messages: List<String>
+    get() = _messages
+
+  fun addMessage(message: String) {
+    _messages += message
+  }
 }
 
 fun main() {
-  val d = GS()
-  d.change(2)
-  println(d)
-}
-/* Output:
-set(2)
-get()
-2
+/*
+  val messageStorage = MessageStorage()
+  messageStorage.addMessage("first")
+  messageStorage.addMessage("second")
+  messageStorage.messages eq listOf("first", "second")
+  // doesn't compile:
+//  messageStorage.messages.remove("first")
 */
+}

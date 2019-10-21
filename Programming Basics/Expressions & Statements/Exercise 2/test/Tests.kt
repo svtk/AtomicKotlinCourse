@@ -1,37 +1,51 @@
 package expressionsAndStatementsExercise2
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.checkMainIsImplemented
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
+import util.runAndGetSystemOutput
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestExpressionsAndStatementsExercise2 {
+
     @Test
     fun test1f() {
         val fFunc = ::f
-        checkParametersOfTopLevelFunction(fFunc, listOf())
-        runAndCheckSystemOutput("Wrong output after calling 'f()'", "f()") {
-            fFunc.call()
-        }
+        checkParametersOfTopLevelFunction(fFunc, listOf("" to "kotlin.Int", "" to "kotlin.Int"))
+        Assert.assertEquals("Wrong result for 'f(1, 2)' call", 3, fFunc.call(1, 2))
     }
 
     @Test
     fun test2g() {
         val gFunc = ::g
-        checkParametersOfTopLevelFunction(gFunc, listOf("" to "kotlin.Int", "" to "kotlin.Int"))
-        Assert.assertEquals("Wrong result for 'g(1, 2)' call", 3, gFunc.call(1, 2))
+        checkParametersOfTopLevelFunction(gFunc, listOf("" to "kotlin.String", "" to "kotlin.String"))
+        Assert.assertEquals("""Wrong result for 'g("a", "bc")' call""", "abc", gFunc.call("a", "bc"))
     }
 
     @Test
     fun test3h() {
         val hFunc = ::h
-        checkParametersOfTopLevelFunction(hFunc, listOf("" to "kotlin.String", "" to "kotlin.String"))
-        Assert.assertEquals("""Wrong result for 'h("a", "bc")' call""", "abc", hFunc.call("a", "bc"))
+        checkParametersOfTopLevelFunction(hFunc, listOf())
+        runAndCheckSystemOutput("Wrong output after calling 'h()'", "h()") {
+            hFunc.call()
+        }
     }
 
     @Test
     fun test4Main() {
         checkMainIsImplemented(::main)
+        val output = runAndGetSystemOutput(::main)
+        Assert.assertTrue("main() should call 'h()'", "h()" in output)
+        fun checkType(type: String, func: String) {
+            Assert.assertTrue("The return type of '$func()' is '$type'; " +
+              "'$type' should be printed to the console", type in output)
+        }
+        checkType("Int", "g")
+        checkType("String", "h")
+        checkType("Unit", "f")
     }
 }

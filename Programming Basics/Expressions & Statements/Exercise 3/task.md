@@ -1,11 +1,33 @@
 ## Expressions & Statements (#3)
 
-{{ :UNTESTABLE To use 'g' from the testing system, we need to import it, but imports are
-covered only later. Thus we need to avoid using 'g' here }}
-
-Write a function `n()` which multiplies its two `Int` parameters and returns
-the result. Combine it with `g()` as follows:
+Guess what the following code will print and then check yourself:
 
 ```kotlin
-val r = n(n(g(1, 1), g(2, 2)), g(3, 3))
+var i = 1
+println(i-- - --i)
 ```
+
+Open 'hint' to see the explanation.
+
+<div class="hint">
+
+This code can be rewritten as:
+
+```kotlin
+// i-- means: 
+// first the current value is return,
+// then the value is decremented
+val left = i // i: 1, left: 1
+i -= 1 // i: 0
+
+// --i means:
+// first the value is decremented,
+// then the current value is return 
+i -= 1 // i: -1
+val right = i // i: -1, right: -1
+
+val result = left - right // 1 - (-1) = 1 + 1 = 2
+println(result)
+```
+
+</div>

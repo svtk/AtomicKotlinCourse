@@ -1,15 +1,21 @@
 ## Packages (#1)
 
-Create a `package` named `aaa`, and a file in that `package` containing a `val
-x = 10`, a top-level function `fa()` that takes an `Int` parameter and returns
-that argument multiplied by `x`, and a class `K` with a `toString()` that
-returns `"K"`.
+We'll work with three packages `aaa`, `bbb` and `ccc` defined in the files
+`aaa.kt`, `bbb.kt` and `ccc.kt` correspondingly in the accompanying code.
 
-Create a second `package` named `bbb`. `import` all the components from `aaa`
+In the first package `aaa` define a `val x = 10`, a top-level function `fa()`
+that takes an `Int` parameter and returns that argument multiplied by `x`,
+and a class `K` with a `toString()` that returns `"K"`.
+
+In a second `package` named `bbb` `import` all the components from `aaa`
 and use them in a function `g()`. The function `g()` should take an `Int`
-parameter `i` and return the string literal referring to members from `aaa`:
+parameter `i` and return the following string literal using members
+from `aaa`:
+
 ```
-"${K()} $x ${fa(i)}"
+"${K()} ${fa(i)}"
 ```
 
-Test `g()` in `main()`.
+Create a third `package ccc` and import everything from `bbb`. In `main()`, call
+`println(g(1))` and make sure you cannot access any of the components from
+`package aaa` without importing them.

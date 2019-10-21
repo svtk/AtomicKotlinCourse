@@ -1,9 +1,11 @@
 package expressionsAndStatementsExercise3
 
+import org.junit.Assert
 import org.junit.Test
-import util.untestable
 
 class TestExpressionsAndStatementsExercise3 {
   @Test
-  fun test() = untestable()
+  fun test() {
+    Assert.assertEquals("Your guess is incorrect", 2, yourGuess)
+  }
 }

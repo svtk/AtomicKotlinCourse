@@ -3,12 +3,11 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 29
-    length: 106
-    placeholder_text: |-
-      fun erroneousCode() {
-        // Uncomment this line to get an exception:
-        // val i = "1$".toInt()        // [1]
-      }
+  - offset: 83
+    length: 3
+    placeholder_text: ???
+  - offset: 92
+    length: 330
+    placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false

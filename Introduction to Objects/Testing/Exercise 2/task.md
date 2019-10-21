@@ -1,6 +1,5 @@
 ## Testing (#2)
 
-{{ :UNTESTABLE depends on the previous task }}
-
-Modify Exercise 1 so that `f()`, `g()` and `h()` are all members of a `class`
-named `Klass`. Notice the slight difference in your test code.
+Implement `sum(a, b, c)` which should calculate a sum of three integer numbers,
+and test it using `eq` against at least five different argument combinations
+using both `eq` and `neq`.
