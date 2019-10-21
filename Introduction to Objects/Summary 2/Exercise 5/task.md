@@ -1,4 +1,4 @@
-## Summary 2 (#9)
+## Summary 2 (#5)
 
 Create two functions `va1()` and `va2()` which each take a variable argument
 list of `Int`s. `va1()` should display `"va1:"` to the console and then display
