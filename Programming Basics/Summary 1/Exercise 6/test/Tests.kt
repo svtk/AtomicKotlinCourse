@@ -4,29 +4,26 @@ import org.junit.Test
 import util.runAndCheckSystemOutput
 
 class TestSummaryIExercise6 {
-  @Test
-  fun test1Long() {
-    runAndCheckSystemOutput(
-      "Wrong output for 'testLong()'",
-      "-9223372036854775808") {
-      testLong()
+  private fun testInput(s: String) {
+    val expected = s.toList()
+      .filter { it != ' ' }
+      .filterIndexed { index, _ -> index % 5 == 4 }
+      .joinToString("\n")
+    runAndCheckSystemOutput("Wrong result for 'everyFifthNonWhitespace()'",
+      expected) {
+      everyFifthNonWhitespace(s)
     }
   }
 
   @Test
-  fun test2Double() {
-    runAndCheckSystemOutput(
-      "Wrong output for 'testDouble()'",
-      "1.7976931348623157E308") {
-      testDouble()
-    }
-  }
+  fun test1() = testInput("abc d e fgh ik")
+
   @Test
-  fun test3Double2() {
-    runAndCheckSystemOutput(
-      "Wrong output for 'testDouble2()'",
-      "true") {
-      testDouble2()
-    }
-  }
+  fun test2() = testInput("12  3  4  5 6   789  0")
+
+  @Test
+  fun test3() = testInput("*       *")
+
+  @Test
+  fun test4() = testInput("1               2            345")
 }

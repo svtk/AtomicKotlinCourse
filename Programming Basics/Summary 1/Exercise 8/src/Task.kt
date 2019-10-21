@@ -1,19 +1,19 @@
 package summaryIExercise8
 
-fun everyFifth(start: Int, end: Int) {
-  for (i in start..end) {
-    if ((i - start) % 5 == 4) {
-      println(i)
+fun reverseDecimal(number: Int): Int {
+  var worker = number
+  var result = 0
+
+  while (worker > 0) {
+    result += worker % 10
+    worker /= 10
+    if (worker != 0) {
+      result *= 10
     }
   }
+  return result
 }
 
 fun main() {
-  everyFifth(11, 30)
+  println(reverseDecimal(1234))  // 4321
 }
-/* Output:
-15
-20
-25
-30
-*/

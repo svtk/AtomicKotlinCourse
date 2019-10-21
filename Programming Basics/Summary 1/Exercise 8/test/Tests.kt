@@ -1,37 +1,30 @@
 package summaryIExercise8
 
+import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
-import util.runAndCheckSystemOutput
+import org.junit.runners.MethodSorters
+import util.TIMEOUT
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIExercise8 {
-    private fun testOutput(start: Int, end: Int) {
-        val expected = (start..end)
-          .filterIndexed { index, _ -> index % 5 == 4 }
-          .joinToString("\n")
+  private fun checkReverse(number: Int, expected: Int) {
+    Assert.assertEquals("Wrong reversed $number number",
+        expected, reverseDecimal(number))
+  }
 
-        runAndCheckSystemOutput("Wrong output for 'everyFifth($start, $end)'", expected) {
-            everyFifth(start, end)
-        }
-    }
+  @Test(timeout = TIMEOUT)
+  fun testReverse1() = checkReverse(1234, 4321)
 
-    @Test
-    fun test1() = testOutput(11, 30)
+  @Test(timeout = TIMEOUT)
+  fun testReverse2() = checkReverse(10, 1)
 
-    @Test
-    fun test2() = testOutput(1, 5)
+  @Test(timeout = TIMEOUT)
+  fun testReverse3() = checkReverse(123456789, 987654321)
 
-    @Test
-    fun test3() = testOutput(3, 14)
+  @Test(timeout = TIMEOUT)
+  fun testReverse4() = checkReverse(111, 111)
 
-    @Test
-    fun test4() = testOutput(-20, 20)
-
-    @Test
-    fun test5() = testOutput(1, 4)
-
-    @Test
-    fun test6() = testOutput(0, 44)
-
-    @Test
-    fun test7() = testOutput(100, 150)
+  @Test(timeout = TIMEOUT)
+  fun testReverse5() = checkReverse(0, 0)
 }

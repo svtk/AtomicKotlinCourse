@@ -1,12 +1,7 @@
 ## Summary 1 (#4)
 
-Write a function `first()` that has an *expression body* starting with `if`.
-`first()` takes three `Boolean` parameters and "ands" them together to produce
-the result. Write `second()` to do the same but "or" all three parameters. In
-`main()`, display the result of combining `first()` and `second()` using both
-"and" and "or":
-
-| `first()` Arguments | `second()` Arguments |
-|---------------------|----------------------|
-| true, true, true    | false, false, false  |
-| true, false, true   | false, true, false   |
+In this exercise, we'll modify `Overflow.kt` so it tests `Long` and `Double`
+in the same way. The `testLong()` function should print the `Long` maximum value
+increased by `1`. The `testDouble()` function should print the `Double` maximum value
+increased by `1`. `testDouble2()` should print the result of comparison
+of `Double.MAX_VALUE` and `Double.MAX_VALUE + 1`.

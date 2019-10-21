@@ -1,20 +1,15 @@
 package summaryIExercise3
 
-fun other(s: String): String {
-  var index = 0
-  var result = ""
-  for (c in s) {
-    if (index % 2 == 0) {
-      result += c
-    }
-    index++
-  }
-  return result
-}
+fun first(a: Boolean, b: Boolean, c: Boolean): Boolean =
+  if (a) b && c else false
+
+fun second(a: Boolean, b: Boolean, c: Boolean): Boolean =
+  if (a) true else b || c
 
 fun main() {
-  println(other("cement"))
+  println(first(true, true, true))
+  println(first(true, false, true))
+
+  println(second(false, false, false))
+  println(second(false, true, false))
 }
-/* Output:
-cmn
-*/

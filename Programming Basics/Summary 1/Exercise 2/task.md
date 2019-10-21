@@ -1,5 +1,5 @@
 ## Summary 1 (#2)
 
-Define `var x = 1`. Now define `val y = x` and `val z = y`. After that, assign
-2 to `x` and display the values of all three variables on different lines:
-first `x`, then `y`, then `z`.
+Create a function `other()` that takes a `String` parameter and returns a
+`String` containing every other letter of the parameter. For example, for
+input "cement" it should return "cmn".

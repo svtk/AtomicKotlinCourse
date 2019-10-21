@@ -1,19 +1,23 @@
 package summaryIExercise9
 
-fun everyFifthNonWhitespace(s: String) {
-  var i = 1
-  for (c in s) {
-    if (i % 5 == 0 && c != ' ') {
-      println(c)
+fun printTriangle(n: Int) {
+  for (i in 1..n) {
+    repeat(n - i) {
+      print(' ')
     }
-    if (c != ' ') i++
+    repeat(2 * i - 1) {
+      print('#')
+    }
+    println()
   }
 }
 
 fun main() {
-  everyFifthNonWhitespace("abc d e fgh ik")
+  printTriangle(4)
 }
 /* Output:
-e
-k
+   #
+  ###
+ #####
+#######
 */

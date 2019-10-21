@@ -1,10 +1,24 @@
 ## Summary 1 (#7)
 
-{{ :UNTESTABLE (to some extent)
-Don't really understand what solution is expected. Also, the current test
-passes even without any changes: I can only test the produced output (which
-doesn't change) }}
+Write a function that uses a `while` loop to count the occurrences of a given
+digit within a decimal number. Place the decimal number in a variable called
+`worker`. Each pass through the loop tests the right-most digit of `worker`,
+then at the end of the loop, removes that right-most digit from `worker`. The
+`occurrences` variable contains the number of occurrences of the digit you
+seek.
 
-Modify `While.kt` to replace the call to `testCondition()` with an inline `++`
-increment (remove the increment in the `while` body) and a `Boolean` test,
-producing the same output.
+This table shows the values during each loop while finding occurrences of `1`
+in `121341`:
+
+| `worker` | Removed | `occurrences` |
+|----------|---------|---------------|
+| 121341   | -       | 0             |
+| 12134    | 1       | 1             |
+| 1213     | 41      | 1             |
+| 121      | 341     | 1             |
+| 12       | 1341    | 2             |
+| 1        | 21341   | 2             |
+| -        | 121341  | 3             |
+
+The "Removed" values are in the table for clarity, but you don't need a
+"Removed" variable in your solution.

@@ -1,5 +1,12 @@
 ## Summary 1 (#3)
 
-Create a function `other()` that takes a `String` parameter and returns a
-`String` containing every other letter of the parameter. For example, for
-input "cement" it should return "cmn".
+Write a function `first()` that has an *expression body* starting with `if`.
+`first()` takes three `Boolean` parameters and "ands" them together to produce
+the result. Write `second()` to do the same but "or" all three parameters. In
+`main()`, display the result of combining `first()` and `second()` using both
+"and" and "or":
+
+| `first()` Arguments | `second()` Arguments |
+|---------------------|----------------------|
+| true, true, true    | false, false, false  |
+| true, false, true   | false, true, false   |

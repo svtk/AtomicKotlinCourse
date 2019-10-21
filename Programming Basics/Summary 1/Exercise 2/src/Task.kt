@@ -1,11 +1,20 @@
 package summaryIExercise2
 
-fun main() {
-  var x = 1
-  val y = x
-  val z = y
-  x = 2
-  println(x)
-  println(y)
-  println(z)
+fun other(s: String): String {
+  var index = 0
+  var result = ""
+  for (c in s) {
+    if (index % 2 == 0) {
+      result += c
+    }
+    index++
+  }
+  return result
 }
+
+fun main() {
+  println(other("cement"))
+}
+/* Output:
+cmn
+*/

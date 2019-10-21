@@ -1,40 +1,32 @@
 package summaryIExercise4
 
-import org.junit.Assert
 import org.junit.Test
+import util.runAndCheckSystemOutput
 
 class TestSummaryIExercise4 {
-  private fun testFirst(a: Boolean, b: Boolean, c: Boolean) {
-    Assert.assertEquals("Wrong result for 'first($a, $b, $c)'",
-      first(a, b, c), a && b && c)
-  }
-
-  private fun testSecond(a: Boolean, b: Boolean, c: Boolean) {
-    Assert.assertEquals("Wrong result for 'second($a, $b, $c)'",
-      second(a, b, c), a || b || c)
+  @Test
+  fun test1Long() {
+    runAndCheckSystemOutput(
+      "Wrong output for 'testLong()'",
+      "-9223372036854775808") {
+      testLong()
+    }
   }
 
   @Test
-  fun test1() {
-    testFirst(true, true, true)
-    testFirst(true, true, false)
-    testFirst(true, false, true)
-    testFirst(false, true, true)
-    testFirst(false, false, true)
-    testFirst(false, true, false)
-    testFirst(true, false, false)
-    testFirst(false, false, false)
+  fun test2Double() {
+    runAndCheckSystemOutput(
+      "Wrong output for 'testDouble()'",
+      "1.7976931348623157E308") {
+      testDouble()
+    }
   }
-
   @Test
-  fun test2() {
-    testSecond(true, true, true)
-    testSecond(true, true, false)
-    testSecond(true, false, true)
-    testSecond(false, true, true)
-    testSecond(false, false, true)
-    testSecond(false, true, false)
-    testSecond(true, false, false)
-    testSecond(false, false, false)
+  fun test3Double2() {
+    runAndCheckSystemOutput(
+      "Wrong output for 'testDouble2()'",
+      "true") {
+      testDouble2()
+    }
   }
 }

@@ -1,19 +1,19 @@
 package summaryIExercise6
 
-fun testLong() {
-  println(Long.MAX_VALUE + 1)
-}
-
-fun testDouble() {
-  println(Double.MAX_VALUE + 1)
-}
-
-fun testDouble2() {
-  println(Double.MAX_VALUE + 1 == Double.MAX_VALUE)
+fun everyFifthNonWhitespace(s: String) {
+  var i = 1
+  for (c in s) {
+    if (i % 5 == 0 && c != ' ') {
+      println(c)
+    }
+    if (c != ' ') i++
+  }
 }
 
 fun main() {
-  testLong()
-  testDouble()
-  testDouble2()
+  everyFifthNonWhitespace("abc d e fgh ik")
 }
+/* Output:
+e
+k
+*/

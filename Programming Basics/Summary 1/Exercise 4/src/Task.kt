@@ -1,15 +1,19 @@
 package summaryIExercise4
 
-fun first(a: Boolean, b: Boolean, c: Boolean): Boolean =
-  if (a) b && c else false
+fun testLong() {
+  println(Long.MAX_VALUE + 1)
+}
 
-fun second(a: Boolean, b: Boolean, c: Boolean): Boolean =
-  if (a) true else b || c
+fun testDouble() {
+  println(Double.MAX_VALUE + 1)
+}
+
+fun testDouble2() {
+  println(Double.MAX_VALUE + 1 == Double.MAX_VALUE)
+}
 
 fun main() {
-  println(first(true, true, true))
-  println(first(true, false, true))
-
-  println(second(false, false, false))
-  println(second(false, true, false))
+  testLong()
+  testDouble()
+  testDouble2()
 }

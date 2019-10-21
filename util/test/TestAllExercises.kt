@@ -120,10 +120,10 @@ class TestAllExercises : AbstractTestExercises() {
   fun testExpressionsAndStatementsExercise3() = testClass(expressionsAndStatementsExercise3.TestExpressionsAndStatementsExercise3::class)
 
   @Test
-  fun testSummaryIExercise1() = testClass(summaryIExercise1.TestSummaryIExercise1::class)
+  fun testSummaryIExercise1() = testOutput("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 1/test/output.txt"){ summaryIExercise1.main() }
 
   @Test
-  fun testSummaryIExercise2() = testOutput("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 2/test/output.txt"){ summaryIExercise2.main() }
+  fun testSummaryIExercise2() = testClass(summaryIExercise2.TestSummaryIExercise2::class)
 
   @Test
   fun testSummaryIExercise3() = testClass(summaryIExercise3.TestSummaryIExercise3::class)
@@ -148,15 +148,6 @@ class TestAllExercises : AbstractTestExercises() {
 
   @Test
   fun testSummaryIExercise10() = testClass(summaryIExercise10.TestSummaryIExercise10::class)
-
-  @Test
-  fun testSummaryIExercise11() = testClass(summaryIExercise11.TestSummaryIExercise11::class)
-
-  @Test
-  fun testSummaryIExercise12() = testClass(summaryIExercise12.TestSummaryIExercise12::class)
-
-  @Test
-  fun testSummaryIExercise13() = testClass(summaryIExercise13.TestSummaryIExercise13::class)
 
   @Test
   fun testObjectsEverywhereExercise1() = testClass(objectsEverywhereExercise1.TestObjectsEverywhereExercise1::class)

@@ -1,29 +1,60 @@
 package summaryIExercise9
 
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.runAndCheckSystemOutput
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIExercise9 {
-  private fun testInput(s: String) {
-    val expected = s.toList()
-      .filter { it != ' ' }
-      .filterIndexed { index, _ -> index % 5 == 4 }
-      .joinToString("\n")
-    runAndCheckSystemOutput("Wrong result for 'everyFifthNonWhitespace()'",
+  private fun checkOutput(n: Int, expected: String) {
+    runAndCheckSystemOutput(
+      "Incorrect output for n = $n:",
       expected) {
-      everyFifthNonWhitespace(s)
+      printTriangle(n)
     }
   }
 
-  @Test
-  fun test1() = testInput("abc d e fgh ik")
+  @Test(timeout = TIMEOUT)
+  fun testPyramid1() = checkOutput(1, "#\n")
 
-  @Test
-  fun test2() = testInput("12  3  4  5 6   789  0")
+  @Test(timeout = TIMEOUT)
+  fun testPyramid2() = checkOutput(2,
+    """
+                | #
+                |###
+                |
+            """.trimMargin())
 
-  @Test
-  fun test3() = testInput("*       *")
+  @Test(timeout = TIMEOUT)
+  fun testPyramid3() = checkOutput(3,
+    """
+                |  #
+                | ###
+                |#####
+                |
+            """.trimMargin())
 
-  @Test
-  fun test4() = testInput("1               2            345")
+  @Test(timeout = TIMEOUT)
+  fun testPyramid4() = checkOutput(4,
+    """
+                |   #
+                |  ###
+                | #####
+                |#######
+                |
+            """.trimMargin())
+
+  @Test(timeout = TIMEOUT)
+  fun testPyramid6() = checkOutput(6,
+    """
+                |     #
+                |    ###
+                |   #####
+                |  #######
+                | #########
+                |###########
+                |
+            """.trimMargin())
 }
