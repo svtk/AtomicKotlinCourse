@@ -1,8 +1,11 @@
-## Variable Argument Lists (#5)
+## Mastering the IDE: Passing Program Arguments
 
-{{ :UNTESTABLE I'd rather remove this task. Since the students work mostly
-with IntelliJ IDEA, we can explain here how to pass program arguments
-using IntelliJ but I wouldn't ask them to install the command line compiler }}
+You can edit a Run Configuration to pass the specific program arguments.
+First, run `main` in the corresponding task so that the corresponding
+configuration was automatically created for you.
 
-Install the command-line version of Kotlin, then compile and test the examples
-in the "Command-Line Arguments" section.
+Then open <span class="control">Run | Edit Configurations...</span> and
+choose the configuration named `varargArguments6.TaskKt`.
+Specify a couple of arguments to `Program arguments:`, then click `OK` to save
+your changes. Then run `main` function again; this time program arguments
+should be printed to the console.
