@@ -1,8 +1,19 @@
 ## Variable Argument Lists (#2)
 
-{{ :UNTESTABLE No specific result / output is expected }}
+Write a function `printArgs()` with a `String` as the first parameter, and a
+`vararg` parameter of `Int` as the second parameter. `printArgs` should display
+its arguments to the console; first string, then integer numbers, separated by
+comma and surrounded by square brackets.
 
-Write a function `first()` with a `vararg` parameter of `Int` as the *first*
-parameter, and a `String` as the second parameter. Test it with three
-different-length argument lists and consider the readability of the resulting
-function calls.
+For example, the output for `printArgs("Numbers: ", 1, 2, 3)` should be:
+
+```
+Numbers: [1, 2, 3]
+```
+
+<div class="hint">
+
+Use `toList` conversion on `vararg` parameter to get the requested
+string representation.
+
+</div>
