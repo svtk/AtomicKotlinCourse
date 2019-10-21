@@ -1,10 +1,11 @@
-## Mastering the IDE: Parameter Info
+## Mastering the IDE: Passing Program Arguments
 
-Press <span class="shortcut">&shortcut:ParameterInfo;</span> 
-or call the <span class="control">`Parameter Info`</span> action to check 
-parameter names and types for the corresponding arguments. This action is very
-convenient when you are typing the arguments and want to check which argument
-is expected at the current position.
+You can edit a Run Configuration to pass the specific program arguments.
+First, run `main` in the corresponding task so that the corresponding
+configuration was automatically created for you.
 
-Check parameters for the functions `listOf()` and `subList()` in the examples
-by using <span class="control">`Parameter Info`</span>.
+Then open <span class="control">Run | Edit Configurations...</span> and
+choose the configuration named `varargArguments6.TaskKt`.
+Specify a couple of arguments to `Program arguments:`, then click `OK` to save
+your changes. Then run `main` function again; this time program arguments
+should be printed to the console.

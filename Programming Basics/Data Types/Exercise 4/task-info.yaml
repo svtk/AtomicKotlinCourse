@@ -1,4 +1,4 @@
-type: edu
+type: ide
 files:
 - name: src/Task.kt
   visible: true

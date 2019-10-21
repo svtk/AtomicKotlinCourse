@@ -1,10 +1,10 @@
-## Mastering the IDE: TODO
+## Mastering the IDE: Parameter Info
 
-Quick Documentation on a Variable
+Press <span class="shortcut">&shortcut:ParameterInfo;</span> 
+or call the <span class="control">`Parameter Info`</span> action to check 
+parameter names and types for the corresponding arguments. This action is very
+convenient when you are typing the arguments and want to check which argument
+is expected at the current position.
 
-You can press <span class="shortcut">&shortcut:QuickJavaDoc;</span>
-or run a <span class="control">`Quick Documentation`</span> action 
-while having the caret on an identifier to check the type the compiler infers
-for this identifier.
-
-Check the type of the `list` identifier in the example.
+Check parameters for the functions `listOf()` and `subList()` in the examples
+by using <span class="control">`Parameter Info`</span>.

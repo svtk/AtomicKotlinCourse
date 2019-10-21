@@ -1,6 +1,8 @@
 package varargArguments6
 
-fun main() {
-  val list = listOf('a', 'b', 'c', 'd', 'e').subList(1, 3)
-  println(list)
+fun main(args: Array<String>) {
+  println("Passed arguments:")
+  for (arg in args) {
+    println(arg)
+  }
 }
