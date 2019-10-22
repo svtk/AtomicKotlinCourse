@@ -2388,7 +2388,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask11() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Exercise 4/src/Task.kt", functions4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Functions/Exercise 4/src/Task.kt", functionsExercise4.TaskKt::main);
     }
 
     @Test
@@ -2408,7 +2408,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask15() {
-        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Exercise 4/src/Task.kt", ifExpressions4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/if Expressions/Exercise 4/src/Task.kt", ifExpressionsExercise4.TaskKt::main);
     }
 
     @Test
@@ -2428,12 +2428,12 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask19() {
-        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 4/src/Task.kt", stringTemplates4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 4/src/Task.kt", stringTemplatesExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask20() {
-        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 5/src/Task.kt", stringTemplates5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 5/src/Task.kt", stringTemplatesExercise5.TaskKt::main);
     }
 
     @Test
@@ -2448,7 +2448,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask23() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Exercise 5/src/Task.kt", numberTypes5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Number Types/Exercise 5/src/Task.kt", numberTypesExercise5.TaskKt::main);
     }
 
     @Test
@@ -2463,7 +2463,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask26() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Exercise 4/src/Task.kt", booleans4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Booleans/Exercise 4/src/Task.kt", booleansExercise4.TaskKt::main);
     }
 
     @Test
@@ -2483,12 +2483,12 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask30() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 4/src/Task.kt", repetitionwithwhile4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 4/src/Task.kt", repetitionWithWhileExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask31() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 5/src/Task.kt", repetitionwithwhile5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Repetition with while/Exercise 5/src/Task.kt", repetitionWithWhileExercise5.TaskKt::main);
     }
 
     @Test
@@ -2513,7 +2513,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask36() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 5/src/Task.kt", loopingandRanges5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Looping & Ranges/Exercise 5/src/Task.kt", loopingAndRangesExercise5.TaskKt::main);
     }
 
     @Test
@@ -2548,7 +2548,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask43() {
-        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Exercise 4/src/Task.kt", expressionsAndStatements4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Exercise 4/src/Task.kt", expressionsAndStatementsExercise4.TaskKt::main);
     }
 
     @Test
@@ -2623,7 +2623,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask58() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 5/src/Task.kt", objectsEverywhere5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Objects Everywhere/Exercise 5/src/Task.kt", objectsEverywhereExercise5.TaskKt::main);
     }
 
     @Test
@@ -2638,12 +2638,12 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask61() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Creating Classes/Exercise 4/src/Task.kt", creatingClasses4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Creating Classes/Exercise 4/src/Task.kt", creatingClassesExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask62() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Creating Classes/Exercise 5/src/Task.kt", creatingClasses5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Creating Classes/Exercise 5/src/Task.kt", creatingClassesExercise5.TaskKt::main);
     }
 
     @Test
@@ -2678,7 +2678,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask69() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Exercise 4/src/Task.kt", constructors4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constructors/Exercise 4/src/Task.kt", constructorsExercise4.TaskKt::main);
     }
 
     @Test
@@ -2698,12 +2698,12 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask73() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 4/src/Task.kt", constrainingVisibility4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 4/src/Task.kt", constrainingVisibilityExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask74() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 5/src/Task.kt", constrainingVisibility5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Constraining Visibility/Exercise 5/src/Task.kt", constrainingVisibilityExercise5.TaskKt::main);
     }
 
     @Test
@@ -2723,7 +2723,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask77() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Exercise 4/src/Task.kt", importsandPackages4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Packages/Exercise 4/src/Task.kt", packagesExercise4.TaskKt::main);
     }
 
     @Test
@@ -2743,7 +2743,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask81() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Exercise 4/src/Task.kt", testing4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Exercise 4/src/Task.kt", testingExercise4.TaskKt::main);
     }
 
     @Test
@@ -2778,7 +2778,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask88() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 4/src/Task.kt", lists5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Lists/Exercise 4/src/Task.kt", listsExercise4.TaskKt::main);
     }
 
     @Test
@@ -2818,7 +2818,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask96() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Exercise 4/src/Task.kt", sets4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Sets/Exercise 4/src/Task.kt", setsExercise4.TaskKt::main);
     }
 
     @Test
@@ -2838,7 +2838,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask100() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Exercise 4/src/Task.kt", maps4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Maps/Exercise 4/src/Task.kt", mapsExercise4.TaskKt::main);
     }
 
     @Test
@@ -2863,7 +2863,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask105() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Exercise 5/src/Task.kt", propertyAccessors5.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Introduction to Objects/Property Accessors/Exercise 5/src/Task.kt", propertyAccessorsExercise5.TaskKt::main);
     }
 
     @Test
@@ -2938,7 +2938,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask120() {
-        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 4/src/Task.kt", extensionFunctions4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 4/src/Task.kt", extensionFunctionsExercise4.TaskKt::main);
     }
 
     @Test
@@ -2958,7 +2958,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask124() {
-        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Exercise 4/src/Task.kt", namedandDefaultArguments4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Exercise 4/src/Task.kt", namedAndDefaultArgumentsExercise4.TaskKt::main);
     }
 
     @Test
@@ -2968,7 +2968,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask126() {
-        testExample("../AtomicKotlinCourse/Usability/Overloading/Exercise 4/src/Task.kt", overloading4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Overloading/Exercise 4/src/Task.kt", overloadingExercise4.TaskKt::main);
     }
 
     @Test
@@ -2988,7 +2988,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask130() {
-        testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 4/src/Task.kt", whenExpressions4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 4/src/Task.kt", whenExpressionsExercise4.TaskKt::main);
     }
 
     @Test

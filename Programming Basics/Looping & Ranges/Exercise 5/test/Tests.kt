@@ -1,1 +1,1 @@
-package loopingandRanges5
+package loopingAndRangesExercise5

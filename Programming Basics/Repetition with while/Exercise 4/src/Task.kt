@@ -1,4 +1,4 @@
-package repetitionwithwhile4
+package repetitionWithWhileExercise4
 
 fun getFooResult(): Int = 736
 

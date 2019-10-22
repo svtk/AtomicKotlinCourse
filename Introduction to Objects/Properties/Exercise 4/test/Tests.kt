@@ -1,2 +1,2 @@
-package properties4
+package propertiesExercise4
 

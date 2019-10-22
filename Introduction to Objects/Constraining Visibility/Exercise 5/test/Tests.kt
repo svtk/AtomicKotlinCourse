@@ -1,2 +1,2 @@
-package constrainingVisibility5
+package constrainingVisibilityExercise5
 

@@ -1,4 +1,4 @@
-package stringTemplates4
+package stringTemplatesExercise4
 
 // foo
 fun foo() = 1

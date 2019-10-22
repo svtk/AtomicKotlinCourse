@@ -1,4 +1,4 @@
-package maps4
+package mapsExercise4
 
 fun main() {
   val map = mapOf(

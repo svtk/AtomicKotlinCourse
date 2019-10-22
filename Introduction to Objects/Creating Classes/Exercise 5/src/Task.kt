@@ -1,4 +1,4 @@
-package creatingClasses5
+package creatingClassesExercise5
 
 fun cap(s: String) = s.capitalize()
 

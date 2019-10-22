@@ -1,4 +1,4 @@
-package varandval4
+package varAndValExercise5
 
 fun main() {
   println("Hello, Kotlin!")

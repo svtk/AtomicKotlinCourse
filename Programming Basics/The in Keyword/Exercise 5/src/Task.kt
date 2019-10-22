@@ -1,4 +1,4 @@
-package theinKeyword5
+package theInKeywordExercise5
 
 fun foo() {
   println("foo")

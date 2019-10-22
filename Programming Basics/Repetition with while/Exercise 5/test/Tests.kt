@@ -1,1 +1,1 @@
-package repetitionwithwhile5
+package repetitionWithWhileExercise5

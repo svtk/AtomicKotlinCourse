@@ -1,4 +1,4 @@
-package creatingClasses4
+package creatingClassesExercise4
 
 fun main() {
   val s: String = "Hello!"

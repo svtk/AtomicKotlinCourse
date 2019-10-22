@@ -1,4 +1,4 @@
-package stacktrace
+package exceptionsExercise4
 
 fun foo() {
   throw IllegalStateException("something is wrong")

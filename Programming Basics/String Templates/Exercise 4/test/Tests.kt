@@ -1,1 +1,1 @@
-package stringTemplates4
+package stringTemplatesExercise4

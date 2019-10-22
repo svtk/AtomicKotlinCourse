@@ -1,4 +1,4 @@
-package expressionsAndStatements4
+package expressionsAndStatementsExercise4
 
 fun main() {
   var x = 1

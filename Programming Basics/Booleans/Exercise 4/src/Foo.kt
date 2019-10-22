@@ -1,3 +1,3 @@
-package booleans4
+package booleansExercise4
 
 fun foo(): Boolean = true

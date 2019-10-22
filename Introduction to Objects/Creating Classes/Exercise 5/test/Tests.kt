@@ -1,4 +1,4 @@
-package creatingClasses5
+package creatingClassesExercise5
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestCapitalize() {
+class TestCreatingClassesExercise5 {
   private fun testString(s: String) {
     Assert.assertEquals("""Wrong result for task("$s"):""", s.capitalize(), cap(s))
   }

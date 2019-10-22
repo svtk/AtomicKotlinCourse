@@ -1,4 +1,4 @@
-package functions4
+package functionsExercise4
 
 fun foo(): String {
   return "abc"

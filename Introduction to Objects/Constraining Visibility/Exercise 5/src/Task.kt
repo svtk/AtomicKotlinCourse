@@ -1,4 +1,4 @@
-package constrainingVisibility5
+package constrainingVisibilityExercise5
 
 fun printSum(x: Int) {
     if (x <= 0) {

@@ -1,4 +1,4 @@
-package ifExpressions4
+package ifExpressionsExercise4
 
 fun oneOrTheOther(exp: Boolean) =
     if (exp)

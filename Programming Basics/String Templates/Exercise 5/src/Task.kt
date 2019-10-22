@@ -1,4 +1,4 @@
-package stringTemplates5
+package stringTemplatesExercise5
 
 fun main() {
   val answer = 42

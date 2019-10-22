@@ -1,4 +1,4 @@
-package numberTypes5
+package numberTypesExercise5
 
 fun main() {
   val x = 10

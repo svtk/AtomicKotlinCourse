@@ -1,4 +1,4 @@
-package constructors4
+package constructorsExercise4
 
 class Human(
     val name: String,

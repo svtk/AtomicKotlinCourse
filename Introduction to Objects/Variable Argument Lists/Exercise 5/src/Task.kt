@@ -1,4 +1,4 @@
-package varargArguments6
+package variableArgumentListsExercise5
 
 fun main(args: Array<String>) {
   println("Passed arguments:")

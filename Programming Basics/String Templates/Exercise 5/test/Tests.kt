@@ -1,2 +1,2 @@
-package stringTemplates5
+package stringTemplatesExercise5
 
