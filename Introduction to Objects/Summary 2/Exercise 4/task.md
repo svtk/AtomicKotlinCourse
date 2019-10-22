@@ -18,7 +18,7 @@ Use `split(" ")` on `String` to split words by a whitespace.
 
 </div>
 
-<div class="hint"> 
+<div class="hint">
 
 Define a second auxiliary property `_translations` to store a mutable map
 of translations. `translations` should simply return the value of 
