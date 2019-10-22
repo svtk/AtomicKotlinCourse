@@ -300,7 +300,7 @@ class TestAllExercises : AbstractTestExercises() {
   fun testSummaryIIExercise8() = testClass(summaryIIExercise8.TestSummaryIIExercise8::class)
 
   @Test
-  fun testBreakAndContinueExercise1() = testOutput("../AtomicKotlinCourse/Usability/break & continue/Exercise 1/test/output.txt"){ breakAndContinueExercise1.main() }
+  fun testBreakAndContinueExercise1() = testClass(breakAndContinueExercise1.TestBreakAndContinueExercise1::class)
 
   @Test
   fun testBreakAndContinueExercise2() = testClass(breakAndContinueExercise2.TestBreakAndContinueExercise2::class)

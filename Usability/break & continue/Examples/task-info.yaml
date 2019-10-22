@@ -4,11 +4,11 @@ files:
   visible: true
 - name: src/WhileControl.kt
   visible: true
-- name: src/DoControl.kt
+- name: src/DoWhileControl.kt
   visible: true
 - name: src/ForLabeled.kt
   visible: true
 - name: src/WhileLabeled.kt
   visible: true
-- name: src/DoLabeled.kt
+- name: src/Improved.kt
   visible: true

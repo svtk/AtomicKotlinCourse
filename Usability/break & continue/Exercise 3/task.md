@@ -1,7 +1,9 @@
 ## `break` & `continue` (#3)
 
-{{ :UNTESTABLE: There's no expected output which can be tested }}
+This exercise demonstrates how you can replace `break` and `continue` with 
+`return` while extracting some code into new functions.
 
-Modify the previous exercise by nesting the `label1` loop in an identical outer
-`label2` `for` loop. If the inner loop counter is one, `break` out to the end
-of the `label2` loop.
+The functions `usingBreak` and `usingContinue` are provided in the accompanying
+code. Your task is to extract part of `usingBreak` into `analyzeList` and
+part of `usingContinue` into `analyzeElement` so that `break` and `continue`
+could be replaced with `return` without change in the logic of these functions.

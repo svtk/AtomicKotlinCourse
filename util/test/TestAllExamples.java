@@ -857,18 +857,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testDoLabeled() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/DoLabeled.kt", DoLabeledKt::main);
-    }
-
-    @Test
     public void testWhileControl() {
         testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/WhileControl.kt", WhileControlKt::main);
     }
 
     @Test
-    public void testDoControl() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/DoControl.kt", DoControlKt::main);
+    public void testDoWhileControl() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/DoWhileControl.kt", DoWhileControlKt::main);
     }
 
     @Test
@@ -879,6 +874,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testForLabeled() {
         testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/ForLabeled.kt", ForLabeledKt::main);
+    }
+
+    @Test
+    public void testImproved() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/Improved.kt", ImprovedKt::main);
     }
 
     @Test

@@ -1,6 +1,7 @@
 package util
 
 import org.junit.Assert
+import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 import java.lang.reflect.Method
@@ -35,6 +36,28 @@ inline fun runAndCheckSystemOutput(message: String, expectedOutput: String, acti
 
 fun checkSystemOutput(message: String, expected: String, actual: String) {
   Assert.assertEquals(message, expected.trim().normalizeLineSeparators(), actual.trim().normalizeLineSeparators())
+}
+
+fun checkInputOutput(message: String, expectedInputAndOutput: String, action: () -> Unit) {
+  val (inputLines, outputLines) = expectedInputAndOutput
+    .lines()
+    .partition { it.startsWith(">>>") }
+  val input = inputLines.joinToString(LINE_SEPARATOR) { it.substringAfter(">>> ") }
+  val expectedOutput = outputLines.joinToString(LINE_SEPARATOR)
+
+  checkInputOutput(message, input, expectedOutput, action)
+}
+
+fun checkInputOutput(message: String, input: String, expectedOutput: String, action: () -> Unit) {
+  val inputStream = ByteArrayInputStream(input.toByteArray())
+  System.setIn(inputStream)
+
+  val out = ByteArrayOutputStream()
+  System.setOut(PrintStream(out))
+
+  action()
+
+  checkSystemOutput(message, expectedOutput, out.toString())
 }
 
 fun loadClass(packageName: String, className: String): KClass<*> {

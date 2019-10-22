@@ -1,4 +1,4 @@
-// BreakAndContinue/DoControl.kt
+// BreakAndContinue/DoWhileControl.kt
 import atomictest.eq
 
 fun main() {
@@ -11,5 +11,5 @@ fun main() {
     nums.add(i)
   } while(i < 100)
   nums eq
-  listOf(0,4,12,16,20,24,28,32,36)
+    listOf(0, 4, 12, 16, 20, 24, 28, 32, 36)
 }
