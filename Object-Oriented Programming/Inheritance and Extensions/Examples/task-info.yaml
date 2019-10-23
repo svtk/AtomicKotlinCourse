@@ -4,7 +4,7 @@ files:
   visible: true
 - name: src/GadgetExtensions.kt
   visible: true
-- name: src/KeepingMazeSimple.kt
+- name: src/SimpleMaze.kt
   visible: true
 - name: src/Auxiliary.kt
   visible: true

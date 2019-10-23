@@ -5,8 +5,8 @@ interface GameElement
 interface Position
 
 interface MutableMaze {
-  fun add(element: GameElement, position: Position)
-  fun remove(element: GameElement)
+  fun add(e: GameElement, p: Position)
+  fun remove(e: GameElement)
 }
 
 interface GameAction {

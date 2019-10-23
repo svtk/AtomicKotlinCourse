@@ -16,8 +16,8 @@ data class MoveAction(
 ) : GameAction()
 
 interface MutableMaze {
-  fun add(element: GameElement, position: Position)
-  fun remove(element: GameElement)
+  fun add(e: GameElement, p: Position)
+  fun remove(e: GameElement)
 }
 
 class Game1(val maze: MutableMaze) {
