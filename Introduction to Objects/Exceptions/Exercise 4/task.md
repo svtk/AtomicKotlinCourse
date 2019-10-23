@@ -8,7 +8,7 @@ You can also analyze the stacktrace copied from another place, like a bug
 tracker. Copy the following stacktrace and call the action
 <span class="control">`Analyze stacktrace`</span>:
 
-```text	
+```text
 Exception in thread "main" java.lang.IllegalStateException: something is wrong
     at stacktrace.TaskKt.foo(Task.kt:4)
     at stacktrace.TaskKt.bar(Task.kt:8)

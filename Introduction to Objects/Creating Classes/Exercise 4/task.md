@@ -11,5 +11,5 @@ you the available documentation for this function or class.
 Call <span class="control">`Quick Documentation`</span> action putting the caret
 on the `String` type and its `get()` and `length()` member functions.
 
-Press <span class="shortcut">&shortcut:EditorEscape;</span> to close the 
+Press <span class="shortcut">&shortcut:EditorEscape;</span> to close the
 quick documentation pop-up.

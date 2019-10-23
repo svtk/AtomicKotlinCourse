@@ -2,7 +2,7 @@
 
 You can convert a property to a function and back automatically. Put the caret
 on the property name, invoke the intention list and choose
-<span class="control">`Convert property to function`</span>. 
+<span class="control">`Convert property to function`</span>.
 For the reverse conversion, choose the intention
 <span class="control">`Convert function to property`</span>.
 

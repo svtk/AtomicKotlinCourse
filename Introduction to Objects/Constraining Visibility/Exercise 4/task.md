@@ -1,7 +1,7 @@
 ## Mastering the IDE: Extend Selection
 
-When you apply refactorings like <span class="control">`Extract Property`</span>, 
-you need to select the expression that you'd like to extract, which might be 
+When you apply refactorings like <span class="control">`Extract Property`</span>,
+you need to select the expression that you'd like to extract, which might be
 quite complicated.
 
 The <span class="control">`Extend Selection`</span> action accessible with the

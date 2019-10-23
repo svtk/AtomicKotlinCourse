@@ -2,8 +2,8 @@
 
 You can easily see how a function is defined. To navigate to a function
 definition, put the caret on the usage and press
-<span class="shortcut">&shortcut:GotoDeclaration;</span>. 
-Alternatively, you may choose <span class="control">`Navigate`</span> 
+<span class="shortcut">&shortcut:GotoDeclaration;</span>.
+Alternatively, you may choose <span class="control">`Navigate`</span>
 in the application menu, and then <span class="control">`Declaration`</span>.
 
 Put the caret on the `oneOrTheOther()` function usage in `main()` and navigate

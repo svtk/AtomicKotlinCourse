@@ -1,6 +1,6 @@
 ## Mastering the IDE: Checking the inferred variable type
 
-In the accompanying example, all the type declarations from `Types.kt` are 
+In the accompanying example, all the type declarations from `Types.kt` are
 removed. Verify that Kotlin successfully infers the types.
 
 You can press <span class="shortcut">&shortcut:QuickJavaDoc;</span>

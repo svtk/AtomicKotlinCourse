@@ -14,10 +14,10 @@ more complicated, because the function might be used in many files, and doing
 rename properly in many places by hand is a complicated task.
 
 IDE allows to rename a declaration automatically.
-Put the caret on the `val` name and press 
+Put the caret on the `val` name and press
 <span class="shortcut">&shortcut:RenameElement;</span>.
 Alternatively, you may choose <span class="control">`Refactor`</span>
-from the application menu, then choose <span class="control">`Rename`</span>. 
+from the application menu, then choose <span class="control">`Rename`</span>.
 
 Rename the `val` name to `result` without renaming "answer" in the string
 literal.

@@ -11,6 +11,6 @@ actions using only the keyboard. We recommend learning to do everything
 with keyboard shortcuts.
 
 Click on the icon next to the `main()` function to see what shortcut is
-used by your operating system to run `main()`. The key combination appears 
-right after `run 'TaskKt'`. Run the `main()` function by first choosing 
+used by your operating system to run `main()`. The key combination appears
+right after `run 'TaskKt'`. Run the `main()` function by first choosing
 `run 'TaskKt'`, then pressing the shortcut.

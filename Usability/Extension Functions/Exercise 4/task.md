@@ -2,7 +2,7 @@
 
 You can convert a regular function into an extension and back
 automatically. Put the caret on the receiver parameter, invoke
-the intention list and choose 
+the intention list and choose
 <span class="control">`Convert receiver to parameter`</span>.
 Then you can type the parameter name or choose the suggested one.
 Note how all the usages of the function are changed accordingly.
