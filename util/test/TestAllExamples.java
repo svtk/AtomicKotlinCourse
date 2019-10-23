@@ -852,36 +852,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testForControl() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/ForControl.kt", ForControlKt::main);
-    }
-
-    @Test
-    public void testWhileControl() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/WhileControl.kt", WhileControlKt::main);
-    }
-
-    @Test
-    public void testDoWhileControl() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/DoWhileControl.kt", DoWhileControlKt::main);
-    }
-
-    @Test
-    public void testWhileLabeled() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/WhileLabeled.kt", WhileLabeledKt::main);
-    }
-
-    @Test
-    public void testForLabeled() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/ForLabeled.kt", ForLabeledKt::main);
-    }
-
-    @Test
-    public void testImproved() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/Improved.kt", ImprovedKt::main);
-    }
-
-    @Test
     public void testQuoting() {
         testExample("../AtomicKotlinCourse/Usability/Extension Functions/Examples/src/Quoting.kt", quoting.QuotingKt::main);
     }
@@ -1169,6 +1139,36 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testStringIndices() {
         testExample("../AtomicKotlinCourse/Usability/Extension Properties/Examples/src/StringIndices.kt", extensionproperties.StringIndicesKt::main);
+    }
+
+    @Test
+    public void testForControl() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/ForControl.kt", ForControlKt::main);
+    }
+
+    @Test
+    public void testWhileControl() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/WhileControl.kt", WhileControlKt::main);
+    }
+
+    @Test
+    public void testDoWhileControl() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/DoWhileControl.kt", DoWhileControlKt::main);
+    }
+
+    @Test
+    public void testWhileLabeled() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/WhileLabeled.kt", WhileLabeledKt::main);
+    }
+
+    @Test
+    public void testForLabeled() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/ForLabeled.kt", ForLabeledKt::main);
+    }
+
+    @Test
+    public void testImproved() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Examples/src/Improved.kt", ImprovedKt::main);
     }
 
     @Test
@@ -2908,162 +2908,162 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask114() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Exercise 1/src/Task.kt", breakAndContinueExercise1.TaskKt::main);
-    }
-
-    @Test
-    public void testTask115() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Exercise 2/src/Task.kt", breakAndContinueExercise2.TaskKt::main);
-    }
-
-    @Test
-    public void testTask116() {
-        testExample("../AtomicKotlinCourse/Usability/break & continue/Exercise 3/src/Task.kt", breakAndContinueExercise3.TaskKt::main);
-    }
-
-    @Test
-    public void testTask117() {
         testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 1/src/Task.kt", extensionFunctionsExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask118() {
+    public void testTask115() {
         testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 2/src/Task.kt", extensionFunctionsExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask119() {
+    public void testTask116() {
         testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 3/src/Task.kt", extensionFunctionsExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask120() {
+    public void testTask117() {
         testExample("../AtomicKotlinCourse/Usability/Extension Functions/Exercise 4/src/Task.kt", extensionFunctionsExercise4.TaskKt::main);
     }
 
     @Test
-    public void testTask121() {
+    public void testTask118() {
         testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Exercise 1/src/Task.kt", namedAndDefaultArgumentsExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask122() {
+    public void testTask119() {
         testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Exercise 2/src/Task.kt", namedAndDefaultArgumentsExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask123() {
+    public void testTask120() {
         testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Exercise 3/src/Task.kt", namedAndDefaultArgumentsExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask124() {
+    public void testTask121() {
         testExample("../AtomicKotlinCourse/Usability/Named & Default Arguments/Exercise 4/src/Task.kt", namedAndDefaultArgumentsExercise4.TaskKt::main);
     }
 
     @Test
-    public void testTask125() {
+    public void testTask122() {
         testExample("../AtomicKotlinCourse/Usability/Overloading/Exercise 1/src/Task.kt", overloadingExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask126() {
+    public void testTask123() {
         testExample("../AtomicKotlinCourse/Usability/Overloading/Exercise 4/src/Task.kt", overloadingExercise4.TaskKt::main);
     }
 
     @Test
-    public void testTask127() {
+    public void testTask124() {
         testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 1/src/Task.kt", whenExpressionsExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask128() {
+    public void testTask125() {
         testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 2/src/Task.kt", whenExpressionsExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask129() {
+    public void testTask126() {
         testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 3/src/Task.kt", whenExpressionsExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask130() {
+    public void testTask127() {
         testExample("../AtomicKotlinCourse/Usability/when Expressions/Exercise 4/src/Task.kt", whenExpressionsExercise4.TaskKt::main);
     }
 
     @Test
-    public void testTask131() {
+    public void testTask128() {
         testExample("../AtomicKotlinCourse/Usability/Enumerations/Exercise 1/src/Task.kt", enumerationsExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask132() {
+    public void testTask129() {
         testExample("../AtomicKotlinCourse/Usability/Enumerations/Exercise 2/src/Task.kt", enumerationsExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask133() {
+    public void testTask130() {
         testExample("../AtomicKotlinCourse/Usability/Enumerations/Exercise 3/src/Task.kt", enumerationsExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask134() {
+    public void testTask131() {
         testExample("../AtomicKotlinCourse/Usability/Data Classes/Exercise 2/src/Task.kt", dataClassesExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask135() {
+    public void testTask132() {
         testExample("../AtomicKotlinCourse/Usability/Nullable Types/Exercise 1/src/Task.kt", nullableTypesExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask136() {
+    public void testTask133() {
         testExample("../AtomicKotlinCourse/Usability/Nullable Types/Exercise 2/src/Task.kt", nullableTypesExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask137() {
+    public void testTask134() {
         testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Exercise 1/src/Task.kt", safeCallsAndTheElvisOperatorExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask138() {
+    public void testTask135() {
         testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Exercise 2/src/Task.kt", safeCallsAndTheElvisOperatorExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask139() {
+    public void testTask136() {
         testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Exercise 1/src/Task.kt", nonNullAssertionsExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask140() {
+    public void testTask137() {
         testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Exercise 2/src/Task.kt", nonNullAssertionsExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask141() {
+    public void testTask138() {
         testExample("../AtomicKotlinCourse/Usability/Extensions for Nullable Types/Exercise 1/src/Task.kt", extensionsForNullableTypesExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask142() {
+    public void testTask139() {
         testExample("../AtomicKotlinCourse/Usability/Extensions for Nullable Types/Exercise 2/src/Task.kt", extensionsForNullableTypesExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask143() {
+    public void testTask140() {
         testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Exercise 1/src/Task.kt", introductionToGenericsExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask144() {
+    public void testTask141() {
         testExample("../AtomicKotlinCourse/Usability/Introduction to Generics/Exercise 2/src/Task.kt", introductionToGenericsExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask145() {
+    public void testTask142() {
         testExample("../AtomicKotlinCourse/Usability/Extension Properties/Exercise 1/src/Task.kt", extensionPropertiesExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask143() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Exercise 1/src/Task.kt", breakAndContinueExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask144() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Exercise 2/src/Task.kt", breakAndContinueExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask145() {
+        testExample("../AtomicKotlinCourse/Usability/break & continue/Exercise 3/src/Task.kt", breakAndContinueExercise3.TaskKt::main);
     }
 
     @Test

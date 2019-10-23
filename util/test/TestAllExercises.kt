@@ -300,15 +300,6 @@ class TestAllExercises : AbstractTestExercises() {
   fun testSummaryIIExercise8() = testClass(summaryIIExercise8.TestSummaryIIExercise8::class)
 
   @Test
-  fun testBreakAndContinueExercise1() = testClass(breakAndContinueExercise1.TestBreakAndContinueExercise1::class)
-
-  @Test
-  fun testBreakAndContinueExercise2() = testClass(breakAndContinueExercise2.TestBreakAndContinueExercise2::class)
-
-  @Test
-  fun testBreakAndContinueExercise3() = testClass(breakAndContinueExercise3.TestBreakAndContinueExercise3::class)
-
-  @Test
   fun testExtensionFunctionsExercise1() = testClass(extensionFunctionsExercise1.TestExtensionFunctionsExercise1::class)
 
   @Test
@@ -391,6 +382,15 @@ class TestAllExercises : AbstractTestExercises() {
 
   @Test
   fun testExtensionPropertiesExercise1() = testClass(extensionPropertiesExercise1.TestExtensionPropertiesExercise1::class)
+
+  @Test
+  fun testBreakAndContinueExercise1() = testClass(breakAndContinueExercise1.TestBreakAndContinueExercise1::class)
+
+  @Test
+  fun testBreakAndContinueExercise2() = testClass(breakAndContinueExercise2.TestBreakAndContinueExercise2::class)
+
+  @Test
+  fun testBreakAndContinueExercise3() = testClass(breakAndContinueExercise3.TestBreakAndContinueExercise3::class)
 
   @Test
   fun testLambdasExercise1() = testClass(lambdasExercise1.TestLambdasExercise1::class)
