@@ -10,14 +10,14 @@ import kotlin.collections.mapIndexedNotNull as mapIndexedNotNullLibrary
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestFunctionTypesExercise3 {
   private fun <T, R : Any> check(
-      list: List<T>,
-      predicateStr: String,
-      predicate: (Int, T) -> R?
+    list: List<T>,
+    predicateStr: String,
+    predicate: (Int, T) -> R?
   ) {
     Assert.assertEquals("Wrong result for $list\n" +
-        "predicate = $predicateStr",
-        list.mapIndexedNotNull(predicate),
-        list.mapIndexedNotNullLibrary(predicate))
+      "predicate = $predicateStr",
+      list.mapIndexedNotNull(predicate),
+      list.mapIndexedNotNullLibrary(predicate))
   }
 
   @Test(timeout = TIMEOUT)
@@ -28,7 +28,7 @@ class TestFunctionTypesExercise3 {
 
   @Test(timeout = TIMEOUT)
   fun test3() = check(listOf("1", "2", "d"),
-      """
+    """
             {
                 index, e ->
                 val i = e.toIntOrNull()

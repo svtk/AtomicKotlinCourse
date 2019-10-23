@@ -9,11 +9,11 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestFunctionTypesExercise2 {
   private fun check(
-      list: List<Int>
+    list: List<Int>
   ) {
     Assert.assertEquals("Wrong result for $list:",
-        list.filter { it % 2 == 0 }.map { it * it },
-        list.transformVersion2())
+      list.filter { it % 2 == 0 }.map { it * it },
+      list.transformVersion2())
     list.transformVersion1()
   }
 

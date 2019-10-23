@@ -23,19 +23,19 @@ class TestOverloadingExercise1 {
 
   @Test(timeout = TIMEOUT)
   fun test2() = testList(
-      listOf(1, 2, 3, 4, 5, 6).myJoinToString(""),
-      "123456"
+    listOf(1, 2, 3, 4, 5, 6).myJoinToString(""),
+    "123456"
   )
 
   @Test(timeout = TIMEOUT)
   fun test3() = testList(
-      listOf(1, 2, 3, 4).myJoinToString(),
-      "1, 2, 3, 4"
+    listOf(1, 2, 3, 4).myJoinToString(),
+    "1, 2, 3, 4"
   )
 
   @Test(timeout = TIMEOUT)
   fun test4() = testList(
-      listOf(1, 2, 3, 4).myJoinToString(",", "##"),
-      "##1,2,3,4"
+    listOf(1, 2, 3, 4).myJoinToString(",", "##"),
+    "##1,2,3,4"
   )
 }

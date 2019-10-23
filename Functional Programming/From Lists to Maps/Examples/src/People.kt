@@ -6,9 +6,13 @@ data class Person(
   val age: Int
 )
 
-fun people() = listOf("Alice", "Arthricia",
-  "Bob", "Bill", "Birdperson", "Charlie",
-  "Crocubot", "Franz", "Revolio").zip(
-  listOf(21,15,25,25,42,21,42,21,33)) {
-    name, age -> Person(name, age)
+fun people(): List<Person> {
+  val names = listOf("Alice", "Arthricia",
+    "Bob", "Bill", "Birdperson", "Charlie",
+    "Crocubot", "Franz", "Revolio")
+  val ages = listOf(21, 15, 25, 25, 42, 21,
+    42, 21, 33)
+  return names.zip(ages) { name, age ->
+    Person(name, age)
   }
+}

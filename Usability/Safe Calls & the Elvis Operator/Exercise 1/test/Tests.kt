@@ -11,15 +11,15 @@ class TestSafeCallsAndTheElvisOperatorExercise1 {
   @Test(timeout = TIMEOUT)
   fun test1SampleFromMunich() {
     val client = Client("Alice",
-        PersonalInfo(address = Address("Germany", "Munich")))
+      PersonalInfo(address = Address("Germany", "Munich")))
     Assert.assertTrue("Client $client comes from Munich",
-        client.comesFromMunich())
+      client.comesFromMunich())
   }
 
   @Test(timeout = TIMEOUT)
   fun test2SampleNotFromMunich() {
     val client = Client("Bob")
     Assert.assertFalse("Client $client doesn't come from Munich",
-        client.comesFromMunich())
+      client.comesFromMunich())
   }
 }

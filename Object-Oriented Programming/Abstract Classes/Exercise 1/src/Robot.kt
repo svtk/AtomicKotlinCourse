@@ -13,11 +13,11 @@ class Robot : MobileElement() {
     val position = maze.position(this) ?: return
     val cellElements = maze.allAt(position)
     cellElements
-        .filterIsInstance<Food>()
-        .forEach { food ->
-          eatenFoodItems++
-          maze.remove(food)
-        }
+      .filterIsInstance<Food>()
+      .forEach { food ->
+        eatenFoodItems++
+        maze.remove(food)
+      }
   }
 
   override fun makeMove(move: Move, maze: Maze): Position? {

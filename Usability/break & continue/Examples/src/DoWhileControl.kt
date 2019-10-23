@@ -9,7 +9,7 @@ fun main() {
     if (i == 8) continue
     if (i == 40) break
     nums.add(i)
-  } while(i < 100)
+  } while (i < 100)
   nums eq
     listOf(0, 4, 12, 16, 20, 24, 28, 32, 36)
 }

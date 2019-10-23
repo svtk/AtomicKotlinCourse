@@ -9,18 +9,18 @@ import util.untestable
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestDataTypesExercise3 {
-    @Test(timeout = TIMEOUT)
-    fun testA() {
-        Assert.assertEquals("Wrong result for 'c1'", 'b', c1)
-    }
+  @Test(timeout = TIMEOUT)
+  fun testA() {
+    Assert.assertEquals("Wrong result for 'c1'", 'b', c1)
+  }
 
-    @Test(timeout = TIMEOUT)
-    fun testB() {
-        Assert.assertEquals("Wrong result for 'c2'", 'z', c2)
-    }
+  @Test(timeout = TIMEOUT)
+  fun testB() {
+    Assert.assertEquals("Wrong result for 'c2'", 'z', c2)
+  }
 
-    @Test(timeout = TIMEOUT)
-    fun testC() {
-        Assert.assertEquals("Wrong result for 'c3'", 'C', c3)
-    }
+  @Test(timeout = TIMEOUT)
+  fun testC() {
+    Assert.assertEquals("Wrong result for 'c3'", 'C', c3)
+  }
 }

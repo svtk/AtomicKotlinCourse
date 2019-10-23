@@ -3,9 +3,9 @@ package extensionproperties
 import atomictest.eq
 
 fun <T> List<T>.first(): T {
-  if (isEmpty())
-    throw
-      NoSuchElementException("Empty List.")
+  if (isEmpty()) {
+    throw NoSuchElementException("Empty List")
+  }
   return this[0]
 }
 

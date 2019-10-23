@@ -3,10 +3,10 @@ files:
 - name: src/GameMatrix.kt
   visible: true
   placeholders:
-  - offset: 1058
+  - offset: 1054
     length: 63
     placeholder_text: TODO()
-  - offset: 1177
+  - offset: 1173
     length: 106
     placeholder_text: TODO()
 - name: src/GameElements.kt

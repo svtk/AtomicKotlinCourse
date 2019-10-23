@@ -61,8 +61,8 @@ class TestBooleansExercise2 {
       false || false == false
     """.trimIndent().lines()
     expectedLines.forEach {
-        Assert.assertTrue("""Not found the line "$it" in the table""",
-          it in table)
+      Assert.assertTrue("""Not found the line "$it" in the table""",
+        it in table)
     }
   }
 }

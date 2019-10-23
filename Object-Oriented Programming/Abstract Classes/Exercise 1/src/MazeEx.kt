@@ -9,10 +9,10 @@ fun Maze.isPassable(position: Position): Boolean {
 }
 
 fun Position.applyMove(move: Move): Position =
-    when (move) {
-      Move.WAIT -> Position(x, y)
-      Move.UP -> Position(x, y - 1)
-      Move.DOWN -> Position(x, y + 1)
-      Move.RIGHT -> Position(x + 1, y)
-      Move.LEFT -> Position(x - 1, y)
-    }
+  when (move) {
+    Move.WAIT -> Position(x, y)
+    Move.UP -> Position(x, y - 1)
+    Move.DOWN -> Position(x, y + 1)
+    Move.RIGHT -> Position(x + 1, y)
+    Move.LEFT -> Position(x - 1, y)
+  }

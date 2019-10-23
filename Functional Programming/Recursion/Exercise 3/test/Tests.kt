@@ -11,17 +11,17 @@ class TestRecursionExercise3 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     Assert.assertEquals("Wrong result for sample",
-        "[0, 1, 1, 2, 3, 5, 8, 13, 21]",
-        (0..8).map { fibonacciIterative(it) }.toString())
+      "[0, 1, 1, 2, 3, 5, 8, 13, 21]",
+      (0..8).map { fibonacciIterative(it) }.toString())
     Assert.assertEquals("Wrong result for sample",
-        17711, fibonacciIterative(22))
+      17711, fibonacciIterative(22))
     Assert.assertEquals("Wrong result for sample",
-        12586269025, fibonacciIterative(50))
+      12586269025, fibonacciIterative(50))
   }
 
   private fun checkNumber(n: Int, fib: Long) {
     Assert.assertEquals("Wrong Fibonacci value for $n",
-        fib, fibonacciIterative(n))
+      fib, fibonacciIterative(n))
   }
 
   @Test(timeout = TIMEOUT)

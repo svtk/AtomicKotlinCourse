@@ -15,8 +15,8 @@ class TestConstrainingVisibilityExercise2 {
     val otherMethods = robotClass.methods.filter { it.name !in publicMethods }.map { it.name }
 
     val (getters, methods) = otherMethods
-        .filterNot { it.startsWith("set") }
-        .partition { it.startsWith("get") }
+      .filterNot { it.startsWith("set") }
+      .partition { it.startsWith("get") }
     val properties = getters.map { it.substringAfter("get").decapitalize() }
     val message = buildString {
       properties.forEach {

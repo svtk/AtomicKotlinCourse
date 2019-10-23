@@ -13,7 +13,7 @@ class TestMapsExercise2 {
     val cage = Cage(2)
     cage.put(Hamster("Alice"))
     Assert.assertEquals("'get' should return a hamster with a given name",
-        "Hamster('Alice')", cage.get("Alice").toString())
+      "Hamster('Alice')", cage.get("Alice").toString())
   }
 
   @Test(timeout = TIMEOUT)
@@ -24,8 +24,8 @@ class TestMapsExercise2 {
       cage.get("Bob")
     } catch (e: NoSuchElementException) {
       Assert.assertEquals("Expected 'NoSuchElementException' when the cage doesn't contain a hamster with a given name:",
-          e.javaClass.simpleName + (e.message?.let { ": $it" } ?: ""),
-          "NoSuchElementException: No hamster called Bob")
+        e.javaClass.simpleName + (e.message?.let { ": $it" } ?: ""),
+        "NoSuchElementException: No hamster called Bob")
     }
   }
 
@@ -38,8 +38,8 @@ class TestMapsExercise2 {
       cage.get("Alice")
     } catch (e: NoSuchElementException) {
       Assert.assertEquals("'remove' should remove the hamster from the cage",
-          e.javaClass.simpleName + (e.message?.let { ": $it" } ?: ""),
-          "NoSuchElementException: No hamster called Alice")
+        e.javaClass.simpleName + (e.message?.let { ": $it" } ?: ""),
+        "NoSuchElementException: No hamster called Alice")
     }
   }
 }

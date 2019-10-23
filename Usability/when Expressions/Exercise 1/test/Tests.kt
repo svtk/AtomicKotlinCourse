@@ -9,21 +9,21 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestWhenExpressionsExercise1 {
   private fun expected(cloudiness: Int): String =
-      when (cloudiness) {
-        in 81..100 -> "Sunny"
-        in 61..80 -> "Mostly Sunny"
-        in 41..60 -> "Partly Sunny"
-        in 21..40 -> "Mostly Cloudy"
-        in 0..20 -> "Cloudy"
-        else -> throw IllegalArgumentException(
-            "Cloudiness value should be between 0 and 100")
-      }
+    when (cloudiness) {
+      in 81..100 -> "Sunny"
+      in 61..80 -> "Mostly Sunny"
+      in 41..60 -> "Partly Sunny"
+      in 21..40 -> "Mostly Cloudy"
+      in 0..20 -> "Cloudy"
+      else -> throw IllegalArgumentException(
+        "Cloudiness value should be between 0 and 100")
+    }
 
   @Test(timeout = TIMEOUT)
   fun test1CorrectValues() {
     for (cloudiness in 0..100) {
       Assert.assertEquals("Wrong result for cloudiness=$cloudiness:",
-          expected(cloudiness), getCloudinessDescription(cloudiness))
+        expected(cloudiness), getCloudinessDescription(cloudiness))
     }
   }
 

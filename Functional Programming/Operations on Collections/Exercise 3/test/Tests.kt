@@ -10,8 +10,8 @@ import util.TIMEOUT
 class TestOperationsOnCollectionsExercise3 {
   private fun check(list: List<Int?>) {
     Assert.assertEquals("Wrong result for $list",
-        list.filterNotNull().sum(),
-        sum(list))
+      list.filterNotNull().sum(),
+      sum(list))
   }
 
   @Test(timeout = TIMEOUT)

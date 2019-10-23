@@ -25,7 +25,7 @@ fun main() {
   val prime = range.filter(Int::isPrime)
   prime.take(7) eq listOf(2, 3, 5, 7, 11, 13, 17)
   prime.takeLast(7) eq
-      listOf(953, 967, 971, 977, 983, 991, 997)
+    listOf(953, 967, 971, 977, 983, 991, 997)
 
   val perfect = range.filter(::isPerfect)
   perfect eq listOf(6, 28, 496)

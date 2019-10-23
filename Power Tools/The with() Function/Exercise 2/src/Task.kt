@@ -3,11 +3,11 @@ package theWithFunctionExercise2
 import atomictest.eq
 
 class Window(
-    val id: String,
-    var x: Int = 0,
-    var y: Int = 0,
-    var width: Int = 200,
-    var height: Int = 100
+  val id: String,
+  var x: Int = 0,
+  var y: Int = 0,
+  var width: Int = 200,
+  var height: Int = 100
 )
 
 fun <T, R> with2(receiver: T, block: (T) -> R): R {

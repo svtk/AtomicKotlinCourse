@@ -13,6 +13,7 @@ class TestPropertyAccessorsExercise1 {
     val emptyProperty = loadMemberProperty(Cage::class, "empty")
     return emptyProperty.getter.call(this)
   }
+
   @Test(timeout = TIMEOUT)
   fun testSample() {
     val cage = Cage(2)

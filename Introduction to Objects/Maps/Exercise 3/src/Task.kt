@@ -11,21 +11,21 @@ class Hamster(val name: String) {
 
 class Cage(private val maxCapacity: Int) {
   private val hamsters: MutableMap<String, Hamster> =
-      mutableMapOf()
+    mutableMapOf()
 
   fun put(hamster: Hamster): Boolean =
-      if (hamsters.size == maxCapacity)
-        false
-      else {
-        hamsters[hamster.name] = hamster
-        true
-      }
+    if (hamsters.size == maxCapacity)
+      false
+    else {
+      hamsters[hamster.name] = hamster
+      true
+    }
 
   fun get(name: String): Hamster =
-      hamsters.getValue(name)
+    hamsters.getValue(name)
 
   fun remove(name: String) =
-      hamsters.remove(name)
+    hamsters.remove(name)
 }
 
 fun main() {
@@ -36,5 +36,5 @@ fun main() {
   capture {
     cage.get("Alice")
   } eq "NoSuchElementException: " +
-      "Key Alice is missing in the map."
+    "Key Alice is missing in the map."
 }

@@ -35,7 +35,7 @@ class Game2(val maze: MutableMaze) {
   fun applyActions(
     actions: Collection<GameAction>
   ) {
-    for(action in actions) {
+    for (action in actions) {
       action.apply(maze)
     }
   }

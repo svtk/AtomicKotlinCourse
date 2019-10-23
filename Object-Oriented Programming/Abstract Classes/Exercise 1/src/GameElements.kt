@@ -7,7 +7,7 @@ interface GameElement {
 }
 
 abstract class StaticElement(
-    override val sharesCell: Boolean
+  override val sharesCell: Boolean
 ) : GameElement {
   override fun playTurn(maze: Maze) {
     // Default implementation: do nothing
@@ -27,7 +27,7 @@ abstract class MobileElement : GameElement {
     get() = true
 
   abstract fun makeMove(
-      move: Move, maze: Maze): Position?
+    move: Move, maze: Maze): Position?
 
   override fun toString() = symbol.toString()
 }

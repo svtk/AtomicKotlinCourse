@@ -4,6 +4,7 @@ package inheritanceAndExtensions
 interface GameElement {
   val sharesCell: Boolean
 }
+
 data class Position(val x: Int, val y: Int)
 
 interface Maze {

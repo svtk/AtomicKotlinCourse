@@ -6,14 +6,14 @@ files:
   - offset: 245
     length: 27
     placeholder_text: MutableList<Hamster>
-  - offset: 281
+  - offset: 279
     length: 14
     placeholder_text: mutableListOf<Hamster>()
-  - offset: 411
+  - offset: 401
     length: 32
     placeholder_text: hamsters += hamster
-  - offset: 499
-    length: 31
+  - offset: 485
+    length: 29
     placeholder_text: |-
       {
           for (hamster in hamsters) {
@@ -23,8 +23,8 @@ files:
           }
           throw NoSuchElementException("No hamster called $name")
         }
-  - offset: 559
-    length: 29
+  - offset: 543
+    length: 27
     placeholder_text: |-
       {
           var hamsterWithGivenName: Hamster? = null

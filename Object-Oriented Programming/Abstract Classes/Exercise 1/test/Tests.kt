@@ -10,9 +10,9 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestAbstractClassesExercise1 {
   private fun checkMove(
-      move: Move,
-      initial: String,
-      expected: String
+    move: Move,
+    initial: String,
+    expected: String
   ) {
     val maze = MazeImpl(initial.trimIndent())
     val robot = maze.all().filterIsInstance<Robot>().single()
@@ -22,37 +22,37 @@ class TestAbstractClassesExercise1 {
       maze.add(robot, position)
     }
     Assert.assertEquals(
-        "Wrong result for\n$initial",
-        expected.trimIndent(),
-        maze.toString()
+      "Wrong result for\n$initial",
+      expected.trimIndent(),
+      maze.toString()
     )
   }
 
   private fun checkImpossibleMove(
-      move: Move,
-      initial: String
+    move: Move,
+    initial: String
   ) {
     val maze = MazeImpl(initial.trimIndent())
     val robot = maze.all().filterIsInstance<Robot>().single()
     val position = robot.makeMove(move, maze)
 
     Assert.assertNull(
-        "The $move move should be impossible for \n$initial",
-        position
+      "The $move move should be impossible for \n$initial",
+      position
     )
   }
 
   @Test(timeout = TIMEOUT)
   fun testRight() {
     checkMove(
-        RIGHT,
-        initial = """
+      RIGHT,
+      initial = """
             #####
             #   #
             # R #
             #   #
             #####""",
-        expected = """
+      expected = """
             #####
             #   #
             #  R#
@@ -63,14 +63,14 @@ class TestAbstractClassesExercise1 {
   @Test(timeout = TIMEOUT)
   fun testLeft() {
     checkMove(
-        LEFT,
-        initial = """
+      LEFT,
+      initial = """
             #####
             #   #
             # R #
             #   #
             #####""",
-        expected = """
+      expected = """
             #####
             #   #
             #R  #
@@ -81,14 +81,14 @@ class TestAbstractClassesExercise1 {
   @Test(timeout = TIMEOUT)
   fun testUp() {
     checkMove(
-        UP,
-        initial = """
+      UP,
+      initial = """
             #####
             #   #
             # R #
             #   #
             #####""",
-        expected = """
+      expected = """
             #####
             # R #
             #   #
@@ -99,14 +99,14 @@ class TestAbstractClassesExercise1 {
   @Test(timeout = TIMEOUT)
   fun testDown() {
     checkMove(
-        DOWN,
-        initial = """
+      DOWN,
+      initial = """
             #####
             #   #
             # R #
             #   #
             #####""",
-        expected = """
+      expected = """
             #####
             #   #
             #   #
@@ -118,8 +118,8 @@ class TestAbstractClassesExercise1 {
   fun testImpossibleMoves() {
     listOf(RIGHT, LEFT, UP, DOWN).forEach {
       checkImpossibleMove(
-          it,
-          initial = """
+        it,
+        initial = """
             ###
             #R#
             ###""")

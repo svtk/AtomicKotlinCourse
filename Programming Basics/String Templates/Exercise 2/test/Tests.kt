@@ -11,7 +11,7 @@ class TestStringTemplatesExercise2 {
   private fun checkRecord(index: Int, status: String, message: String) {
     val record = "$index. [$status] $message\n"
     Assert.assertEquals("""record($index, "$status", "$message") should return $record""",
-        record, record(index, status, message))
+      record, record(index, status, message))
   }
 
   @Test(timeout = TIMEOUT)

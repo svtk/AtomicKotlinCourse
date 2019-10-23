@@ -8,47 +8,47 @@ import util.TIMEOUT
 
 abstract class TestSchool {
   private val instructors = ('A'..'D')
-      .map { it to Instructor("Instructor-$it") }
-      .toMap()
+    .map { it to Instructor("Instructor-$it") }
+    .toMap()
 
   protected fun inst(c: Char) = instructors.getValue(c)
 
   private val students = (1..7)
-      .map { it to Student("Student-$it") }
-      .toMap()
+    .map { it to Student("Student-$it") }
+    .toMap()
 
   protected fun st(i: Int) = students.getValue(i)
 
   protected fun lsn(instructor: Char, vararg students: Int) =
-      Lesson(inst(instructor), students.map { st(it) }.toSet(), mapOf())
+    Lesson(inst(instructor), students.map { st(it) }.toSet(), mapOf())
 
   protected fun schl(lessons: List<Lesson>) =
-      School(instructors.values.toSet(), students.values.toSet(),
-          lessons.asSequence())
+    School(instructors.values.toSet(), students.values.toSet(),
+      lessons.asSequence())
 }
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSequencesExercise2 : TestSchool() {
   private fun checkInstructors(
-      student: Student,
-      schoolLessons: List<Lesson>,
-      result: List<Char>
+    student: Student,
+    schoolLessons: List<Lesson>,
+    result: List<Char>
   ) {
     Assert.assertEquals("Wrong result for ${student.name}, " +
-        "$schoolLessons:",
-        result.map { inst(it) }.toSet(),
-        schl(schoolLessons).getStudentInstructors(student))
+      "$schoolLessons:",
+      result.map { inst(it) }.toSet(),
+      schl(schoolLessons).getStudentInstructors(student))
   }
 
   private fun checkStudents(
-      instructor: Instructor,
-      schoolLessons: List<Lesson>,
-      result: List<Int>
+    instructor: Instructor,
+    schoolLessons: List<Lesson>,
+    result: List<Int>
   ) {
     Assert.assertEquals("Wrong result for ${instructor.name}, " +
-        "$schoolLessons:",
-        result.map { st(it) }.toSet(),
-        schl(schoolLessons).getStudentsOf(instructor))
+      "$schoolLessons:",
+      result.map { st(it) }.toSet(),
+      schl(schoolLessons).getStudentsOf(instructor))
   }
 
   @Test(timeout = TIMEOUT)
@@ -59,18 +59,18 @@ class TestSequencesExercise2 : TestSchool() {
   @Test(timeout = TIMEOUT)
   fun test2() {
     checkInstructors(st(1), listOf(
-        lsn('A', 1, 2, 3),
-        lsn('B', 1, 2, 3),
-        lsn('A', 1)
+      lsn('A', 1, 2, 3),
+      lsn('B', 1, 2, 3),
+      lsn('A', 1)
     ), listOf('A', 'B'))
   }
 
   @Test(timeout = TIMEOUT)
   fun test3() {
     checkInstructors(st(1), listOf(
-        lsn('A', 2, 3),
-        lsn('B', 1, 2, 3),
-        lsn('A', 4)
+      lsn('A', 2, 3),
+      lsn('B', 1, 2, 3),
+      lsn('A', 4)
     ), listOf('B'))
   }
 
@@ -82,20 +82,20 @@ class TestSequencesExercise2 : TestSchool() {
   @Test(timeout = TIMEOUT)
   fun test5() {
     checkStudents(inst('A'), listOf(
-        lsn('A', 1, 2),
-        lsn('B', 1, 2, 3),
-        lsn('A', 4)
+      lsn('A', 1, 2),
+      lsn('B', 1, 2, 3),
+      lsn('A', 4)
     ), listOf(1, 2, 4))
   }
 
   @Test(timeout = TIMEOUT)
   fun test6() {
     checkStudents(inst('C'), listOf(
-        lsn('A', 2, 3),
-        lsn('C', 1, 2),
-        lsn('C', 1, 2),
-        lsn('B', 1, 2, 3),
-        lsn('C', 3)
+      lsn('A', 2, 3),
+      lsn('C', 1, 2),
+      lsn('C', 1, 2),
+      lsn('B', 1, 2, 3),
+      lsn('C', 3)
     ), listOf(1, 2, 3))
   }
 }

@@ -12,7 +12,7 @@ class TestFoldingListsExercise4 {
 
   private fun checkSample(isEvenPositiveAndLessThan10: Condition, result: Boolean, value: Int) {
     Assert.assertEquals("Wrong result for 'isEvenPositiveAndLessThan10.check(8)'",
-        result, isEvenPositiveAndLessThan10.check(value))
+      result, isEvenPositiveAndLessThan10.check(value))
   }
 
   @Test(timeout = TIMEOUT)

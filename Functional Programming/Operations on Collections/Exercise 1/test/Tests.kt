@@ -10,18 +10,18 @@ import util.TIMEOUT
 class TestOperationsOnCollectionsExercise1 {
   private fun checkOldest(list: List<Person>, requiredNumber: Int) {
     Assert.assertEquals("Wrong result for requiredNumber = $requiredNumber in $list:",
-        list.sortedByDescending { it.age }
-            .take(requiredNumber).map { it.name }.sorted(),
-        findOldest(list, requiredNumber)
+      list.sortedByDescending { it.age }
+        .take(requiredNumber).map { it.name }.sorted(),
+      findOldest(list, requiredNumber)
     )
   }
 
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val people = listOf(
-        Person("Bob", 30),
-        Person("Charlie", 20),
-        Person("Alice", 25))
+      Person("Bob", 30),
+      Person("Charlie", 20),
+      Person("Alice", 25))
     checkOldest(people, 1)
     checkOldest(people, 2)
   }

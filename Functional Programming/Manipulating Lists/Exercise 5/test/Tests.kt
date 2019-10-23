@@ -10,12 +10,12 @@ import kotlin.collections.flatMap as flatMapLibrary
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestManipulatingListsExercise5 {
   private fun <T, R> checkFlatMap(
-      list: List<T>,
-      transform: (T) -> List<R>
+    list: List<T>,
+    transform: (T) -> List<R>
   ) {
     Assert.assertEquals("Wrong 'flatMap' implementation",
-        list.flatMapLibrary(transform),
-        list.flatMap(transform))
+      list.flatMapLibrary(transform),
+      list.flatMap(transform))
   }
 
   @Test(timeout = TIMEOUT)

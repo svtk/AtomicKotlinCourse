@@ -9,12 +9,12 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestLambdaWithReceiverExercise2 {
   private fun check(
-      message: String,
-      action: MutableList<Int>.() -> Unit
+    message: String,
+    action: MutableList<Int>.() -> Unit
   ) {
     Assert.assertEquals(message,
-        mutableListOf<Int>().apply(action),
-        buildList(action))
+      mutableListOf<Int>().apply(action),
+      buildList(action))
 
   }
 

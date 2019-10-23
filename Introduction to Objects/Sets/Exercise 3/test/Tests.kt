@@ -9,10 +9,10 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSetsExercise3 {
   private fun checkPercentage(
-      percentage: Double,
-      groceryCart: Set<String>,
-      percentFunction: (Set<String>) -> Double,
-      functionName: String
+    percentage: Double,
+    groceryCart: Set<String>,
+    percentFunction: (Set<String>) -> Double,
+    functionName: String
   ) {
     Assert.assertEquals("$functionName is wrong for $groceryCart", percentage, percentFunction(groceryCart), 0.000000001)
   }
@@ -36,7 +36,7 @@ class TestSetsExercise3 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val groceryCart = setOf("apple", "pretzels", "bread", "orange", "beef",
-        "beans", "asparagus", "sweet potatoes", "spinach", "carrots")
+      "beans", "asparagus", "sweet potatoes", "spinach", "carrots")
 
     checkMeatPercentage(10.0, groceryCart)
     checkFruitPercentage(20.0, groceryCart)
@@ -57,7 +57,7 @@ class TestSetsExercise3 {
   @Test(timeout = TIMEOUT)
   fun test3Another() {
     val groceryCart = setOf("apple", "orange", "kiwi",
-        "sweet potatoes", "asparagus", "spinach", "buckwheat", "condensed milk")
+      "sweet potatoes", "asparagus", "spinach", "buckwheat", "condensed milk")
     checkMeatPercentage(0.0, groceryCart)
     checkFruitPercentage(37.5, groceryCart)
     checkVeggiesPercentage(37.5, groceryCart)

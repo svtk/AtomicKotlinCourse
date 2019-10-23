@@ -3,8 +3,8 @@ package whenExpressionsExercise4
 import atomictest.eq
 
 fun getBmiStatus(
-    kg: Double,
-    heightM: Double
+  kg: Double,
+  heightM: Double
 ): String {
   val bmi = kg / (heightM * heightM)
   return when {

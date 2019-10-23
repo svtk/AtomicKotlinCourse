@@ -9,10 +9,10 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestListsExercise3 {
   private fun testAnagrams(word: String, anagram: String) =
-      Assert.assertTrue("'$word' and '$anagram' should be anagrams", checkAnagrams(word, anagram))
+    Assert.assertTrue("'$word' and '$anagram' should be anagrams", checkAnagrams(word, anagram))
 
   private fun testNotAnagrams(word: String, other: String) =
-      Assert.assertFalse("'$word' and '$other' should not be anagrams", checkAnagrams(word, other))
+    Assert.assertFalse("'$word' and '$other' should not be anagrams", checkAnagrams(word, other))
 
   @Test(timeout = TIMEOUT)
   fun testAnagrams1() = testAnagrams("thing", "night")

@@ -4,11 +4,11 @@ import atomictest.eq
 
 fun factorial(n: Long): Long {
   tailrec fun factorial(
-      n: Long,
-      accumulator: Long
+    n: Long,
+    accumulator: Long
   ): Long =
-      if (n == 1L) accumulator
-      else factorial(n - 1, accumulator * n)
+    if (n == 1L) accumulator
+    else factorial(n - 1, accumulator * n)
 
   return factorial(n, 1)
 }

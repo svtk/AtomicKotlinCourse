@@ -10,12 +10,12 @@ import util.TIMEOUT
 class TestNumberTypesExercise3 {
   private fun checkFahrenheitToCelsius(C: Double, F: Int) {
     Assert.assertEquals("$F F should be $C C",
-        C, convertFahrenheitToCelsius(F), 0.0001)
+      C, convertFahrenheitToCelsius(F), 0.0001)
   }
 
   private fun checkCelsiusToFahrenheit(F: Double, C: Int) {
     Assert.assertEquals("$C C should be $F F",
-        F, convertCelsiusToFahrenheit(C), 0.0001)
+      F, convertCelsiusToFahrenheit(C), 0.0001)
   }
 
   @Test(timeout = TIMEOUT)

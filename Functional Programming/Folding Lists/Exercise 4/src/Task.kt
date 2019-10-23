@@ -5,7 +5,7 @@ import atomictest.eq
 class Condition(val check: (Int) -> Boolean)
 
 fun Condition.combine(other: Condition): Condition =
-    Condition { check(it) && other.check(it) }
+  Condition { check(it) && other.check(it) }
 
 fun List<Condition>.combineAll(): Condition = reduce(Condition::combine)
 

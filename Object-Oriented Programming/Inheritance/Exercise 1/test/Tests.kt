@@ -9,27 +9,27 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestInheritanceExercise1 {
   private fun checkMaze(
-      bombPosition: Position,
-      mazeRepresentation: String,
-      afterDestroy: String,
-      prefixMessage: String? = null
+    bombPosition: Position,
+    mazeRepresentation: String,
+    afterDestroy: String,
+    prefixMessage: String? = null
   ) {
     val maze = MazeImpl(mazeRepresentation)
     val robot = Robot()
     maze.add(robot, bombPosition)
     val bomb = maze.allAt(bombPosition)
-        .filterIsInstance<Bomb>().single()
+      .filterIsInstance<Bomb>().single()
     bomb.playTurn(maze)
 
     Assert.assertEquals("${prefixMessage ?: ""} " +
-        "Wrong result after exploding a bomb for the following maze:\n$mazeRepresentation",
-        afterDestroy,
-        maze.toString())
+      "Wrong result after exploding a bomb for the following maze:\n$mazeRepresentation",
+      afterDestroy,
+      maze.toString())
   }
 
   @Test(timeout = TIMEOUT)
   fun test1Sample() = checkMaze(Position(5, 4),
-      """
+    """
       ###########
       #.........#
       #.........#
@@ -40,7 +40,7 @@ class TestInheritanceExercise1 {
       #.........#
       ###########
       """.trimIndent(),
-      """
+    """
       ###########
       #.........#
       #.... ....#
@@ -55,7 +55,7 @@ class TestInheritanceExercise1 {
 
   @Test(timeout = TIMEOUT)
   fun test2() = checkMaze(Position(5, 4),
-      """
+    """
       ###########
       #.........#
       #.........#
@@ -66,7 +66,7 @@ class TestInheritanceExercise1 {
       #.........#
       ###########
       """.trimIndent(),
-      """
+    """
       ###########
       #.........#
       #.........#
@@ -81,7 +81,7 @@ class TestInheritanceExercise1 {
 
   @Test(timeout = TIMEOUT)
   fun test3() = checkMaze(Position(5, 4),
-      """
+    """
       ###########
       #.........#
       #.........#
@@ -92,7 +92,7 @@ class TestInheritanceExercise1 {
       #.........#
       ###########
       """.trimIndent(),
-      """
+    """
       ###########
       #.........#
       #.........#
@@ -107,7 +107,7 @@ class TestInheritanceExercise1 {
 
   @Test(timeout = TIMEOUT)
   fun test4() = checkMaze(Position(5, 4),
-      """
+    """
       ###########
       #.........#
       #.........#
@@ -118,7 +118,7 @@ class TestInheritanceExercise1 {
       #.........#
       ###########
       """.trimIndent(),
-      """
+    """
       ###########
       #.........#
       #.........#
@@ -133,7 +133,7 @@ class TestInheritanceExercise1 {
 
   @Test(timeout = TIMEOUT)
   fun test5() = checkMaze(Position(5, 4),
-      """
+    """
       ###########
       #.........#
       #.........#
@@ -144,7 +144,7 @@ class TestInheritanceExercise1 {
       #.........#
       ###########
       """.trimIndent(),
-      """
+    """
       ###########
       #.........#
       #...   ...#
@@ -159,20 +159,20 @@ class TestInheritanceExercise1 {
 
   @Test(timeout = TIMEOUT)
   fun test6() = checkMaze(Position(2, 2),
-      """
+    """
       #####
       #####
       # 3##
       #####
       #####
       """.trimIndent(),
-      """
+    """
       #####
       #   #
       #   #
       #   #
       #####
       """.trimIndent(),
-      "Walls should also be exploded"
+    "Walls should also be exploded"
   )
 }

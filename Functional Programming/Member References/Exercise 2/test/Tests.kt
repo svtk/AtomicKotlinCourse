@@ -16,11 +16,11 @@ class TestMemberReferencesExercise2 {
 
     val prime = range.filter(/*<taskWindow>*/Int::isPrime/*</taskWindow>*/)
     Assert.assertEquals("Wrong result for `prime` collection:",
-        listOf(953, 967, 971, 977, 983, 991, 997), prime.takeLast(7))
+      listOf(953, 967, 971, 977, 983, 991, 997), prime.takeLast(7))
 
     val perfect = range.filter(/*<taskWindow>*/::isPerfect/*</taskWindow>*/)
     Assert.assertEquals("Wrong result for `perfect` collection:",
-        listOf(6, 28, 496), perfect)
+      listOf(6, 28, 496), perfect)
 
   }
 

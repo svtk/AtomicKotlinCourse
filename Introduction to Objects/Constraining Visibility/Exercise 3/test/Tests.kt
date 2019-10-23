@@ -40,7 +40,7 @@ class TestConstrainingVisibilityExercise3 {
   }
 
   private fun getErrorMessageText(steps: Int?) =
-      "steps argument must be positive, is $steps"
+    "steps argument must be positive, is $steps"
 
   private fun testWrongArgumentOutput(movements: RobotHandler.() -> Unit) {
     val robotHandler = RobotHandler()
@@ -53,11 +53,11 @@ class TestConstrainingVisibilityExercise3 {
     val message = "Incorrect output after:\n" + robotHandler.loggedMovements
     if (output.isEmpty()) {
       throw AssertionError(message + "\nThe message " +
-          "\"${getErrorMessageText(steps)}\" should be printed to the console")
+        "\"${getErrorMessageText(steps)}\" should be printed to the console")
     }
     checkSystemOutput(message,
-        getErrorMessageText(steps),
-        output)
+      getErrorMessageText(steps),
+      output)
   }
 
 

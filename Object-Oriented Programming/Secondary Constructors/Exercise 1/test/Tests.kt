@@ -8,7 +8,7 @@ class TestSecondaryConstructorsExercise1 {
   @Test(timeout = TIMEOUT)
   fun test() {
     Assert.assertEquals("GardenItem class should define only one constructor",
-        1,
-        GardenItem::class.constructors.size)
+      1,
+      GardenItem::class.constructors.size)
   }
 }

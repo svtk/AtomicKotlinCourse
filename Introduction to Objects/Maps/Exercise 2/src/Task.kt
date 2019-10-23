@@ -11,15 +11,15 @@ class Hamster(val name: String) {
 
 class Cage(private val maxCapacity: Int) {
   private val hamsters =
-      mutableListOf<Hamster>()
+    mutableListOf<Hamster>()
 
   fun put(hamster: Hamster): Boolean =
-      if (hamsters.size == maxCapacity)
-        false
-      else {
-        hamsters += hamster
-        true
-      }
+    if (hamsters.size == maxCapacity)
+      false
+    else {
+      hamsters += hamster
+      true
+    }
 
   fun get(name: String): Hamster {
     for (hamster in hamsters) {
@@ -49,5 +49,5 @@ fun main() {
   capture {
     cage.get("Alice")
   } eq "NoSuchElementException: " +
-      "No hamster called Alice"
+    "No hamster called Alice"
 }

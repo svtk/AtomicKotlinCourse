@@ -11,7 +11,7 @@ class TestIfExpressionsExercise2 {
   private fun checkFunction(number: Int) {
     val abs = if (number > 0) number else -number
     Assert.assertEquals("abs($number) should return $abs",
-        abs, abs(number))
+      abs, abs(number))
   }
 
   @Test(timeout = TIMEOUT)

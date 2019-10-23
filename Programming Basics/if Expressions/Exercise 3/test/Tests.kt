@@ -11,7 +11,7 @@ class TestIfExpressionsExercise3 {
   private fun checkFunction(first: Int, second: Int) {
     val max = if (first > second) first else second
     Assert.assertEquals("findMax($first, $second) should return $max",
-        max, findMax(first, second))
+      max, findMax(first, second))
   }
 
   @Test(timeout = TIMEOUT)

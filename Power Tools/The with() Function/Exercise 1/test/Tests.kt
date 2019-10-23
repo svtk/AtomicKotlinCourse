@@ -10,12 +10,12 @@ import kotlin.text.buildString as buildStringLibrary
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestTheWithFunctionExercise1 {
   private fun check(
-      message: String,
-      action: StringBuilder.() -> Unit
+    message: String,
+    action: StringBuilder.() -> Unit
   ) {
     Assert.assertEquals(message,
-        buildStringLibrary(action),
-        buildString(action))
+      buildStringLibrary(action),
+      buildString(action))
 
   }
 

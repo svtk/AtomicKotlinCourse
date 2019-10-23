@@ -1,24 +1,24 @@
 package constrainingVisibilityExercise5
 
 fun printSum(x: Int) {
-    if (x <= 0) {
-        println("Incorrect input: $x should be positive")
-        return
-    }
-    println((0..x).sum())
+  if (x <= 0) {
+    println("Incorrect input: $x should be positive")
+    return
+  }
+  println((0..x).sum())
 }
 
 fun printAverage(x: Int) {
-    if (x <= 0) {
-        println("Incorrect input: $x should be positive")
-        return
-    }
-    println((0..x).average())
+  if (x <= 0) {
+    println("Incorrect input: $x should be positive")
+    return
+  }
+  println((0..x).average())
 }
 
 fun main() {
-    printSum(-10)
-    printAverage(-10)
+  printSum(-10)
+  printAverage(-10)
 }
 /* Output:
 Incorrect input: -10 should be positive

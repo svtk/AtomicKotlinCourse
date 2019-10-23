@@ -44,7 +44,7 @@ class TestPackagesExercise1 {
   }
 
   @Test(timeout = TIMEOUT)
-  fun test5CccPackage(){
+  fun test5CccPackage() {
     runAndCheckSystemOutput("Wrong output for calling 'main' in 'ccc'",
       "K 10", ::cccmain)
   }

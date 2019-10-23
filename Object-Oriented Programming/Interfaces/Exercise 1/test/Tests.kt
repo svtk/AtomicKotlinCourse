@@ -22,16 +22,16 @@ class TestInterfacesExercise1 {
       matrix.add(Wall(), Position(i, 4))
     }
     Assert.assertEquals("Wrong result for the sample:",
-        """
+      """
                 ####
                 #  #
                 #R #
                 # .#
                 ####
             """.trimIndent(),
-        matrix.toString())
+      matrix.toString())
     Assert.assertEquals("Wrong result for the sample. At Position(1, 2) should be Robot",
-        'R', matrix.allAt(Position(1, 2)).singleOrNull()?.symbol)
+      'R', matrix.allAt(Position(1, 2)).singleOrNull()?.symbol)
   }
 
   private fun createGameElement(char: Char): GameElement? = when (char) {
@@ -58,8 +58,8 @@ class TestInterfacesExercise1 {
       }
     }
     Assert.assertEquals("Wrong result for the maze:",
-        maze,
-        matrix.toString())
+      maze,
+      matrix.toString())
   }
 
   @Test(timeout = TIMEOUT)

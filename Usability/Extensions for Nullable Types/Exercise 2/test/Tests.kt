@@ -11,16 +11,16 @@ class TestExtensionsForNullableTypesExercise2 {
 
   private fun checkValues(receiver: Boolean?, argument: Boolean?) {
     Assert.assertEquals("Wrong result for $receiver.and($argument)",
-        receiver.and(argument), expectedAnd(receiver, argument))
+      receiver.and(argument), expectedAnd(receiver, argument))
     Assert.assertEquals("Wrong result for $receiver.or($argument)",
-        receiver.or(argument), expectedOr(receiver, argument))
+      receiver.or(argument), expectedOr(receiver, argument))
   }
 
   private fun expectedAnd(receiver: Boolean?, argument: Boolean?): Boolean? =
-      if (receiver != null && argument != null) receiver && argument else null
+    if (receiver != null && argument != null) receiver && argument else null
 
   private fun expectedOr(receiver: Boolean?, argument: Boolean?): Boolean? =
-      if (receiver != null && argument != null) receiver || argument else null
+    if (receiver != null && argument != null) receiver || argument else null
 
   @Test(timeout = TIMEOUT)
   fun testAll() {

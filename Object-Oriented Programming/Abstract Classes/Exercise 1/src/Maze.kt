@@ -13,7 +13,7 @@ interface Maze {
 }
 
 class MazeImpl(
-    representation: String
+  representation: String
 ) : Maze {
   override val width: Int
   override val height: Int
@@ -67,9 +67,9 @@ class MazeImpl(
   }
 
   override fun toString() =
-      cells.joinToString("\n") { row ->
-        row.joinToString("") { elements ->
-          "${elements.lastOrNull()?.symbol ?: ' '}"
-        }.trimEnd()
-      }
+    cells.joinToString("\n") { row ->
+      row.joinToString("") { elements ->
+        "${elements.lastOrNull()?.symbol ?: ' '}"
+      }.trimEnd()
+    }
 }

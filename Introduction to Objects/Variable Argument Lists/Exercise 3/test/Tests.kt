@@ -11,7 +11,7 @@ class TestVariableArgumentListsExercise3 {
 
   private fun checkListOfChunks(size: Int, vararg elements: String) {
     Assert.assertEquals("Incorrect result for size = $size, elements = ${elements.toList()}.",
-        elements.toList().chunked(size), listOfChunks(size, *elements))
+      elements.toList().chunked(size), listOfChunks(size, *elements))
   }
 
   @Test(timeout = TIMEOUT)

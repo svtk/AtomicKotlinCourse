@@ -6,5 +6,5 @@ fun main() {
   list.joinToString(
     separator = " ",
     transform = { "[$it]" }
-  ) eq  "[a] [b] [c] [d]"
+  ) eq "[a] [b] [c] [d]"
 }

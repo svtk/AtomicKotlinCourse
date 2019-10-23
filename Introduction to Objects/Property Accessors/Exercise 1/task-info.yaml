@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 368
+  - offset: 366
     length: 49
     placeholder_text: /* add 'empty' property here */
 - name: test/Tests.kt

@@ -44,7 +44,7 @@ class TestConstructorsExercise3 {
       "Initial location of the robot should be ($x, $y)"
     } else {
       "Starting location: ($x, $y), field size: $fieldSize.\n" +
-          "Wrong location after:\n" + robotHandler.loggedMovements
+        "Wrong location after:\n" + robotHandler.loggedMovements
     }
     Assert.assertEquals(message, string, actualString)
   }

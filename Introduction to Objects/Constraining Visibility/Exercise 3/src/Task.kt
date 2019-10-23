@@ -1,9 +1,9 @@
 package constrainingVisibilityExercise3
 
 class Robot(
-    private val fieldSize: Int,
-    private var x: Int,
-    private var y: Int
+  private val fieldSize: Int,
+  private var x: Int,
+  private var y: Int
 ) {
   private fun crossBoundary(coordinate: Int): Int {
     val inBounds = coordinate % fieldSize
@@ -52,8 +52,8 @@ class Robot(
 }
 
 fun main() {
-    val robot = Robot(10, 1, 1)
-    robot.right(-1)
+  val robot = Robot(10, 1, 1)
+  robot.right(-1)
 }
 /* Output:
 steps argument must be positive, is -1

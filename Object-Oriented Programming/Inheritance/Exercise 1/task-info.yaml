@@ -3,8 +3,8 @@ files:
 - name: src/Bomb.kt
   visible: true
   placeholders:
-  - offset: 251
-    length: 252
+  - offset: 249
+    length: 250
     placeholder_text: TODO()
 - name: src/GameElements.kt
   visible: true

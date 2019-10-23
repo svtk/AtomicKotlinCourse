@@ -3,17 +3,17 @@ package overloadingExercise1
 import atomictest.eq
 
 fun List<Int>.joinToString(
-    separator: String = ", ",
-    prefix: String = "",
-    postfix: String = ""
+  separator: String = ", ",
+  prefix: String = "",
+  postfix: String = ""
 ): String {
   return joinTo(StringBuilder(), separator, prefix, postfix).toString()
 }
 
 fun List<Int>.myJoinToString(
-    separator: String,
-    prefix: String,
-    postfix: String
+  separator: String,
+  prefix: String,
+  postfix: String
 ): String {
   return joinToString(separator, prefix, postfix)
 }

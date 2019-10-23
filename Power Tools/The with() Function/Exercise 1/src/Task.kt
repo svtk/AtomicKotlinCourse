@@ -3,10 +3,10 @@ package theWithFunctionExercise1
 import atomictest.eq
 
 fun buildString(action: StringBuilder.() -> Unit): String =
-    with(StringBuilder()) {
-      action()
-      toString()
-    }
+  with(StringBuilder()) {
+    action()
+    toString()
+  }
 
 fun main() {
   buildString {

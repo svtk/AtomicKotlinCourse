@@ -13,8 +13,8 @@ class TestDataClassesExercise2 {
     val book = Book("Book", listOf(Author("Author")))
     val list = listOf(book)
     Assert.assertEquals("Wrong result for $list:",
-        mapOf(Author("Author") to listOf(book)),
-        createAuthorToBooksMap(list))
+      mapOf(Author("Author") to listOf(book)),
+      createAuthorToBooksMap(list))
   }
 
   @Test(timeout = TIMEOUT)
@@ -22,18 +22,18 @@ class TestDataClassesExercise2 {
     val book = Book("Book", listOf(Author("first author"), Author("second author")))
     val list = listOf(book)
     Assert.assertEquals("Wrong result for $list:",
-        mapOf(Author("first author") to listOf(book),
-            Author("second author") to listOf(book)),
-        createAuthorToBooksMap(list))
+      mapOf(Author("first author") to listOf(book),
+        Author("second author") to listOf(book)),
+      createAuthorToBooksMap(list))
   }
 
   @Test(timeout = TIMEOUT)
   fun test2SimpleOneAuthorTwoBook() {
     val list = listOf(Book("first Book", listOf(Author("Author"))),
-        Book("second Book", listOf(Author("Author"))))
+      Book("second Book", listOf(Author("Author"))))
     Assert.assertEquals("Wrong result for $list:",
-        mapOf(Author("Author") to list),
-        createAuthorToBooksMap(list))
+      mapOf(Author("Author") to list),
+      createAuthorToBooksMap(list))
   }
 
   @Test(timeout = TIMEOUT)
@@ -57,24 +57,24 @@ class TestDataClassesExercise2 {
     val kotlinInAction = Book("Kotlin in Action", listOf(dmitry, svetlana))
     val atomicKotlin = Book("Atomic Kotlin", listOf(bruce, svetlana))
     val books = listOf(
-        first, second, third, fourth,
-        thinkingInCPlusPlus,
-        thinkingInCPlusPlusVolume2,
-        thinkingInJava,
-        flex,
-        atomicScala,
-        onJava8,
-        kotlinInAction,
-        atomicKotlin
+      first, second, third, fourth,
+      thinkingInCPlusPlus,
+      thinkingInCPlusPlusVolume2,
+      thinkingInJava,
+      flex,
+      atomicScala,
+      onJava8,
+      kotlinInAction,
+      atomicKotlin
     )
     val expected = mapOf(
-        bruce to listOf(first, second, third, fourth,
-            thinkingInCPlusPlus, thinkingInCPlusPlusVolume2,
-            thinkingInJava, flex, atomicScala, onJava8, atomicKotlin),
-        chuck to listOf(thinkingInCPlusPlusVolume2),
-        dianne to listOf(atomicScala),
-        dmitry to listOf(kotlinInAction),
-        svetlana to listOf(kotlinInAction, atomicKotlin)
+      bruce to listOf(first, second, third, fourth,
+        thinkingInCPlusPlus, thinkingInCPlusPlusVolume2,
+        thinkingInJava, flex, atomicScala, onJava8, atomicKotlin),
+      chuck to listOf(thinkingInCPlusPlusVolume2),
+      dianne to listOf(atomicScala),
+      dmitry to listOf(kotlinInAction),
+      svetlana to listOf(kotlinInAction, atomicKotlin)
     )
     val actual = createAuthorToBooksMap(books)
     Assert.assertEquals("Wrong result for sample:", expected, actual)

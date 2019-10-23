@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 127
+  - offset: 125
     length: 50
     placeholder_text: TODO("groupBy(???).???")
 - name: test/Tests.kt

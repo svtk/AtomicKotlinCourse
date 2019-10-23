@@ -10,11 +10,11 @@ import kotlin.collections.filter as filterLibrary
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestManipulatingListsExercise7 {
   private fun <T> checkFilter(
-      list: List<T>,
-      predicate: (T) -> Boolean
+    list: List<T>,
+    predicate: (T) -> Boolean
   ) {
     Assert.assertEquals("Wrong 'filter' implementation",
-        list.filterLibrary(predicate), list.filter(predicate))
+      list.filterLibrary(predicate), list.filter(predicate))
   }
 
   @Test(timeout = TIMEOUT)

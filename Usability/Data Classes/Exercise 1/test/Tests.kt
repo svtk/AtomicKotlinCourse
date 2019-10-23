@@ -5,6 +5,6 @@ import util.TIMEOUT
 import util.untestable
 
 class TestDataClassesExercise1 {
-    @Test(timeout = TIMEOUT)
-    fun test() = untestable()
+  @Test(timeout = TIMEOUT)
+  fun test() = untestable()
 }

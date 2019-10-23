@@ -1,7 +1,7 @@
 package sequencesExercise2
 
 fun School.getStudentInstructors(
-    student: Student
+  student: Student
 ): Set<Instructor> {
   return lessons.filter {
     student in it.students
@@ -9,7 +9,7 @@ fun School.getStudentInstructors(
 }
 
 fun School.getStudentsOf(
-    instructor: Instructor
+  instructor: Instructor
 ): Set<Student> {
   return lessons.filter {
     instructor == it.instructor

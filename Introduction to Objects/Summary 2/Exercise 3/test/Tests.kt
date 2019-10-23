@@ -58,17 +58,17 @@ class TestSummaryIIExercise3 {
 
   @Test(timeout = TIMEOUT)
   fun test2() = testHolderClass(10) { holderClass, holderInstance, addFunction, fullProperty ->
-      repeat(5) {
-        addFunction.call(holderInstance, it)
-      }
-      Assert.assertEquals("The holder of size 2 is expected to be not full after adding five elements",
-        false, fullProperty.getter.call(holderInstance))
+    repeat(5) {
+      addFunction.call(holderInstance, it)
+    }
+    Assert.assertEquals("The holder of size 2 is expected to be not full after adding five elements",
+      false, fullProperty.getter.call(holderInstance))
 
-      repeat(5) {
-          addFunction.call(holderInstance, "$it")
-      }
+    repeat(5) {
+      addFunction.call(holderInstance, "$it")
+    }
 
-      Assert.assertEquals("The holder of size 10 is expected to be full after adding ten elements",
+    Assert.assertEquals("The holder of size 10 is expected to be full after adding ten elements",
       true, fullProperty.getter.call(holderInstance))
 
     val message = "The holder is expected to throw 'IllegalStateException' " +

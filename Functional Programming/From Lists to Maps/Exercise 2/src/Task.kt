@@ -15,9 +15,9 @@ data class Person(val name: String, val age: Int)
 
 fun main() {
   val people = listOf(Person("Alice", 21),
-      Person("Bob", 25), Person("Charlie", 25))
+    Person("Bob", 25), Person("Charlie", 25))
 
   people.groupBy(Person::age) eq
-      "{21=[Person(name=Alice, age=21)], " +
-      "25=[Person(name=Bob, age=25), Person(name=Charlie, age=25)]}"
+    "{21=[Person(name=Alice, age=21)], " +
+    "25=[Person(name=Bob, age=25), Person(name=Charlie, age=25)]}"
 }

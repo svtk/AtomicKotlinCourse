@@ -10,8 +10,8 @@ import util.TIMEOUT
 class TestRecursionExercise2 {
   private fun check(number: Long, expected: Long) {
     Assert.assertEquals("Wrong result for 'factorial($number)'",
-        expected,
-        factorial(number))
+      expected,
+      factorial(number))
   }
 
   @Test(timeout = TIMEOUT)

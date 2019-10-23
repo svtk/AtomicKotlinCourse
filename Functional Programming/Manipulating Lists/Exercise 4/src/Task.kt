@@ -3,7 +3,7 @@ package manipulatingListsExercise4
 import atomictest.eq
 
 class Person(
-    val name: String
+  val name: String
 ) {
   val friends: MutableList<Person> = mutableListOf()
 
@@ -12,7 +12,7 @@ class Person(
 
 fun getFriendSuggestions(person: Person): Set<Person> {
   return (person.friends.flatMap { it.friends }.toSet()
-      - person.friends - person)
+    - person.friends - person)
 }
 
 fun main() {

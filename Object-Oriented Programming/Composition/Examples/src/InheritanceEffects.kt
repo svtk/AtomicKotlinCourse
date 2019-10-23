@@ -13,7 +13,7 @@ interface Maze {
   fun remove(e: GameElement)
 }
 
-interface Game: Maze {
+interface Game : Maze {
   fun playMove(move: Move)
   fun playTurn()
   fun gameOver(): Boolean

@@ -11,10 +11,10 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestEnumerationsExercise2 {
   private val seasons: Map<Month, Season> = mapOf(
-      December to Summer, January to Summer, February to Summer,
-      March to Autumn, April to Autumn, May to Autumn,
-      June to Winter, July to Winter, August to Winter,
-      September to Spring, October to Spring, November to Spring
+    December to Summer, January to Summer, February to Summer,
+    March to Autumn, April to Autumn, May to Autumn,
+    June to Winter, July to Winter, August to Winter,
+    September to Spring, October to Spring, November to Spring
   )
 
   @Test(timeout = TIMEOUT)

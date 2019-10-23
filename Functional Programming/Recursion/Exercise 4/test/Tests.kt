@@ -10,19 +10,19 @@ import util.TIMEOUT
 class TestRecursionExercise4 {
   private fun checkSample(from: City, result: Set<City>) {
     Assert.assertEquals("Wrong result for sample '${from.name}.getAllReachableRecursive()'", result,
-        from.getAllReachableRecursive())
+      from.getAllReachableRecursive())
     Assert.assertEquals("Wrong result for sample '${from.name}.getAllReachableIterative()'", result,
-        from.getAllReachableIterative())
+      from.getAllReachableIterative())
   }
 
   private fun check(cities: List<City>, from: Int, result: Set<Int>) {
     val expectedResultSorted = result.map { cities[it] }.sortedBy { it.name }
     Assert.assertEquals("Wrong result for '${cities[from].name}.getAllReachableRecursive()' for $cities",
-        expectedResultSorted,
-        cities[from].getAllReachableRecursive().sortedBy { it.name })
+      expectedResultSorted,
+      cities[from].getAllReachableRecursive().sortedBy { it.name })
     Assert.assertEquals("Wrong result for '${cities[from].name}.getAllReachableIterative()' for $cities",
-        expectedResultSorted,
-        cities[from].getAllReachableIterative().sortedBy { it.name })
+      expectedResultSorted,
+      cities[from].getAllReachableIterative().sortedBy { it.name })
   }
 
   private fun addConnections(cities: List<City>, vararg pairs: Pair<Int, Int>) {

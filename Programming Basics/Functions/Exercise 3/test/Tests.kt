@@ -7,7 +7,7 @@ import util.TIMEOUT
 class TestFunctionsExercise3 {
   private fun checkFunction(s: String) {
     Assert.assertEquals("""duplicate($s) should return "$s$s"""",
-        duplicate(s), "$s$s")
+      duplicate(s), "$s$s")
   }
 
   @Test(timeout = TIMEOUT)

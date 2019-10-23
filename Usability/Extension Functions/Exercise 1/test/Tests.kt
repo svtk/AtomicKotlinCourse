@@ -10,7 +10,7 @@ import util.TIMEOUT
 class TestExtensionFunctionsExercise1 {
   private fun checkWrapping(tagName: String, string: String) {
     Assert.assertEquals("Wrong result for $tagName:",
-        "<$tagName>$string</$tagName>", string.wrapInTag(tagName))
+      "<$tagName>$string</$tagName>", string.wrapInTag(tagName))
   }
 
   @Test(timeout = TIMEOUT)

@@ -11,7 +11,7 @@ class TestMoreLibraryFunctionsExercise2 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     Assert.assertEquals("Wrong result for sample",
-        listOf(0, 1, 1, 2, 3, 5, 8, 13, 21, 34),
-        fibonacciNumbers().take(10).toList())
+      listOf(0, 1, 1, 2, 3, 5, 8, 13, 21, 34),
+      fibonacciNumbers().take(10).toList())
   }
 }

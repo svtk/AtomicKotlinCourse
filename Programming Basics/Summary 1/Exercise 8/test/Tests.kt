@@ -10,7 +10,7 @@ import util.TIMEOUT
 class TestSummaryIExercise8 {
   private fun checkReverse(number: Int, expected: Int) {
     Assert.assertEquals("Wrong reversed $number number",
-        expected, reverseDecimal(number))
+      expected, reverseDecimal(number))
   }
 
   @Test(timeout = TIMEOUT)

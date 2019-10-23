@@ -10,9 +10,9 @@ import util.TIMEOUT
 class TestExtensionPropertiesExercise1 {
   private fun <T> checkSecondFunctions(list: List<T>, second: T?, penultimate: T?) {
     Assert.assertEquals("Wrong `second` element for $list:",
-        list.secondOrNull, second)
+      list.secondOrNull, second)
     Assert.assertEquals("Wrong `penultimate` element for $list:",
-        list.penultimateOrNull, penultimate)
+      list.penultimateOrNull, penultimate)
   }
 
   @Test(timeout = TIMEOUT)

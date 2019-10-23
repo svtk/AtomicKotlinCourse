@@ -2,9 +2,10 @@
 package readonlyblendmap
 import paintcolors.Color
 
-val combinations = Color.values().flatMap {
-  a -> Color.values().map { b -> a to b }
-}
+val combinations = Color.values()
+  .flatMap { a ->
+    Color.values().map { b -> a to b }
+  }
 
 val blendMap = combinations.map {
   it to colorblend.blend(it.first, it.second)

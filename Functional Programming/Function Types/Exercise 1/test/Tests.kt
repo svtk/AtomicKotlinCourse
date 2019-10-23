@@ -10,14 +10,14 @@ import kotlin.collections.map as mapLibrary
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestFunctionTypesExercise1 {
   private fun <T, R> check(
-      list: List<T>,
-      predicateStr: String,
-      predicate: (T) -> R
+    list: List<T>,
+    predicateStr: String,
+    predicate: (T) -> R
   ) {
     Assert.assertEquals("Wrong result for $list\n" +
-        "predicate = $predicateStr",
-        list.map(predicate),
-        list.mapLibrary(predicate))
+      "predicate = $predicateStr",
+      list.map(predicate),
+      list.mapLibrary(predicate))
   }
 
   @Test(timeout = TIMEOUT)

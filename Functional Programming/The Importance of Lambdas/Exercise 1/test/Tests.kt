@@ -10,8 +10,8 @@ import util.TIMEOUT
 class TestTheImportanceOfLambdasExercise1 {
   private fun checkNames(people: List<Person>) {
     Assert.assertEquals("Wrong result for $people:",
-        people.filter { it.age > 17 }.map { it.name },
-        people.getNamesOfAdults())
+      people.filter { it.age > 17 }.map { it.name },
+      people.getNamesOfAdults())
   }
 
   @Test(timeout = TIMEOUT)

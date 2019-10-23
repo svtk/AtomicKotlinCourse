@@ -21,7 +21,7 @@ class TestManipulatingListsExercise4 {
     charlie.friends += bob
 
     Assert.assertEquals("Wrong result for sample",
-        setOf(charlie), getFriendSuggestions(alice))
+      setOf(charlie), getFriendSuggestions(alice))
   }
 
   @Test(timeout = TIMEOUT)
@@ -38,8 +38,8 @@ class TestManipulatingListsExercise4 {
     connection(5, 6)
 
     Assert.assertEquals("Wrong suggestions for #0 in $persons",
-        listOf(3, 4).map { persons[it] }.toSet(),
-        getFriendSuggestions(persons[0]))
+      listOf(3, 4).map { persons[it] }.toSet(),
+      getFriendSuggestions(persons[0]))
   }
 
   @Test(timeout = TIMEOUT)
@@ -54,8 +54,8 @@ class TestManipulatingListsExercise4 {
     connection(1, 2)
 
     Assert.assertEquals("Wrong suggestions for #0 in $persons",
-        setOf<Person>(),
-        getFriendSuggestions(persons[0]))
+      setOf<Person>(),
+      getFriendSuggestions(persons[0]))
   }
 
   @Test(timeout = TIMEOUT)
@@ -71,8 +71,8 @@ class TestManipulatingListsExercise4 {
     connection(3, 4)
 
     Assert.assertEquals("Wrong suggestions for #0 in $persons",
-        setOf(persons[3]),
-        getFriendSuggestions(persons[0]))
+      setOf(persons[3]),
+      getFriendSuggestions(persons[0]))
   }
 
 
@@ -90,7 +90,7 @@ class TestManipulatingListsExercise4 {
     connection(2, 4)
 
     Assert.assertEquals("Wrong suggestions for #0 in $persons",
-        listOf(3, 4).map { persons[it] }.toSet(),
-        getFriendSuggestions(persons[0]))
+      listOf(3, 4).map { persons[it] }.toSet(),
+      getFriendSuggestions(persons[0]))
   }
 }

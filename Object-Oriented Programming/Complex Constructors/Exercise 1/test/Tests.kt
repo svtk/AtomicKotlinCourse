@@ -20,13 +20,13 @@ class TestComplexConstructorsExercise1 {
 
     val matrix = MazeImpl(mazeRepresentation)
     Assert.assertEquals("Wrong result for the sample:", mazeRepresentation,
-        matrix.toString().lines().joinToString("\n") { it.trimEnd() })
+      matrix.toString().lines().joinToString("\n") { it.trimEnd() })
   }
 
   private fun checkMaze(width: Int, height: Int, maze: String) {
     val matrix = MazeImpl(maze)
     Assert.assertEquals("Wrong result for the maze:", maze,
-        matrix.toString().lines().joinToString("\n") { it.trimEnd() })
+      matrix.toString().lines().joinToString("\n") { it.trimEnd() })
   }
 
   @Test(timeout = TIMEOUT)

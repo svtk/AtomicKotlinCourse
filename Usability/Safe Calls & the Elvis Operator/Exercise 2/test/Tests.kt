@@ -15,10 +15,10 @@ class TestSafeCallsAndTheElvisOperatorExercise2 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     checkFullInfoRepresentation(
-        Client("Alice", PersonalInfo(
-            email = "alice@gmail.com",
-            address = Address("Germany", "Munich"))),
-        """
+      Client("Alice", PersonalInfo(
+        email = "alice@gmail.com",
+        address = Address("Germany", "Munich"))),
+      """
                 |name: Alice
                 |email: alice@gmail.com
                 |country: Germany
@@ -40,9 +40,9 @@ class TestSafeCallsAndTheElvisOperatorExercise2 {
   @Test(timeout = TIMEOUT)
   fun test3() {
     checkFullInfoRepresentation(
-        Client("Harry", PersonalInfo(
-            address = Address(street = "4 Privet Drive")
-        )), """
+      Client("Harry", PersonalInfo(
+        address = Address(street = "4 Privet Drive")
+      )), """
                 |name: Harry
                 |email: Unspecified
                 |country: Unspecified

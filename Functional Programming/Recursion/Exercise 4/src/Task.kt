@@ -6,7 +6,7 @@ class City(val name: String) {
   val connections = mutableListOf<City>()
 
   override fun toString() = "($name, " +
-      "connections: ${connections.map { it.name }})"
+    "connections: ${connections.map { it.name }})"
 }
 
 fun addConnection(first: City, second: City) {
@@ -40,10 +40,10 @@ fun City.getAllReachableIterative(): Set<City> {
   val toBeAnalyzed = mutableSetOf(this)
 
   // for each 'current' city from 'toBeAnalyzed' set:
-    // unmark it (remove from 'to be analyzed' set)
-    // if it's already in 'connections', do nothing
-    // add it to 'connections'
-    // mark all its connections as 'to be analyzed'
+  // unmark it (remove from 'to be analyzed' set)
+  // if it's already in 'connections', do nothing
+  // add it to 'connections'
+  // mark all its connections as 'to be analyzed'
   while (toBeAnalyzed.isNotEmpty()) {
     val current = toBeAnalyzed.first()
 
@@ -70,12 +70,12 @@ fun main() {
   addConnection(manchester, leeds)
 
   liverpool.getAllReachableRecursive() eq
-      setOf(liverpool, manchester, leeds)
+    setOf(liverpool, manchester, leeds)
   dublin.getAllReachableRecursive() eq
-      setOf(dublin)
+    setOf(dublin)
 
   liverpool.getAllReachableIterative() eq
-      setOf(liverpool, manchester, leeds)
+    setOf(liverpool, manchester, leeds)
   dublin.getAllReachableIterative() eq
-      setOf(dublin)
+    setOf(dublin)
 }

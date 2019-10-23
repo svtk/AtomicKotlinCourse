@@ -4,10 +4,10 @@ import atomictest.eq
 
 fun sumOfFirstAndLast(list: List<Int>): Int =
   when {
-      list.isEmpty() -> 0
-      list.size == 1 -> list.first()
-      else -> list.first() + list.last()
-    }
+    list.isEmpty() -> 0
+    list.size == 1 -> list.first()
+    else -> list.first() + list.last()
+  }
 
 fun main() {
   sumOfFirstAndLast(listOf()) eq 0

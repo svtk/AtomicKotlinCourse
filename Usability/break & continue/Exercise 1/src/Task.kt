@@ -7,8 +7,7 @@ fun readNumbers() {
     val number = input?.toIntOrNull()
     if (number == null) {
       println("Not a number: $input")
-    }
-    else {
+    } else {
       sum += number
     }
     if (number == 0) break

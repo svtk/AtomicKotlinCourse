@@ -21,7 +21,7 @@ class TestSummaryIIExercise4 {
   ) {
     val dictionaryClass = loadClass("summaryIIExercise4", "Dictionary")
     val addTranslationsFunc = loadMemberFunction(dictionaryClass, "addTranslations")
-      checkParametersOfMemberFunction(addTranslationsFunc, listOf("" to "kotlin.String", "" to "kotlin.String"))
+    checkParametersOfMemberFunction(addTranslationsFunc, listOf("" to "kotlin.String", "" to "kotlin.String"))
     val translationsProperty = loadMemberProperty(dictionaryClass, "translations")
 
     val instance = dictionaryClass.createInstance()
@@ -60,16 +60,16 @@ class TestSummaryIIExercise4 {
 
   @Test(timeout = TIMEOUT)
   fun test4RepetitiveValues() {
-      testDictionary { instance, addTranslationsFunc, translationsProp ->
-          addTranslationsFunc.call(instance, "cat", "Katze")
-          try {
-              addTranslationsFunc.call(instance, "cat", "Katze")
-              throw AssertionError("'addTranslations()' function should throw an exception for repetitive key")
-          } catch (e: InvocationTargetException) {
-              Assert.assertEquals("Wrong exception message",
-                "Dictionary already has translations for 'cat'",
-                e.targetException.message)
-          }
+    testDictionary { instance, addTranslationsFunc, translationsProp ->
+      addTranslationsFunc.call(instance, "cat", "Katze")
+      try {
+        addTranslationsFunc.call(instance, "cat", "Katze")
+        throw AssertionError("'addTranslations()' function should throw an exception for repetitive key")
+      } catch (e: InvocationTargetException) {
+        Assert.assertEquals("Wrong exception message",
+          "Dictionary already has translations for 'cat'",
+          e.targetException.message)
       }
+    }
   }
 }

@@ -13,13 +13,13 @@ class TestNullableTypesExercise1 {
     val cage = Cage(1)
     cage.put(Hamster("Alice"))
     Assert.assertEquals("'takeHamsterByName' should return a hamster with a given name",
-        "Hamster('Alice')", cage.takeHamsterByName("Alice").toString())
+      "Hamster('Alice')", cage.takeHamsterByName("Alice").toString())
   }
 
   @Test(timeout = TIMEOUT)
   fun test2SampleNoHamster() {
     val cage = Cage(1)
     Assert.assertNull("Expected null when cage doesn't contain a hamster with a given name:",
-        cage.takeHamsterByName("Alice"))
+      cage.takeHamsterByName("Alice"))
   }
 }

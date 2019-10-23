@@ -7,10 +7,10 @@ files:
 - name: src/Maze.kt
   visible: true
   placeholders:
-  - offset: 689
+  - offset: 687
     length: 38
     placeholder_text: 0 // TODO
-  - offset: 815
+  - offset: 813
     length: 248
     placeholder_text: // TODO
 feedback_link: |

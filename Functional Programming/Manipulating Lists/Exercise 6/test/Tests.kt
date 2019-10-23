@@ -10,10 +10,10 @@ import kotlin.collections.flatten as flattenLibrary
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestManipulatingListsExercise6 {
   private fun <T> checkFlatten(
-      list: List<List<T>>
+    list: List<List<T>>
   ) {
     Assert.assertEquals("Wrong 'flatten' implementation",
-        list.flattenLibrary(), list.flatten())
+      list.flattenLibrary(), list.flatten())
   }
 
   @Test(timeout = TIMEOUT)

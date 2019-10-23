@@ -1,7 +1,7 @@
 package pythagorean
 
 class IsoscelesRightTriangle(
-        val side: Double
+  val side: Double
 ) {
-    fun area() = side * side / 2
+  fun area() = side * side / 2
 }

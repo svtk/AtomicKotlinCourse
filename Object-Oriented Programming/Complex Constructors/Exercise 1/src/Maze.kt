@@ -15,7 +15,7 @@ interface Maze {
 }
 
 class MazeImpl(
-    representation: String
+  representation: String
 ) : Maze {
   override val width: Int
   override val height: Int
@@ -69,11 +69,11 @@ class MazeImpl(
   }
 
   override fun toString() =
-      cells.joinToString("\n") { row ->
-        row.joinToString("") { elements ->
-          "${elements.lastOrNull()?.symbol ?: ' '}"
-        }.trimEnd()
-      }
+    cells.joinToString("\n") { row ->
+      row.joinToString("") { elements ->
+        "${elements.lastOrNull()?.symbol ?: ' '}"
+      }.trimEnd()
+    }
 }
 
 fun main() {
@@ -88,7 +88,7 @@ fun main() {
   // trim whitespaces at the end of each line
   // to have equal representation
   matrix
-      .toString().lines()
-      .joinToString("\n") { it.trimEnd() } eq
-      mazeRepresentation
+    .toString().lines()
+    .joinToString("\n") { it.trimEnd() } eq
+    mazeRepresentation
 }

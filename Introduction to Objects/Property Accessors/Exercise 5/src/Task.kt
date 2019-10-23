@@ -6,7 +6,7 @@ class Hamster(val name: String)
 
 class Cage(private val maxCapacity: Int) {
   private val hamsters =
-      mutableListOf<Hamster>()
+    mutableListOf<Hamster>()
 
   val capacity: Int
     get() = maxCapacity - hamsters.size
@@ -15,15 +15,15 @@ class Cage(private val maxCapacity: Int) {
     get() = hamsters.size == maxCapacity
 
   fun put(hamster: Hamster): Boolean =
-      if (full)
-        false
-      else {
-        hamsters += hamster
-        true
-      }
+    if (full)
+      false
+    else {
+      hamsters += hamster
+      true
+    }
 
   fun takeHamster(): Hamster =
-      hamsters.removeAt(0)
+    hamsters.removeAt(0)
 }
 
 fun main() {

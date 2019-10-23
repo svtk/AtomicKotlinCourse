@@ -30,14 +30,14 @@ class Robot : GameElement {
 
   override fun playTurn(maze: Maze) {
     val position = maze.position(this)
-        ?: return
+      ?: return
     val cellElements = maze.allAt(position)
     cellElements
-        .filterIsInstance<Food>()
-        .forEach { food ->
-          eatenFoodItems++
-          maze.remove(food)
-        }
+      .filterIsInstance<Food>()
+      .forEach { food ->
+        eatenFoodItems++
+        maze.remove(food)
+      }
   }
 }
 

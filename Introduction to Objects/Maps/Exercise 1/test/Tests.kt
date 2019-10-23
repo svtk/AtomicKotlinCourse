@@ -23,6 +23,6 @@ class TestMapsExercise1 {
 
   @Test(timeout = TIMEOUT)
   fun testManyElements() = checkBuildingMap(listOf(
-      Contact("A", "1"), Contact("B", "2"), Contact("C", "3"), Contact("D", "4"),
-      Contact("E", "5"), Contact("F", "6"), Contact("G", "7"), Contact("H", "8")))
+    Contact("A", "1"), Contact("B", "2"), Contact("C", "3"), Contact("D", "4"),
+    Contact("E", "5"), Contact("F", "6"), Contact("G", "7"), Contact("H", "8")))
 }

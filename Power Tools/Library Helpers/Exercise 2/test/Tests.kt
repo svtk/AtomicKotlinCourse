@@ -10,8 +10,8 @@ import util.TIMEOUT
 class TestPersonsMap {
   private fun check(actual: String, expected: String) {
     Assert.assertEquals("Wrong result for sample",
-        expected,
-        actual)
+      expected,
+      actual)
 
   }
 

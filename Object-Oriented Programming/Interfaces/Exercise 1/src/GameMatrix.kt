@@ -15,8 +15,8 @@ interface Maze {
 }
 
 class MazeImpl(
-    override val width: Int,
-    override val height: Int
+  override val width: Int,
+  override val height: Int
 ) : Maze {
   private val cells = List(height) {
     List(width) { mutableSetOf<GameElement>() }
@@ -51,14 +51,14 @@ class MazeImpl(
   }
 
   override fun toString() =
-      cells.joinToString("\n") { row ->
-        row.joinToString("") { elements ->
-          // As we can't display several elements on the one cell
-          // as one character, for simplicity
-          // we display only the last element
-          "${elements.lastOrNull()?.symbol ?: ' '}"
-        }.trimEnd()
-      }
+    cells.joinToString("\n") { row ->
+      row.joinToString("") { elements ->
+        // As we can't display several elements on the one cell
+        // as one character, for simplicity
+        // we display only the last element
+        "${elements.lastOrNull()?.symbol ?: ' '}"
+      }.trimEnd()
+    }
 }
 
 fun main() {
@@ -76,7 +76,7 @@ fun main() {
     maze.add(Wall(), Position(x, 4))
   }
   maze.toString() eq
-      """
+    """
       ####
       #  #
       #R #

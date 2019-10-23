@@ -3,16 +3,16 @@ package namedAndDefaultArgumentsExercise2
 import atomictest.eq
 
 class SimpleTime(
-        val hours: Int = 0,
-        val minutes: Int = 0,
-        val seconds: Int = 0,
-        val nanoseconds: Int = 0
+  val hours: Int = 0,
+  val minutes: Int = 0,
+  val seconds: Int = 0,
+  val nanoseconds: Int = 0
 ) {
-    fun toSecondOfDay(): Int =
-        ((hours * 60 + minutes) * 60) + seconds
+  fun toSecondOfDay(): Int =
+    ((hours * 60 + minutes) * 60) + seconds
 
-    fun toNanoOfDay(): Long =
-        (toSecondOfDay() * 1000000000L) + nanoseconds
+  fun toNanoOfDay(): Long =
+    (toSecondOfDay() * 1000000000L) + nanoseconds
 }
 
 fun main() {

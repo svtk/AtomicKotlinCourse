@@ -10,7 +10,7 @@ import util.TIMEOUT
 class TestObjectsEverywhereExercise4 {
   private fun checkReverse(number: Int, expected: Int) {
     Assert.assertEquals("Wrong result for reversing $number:",
-        expected, reverseDecimal(number))
+      expected, reverseDecimal(number))
   }
 
   @Test(timeout = TIMEOUT)

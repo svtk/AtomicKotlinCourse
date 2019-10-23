@@ -10,7 +10,7 @@ import util.TIMEOUT
 class TestFunctionsExercise1 {
   private fun testFunction(i: Int) {
     Assert.assertEquals("getSquare($i) should return ${i * i}",
-        i * i, getSquare(i))
+      i * i, getSquare(i))
   }
 
   @Test(timeout = TIMEOUT)

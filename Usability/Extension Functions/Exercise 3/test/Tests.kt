@@ -9,7 +9,7 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestExtensionFunctionsExercise3 {
   private fun message(rectangle: Rectangle, expected: Boolean) =
-      "Wrong result for rectangle $rectangle; it should${if (expected) "" else "n't"} cover zero:"
+    "Wrong result for rectangle $rectangle; it should${if (expected) "" else "n't"} cover zero:"
 
   private fun checkCovering(rectangle: Rectangle, expected: Boolean) {
     Assert.assertEquals(message(rectangle, expected), expected, rectangle.coversZero())

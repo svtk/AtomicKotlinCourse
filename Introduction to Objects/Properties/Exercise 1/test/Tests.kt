@@ -28,7 +28,7 @@ class TestPropertiesExercise1 {
     val sumValue = 45
     testPropertyValue("c", sumValue, xClass, instance)
     val message = "The value of 'c' property should be '$sumValue' " +
-        "after calling $addMethodName()"
+      "after calling $addMethodName()"
     Assert.assertEquals(message, sumValue, result)
   }
 

@@ -10,7 +10,7 @@ import util.TIMEOUT
 class TestIfExpressionsExercise1 {
   private fun checkFunction(number: Int, sign: String) {
     Assert.assertEquals("""checkSign($number) should return "$sign"""",
-        sign, checkSign(number))
+      sign, checkSign(number))
   }
 
   @Test(timeout = TIMEOUT)

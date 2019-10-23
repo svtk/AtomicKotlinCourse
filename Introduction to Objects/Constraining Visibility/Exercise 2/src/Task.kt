@@ -1,9 +1,9 @@
 package constrainingVisibilityExercise2
 
 class Robot(
-    private val fieldSize: Int,
-    private var x: Int,
-    private var y: Int
+  private val fieldSize: Int,
+  private var x: Int,
+  private var y: Int
 ) {
   private fun crossBoundary(coordinate: Int): Int {
     val inBounds = coordinate % fieldSize

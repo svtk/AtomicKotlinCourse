@@ -10,17 +10,17 @@ import java.time.LocalTime
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestNamedAndDefaultArgumentsExercise2 {
   private fun testSimpleTime(
-      hours: Int,
-      minutes: Int = 0,
-      seconds: Int = 0,
-      nanoseconds: Int = 0
+    hours: Int,
+    minutes: Int = 0,
+    seconds: Int = 0,
+    nanoseconds: Int = 0
   ) {
     val time = SimpleTime(hours, minutes, seconds, nanoseconds)
 
     val localTime = LocalTime.of(hours, minutes, seconds, nanoseconds)
     fun message(functionName: String) =
-        "Wrong '$functionName' for SimpleTime(hours = $hours, " +
-            "minutes = $minutes, seconds = $seconds, nanoseconds = $nanoseconds)"
+      "Wrong '$functionName' for SimpleTime(hours = $hours, " +
+        "minutes = $minutes, seconds = $seconds, nanoseconds = $nanoseconds)"
     Assert.assertEquals(message("toSecondOfDay"), localTime.toSecondOfDay(), time.toSecondOfDay())
     Assert.assertEquals(message("toNanoOfDay"), localTime.toNanoOfDay(), time.toNanoOfDay())
   }

@@ -9,10 +9,10 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestExtensionFunctionsExercise2 {
   private fun checkQuality(
-      number: Int,
-      message: String,
-      function: Function1<Int, Boolean>,
-      check: Boolean
+    number: Int,
+    message: String,
+    function: Function1<Int, Boolean>,
+    check: Boolean
   ) {
     Assert.assertEquals("$number should${if (check) "" else "n't"} be $message:", check, function(number))
   }

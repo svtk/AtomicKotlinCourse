@@ -5,7 +5,7 @@ import kotlin.math.pow
 import kotlin.math.sqrt
 
 class Bomb(
-    private val diameter: Int
+  private val diameter: Int
 ) : StaticElement() {
   override val symbol get() = '0' + diameter
 
@@ -14,14 +14,14 @@ class Bomb(
     maze.all().forEach { element ->
       val position = maze.position(element)
       if (position != null &&
-          isCloseToBomb(position, bombPosition)) {
+        isCloseToBomb(position, bombPosition)) {
         maze.remove(element)
       }
     }
   }
 
   private fun isCloseToBomb(position: Position, bombPosition: Position) =
-      2 * distance(position, bombPosition) < diameter + 0.0000001
+    2 * distance(position, bombPosition) < diameter + 0.0000001
 
   private fun distance(from: Position, to: Position): Double {
     fun sqr(i: Int) = i.toDouble().pow(2)
@@ -50,7 +50,7 @@ fun main() {
   maze.add(robot, bombPosition)
 
   val bomb = maze.allAt(bombPosition)
-      .filterIsInstance<Bomb>().single()
+    .filterIsInstance<Bomb>().single()
   bomb.playTurn(maze)
 
   maze.toString() eq """

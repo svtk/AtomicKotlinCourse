@@ -10,7 +10,7 @@ import util.TIMEOUT
 class TestSummaryIExercise7 {
   private fun checkCountDigits(number: Int, digit: Int, expected: Int) {
     Assert.assertEquals("Wrong number of `$digit` digits in the `$number` number",
-        expected, countDigits(number, digit))
+      expected, countDigits(number, digit))
   }
 
   @Test(timeout = TIMEOUT)

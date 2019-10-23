@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 162
-    length: 146
+    length: 142
     placeholder_text: |-
       class GardenItem(
           val name: String

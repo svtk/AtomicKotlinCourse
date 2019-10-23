@@ -15,9 +15,9 @@ enum class Result {
 fun findWinner(first: Rochambeau, second: Rochambeau): Result {
   if (first == second) return DRAW
   val winningCombinations = mapOf(
-      ROCK to SCISSORS,
-      SCISSORS to PAPER,
-      PAPER to ROCK)
+    ROCK to SCISSORS,
+    SCISSORS to PAPER,
+    PAPER to ROCK)
   if (winningCombinations[first] == second) {
     return FIRST_WINS
   }

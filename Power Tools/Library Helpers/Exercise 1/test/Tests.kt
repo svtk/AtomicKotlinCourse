@@ -7,10 +7,10 @@ import util.TIMEOUT
 class Tests {
   private fun checkResult(result: String, vararg possibleAnswers: String) {
     val message = "${possibleAnswers.joinToString()} " +
-        "fit${if (possibleAnswers.size == 1) "s" else ""} " +
-        "better for this use-case"
+      "fit${if (possibleAnswers.size == 1) "s" else ""} " +
+      "better for this use-case"
     Assert.assertTrue(message,
-        possibleAnswers.any { result.contains(it) }
+      possibleAnswers.any { result.contains(it) }
     )
   }
 

@@ -25,6 +25,7 @@ class TestSummaryIExercise4 {
       testDouble()
     }
   }
+
   @Test(timeout = TIMEOUT)
   fun test3Double2() {
     runAndCheckSystemOutput(

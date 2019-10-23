@@ -11,7 +11,7 @@ class TestFunctionsExercise2 {
   private fun checkFunction(a: Double, b: Double, c: Double) {
     val sum = a + b + c
     Assert.assertEquals("getSum($a, $b, $c) should return $sum",
-        sum, getSum(a, b, c), 0.000001)
+      sum, getSum(a, b, c), 0.000001)
   }
 
   @Test(timeout = TIMEOUT)

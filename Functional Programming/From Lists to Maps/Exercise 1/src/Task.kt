@@ -12,11 +12,11 @@ fun buildAgeToNamesMap(people: List<Person>): Map<Int, List<String>> {
 
 fun main() {
   val people = listOf(Person("Alice", 21),
-      Person("Bob", 25), Person("Charlie", 25))
+    Person("Bob", 25), Person("Charlie", 25))
 
   buildAgeToNamesMap(people) eq
-      mapOf(21 to listOf("Alice"),
-          25 to listOf("Bob", "Charlie"))
+    mapOf(21 to listOf("Alice"),
+      25 to listOf("Bob", "Charlie"))
 
   buildString { }
 }

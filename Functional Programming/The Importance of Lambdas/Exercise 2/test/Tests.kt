@@ -10,8 +10,8 @@ import util.TIMEOUT
 class TestTheImportanceOfLambdasExercise2 {
   private fun checkList(strings: List<String>) {
     Assert.assertEquals("Wrong result for $strings",
-        strings.filter { it.isNotBlank() },
-        filterNonBlank(strings))
+      strings.filter { it.isNotBlank() },
+      filterNonBlank(strings))
   }
 
   @Test(timeout = TIMEOUT)

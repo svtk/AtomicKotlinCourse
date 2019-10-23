@@ -11,7 +11,7 @@ fun isBalanced(input: String): Boolean {
       ' ' -> {
       }
       else -> throw IllegalArgumentException("The string must consist " +
-          "only of parentheses and whitespaces")
+        "only of parentheses and whitespaces")
     }
     if (leftUnmatched < 0) return false
   }

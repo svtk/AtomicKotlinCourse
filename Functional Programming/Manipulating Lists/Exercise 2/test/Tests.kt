@@ -9,11 +9,11 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestManipulatingListsExercise2 {
   private fun <T> check(
-      list: List<T>
+    list: List<T>
   ) {
     Assert.assertEquals("Wrong result for $list:",
-        list.zip(list.indices),
-        list.zipWithIndex())
+      list.zip(list.indices),
+      list.zipWithIndex())
   }
 
   @Test(timeout = TIMEOUT)

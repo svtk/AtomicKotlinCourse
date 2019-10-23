@@ -16,20 +16,23 @@ interface MutableMaze : Maze {
 }
 
 // Dummy implementation:
-class MazeImpl: MutableMaze {
+class MazeImpl : MutableMaze {
   override fun all(): Set<GameElement> {
     return setOf()
   }
+
   override fun allAt(
-      p: Position
+    p: Position
   ): Set<GameElement> {
     return setOf()
   }
+
   override fun add(
     e: GameElement, p: Position
   ) {
     println("Adding $e to $p")
   }
+
   override fun remove(e: GameElement) {
     println("Removing $e")
   }
@@ -51,7 +54,7 @@ interface Game {
   // other members
 }
 
-class GameImpl: Game {
+class GameImpl : Game {
   override val maze: MutableMaze = MazeImpl()
   override fun playTurn() {
     // We can access modification members:

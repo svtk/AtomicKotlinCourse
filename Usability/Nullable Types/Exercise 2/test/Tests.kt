@@ -14,8 +14,8 @@ class TestNullableTypesExercise2 {
 
   @Test(timeout = TIMEOUT)
   fun test1Sample() = testCountingHexadecimalCodes(
-      listOf("1", "3", "7", "8", "A", "B", "F"),
-      mapOf(1 to 1, 3 to 1, 7 to 1, 8 to 1, 10 to 1, 11 to 1, 15 to 1))
+    listOf("1", "3", "7", "8", "A", "B", "F"),
+    mapOf(1 to 1, 3 to 1, 7 to 1, 8 to 1, 10 to 1, 11 to 1, 15 to 1))
 
   @Test(timeout = TIMEOUT)
   fun test2Sample() = testCountingHexadecimalCodes(listOf("1A", "1A", "1A"), mapOf(26 to 3))

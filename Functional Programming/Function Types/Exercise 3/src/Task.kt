@@ -3,7 +3,7 @@ package functionTypesExercise3
 import atomictest.eq
 
 fun <T, R : Any> Iterable<T>.mapIndexedNotNull(
-    transform: (Int, T) -> R?
+  transform: (Int, T) -> R?
 ): List<R> {
   val result = mutableListOf<R>()
   for ((index, e) in this.withIndex()) {

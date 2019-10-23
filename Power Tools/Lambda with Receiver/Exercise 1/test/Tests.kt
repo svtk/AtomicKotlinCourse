@@ -10,12 +10,12 @@ import util.TIMEOUT
 class TestLambdaWithReceiverExercise1 {
   private fun check(width: Int) {
     Assert.assertEquals("Wrong result for width = $width:",
-        buildString {
-          repeat(width) {
-            appendln("*".repeat(width))
-          }
-        }.trim(),
-        drawSquare(width))
+      buildString {
+        repeat(width) {
+          appendln("*".repeat(width))
+        }
+      }.trim(),
+      drawSquare(width))
   }
 
   @Test(timeout = TIMEOUT)
