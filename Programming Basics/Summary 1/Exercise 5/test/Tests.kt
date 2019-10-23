@@ -3,6 +3,7 @@ package summaryIExercise5
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.runAndCheckSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -17,24 +18,24 @@ class TestSummaryIExercise5 {
         }
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test1() = testOutput(11, 30)
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test2() = testOutput(1, 5)
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test3() = testOutput(3, 14)
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test4() = testOutput(-20, 20)
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test5() = testOutput(1, 4)
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test6() = testOutput(0, 44)
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test7() = testOutput(100, 150)
 }

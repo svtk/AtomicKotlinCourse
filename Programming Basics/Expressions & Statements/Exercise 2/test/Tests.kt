@@ -4,29 +4,26 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
-import util.checkMainIsImplemented
-import util.checkParametersOfTopLevelFunction
-import util.runAndCheckSystemOutput
-import util.runAndGetSystemOutput
+import util.*
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestExpressionsAndStatementsExercise2 {
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test1f() {
         val fFunc = ::f
         checkParametersOfTopLevelFunction(fFunc, listOf("" to "kotlin.Int", "" to "kotlin.Int"))
         Assert.assertEquals("Wrong result for 'f(1, 2)' call", 3, fFunc.call(1, 2))
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test2g() {
         val gFunc = ::g
         checkParametersOfTopLevelFunction(gFunc, listOf("" to "kotlin.String", "" to "kotlin.String"))
         Assert.assertEquals("""Wrong result for 'g("a", "bc")' call""", "abc", gFunc.call("a", "bc"))
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test3h() {
         val hFunc = ::h
         checkParametersOfTopLevelFunction(hFunc, listOf())
@@ -35,7 +32,7 @@ class TestExpressionsAndStatementsExercise2 {
         }
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test4Main() {
         checkMainIsImplemented(::main)
         val output = runAndGetSystemOutput(::main)

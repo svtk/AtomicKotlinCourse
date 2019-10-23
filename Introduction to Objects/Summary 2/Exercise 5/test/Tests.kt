@@ -2,6 +2,7 @@ package summaryIIExercise5
 
 import org.junit.Assert
 import org.junit.Test
+import util.TIMEOUT
 import util.runAndCheckSystemOutput
 import kotlin.reflect.KFunction
 
@@ -15,7 +16,7 @@ class TestSummaryIIExercise5 {
           "kotlin.IntArray", params[0].type.toString())
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun testVa1() {
         val va1func = ::va1
         val va2func = ::va2

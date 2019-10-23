@@ -4,6 +4,7 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.loadClass
 import util.loadMemberFunction
 import util.loadMemberProperty
@@ -12,7 +13,7 @@ import kotlin.reflect.full.createInstance
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestPropertiesExercise1 {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun testSolution() {
     val xClass = loadClass("propertiesExercise1", "X")
     val instance = xClass.createInstance()

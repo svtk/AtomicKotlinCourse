@@ -3,6 +3,7 @@ package repetitionWithWhileExercise1
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.checkParametersOfTopLevelFunction
 import util.checkSystemOutput
 import util.runAndGetSystemOutput
@@ -20,7 +21,7 @@ class TestRepetitionWithWhileExercise1 {
           expected, output)
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun testDisplayContent() {
         testInput("abc")
         testInput("Kotlin")

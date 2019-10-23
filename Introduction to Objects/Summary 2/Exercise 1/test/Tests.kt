@@ -4,6 +4,7 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.loadClass
 import util.loadMemberFunction
 import util.runAndGetSystemOutput
@@ -11,7 +12,7 @@ import kotlin.reflect.full.createInstance
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIIExercise1 {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1Functions() {
     val boringClass = loadClass("summaryIIExercise1", "Boring")
     val aFunction = loadMemberFunction(boringClass, "a")
@@ -24,7 +25,7 @@ class TestSummaryIIExercise1 {
     Assert.assertEquals(message("c", "11"), 11, cFunction.call(instance))
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2Main() {
     val output = runAndGetSystemOutput {
       main()

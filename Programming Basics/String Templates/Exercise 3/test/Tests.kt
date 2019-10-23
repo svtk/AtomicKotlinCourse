@@ -3,13 +3,14 @@ package stringTemplatesExercise3
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 import kotlin.reflect.KFunction
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestStringTemplatesExercise3 {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun testShow() {
     val showFunc = ::show
     checkParametersOfTopLevelFunction(showFunc, listOf(

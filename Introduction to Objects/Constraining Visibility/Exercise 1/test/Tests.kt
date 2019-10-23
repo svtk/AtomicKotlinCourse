@@ -5,7 +5,7 @@ import org.junit.Test
 import util.*
 
 class TestConstrainingVisibilityExercise1 {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1() {
     val alienClass = loadClass("constrainingVisibilityExercise1", "Alien")
     val alienConstructor = alienClass.constructors.first()

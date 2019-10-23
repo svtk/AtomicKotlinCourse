@@ -3,6 +3,7 @@ package recursionExercise1
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 
@@ -14,7 +15,7 @@ class TestRecursionExercise1 {
     }
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test() {
     testSimulation("FOO", 8)
     testSimulation("bar", 13)

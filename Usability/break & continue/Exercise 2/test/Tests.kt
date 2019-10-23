@@ -3,6 +3,7 @@ package breakAndContinueExercise2
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.runAndCheckSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -20,7 +21,7 @@ class TestBreakAndContinueExercise2 {
     }
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1Main() {
     runAndCheckSystemOutput("Wrong output after calling 'main'", """
       analyzeStrings1:
@@ -36,7 +37,7 @@ class TestBreakAndContinueExercise2 {
     """.trimIndent(), ::main)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1AnalyzeStrings() {
     val list = listOf(
       listOf("1", "stop", "2")
@@ -45,7 +46,7 @@ class TestBreakAndContinueExercise2 {
     checkOutputForAnalyzeCall("analyzeStrings2", list) { analyzeStrings2(list) }
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2AnalyzeStrings() {
     val list = listOf(
       listOf("stop", "i", "e", "we", "by", "no"),

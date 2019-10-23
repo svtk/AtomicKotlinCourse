@@ -4,6 +4,7 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 import util.runAndGetSystemOutput
@@ -12,7 +13,7 @@ import kotlin.reflect.KFunction
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestBooleansExercise2 {
   // TODO: test output for different errors
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1ShowFunctions() {
     testShowAnd(true, true)
     testShowAnd(true, false)
@@ -46,7 +47,7 @@ class TestBooleansExercise2 {
     }
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2Table() {
     val table = runAndGetSystemOutput { showTruthTable() }
     val expectedLines = """

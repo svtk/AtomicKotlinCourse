@@ -4,12 +4,13 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestVariableArgumentListsExercise2 {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1PrintArgsSignature() {
     val printArgsFunc = ::printArgs
     checkParametersOfTopLevelFunction(printArgsFunc, listOf("" to "kotlin.String", "" to ""))
@@ -29,12 +30,12 @@ class TestVariableArgumentListsExercise2 {
     }
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2PrintArgsInvocation() {
     testPrintArgsInvocation("Numbers: ", 1, 2, 3)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test3PrintArgsInvocation() {
     testPrintArgsInvocation("List: ", 11, 347, -2)
   }

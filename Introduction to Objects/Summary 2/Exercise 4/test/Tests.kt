@@ -4,10 +4,7 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
-import util.checkParametersOfMemberFunction
-import util.loadClass
-import util.loadMemberFunction
-import util.loadMemberProperty
+import util.*
 import java.lang.reflect.InvocationTargetException
 import kotlin.reflect.KFunction
 import kotlin.reflect.KProperty
@@ -52,16 +49,16 @@ class TestSummaryIIExercise4 {
         expected, actual)
     }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1OneValue() = testAddingValues(mapOf("cat" to listOf("Katze")))
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2TwoValues() = testAddingValues(mapOf("cat" to listOf("Katze"), "tree" to listOf("Baum")))
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test3ManyTranslations() = testAddingValues(mapOf("party" to listOf("Party", "Fest", "Partei")))
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test4RepetitiveValues() {
       testDictionary { instance, addTranslationsFunc, translationsProp ->
           addTranslationsFunc.call(instance, "cat", "Katze")

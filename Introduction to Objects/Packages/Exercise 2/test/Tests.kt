@@ -2,13 +2,14 @@ package packagesExercise2
 
 import org.junit.Assert
 import org.junit.Test
+import util.TIMEOUT
 import util.runAndGetSystemOutput
 import util.untestable
 import kotlin.math.E
 import kotlin.math.PI
 
 class TestPackagesExercise2 {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun testConstants() {
     val output = runAndGetSystemOutput(::main)
     fun checkConstant(constantName: String, constant: Double) {

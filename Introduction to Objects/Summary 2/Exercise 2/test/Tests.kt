@@ -4,15 +4,12 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
-import util.checkParametersOfConstructor
-import util.loadClass
-import util.loadMemberFunction
-import util.runAndGetSystemOutput
+import util.*
 import kotlin.reflect.full.primaryConstructor
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIIExercise2 {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1Functions() {
     val boringClass = loadClass("summaryIIExercise2", "Boring2")
     val aFunction = loadMemberFunction(boringClass, "a")
@@ -33,7 +30,7 @@ class TestSummaryIIExercise2 {
     Assert.assertEquals(message("c", "55"), 55, cFunction.call(instance))
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2Main() {
     val output = runAndGetSystemOutput(::main)
     Assert.assertTrue("Expected some tests on 'Boring2'", output.isNotEmpty())

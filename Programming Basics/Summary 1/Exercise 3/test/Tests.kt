@@ -4,6 +4,7 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIExercise3 {
@@ -17,7 +18,7 @@ class TestSummaryIExercise3 {
       second(a, b, c), a || b || c)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1() {
     testFirst(true, true, true)
     testFirst(true, true, false)
@@ -29,7 +30,7 @@ class TestSummaryIExercise3 {
     testFirst(false, false, false)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2() {
     testSecond(true, true, true)
     testSecond(true, true, false)

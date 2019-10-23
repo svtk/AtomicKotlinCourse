@@ -2,10 +2,11 @@ package variableArgumentListsExercise1
 
 import org.junit.Assert
 import org.junit.Test
+import util.TIMEOUT
 import util.runAndGetSystemOutput
 
 class TestVariableArgumentListsExercise1 {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun testMessageInOutput() {
     val output = runAndGetSystemOutput {
       main()

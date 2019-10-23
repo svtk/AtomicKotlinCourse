@@ -2,11 +2,12 @@ package exceptionsExercise1
 
 import org.junit.Assert
 import org.junit.Test
+import util.TIMEOUT
 import util.runAndGetSystemOutput
 import util.untestable
 
 class TestExceptionsExercise1 {
-    @Test
+    @Test(timeout = TIMEOUT)
     fun testOutput() {
         val output = runAndGetSystemOutput(::main)
         Assert.assertTrue("No output for 'main' function", output.isNotEmpty())

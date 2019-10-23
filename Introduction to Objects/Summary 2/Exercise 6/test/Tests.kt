@@ -4,6 +4,7 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.loadMemberProperty
 import kotlin.reflect.KMutableProperty
 import kotlin.reflect.KProperty
@@ -35,22 +36,22 @@ class TestSummaryIIExercise6 {
       "after setting '${initial.system}' to ${initial.value}", expected.value, actual)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1Fahrenheit() {
     testChange(TempValue(90.0, MeasureSystem.FAHRENHEIT), TempValue(90.0, MeasureSystem.FAHRENHEIT))
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2Celsius() {
     testChange(TempValue(30.0, MeasureSystem.CELSIUS), TempValue(30.0, MeasureSystem.CELSIUS))
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test3Change() {
     testChange(TempValue(86.0, MeasureSystem.FAHRENHEIT), TempValue(30.0, MeasureSystem.CELSIUS))
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test4Change() {
     testChange(TempValue(30.0, MeasureSystem.CELSIUS), TempValue(86.0, MeasureSystem.FAHRENHEIT))
   }

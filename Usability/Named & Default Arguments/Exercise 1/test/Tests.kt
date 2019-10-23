@@ -4,11 +4,12 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.checkParametersOfConstructor
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestNamedAndDefaultArgumentsExercise1 {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun testBuildingClass() {
     val rectangleClass = Rectangle::class
     val constructor = rectangleClass.constructors.first()

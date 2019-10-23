@@ -4,16 +4,17 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.runAndGetSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSetsExercise2 {
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1Experiment() {
     Assert.assertTrue("The 'experiment' function should return a positive number", experiment() > 0)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2Main() {
     val output = runAndGetSystemOutput {
       main()

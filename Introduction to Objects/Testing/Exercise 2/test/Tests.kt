@@ -4,17 +4,18 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.runAndGetSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestTestingExercise2 {
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test1Sum() {
         Assert.assertEquals("The 'sum(1, 2, 3)' call returns the wrong result",
           6, sum(1, 2, 3))
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test2Main() {
         val output = runAndGetSystemOutput(::main)
         Assert.assertTrue("All the tests are expected to succeed, " +

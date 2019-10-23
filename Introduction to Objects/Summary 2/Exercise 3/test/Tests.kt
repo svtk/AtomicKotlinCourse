@@ -32,7 +32,7 @@ class TestSummaryIIExercise3 {
     action(holderClass, holderInstance, addFunction, fullProperty)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1() = testHolderClass(2) { holderClass, holderInstance, addFunction, fullProperty ->
     addFunction.call(holderInstance, "abc")
     Assert.assertEquals("The holder of size 2 is expected to be not full after adding one element",
@@ -56,7 +56,7 @@ class TestSummaryIIExercise3 {
     }
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2() = testHolderClass(10) { holderClass, holderInstance, addFunction, fullProperty ->
       repeat(5) {
         addFunction.call(holderInstance, it)

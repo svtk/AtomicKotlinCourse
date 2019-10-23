@@ -29,7 +29,7 @@ class TestTestingExercise1 {
   @Test(timeout = TIMEOUT)
   fun testAbs4() = checkFunction(0)
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun testOutput() {
     val output = runAndGetSystemOutput(::main)
     fun checkArgument(arg: Int) {

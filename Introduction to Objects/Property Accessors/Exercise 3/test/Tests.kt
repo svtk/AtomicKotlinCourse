@@ -15,7 +15,7 @@ class TestPropertyAccessorsExercise3 {
     private fun loadMessageStorageClass(): KClass<*> =
       loadClass("propertyAccessorsExercise3", "MessageStorage")
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test1PrivateProp() {
         val msClass = loadMessageStorageClass()
         val privateMessagesProp = loadMemberProperty(msClass, "_messages")
@@ -25,7 +25,7 @@ class TestPropertyAccessorsExercise3 {
           privateMessagesProp.returnType.toString(), "kotlin.collections.MutableList<kotlin.String>")
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test2PublicProp() {
         val msClass = loadMessageStorageClass()
         val publicMessagesProp = loadMemberProperty(msClass, "messages")
@@ -35,7 +35,7 @@ class TestPropertyAccessorsExercise3 {
           publicMessagesProp.returnType.toString(), "kotlin.collections.List<kotlin.String>")
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test3AddMessage() {
         val msClass = loadMessageStorageClass()
         val addMsgFunction = loadMemberFunction(msClass, "addMessage")
@@ -44,7 +44,7 @@ class TestPropertyAccessorsExercise3 {
         Assert.assertTrue("'addMessage' function should be public", addMsgFunction.visibility == KVisibility.PUBLIC)
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test4Access() {
         val msClass = loadMessageStorageClass()
         val instance = msClass.createInstance()

@@ -3,11 +3,12 @@ package breakAndContinueExercise3
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.runAndCheckSystemOutput
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestBreakAndContinueExercise3 {
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test1Main() {
         runAndCheckSystemOutput("Wrong output when calling 'main'", """
             Using break
@@ -30,7 +31,7 @@ class TestBreakAndContinueExercise3 {
         runAndCheckSystemOutput("Wrong output after calling '$funcName' on $input", expectedOutput, action)
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test2UsingBreak() {
         val input = listOf(1, 0, 3)
         checkOutput("usingBreak", input, """
@@ -40,7 +41,7 @@ class TestBreakAndContinueExercise3 {
         """.trimIndent()) { usingBreak(input) }
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test3UsingContinue() {
         val input = listOf(1, 0, 3)
         checkOutput("usingContinue", input, """
@@ -51,7 +52,7 @@ class TestBreakAndContinueExercise3 {
         """.trimIndent()) { usingContinue(input) }
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test4AnalyzeList() {
         val input = listOf(1, 0, 3)
         checkOutput("analyzeList", input, """
@@ -59,7 +60,7 @@ class TestBreakAndContinueExercise3 {
         """.trimIndent()) { analyzeList(input) }
     }
 
-    @Test
+    @Test(timeout = TIMEOUT)
     fun test5AnalyzeElement() {
         val value = 17
         checkOutput("analyzeElement", value, """

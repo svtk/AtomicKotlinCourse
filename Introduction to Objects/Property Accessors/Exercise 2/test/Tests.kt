@@ -4,6 +4,7 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
+import util.TIMEOUT
 import util.loadClass
 import util.loadMemberProperty
 import util.runAndCheckSystemOutput
@@ -35,21 +36,21 @@ class TestPropertyAccessorsExercise2 {
     test(mutableProperty, readOnlyProperty, instance)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test1MutableSetter() = testAccessibleInstance { mutableProperty, _, instance ->
     runAndCheckSystemOutput("Setter of 'mutable' property should display 'mutable:set'", "mutable:set") {
       mutableProperty.setter.call(instance, "abc")
     }
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test2MutableGetter() = testAccessibleInstance { mutableProperty, _, instance ->
     runAndCheckSystemOutput("Getter of 'mutable' property should display 'mutable:get'", "mutable:get") {
       mutableProperty.getter.call(instance)
     }
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test3ReadOnlyGetter() = testAccessibleInstance { _, readOnlyProperty, instance ->
     runAndCheckSystemOutput("Getter of 'readOnly' property should first display 'readOnly:get' " +
       "and then call getter of 'mutable' ", "readOnly:get\nmutable:get") {
@@ -57,7 +58,7 @@ class TestPropertyAccessorsExercise2 {
     }
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test4Modification() = testAccessibleInstance { mutableProperty, _, instance ->
     mutableProperty.setter.call(instance, "abc")
     val value = mutableProperty.getter.call(instance)
@@ -68,7 +69,7 @@ class TestPropertyAccessorsExercise2 {
       "abc", value)
   }
 
-  @Test
+  @Test(timeout = TIMEOUT)
   fun test5ReadOnlyAccess() = testAccessibleInstance { mutableProperty, readOnlyProperty, instance ->
     mutableProperty.setter.call(instance, "abc")
     val value = readOnlyProperty.getter.call(instance)
