@@ -10,7 +10,7 @@ tracker. Copy the following stacktrace and call the action
 
 ```text	
 Exception in thread "main" java.lang.IllegalStateException: something is wrong
-	at stacktrace.TaskKt.foo(Task.kt:4)
-	at stacktrace.TaskKt.bar(Task.kt:8)
-	at stacktrace.TaskKt.main(Task.kt:12)
+    at stacktrace.TaskKt.foo(Task.kt:4)
+    at stacktrace.TaskKt.bar(Task.kt:8)
+    at stacktrace.TaskKt.main(Task.kt:12)
 ```

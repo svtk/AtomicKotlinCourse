@@ -5,11 +5,11 @@ like "copy", "paste" or "undo" operations:
 
 | Operation | Shortcut                                        | Description                                                   |
 |-----------|-------------------------------------------------|---------------------------------------------------------------|
-| Cut	    | <span class="shortcut">&shortcut:$Cut;</span>   | Cut a current line or a selected code block to the Clipboard. |
-| Copy	    | <span class="shortcut">&shortcut:$Copy;</span>  | Copy a current line or a selected code block to the Clipboard.|
-| Paste	    | <span class="shortcut">&shortcut:$Paste;</span> | Paste from the Clipboard to the caret location.               |
-| Undo	    | <span class="shortcut">&shortcut:$Undo;</span>  | Undo last operation.                                          |
-| Redo	    | <span class="shortcut">&shortcut:$Redo;</span>  | Redo last undone operation.                                   |
+| Cut       | <span class="shortcut">&shortcut:$Cut;</span>   | Cut a current line or a selected code block to the Clipboard. |
+| Copy      | <span class="shortcut">&shortcut:$Copy;</span>  | Copy a current line or a selected code block to the Clipboard.|
+| Paste     | <span class="shortcut">&shortcut:$Paste;</span> | Paste from the Clipboard to the caret location.               |
+| Undo      | <span class="shortcut">&shortcut:$Undo;</span>  | Undo last operation.                                          |
+| Redo      | <span class="shortcut">&shortcut:$Redo;</span>  | Redo last undone operation.                                   |
 
 To select text, press Shift (⇧) while moving the caret around the text. 
 Then you can move the caret up, down, left or right with selection, or move it to the end or
