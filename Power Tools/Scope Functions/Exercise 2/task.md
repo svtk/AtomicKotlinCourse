@@ -1,6 +1,6 @@
 ## Scope Functions (#2)
 
-Implement all the helper functions `with`, `run`, `let`, `apply`, `also`.
+Implement all the scope functions `with`, `run`, `let`, `apply`, `also`.
 
 |                              | Lambda with receiver arg:<br>`{ .. this .. }`| Regular lambda arg:<br>`{ .. it .. }`|
 |:----------------------------:|:----------------:|:---------------:|

@@ -1,4 +1,5 @@
-import libraryhelpers.transformVersion2
+package scopeFunctionsExercise3
+
 import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
