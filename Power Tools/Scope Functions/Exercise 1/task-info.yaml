@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 118
+  - offset: 126
     length: 72
     placeholder_text: |-
       x.let {
@@ -12,7 +12,7 @@ files:
           it.third = 3
         }
         return "let"
-  - offset: 274
+  - offset: 282
     length: 52
     placeholder_text: |-
       y?.let {
@@ -22,7 +22,7 @@ files:
           }
         }
         return "let & with"
-  - offset: 390
+  - offset: 398
     length: 72
     placeholder_text: |-
       val result = with(z) {

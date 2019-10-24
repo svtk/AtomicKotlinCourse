@@ -549,5 +549,14 @@ class TestAllExercises : AbstractTestExercises() {
   fun testTheWithFunctionExercise2() = testClass(theWithFunctionExercise2.TestTheWithFunctionExercise2::class)
 
   @Test
+  fun testScopeFunctionsExercise1() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
+
+  @Test
+  fun testScopeFunctionsExercise2() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
+
+  @Test
+  fun testScopeFunctionsExercise3() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
+
+  @Test
   fun testHashingExercise1() = testClass(hashingExercise1.TestHashingExercise1::class)
 }

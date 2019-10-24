@@ -1,8 +1,8 @@
-## Library Helpers (#2)
+## Scope Functions (#2)
 
 Implement all the helper functions `with`, `run`, `let`, `apply`, `also`.
 
-|                                      | Take lambda with receiver:<br>`{ .. this .. }` | Take regular lambda:<br>`{ .. it .. }` |
-|:------------------------------------:|:----------------------------------------------:|:--------------------------------------:|
-| **Return result <br>of the lambda**  | `with`, `run`                                          | `let`                                  |
-| **Return receiver**                  | `apply`                                        | `also`                                 |
+|                              | Lambda with receiver arg:<br>`{ .. this .. }`| Regular lambda arg:<br>`{ .. it .. }`|
+|:----------------------------:|:----------------:|:---------------:|
+| **Return result of lambda**  | `with`, `run`    | `let`           |
+| **Return receiver**          | `apply`          | `also`          |

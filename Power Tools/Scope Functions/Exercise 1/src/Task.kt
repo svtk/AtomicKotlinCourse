@@ -1,4 +1,4 @@
-package libraryHelpers1
+package scopeFunctionsExercise1
 
 class X {
   var first = 0

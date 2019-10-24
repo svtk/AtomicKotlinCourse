@@ -1,4 +1,4 @@
-package libraryHelpers2
+package scopeFunctionsExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestPersonsMap {
+class TestScopeFunctionsExercise2 {
   private fun check(actual: String, expected: String) {
     Assert.assertEquals("Wrong result for sample",
       expected,

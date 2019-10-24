@@ -3,7 +3,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 
-class TestLibraryHelper {
+class TestScopeFunctionsExercise3 {
   @Test(timeout = TIMEOUT)
   fun testSample() {
     val list = listOf(1, 2, 3, 4, 5)

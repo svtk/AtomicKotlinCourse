@@ -1,4 +1,4 @@
-package libraryhelpers
+package scopeFunctionsExercise3
 
 import atomictest.eq
 

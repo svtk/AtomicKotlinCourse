@@ -3303,6 +3303,21 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask187() {
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 1/src/Task.kt", scopeFunctionsExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask188() {
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 2/src/Task.kt", scopeFunctionsExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask189() {
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 3/src/Task.kt", scopeFunctionsExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask190() {
         testExample("../AtomicKotlinCourse/Power Tools/Hashing/Exercise 1/src/Task.kt", hashingExercise1.TaskKt::main);
     }
 }

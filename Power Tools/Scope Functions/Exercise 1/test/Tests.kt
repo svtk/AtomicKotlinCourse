@@ -1,10 +1,10 @@
-package libraryHelpers1
+package scopeFunctionsExercise1
 
 import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 
-class Tests {
+class TestScopeFunctionsExercise1 {
   private fun checkResult(result: String, vararg possibleAnswers: String) {
     val message = "${possibleAnswers.joinToString()} " +
       "fit${if (possibleAnswers.size == 1) "s" else ""} " +

@@ -1,4 +1,4 @@
-## Library Helpers (#1)
+## Scope Functions (#1)
 
 In the following examples the helper functions are used not in the most
 efficient way. In each case choose another helper function which better

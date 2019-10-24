@@ -1,4 +1,4 @@
-## Library Helpers (#3)
+## Scope Functions (#3)
 
 Rewrite the following function using one of the library helpers 
 to have only one call chain:
