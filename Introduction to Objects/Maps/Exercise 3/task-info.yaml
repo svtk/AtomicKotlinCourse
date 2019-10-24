@@ -23,8 +23,8 @@ files:
           }
           throw NoSuchElementException("No hamster called $name")
         }
-  - offset: 543
-    length: 27
+  - offset: 549
+    length: 21
     placeholder_text: |-
       {
           var hamsterWithGivenName: Hamster? = null

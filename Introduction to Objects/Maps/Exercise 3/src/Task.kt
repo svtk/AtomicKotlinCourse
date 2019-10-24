@@ -24,8 +24,9 @@ class Cage(private val maxCapacity: Int) {
   fun get(name: String): Hamster =
     hamsters.getValue(name)
 
-  fun remove(name: String) =
+  fun remove(name: String) {
     hamsters.remove(name)
+  }
 }
 
 fun main() {
