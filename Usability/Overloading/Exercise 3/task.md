@@ -11,5 +11,5 @@ fun List<Int>.myJoinToString(separator: String, prefix: String): String
 fun List<Int>.myJoinToString(prefix: String, postfix: String): String
 ```
 
-Uncomment the `myJoinToString()` function in the solution guide, and see what
+Uncomment the `myJoinToString()` function in the starter code, and see what
 error you get.

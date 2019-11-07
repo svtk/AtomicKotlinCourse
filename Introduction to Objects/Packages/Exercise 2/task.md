@@ -1,6 +1,6 @@
 ## Packages (#2)
 
-The solution guide defines three packages `aaa`, `bbb` and `ccc` via the files
+The starter code defines three packages `aaa`, `bbb` and `ccc` via the files
 `aaa.kt`, `bbb.kt` and `ccc.kt`.
 
 In the first package `aaa`, define:

@@ -1,7 +1,7 @@
 ## Sequences (#1)
 
 All the exercises for this atom use the classes `Instructor`, `Student`,
-`Lesson` and `School` defined in `School.kt` in the solution guide. It
+`Lesson` and `School` defined in `School.kt` in the starter code. It
 represents an online language school that provides a service to organize remote
 lessons for an instructor and a group of students. Each student can sign up for
 classes with different instructors. After the lesson a student can rate it, and
