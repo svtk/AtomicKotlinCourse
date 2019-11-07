@@ -2,26 +2,30 @@ package overloadingExercise2
 
 import org.junit.Assert
 import org.junit.Test
-import util.*
+import util.TIMEOUT
+import util.checkParametersOfMemberFunction
+import util.loadClass
+import util.runAndCheckSystemOutput
 import kotlin.reflect.KFunction
 import kotlin.reflect.full.createInstance
 import kotlin.reflect.full.memberFunctions
 
 class TestOverloadingExercise2 {
-  private fun testDog(test: (dog: Any?, firstBark: KFunction<*>, secondBark: KFunction<*>) -> Unit) {
-    val dogClass = loadClass("overloadingExercise2", "Dog")
+  private fun testDog(test: (dog: Any?, barkFunc: KFunction<*>) -> Unit) {
+    val dogClass = loadClass("overloadingExercise3", "Dog")
     val barkFunctions = dogClass.memberFunctions.filter { it.name == "bark" }
-    Assert.assertEquals("Expected two overloaded 'bark' function in the class 'Dog'",
-      2, barkFunctions.size)
-    val (first, second) = barkFunctions.sortedBy { it.parameters.size }
-    checkParametersOfMemberFunction(first, listOf("n" to "kotlin.Int"))
-    checkParametersOfMemberFunction(second, listOf("n" to "kotlin.Int", "say" to "kotlin.String"))
+    Assert.assertEquals("Expected only one 'bark' function in the class 'Dog'",
+      1, barkFunctions.size)
+    val barkFunc = barkFunctions.single()
+    checkParametersOfMemberFunction(barkFunc, listOf("n" to "kotlin.Int", "say" to "kotlin.String"))
+    Assert.assertEquals("The 'say' parameter of the 'bark' function is expected to have a default value",
+      true, barkFunc.parameters.last().isOptional)
     val dogInstance = dogClass.createInstance()
-    test(dogInstance, first, second)
+    test(dogInstance, barkFunc)
   }
 
   @Test(timeout = TIMEOUT)
-  fun test1() = testDog { dog, first, second ->
+  fun test1() = testDog { dog, barkFunc ->
     val call = """
       dog.bark(4)
     """.trimIndent()
@@ -31,12 +35,12 @@ class TestOverloadingExercise2 {
       woof
       woof
     """.trimIndent()) {
-      first.call(dog, 4)
+      barkFunc.callBy(barkFunc.parameters.zip(listOf(dog, 4)).toMap())
     }
   }
 
   @Test(timeout = TIMEOUT)
-  fun test2() = testDog { dog, first, second ->
+  fun test2() = testDog { dog, barkFunc ->
     val call = """
       dog.bark(3, "wow")
     """.trimIndent()
@@ -45,12 +49,12 @@ class TestOverloadingExercise2 {
       wow
       wow
     """.trimIndent()) {
-      second.call(dog, 3, "wow")
+      barkFunc.call(dog, 3, "wow")
     }
   }
 
   @Test(timeout = TIMEOUT)
-  fun test3() = testDog { dog, first, second ->
+  fun test3() = testDog { dog, barkFunc ->
     val call = """
       dog.bark(3)
       dog.bark(2, "wow")
@@ -62,13 +66,13 @@ class TestOverloadingExercise2 {
       wow
       wow
     """.trimIndent()) {
-      first.call(dog, 3)
-      second.call(dog, 2, "wow")
+      barkFunc.callBy(barkFunc.parameters.zip(listOf(dog, 3)).toMap())
+      barkFunc.call(dog, 2, "wow")
     }
   }
 
   @Test(timeout = TIMEOUT)
-  fun test4() = testDog { dog, first, second ->
+  fun test4() = testDog { dog, barkFunc ->
     val call = """
       dog.bark(1, "wow")
       dog.bark(1)
@@ -77,8 +81,8 @@ class TestOverloadingExercise2 {
       wow
       woof
     """.trimIndent()) {
-      second.call(dog, 1, "wow")
-      first.call(dog, 1)
+      barkFunc.call(dog, 1, "wow")
+      barkFunc.callBy(barkFunc.parameters.zip(listOf(dog, 1)).toMap())
     }
   }
 }

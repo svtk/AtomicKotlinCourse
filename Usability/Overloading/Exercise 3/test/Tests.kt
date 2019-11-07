@@ -1,88 +1,41 @@
 package overloadingExercise3
 
 import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import util.checkParametersOfMemberFunction
-import util.loadClass
-import util.runAndCheckSystemOutput
-import kotlin.reflect.KFunction
-import kotlin.reflect.full.createInstance
-import kotlin.reflect.full.memberFunctions
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestOverloadingExercise3 {
-  private fun testDog(test: (dog: Any?, barkFunc: KFunction<*>) -> Unit) {
-    val dogClass = loadClass("overloadingExercise3", "Dog")
-    val barkFunctions = dogClass.memberFunctions.filter { it.name == "bark" }
-    Assert.assertEquals("Expected only one 'bark' function in the class 'Dog'",
-      1, barkFunctions.size)
-    val barkFunc = barkFunctions.single()
-    checkParametersOfMemberFunction(barkFunc, listOf("n" to "kotlin.Int", "say" to "kotlin.String"))
-    Assert.assertEquals("The 'say' parameter of the 'bark' function is expected to have a default value",
-      true, barkFunc.parameters.last().isOptional)
-    val dogInstance = dogClass.createInstance()
-    test(dogInstance, barkFunc)
+
+  private fun testList(actual: String, expected: String) {
+    Assert.assertEquals("Wrong result: ", expected, actual)
   }
 
   @Test(timeout = TIMEOUT)
-  fun test1() = testDog { dog, barkFunc ->
-    val call = """
-      dog.bark(4)
-    """.trimIndent()
-    runAndCheckSystemOutput("Wrong output for calling $call", """
-      woof
-      woof
-      woof
-      woof
-    """.trimIndent()) {
-      barkFunc.callBy(barkFunc.parameters.zip(listOf(dog, 4)).toMap())
-    }
+  fun test1Sample() {
+    val list = listOf(1, 2, 3)
+    testList(list.myJoinToString(), "1, 2, 3")
+    testList(list.myJoinToString("|"), "1|2|3")
+    testList(list.myJoinToString("..", "List: "), "List: 1..2..3")
   }
 
   @Test(timeout = TIMEOUT)
-  fun test2() = testDog { dog, barkFunc ->
-    val call = """
-      dog.bark(3, "wow")
-    """.trimIndent()
-    runAndCheckSystemOutput("Wrong output for calling $call", """
-      wow
-      wow
-      wow
-    """.trimIndent()) {
-      barkFunc.call(dog, 3, "wow")
-    }
-  }
+  fun test2() = testList(
+    listOf(1, 2, 3, 4, 5, 6).myJoinToString(""),
+    "123456"
+  )
 
   @Test(timeout = TIMEOUT)
-  fun test3() = testDog { dog, barkFunc ->
-    val call = """
-      dog.bark(3)
-      dog.bark(2, "wow")
-    """.trimIndent()
-    runAndCheckSystemOutput("Wrong output for calling $call", """
-      woof
-      woof
-      woof
-      wow
-      wow
-    """.trimIndent()) {
-      barkFunc.callBy(barkFunc.parameters.zip(listOf(dog, 3)).toMap())
-      barkFunc.call(dog, 2, "wow")
-    }
-  }
+  fun test3() = testList(
+    listOf(1, 2, 3, 4).myJoinToString(),
+    "1, 2, 3, 4"
+  )
 
   @Test(timeout = TIMEOUT)
-  fun test4() = testDog { dog, barkFunc ->
-    val call = """
-      dog.bark(1, "wow")
-      dog.bark(1)
-    """.trimIndent()
-    runAndCheckSystemOutput("Wrong output for calling $call", """
-      wow
-      woof
-    """.trimIndent()) {
-      barkFunc.call(dog, 1, "wow")
-      barkFunc.callBy(barkFunc.parameters.zip(listOf(dog, 1)).toMap())
-    }
-  }
+  fun test4() = testList(
+    listOf(1, 2, 3, 4).myJoinToString(",", "##"),
+    "##1,2,3,4"
+  )
 }

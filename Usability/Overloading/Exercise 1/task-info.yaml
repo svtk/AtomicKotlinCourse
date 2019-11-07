@@ -3,16 +3,8 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 476
-    length: 37
-    placeholder_text: TODO()
-  - offset: 584
-    length: 33
-    placeholder_text: TODO()
-  - offset: 671
-    length: 28
-    placeholder_text: TODO()
+  - offset: 30
+    length: 138
+    placeholder_text: // Implement class Dog
 - name: test/Tests.kt
   visible: false
-feedback_link: |
-  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Overloading+%2F+Exercise1

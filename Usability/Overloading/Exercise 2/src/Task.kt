@@ -1,11 +1,7 @@
 package overloadingExercise2
 
 class Dog {
-  fun bark(n: Int) {
-    bark(n, "woof")
-  }
-
-  fun bark(n: Int, say: String) {
+  fun bark(n: Int, say: String = "woof") {
     repeat(n) {
       println(say)
     }
