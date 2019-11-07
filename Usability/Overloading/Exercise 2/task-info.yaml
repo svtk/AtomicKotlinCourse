@@ -2,5 +2,9 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 30
+    length: 138
+    placeholder_text: // Implement class Dog
 - name: test/Tests.kt
   visible: false

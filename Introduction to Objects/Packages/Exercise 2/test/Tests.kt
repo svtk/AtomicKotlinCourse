@@ -6,7 +6,6 @@ import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.*
 import kotlin.reflect.full.createInstance
-import ccc.main as cccmain
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestPackagesExercise2 {
@@ -46,6 +45,6 @@ class TestPackagesExercise2 {
   @Test(timeout = TIMEOUT)
   fun test5CccPackage() {
     runAndCheckSystemOutput("Wrong output for calling 'main' in 'ccc'",
-      "K 10", ::cccmain)
+      "K 10") { ccc.main() }
   }
 }
