@@ -1,7 +1,7 @@
 ## `break` & `continue` (#2)
 
 Complete implementation of two functions: `analyzeStrings1` and
-`analyzeStrings2` provided in the accompanying code. Both take a list of lists
+`analyzeStrings2` provided in the starter code. Both take a list of lists
 of strings as an argument and display its contents to the console. If the inner
 list contains the word `"stop"`, all the following elements in this list
 shouldn't be displayed. The `analyzeStrings1` function uses `break`, while

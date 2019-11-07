@@ -13,6 +13,7 @@ Numbers: [1, 2, 3]
 
 <div class="hint">
 
-Use `toList()` on the `vararg` parameter.
+Use `toList()` on the `vararg` parameter to get the requested
+string representation.
 
 </div>
