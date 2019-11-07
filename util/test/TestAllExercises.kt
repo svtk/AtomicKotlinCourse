@@ -351,10 +351,16 @@ class TestAllExercises : AbstractTestExercises() {
   fun testDataClassesExercise2() = testClass(dataClassesExercise2.TestDataClassesExercise2::class)
 
   @Test
+  fun testDataClassesExercise3() = testClass(dataClassesExercise3.TestDataClassesExercise3::class)
+
+  @Test
   fun testNullableTypesExercise1() = testClass(nullableTypesExercise1.TestNullableTypesExercise1::class)
 
   @Test
   fun testNullableTypesExercise2() = testClass(nullableTypesExercise2.TestNullableTypesExercise2::class)
+
+  @Test
+  fun testNullableTypesExercise3() = testClass(nullableTypesExercise3.TestNullableTypesExercise3::class)
 
   @Test
   fun testSafeCallsAndTheElvisOperatorExercise1() = testClass(safeCallsAndTheElvisOperatorExercise1.TestSafeCallsAndTheElvisOperatorExercise1::class)

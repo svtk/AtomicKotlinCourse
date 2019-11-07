@@ -1,7 +1,7 @@
 ## Enumerations (#1)
 
-This task refactors the `Robot` class used in section II. Replace the four
-functions `right()`, `left()`, `down()` and `up()`  with one function `go()`
+This exercise refactors the `Robot` class used in section II. Replace the four
+functions `right()`, `left()`, `down()` and `up()` with one function `go()`
 that takes an additional `Direction` parameter specifying the direction of
 movement.
 

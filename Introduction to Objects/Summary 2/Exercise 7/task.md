@@ -10,7 +10,7 @@ For example: 23 = XXIII, 44 = XLIV, 100 = C.
 
 <div class="hint">
 
-Perform the conversion in steps. Introduce the auxiliary `remainder`
+Perform the conversion in steps. Use an auxiliary `remainder`
 variable to store the remaining part of the converted integer and the `result`
 variable to store the resulting Roman numeral representation. For each step,
 the initial `number` equals the sum of the `remainder` and `result`.

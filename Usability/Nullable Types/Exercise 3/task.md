@@ -1,16 +1,15 @@
-## Nullable Types (#2)
+## Nullable Types (#3)
 
-Implement the `countHexadecimalCodes` function which counts the number
-of times a hexadecimal code occurs in the `codes` list.
-It returns a map from an integer corresponding to each hexadecimal code in
-`codes` to a number of its occurrences in `codes`.
-The function ignores the strings in input which don't represent hexadecimal
-codes.
+Create a function called `countHexadecimalNumbers(codes: List<String>)` which
+counts hexadecimal numbers contained in `codes`. It returns a `Map<String,
+Int>` where the key is a hexadecimal number and the value is how many times
+that number occurs in `codes`.  If a `String` in `codes` doesn't contain a
+hexadecimal number, the function ignores it.
 
 <div class="hint">
 
-To convert a string representing a hexadecimal code to a number use
-the `toIntOrNull(radix: Int)` extension function on String, passing
-`16` as an argument.
+Convert a `String` containing a hexadecimal code into an `Int` using
+`toIntOrNull(radix: Int)`, an extension function for `String`. Pass `16` as the
+radix.
 
 </div>

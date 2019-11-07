@@ -1,4 +1,9 @@
 ## Data Classes (#1)
 
-Create a data class for an airline ticket {{to conform to the needs of the
-teaching system, we need to specify the field names and types and class name }}
+Create a `data` class called `AirlineTicket` containing the following fields:
+
+- `firstName: String`
+- `lastName: String`
+- `ticket: Int`
+- `origin: String`
+- `destination: String`

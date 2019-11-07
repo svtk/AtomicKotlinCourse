@@ -1,6 +1,6 @@
 ## `break` & `continue` (#3)
 
-This exercise demonstrates how you can replace `break` and `continue` with 
+This exercise demonstrates how you can replace `break` and `continue` with
 `return` while extracting some code into new functions.
 
 The functions `usingBreak` and `usingContinue` are provided in the accompanying

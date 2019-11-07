@@ -6,10 +6,10 @@ instance, one hour and a half is `5_400_000` milliseconds.
 
 <div class="hint">
 
-Mare sure you store all the intermediate computations in `Long`,
-otherwise you can get an incorrect result.
-For instance, if you convert one billion hours to milliseconds
-and don't store milliseconds in `Long`, you'll get overflow:
+Mare sure you store all the intermediate computations in a `Long`,
+otherwise you can get an incorrect result. For instance, if you convert one
+billion hours to milliseconds but don't store milliseconds in a`Long`, you'll
+get an overflow:
 
 ```kotlin
 // Int computation causes integer overflow:

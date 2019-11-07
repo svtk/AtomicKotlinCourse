@@ -1,3 +1,6 @@
-## Data Classes (#2)
+## Data Classes (#3)
 
-Implement `createAuthorToBooksMap()` so that it takes a list of books as a parameter and builds a map from each author to the books he or she authored.
+The solution guide contains definitions for the `data` classes `Author` and
+`Book`. Create a function called `authorBooksMap()` that takes a `List` of
+books as its parameter. It builds and returns a `Map` with `Author` as the key
+which maps to to the books written by that author.

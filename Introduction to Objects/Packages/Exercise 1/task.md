@@ -1,4 +1,4 @@
-## Packages (#2)
+## Packages (#1)
 
-Import `PI` and `E` constants from the `kotlin.math` package. Display
-their values to the console.
+Import the constants `PI` and `E` from the `kotlin.math` package. Display their
+values on the console.

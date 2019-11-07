@@ -1,7 +1,7 @@
 ## Lists (#3)
 
-Write a function to determine whether two strings are anagrams. An anagram is a
-word formed by rearranging the letters of a different word, using all the
+Write a function to determine whether two `String`s are anagrams. An anagram
+is a word formed by rearranging the letters of a different word, using all the
 original letters exactly once.
 
 <div class="hint">

@@ -1,28 +1,28 @@
 ## Expressions & Statements (#3)
 
-Guess what the following code will print and then check yourself:
+Guess what the following code will display and then check yourself:
 
 ```kotlin
 var i = 1
 println(i-- - --i)
 ```
 
-Open 'hint' to see the explanation.
+Open the hint in Intellij IDEA to see the explanation.
 
 <div class="hint">
 
 This code can be rewritten as:
 
 ```kotlin
-// i-- means: 
-// first the current value is return,
-// then the value is decremented
+// i-- means:
+// First the current value is produced,
+// then the value is decremented.
 val left = i // i: 1, left: 1
 i -= 1 // i: 0
 
 // --i means:
-// first the value is decremented,
-// then the current value is return 
+// First the value is decremented,
+// then the current value is produced.
 i -= 1 // i: -1
 val right = i // i: -1, right: -1
 

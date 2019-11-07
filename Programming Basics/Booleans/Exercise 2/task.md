@@ -11,6 +11,6 @@ The sample output for `showAnd(true, true)` should be:
 true && true == true
 ```
 
-Then write a function `showTruthTable` that should display a table produced by
+Now write a function `showTruthTable()` that displays the table produced by
 all possible combinations of `true` and `false` for both `showAnd()` and
 `showOr()`. Make sure you include all possible ordering.

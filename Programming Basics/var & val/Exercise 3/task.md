@@ -6,14 +6,14 @@ x`, then fix the erroneous solution:
 ```kotlin
 var x = 1
 var y = 2
-// swap
+// Perform swap here
 println(x) // 2
 println(y) // 1
 ```
 
 Your code should remain unchanged for different initializers, like `var x =
-"first"`, `var y = "second"`. Thus saying just `x = 2`, `y = 1` is not the
-expected solution.
+"first"`, `var y = "second"`. Thus, using `x = 2`, `y = 1` is not the expected
+solution.
 
 <div class="hint">
 

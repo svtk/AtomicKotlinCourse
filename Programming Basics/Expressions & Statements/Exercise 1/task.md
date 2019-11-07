@@ -1,3 +1,3 @@
 ## Expressions & Statements (#1)
 
-Display the result of `println(1)`.
+Display the return value of `println(1)`.

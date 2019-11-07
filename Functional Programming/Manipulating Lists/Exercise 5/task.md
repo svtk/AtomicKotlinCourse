@@ -2,4 +2,4 @@
 
 To better understand `flatten()` and `flatMap()` functions, implement one
 using another.
-In this task, implement `flatMap()` using `flatten()`.
+In this exercise, implement `flatMap()` using `flatten()`.

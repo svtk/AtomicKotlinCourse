@@ -6,7 +6,7 @@ example:
 - "mom" is a palindrome
 - "dad" is a palindrome
 - "rotator" is a palindrome
-- "street" is *not* a palindrome
+- "streets" is *not* a palindrome
 
 Write a function that checks whether a word or phrase is a palindrome.
 

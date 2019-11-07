@@ -1,7 +1,6 @@
 ## Summary 1 (#4)
 
-In this exercise, we'll modify `Overflow.kt` so it tests `Long` and `Double`
-in the same way. The `testLong()` function should print the `Long` maximum value
-increased by `1`. The `testDouble()` function should print the `Double` maximum value
-increased by `1`. `testDouble2()` should print the result of comparison
-of `Double.MAX_VALUE` and `Double.MAX_VALUE + 1`.
+Modify `Overflow.kt` so it tests `Long` and `Double`. `testLong()` displays
+the `Long` maximum value increased by `1`. `testDouble()` displays the
+`Double` maximum value increased by `1`. `testDouble2()` displays the result
+of comparing `Double.MAX_VALUE` and `Double.MAX_VALUE + 1`.

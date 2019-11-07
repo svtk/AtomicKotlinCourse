@@ -1,4 +1,4 @@
 ## Testing (#1)
 
-Implement the `abs` function returning the absolute value of its parameter
-and test it in `main` using `eq` against arguments `0`, `42`, `-239`.
+Implement a function `abs()` which returns the absolute value of its parameter.
+Use `eq` to test it in `main()` using the arguments `0`, `42`, and `-239`.

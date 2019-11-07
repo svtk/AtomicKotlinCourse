@@ -1,7 +1,11 @@
-This is the markdown document.
+## Data Classes (#2)
 
-Write your task text here
+Create an extension function `transferTicket` that copies an `AirlineTicket`
+object, replacing `firstName` and `lastName` with the new values during the copy:
 
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+```
+fun AirlineTicket.transferTicket(
+  otherFirstName: String, 
+  otherLastName: String
+): AirlineTicket
+```

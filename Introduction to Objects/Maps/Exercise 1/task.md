@@ -1,5 +1,6 @@
 ## Maps (#1)
 
-Implement `buildNumberToContactMap(contactList: List<Contact>)` to map numbers
-to `Contact`s. If any two `Contact`s have the same number the last `Contact` in
-`contactList` should be added to the map.
+Write the function `buildNumberToContactMap(contactList: List<Contact>)` that
+returns a `Map` with numbers as keys and `Contact`s as values. When two
+`Contact`s have the same key, the last `Contact` in `contactList` with that
+key is the one that appears in the resulting `Map`.

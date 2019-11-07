@@ -1,6 +1,6 @@
 ## Scope Functions (#3)
 
-Rewrite the following function using one of the scope functions 
+Rewrite the following function using one of the scope functions
 to have only one call chain:
 
 ```kotlin
