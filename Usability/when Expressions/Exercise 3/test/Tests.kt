@@ -9,7 +9,7 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestWhenExpressionsExercise3 {
   private fun checkBalanced(s: String, expected: Boolean) {
-    Assert.assertEquals("isBalanced($s) should return $expected", isBalanced(s), expected)
+    Assert.assertEquals("isBalanced($s) should return $expected", balanced(s), expected)
   }
 
   @Test(timeout = TIMEOUT)
@@ -41,7 +41,7 @@ class TestWhenExpressionsExercise3 {
 
   private fun checkWrongInput(s: String) {
     try {
-      isBalanced(s)
+      balanced(s)
       throw AssertionError("""IllegalArgumentException should be thrown for 'isBalanced("$s")'""")
     } catch (e: IllegalArgumentException) {
       // ok

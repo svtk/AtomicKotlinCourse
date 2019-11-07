@@ -3,8 +3,8 @@ package whenExpressionsExercise1
 import atomictest.capture
 import atomictest.eq
 
-fun getCloudinessDescription(cloudiness: Int): String =
-  when (cloudiness) {
+fun cloudiness(cloudPercent: Int): String =
+  when (cloudPercent) {
     in 81..100 -> "Sunny"
     in 61..80 -> "Mostly Sunny"
     in 41..60 -> "Partly Sunny"
@@ -15,12 +15,12 @@ fun getCloudinessDescription(cloudiness: Int): String =
   }
 
 fun main() {
-  getCloudinessDescription(100) eq "Sunny"
-  getCloudinessDescription(70) eq "Mostly Sunny"
-  getCloudinessDescription(50) eq "Partly Sunny"
-  getCloudinessDescription(30) eq "Mostly Cloudy"
-  getCloudinessDescription(0) eq "Cloudy"
+  cloudiness(100) eq "Sunny"
+  cloudiness(70) eq "Mostly Sunny"
+  cloudiness(50) eq "Partly Sunny"
+  cloudiness(30) eq "Mostly Cloudy"
+  cloudiness(0) eq "Cloudy"
   capture {
-    getCloudinessDescription(1000)
+    cloudiness(1000)
   } eq "IllegalArgumentException: Cloudiness value should be between 0 and 100"
 }

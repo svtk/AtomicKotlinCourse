@@ -12,7 +12,7 @@ enum class Result {
   DRAW, FIRST_WINS, SECOND_WINS
 }
 
-fun findWinner(first: Rochambeau, second: Rochambeau): Result {
+fun winner(first: Rochambeau, second: Rochambeau): Result {
   if (first == second) return DRAW
   val winningCombinations = mapOf(
     ROCK to SCISSORS,
@@ -25,7 +25,7 @@ fun findWinner(first: Rochambeau, second: Rochambeau): Result {
 }
 
 fun main() {
-  findWinner(ROCK, SCISSORS) eq FIRST_WINS
-  findWinner(SCISSORS, ROCK) eq SECOND_WINS
-  findWinner(PAPER, PAPER) eq DRAW
+  winner(ROCK, SCISSORS) eq FIRST_WINS
+  winner(SCISSORS, ROCK) eq SECOND_WINS
+  winner(PAPER, PAPER) eq DRAW
 }

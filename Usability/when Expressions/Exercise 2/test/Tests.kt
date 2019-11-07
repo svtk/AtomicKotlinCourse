@@ -18,7 +18,7 @@ class TestWhenExpressionsExercise2 {
   fun test() {
     for (temperature in -100..110) {
       Assert.assertEquals("Wrong value for temperature=$temperature",
-        expected(temperature), getTemperatureDescription(temperature))
+        expected(temperature), temperature(temperature))
     }
   }
 }

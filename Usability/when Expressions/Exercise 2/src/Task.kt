@@ -2,7 +2,7 @@ package whenExpressionsExercise2
 
 import atomictest.eq
 
-fun getTemperatureDescription(temperature: Int): String =
+fun temperature(temperature: Int): String =
   when {
     temperature >= 25 -> "Hot"
     temperature in 15..24 -> "Warm"
@@ -12,7 +12,7 @@ fun getTemperatureDescription(temperature: Int): String =
   }
 
 fun main() {
-  getTemperatureDescription(30) eq "Hot"
-  getTemperatureDescription(10) eq "Cool"
-  getTemperatureDescription(-30) eq "Freezing"
+  temperature(30) eq "Hot"
+  temperature(10) eq "Cool"
+  temperature(-30) eq "Freezing"
 }

@@ -12,7 +12,7 @@ import util.TIMEOUT
 class TestEnumerationsExercise3 {
   private fun checkResult(first: Rochambeau, second: Rochambeau, expected: Result) {
     Assert.assertEquals("Wrong answer for 'findWinner($first, $second)':",
-      expected, findWinner(first, second))
+      expected, winner(first, second))
   }
 
   @Test(timeout = TIMEOUT)

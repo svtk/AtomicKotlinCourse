@@ -23,13 +23,13 @@ class TestWhenExpressionsExercise1 {
   fun test1CorrectValues() {
     for (cloudiness in 0..100) {
       Assert.assertEquals("Wrong result for cloudiness=$cloudiness:",
-        expected(cloudiness), getCloudinessDescription(cloudiness))
+        expected(cloudiness), cloudiness(cloudiness))
     }
   }
 
   private fun testIncorrectValue(cloudiness: Int) {
     try {
-      getCloudinessDescription(cloudiness)
+      cloudiness(cloudiness)
       throw AssertionError("Expected an IllegalArgumentException for cloudiness=$cloudiness")
     } catch (exception: IllegalArgumentException) {
       Assert.assertEquals("Incorrect error message", "Cloudiness value should be between 0 and 100", exception.message)

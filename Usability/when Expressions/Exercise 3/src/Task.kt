@@ -2,7 +2,7 @@ package whenExpressionsExercise3
 
 import atomictest.eq
 
-fun isBalanced(input: String): Boolean {
+fun balanced(input: String): Boolean {
   var leftUnmatched = 0
   for (c in input) {
     when (c) {
@@ -19,6 +19,6 @@ fun isBalanced(input: String): Boolean {
 }
 
 fun main() {
-  isBalanced("(()) ()") eq true
-  isBalanced(")(") eq false
+  balanced("(()) ()") eq true
+  balanced(")(") eq false
 }
