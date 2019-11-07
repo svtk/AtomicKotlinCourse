@@ -14,12 +14,14 @@ class TestOverloadingExercise2 {
   private fun testDog(test: (dog: Any?, barkFunc: KFunction<*>) -> Unit) {
     val dogClass = loadClass("overloadingExercise2", "Dog")
     val barkFunctions = dogClass.memberFunctions.filter { it.name == "bark" }
-    Assert.assertEquals("Expected one 'bark' function in the class 'Dog'",
+    Assert.assertTrue("Expecting a 'bark' function in the class 'Dog'",
+      barkFunctions.isNotEmpty())
+    Assert.assertEquals("Expected only one 'bark' function in the class 'Dog'",
       1, barkFunctions.size)
     val barkFunc = barkFunctions.single()
     checkParametersOfMemberFunction(barkFunc, listOf("n" to "kotlin.Int", "say" to "kotlin.String"))
-    Assert.assertEquals("The 'say' parameter of the 'bark' function is expected to have a default value",
-      true, barkFunc.parameters.last().isOptional)
+    Assert.assertTrue("The 'say' parameter of the 'bark' function is expected to have a default value",
+      barkFunc.parameters.last().isOptional)
     val dogInstance = dogClass.createInstance()
     test(dogInstance, barkFunc)
   }
