@@ -14,7 +14,7 @@ class TestOverloadingExercise2 {
   private fun testDog(test: (dog: Any?, barkFunc: KFunction<*>) -> Unit) {
     val dogClass = loadClass("overloadingExercise2", "Dog")
     val barkFunctions = dogClass.memberFunctions.filter { it.name == "bark" }
-    Assert.assertEquals("Expected only one 'bark' function in the class 'Dog'",
+    Assert.assertEquals("Expected one 'bark' function in the class 'Dog'",
       1, barkFunctions.size)
     val barkFunc = barkFunctions.single()
     checkParametersOfMemberFunction(barkFunc, listOf("n" to "kotlin.Int", "say" to "kotlin.String"))
