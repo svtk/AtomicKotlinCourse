@@ -119,32 +119,38 @@ fun checkParametersOfConstructor(
   kClass: KClass<*>,
   params: List<Pair<String, String>>
 ) {
-  checkParameters("constructor of '${kClass.simpleName}'", constructor, params)
+  checkParameters("constructor of '${kClass.simpleName}'", constructor, params, isTopLevel = true)
 }
 
 fun checkParametersOfTopLevelFunction(
   function: KFunction<*>,
   params: List<Pair<String, String>>
 ) {
-  checkParameters("function '${function.name}'", function, params)
+  checkParameters("function '${function.name}'", function, params, isTopLevel = true)
 }
 
 fun checkParametersOfMemberFunction(
   function: KFunction<*>,
   params: List<Pair<String, String>>
 ) {
-  checkParametersOfTopLevelFunction(function,
+  checkParameters("function '${function.name}'", function,
     listOf("" to "") // this parameter refers to a class and ignored while checking
-      + params)
+      + params,
+    isTopLevel = false)
 }
 
 private fun checkParameters(
   funcOrConstructorName: String,
   function: KFunction<*>,
-  params: List<Pair<String, String>>
+  params: List<Pair<String, String>>,
+  isTopLevel: Boolean
 ) {
-  Assert.assertEquals("${funcOrConstructorName.capitalize()} is expected to have ${params.size} parameter(s)",
-    params.size, function.parameters.size)
+  // excluding an extra parameter from checking
+  fun Int.decIfMember() = if (isTopLevel) this else this - 1
+  val expectedSize = params.size.decIfMember()
+  val actualSize = function.parameters.size.decIfMember()
+  Assert.assertEquals("${funcOrConstructorName.capitalize()} is expected to have $expectedSize parameter(s)",
+    expectedSize, actualSize)
 
   val expectedParams = params.toList()
   function.parameters.forEachIndexed { index, kParameter ->
