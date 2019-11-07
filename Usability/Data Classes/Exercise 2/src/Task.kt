@@ -19,6 +19,6 @@ fun main() {
   val ticket = AirlineTicket("Bruce", "Eckel", 123456, "DEN", "HND")
   println(ticket.transferTicket("Svetlana", "Isakova"))
 }
-/* Expected output:
-AirlineTicket(first=Svetlana, last=Isakova, ticket=123456, origin=DEN, destination=HND)
+/* Output:
+AirlineTicket(firstName=Svetlana, lastName=Isakova, ticket=123456, origin=DEN, destination=HND)
 */

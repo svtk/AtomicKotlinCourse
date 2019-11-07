@@ -9,9 +9,11 @@ data class AirlineTicket(
 )
 
 fun main() {
+/*
   val ticket = AirlineTicket("Bruce", "Eckel", 123456, "DEN", "HND")
   println(ticket)
+*/
 }
 /* Expected output:
-AirlineTicket(first=Bruce, last=Eckel, ticket=123456, origin=DEN, destination=HND)
+AirlineTicket(firstName=Bruce, lastName=Eckel, ticket=123456, origin=DEN, destination=HND)
 */
