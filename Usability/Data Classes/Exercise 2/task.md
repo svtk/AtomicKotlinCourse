@@ -1,3 +1,7 @@
-## Data Classes (#2)
+This is the markdown document.
 
-Implement `createAuthorToBooksMap()` so that it takes a list of books as a parameter and builds a map from each author to the books he or she authored.
+Write your task text here
+
+<div class="hint">
+  Hints can be added anywhere in task text: type "hint" and press Tab.
+</div>
