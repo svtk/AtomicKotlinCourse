@@ -9,7 +9,7 @@ import kotlin.reflect.full.memberFunctions
 
 class TestOverloadingExercise1 {
   private fun testDog(test: (dog: Any?, firstBark: KFunction<*>, secondBark: KFunction<*>) -> Unit) {
-    val dogClass = loadClass("overloadingExercise2", "Dog")
+    val dogClass = loadClass("overloadingExercise1", "Dog")
     val barkFunctions = dogClass.memberFunctions.filter { it.name == "bark" }
     Assert.assertEquals("Expected two overloaded 'bark' function in the class 'Dog'",
       2, barkFunctions.size)
