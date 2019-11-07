@@ -20,11 +20,11 @@ class Cage(private val maxCapacity: Int) {
       true
     }
 
-  fun takeHamsterByName(name: String): Hamster? =
+  fun get(name: String): Hamster? =
     hamsters[name]
 }
 
 fun main() {
   val cage = Cage(1)
-  cage.takeHamsterByName("Alice") eq null
+  cage.get("Alice") eq null
 }
