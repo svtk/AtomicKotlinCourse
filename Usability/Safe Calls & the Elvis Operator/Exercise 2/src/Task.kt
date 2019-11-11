@@ -13,15 +13,15 @@ data class Address(
   val city: String? = null,
   val street: String? = null)
 
-fun checkUnspecified(s: String?) = s
+fun exists(s: String?) = s
   ?: "Unspecified"
 
 fun Client.getFullInfo(): String = """
        |name: $name
-       |email: ${checkUnspecified(personalInfo?.email)}
-       |country: ${checkUnspecified(personalInfo?.address?.country)}
-       |city: ${checkUnspecified(personalInfo?.address?.city)}
-       |street: ${checkUnspecified(personalInfo?.address?.street)}
+       |email: ${exists(personalInfo?.email)}
+       |country: ${exists(personalInfo?.address?.country)}
+       |city: ${exists(personalInfo?.address?.city)}
+       |street: ${exists(personalInfo?.address?.street)}
     """.trimMargin()
 
 fun main() {
