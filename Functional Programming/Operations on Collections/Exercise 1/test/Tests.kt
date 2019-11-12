@@ -8,11 +8,11 @@ import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestOperationsOnCollectionsExercise1 {
-  private fun checkOldest(list: List<Person>, requiredNumber: Int) {
-    Assert.assertEquals("Wrong result for requiredNumber = $requiredNumber in $list:",
+  private fun checkOldest(list: List<Person>, quantity: Int) {
+    Assert.assertEquals("Wrong result for quantity = $quantity in $list:",
       list.sortedByDescending { it.age }
-        .take(requiredNumber).map { it.name }.sorted(),
-      findOldest(list, requiredNumber)
+        .take(quantity).map { it.name }.sorted(),
+      findOldest(list, quantity)
     )
   }
 
