@@ -1,4 +1,5 @@
 ## Operations on Collections (#2)
 
-Implement the `operation` lambda body so that the predicates in the example
-produced the specified results.
+The starter code contains a skeleton for a lambda named `operation` which is
+used as a predicate in several function calls on a `List`. Implement
+`operation` so the function calls produce the specified results.
