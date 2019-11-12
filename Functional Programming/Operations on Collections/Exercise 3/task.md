@@ -1,3 +1,4 @@
 ## Operations on Collections (#3)
 
-Find sum of nullable integer numbers. Interpret `null` as zero.
+Define the function `sum(list: List<Int?>)` to add up the (nullable) `Int`s in
+`list`. Interpret `null` as zero.
