@@ -4,7 +4,10 @@ files:
   visible: true
   placeholders:
   - offset: 36
-    length: 176
-    placeholder_text: // TODO
+    length: 63
+    placeholder_text: class Rocket
+  - offset: 101
+    length: 53
+    placeholder_text: fun launch() {}
 - name: test/Tests.kt
   visible: false
