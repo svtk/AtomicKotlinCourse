@@ -1,6 +1,7 @@
-## Non-`null` Assertions (#1)
+This is the markdown document.
 
-Implement the function `sumOfFirstAndLast` which returns a sum of the first and
-the last elements in a list of integers. If the list is empty, zero should
-be returned, if the list consists of one element only, this element should
-be returned as a result.
+Write your task text here
+
+<div class="hint">
+  Hints can be added anywhere in task text: type "hint" and press Tab.
+</div>
