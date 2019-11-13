@@ -2,10 +2,7 @@ package extensionPropertiesExercise3
 
 import org.junit.Assert
 import org.junit.Test
-import util.checkParametersOfConstructor
-import util.loadClass
-import util.loadFileFacade
-import util.loadToplevelPropertyGetter
+import util.*
 
 class TestExtensionPropertiesExercise3 {
   private fun testRectangle(width: Int, height: Int) {
@@ -18,10 +15,7 @@ class TestExtensionPropertiesExercise3 {
     val fileFacade = loadFileFacade("extensionPropertiesExercise3")
     val property = loadToplevelPropertyGetter(fileFacade, "isSquare")
 
-    Assert.assertTrue("The 'isSquare' property must be an *extension* property",
-      property.parameters.size == 1)
-    Assert.assertTrue("Wrong receiver for 'isSquare' property: should be 'Rectangle'",
-      rectangleClass.java == property.parameters.single().type)
+    checkPropertyIsExtension(property, rectangleClass)
 
     val actual = property.invoke(Object(), rectangleInstance)
     Assert.assertEquals("Wrong result for 'isSquare' for Rectangle($width, $height)",

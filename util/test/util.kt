@@ -197,6 +197,25 @@ fun loadToplevelPropertyGetter(fileFacade: KFileFacade, propertyName: String): M
   return loadToplevelMember(fileFacade, propertyName, true)
 }
 
+fun checkFunctionIsExtension(function: Method, expectedReceiver: KClass<*>) {
+  checkFunctionOrPropertyIsExtension(function, expectedReceiver, isGetter = false)
+}
+
+fun checkPropertyIsExtension(propertyGetter: Method, expectedReceiver: KClass<*>) {
+  checkFunctionOrPropertyIsExtension(propertyGetter, expectedReceiver, isGetter = true)
+}
+
+private fun checkFunctionOrPropertyIsExtension(
+  functionOrGetter: Method, expectedReceiver: KClass<*>, isGetter: Boolean
+) {
+  val name = functionOrGetter.name
+  val callable = if (isGetter) "property" else "function"
+  Assert.assertTrue("The '$name' $callable must be an *extension* $callable",
+    functionOrGetter.parameters.size == 1)
+  Assert.assertTrue("Wrong receiver for '$name': should be '${expectedReceiver.simpleName}'",
+    expectedReceiver.java == functionOrGetter.parameters.single().type)
+}
+
 fun untestable() {
   Assert.assertTrue("No tests: tests always pass", true)
 }
