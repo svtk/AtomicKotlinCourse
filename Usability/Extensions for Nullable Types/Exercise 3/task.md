@@ -1,5 +1,5 @@
 ## Extensions for Nullable Types (#3)
 
-Create a `data` class called `Container` with a `val` property `contents` which
-is initialized in the constructor. Write extension methods for nullable
-`Container`s called `empty()` and `full()`.
+The "starter code" contains a `data` class called `Container`. Write extension
+methods for nullable `Container`s called `empty()` and `full()` checking
+that the `contents` is `null` or not `null` accordingly.
