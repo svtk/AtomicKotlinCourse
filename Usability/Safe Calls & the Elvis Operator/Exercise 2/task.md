@@ -1,13 +1,4 @@
-## Safe Calls & the Elvis Operator (#2)
+## Safe Calls & the Elvis Operator (#1)
 
-Implement the extension function `getFullInfo()` returning a string value.
-It should list the properties of the class as in the example below and
-add `"Unspecified"` if the corresponding value is `null`:
-
-```
-name: Alice
-email: alice@gmail.com
-country: Germany
-city: Munich
-street: Unspecified
-```
+Implement the extension function `comesFromMunich` checking that a client's city
+is "Munich". If the city is unspecified the function should return `false`.

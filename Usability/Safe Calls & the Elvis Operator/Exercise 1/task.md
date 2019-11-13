@@ -1,4 +1,7 @@
-## Safe Calls & the Elvis Operator (#1)
+This is the markdown document.
 
-Implement the extension function `comesFromMunich` checking that a client's city
-is "Munich". If the city is unspecified the function should return `false`.
+Write your task text here
+
+<div class="hint">
+  Hints can be added anywhere in task text: type "hint" and press Tab.
+</div>

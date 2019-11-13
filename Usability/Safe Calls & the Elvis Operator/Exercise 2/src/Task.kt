@@ -1,4 +1,6 @@
-package safeCallsAndTheElvisOperatorExercise2
+package safeCallsAndTheElvisOperatorExercise1
+
+import atomictest.eq
 
 data class Client(
   val name: String,
@@ -13,36 +15,12 @@ data class Address(
   val city: String? = null,
   val street: String? = null)
 
-fun exists(s: String?) = s
-  ?: "Unspecified"
-
-fun Client.getFullInfo(): String = """
-       |name: $name
-       |email: ${exists(personalInfo?.email)}
-       |country: ${exists(personalInfo?.address?.country)}
-       |city: ${exists(personalInfo?.address?.city)}
-       |street: ${exists(personalInfo?.address?.street)}
-    """.trimMargin()
+fun Client.comesFromMunich(): Boolean =
+  personalInfo?.address?.city == "Munich"
 
 fun main() {
   val alice = Client("Alice",
-    PersonalInfo(
-      email = "alice@gmail.com",
-      address = Address("Germany", "Munich")))
-  println(alice.getFullInfo())
-  println("---")
-  println(Client("Bob").getFullInfo())
+    PersonalInfo(address = Address("Germany", "Munich")))
+  alice.comesFromMunich() eq true
+  Client("Bob").comesFromMunich() eq false
 }
-/* Output:
-name: Alice
-email: alice@gmail.com
-country: Germany
-city: Munich
-street: Unspecified
----
-name: Bob
-email: Unspecified
-country: Unspecified
-city: Unspecified
-street: Unspecified
-*/
