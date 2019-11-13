@@ -9,7 +9,7 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestNonNullAssertionsExercise3 {
   private fun testResult(list: List<Int>, expected: Boolean) {
-    Assert.assertEquals("Wrong result for $list:", expected, maxEqualsMinInAbsoluteValue(list))
+    Assert.assertEquals("Wrong result for $list:", expected, absValueMaxEqualsMin(list))
   }
 
   @Test(timeout = TIMEOUT)

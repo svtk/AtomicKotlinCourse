@@ -16,7 +16,7 @@ data class Address(
 fun exists(s: String?) = s
   ?: "Unspecified"
 
-fun Client.getFullInfo(): String = """
+fun Client.fullInfo(): String = """
        |name: $name
        |email: ${exists(personalInfo?.email)}
        |country: ${exists(personalInfo?.address?.country)}
@@ -29,9 +29,9 @@ fun main() {
     PersonalInfo(
       email = "alice@gmail.com",
       address = Address("Germany", "Munich")))
-  println(alice.getFullInfo())
+  println(alice.fullInfo())
   println("---")
-  println(Client("Bob").getFullInfo())
+  println(Client("Bob").fullInfo())
 }
 /* Output:
 name: Alice

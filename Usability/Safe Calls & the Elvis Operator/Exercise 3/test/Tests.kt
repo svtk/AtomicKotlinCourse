@@ -9,7 +9,7 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSafeCallsAndTheElvisOperatorExercise3 {
   private fun checkFullInfoRepresentation(client: Client, fullInfo: String) {
-    Assert.assertEquals("Wrong full info representation:", fullInfo.trimMargin(), client.getFullInfo())
+    Assert.assertEquals("Wrong full info representation:", fullInfo.trimMargin(), client.fullInfo())
   }
 
   @Test(timeout = TIMEOUT)

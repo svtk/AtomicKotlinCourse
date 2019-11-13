@@ -2,7 +2,7 @@ package nonNullAssertionsExercise2
 
 import atomictest.eq
 
-fun sumOfFirstAndLast(list: List<Int>): Int =
+fun sumFirstAndLast(list: List<Int>): Int =
   when {
     list.isEmpty() -> 0
     list.size == 1 -> list.first()
@@ -10,8 +10,8 @@ fun sumOfFirstAndLast(list: List<Int>): Int =
   }
 
 fun main() {
-  sumOfFirstAndLast(listOf()) eq 0
-  sumOfFirstAndLast(listOf(1)) eq 1
-  sumOfFirstAndLast(listOf(1, 2)) eq 3
-  sumOfFirstAndLast(listOf(1, 2, 3)) eq 4
+  sumFirstAndLast(listOf()) eq 0
+  sumFirstAndLast(listOf(1)) eq 1
+  sumFirstAndLast(listOf(1, 2)) eq 3
+  sumFirstAndLast(listOf(1, 2, 3)) eq 4
 }
