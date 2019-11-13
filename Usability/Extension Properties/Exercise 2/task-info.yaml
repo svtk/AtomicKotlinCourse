@@ -2,5 +2,9 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 60
+    length: 54
+    placeholder_text: '// TODO: implement ''reversed'''
 - name: test/Tests.kt
   visible: false

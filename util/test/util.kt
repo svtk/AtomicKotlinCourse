@@ -107,7 +107,10 @@ private fun loadToplevelMember(fileFacade: KFileFacade, memberName: String, isGe
     throw AssertionError("Can't find the $obj in '${fileFacade.fileName}.kt' file")
   }
   return try {
-    val name = if (isGetter) "get" + memberName.capitalize() else memberName
+    val name = if (isGetter && !memberName.startsWith("is"))
+      "get" + memberName.capitalize()
+    else
+      memberName
     fileFacade.jClass.declaredMethods.find { it.name == name } ?: error()
   } catch (e: NoSuchMethodException) {
     error()
@@ -147,6 +150,7 @@ private fun checkParameters(
 ) {
   // excluding an extra parameter from checking
   fun Int.decIfMember() = if (isTopLevel) this else this - 1
+
   val expectedSize = params.size.decIfMember()
   val actualSize = function.parameters.size.decIfMember()
   Assert.assertEquals("${funcOrConstructorName.capitalize()} is expected to have $expectedSize parameter(s)",

@@ -1,12 +1,14 @@
 ## Introduction to Generics (#3)
 
-Create a generic class called `Set` containing a `private List` and two member
-functions:
+Create a generic class called `CountingSet` that counts how many times
+each element was added to it. Implement it using a `private Map`. It should
+define three member functions:
 
-- `add()` to add a new element. If the client programmer tries to `add()` an
-element that is already in the `Set`, ignore it.
+- `add(element: T)` adds a new element. If the client programmer tries to `add()`
+an element that is already in the `CountingSet`, the corresponding counter should
+be increased.
 
-- `list()` which returns a copy of the internal `List`.
+- `count(element: T)` returns the number of times each element was added to the
+`CountingSet`.
 
-Test your `Set` using `data class Dog(name: String)` and
-`data class Ball(radius: Int, color: String)`.
+- `toSet()` returns a set of stored elements.
