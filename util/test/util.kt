@@ -60,34 +60,40 @@ fun checkInputOutput(message: String, input: String, expectedOutput: String, act
   checkSystemOutput(message, expectedOutput, out.toString())
 }
 
+private fun notFoundError(what: String, where: String): Nothing {
+  throw AssertionError("Can't find the $what in $where")
+}
+
+private fun tooManyError(what: String, where: String): Nothing {
+  throw AssertionError("Expected only one $what in $where")
+}
+
+private fun <T> List<T>.checkFoundEntities(what: String, where: String): List<T> {
+  if (isEmpty()) notFoundError(what, where)
+  if (size > 1) tooManyError(what, where)
+  return this
+}
+
 fun loadClass(packageName: String, className: String): KClass<*> {
   return try {
     ClassLoader.getSystemClassLoader().loadClass("$packageName.$className").kotlin
   } catch (e: ClassNotFoundException) {
-    throw AssertionError("Can't find the '$className' class in '$packageName' package")
+    notFoundError(what = "the '$className' class", where = "'$packageName' package")
   }
 }
 
 fun loadMemberFunction(kClass: KClass<*>, methodName: String): KFunction<*> {
-  fun error(): Nothing {
-    throw AssertionError("Can't find the '$methodName()' member function in '${kClass.simpleName}' class")
-  }
-  return try {
-    kClass.memberFunctions.find { it.name == methodName } ?: error()
-  } catch (e: NoSuchMethodException) {
-    error()
-  }
+  return kClass.memberFunctions
+    .filter { it.name == methodName }
+    .checkFoundEntities(what = "the '$methodName()' member function", where = "'${kClass.simpleName}' class")
+    .single()
 }
 
 fun loadMemberProperty(kClass: KClass<*>, propertyName: String): KProperty<*> {
-  fun error(): Nothing {
-    throw AssertionError("Can't find the '$propertyName' member property in '${kClass.simpleName}' class")
-  }
-  return try {
-    kClass.memberProperties.find { it.name == propertyName } ?: error()
-  } catch (e: NoSuchMethodException) {
-    error()
-  }
+  return kClass.memberProperties
+    .filter { it.name == propertyName }
+    .checkFoundEntities("the '$propertyName' member property", "'${kClass.simpleName}' class")
+    .single()
 }
 
 class KFileFacade(val packageName: String, val fileName: String, val jClass: Class<*>)
@@ -97,24 +103,20 @@ fun loadFileFacade(packageName: String, fileName: String = "Task"): KFileFacade 
     KFileFacade(packageName, fileName,
       ClassLoader.getSystemClassLoader().loadClass("$packageName.${fileName.capitalize()}Kt"))
   } catch (e: ClassNotFoundException) {
-    throw AssertionError("Can't find the '$fileName.kt' file in '$packageName' package")
+    notFoundError(what = "the '$fileName.kt' file", where = "'$packageName' package")
   }
 }
 
 private fun loadToplevelMember(fileFacade: KFileFacade, memberName: String, isGetter: Boolean): Method {
-  fun error(): Nothing {
-    val obj = if (isGetter) "'$memberName' property" else "'$memberName()' function"
-    throw AssertionError("Can't find the $obj in '${fileFacade.fileName}.kt' file")
-  }
-  return try {
-    val name = if (isGetter && !memberName.startsWith("is"))
-      "get" + memberName.capitalize()
-    else
-      memberName
-    fileFacade.jClass.declaredMethods.find { it.name == name } ?: error()
-  } catch (e: NoSuchMethodException) {
-    error()
-  }
+  val name = if (isGetter && !memberName.startsWith("is"))
+    "get" + memberName.capitalize()
+  else
+    memberName
+  return fileFacade.jClass.declaredMethods
+    .filter { it.name == name }
+    .checkFoundEntities(what = if (isGetter) "'$memberName' property" else "'$memberName()' function",
+      where = "'${fileFacade.fileName}.kt' file")
+    .single()
 }
 
 fun checkParametersOfConstructor(
@@ -186,7 +188,6 @@ private fun checkParameter(index: Int, name: String, type: String, param: KParam
       type, param.type.toString())
   }
 }
-
 
 fun loadToplevelFunction(fileFacade: KFileFacade, functionName: String): Method {
   return loadToplevelMember(fileFacade, functionName, false)
