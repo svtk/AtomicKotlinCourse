@@ -2,5 +2,9 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 109
+    length: 91
+    placeholder_text: // TODO Implement 'empty' and 'full' extension functions
 - name: test/Tests.kt
   visible: false
