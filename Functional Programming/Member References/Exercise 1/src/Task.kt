@@ -3,18 +3,18 @@ package memberReferencesExercise1
 import atomictest.eq
 
 data class Student(
-  val name: String,
-  val surname: String,
+  val firstName: String,
+  val lastName: String,
   val grade: Int
 ) {
   override fun toString(): String {
-    return "$name $surname ($grade)"
+    return "$firstName $lastName ($grade)"
   }
 }
 
 fun List<Student>.sortByGradeAndThenByName(): List<Student> = sortedWith(
   compareByDescending(Student::grade)
-    .then(compareBy(Student::surname, Student::name)))
+    .then(compareBy(Student::lastName, Student::firstName)))
 
 fun main() {
   val people = listOf(

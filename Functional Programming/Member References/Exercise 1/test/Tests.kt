@@ -14,7 +14,7 @@ class TestMemberReferencesExercise1 {
   ) {
     Assert.assertEquals("Wrong result for $list:",
       list.sortedWith(compareByDescending(Student::grade)
-        .then(compareBy(Student::surname, Student::name))),
+        .then(compareBy(Student::lastName, Student::firstName))),
       list.sortByGradeAndThenByName())
   }
 
@@ -50,12 +50,12 @@ class TestMemberReferencesExercise1 {
 
   @Test(timeout = TIMEOUT)
   fun test6() {
-    val names = ('A'..'E').map { "$it" }
-    val surnames = (1..6).map { "S$it" }
+    val firstNames = ('A'..'E').map { "$it" }
+    val lastNames = (1..6).map { "S$it" }
     val random = Random()
     repeat(20) {
-      check(names.shuffled().zip(surnames.shuffled()).map { (name, surname) ->
-        Student(name, surname, random.nextInt(4))
+      check(firstNames.shuffled().zip(lastNames.shuffled()).map { (firstName, lastName) ->
+        Student(firstName, lastName, random.nextInt(4))
       })
     }
   }

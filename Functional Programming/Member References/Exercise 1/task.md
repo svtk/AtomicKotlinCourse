@@ -1,5 +1,6 @@
 ## Member References (#1)
 
-Complete the implementation of the `sortByGradeAndThenByName()` function:
-first sort the students by their grade in a descending order (starting from the
-largest), then sort them first by their surname, then by name.
+The starter code defines a `Student` class. Complete the implementation of the
+`sortByGradeAndThenByName()` extension function to `List<Student>`. First sort
+the students by their grade in descending order (starting from the highest
+grade), then sort by `lastName`, then `firstName`.
