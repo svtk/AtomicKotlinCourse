@@ -15,7 +15,7 @@ class TestExtensionPropertiesExercise3 {
       listOf("width" to "kotlin.Int", "height" to "kotlin.Int"))
     val rectangleInstance = constructor.call(width, height)
 
-    val fileFacade = loadFileFacade("extensionPropertiesExercise3", "Task")
+    val fileFacade = loadFileFacade("extensionPropertiesExercise3")
     val property = loadToplevelPropertyGetter(fileFacade, "isSquare")
 
     Assert.assertTrue("The 'isSquare' property must be an *extension* property",

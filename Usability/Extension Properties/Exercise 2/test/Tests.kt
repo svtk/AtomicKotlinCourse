@@ -7,7 +7,7 @@ import util.loadToplevelPropertyGetter
 
 class TestExtensionPropertiesExercise2 {
   private fun <T> testProp(list: List<T>) {
-    val fileFacade = loadFileFacade("extensionPropertiesExercise2", "Task")
+    val fileFacade = loadFileFacade("extensionPropertiesExercise2")
     val property = loadToplevelPropertyGetter(fileFacade, "reversed")
     Assert.assertTrue("The 'reversed' property must be an *extension* property",
       property.parameters.size == 1)

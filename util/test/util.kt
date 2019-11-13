@@ -92,7 +92,7 @@ fun loadMemberProperty(kClass: KClass<*>, propertyName: String): KProperty<*> {
 
 class KFileFacade(val packageName: String, val fileName: String, val jClass: Class<*>)
 
-fun loadFileFacade(packageName: String, fileName: String): KFileFacade {
+fun loadFileFacade(packageName: String, fileName: String = "Task"): KFileFacade {
   return try {
     KFileFacade(packageName, fileName,
       ClassLoader.getSystemClassLoader().loadClass("$packageName.${fileName.capitalize()}Kt"))

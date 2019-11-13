@@ -9,7 +9,7 @@ import util.runAndCheckSystemOutput
 class TestHelloWorldExercise1 {
   @Test(timeout = TIMEOUT)
   fun test() {
-    val fileFacade = loadFileFacade("helloWorldExercise1", "Task")
+    val fileFacade = loadFileFacade("helloWorldExercise1")
     val mainFunction = loadToplevelFunction(fileFacade, "main")
     runAndCheckSystemOutput("Wrong output", "Hello, Kotlin!") {
       mainFunction.invoke(Object())
