@@ -1,4 +1,4 @@
-package safeCallsAndTheElvisOperatorExercise1
+package safeCallsAndTheElvisOperatorExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSafeCallsAndTheElvisOperatorExercise1 {
+class TestSafeCallsAndTheElvisOperatorExercise2 {
   @Test(timeout = TIMEOUT)
   fun test1SampleFromMunich() {
     val client = Client("Alice",

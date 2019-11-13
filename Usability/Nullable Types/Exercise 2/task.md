@@ -1,20 +1,10 @@
 ## Nullable Types (#2)
 
-Access Java's `File` class by importing `java.io.File`. Create a `File` object,
-passing it the name of the current directory. Now call `list()` on the `File`
-object; this returns an `Array<String>` which you can display on the console.
+Write a function called `zilch()` which takes no arguments, has a function
+return type of `String`, and returns `null`. Write a second function `zilch2()`
+which returns the result of calling `zilch()`, and also has an explicit return
+type.
 
-{{ I thought this would produce a compile-time error because list() can return
-   null, but it doesn't seem to:
-
-```kotlin
-// NullableTypes/JavaFileList.kt
-import java.io.File
-
-fun main() {
-    val f:File = File(".")
-    val d:Array<String> = f.list()
-    d.forEach { println("$it") }
-}
-```
-}}
+In `main()`, call `zilch()` and assign the result to a `var` which you
+explicitly type. Do the same for `zilch2()`. What must you do in order to get
+this code to compile?

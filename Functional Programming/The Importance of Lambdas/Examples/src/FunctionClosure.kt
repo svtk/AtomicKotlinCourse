@@ -1,4 +1,4 @@
-// ImportanceOfLambdas/Closures3.kt
+// ImportanceOfLambdas/FunctionClosure.kt
 import atomictest.eq
 
 var x = 100

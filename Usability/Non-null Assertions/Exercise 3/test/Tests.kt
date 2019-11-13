@@ -1,4 +1,4 @@
-package nonNullAssertionsExercise2
+package nonNullAssertionsExercise3
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestNonNullAssertionsExercise2 {
+class TestNonNullAssertionsExercise3 {
   private fun testResult(list: List<Int>, expected: Boolean) {
     Assert.assertEquals("Wrong result for $list:", expected, maxEqualsMinInAbsoluteValue(list))
   }

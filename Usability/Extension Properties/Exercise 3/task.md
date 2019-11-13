@@ -1,7 +1,4 @@
-This is the markdown document.
+## Extension Properties (#3)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Modify the `Set` class (from the exercises in the previous atom) so that `list`
+is an extension property.

@@ -1017,11 +1017,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testJavaFileList() {
-        testExample("../AtomicKotlinCourse/Usability/Nullable Types/Examples/src/JavaFileList.kt", JavaFileListKt::main);
-    }
-
-    @Test
     public void testAmphibian() {
         testExample("../AtomicKotlinCourse/Usability/Nullable Types/Examples/src/Amphibian.kt", AmphibianKt::main);
     }
@@ -1242,13 +1237,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testGreaterThan2() {
-        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/GreaterThan2.kt", GreaterThan2Kt::main);
+    public void testFunctionClosure() {
+        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/FunctionClosure.kt", FunctionClosureKt::main);
     }
 
     @Test
-    public void testClosures3() {
-        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/Closures3.kt", Closures3Kt::main);
+    public void testGreaterThan2() {
+        testExample("../AtomicKotlinCourse/Functional Programming/The Importance of Lambdas/Examples/src/GreaterThan2.kt", GreaterThan2Kt::main);
     }
 
     @Test
@@ -3033,22 +3028,22 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask138() {
-        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Exercise 1/src/Task.kt", safeCallsAndTheElvisOperatorExercise1.TaskKt::main);
-    }
-
-    @Test
-    public void testTask139() {
         testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Exercise 2/src/Task.kt", safeCallsAndTheElvisOperatorExercise2.TaskKt::main);
     }
 
     @Test
+    public void testTask139() {
+        testExample("../AtomicKotlinCourse/Usability/Safe Calls & the Elvis Operator/Exercise 3/src/Task.kt", safeCallsAndTheElvisOperatorExercise3.TaskKt::main);
+    }
+
+    @Test
     public void testTask140() {
-        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Exercise 1/src/Task.kt", nonNullAssertionsExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Exercise 2/src/Task.kt", nonNullAssertionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask141() {
-        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Exercise 2/src/Task.kt", nonNullAssertionsExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Non-null Assertions/Exercise 3/src/Task.kt", nonNullAssertionsExercise3.TaskKt::main);
     }
 
     @Test

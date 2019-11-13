@@ -1,4 +1,6 @@
-## Safe Calls & the Elvis Operator (#1)
+## Safe Calls & the Elvis Operator (#2)
 
-Implement the extension function `comesFromMunich` checking that a client's city
-is "Munich". If the city is unspecified the function should return `false`.
+The starter code contains a `data class` called `Client`. Implement an
+extension function for `Client` called `fromMunich()` which returns a `Boolean`
+indicating whether a client's city is "Munich". If the city is unspecified the
+function returns `false`.

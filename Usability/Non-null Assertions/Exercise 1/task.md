@@ -1,7 +1,6 @@
-This is the markdown document.
+## Non-`null` Assertions (#1)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create a class `Rocket` containing a member function `ignition()` which returns
+"Liftoff!". In `main()`, define a `val rocket` of type `Rocket` and assign it
+to `null`. Use a non-null assertion to call `ignition` on `rocket`, and catch
+and display the exception.

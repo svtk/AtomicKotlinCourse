@@ -1,13 +1,13 @@
 ## Introduction to Generics (#2)
 
-Implement the `reversed` extension function on a `List`
-that returns a new list containing the same elements in a reversed order.
+Implement a generic `reversed()` extension function for `List`. It returns a
+new `List` containing the same elements but in reverse order.
 
-Note that the standard library already contains the `reversed` function,
-but your task is to implement this function from scratch.
+This function already exists in the standard Kotlin library, but for learning
+purposes you should implement it from scratch.
 
 <div class="hint">
 
-Use `N downTo 0` to iterate through indexes in a reversed order.
+Use `N downTo 0` to iterate through the indices in reverse order.
 
 </div>

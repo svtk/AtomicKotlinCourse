@@ -1,6 +1,5 @@
 ## Extensions for Nullable Types (#1)
 
-Implement the extension function `orEmpty` that returns the string if it is not
-`null`, or the empty string otherwise.
-
-The Kotlin standard library contains the same function.
+Implement a `String` extension function `orEmpty()` that returns the receiver
+`String` if it is not `null`, and an empty `String` if the receiver is `null`.
+(Note that the Kotlin standard library contains `orEmpty()`).

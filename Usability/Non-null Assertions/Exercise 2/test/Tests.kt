@@ -1,4 +1,4 @@
-package nonNullAssertionsExercise1
+package nonNullAssertionsExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestNonNullAssertionsExercise1 {
+class TestNonNullAssertionsExercise2 {
   private fun testResult(list: List<Int>, expected: Int) {
     Assert.assertEquals("Wrong result for $list:", expected, sumOfFirstAndLast(list))
   }

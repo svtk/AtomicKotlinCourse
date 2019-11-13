@@ -1,7 +1,5 @@
-This is the markdown document.
+## Extensions for Nullable Types (#3)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create a `data` class called `Container` with a `val` property `contents` which
+is initialized in the constructor. Write extension methods for nullable
+`Container`s called `empty()` and `full()`.

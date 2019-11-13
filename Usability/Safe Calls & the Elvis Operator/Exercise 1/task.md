@@ -1,7 +1,5 @@
-This is the markdown document.
+## Safe Calls & the Elvis Operator (#1)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Write a function called `downcase()` which accepts a nullable `String` and
+returns a `String`. The result is the lowercased argument if it is not `null`,
+and an empty `String` if it is.

@@ -1,8 +1,8 @@
-## Safe Calls & the Elvis Operator (#2)
+## Safe Calls & the Elvis Operator (#3)
 
-Implement the extension function `getFullInfo()` returning a string value.
-It should list the properties of the class as in the example below and
-add `"Unspecified"` if the corresponding value is `null`:
+Implement an extension function for `Client` called `fullInfo()` which returns
+a `String`. This result contains the properties of the class as in the example
+below. If a property is `null`, use `"Unspecified"` for its value:
 
 ```
 name: Alice

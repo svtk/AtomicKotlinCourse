@@ -369,10 +369,16 @@ class TestAllExercises : AbstractTestExercises() {
   fun testSafeCallsAndTheElvisOperatorExercise2() = testClass(safeCallsAndTheElvisOperatorExercise2.TestSafeCallsAndTheElvisOperatorExercise2::class)
 
   @Test
+  fun testSafeCallsAndTheElvisOperatorExercise3() = testClass(safeCallsAndTheElvisOperatorExercise3.TestSafeCallsAndTheElvisOperatorExercise3::class)
+
+  @Test
   fun testNonNullAssertionsExercise1() = testClass(nonNullAssertionsExercise1.TestNonNullAssertionsExercise1::class)
 
   @Test
   fun testNonNullAssertionsExercise2() = testClass(nonNullAssertionsExercise2.TestNonNullAssertionsExercise2::class)
+
+  @Test
+  fun testNonNullAssertionsExercise3() = testClass(nonNullAssertionsExercise3.TestNonNullAssertionsExercise3::class)
 
   @Test
   fun testExtensionsForNullableTypesExercise1() = testClass(extensionsForNullableTypesExercise1.TestExtensionsForNullableTypesExercise1::class)
@@ -381,13 +387,25 @@ class TestAllExercises : AbstractTestExercises() {
   fun testExtensionsForNullableTypesExercise2() = testClass(extensionsForNullableTypesExercise2.TestExtensionsForNullableTypesExercise2::class)
 
   @Test
+  fun testExtensionsForNullableTypesExercise3() = testClass(extensionsForNullableTypesExercise3.TestExtensionsForNullableTypesExercise3::class)
+
+  @Test
   fun testIntroductionToGenericsExercise1() = testClass(introductionToGenericsExercise1.TestIntroductionToGenericsExercise1::class)
 
   @Test
   fun testIntroductionToGenericsExercise2() = testClass(introductionToGenericsExercise2.TestIntroductionToGenericsExercise2::class)
 
   @Test
+  fun testIntroductionToGenericsExercise3() = testClass(introductionToGenericsExercise3.TestIntroductionToGenericsExercise3::class)
+
+  @Test
   fun testExtensionPropertiesExercise1() = testClass(extensionPropertiesExercise1.TestExtensionPropertiesExercise1::class)
+
+  @Test
+  fun testExtensionPropertiesExercise2() = testClass(extensionPropertiesExercise2.TestExtensionPropertiesExercise2::class)
+
+  @Test
+  fun testExtensionPropertiesExercise3() = testClass(extensionPropertiesExercise3.TestExtensionPropertiesExercise3::class)
 
   @Test
   fun testBreakAndContinueExercise1() = testClass(breakAndContinueExercise1.TestBreakAndContinueExercise1::class)

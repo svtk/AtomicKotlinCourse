@@ -1,5 +1,6 @@
 ## Lambdas (#3)
 
-Implement `registerStudents()` function creating a list of `Student`s from
-a list of `String`s. It should assign different `id`s to students starting
-from `startId`.
+The starter code contains a `data` class for `Student`. Implement the function
+`registerStudents(names: List<String>, startId: Int = 0)` to produce a
+`List<Student>` from a `List<String>`. Assign different `id`s to students
+starting from `startId`.

@@ -1,4 +1,4 @@
 ## Lambdas (#1)
 
-Finish the implementation of the `transform` function so that
-it produced the results specified below.
+The starter code contains a partially-implemented `transform()` function with a
+lambda. Complete the lambda so it produces the results in `main()`.

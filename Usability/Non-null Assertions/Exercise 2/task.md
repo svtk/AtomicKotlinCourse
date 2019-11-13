@@ -1,6 +1,5 @@
-## Non-`null` Assertions (#1)
+## Non-`null` Assertions (#2)
 
-Implement the function `sumOfFirstAndLast` which returns a sum of the first and
-the last elements in a list of integers. If the list is empty, zero should
-be returned, if the list consists of one element only, this element should
-be returned as a result.
+Implement the function `sumFirstAndLast(ints: List<Int>)` which returns a sum
+of the first and the last elements in `ints`. If `ints` is empty, return zero.
+If `ints` consists of a single element, return that element as the result.

@@ -5,7 +5,7 @@ object, replacing `firstName` and `lastName` with the new values during the copy
 
 ```
 fun AirlineTicket.transferTicket(
-  otherFirstName: String, 
+  otherFirstName: String,
   otherLastName: String
 ): AirlineTicket
 ```

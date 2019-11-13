@@ -1,7 +1,4 @@
-This is the markdown document.
+## Extension Properties (#2)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Implement `reversed` (from the exercises in the previous atom) as an extension
+property.

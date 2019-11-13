@@ -1,4 +1,4 @@
-package safeCallsAndTheElvisOperatorExercise2
+package safeCallsAndTheElvisOperatorExercise3
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSafeCallsAndTheElvisOperatorExercise2 {
+class TestSafeCallsAndTheElvisOperatorExercise3 {
   private fun checkFullInfoRepresentation(client: Client, fullInfo: String) {
     Assert.assertEquals("Wrong full info representation:", fullInfo.trimMargin(), client.getFullInfo())
   }

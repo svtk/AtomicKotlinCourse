@@ -1,5 +1,7 @@
 ## Introduction to Generics (#1)
 
-Implement the `secondOrNull` and `penultimateOrNull` extension functions
-on a `List` returning a second and second last elements accordingly or
-`null` if the list contains less than two elements.
+Implement generic extension functions `secondOrNull()` and
+`penultimateOrNull()` for `List`. Return the second element in the `List` for
+`secondOrNull()`. Return the second to the last element in the `List` for
+`penultimateOrNull()`. Return `null` if the list contains less than two
+elements.

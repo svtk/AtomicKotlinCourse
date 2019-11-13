@@ -1,4 +1,5 @@
 ## Lambdas (#2)
 
-Implement `getAuthors()` function that returns a set of authors
-which books are presented in the `books` list.
+The starter code contains `data` classes for `Author` and `Book`. Write the
+function `getAuthors(books: List<Book>)` to return the `Set` of `Author`s whose
+books are contained in `books`.
