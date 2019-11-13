@@ -1,16 +1,13 @@
 package helloWorldExercise1
 
 import org.junit.Test
-import util.TIMEOUT
-import util.loadFileFacade
-import util.loadToplevelFunction
-import util.runAndCheckSystemOutput
+import util.*
 
 class TestHelloWorldExercise1 {
   @Test(timeout = TIMEOUT)
   fun test() {
     val fileFacade = loadFileFacade("helloWorldExercise1")
-    val mainFunction = loadToplevelFunction(fileFacade, "main")
+    val mainFunction = loadMainFunction(fileFacade)
     runAndCheckSystemOutput("Wrong output", "Hello, Kotlin!") {
       mainFunction.invoke(Object())
     }

@@ -119,6 +119,19 @@ private fun loadToplevelMember(fileFacade: KFileFacade, memberName: String, isGe
     .single()
 }
 
+fun loadToplevelFunction(fileFacade: KFileFacade, functionName: String): Method {
+  return loadToplevelMember(fileFacade, functionName, false)
+}
+
+fun loadToplevelPropertyGetter(fileFacade: KFileFacade, propertyName: String): Method {
+  return loadToplevelMember(fileFacade, propertyName, true)
+}
+
+fun loadMainFunction(fileFacade: KFileFacade): Method {
+  return fileFacade.jClass.declaredMethods
+    .find { it.name == "main" } ?: notFoundError(what = "'main' function", where = "'${fileFacade.fileName}.kt' file")
+}
+
 fun checkParametersOfConstructor(
   constructor: KFunction<*>,
   kClass: KClass<*>,
@@ -187,14 +200,6 @@ private fun checkParameter(index: Int, name: String, type: String, param: KParam
     Assert.assertEquals("Expected the $ordinal parameter of type '$type' for ${funcName.decapitalize()}",
       type, param.type.toString())
   }
-}
-
-fun loadToplevelFunction(fileFacade: KFileFacade, functionName: String): Method {
-  return loadToplevelMember(fileFacade, functionName, false)
-}
-
-fun loadToplevelPropertyGetter(fileFacade: KFileFacade, propertyName: String): Method {
-  return loadToplevelMember(fileFacade, propertyName, true)
 }
 
 fun checkFunctionIsExtension(function: Method, expectedReceiver: KClass<*>) {
