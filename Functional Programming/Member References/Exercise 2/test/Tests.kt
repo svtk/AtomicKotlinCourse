@@ -5,48 +5,58 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
+import java.util.*
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestMemberReferencesExercise2 {
-  @Test(timeout = TIMEOUT)
-  fun test1Sample() {
-    val range = 1..1000
-    val even = range.filter(/*<taskWindow>*/Int::isEven/*</taskWindow>*/)
-    Assert.assertEquals("Wrong result for `even` collection:", 500, even.size)
-
-    val prime = range.filter(/*<taskWindow>*/Int::isPrime/*</taskWindow>*/)
-    Assert.assertEquals("Wrong result for `prime` collection:",
-      listOf(953, 967, 971, 977, 983, 991, 997), prime.takeLast(7))
-
-    val perfect = range.filter(/*<taskWindow>*/::isPerfect/*</taskWindow>*/)
-    Assert.assertEquals("Wrong result for `perfect` collection:",
-      listOf(6, 28, 496), perfect)
-
-  }
-
-  private fun testPrime(i: Int, isPrime: Boolean) {
-    Assert.assertEquals("The number $i ${if (isPrime) "should" else "shouldn't"} be prime", isPrime, i.isPrime())
+  private fun check(
+    list: List<Student>
+  ) {
+    Assert.assertEquals("Wrong result for $list:",
+      list.sortedWith(compareByDescending(Student::grade)
+        .then(compareBy(Student::lastName, Student::firstName))),
+      list.sortByGradeAndThenByName())
   }
 
   @Test(timeout = TIMEOUT)
-  fun test2Prime() {
-    testPrime(2, true)
-    testPrime(5, true)
-    testPrime(1861, true)
-    testPrime(2399, true)
-    testPrime(5569, true)
-    testPrime(6737, true)
-    testPrime(12007, true)
-
-    testPrime(1, false)
-    testPrime(10, false)
-    testPrime(2397, false)
-    testPrime(6739, false)
-  }
+  fun test1Sample() = check(listOf(
+    Student("Alice", "Johnson", 3),
+    Student("Bob", "Smith", 2),
+    Student("Charlie", "Smith", 2)))
 
   @Test(timeout = TIMEOUT)
-  fun test3Perfect() {
-    val i = 8128
-    Assert.assertTrue("The number $i should be perfect", isPerfect(i))
+  fun test2() = check(listOf(
+    Student("Alice", "Johnson", 1),
+    Student("Bob", "Smith", 1),
+    Student("Charlie", "Smith", 1)))
+
+  @Test(timeout = TIMEOUT)
+  fun test3() = check(listOf(
+    Student("Bob", "Smith", 1),
+    Student("Alice", "Smith", 1),
+    Student("Charlie", "Smith", 1)))
+
+  @Test(timeout = TIMEOUT)
+  fun test4() = check(listOf(
+    Student("Bob", "Smith", 2),
+    Student("Alice", "Smith", 3),
+    Student("Charlie", "Smith", 1)))
+
+  @Test(timeout = TIMEOUT)
+  fun test5() = check(listOf(
+    Student("Alice", "Johnson", 1),
+    Student("Alice", "Smith", 1),
+    Student("Alice", "Jones", 1)))
+
+  @Test(timeout = TIMEOUT)
+  fun test6() {
+    val firstNames = ('A'..'E').map { "$it" }
+    val lastNames = (1..6).map { "S$it" }
+    val random = Random()
+    repeat(20) {
+      check(firstNames.shuffled().zip(lastNames.shuffled()).map { (firstName, lastName) ->
+        Student(firstName, lastName, random.nextInt(4))
+      })
+    }
   }
 }

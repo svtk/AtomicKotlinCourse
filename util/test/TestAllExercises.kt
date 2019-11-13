@@ -453,6 +453,9 @@ class TestAllExercises : AbstractTestExercises() {
   fun testMemberReferencesExercise2() = testClass(memberReferencesExercise2.TestMemberReferencesExercise2::class)
 
   @Test
+  fun testMemberReferencesExercise3() = testClass(memberReferencesExercise3.TestMemberReferencesExercise3::class)
+
+  @Test
   fun testFunctionTypesExercise1() = testClass(functionTypesExercise1.TestFunctionTypesExercise1::class)
 
   @Test

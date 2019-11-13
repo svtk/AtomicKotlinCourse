@@ -2,33 +2,27 @@ package memberReferencesExercise2
 
 import atomictest.eq
 
-val Int.isEven: Boolean
-  get() = this % 2 == 0
-
-private fun getNonTrivialDivisors(i: Int): List<Int> {
-  return (2 until i).filter { i % it == 0 }
+data class Student(
+  val firstName: String,
+  val lastName: String,
+  val grade: Int
+) {
+  override fun toString(): String {
+    return "$firstName $lastName ($grade)"
+  }
 }
 
-fun Int.isPrime(): Boolean {
-  return this != 1 && getNonTrivialDivisors(this).isEmpty()
-}
-
-fun isPerfect(i: Int): Boolean {
-  return i != 1 && 1 + getNonTrivialDivisors(i).sum() == i
-}
+fun List<Student>.sortByGradeAndThenByName(): List<Student> = sortedWith(
+  compareByDescending(Student::grade)
+    .then(compareBy(Student::lastName, Student::firstName)))
 
 fun main() {
-  val range = 1..1000
-  val even = range.filter(Int::isEven)
-  even.size eq 500
+  val people = listOf(
+    Student("Alice", "Johnson", 1),
+    Student("Bob", "Smith", 2),
+    Student("Charlie", "Smith", 2))
 
-  val prime = range.filter(Int::isPrime)
-  prime.take(7) eq listOf(2, 3, 5, 7, 11, 13, 17)
-  prime.takeLast(7) eq
-    listOf(953, 967, 971, 977, 983, 991, 997)
-
-  val perfect = range.filter(::isPerfect)
-  perfect eq listOf(6, 28, 496)
-  // 6 = 1 + 2 + 3
-  // 28 = 1 + 2 + 4 + 7 + 14
+  people.sortByGradeAndThenByName() eq
+    "[Bob Smith (2), Charlie Smith (2), " +
+    "Alice Johnson (1)]"
 }

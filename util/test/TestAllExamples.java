@@ -3168,12 +3168,12 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask166() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Exercise 1/src/Task.kt", memberReferencesExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Exercise 2/src/Task.kt", memberReferencesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask167() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Exercise 2/src/Task.kt", memberReferencesExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Functional Programming/Member References/Exercise 3/src/Task.kt", memberReferencesExercise3.TaskKt::main);
     }
 
     @Test
