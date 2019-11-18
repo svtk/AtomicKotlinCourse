@@ -14,7 +14,7 @@ fun addConnection(first: City, second: City) {
   second.connections += first
 }
 
-fun City.getAllReachableRecursive(): Set<City> {
+fun City.allReachableRecursive(): Set<City> {
   // stores all the cities reachable from the the given city:
   val connections = mutableSetOf<City>()
 
@@ -33,7 +33,7 @@ fun City.getAllReachableRecursive(): Set<City> {
   return connections
 }
 
-fun City.getAllReachableIterative(): Set<City> {
+fun City.allReachableIterative(): Set<City> {
   // stores all the cities reachable from the given city
   val connections = mutableSetOf<City>()
   // stores all the cities which direct connections are to be analyzed
@@ -69,13 +69,13 @@ fun main() {
   addConnection(liverpool, manchester)
   addConnection(manchester, leeds)
 
-  liverpool.getAllReachableRecursive() eq
+  liverpool.allReachableRecursive() eq
     setOf(liverpool, manchester, leeds)
-  dublin.getAllReachableRecursive() eq
+  dublin.allReachableRecursive() eq
     setOf(dublin)
 
-  liverpool.getAllReachableIterative() eq
+  liverpool.allReachableIterative() eq
     setOf(liverpool, manchester, leeds)
-  dublin.getAllReachableIterative() eq
+  dublin.allReachableIterative() eq
     setOf(dublin)
 }
