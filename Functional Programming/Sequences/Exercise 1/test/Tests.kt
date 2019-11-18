@@ -37,7 +37,7 @@ class TestSequencesExercise1 : TestSchool() {
     Assert.assertEquals("Wrong result for ${instructor.name}, " +
       "${student.name}, $schoolLessons:",
       schoolLessons.filterIndexed { index, _ -> index in result },
-      schl(schoolLessons).getCommonLessons(instructor, student).toList())
+      schl(schoolLessons).commonLessons(instructor, student).toList())
   }
 
   @Test(timeout = TIMEOUT)

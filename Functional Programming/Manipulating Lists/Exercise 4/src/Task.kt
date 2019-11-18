@@ -10,7 +10,7 @@ class Person(
   override fun toString() = "($name, friends: ${friends.map { it.name }})"
 }
 
-fun getFriendSuggestions(person: Person): Set<Person> {
+fun friendSuggestions(person: Person): Set<Person> {
   return (person.friends.flatMap { it.friends }.toSet()
     - person.friends - person)
 }
@@ -25,5 +25,5 @@ fun main() {
   bob.friends += charlie
   charlie.friends += bob
 
-  getFriendSuggestions(alice) eq setOf(charlie)
+  friendSuggestions(alice) eq setOf(charlie)
 }

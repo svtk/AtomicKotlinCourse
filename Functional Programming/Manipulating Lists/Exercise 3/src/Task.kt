@@ -6,7 +6,7 @@ data class Book(val title: String, val authors: List<Author>)
 
 data class Author(val name: String)
 
-fun createAuthorToBooksMap(books: List<Book>): Map<Author, List<Book>> {
+fun authorBooksMap(books: List<Book>): Map<Author, List<Book>> {
   val authors = books.flatMap { it.authors }.toSet()
   return authors.map { author -> author to books.filter { author in it.authors } }.toMap()
 }
@@ -26,7 +26,7 @@ fun main() {
     Book("Kotlin in Action", listOf(Author("Dmitry Jemerov"), Author("Svetlana Isakova"))),
     Book("Atomic Kotlin", listOf(Author("Bruce Eckel"), Author("Svetlana Isakova")))
   )
-  val authorToBooksMap = createAuthorToBooksMap(books)
+  val authorToBooksMap = authorBooksMap(books)
   authorToBooksMap.getValue(Author("Bruce Eckel")).size eq 11
   authorToBooksMap.getValue(Author("Svetlana Isakova")).first().title eq "Kotlin in Action"
 }

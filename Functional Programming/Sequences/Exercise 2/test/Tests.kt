@@ -37,7 +37,7 @@ class TestSequencesExercise2 : TestSchool() {
     Assert.assertEquals("Wrong result for ${student.name}, " +
       "$schoolLessons:",
       result.map { inst(it) }.toSet(),
-      schl(schoolLessons).getStudentInstructors(student))
+      schl(schoolLessons).studentInstructors(student))
   }
 
   private fun checkStudents(
@@ -48,7 +48,7 @@ class TestSequencesExercise2 : TestSchool() {
     Assert.assertEquals("Wrong result for ${instructor.name}, " +
       "$schoolLessons:",
       result.map { st(it) }.toSet(),
-      schl(schoolLessons).getStudentsOf(instructor))
+      schl(schoolLessons).studentsOf(instructor))
   }
 
   @Test(timeout = TIMEOUT)

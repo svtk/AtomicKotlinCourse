@@ -15,7 +15,7 @@ class TestFromListsToMapsExercise1 {
       list.groupBy(Person::age).mapValues { (_, group) ->
         group.map(Person::name)
       },
-      buildAgeToNamesMap(list))
+      demographic(list))
 
   }
 

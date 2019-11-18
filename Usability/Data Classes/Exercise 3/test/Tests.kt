@@ -14,7 +14,7 @@ class TestDataClassesExercise3 {
     val list = listOf(book)
     Assert.assertEquals("Wrong result for $list:",
       mapOf(Author("Author") to listOf(book)),
-      createAuthorToBooksMap(list))
+      authorBooksMap(list))
   }
 
   @Test(timeout = TIMEOUT)
@@ -24,7 +24,7 @@ class TestDataClassesExercise3 {
     Assert.assertEquals("Wrong result for $list:",
       mapOf(Author("first author") to listOf(book),
         Author("second author") to listOf(book)),
-      createAuthorToBooksMap(list))
+      authorBooksMap(list))
   }
 
   @Test(timeout = TIMEOUT)
@@ -33,7 +33,7 @@ class TestDataClassesExercise3 {
       Book("second Book", listOf(Author("Author"))))
     Assert.assertEquals("Wrong result for $list:",
       mapOf(Author("Author") to list),
-      createAuthorToBooksMap(list))
+      authorBooksMap(list))
   }
 
   @Test(timeout = TIMEOUT)
@@ -76,7 +76,7 @@ class TestDataClassesExercise3 {
       dmitry to listOf(kotlinInAction),
       svetlana to listOf(kotlinInAction, atomicKotlin)
     )
-    val actual = createAuthorToBooksMap(books)
+    val actual = authorBooksMap(books)
     Assert.assertEquals("Wrong result for sample:", expected, actual)
   }
 }

@@ -1,6 +1,6 @@
 package sequencesExercise2
 
-fun School.getStudentInstructors(
+fun School.studentInstructors(
   student: Student
 ): Set<Instructor> {
   return lessons.filter {
@@ -8,7 +8,7 @@ fun School.getStudentInstructors(
   }.mapTo(mutableSetOf()) { it.instructor }
 }
 
-fun School.getStudentsOf(
+fun School.studentsOf(
   instructor: Instructor
 ): Set<Student> {
   return lessons.filter {

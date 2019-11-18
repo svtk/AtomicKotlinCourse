@@ -5,7 +5,6 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import kotlin.collections.flatMap as flatMapLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestManipulatingListsExercise4 {
@@ -21,7 +20,7 @@ class TestManipulatingListsExercise4 {
     charlie.friends += bob
 
     Assert.assertEquals("Wrong result for sample",
-      setOf(charlie), getFriendSuggestions(alice))
+      setOf(charlie), friendSuggestions(alice))
   }
 
   @Test(timeout = TIMEOUT)
@@ -39,7 +38,7 @@ class TestManipulatingListsExercise4 {
 
     Assert.assertEquals("Wrong suggestions for #0 in $persons",
       listOf(3, 4).map { persons[it] }.toSet(),
-      getFriendSuggestions(persons[0]))
+      friendSuggestions(persons[0]))
   }
 
   @Test(timeout = TIMEOUT)
@@ -55,7 +54,7 @@ class TestManipulatingListsExercise4 {
 
     Assert.assertEquals("Wrong suggestions for #0 in $persons",
       setOf<Person>(),
-      getFriendSuggestions(persons[0]))
+      friendSuggestions(persons[0]))
   }
 
   @Test(timeout = TIMEOUT)
@@ -72,7 +71,7 @@ class TestManipulatingListsExercise4 {
 
     Assert.assertEquals("Wrong suggestions for #0 in $persons",
       setOf(persons[3]),
-      getFriendSuggestions(persons[0]))
+      friendSuggestions(persons[0]))
   }
 
 
@@ -91,6 +90,6 @@ class TestManipulatingListsExercise4 {
 
     Assert.assertEquals("Wrong suggestions for #0 in $persons",
       listOf(3, 4).map { persons[it] }.toSet(),
-      getFriendSuggestions(persons[0]))
+      friendSuggestions(persons[0]))
   }
 }
