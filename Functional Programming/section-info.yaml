@@ -3,9 +3,9 @@ content:
 - The Importance of Lambdas
 - Operations on Collections
 - Member References
-- Function Types
+- Higher-Order Functions
 - Manipulating Lists
-- From Lists to Maps
+- Building Maps
 - Creating Sequences
 - Helper Functions
 - Local Functions
