@@ -1,5 +1,7 @@
-## Helper Functions (#2)
+## More Library Functions (#2)
 
-Write a function `oddWithout1` that creates an infinite sequence of odd numbers
-that do not contain the digit `1`. In `main`, display to the console the sum the
-first 20 elements of this sequence.
+Complete the function `fibonacciNumbers()` that generates the infinite stream
+of Fibonacci numbers.
+Each new Fibonacci number is the sum of the previous two.
+The first two numbers are `0` and `1`, which produces the following sequence:
+`0, 1, 1, 2, 3, 5, 8, 13, 21, ...`.

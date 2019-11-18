@@ -3,10 +3,11 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 151
-    length: 76
+  - offset: 71
+    length: 75
+    placeholder_text: TODO()
+  - offset: 165
+    length: 37
     placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false
-feedback_link: |
-  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Functional+Programming+%2F+More+Library+Functions+%2F+Exercise2

@@ -1,10 +1,17 @@
-package helperFunctionsExercise3
+package moreLibraryFunctionsExercise2
 
-fun oddWithout1(): Sequence<Int> {
-  return generateSequence(1) { it + 2 }
-    .filter { '1' !in it.toString() }
+import atomictest.eq
+
+fun fibonacci(): Sequence<Int> {
+  var previous = 1
+  return generateSequence(0) { current ->
+    val next = previous + current
+    previous = current
+    next
+  }
 }
 
 fun main() {
-  println(oddWithout1().take(20).sum())
+  fibonacci().take(10).toList() eq
+    listOf(0, 1, 1, 2, 3, 5, 8, 13, 21, 34)
 }
