@@ -1,4 +1,4 @@
-package fromListsToMapsExercise1
+package buildingMapsExercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFromListsToMapsExercise1 {
+class TestBuildingMapsExercise1 {
   private fun check(
     list: List<Person>
   ) {

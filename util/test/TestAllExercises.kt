@@ -456,16 +456,16 @@ class TestAllExercises : AbstractTestExercises() {
   fun testMemberReferencesExercise3() = testClass(memberReferencesExercise3.TestMemberReferencesExercise3::class)
 
   @Test
-  fun testFunctionTypesExercise1() = testClass(functionTypesExercise1.TestFunctionTypesExercise1::class)
+  fun testHigherOrderFunctionsExercise1() = testClass(higherOrderFunctionsExercise1.TestHigherOrderFunctionsExercise1::class)
 
   @Test
-  fun testFunctionTypesExercise2() = testClass(functionTypesExercise2.TestFunctionTypesExercise2::class)
+  fun testHigherOrderFunctionsExercise2() = testClass(higherOrderFunctionsExercise2.TestHigherOrderFunctionsExercise2::class)
 
   @Test
-  fun testFunctionTypesExercise3() = testClass(functionTypesExercise3.TestFunctionTypesExercise3::class)
+  fun testHigherOrderFunctionsExercise3() = testClass(higherOrderFunctionsExercise3.TestHigherOrderFunctionsExercise3::class)
 
   @Test
-  fun testFunctionTypesExercise4() = testClass(functionTypesExercise4.TestFunctionTypesExercise4::class)
+  fun testHigherOrderFunctionsExercise4() = testClass(higherOrderFunctionsExercise4.TestHigherOrderFunctionsExercise4::class)
 
   @Test
   fun testManipulatingListsExercise1() = testClass(manipulatingListsExercise1.TestManipulatingListsExercise1::class)
@@ -489,37 +489,40 @@ class TestAllExercises : AbstractTestExercises() {
   fun testManipulatingListsExercise7() = testClass(manipulatingListsExercise7.TestManipulatingListsExercise7::class)
 
   @Test
-  fun testFromListsToMapsExercise1() = testClass(fromListsToMapsExercise1.TestFromListsToMapsExercise1::class)
+  fun testBuildingMapsExercise1() = testClass(buildingMapsExercise1.TestBuildingMapsExercise1::class)
 
   @Test
-  fun testFromListsToMapsExercise2() = testClass(fromListsToMapsExercise2.TestFromListsToMapsExercise2::class)
+  fun testBuildingMapsExercise2() = testClass(buildingMapsExercise2.TestBuildingMapsExercise2::class)
 
   @Test
-  fun testFromListsToMapsExercise3() = testClass(fromListsToMapsExercise3.TestFromListsToMapsExercise3::class)
+  fun testBuildingMapsExercise3() = testClass(buildingMapsExercise3.TestBuildingMapsExercise3::class)
 
   @Test
-  fun testSequencesExercise1() = testClass(sequencesExercise1.TestSequencesExercise1::class)
+  fun testCreatingSequencesExercise1() = testClass(creatingSequencesExercise1.TestCreatingSequencesExercise1::class)
 
   @Test
-  fun testSequencesExercise2() = testClass(sequencesExercise2.TestSequencesExercise2::class)
+  fun testCreatingSequencesExercise2() = testClass(creatingSequencesExercise2.TestCreatingSequencesExercise2::class)
 
   @Test
-  fun testSequencesExercise3() = testClass(sequencesExercise3.TestSequencesExercise3::class)
+  fun testCreatingSequencesExercise3() = testClass(creatingSequencesExercise3.TestCreatingSequencesExercise3::class)
 
   @Test
-  fun testSequencesExercise4() = testClass(sequencesExercise4.TestSequencesExercise4::class)
+  fun testCreatingSequencesExercise4() = testClass(creatingSequencesExercise4.TestCreatingSequencesExercise4::class)
 
   @Test
-  fun testSequencesExercise5() = testClass(sequencesExercise5.TestSequencesExercise5::class)
+  fun testCreatingSequencesExercise5() = testClass(creatingSequencesExercise5.TestCreatingSequencesExercise5::class)
 
   @Test
-  fun testMoreLibraryFunctionsExercise1() = testClass(moreLibraryFunctionsExercise1.TestMoreLibraryFunctionsExercise1::class)
+  fun testHelperFunctionsExercise1() = testClass(helperFunctionsExercise1.TestHelperFunctionsExercise1::class)
 
   @Test
-  fun testMoreLibraryFunctionsExercise2() = testClass(moreLibraryFunctionsExercise2.TestMoreLibraryFunctionsExercise2::class)
+  fun testHelperFunctionsExercise2() = testClass(helperFunctionsExercise2.TestHelperFunctionsExercise2::class)
 
   @Test
-  fun testFunctionsInsideFunctionsExercise1() = testClass(functionsInsideFunctionsExercise1.TestFunctionsInsideFunctionsExercise1::class)
+  fun testHelperFunctionsExercise3() = testClass(helperFunctionsExercise3.TestHelperFunctionsExercise3::class)
+
+  @Test
+  fun testLocalFunctionsExercise1() = testClass(localFunctionsExercise1.TestLocalFunctionsExercise1::class)
 
   @Test
   fun testFoldingListsExercise1() = testClass(foldingListsExercise1.TestFoldingListsExercise1::class)

@@ -1,4 +1,4 @@
-package functionTypesExercise1
+package higherOrderFunctionsExercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.map as mapLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFunctionTypesExercise1 {
+class TestHigherOrderFunctionsExercise1 {
   private fun <T, R> check(
     list: List<T>,
     predicateStr: String,

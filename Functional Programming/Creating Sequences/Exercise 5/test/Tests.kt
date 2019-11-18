@@ -1,4 +1,4 @@
-package sequencesExercise5
+package creatingSequencesExercise5
 
 import org.junit.Assert
 import org.junit.FixMethodOrder

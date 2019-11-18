@@ -1,3 +1,3 @@
 ## Manipulating Lists (#2)
 
-Now implement `zipWithIndex()` function using `mapIndexed()`.
+Repeat Exercise 1 using `mapIndexed()` instead of `zip()`.

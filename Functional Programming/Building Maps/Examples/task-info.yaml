@@ -6,11 +6,15 @@ files:
   visible: true
 - name: src/GroupByVsFilter.kt
   visible: true
+- name: src/AssociateWith.kt
+  visible: true
 - name: src/AssociateBy.kt
+  visible: true
+- name: src/AssociateByUnique.kt
   visible: true
 - name: src/GetOrPut.kt
   visible: true
-- name: src/FilteringMap.kt
+- name: src/FilterMap.kt
   visible: true
 - name: src/TransformingMap.kt
   visible: true

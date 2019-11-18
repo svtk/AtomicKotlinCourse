@@ -1,4 +1,4 @@
-// FromListsToMaps/FilteringMap.kt
+// BuildingMaps/FilterMap.kt
 import atomictest.eq
 
 fun main() {

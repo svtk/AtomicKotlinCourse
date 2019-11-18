@@ -1,5 +1,5 @@
-// FromListsToMaps/GroupBy.kt
-import fromliststomaps.*
+// BuildingMaps/GroupBy.kt
+import buildingmaps.*
 import atomictest.eq
 
 fun main() {

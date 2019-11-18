@@ -1,4 +1,4 @@
-package fromListsToMapsExercise1
+package buildingMapsExercise1
 
 import atomictest.eq
 

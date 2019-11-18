@@ -1,3 +1,3 @@
-## From Lists to Maps (#2)
+## Building Maps (#2)
 
-Implement the `groupBy()` function using `getOrPut()`.
+Implement `groupBy()` using `getOrPut()`.

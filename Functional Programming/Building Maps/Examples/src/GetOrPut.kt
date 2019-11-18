@@ -1,4 +1,4 @@
-// FromListsToMaps/GetOrPut.kt
+// BuildingMaps/GetOrPut.kt
 import atomictest.eq
 
 fun main() {

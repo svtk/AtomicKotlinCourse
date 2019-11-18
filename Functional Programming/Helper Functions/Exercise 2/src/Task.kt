@@ -1,4 +1,4 @@
-package helperFunctionsExercise3
+package helperFunctionsExercise2
 
 fun oddWithout1(): Sequence<Int> {
   return generateSequence(1) { it + 2 }

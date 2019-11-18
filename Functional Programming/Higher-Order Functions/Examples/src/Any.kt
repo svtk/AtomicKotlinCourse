@@ -1,4 +1,4 @@
-// FunctionTypes/AnyFunImplementation.kt
+// HigherOrderFunctions/Any.kt
 import atomictest.eq
 
 fun <T> List<T>.any(                    // [1]
@@ -17,8 +17,6 @@ fun main() {
 
   val strings = listOf("abc", " ")
   strings.any { it.isBlank() } eq true  // [5]
-  strings.any { it.isBlank() } eq true  // [5]
-
   strings.any(String::isNotBlank) eq    // [6]
     true
 }

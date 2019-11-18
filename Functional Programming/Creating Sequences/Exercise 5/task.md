@@ -1,6 +1,5 @@
-## Sequences (#5)
+## Creating Sequences (#5)
 
-Implement `findInstructorsWithLargestClass()` function.
-At first, it finds the maximum number of students that were attending one lesson.
-Then it finds all instructors that were leading lessons with the same number
-of students.
+Implement the `School` extension function `instructorsWithLargestClass()`. It
+first finds the maximum number of students that attended any one lesson. Then
+it finds all instructors that lead lessons with that number of students.

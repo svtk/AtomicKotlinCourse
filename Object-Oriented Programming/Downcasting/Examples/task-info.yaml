@@ -6,6 +6,8 @@ files:
   visible: true
 - name: src/WhenAndHierarchy.kt
   visible: true
+- name: src/WhenSubjectVariable.kt
+  visible: true
 - name: src/Unsafe.kt
   visible: true
 - name: src/Safe.kt

@@ -1,4 +1,4 @@
-package moreLibraryFunctionsExercise1
+package helperFunctionsExercise1
 
 import atomictest.eq
 

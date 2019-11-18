@@ -1,4 +1,4 @@
-package functionTypesExercise1
+package higherOrderFunctionsExercise1
 
 import atomictest.eq
 

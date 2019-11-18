@@ -1,5 +1,5 @@
-// Sequences/TerminalOperations.kt
-package sequences
+// CreatingSequences/TerminalOperations.kt
+package creatingsequences
 
 fun main() {
   val list = listOf(1, 2, 3, 4)

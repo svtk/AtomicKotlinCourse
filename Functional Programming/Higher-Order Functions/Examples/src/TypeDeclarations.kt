@@ -1,4 +1,4 @@
-// FunctionTypes/FunctionTypeExamples.kt
+// HigherOrderFunctions/TypeDeclarations.kt
 import atomictest.eq
 
 fun main() {

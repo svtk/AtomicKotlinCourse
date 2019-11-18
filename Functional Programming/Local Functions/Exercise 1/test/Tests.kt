@@ -1,4 +1,4 @@
-package functionsInsideFunctionsExercise1
+package localFunctionsExercise1
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFunctionsInsideFunctionsExercise1 {
+class TestLocalFunctionsExercise1 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     Assert.assertEquals("Wrong result for sample", null,

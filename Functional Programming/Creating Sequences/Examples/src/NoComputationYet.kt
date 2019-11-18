@@ -1,5 +1,5 @@
-// Sequences/NoComputationYet.kt
-package sequences
+// CreatingSequences/NoComputationYet.kt
+package creatingsequences
 
 fun main() {
   val list = listOf(1, 2, 3, 4)

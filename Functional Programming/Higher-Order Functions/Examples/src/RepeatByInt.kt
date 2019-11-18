@@ -1,4 +1,4 @@
-// FunctionTypes/RepeatByInt.kt
+// HigherOrderFunctions/RepeatByInt.kt
 
 fun main() {
   repeat(2) { println("hi!") }

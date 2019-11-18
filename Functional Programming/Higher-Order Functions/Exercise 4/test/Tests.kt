@@ -1,4 +1,4 @@
-package functionTypesExercise4
+package higherOrderFunctionsExercise4
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFunctionTypesExercise4 {
+class TestHigherOrderFunctionsExercise4 {
   private fun <A, B, C> check(
     arg: A,
     f: (A) -> B,

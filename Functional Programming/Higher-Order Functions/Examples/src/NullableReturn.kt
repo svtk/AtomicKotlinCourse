@@ -1,4 +1,4 @@
-// FunctionTypes/NullableReturnType.kt
+// HigherOrderFunctions/NullableReturn.kt
 import atomictest.eq
 
 fun main() {

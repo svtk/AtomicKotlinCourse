@@ -1,4 +1,4 @@
-## Function Types
+## Higher-Order Functions
 
 Examples accompanying the atom.
-[Read "Function Types" atom online.](https://stepik.org/lesson/107892/step/1)
+[Read "Higher-Order Functions" atom online.](https://stepik.org/lesson/107892/step/1)

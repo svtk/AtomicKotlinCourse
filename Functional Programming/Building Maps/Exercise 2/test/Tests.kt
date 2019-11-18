@@ -1,4 +1,4 @@
-package fromListsToMapsExercise2
+package buildingMapsExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -8,7 +8,7 @@ import util.TIMEOUT
 import kotlin.collections.groupBy as groupByLibrary
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestFromListsToMapsExercise2 {
+class TestBuildingMapsExercise2 {
   private fun <T, R> check(
     list: List<T>,
     keySelector: (T) -> R,

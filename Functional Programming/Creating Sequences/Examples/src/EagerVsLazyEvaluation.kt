@@ -1,5 +1,5 @@
-// Sequences/EagerVsLazyEvaluation.kt
-package sequences
+// CreatingSequences/EagerVsLazyEvaluation.kt
+package creatingsequences
 
 fun Int.isEven(): Boolean {
   println("$this.isEven()")

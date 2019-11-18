@@ -1,4 +1,4 @@
-// FunctionTypes/SimpleOperation.kt
+// HigherOrderFunctions/SimpleOperation.kt
 import atomictest.eq
 
 fun main() {

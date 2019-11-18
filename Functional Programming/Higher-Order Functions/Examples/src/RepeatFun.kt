@@ -1,4 +1,4 @@
-// FunctionTypes/DefiningRepeat.kt
+// HigherOrderFunctions/RepeatFun.kt
 package definingrepeat
 
 fun repeat(

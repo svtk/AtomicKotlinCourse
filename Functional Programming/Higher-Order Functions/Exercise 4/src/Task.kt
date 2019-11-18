@@ -1,4 +1,4 @@
-package functionTypesExercise4
+package higherOrderFunctionsExercise4
 
 fun <A, B, C> ((A) -> B).andThen(action: (B) -> C): (A) -> C =
   { a: A -> action(this(a)) }

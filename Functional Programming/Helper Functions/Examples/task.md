@@ -1,4 +1,4 @@
-## More Library Functions
+## Helper Functions
 
 Examples accompanying the atom.
-[Read "More Library Functions" atom online.](https://stepik.org/lesson/107899/step/1)
+[Read "Helper Functions" atom online.](https://stepik.org/lesson/107899/step/1)

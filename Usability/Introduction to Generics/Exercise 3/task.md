@@ -9,6 +9,6 @@ an element that is already in the `CountingSet`, the corresponding counter shoul
 be increased.
 
 - `count(element: E)` returns the number of times each element was added to the
-`CountingSet`. If the element isn't present in `CountingSet` the result is zero. 
+`CountingSet`. If the element isn't present in `CountingSet` the result is zero.
 
 - `toSet()` returns a set of stored elements.

@@ -1,4 +1,4 @@
-// FromListsToMaps/TransformingMap.kt
+// BuildingMaps/TransformingMap.kt
 import atomictest.eq
 
 fun main() {

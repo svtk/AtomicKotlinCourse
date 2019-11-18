@@ -1,5 +1,5 @@
 ## Manipulating Lists (#1)
 
-Implement `zipWithIndex()` function.
-It should return a list of pairs, where first element in a pair is an element,
-and the second one is its index. Implement the function using `zip()`.
+Implement the function `zipWithIndex()` using `zip()`. Return a `List` of
+`Pair`s, where the first item in a `Pair` is the element, and the second item
+is the index of that element.

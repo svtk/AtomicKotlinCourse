@@ -1,4 +1,4 @@
-// FunctionTypes/RepeatVerbose.kt
+// HigherOrderFunctions/RepeatVerbose.kt
 
 fun main() {
   repeat(2, { println("hi!") })

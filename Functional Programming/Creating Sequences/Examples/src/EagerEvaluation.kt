@@ -1,4 +1,4 @@
-// Sequences/EagerEvaluation.kt
+// CreatingSequences/EagerEvaluation.kt
 import atomictest.eq
 
 fun main() {
@@ -8,7 +8,7 @@ fun main() {
     .map { it * it }
     .any { it < 10 } eq true
 
-  // Identical to:
+  // Equivalent to:
   val mid1 = list.filter { it % 2 == 0 }
   mid1 eq listOf(2, 4)
   val mid2 = mid1.map { it * it }

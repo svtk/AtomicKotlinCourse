@@ -1,4 +1,4 @@
-// FromListsToMaps/SimilarOperation.kt
+// BuildingMaps/SimilarOperation.kt
 import atomictest.eq
 
 fun main() {
