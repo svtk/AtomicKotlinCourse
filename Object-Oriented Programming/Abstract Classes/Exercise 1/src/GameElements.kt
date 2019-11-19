@@ -3,13 +3,13 @@ package abstractClassesExercise1
 interface GameElement {
   val symbol: Char
   val sharesCell: Boolean
-  fun playTurn(maze: Maze)
+  fun play(maze: Maze)
 }
 
 abstract class StaticElement(
   override val sharesCell: Boolean
 ) : GameElement {
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     // Default implementation: do nothing
   }
 }
@@ -26,7 +26,7 @@ abstract class MobileElement : GameElement {
   override val sharesCell: Boolean
     get() = true
 
-  abstract fun makeMove(
+  abstract fun move(
     move: Move, maze: Maze): Position?
 
   override fun toString() = symbol.toString()

@@ -4,7 +4,7 @@ Change the implementations of `Wall` and `Food` classes, so that they extended
 the `StaticElement` class instead of implementing `GameElement` interface
 directly. Pass the corresponding values for `symbol` and `sharesCell`
 properties as function arguments. Note that you no longer need to provide
-implementation of `playTurn()` function: the trivial implementation is
+implementation of `play()` function: the trivial implementation is
 inherited from the base class.
 
 The `sharesCell` property specifies whether a mobile element like `Robot` or

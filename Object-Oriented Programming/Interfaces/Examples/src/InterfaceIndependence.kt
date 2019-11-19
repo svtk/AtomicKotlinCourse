@@ -12,5 +12,5 @@ interface Maze {
 }
 
 interface GameElement {
-  fun playTurn(maze: Maze)
+  fun play(maze: Maze)
 }

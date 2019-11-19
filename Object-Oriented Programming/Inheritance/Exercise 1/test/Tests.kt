@@ -19,7 +19,7 @@ class TestInheritanceExercise1 {
     maze.add(robot, bombPosition)
     val bomb = maze.allAt(bombPosition)
       .filterIsInstance<Bomb>().single()
-    bomb.playTurn(maze)
+    bomb.play(maze)
 
     Assert.assertEquals("${prefixMessage ?: ""} " +
       "Wrong result after exploding a bomb for the following maze:\n$mazeRepresentation",

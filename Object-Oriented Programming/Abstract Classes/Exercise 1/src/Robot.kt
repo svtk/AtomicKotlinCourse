@@ -9,7 +9,7 @@ class Robot : MobileElement() {
   override val symbol: Char
     get() = 'R'
 
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     val position = maze.position(this) ?: return
     val cellElements = maze.allAt(position)
     cellElements
@@ -20,7 +20,7 @@ class Robot : MobileElement() {
       }
   }
 
-  override fun makeMove(move: Move, maze: Maze): Position? {
+  override fun move(move: Move, maze: Maze): Position? {
     val currentPosition = maze.position(this) ?: return null
     val newPosition = currentPosition.applyMove(move)
     if (!maze.isPassable(newPosition)) return null
@@ -54,7 +54,7 @@ fun main() {
         """.trimIndent()
 
 
-  updateRobotPosition(robot.makeMove(Move.DOWN, maze))
+  updateRobotPosition(robot.move(Move.DOWN, maze))
   maze.toString() eq """
         #####
         #   #
@@ -62,6 +62,6 @@ fun main() {
         """.trimIndent()
 
   // The right move is impossible:
-  val position = robot.makeMove(Move.RIGHT, maze)
+  val position = robot.move(Move.RIGHT, maze)
   position eq null
 }

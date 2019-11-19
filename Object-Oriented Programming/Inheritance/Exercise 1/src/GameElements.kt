@@ -2,11 +2,11 @@ package inheritanceExercise1
 
 interface GameElement {
   val symbol: Char
-  fun playTurn(maze: Maze)
+  fun play(maze: Maze)
 }
 
 open class StaticElement : GameElement {
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     // Default implementation: do nothing
   }
 
@@ -28,7 +28,7 @@ class Robot : GameElement {
   override val symbol: Char
     get() = 'R'
 
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     val position = maze.position(this)
       ?: return
     val cellElements = maze.allAt(position)

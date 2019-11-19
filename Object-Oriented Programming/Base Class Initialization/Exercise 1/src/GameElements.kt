@@ -8,14 +8,14 @@ interface GameElement {
   val symbol: Char
   val sharesCell: Boolean
 
-  fun playTurn(maze: Maze)
+  fun play(maze: Maze)
 }
 
 open class StaticElement(
   override val symbol: Char,
   override val sharesCell: Boolean
 ) : GameElement {
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     // Default implementation: do nothing
   }
 }

@@ -9,7 +9,7 @@ class Bomb(
 ) : StaticElement() {
   override val symbol get() = '0' + diameter
 
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     val bombPosition = maze.position(this) ?: return
     maze.all().forEach { element ->
       val position = maze.position(element)
@@ -51,7 +51,7 @@ fun main() {
 
   val bomb = maze.allAt(bombPosition)
     .filterIsInstance<Bomb>().single()
-  bomb.playTurn(maze)
+  bomb.play(maze)
 
   maze.toString() eq """
         ###########

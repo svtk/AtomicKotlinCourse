@@ -9,13 +9,13 @@ interface Position
 interface GameElement {
   val symbol: Char
   val sharesCell: Boolean
-  fun playTurn(maze: Maze)
+  fun play(maze: Maze)
 }
 
 abstract class StaticElement(
   override val sharesCell: Boolean    // [1]
 ) : GameElement {
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     // Default implementation: do nothing
   }
 }

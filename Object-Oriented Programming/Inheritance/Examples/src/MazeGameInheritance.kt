@@ -20,11 +20,11 @@ interface Maze {
 }
 
 interface GameElement {
-  fun playTurn(maze: Maze)
+  fun play(maze: Maze)
 }
 
 open class StaticElement : GameElement {
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     // Default implementation: do nothing
   }
 }
@@ -34,7 +34,7 @@ class Wall : StaticElement()  // [1]
 class Food : StaticElement()  // [2]
 
 class Bomb : StaticElement() {
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     val position = maze.position(this)
       ?: return
     val all = maze.allAt(position)

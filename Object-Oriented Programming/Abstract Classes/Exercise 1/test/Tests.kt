@@ -16,7 +16,7 @@ class TestAbstractClassesExercise1 {
   ) {
     val maze = MazeImpl(initial.trimIndent())
     val robot = maze.all().filterIsInstance<Robot>().single()
-    val position = robot.makeMove(move, maze)
+    val position = robot.move(move, maze)
     if (position != null) {
       maze.remove(robot)
       maze.add(robot, position)
@@ -34,7 +34,7 @@ class TestAbstractClassesExercise1 {
   ) {
     val maze = MazeImpl(initial.trimIndent())
     val robot = maze.all().filterIsInstance<Robot>().single()
-    val position = robot.makeMove(move, maze)
+    val position = robot.move(move, maze)
 
     Assert.assertNull(
       "The $move move should be impossible for \n$initial",
