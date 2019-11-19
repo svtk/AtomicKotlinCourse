@@ -9,15 +9,15 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestInheritanceExercise1 {
   private fun checkMaze(
-    bombPosition: Position,
+    bombCell: Cell,
     mazeRepresentation: String,
     afterDestroy: String,
     prefixMessage: String? = null
   ) {
     val maze = MazeImpl(mazeRepresentation)
     val robot = Robot()
-    maze.add(robot, bombPosition)
-    val bomb = maze.allAt(bombPosition)
+    maze.add(robot, bombCell)
+    val bomb = maze.allIn(bombCell)
       .filterIsInstance<Bomb>().single()
     bomb.play(maze)
 
@@ -28,7 +28,7 @@ class TestInheritanceExercise1 {
   }
 
   @Test(timeout = TIMEOUT)
-  fun test1Sample() = checkMaze(Position(5, 4),
+  fun test1Sample() = checkMaze(Cell(5, 4),
     """
       ###########
       #.........#
@@ -54,7 +54,7 @@ class TestInheritanceExercise1 {
   )
 
   @Test(timeout = TIMEOUT)
-  fun test2() = checkMaze(Position(5, 4),
+  fun test2() = checkMaze(Cell(5, 4),
     """
       ###########
       #.........#
@@ -80,7 +80,7 @@ class TestInheritanceExercise1 {
   )
 
   @Test(timeout = TIMEOUT)
-  fun test3() = checkMaze(Position(5, 4),
+  fun test3() = checkMaze(Cell(5, 4),
     """
       ###########
       #.........#
@@ -106,7 +106,7 @@ class TestInheritanceExercise1 {
   )
 
   @Test(timeout = TIMEOUT)
-  fun test4() = checkMaze(Position(5, 4),
+  fun test4() = checkMaze(Cell(5, 4),
     """
       ###########
       #.........#
@@ -132,7 +132,7 @@ class TestInheritanceExercise1 {
   )
 
   @Test(timeout = TIMEOUT)
-  fun test5() = checkMaze(Position(5, 4),
+  fun test5() = checkMaze(Cell(5, 4),
     """
       ###########
       #.........#
@@ -158,7 +158,7 @@ class TestInheritanceExercise1 {
   )
 
   @Test(timeout = TIMEOUT)
-  fun test6() = checkMaze(Position(2, 2),
+  fun test6() = checkMaze(Cell(2, 2),
     """
       #####
       #####

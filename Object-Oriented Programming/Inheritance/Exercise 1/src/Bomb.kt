@@ -10,20 +10,20 @@ class Bomb(
   override val symbol get() = '0' + diameter
 
   override fun play(maze: Maze) {
-    val bombPosition = maze.position(this) ?: return
+    val bombCell = maze.cell(this) ?: return
     maze.all().forEach { element ->
-      val position = maze.position(element)
-      if (position != null &&
-        isCloseToBomb(position, bombPosition)) {
+      val cell = maze.cell(element)
+      if (cell != null &&
+        isCloseToBomb(cell, bombCell)) {
         maze.remove(element)
       }
     }
   }
 
-  private fun isCloseToBomb(position: Position, bombPosition: Position) =
-    2 * distance(position, bombPosition) < diameter + 0.0000001
+  private fun isCloseToBomb(cell: Cell, bombCell: Cell) =
+    2 * distance(cell, bombCell) < diameter + 0.0000001
 
-  private fun distance(from: Position, to: Position): Double {
+  private fun distance(from: Cell, to: Cell): Double {
     fun sqr(i: Int) = i.toDouble().pow(2)
     return sqrt(sqr(from.x - to.x) + sqr(from.y - to.y))
   }
@@ -44,12 +44,12 @@ fun main() {
   val maze = MazeImpl(representation)
   maze.toString() eq representation
 
-  val bombPosition = Position(x = 5, y = 4)
+  val bombCell = Cell(x = 5, y = 4)
   // Adding a robot to the 'bomb' cell should trigger the bomb
   val robot = Robot()
-  maze.add(robot, bombPosition)
+  maze.add(robot, bombCell)
 
-  val bomb = maze.allAt(bombPosition)
+  val bomb = maze.allIn(bombCell)
     .filterIsInstance<Bomb>().single()
   bomb.play(maze)
 

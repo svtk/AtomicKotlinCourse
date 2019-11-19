@@ -10,8 +10,8 @@ class Robot : MobileElement() {
     get() = 'R'
 
   override fun play(maze: Maze) {
-    val position = maze.position(this) ?: return
-    val cellElements = maze.allAt(position)
+    val cell = maze.cell(this) ?: return
+    val cellElements = maze.allIn(cell)
     cellElements
       .filterIsInstance<Food>()
       .forEach { food ->
@@ -20,11 +20,11 @@ class Robot : MobileElement() {
       }
   }
 
-  override fun move(move: Move, maze: Maze): Position? {
-    val currentPosition = maze.position(this) ?: return null
-    val newPosition = currentPosition.applyMove(move)
-    if (!maze.isPassable(newPosition)) return null
-    return newPosition
+  override fun move(move: Move, maze: Maze): Cell? {
+    val currentCell = maze.cell(this) ?: return null
+    val newCell = currentCell.applyMove(move)
+    if (!maze.isPassable(newCell)) return null
+    return newCell
   }
 }
 
@@ -39,14 +39,14 @@ fun main() {
 
   val robot = Robot()
 
-  fun updateRobotPosition(position: Position?) {
-    if (position != null) {
+  fun updateRobotCell(cell: Cell?) {
+    if (cell != null) {
       maze.remove(robot)
-      maze.add(robot, position)
+      maze.add(robot, cell)
     }
   }
 
-  updateRobotPosition(Position(x = 2, y = 1))
+  updateRobotCell(Cell(x = 2, y = 1))
   maze.toString() eq """
         #####
         # R #
@@ -54,7 +54,7 @@ fun main() {
         """.trimIndent()
 
 
-  updateRobotPosition(robot.move(Move.DOWN, maze))
+  updateRobotCell(robot.move(Move.DOWN, maze))
   maze.toString() eq """
         #####
         #   #
@@ -62,6 +62,6 @@ fun main() {
         """.trimIndent()
 
   // The right move is impossible:
-  val position = robot.move(Move.RIGHT, maze)
-  position eq null
+  val cell = robot.move(Move.RIGHT, maze)
+  cell eq null
 }

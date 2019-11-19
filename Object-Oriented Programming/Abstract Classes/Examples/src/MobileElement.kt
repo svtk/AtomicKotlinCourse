@@ -11,7 +11,7 @@ abstract class MobileElement : GameElement {
     get() = true
 
   abstract fun move(             // [1]
-    move: Move, maze: Maze): Position?
+    move: Move, maze: Maze): Cell?
 }
 
 class Robot : MobileElement() {
@@ -22,8 +22,8 @@ class Robot : MobileElement() {
 
   override fun move(             // [2]
     move: Move, maze: Maze
-  ): Position? {
-    // Return new position
+  ): Cell? {
+    // Return new cell
     return null
   }
 }

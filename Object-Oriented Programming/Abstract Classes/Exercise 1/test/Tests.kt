@@ -16,10 +16,10 @@ class TestAbstractClassesExercise1 {
   ) {
     val maze = MazeImpl(initial.trimIndent())
     val robot = maze.all().filterIsInstance<Robot>().single()
-    val position = robot.move(move, maze)
-    if (position != null) {
+    val cell = robot.move(move, maze)
+    if (cell != null) {
       maze.remove(robot)
-      maze.add(robot, position)
+      maze.add(robot, cell)
     }
     Assert.assertEquals(
       "Wrong result for\n$initial",
@@ -34,11 +34,11 @@ class TestAbstractClassesExercise1 {
   ) {
     val maze = MazeImpl(initial.trimIndent())
     val robot = maze.all().filterIsInstance<Robot>().single()
-    val position = robot.move(move, maze)
+    val cell = robot.move(move, maze)
 
     Assert.assertNull(
       "The $move move should be impossible for \n$initial",
-      position
+      cell
     )
   }
 

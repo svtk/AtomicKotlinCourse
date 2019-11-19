@@ -7,11 +7,11 @@ files:
 - name: src/Maze.kt
   visible: true
   placeholders:
-  - offset: 687
+  - offset: 658
     length: 38
     placeholder_text: 0 // TODO
-  - offset: 813
-    length: 248
+  - offset: 789
+    length: 244
     placeholder_text: // TODO
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Object-Oriented+Programming+%2F+Complex+Constructors+%2F+Exercise1

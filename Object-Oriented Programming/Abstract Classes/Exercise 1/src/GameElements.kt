@@ -26,8 +26,7 @@ abstract class MobileElement : GameElement {
   override val sharesCell: Boolean
     get() = true
 
-  abstract fun move(
-    move: Move, maze: Maze): Position?
+  abstract fun move(move: Move, maze: Maze): Cell?
 
   override fun toString() = symbol.toString()
 }

@@ -10,10 +10,10 @@ interface GameElement {
 }
 
 interface MobileElement : GameElement {
-  fun move(move: Move): Position
+  fun move(move: Move): Cell
 }
 
-data class Position(val x: Int, val y: Int)
+data class Cell(val x: Int, val y: Int)
 
 class Robot : MobileElement {
   private var eatenFoodItems = 0
@@ -22,9 +22,9 @@ class Robot : MobileElement {
     eatenFoodItems++
   }
 
-  override fun move(move: Move): Position {
+  override fun move(move: Move): Cell {
     println("Robot moves $move")
-    return Position(0, 0)
+    return Cell(0, 0)
   }
 
   fun score(): Int {
@@ -75,8 +75,8 @@ class GameImpl : Game {
     val mobileElements = maze.all()
       .filterIsInstance<MobileElement>()// [5]
     mobileElements.forEach {
-      val position = it.move(move)      // [6]
-      // update element position
+      val cell = it.move(move)          // [6]
+      // update element cell
     }
   }
 }

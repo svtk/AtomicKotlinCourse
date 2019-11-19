@@ -11,8 +11,8 @@ files:
 - name: src/Robot.kt
   visible: true
   placeholders:
-  - offset: 499
-    length: 184
+  - offset: 483
+    length: 160
     placeholder_text: TODO()
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Object-Oriented+Programming+%2F+Abstract+Classes+%2F+Exercise1

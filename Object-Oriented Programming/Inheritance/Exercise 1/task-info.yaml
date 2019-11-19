@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 245
-    length: 250
+    length: 222
     placeholder_text: TODO()
 - name: src/GameElements.kt
   visible: true

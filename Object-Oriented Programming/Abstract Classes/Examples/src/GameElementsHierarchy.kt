@@ -4,7 +4,7 @@ package abstractclasses
 import atomictest.eq
 
 interface Maze
-interface Position
+interface Cell
 
 interface GameElement {
   val symbol: Char

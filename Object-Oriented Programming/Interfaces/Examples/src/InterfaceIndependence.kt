@@ -1,13 +1,13 @@
 // Interfaces/InterfaceIndependence.kt
 package game
 
-interface Position
+interface Cell
 
 interface Maze {
   fun all(): Set<GameElement>
-  fun allAt(p: Position): Set<GameElement>
-  fun position(e: GameElement): Position?
-  fun add(e: GameElement, p: Position)
+  fun allIn(c: Cell): Set<GameElement>
+  fun cell(e: GameElement): Cell?
+  fun add(e: GameElement, c: Cell)
   fun remove(e: GameElement)
 }
 

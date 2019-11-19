@@ -29,9 +29,8 @@ class Robot : GameElement {
     get() = 'R'
 
   override fun play(maze: Maze) {
-    val position = maze.position(this)
-      ?: return
-    val cellElements = maze.allAt(position)
+    val cell = maze.cell(this) ?: return
+    val cellElements = maze.allIn(cell)
     cellElements
       .filterIsInstance<Food>()
       .forEach { food ->

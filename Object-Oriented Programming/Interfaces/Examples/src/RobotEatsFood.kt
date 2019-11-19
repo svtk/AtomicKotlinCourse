@@ -5,9 +5,8 @@ class Robot : GameElement {
   private var eatenFoodItems: Int = 0
 
   override fun play(maze: Maze) {
-    val position =
-      maze.position(this) ?: return
-    val cellOccupants = maze.allAt(position)
+    val cell = maze.cell(this) ?: return
+    val cellOccupants = maze.allIn(cell)
     cellOccupants
       .filterIsInstance<Food>()
       .forEach { food ->

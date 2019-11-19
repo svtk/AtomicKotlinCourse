@@ -2,15 +2,15 @@ package complexConstructorsExercise1
 
 import atomictest.eq
 
-data class Position(val x: Int, val y: Int)
+data class Cell(val x: Int, val y: Int)
 
 interface Maze {
   val width: Int
   val height: Int
   fun all(): Set<GameElement>
-  fun allAt(position: Position): Set<GameElement>
-  fun position(element: GameElement): Position?
-  fun add(element: GameElement, position: Position)
+  fun allIn(cell: Cell): Set<GameElement>
+  fun cell(element: GameElement): Cell?
+  fun add(element: GameElement, cell: Cell)
   fun remove(element: GameElement)
 }
 
@@ -20,14 +20,14 @@ class MazeImpl(
   override val width: Int
   override val height: Int
 
-  private val cells: List<List<MutableSet<GameElement>>>
-  private val positions = mutableMapOf<GameElement, Position>()
+  private val elementMap: List<List<MutableSet<GameElement>>>
+  private val cellMap = mutableMapOf<GameElement, Cell>()
 
   init {
     val lines = representation.lines()
     height = lines.size
     width = lines.maxBy { it.length }?.length ?: 0
-    cells = List(height) {
+    elementMap = List(height) {
       List(width) { mutableSetOf<GameElement>() }
     }
     for (y in 0 until height) {
@@ -35,41 +35,41 @@ class MazeImpl(
         val ch = lines.getOrNull(y)?.getOrNull(x)
         val element = createGameElement(ch)
         if (element != null) {
-          add(element, Position(x, y))
+          add(element, Cell(x, y))
         }
       }
     }
   }
 
-  private fun elements(position: Position): MutableSet<GameElement> {
-    return cells[position.y][position.x]
+  private fun elements(cell: Cell): MutableSet<GameElement> {
+    return elementMap[cell.y][cell.x]
   }
 
   override fun all(): Set<GameElement> {
-    return positions.keys.toSet()
+    return cellMap.keys.toSet()
   }
 
-  override fun allAt(position: Position): Set<GameElement> {
-    return elements(position)
+  override fun allIn(cell: Cell): Set<GameElement> {
+    return elements(cell)
   }
 
-  override fun position(element: GameElement): Position? {
-    return positions[element]
+  override fun cell(element: GameElement): Cell? {
+    return cellMap[element]
   }
 
-  override fun add(element: GameElement, position: Position) {
-    elements(position) += element
-    positions[element] = position
+  override fun add(element: GameElement, cell: Cell) {
+    elements(cell) += element
+    cellMap[element] = cell
   }
 
   override fun remove(element: GameElement) {
-    val position = position(element) ?: return
-    elements(position) -= element
-    positions.remove(element)
+    val cell = cell(element) ?: return
+    elements(cell) -= element
+    cellMap.remove(element)
   }
 
   override fun toString() =
-    cells.joinToString("\n") { row ->
+    elementMap.joinToString("\n") { row ->
       row.joinToString("") { elements ->
         "${elements.lastOrNull()?.symbol ?: ' '}"
       }.trimEnd()
