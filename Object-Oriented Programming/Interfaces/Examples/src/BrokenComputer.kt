@@ -1,14 +1,14 @@
-// Interfaces/AnotherComputer.kt
+// Interfaces/BrokenComputer.kt
 package interfaces
 import atomictest.*
 
-class AnotherComputer : SuperComputer {
+class BrokenComputer : SuperComputer {
   override fun calculateAnswer() =
     throw IllegalStateException("No answer")
 }
 
 fun main() {
   capture {
-    AnotherComputer().calculateAnswer()
+    BrokenComputer().calculateAnswer()
   } eq "IllegalStateException: No answer"
 }

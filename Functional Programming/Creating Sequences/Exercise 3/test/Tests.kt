@@ -35,7 +35,7 @@ abstract class TestSchool {
 }
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSequencesExercise3 : TestSchool() {
+class TestCreatingSequencesExercise3 : TestSchool() {
 
   private fun checkAverageRating(
     instructor: Instructor,

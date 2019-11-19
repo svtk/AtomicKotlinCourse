@@ -28,7 +28,7 @@ abstract class TestSchool {
 }
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSequencesExercise4 : TestSchool() {
+class TestCreatingSequencesExercise4 : TestSchool() {
   private fun checkFavouriteInstructor(
     student: Student,
     schoolLessons: List<Lesson>,

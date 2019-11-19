@@ -1617,8 +1617,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testAnotherComputer() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Interfaces/Examples/src/AnotherComputer.kt", interfaces.AnotherComputerKt::main);
+    public void testBrokenComputer() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Interfaces/Examples/src/BrokenComputer.kt", interfaces.BrokenComputerKt::main);
     }
 
     @Test

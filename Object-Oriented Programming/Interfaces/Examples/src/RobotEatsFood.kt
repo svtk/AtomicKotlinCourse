@@ -5,10 +5,10 @@ class Robot : GameElement {
   private var eatenFoodItems: Int = 0
 
   override fun playTurn(maze: Maze) {
-    val position = maze.position(this)
-      ?: return
-    val cellElements = maze.allAt(position)
-    cellElements
+    val position =
+      maze.position(this) ?: return
+    val cellOccupants = maze.allAt(position)
+    cellOccupants
       .filterIsInstance<Food>()
       .forEach { food ->
         eatenFoodItems++
@@ -19,6 +19,6 @@ class Robot : GameElement {
 
 class Food : GameElement {
   override fun playTurn(maze: Maze) {
-    // Do nothing
+    // Food is passive
   }
 }

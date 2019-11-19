@@ -1,6 +1,7 @@
 ## Folding Lists (#4)
 
-Complete the implementation of the `combineAll()` function using `reduce()`.
-It allows to combine several conditions (you can assume that a list is non-empty).
-`Condition.combine()` function which combines two conditions is already
-provided.
+The starter code provides a `Condition` class and a function
+`Condition.combine()` which combines two conditions. There's also a skeleton
+for the `List<Condition>` extension function `combineAll()` which combines all
+the conditions in the `List`. Complete the implementation using `reduce()`,
+assuming the `List` is non-empty.

@@ -28,7 +28,7 @@ abstract class TestSchool {
 }
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSequencesExercise1 : TestSchool() {
+class TestCreatingSequencesExercise1 : TestSchool() {
   private fun check(
     instructor: Instructor,
     student: Student,

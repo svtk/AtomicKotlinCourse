@@ -1,3 +1,3 @@
 ## Folding Lists (#2)
 
-Implement `count()` using `fold()`.
+Finish implementing `count()`, given in the starter code, using `fold()`.
