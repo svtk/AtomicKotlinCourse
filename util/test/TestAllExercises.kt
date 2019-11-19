@@ -525,6 +525,12 @@ class TestAllExercises : AbstractTestExercises() {
   fun testLocalFunctionsExercise1() = testClass(localFunctionsExercise1.TestLocalFunctionsExercise1::class)
 
   @Test
+  fun testLocalFunctionsExercise2() = testClass(localFunctionsExercise2.TestLocalFunctionsExercise2::class)
+
+  @Test
+  fun testLocalFunctionsExercise3() = testClass(localFunctionsExercise3.TestLocalFunctionsExercise3::class)
+
+  @Test
   fun testFoldingListsExercise1() = testClass(foldingListsExercise1.TestFoldingListsExercise1::class)
 
   @Test
