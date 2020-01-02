@@ -1,8 +1,7 @@
-## Inheritance (#1)
+This is the markdown document.
 
-Implement a more powerful version of the bomb: the one with a diameter of
-the explosion. All the cells that are close enough to the bomb must be destroyed.
-The bomb should explode when any mobile element steps into the same cell.
+Write your task text here
 
-Use the provided auxiliary function `isCloseToBomb()` to check whether
-an element is close enough to the bomb to be destroyed.
+<div class="hint">
+  Hints can be added anywhere in task text: type "hint" and press Tab.
+</div>

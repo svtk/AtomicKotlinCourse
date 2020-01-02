@@ -1,4 +1,7 @@
-## Secondary Constructors (#1)
+This is the markdown document.
 
-Replace all the constructors in the `GardenItem` class with one primary
-constructor using default arguments.
+Write your task text here
+
+<div class="hint">
+  Hints can be added anywhere in task text: type "hint" and press Tab.
+</div>
