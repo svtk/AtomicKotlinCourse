@@ -1,7 +1,7 @@
-This is the markdown document.
+## Secondary Constructors (#2)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create a `SpaceShip` class with a `val` class argument of `name: String`. Add
+properties `shipClass` (a `String`) and `weight` (an `Int`). Create a
+secondary constructor that takes an argument to initialize `shipClass`, and
+another secondary constructor that takes arguments to initialize both
+`shipClass` and `weight`.

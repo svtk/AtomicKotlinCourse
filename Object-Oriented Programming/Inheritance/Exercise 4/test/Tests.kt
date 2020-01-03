@@ -1,4 +1,4 @@
-package inheritanceExercise1
+package inheritanceExercise4
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestInheritanceExercise1 {
+class TestInheritanceExercise4 {
   private fun checkMaze(
     bombCell: Cell,
     mazeRepresentation: String,

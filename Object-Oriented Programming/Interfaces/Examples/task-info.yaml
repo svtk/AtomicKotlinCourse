@@ -1,14 +1,6 @@
 type: theory
 files:
-- name: src/SuperComputer.kt
+- name: src/Computer.kt
   visible: true
-- name: src/BrokenComputer.kt
-  visible: true
-- name: src/GameElement.kt
-  visible: true
-- name: src/GameStructure.kt
-  visible: true
-- name: src/InterfaceIndependence.kt
-  visible: true
-- name: src/RobotEatsFood.kt
+- name: src/PlayerInterface.kt
   visible: true

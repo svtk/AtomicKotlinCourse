@@ -1,4 +1,4 @@
-package interfacesExercise1
+package interfacesExercise4
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestInterfacesExercise1 {
+class TestInterfacesExercise4 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val matrix = MazeImpl(width = 4, height = 5)

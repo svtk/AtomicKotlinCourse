@@ -1,7 +1,5 @@
-This is the markdown document.
+## Secondary Constructors (#1)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create a `Flower` class with a `val` class argument of `type: String`. Add a
+secondary constructor that takes no arguments and initializes `type` to
+`Daisy`.

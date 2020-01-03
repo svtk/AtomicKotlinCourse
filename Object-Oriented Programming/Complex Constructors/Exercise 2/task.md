@@ -1,7 +1,25 @@
-This is the markdown document.
+## Complex Constructors (#2)
 
-Write your task text here
+Create a class called `SumChars` that takes `text: String` as a class
+argument. Add an un-initialized property `val sum: Int`. Inside `init`,
+define a local function `calc()` that sums up the integer values of each
+of the characters in `text`. Call `calc()` and assign the result to `sum`.
 
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+```kotlin
+// ComplexConstructors/Exercise2.kt
+package complexconstructors
+import atomictest.eq
+
+class SumChars(text: String) {
+  val sum: Int
+  init {
+    fun calc() =
+      text.fold(0, {s, c -> s + c.toInt() })
+    sum = calc()
+  }
+}
+
+fun main() {
+  SumChars("What?").sum eq 467
+}
+```

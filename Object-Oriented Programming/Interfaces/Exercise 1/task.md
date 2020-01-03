@@ -1,7 +1,10 @@
-This is the markdown document.
+## Interfaces (#1)
 
-Write your task text here
+Create a `Cloud` class which implements `Computer` and contains a `List<Node>`.
+`data class Node(result: Int)` also implements `Computer`, and implements
+`calculateAnswer()` so that it simply returns `result`.
 
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Write the `Cloud` constructor to take an argument `n` indicating the number of
+`Node`s in the cloud. Count up to `n` and place each count as the `result`
+value of the `Node` you are currently creating. Implement `Cloud`s
+`calculateAnswer()` to return the sum of the `result`s in all the `Node`s.

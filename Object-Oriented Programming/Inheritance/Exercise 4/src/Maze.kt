@@ -1,4 +1,4 @@
-package inheritanceExercise1
+package inheritanceExercise4
 
 data class Cell(val x: Int, val y: Int)
 

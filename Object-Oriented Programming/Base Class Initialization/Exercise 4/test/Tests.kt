@@ -1,4 +1,4 @@
-package baseClassInitializationExercise1
+package baseClassInitializationExercise4
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBaseClassInitializationExercise1 {
+class TestBaseClassInitializationExercise4 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val wall = Wall()

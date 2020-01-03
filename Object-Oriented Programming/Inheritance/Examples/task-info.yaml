@@ -8,5 +8,3 @@ files:
   visible: true
 - name: src/GreatApe2.kt
   visible: true
-- name: src/MazeGameInheritance.kt
-  visible: true

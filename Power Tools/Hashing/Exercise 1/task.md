@@ -22,4 +22,5 @@ fun main() {
   set2.size  // 1 or 2?
 }
 ```
+
 You can easily check your guess by printing the contents of the sets.

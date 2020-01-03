@@ -73,9 +73,9 @@ class GameImpl : Game {
   override fun playMove(move: Move) {
     turns++
     val mobileElements = maze.all()
-      .filterIsInstance<MobileElement>()// [5]
+      .filterIsInstance<MobileElement>() // [5]
     mobileElements.forEach {
-      val cell = it.move(move)          // [6]
+      val cell = it.move(move)           // [6]
       // update element cell
     }
   }

@@ -1,4 +1,4 @@
-package interfacesExercise1
+package interfacesExercise4
 
 import atomictest.eq
 

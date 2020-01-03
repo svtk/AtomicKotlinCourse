@@ -1,5 +1,5 @@
 // InheritanceAndExtensions/Auxiliary.kt
-package inheritanceandextensions.auxiliary
+package inheritanceandextensions.auxiliary1
 import inheritanceAndExtensions.*
 
 fun sameCellElements(

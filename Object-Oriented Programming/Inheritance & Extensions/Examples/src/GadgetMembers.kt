@@ -1,5 +1,5 @@
 // InheritanceAndExtensions/GadgetMembers.kt
-package inheritanceandextensions1
+package inheritanceAndExtensions
 import atomictest.eq
 
 interface Gadget {

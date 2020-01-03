@@ -1,7 +1,6 @@
-This is the markdown document.
+## Inheritance (#3)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Create a class `Game` with a property `var result: String`. From `Game`,
+inherit `BoardGame`, and from `BoardGame` inherit `Chess`. Give each class an
+`init` clause that appends its class name to `result`. Now create a
+`BoardGame` object and show the order of initialization of base classes.

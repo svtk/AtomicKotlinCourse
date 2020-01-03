@@ -26,7 +26,8 @@ i -= 1 // i: 0
 i -= 1 // i: -1
 val right = i // i: -1, right: -1
 
-val result = left - right // 1 - (-1) = 1 + 1 = 2
+val result =
+  left - right // 1 - (-1) = 1 + 1 = 2
 println(result)
 ```
 

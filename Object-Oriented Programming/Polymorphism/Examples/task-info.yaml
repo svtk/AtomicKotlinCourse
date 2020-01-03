@@ -4,7 +4,5 @@ files:
   visible: true
 - name: src/PolymorphicRobot.kt
   visible: true
-- name: src/PolymorphicPlay.kt
-  visible: true
 - name: src/GameImpl.kt
   visible: true

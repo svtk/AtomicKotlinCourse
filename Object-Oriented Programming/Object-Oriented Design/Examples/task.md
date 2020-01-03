@@ -1,3 +1,3 @@
-## Inheritance and Extensions
+## Object-Oriented Design
 
 Examples accompanying the atom.

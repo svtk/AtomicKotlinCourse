@@ -4,3 +4,5 @@ files:
   visible: true
 - name: src/LabeledThis.kt
   visible: true
+- name: src/GameState.kt
+  visible: true

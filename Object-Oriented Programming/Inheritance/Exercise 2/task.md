@@ -1,7 +1,4 @@
-This is the markdown document.
+## Inheritance (#2)
 
-Write your task text here
-
-<div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
-</div>
+Inherit a class called `Disinfectant` from `Detergent` and add a new method
+called `sterilize()`, following the same pattern as the other methods.

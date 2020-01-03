@@ -1,4 +1,4 @@
-package complexConstructorsExercise1
+package complexConstructorsExercise4
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestComplexConstructorsExercise1 {
+class TestComplexConstructorsExercise4 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val mazeRepresentation = """
