@@ -1763,12 +1763,12 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testGadgetExtensions() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Examples/src/GadgetExtensions.kt", inheritanceandextensions2.GadgetExtensionsKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Examples/src/GadgetExtensions.kt", inheritanceAndExtensions2.GadgetExtensionsKt::main);
     }
 
     @Test
     public void testGadgetMembers() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Examples/src/GadgetMembers.kt", inheritanceandextensions1.GadgetMembersKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Examples/src/GadgetMembers.kt", inheritanceAndExtensions1.GadgetMembersKt::main);
     }
 
     @Test
