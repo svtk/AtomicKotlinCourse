@@ -1,6 +1,7 @@
 // RobotExplorer2/Stage2.kt
 package robotexplorer2
 
+/*
 class Stage(val maze: String) {
   val robot = Robot(Room())
   val rooms =
@@ -60,4 +61,4 @@ class Stage(val maze: String) {
         view.show()
       }
   }
-}
+}*/

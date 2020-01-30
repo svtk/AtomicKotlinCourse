@@ -1,6 +1,7 @@
 // RobotExplorer2/Players2.kt
 package robotexplorer2
 
+/*
 open class Player(val symbol: Char) {
   override fun toString() = symbol.toString()
 }
@@ -23,4 +24,4 @@ class Teleport(
   var originRoom = Room()
   var targetRoom = Room()
   override fun toString() = target.toString()
-}
+}*/

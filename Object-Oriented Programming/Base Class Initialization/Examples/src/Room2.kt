@@ -1,6 +1,7 @@
 // RobotExplorer2/Room2.kt
 package robotexplorer2
 
+/*
 class Room(var player: Player = Empty()) {
   val doors = Doors()
   fun enter(robot: Robot): Room {
@@ -13,4 +14,4 @@ class Room(var player: Player = Empty()) {
     }
     return this // Enter new room
   }
-}
+}*/

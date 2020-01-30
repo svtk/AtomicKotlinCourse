@@ -2,6 +2,7 @@
 package robotexplorer2
 import robotmaze.*
 
+/*
 fun main() {
   Stage(stringMaze).run(solution)
-}
+}*/
