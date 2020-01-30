@@ -1,10 +1,32 @@
 type: theory
 files:
-- name: src/GadgetMembers.kt
+- name: src/InheritAdd.kt
   visible: true
-- name: src/GadgetExtensions.kt
+- name: src/ExtensionFuncs.kt
   visible: true
-- name: src/SimpleMaze.kt
+- name: src/AdjustTemp.kt
   visible: true
-- name: src/Auxiliary.kt
+- name: src/BatteryPet.kt
+  visible: true
+- name: src/BatteryPet2.kt
+  visible: true
+- name: src/Convention.kt
+  visible: true
+- name: src/UsefulLibrary.kt
+  visible: true
+- name: src/Adapter.kt
+  visible: true
+- name: src/ComposeAdapter.kt
+  visible: true
+- name: src/PrivateAccess.kt
+  visible: true
+- name: src/DeviceMembers.kt
+  visible: true
+- name: src/DeviceExtensions.kt
+  visible: true
+- name: src/InhExtensionsEx1.kt
+  visible: true
+- name: src/InhExtensionsEx2.kt
+  visible: true
+- name: src/InhExtensionsEx3.kt
   visible: true

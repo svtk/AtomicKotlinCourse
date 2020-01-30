@@ -1,10 +1,16 @@
 type: theory
 files:
-- name: src/GameElements.kt
+- name: src/Shapes.kt
   visible: true
-- name: src/Playing.kt
+- name: src/Drawing.kt
   visible: true
 - name: src/TrimmedMembers.kt
   visible: true
-- name: src/AssigningToVariable.kt
+- name: src/Assignment.kt
+  visible: true
+- name: src/UpcastExercise1.kt
+  visible: true
+- name: src/UpcastExercise2.kt
+  visible: true
+- name: src/UpcastExercise3.kt
   visible: true

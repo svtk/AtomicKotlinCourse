@@ -1,9 +1,40 @@
 ## Abstract Classes (#1)
 
-Implement the `move` function of the `Robot` class.
-It should return the new cell for `Robot` to step in.
-If the robot can't make a move because the cell is already
-occupied with a `Wall` or another element that can't share cell, return `null`.
+Abstract classes can have parameters and constructors just like ordinary
+classes. Create an abstract class `WithParams` with class parameters `val i:
+Int` and `var s: String = ""`. Inherit a class `Concrete` from `WithParams`.
+Provide constructors for both that use `atomictest.Trace` to show the class
+name and arguments. Create an instance of `Concrete` and verify the order of
+the constructor calls.
 
-You can use utility functions `Maze.isPassable` and `Cell.applyMove`
-defined in `MazeEx.kt`.
+```kotlin
+// Abstract/AbsExercise1.kt
+package abstractclasses
+import atomictest.*
+
+private var trace = Trace()
+
+abstract class WithParams(
+  val i: Int,
+  var s: String = ""
+) {
+  init {
+    trace("WithParams $i $s")
+  }
+}
+
+class Concrete(i: Int, s: String):
+  WithParams(i, s) {
+  init {
+    trace("Concrete $i $s")
+  }
+}
+
+fun main() {
+  Concrete(11, "One Louder")
+  trace eq """
+    WithParams 11 One Louder
+    Concrete 11 One Louder
+  """
+}
+```

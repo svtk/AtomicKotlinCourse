@@ -8,3 +8,9 @@ files:
   visible: true
 - name: src/Polymorphism.kt
   visible: true
+- name: src/SealedEx1.kt
+  visible: true
+- name: src/SealedEx2.kt
+  visible: true
+- name: src/SealedEx3.kt
+  visible: true

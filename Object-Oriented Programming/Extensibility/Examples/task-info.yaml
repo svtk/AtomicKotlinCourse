@@ -1,0 +1,22 @@
+type: theory
+files:
+- name: src/Players3.kt
+  visible: true
+- name: src/Room3.kt
+  visible: true
+- name: src/Stage3.kt
+  visible: true
+- name: src/ExploreMaze3.kt
+  visible: true
+- name: src/Urge3.kt
+  visible: true
+- name: src/Doors3.kt
+  visible: true
+- name: src/View3.kt
+  visible: true
+- name: src/ExtensibilityEx1.kt
+  visible: true
+- name: src/ExtensibilityEx2.kt
+  visible: true
+- name: src/ExtensibilityEx3.kt
+  visible: true

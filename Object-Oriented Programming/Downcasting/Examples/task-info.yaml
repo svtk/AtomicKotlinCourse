@@ -18,3 +18,9 @@ files:
   visible: true
 - name: src/Game.kt
   visible: true
+- name: src/DownCastEx1.kt
+  visible: true
+- name: src/DownCastEx2.kt
+  visible: true
+- name: src/DownCastEx3.kt
+  visible: true

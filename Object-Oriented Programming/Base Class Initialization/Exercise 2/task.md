@@ -1,8 +1,8 @@
 ## Base Class Initialization (#2)
 
-Create a global `private` `var trace` initialized to an empty `String`. In
-every class in this exercise, add an `init` that appends the name of the class
-and a newline to `trace`.
+Following the instructions in the previous exercise, create a global `private`
+`var trace` initialized to `Trace()`. In every class in this exercise, add an
+`init` that calls `trace()` to append the name of the class.
 
 Create a class `Plate` and inherit `DinnerPlate` from it. Create a class
 `Utensil` and inherit `Spoon`, `Fork` and `Knife` from it. Create a class
@@ -14,49 +14,49 @@ the initialization order.
 ```kotlin
 // BaseClassInit/BCIExercise2.kt
 package baseclassinit
-import atomictest.eq
+import atomictest.*
 
-private var trace = ""
+private val trace = Trace()
 
 open class Plate {
   init {
-    trace += "Plate\n"
+    trace("Plate")
   }
 }
 
 class DinnerPlate : Plate() {
   init {
-    trace += "DinnerPlate\n"
+    trace("DinnerPlate")
   }
 }
 
 open class Utensil {
   init {
-    trace += "Utensil\n"
+    trace("Utensil")
   }
 }
 
 class Spoon : Utensil() {
   init {
-    trace += "Spoon\n"
+    trace("Spoon")
   }
 }
 
 class Fork : Utensil() {
   init {
-    trace += "Fork\n"
+    trace("Fork")
   }
 }
 
 class Knife : Utensil() {
   init {
-    trace += "Knife\n"
+    trace("Knife")
   }
 }
 
 open class Custom() {
   init {
-    trace += "Custom\n"
+    trace("Custom")
   }
 }
 
@@ -66,25 +66,23 @@ class PlaceSetting : Custom() {
   val knife = Knife()
   val plate = DinnerPlate()
   init {
-    trace += "PlaceSetting\n"
+    trace("PlaceSetting")
   }
 }
 
 fun main() {
   PlaceSetting()
-/* Fails because of the newlines -- can we fix this?
   trace eq """
-Custom
-Utensil
-Spoon
-Utensil
-Fork
-Utensil
-Knife
-Plate
-DinnerPlate
-PlaceSetting
-""".trim()
-*/
+    Custom
+    Utensil
+    Spoon
+    Utensil
+    Fork
+    Utensil
+    Knife
+    Plate
+    DinnerPlate
+    PlaceSetting
+  """
 }
 ```

@@ -6,3 +6,9 @@ files:
   visible: true
 - name: src/GameState.kt
   visible: true
+- name: src/InnerNestedEx1.kt
+  visible: true
+- name: src/InnerNestedEx2.kt
+  visible: true
+- name: src/InnerNestedEx3.kt
+  visible: true

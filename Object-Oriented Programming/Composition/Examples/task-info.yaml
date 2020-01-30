@@ -6,11 +6,13 @@ files:
   visible: true
 - name: src/House3.kt
   visible: true
-- name: src/IntroducingGame.kt
+- name: src/Embedding.kt
   visible: true
-- name: src/InheritanceEffects.kt
+- name: src/Car.kt
   visible: true
-- name: src/MergingTwoInterfaces.kt
+- name: src/CompositionExercise1.kt
   visible: true
-- name: src/MazeComposition.kt
+- name: src/CompositionExercise2.kt
+  visible: true
+- name: src/CompositionExercise3.kt
   visible: true

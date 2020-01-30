@@ -8,13 +8,17 @@ files:
   visible: true
 - name: src/NoArgConstructor.kt
   visible: true
-- name: src/BCIExercise2.kt
-  visible: true
 - name: src/Players2.kt
+  visible: true
+- name: src/ExploreMaze2.kt
+  visible: true
+- name: src/Stage2.kt
+  visible: true
+- name: src/Room2.kt
   visible: true
 - name: src/BCIExercise1.kt
   visible: true
-- name: src/Room2.kt
+- name: src/BCIExercise2.kt
   visible: true
 - name: src/BCIExercise3.kt
   visible: true

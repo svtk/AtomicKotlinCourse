@@ -4,5 +4,11 @@ files:
   visible: true
 - name: src/ObjectInheritance.kt
   visible: true
+- name: src/GlobalSharing.kt
+  visible: true
+- name: src/Share1.kt
+  visible: true
+- name: src/Share2.kt
+  visible: true
 - name: src/ObjectNesting.kt
   visible: true

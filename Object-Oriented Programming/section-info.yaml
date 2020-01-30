@@ -11,10 +11,10 @@ content:
 - Composition
 - Inheritance & Extensions
 - Designing with Inheritance
+- Extensibility
 - Class Delegation
 - Downcasting
 - Sealed Classes
 - Inner & Nested Classes
-- More about Generics
 - Objects
 - Companion Objects

@@ -1,32 +1,34 @@
 ## Base Class Initialization (#1)
 
-Create a global `private` `var trace` initialized to an empty `String`. Create
-a class `A`; inside its `init`, append the name of the class to `trace`.
+`atomictest` includes a class called `Trace` and an accompanying `eq` to
+compare a `Trace` object to a multiline `String`. Create a global `private`
+`var trace` initialized to `Trace()`. Create a class `A`; inside its `init`,
+and call `trace(className)` to append the name of the class to `trace`.
 Inherit `B` from `A` and `C` from `B`, and give them similar `init`s. Create
 an instance of `C` to see the initialization order.
 
 ```kotlin
 // BaseClassInit/BCIExercise1.kt
 package baseclassinit
-import atomictest.eq
+import atomictest.*
 
-private var trace = ""
+private var trace = Trace()
 
 open class A {
   init {
-    trace += "A"
+    trace("A")
   }
 }
 
 open class B : A() {
   init {
-    trace += "B"
+    trace("B")
   }
 }
 
 class C : B() {
   init {
-    trace += "C"
+    trace("C")
   }
 }
 

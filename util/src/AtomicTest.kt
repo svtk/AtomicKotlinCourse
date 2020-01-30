@@ -1,29 +1,48 @@
 // AtomicTest/AtomicTest.kt
-/*
-A minimal test framework for the book, to
-display results and introduce & promote unit
-testing early in the learning curve.
-*/
 package atomictest
 import kotlin.math.abs
 
 const val ERROR_TAG = "[Error]:"
 
 private fun <L, R> runTest(
-  actual: L,
-  expected: R,
-  checkEquals: Boolean = true,
-  test: () -> Boolean
+        actual: L,
+        expected: R,
+        checkEquals: Boolean = true,
+        test: () -> Boolean
 ) {
   println(actual)
   if (!test()) {
     print(ERROR_TAG)
     val message: String =
-      if (checkEquals)
-        "$actual != $expected"
-      else
-        "$actual == $expected"
+            if (checkEquals)
+              "$actual != $expected"
+            else
+              "$actual == $expected"
     println(message)
+  }
+}
+
+
+/**
+ * Use instead of println() to capture
+ * and compare results.
+ */
+class Trace(var trace: String = "") {
+  operator fun invoke(s: String) {
+    trace += s + "\n"
+  }
+  override fun toString() = trace
+}
+
+/**
+ * Compares a Trace object to a multiline
+ * String by ignoring whitespace.
+ */
+infix fun Trace.eq(value: String) {
+  fun clean(s: String) =
+          s.filter { !it.isWhitespace() }
+  runTest(this, value) {
+    clean(this.trace) == clean(value)
   }
 }
 
@@ -77,10 +96,10 @@ infix fun Double.eq(value: Double) {
  *   ```
  */
 fun capture(f: () -> Unit): String =
-  try {
-    f()
-    "$ERROR_TAG Expected an exception"
-  } catch (e: Throwable) {
-    e::class.simpleName +
-      (e.message?.let { ": $it" } ?: "")
-  }
+        try {
+          f()
+          "$ERROR_TAG Expected an exception"
+        } catch (e: Throwable) {
+          e::class.simpleName +
+                  (e.message?.let { ": $it" } ?: "")
+        }

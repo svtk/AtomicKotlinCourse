@@ -1,7 +1,5 @@
 // ObjectOrientedDesign/Players.kt
-package robotexplorer1
-import robotexplorer1.Player.*
-import robotexplorer1.Urge.*
+package robotexplorer
 
 class Robot(var room: Room) {
   fun move(urge: Urge) {
@@ -24,16 +22,7 @@ enum class Player(val symbol: Char) {
 }
 
 class Teleport(val target: Char) {
-  var targetRoom = Room(Empty)
+  var originRoom = Room()
+  var targetRoom = Room()
   override fun toString() = target.toString()
-}
-
-fun factory(ch: Char): Any {
-  if(ch == 'R')
-    return Robot(edge)
-  Player.values().forEach {
-    if (ch == it.symbol)
-      return it
-  }
-  return Teleport(ch)
 }

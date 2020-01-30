@@ -1,5 +1,5 @@
 // ObjectOrientedDesign/View.kt
-package robotexplorer1
+package robotexplorer
 
 class View(private val stage: Stage) {
   // Start an ANSI terminal control string:

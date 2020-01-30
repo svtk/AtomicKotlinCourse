@@ -1,5 +1,7 @@
 type: theory
 files:
+- name: src/RobotMaze.kt
+  visible: true
 - name: src/ExploreMaze.kt
   visible: true
 - name: src/Urge.kt
