@@ -8,9 +8,3 @@ files:
   visible: true
 - name: src/Assignment.kt
   visible: true
-- name: src/UpcastExercise1.kt
-  visible: true
-- name: src/UpcastExercise2.kt
-  visible: true
-- name: src/UpcastExercise3.kt
-  visible: true

@@ -10,9 +10,3 @@ files:
   visible: true
 - name: src/ForLoop.kt
   visible: true
-- name: src/DestructuringEx1.kt
-  visible: true
-- name: src/DestructuringEx2.kt
-  visible: true
-- name: src/DestructuringEx3.kt
-  visible: true

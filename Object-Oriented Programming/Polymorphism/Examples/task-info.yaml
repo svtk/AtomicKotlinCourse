@@ -4,9 +4,3 @@ files:
   visible: true
 - name: src/FantasyGame.kt
   visible: true
-- name: src/PolyExercise1.kt
-  visible: true
-- name: src/PolyExercise2.kt
-  visible: true
-- name: src/PolyExercise3.kt
-  visible: true

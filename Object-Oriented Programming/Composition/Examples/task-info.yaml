@@ -10,9 +10,3 @@ files:
   visible: true
 - name: src/Car.kt
   visible: true
-- name: src/CompositionExercise1.kt
-  visible: true
-- name: src/CompositionExercise2.kt
-  visible: true
-- name: src/CompositionExercise3.kt
-  visible: true

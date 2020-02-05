@@ -10,9 +10,3 @@ files:
   visible: true
 - name: src/View2.kt
   visible: true
-- name: src/ExtensibilityEx1.kt
-  visible: true
-- name: src/ExtensibilityEx2.kt
-  visible: true
-- name: src/ExtensibilityEx3.kt
-  visible: true

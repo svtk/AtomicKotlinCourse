@@ -24,9 +24,3 @@ files:
   visible: true
 - name: src/DeviceExtensions.kt
   visible: true
-- name: src/InhExtensionsEx1.kt
-  visible: true
-- name: src/InhExtensionsEx2.kt
-  visible: true
-- name: src/InhExtensionsEx3.kt
-  visible: true

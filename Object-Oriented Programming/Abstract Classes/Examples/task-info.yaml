@@ -18,9 +18,3 @@ files:
   visible: true
 - name: src/InterfaceCollision.kt
   visible: true
-- name: src/AbsExercise1.kt
-  visible: true
-- name: src/AbsExercise2.kt
-  visible: true
-- name: src/AbsExercise3.kt
-  visible: true

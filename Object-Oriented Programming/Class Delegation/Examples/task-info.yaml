@@ -8,9 +8,3 @@ files:
   visible: true
 - name: src/ModelingMI.kt
   visible: true
-- name: src/ClassDelegEx1.kt
-  visible: true
-- name: src/ClassDelegEx2.kt
-  visible: true
-- name: src/ClassDelegEx3.kt
-  visible: true

@@ -8,9 +8,3 @@ files:
   visible: true
 - name: src/NoArgConstructor.kt
   visible: true
-- name: src/BCIExercise1.kt
-  visible: true
-- name: src/BCIExercise2.kt
-  visible: true
-- name: src/BCIExercise3.kt
-  visible: true

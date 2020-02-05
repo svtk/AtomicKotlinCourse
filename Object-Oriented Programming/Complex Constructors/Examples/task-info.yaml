@@ -4,9 +4,3 @@ files:
   visible: true
 - name: src/InitSection.kt
   visible: true
-- name: src/Exercise1.kt
-  visible: true
-- name: src/Exercise2.kt
-  visible: true
-- name: src/Exercise3.kt
-  visible: true
