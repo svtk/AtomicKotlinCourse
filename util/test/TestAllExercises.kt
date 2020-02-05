@@ -354,6 +354,15 @@ class TestAllExercises : AbstractTestExercises() {
   fun testDataClassesExercise3() = testClass(dataClassesExercise3.TestDataClassesExercise3::class)
 
   @Test
+  fun testDestructuringDeclarationsExercise1() = testClass(destructuringDeclarationsExercise1.TestDestructuringDeclarationsExercise1::class)
+
+  @Test
+  fun testDestructuringDeclarationsExercise2() = testClass(destructuringDeclarationsExercise2.TestDestructuringDeclarationsExercise2::class)
+
+  @Test
+  fun testDestructuringDeclarationsExercise3() = testClass(destructuringDeclarationsExercise3.TestDestructuringDeclarationsExercise3::class)
+
+  @Test
   fun testNullableTypesExercise1() = testClass(nullableTypesExercise1.TestNullableTypesExercise1::class)
 
   @Test
@@ -564,9 +573,6 @@ class TestAllExercises : AbstractTestExercises() {
   fun testInterfacesExercise3() = testClass(interfacesExercise3.TestInterfacesExercise3::class)
 
   @Test
-  fun testInterfacesExercise4() = testClass(interfacesExercise4.TestInterfacesExercise4::class)
-
-  @Test
   fun testComplexConstructorsExercise1() = testClass(complexConstructorsExercise1.TestComplexConstructorsExercise1::class)
 
   @Test
@@ -574,9 +580,6 @@ class TestAllExercises : AbstractTestExercises() {
 
   @Test
   fun testComplexConstructorsExercise3() = testClass(complexConstructorsExercise3.TestComplexConstructorsExercise3::class)
-
-  @Test
-  fun testComplexConstructorsExercise4() = testClass(complexConstructorsExercise4.TestComplexConstructorsExercise4::class)
 
   @Test
   fun testSecondaryConstructorsExercise1() = testClass(secondaryConstructorsExercise1.TestSecondaryConstructorsExercise1::class)
@@ -597,9 +600,6 @@ class TestAllExercises : AbstractTestExercises() {
   fun testInheritanceExercise3() = testClass(inheritanceExercise3.TestInheritanceExercise3::class)
 
   @Test
-  fun testInheritanceExercise4() = testClass(inheritanceExercise4.TestInheritanceExercise4::class)
-
-  @Test
   fun testBaseClassInitializationExercise1() = testClass(baseClassInitializationExercise1.TestBaseClassInitializationExercise1::class)
 
   @Test
@@ -609,10 +609,49 @@ class TestAllExercises : AbstractTestExercises() {
   fun testBaseClassInitializationExercise3() = testClass(baseClassInitializationExercise3.TestBaseClassInitializationExercise3::class)
 
   @Test
-  fun testBaseClassInitializationExercise4() = testClass(baseClassInitializationExercise4.TestBaseClassInitializationExercise4::class)
+  fun testAbstractClassesExercise1() = testClass(abstractClassesExercise1.TestAbstractClassesExercise1::class)
 
   @Test
-  fun testAbstractClassesExercise1() = testClass(abstractClassesExercise1.TestAbstractClassesExercise1::class)
+  fun testAbstractClassesExercise2() = testClass(abstractClassesExercise2.TestAbstractClassesExercise2::class)
+
+  @Test
+  fun testAbstractClassesExercise3() = testClass(abstractClassesExercise3.TestAbstractClassesExercise3::class)
+
+  @Test
+  fun testUpcastingExercise1() = testClass(upcastingExercise1.TestUpcastingExercise1::class)
+
+  @Test
+  fun testUpcastingExercise2() = testClass(upcastingExercise2.TestUpcastingExercise2::class)
+
+  @Test
+  fun testUpcastingExercise3() = testClass(upcastingExercise3.TestUpcastingExercise3::class)
+
+  @Test
+  fun testPolymorphismExercise1() = testClass(polymorphismExercise1.TestPolymorphismExercise1::class)
+
+  @Test
+  fun testPolymorphismExercise2() = testClass(polymorphismExercise2.TestPolymorphismExercise2::class)
+
+  @Test
+  fun testPolymorphismExercise3() = testClass(polymorphismExercise3.TestPolymorphismExercise3::class)
+
+  @Test
+  fun testCompositionExercise1() = testClass(compositionExercise1.TestCompositionExercise1::class)
+
+  @Test
+  fun testCompositionExercise2() = testClass(compositionExercise2.TestCompositionExercise2::class)
+
+  @Test
+  fun testCompositionExercise3() = testClass(compositionExercise3.TestCompositionExercise3::class)
+
+  @Test
+  fun testInheritanceAndExtensionsExercise1() = testClass(inheritanceAndExtensionsExercise1.TestInheritanceAndExtensionsExercise1::class)
+
+  @Test
+  fun testInheritanceAndExtensionsExercise2() = testClass(inheritanceAndExtensionsExercise2.TestInheritanceAndExtensionsExercise2::class)
+
+  @Test
+  fun testInheritanceAndExtensionsExercise3() = testClass(inheritanceAndExtensionsExercise3.TestInheritanceAndExtensionsExercise3::class)
 
   @Test
   fun testLambdaWithReceiverExercise1() = testClass(lambdaWithReceiverExercise1.TestLambdaWithReceiverExercise1::class)

@@ -1,0 +1,18 @@
+type: theory
+files:
+- name: src/Pairs.kt
+  visible: true
+- name: src/PairDestructuring.kt
+  visible: true
+- name: src/Computation.kt
+  visible: true
+- name: src/Tuple.kt
+  visible: true
+- name: src/ForLoop.kt
+  visible: true
+- name: src/DestructuringEx1.kt
+  visible: true
+- name: src/DestructuringEx2.kt
+  visible: true
+- name: src/DestructuringEx3.kt
+  visible: true

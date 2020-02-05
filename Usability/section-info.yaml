@@ -5,6 +5,7 @@ content:
 - when Expressions
 - Enumerations
 - Data Classes
+- Destructuring Declarations
 - Nullable Types
 - Safe Calls & the Elvis Operator
 - Non-null Assertions

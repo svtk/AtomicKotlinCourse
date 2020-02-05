@@ -5,7 +5,6 @@ content:
 - Scope Functions
 - Immutability
 - Hashing
-- Destructuring Declarations
 - Operator Overloading
 - Using Operators
 - Lazy Initialization

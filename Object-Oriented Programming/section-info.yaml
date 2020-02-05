@@ -10,7 +10,6 @@ content:
 - Polymorphism
 - Composition
 - Inheritance & Extensions
-- Designing with Inheritance
 - Extensibility
 - Class Delegation
 - Downcasting
@@ -18,3 +17,4 @@ content:
 - Inner & Nested Classes
 - Objects
 - Companion Objects
+- OO Design, Revisited

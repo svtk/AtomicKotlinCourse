@@ -1,0 +1,10 @@
+type: theory
+files:
+- name: src/Players3.kt
+  visible: true
+- name: src/ExploreMaze3.kt
+  visible: true
+- name: src/Room3.kt
+  visible: true
+- name: src/Stage3.kt
+  visible: true

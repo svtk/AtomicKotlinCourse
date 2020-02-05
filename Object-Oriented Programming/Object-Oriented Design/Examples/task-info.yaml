@@ -14,5 +14,7 @@ files:
   visible: true
 - name: src/Stage.kt
   visible: true
+- name: src/MazeView.kt
+  visible: true
 - name: src/View.kt
   visible: true
