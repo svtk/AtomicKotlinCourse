@@ -1,15 +1,15 @@
 package whenExpressionsExercise3
 
-import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
+import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestWhenExpressionsExercise3 {
   private fun checkBalanced(s: String, expected: Boolean) {
-    Assert.assertEquals("isBalanced($s) should return $expected", balanced(s), expected)
+    assertEquals(expected, balanced(s), "isBalanced($s) should return $expected")
   }
 
   @Test(timeout = TIMEOUT)
