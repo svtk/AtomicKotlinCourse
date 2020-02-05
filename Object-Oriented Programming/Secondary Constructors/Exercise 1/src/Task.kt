@@ -1,3 +1,5 @@
 package secondaryConstructorsExercise1
 
-// type your solution here
+class Flower(val type: String) {
+    constructor(): this("Daisy")
+}
