@@ -2,5 +2,12 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 66
+    length: 5
+    placeholder_text: data class
+  - offset: 134
+    length: 78
+    placeholder_text: ""
 - name: test/Tests.kt
   visible: false
