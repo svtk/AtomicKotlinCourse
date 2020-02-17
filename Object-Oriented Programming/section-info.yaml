@@ -14,7 +14,8 @@ content:
 - Class Delegation
 - Downcasting
 - Sealed Classes
-- Inner & Nested Classes
+- Nested Classes
+- Inner Classes
 - Objects
 - Companion Objects
-- OO Design, Revisited
+- Extensibility Revisited

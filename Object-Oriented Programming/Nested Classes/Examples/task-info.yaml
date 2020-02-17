@@ -1,0 +1,14 @@
+type: theory
+files:
+- name: src/Airport.kt
+  visible: true
+- name: src/NestedHouse.kt
+  visible: true
+- name: src/LocalClasses.kt
+  visible: true
+- name: src/ReturnLocal.kt
+  visible: true
+- name: src/Ticket.kt
+  visible: true
+- name: src/FillIt.kt
+  visible: true

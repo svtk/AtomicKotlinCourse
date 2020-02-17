@@ -1,8 +1,0 @@
-type: theory
-files:
-- name: src/Hotel.kt
-  visible: true
-- name: src/LabeledThis.kt
-  visible: true
-- name: src/GameState.kt
-  visible: true

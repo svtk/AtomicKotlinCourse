@@ -6,9 +6,9 @@ files:
   visible: true
 - name: src/BuildString.kt
   visible: true
-- name: src/BuildStringAndThis.kt
-  visible: true
 - name: src/Extensions.kt
   visible: true
 - name: src/Declarations.kt
+  visible: true
+- name: src/NestedLWR.kt
   visible: true

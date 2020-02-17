@@ -1,20 +1,18 @@
 type: theory
 files:
-- name: src/HumanAlice.kt
+- name: src/NarrowingUpcast.kt
   visible: true
-- name: src/SmartCast.kt
+- name: src/IsKeyword.kt
   visible: true
-- name: src/WhenAndHierarchy.kt
+- name: src/Creature.kt
   visible: true
-- name: src/WhenSubjectVariable.kt
+- name: src/MutableSmartCast.kt
   visible: true
 - name: src/Unsafe.kt
   visible: true
 - name: src/Safe.kt
   visible: true
-- name: src/CheckType.kt
+- name: src/FindType.kt
   visible: true
 - name: src/FilterIsInstance.kt
-  visible: true
-- name: src/Game.kt
   visible: true
