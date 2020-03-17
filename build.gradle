@@ -32,6 +32,11 @@ allprojects {
         // Logging support for samples:
         compile 'io.github.microutils:kotlin-logging:1.6.24'
         compile 'org.slf4j:slf4j-simple:1.8.0-beta4'
+
+        // Zircon
+        implementation "org.jetbrains.kotlinx:kotlinx-collections-immutable-jvm:0.3"
+        implementation "org.hexworks.zircon:zircon.core-jvm:2020.0.2-PREVIEW"
+        implementation "org.hexworks.zircon:zircon.jvm.swing:2020.0.2-PREVIEW"
     }
     compileKotlin.destinationDir = compileJava.destinationDir
     compileKotlin {
