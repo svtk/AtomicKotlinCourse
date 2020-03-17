@@ -12,7 +12,7 @@ the constructor calls.
 package abstractclasses
 import atomictest.*
 
-private var trace = Trace()
+private val trace = Trace()
 
 abstract class WithParams(
   val i: Int,

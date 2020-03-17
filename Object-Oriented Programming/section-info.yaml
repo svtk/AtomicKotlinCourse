@@ -1,5 +1,4 @@
 content:
-- Object-Oriented Design
 - Interfaces
 - Complex Constructors
 - Secondary Constructors
@@ -10,7 +9,6 @@ content:
 - Polymorphism
 - Composition
 - Inheritance & Extensions
-- Extensibility
 - Class Delegation
 - Downcasting
 - Sealed Classes
@@ -18,4 +16,4 @@ content:
 - Inner Classes
 - Objects
 - Companion Objects
-- Extensibility Revisited
+- Object-Oriented Design

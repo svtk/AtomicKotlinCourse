@@ -1,18 +1,18 @@
-// RobotExplorer1/Stage.kt
-package robotexplorer1
+// ObjectOrientedDesign/Stage.kt
+package oodesign
 
 class Stage(val maze: String) {
   val robot = Robot(Room())
-  val rooms =
-    mutableMapOf<Pair<Int, Int>, Room>()
+  val rooms: Rooms = mutableMapOf()
   private val view = View(this)
   val lines = maze.split("\n")
-  // Create using the 'Builder' pattern:
-  fun build(): Stage {
+  val height = lines.size
+  val width = lines[0].length
+  init { // The 'Builder' pattern:
     // Step 1: Create rooms with players:
     lines.withIndex().forEach { (row, line) ->
       line.withIndex().forEach { (col, ch) ->
-        val room = factory(ch)
+        val room = Factory.make(ch, row, col)
         rooms[Pair(row, col)] = room
         if(ch == robot.symbol)
           robot.room = room
@@ -33,18 +33,18 @@ class Stage(val maze: String) {
         it.target
       }.zipWithNext()
     for((a, b) in teleportPairs) {
-      a.targetRoom = b.originRoom
-      b.targetRoom = a.originRoom
+      a.targetRoom = b.room
+      b.targetRoom = a.room
     }
-    return this
   }
   fun run(solution: String) {
     view.clear()
-    view.show() // Show initial maze
+    view.display() // Show initial maze
     solution.filter { !it.isWhitespace() }
       .forEach {
         robot.move(urge(it))
-        view.show()
+        view.display()
+        Thread.sleep(200L) // Pause
       }
   }
 }

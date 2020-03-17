@@ -18,7 +18,7 @@ use `trace` to verify the output.
 package upcasting
 import atomictest.*
 
-private var trace = Trace()
+private val trace = Trace()
 
 interface Rodent {
   fun eat()

@@ -1,7 +1,6 @@
-// RobotExplorer1/ExploreMaze.kt
-package robotexplorer1
-import robotmaze.*
+// ObjectOrientedDesign/ExploreMaze.kt
+package oodesign
 
 fun main() {
-  Stage(stringMaze).build().run(solution)
+  Stage(stringMaze).run(solution)
 }

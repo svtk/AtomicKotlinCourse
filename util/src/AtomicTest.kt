@@ -1,4 +1,9 @@
 // AtomicTest/AtomicTest.kt
+/*
+A minimal test framework for the book, to
+display results and introduce & promote unit
+testing early in the learning curve.
+*/
 package atomictest
 import kotlin.math.abs
 
@@ -22,7 +27,6 @@ private fun <L, R> runTest(
   }
 }
 
-
 /**
  * Use instead of println() to capture
  * and compare results.
@@ -30,9 +34,14 @@ private fun <L, R> runTest(
 class Trace(val init: Any? = null) {
   var trace: String =
           init?.toString().orEmpty()
-  operator fun invoke(s: String?) {
-    trace += s + "\n"
+  operator fun invoke(s: Any?) {
+    trace += "$s\n"
   }
+  // '+=': Remove newline, prepend a space
+  operator fun plusAssign(s: Any?) {
+    trace = "${trace.trimEnd()} $s"
+  }
+  fun newline() { trace += "\n" }
   override fun toString() = trace
 }
 

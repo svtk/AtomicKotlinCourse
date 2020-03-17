@@ -1,44 +1,25 @@
-// RobotExplorer1/Players.kt
-package robotexplorer1
+// ObjectOrientedDesign/Players.kt
+package oodesign
 
-class Robot(var room: Room) {
-  val symbol = 'R'
-  var energy = 0
-  fun move(urge: Urge) {
-    // Get a reference to the Room you've
-    // been urged to go to, and see what
-    // happens when we enter that Room.
-    // Point robot to returned Room:
-    room = room.doors.open(urge).enter(this)
-  }
-  override fun toString() = symbol.toString()
-}
-
-enum class Player(val symbol: Char) {
-  Wall('#'),
-  Food('.'),
-  Empty('_'),
-  Void('~'),
-  EndGame('!');
-  override fun toString() = symbol.toString()
-}
-
-class Teleport(val target: Char) {
-  var originRoom = Room()
-  var targetRoom = Room()
-  override fun toString() = target.toString()
-}
-
-fun factory(ch: Char): Room {
-  val room = Room()
-  Player.values().forEach {
-    if (ch == it.symbol) {
-      room.player = it
-      return room
+sealed class Player {
+  abstract val symbol: Char
+  open fun id() = symbol.toString()
+  abstract val room: Room
+  override fun toString() =
+    "${this::class.simpleName} ${id()}"
+  abstract fun interact(robot: Robot): Room
+  // Makes the exact type of Player object:
+  abstract fun makePlayer(r: Room): Player
+  // Match the symbol and create + configure
+  // a Room with the new Player, or Fail:
+  open fun create(
+    ch: Char, row: Int, col: Int): Result {
+    if (ch == symbol) {
+      val room = Room(row, col)
+      room.player = makePlayer(room)
+      return Result.Success(room)
     }
+    return Result.Fail
   }
-  val teleport = Teleport(ch)
-  room.player = teleport
-  teleport.originRoom = room
-  return room
 }
+// To be continued ...

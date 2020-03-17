@@ -23,7 +23,7 @@ In `main()`, make a `List<Apple>` and populate it with the specific types of
 package upcasting
 import atomictest.*
 
-private var trace = Trace()
+private val trace = Trace()
 private var counter = 0
 
 abstract class Apple(val type: String) {

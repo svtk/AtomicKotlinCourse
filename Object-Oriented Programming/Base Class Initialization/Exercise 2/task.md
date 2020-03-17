@@ -1,7 +1,7 @@
 ## Base Class Initialization (#2)
 
 Following the instructions in the previous exercise, create a global `private`
-`var trace` initialized to `Trace()`. In every class in this exercise, add an
+`val trace` initialized to `Trace()`. In every class in this exercise, add an
 `init` that calls `trace()` to append the name of the class.
 
 Create a class `Plate` and inherit `DinnerPlate` from it. Create a class

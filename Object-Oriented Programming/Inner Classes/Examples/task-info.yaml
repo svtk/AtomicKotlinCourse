@@ -6,3 +6,9 @@ files:
   visible: true
 - name: src/QualifiedThis.kt
   visible: true
+- name: src/InnerClassInheritance.kt
+  visible: true
+- name: src/LocalInnerClasses.kt
+  visible: true
+- name: src/CounterFactory.kt
+  visible: true

@@ -1,0 +1,14 @@
+type: theory
+files:
+- name: src/Speakers.kt
+  visible: true
+- name: src/BasicGenerics.kt
+  visible: true
+- name: src/CarHolder.kt
+  visible: true
+- name: src/Holder.kt
+  visible: true
+- name: src/GetAShape.kt
+  visible: true
+- name: src/GenericSpeakers.kt
+  visible: true

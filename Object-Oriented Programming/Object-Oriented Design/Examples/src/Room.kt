@@ -1,21 +1,40 @@
-// RobotExplorer1/Room.kt
-package robotexplorer1
-import robotexplorer1.Player.*
+// ObjectOrientedDesign/Room.kt
+package oodesign
+import oodesign.Urge.*
 
-class Room(var player: Any = Void) {
+typealias Rooms =
+  MutableMap<Pair<Int, Int>, Room>
+
+class Room(
+  val row: Int = 0, val col: Int = 0,
+  var player: Player = Void()
+) {
   val doors = Doors()
-  fun enter(robot: Robot): Room {
-    when (val p = player) {
-      // Stay in original room:
-      Wall, Void -> return robot.room
-      is Teleport -> return p.targetRoom
-      EndGame -> return Room(EndGame)
-      Food -> {
-        robot.energy++ // Eat food
-        player = Empty
-      }
-      Empty -> {}
-    }
-    return this // Enter new room
+  override fun toString() =
+    "Room($row, $col, $player)"
+  companion object {
+    val edge = Room()
+  }
+}
+
+class Doors {
+  private val doors = mutableMapOf(
+    North to Room.edge,
+    South to Room.edge,
+    East to Room.edge,
+    West to Room.edge
+  )
+  fun open(urge: Urge): Room =
+    doors.getOrDefault(urge, Room.edge)
+  fun connect(
+    row: Int, col: Int, rooms: Rooms
+  ) {
+    fun link(toRow: Int, toCol: Int) =
+      rooms.getOrDefault(
+        Pair(toRow, toCol), Room.edge)
+    doors[North] = link(row - 1, col)
+    doors[South] = link(row + 1, col)
+    doors[East] = link(row, col + 1)
+    doors[West] = link(row, col - 1)
   }
 }

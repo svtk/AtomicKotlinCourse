@@ -27,7 +27,7 @@ function, the `Hero` becomes only the type of that parameter.
 package upcasting
 import atomictest.*
 
-private var trace = Trace()
+private val trace = Trace()
 
 interface Fight {
   fun fight()

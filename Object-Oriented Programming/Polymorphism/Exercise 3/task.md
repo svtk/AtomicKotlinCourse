@@ -1,6 +1,6 @@
 ## Polymorphism (#3)
 
-Create a base class named `Base` containing two methods, `f1()` and `f2()`.
+Create a base class named `Base` containing two functions, `f1()` and `f2()`.
 `f1()` uses `atomictest.Trace` to report "Base.f1", then calls `f2()`. `f2()`
 traces "Base.f2".
 

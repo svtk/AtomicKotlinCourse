@@ -657,26 +657,35 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#216 InheritanceAndExtensions Exercise#3`() = testClass(inheritanceAndExtensionsExercise3.TestInheritanceAndExtensionsExercise3::class)
 
   @Test
-  fun `test#217 LambdaWithReceiver Exercise#1`() = testClass(lambdaWithReceiverExercise1.TestLambdaWithReceiverExercise1::class)
+  fun `test#217 InnerClasses Exercise#1`() = testClass(innerClassesExercise1.TestInnerClassesExercise1::class)
 
   @Test
-  fun `test#218 LambdaWithReceiver Exercise#2`() = testClass(lambdaWithReceiverExercise2.TestLambdaWithReceiverExercise2::class)
+  fun `test#218 InnerClasses Exercise#2`() = testClass(innerClassesExercise2.TestInnerClassesExercise2::class)
 
   @Test
-  fun `test#219 TheWithFunction Exercise#1`() = testClass(theWithFunctionExercise1.TestTheWithFunctionExercise1::class)
+  fun `test#219 InnerClasses Exercise#3`() = testClass(innerClassesExercise3.TestInnerClassesExercise3::class)
 
   @Test
-  fun `test#220 TheWithFunction Exercise#2`() = testClass(theWithFunctionExercise2.TestTheWithFunctionExercise2::class)
+  fun `test#220 LambdaWithReceiver Exercise#1`() = testClass(lambdaWithReceiverExercise1.TestLambdaWithReceiverExercise1::class)
 
   @Test
-  fun `test#221 ScopeFunctions Exercise#1`() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
+  fun `test#221 LambdaWithReceiver Exercise#2`() = testClass(lambdaWithReceiverExercise2.TestLambdaWithReceiverExercise2::class)
 
   @Test
-  fun `test#222 ScopeFunctions Exercise#2`() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
+  fun `test#222 TheWithFunction Exercise#1`() = testClass(theWithFunctionExercise1.TestTheWithFunctionExercise1::class)
 
   @Test
-  fun `test#223 ScopeFunctions Exercise#3`() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
+  fun `test#223 TheWithFunction Exercise#2`() = testClass(theWithFunctionExercise2.TestTheWithFunctionExercise2::class)
 
   @Test
-  fun `test#224 Hashing Exercise#1`() = testClass(hashingExercise1.TestHashingExercise1::class)
+  fun `test#224 ScopeFunctions Exercise#1`() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
+
+  @Test
+  fun `test#225 ScopeFunctions Exercise#2`() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
+
+  @Test
+  fun `test#226 ScopeFunctions Exercise#3`() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
+
+  @Test
+  fun `test#227 Hashing Exercise#1`() = testClass(hashingExercise1.TestHashingExercise1::class)
 }

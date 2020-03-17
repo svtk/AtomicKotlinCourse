@@ -17,13 +17,13 @@ class Ticket(private var seat: Seat = COACH) {
     ]
     return this
   }
-  override fun toString() = "$seat"
   fun meal() = when(seat) {
     COACH -> "Bag Meal"
     PREMIUM -> "Bag Meal with Cookie"
     BUSINESS -> "Hot Meal"
     FIRST -> "Private Chef"
   }
+  override fun toString() = "$seat"
 }
 
 fun main() {
