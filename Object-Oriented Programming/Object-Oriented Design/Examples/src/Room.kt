@@ -2,16 +2,13 @@
 package oodesign
 import oodesign.Urge.*
 
-typealias Rooms =
-  MutableMap<Pair<Int, Int>, Room>
-
 class Room(
   val row: Int = 0, val col: Int = 0,
-  var player: Player = Void()
+  var actor: Actor = Void()
 ) {
   val doors = Doors()
   override fun toString() =
-    "Room($row, $col, $player)"
+    "Room($row, $col, $actor)"
   companion object {
     val edge = Room()
   }
@@ -27,11 +24,12 @@ class Doors {
   fun open(urge: Urge): Room =
     doors.getOrDefault(urge, Room.edge)
   fun connect(
-    row: Int, col: Int, rooms: Rooms
+    row: Int, col: Int, rooms: List<Room>
   ) {
     fun link(toRow: Int, toCol: Int) =
-      rooms.getOrDefault(
-        Pair(toRow, toCol), Room.edge)
+      rooms.firstOrNull {
+        it.row == toRow && it.col == toCol
+      } ?: Room.edge
     doors[North] = link(row - 1, col)
     doors[South] = link(row + 1, col)
     doors[East] = link(row, col + 1)

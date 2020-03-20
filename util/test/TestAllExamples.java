@@ -1982,18 +1982,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testExploreMaze() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Object-Oriented Design/Examples/src/ExploreMaze.kt", oodesign.ExploreMazeKt::main);
-    }
-
-    @Test
     public void testRobotExplorer() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Object-Oriented Design/Examples/src/RobotExplorer.kt", oodesign.RobotExplorerKt::main);
     }
 
     @Test
-    public void testTestFactory() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Object-Oriented Design/Examples/src/TestFactory.kt", oodesign.TestFactoryKt::main);
+    public void testFactory() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Object-Oriented Design/Examples/src/Factory.kt", oodesign.FactoryKt::main);
     }
 
     @Test
