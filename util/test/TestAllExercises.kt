@@ -657,35 +657,101 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#216 InheritanceAndExtensions Exercise#3`() = testClass(inheritanceAndExtensionsExercise3.TestInheritanceAndExtensionsExercise3::class)
 
   @Test
-  fun `test#217 InnerClasses Exercise#1`() = testClass(innerClassesExercise1.TestInnerClassesExercise1::class)
+  fun `test#217 ClassDelegation Exercise#1`() = testClass(classDelegationExercise1.TestClassDelegationExercise1::class)
 
   @Test
-  fun `test#218 InnerClasses Exercise#2`() = testClass(innerClassesExercise2.TestInnerClassesExercise2::class)
+  fun `test#218 ClassDelegation Exercise#2`() = testClass(classDelegationExercise2.TestClassDelegationExercise2::class)
 
   @Test
-  fun `test#219 InnerClasses Exercise#3`() = testClass(innerClassesExercise3.TestInnerClassesExercise3::class)
+  fun `test#219 ClassDelegation Exercise#3`() = testClass(classDelegationExercise3.TestClassDelegationExercise3::class)
 
   @Test
-  fun `test#220 LambdaWithReceiver Exercise#1`() = testClass(lambdaWithReceiverExercise1.TestLambdaWithReceiverExercise1::class)
+  fun `test#220 Downcasting Exercise#1`() = testClass(downcastingExercise1.TestDowncastingExercise1::class)
 
   @Test
-  fun `test#221 LambdaWithReceiver Exercise#2`() = testClass(lambdaWithReceiverExercise2.TestLambdaWithReceiverExercise2::class)
+  fun `test#221 Downcasting Exercise#2`() = testClass(downcastingExercise2.TestDowncastingExercise2::class)
 
   @Test
-  fun `test#222 TheWithFunction Exercise#1`() = testClass(theWithFunctionExercise1.TestTheWithFunctionExercise1::class)
+  fun `test#222 Downcasting Exercise#3`() = testClass(downcastingExercise3.TestDowncastingExercise3::class)
 
   @Test
-  fun `test#223 TheWithFunction Exercise#2`() = testClass(theWithFunctionExercise2.TestTheWithFunctionExercise2::class)
+  fun `test#223 SealedClasses Exercise#1`() = testClass(sealedClassesExercise1.TestSealedClassesExercise1::class)
 
   @Test
-  fun `test#224 ScopeFunctions Exercise#1`() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
+  fun `test#224 SealedClasses Exercise#2`() = testClass(sealedClassesExercise2.TestSealedClassesExercise2::class)
 
   @Test
-  fun `test#225 ScopeFunctions Exercise#2`() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
+  fun `test#225 SealedClasses Exercise#3`() = testClass(sealedClassesExercise3.TestSealedClassesExercise3::class)
 
   @Test
-  fun `test#226 ScopeFunctions Exercise#3`() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
+  fun `test#226 NestedClasses Exercise#1`() = testClass(nestedClassesExercise1.TestNestedClassesExercise1::class)
 
   @Test
-  fun `test#227 Hashing Exercise#1`() = testClass(hashingExercise1.TestHashingExercise1::class)
+  fun `test#227 NestedClasses Exercise#2`() = testClass(nestedClassesExercise2.TestNestedClassesExercise2::class)
+
+  @Test
+  fun `test#228 NestedClasses Exercise#3`() = testClass(nestedClassesExercise3.TestNestedClassesExercise3::class)
+
+  @Test
+  fun `test#229 NestedClasses Exercise#4`() = testClass(nestedClassesExercise4.TestNestedClassesExercise4::class)
+
+  @Test
+  fun `test#230 InnerClasses Exercise#1`() = testClass(innerClassesExercise1.TestInnerClassesExercise1::class)
+
+  @Test
+  fun `test#231 InnerClasses Exercise#2`() = testClass(innerClassesExercise2.TestInnerClassesExercise2::class)
+
+  @Test
+  fun `test#232 InnerClasses Exercise#3`() = testClass(innerClassesExercise3.TestInnerClassesExercise3::class)
+
+  @Test
+  fun `test#233 Objects Exercise#1`() = testClass(objectsExercise1.TestObjectsExercise1::class)
+
+  @Test
+  fun `test#234 Objects Exercise#2`() = testClass(objectsExercise2.TestObjectsExercise2::class)
+
+  @Test
+  fun `test#235 Objects Exercise#3`() = testClass(objectsExercise3.TestObjectsExercise3::class)
+
+  @Test
+  fun `test#236 CompanionObjects Exercise#1`() = testClass(companionObjectsExercise1.TestCompanionObjectsExercise1::class)
+
+  @Test
+  fun `test#237 CompanionObjects Exercise#2`() = testClass(companionObjectsExercise2.TestCompanionObjectsExercise2::class)
+
+  @Test
+  fun `test#238 CompanionObjects Exercise#3`() = testClass(companionObjectsExercise3.TestCompanionObjectsExercise3::class)
+
+  @Test
+  fun `test#239 ObjectOrientedDesign Exercise#1`() = testClass(objectOrientedDesignExercise1.TestObjectOrientedDesignExercise1::class)
+
+  @Test
+  fun `test#240 ObjectOrientedDesign Exercise#2`() = testClass(objectOrientedDesignExercise2.TestObjectOrientedDesignExercise2::class)
+
+  @Test
+  fun `test#241 ObjectOrientedDesign Exercise#3`() = testClass(objectOrientedDesignExercise3.TestObjectOrientedDesignExercise3::class)
+
+  @Test
+  fun `test#242 LambdaWithReceiver Exercise#1`() = testClass(lambdaWithReceiverExercise1.TestLambdaWithReceiverExercise1::class)
+
+  @Test
+  fun `test#243 LambdaWithReceiver Exercise#2`() = testClass(lambdaWithReceiverExercise2.TestLambdaWithReceiverExercise2::class)
+
+  @Test
+  fun `test#244 TheWithFunction Exercise#1`() = testClass(theWithFunctionExercise1.TestTheWithFunctionExercise1::class)
+
+  @Test
+  fun `test#245 TheWithFunction Exercise#2`() = testClass(theWithFunctionExercise2.TestTheWithFunctionExercise2::class)
+
+  @Test
+  fun `test#246 ScopeFunctions Exercise#1`() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
+
+  @Test
+  fun `test#247 ScopeFunctions Exercise#2`() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
+
+  @Test
+  fun `test#248 ScopeFunctions Exercise#3`() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
+
+  @Test
+  fun `test#249 Hashing Exercise#1`() = testClass(hashingExercise1.TestHashingExercise1::class)
 }

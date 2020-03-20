@@ -1,0 +1,52 @@
+## Downcasting (#1)
+
+Modify `NarrowingUpcast.kt` to call the functions in the extended interface.
+First, changed `Derived1` and `Derived2` by adding calls to `trace` for each
+function. The `trace` argument is the class name and function; for example
+`fun h() = trace("Derived2.h()")`.
+
+Now write a function `checkAndCall(b: Base)` so that it calls the polymorphic
+member function, then uses a `when` to downcast and call the extended-interface
+functions.
+
+```kotlin
+// DownCasting/DownCastEx1.kt
+package downcastingex1
+import atomictest.*
+
+private val trace = Trace()
+
+interface Base {
+  fun f()
+}
+
+class Derived1 : Base {
+  override fun f() = trace("Derived1.f()")
+  fun g() = trace("Derived1.g()")
+}
+
+class Derived2 : Base {
+  override fun f() = trace("Derived2.f()")
+  fun h() = trace("Derived2.h()")
+}
+
+fun checkAndCall(b: Base) {
+  b.f() // Polymorphic call
+  when(b) {
+    is Derived1 -> b.g()
+    is Derived2 -> b.h()
+  }
+}
+
+fun main() {
+  checkAndCall(Derived1()) // Upcast
+  checkAndCall(Derived2()) // Upcast
+  trace eq """
+  Derived1.f()
+  Derived1.g()
+  Derived2.f()
+  Derived2.h()
+  """
+}
+
+```
