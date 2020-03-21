@@ -8,10 +8,8 @@ interface Character {
   val name: String
   val type: String
   fun skills(): String
-  fun play() {
-    trace("$name $type:")
-    trace(" ${skills()}")
-  }
+  fun play() =
+    trace("$name $type:\n ${skills()}")
 }
 
 interface Magician {
