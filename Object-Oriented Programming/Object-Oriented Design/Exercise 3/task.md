@@ -26,6 +26,7 @@ class House(
 
 Make your code satisfy the tests in `main()`.
 
+SOLUTION::
 
 ```kotlin
 // ObjectOrientedDesign/OODesignEx3.kt

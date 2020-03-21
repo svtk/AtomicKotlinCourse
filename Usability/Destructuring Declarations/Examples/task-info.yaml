@@ -10,3 +10,5 @@ files:
   visible: true
 - name: src/ForLoop.kt
   visible: true
+- name: src/LoopWithIndex.kt
+  visible: true

@@ -1012,13 +1012,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testLoopWithIndex() {
+        testExample("../AtomicKotlinCourse/Usability/Destructuring Declarations/Examples/src/LoopWithIndex.kt", destructuringInLoops.LoopWithIndexKt::main);
+    }
+
+    @Test
     public void testPairDestructuring() {
         testExample("../AtomicKotlinCourse/Usability/Destructuring Declarations/Examples/src/PairDestructuring.kt", destructuring.PairDestructuringKt::main);
     }
 
     @Test
     public void testForLoop() {
-        testExample("../AtomicKotlinCourse/Usability/Destructuring Declarations/Examples/src/ForLoop.kt", ForLoopKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Destructuring Declarations/Examples/src/ForLoop.kt", destructuringInLoops.ForLoopKt::main);
     }
 
     @Test

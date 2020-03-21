@@ -19,7 +19,7 @@ fun robotExplorer(stage: Stage) {
         TrueTypeFontResources.ubuntuMono(25))
       .withSize(Size.create(
         stage.width, stage.height + 1))
-      .build())
+      .build()) // +1 for a blank bottom line
   // Strip newlines and create an iterator:
   val maze = stage.maze
     .filter { it != '\n' }.iterator()
@@ -32,7 +32,7 @@ fun robotExplorer(stage: Stage) {
   fun robotPosition() = Position.create(
     stage.robot.room.col,
     stage.robot.room.row)
-  // Create the red robot icon layer:
+  // The red robot icon as a layer:
   val robotIcon = Layer.newBuilder()
     .withSize(Size.one())
     .withOffset(robotPosition())

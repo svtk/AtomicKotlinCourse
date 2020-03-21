@@ -7,7 +7,8 @@ testing early in the learning curve.
 package atomictest
 import kotlin.math.abs
 
-const val ERROR_TAG = "[Error]:"
+const val ERROR_TAG = "[Error]: "
+val NL = System.getProperty("line.separator")
 
 private fun <L, R> runTest(
         actual: L,
@@ -24,36 +25,6 @@ private fun <L, R> runTest(
             else
               "$actual == $expected"
     println(message)
-  }
-}
-
-/**
- * Use instead of println() to capture
- * and compare results.
- */
-class Trace(val init: Any? = null) {
-  var trace: String =
-          init?.toString().orEmpty()
-  operator fun invoke(s: Any?) {
-    trace += "$s\n"
-  }
-  // '+=': Remove newline, prepend a space
-  operator fun plusAssign(s: Any?) {
-    trace = "${trace.trimEnd()} $s"
-  }
-  fun newline() { trace += "\n" }
-  override fun toString() = trace
-}
-
-/**
- * Compares a Trace object to a multiline
- * String by ignoring whitespace.
- */
-infix fun Trace.eq(value: String) {
-  fun clean(s: String) =
-          s.filter { !it.isWhitespace() }
-  runTest(this, value) {
-    clean(this.trace) == clean(value)
   }
 }
 
@@ -114,3 +85,39 @@ fun capture(f: () -> Unit): String =
           e::class.simpleName +
                   (e.message?.let { ": $it" } ?: "")
         }
+
+/**
+ * Use instead of println() to capture
+ * and compare results.
+ */
+class Trace(
+  private val moreOutput: Boolean = false
+) {
+  private val content =
+    mutableListOf<String>()
+
+  operator fun invoke(obj: Any?) {
+    content += obj.toString()
+  }
+
+  /**
+   * Compares a Trace content to a multiline
+   * String by ignoring line separators:
+   * they can be either new line characters or whitespaces.
+   */
+  infix fun eq(value: String) {
+    val left = content.joinToString(" ") {
+      it.replace(NL, " ")
+    }
+    val right = value.trimIndent()
+      .replace(NL, " ")
+    if (moreOutput) {
+      println("[Trace]: $left")
+      println("[Value]: $right")
+    }
+    val output = content.joinToString(NL)
+    runTest(output, value) {
+      left == right
+    }
+  }
+}
