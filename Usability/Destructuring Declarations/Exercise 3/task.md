@@ -1,25 +1,20 @@
 ## Destructuring Declarations (#3)
 
-Write a function `f()` that returns a `Pair` containing `true` along with a
-second nested `Pair` containing "Yes" and 100. In `main()`, attempt to write
-a destructuring declaration that unpacks the `Boolean` along with both parts
-of the nested `Pair` in a single statement. Now unpack the result of `f()` in
-two steps: first capture the two components of the outer `Pair`, then unpack
-the two components of the nested `Pair`.
+Create a `data` class `Person` with two properties: `name` and `age`. Implement the `displayPersonInfo` 
+function that takes `person` as a argument, then destructures using the following syntax:
 
-```kotlin
-// Destructuring/DestructuringEx3.kt
-package destructuringex3
-import atomictest.eq
-
-fun f() = Pair(true, Pair("Yes", 100))
-
-fun main() {
-  // val (ok, (u, v)) = f()
-  val (ok, p) = f()
-  ok eq true
-  val (u, v) = p
-  u eq "Yes"
-  v eq 100
-}
 ```
+val (name, age) = person
+```
+ 
+Finally, `displayPersonInfo` should display to the console the corresponding values:
+
+```
+Name: $name
+Age: $age
+```
+
+Now add a new second property `surname` between `name` and `age`. `name` should be the first property, `age`
+should be the third property now. Don't change the function `displayPersonInfo()`.
+
+Run the modified version in the `main` function and make sure that `displayPersonInfo` now works incorrectly. 

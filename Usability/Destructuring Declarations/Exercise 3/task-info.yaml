@@ -2,5 +2,20 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 44
+    length: 78
+    placeholder_text: class Person
+  - offset: 166
+    length: 72
+    placeholder_text: |-
+      val (name, age) = person
+      // TODO
+  - offset: 255
+    length: 111
+    placeholder_text: |-
+      val person = Person("Alice",  30)
+      //  val person = Person("Alice", "Johnson", 30)
+        displayPersonInfo(person)
 - name: test/Tests.kt
   visible: false
