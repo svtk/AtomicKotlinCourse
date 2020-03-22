@@ -34,6 +34,6 @@ class C : B() {
 
 fun main() {
   C()
-  trace eq "ABC"
+  trace eq "A B C"
 }
 ```

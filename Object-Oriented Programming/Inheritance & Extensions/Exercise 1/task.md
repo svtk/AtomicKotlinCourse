@@ -21,12 +21,12 @@ class DeltaTemperature(
 
 fun DeltaTemperature.heat() {
   if (current < target)
-    trace("heating to $target ")
+    trace("heating to $target")
 }
 
 fun DeltaTemperature.cool() {
   if (current > target)
-    trace("cooling to $target ")
+    trace("cooling to $target")
 }
 
 fun DeltaTemperature.openWindow() {
@@ -36,7 +36,7 @@ fun DeltaTemperature.openWindow() {
 
 fun DeltaTemperature.fan() {
   if (current > target)
-    trace("cooling to $target ")
+    trace("cooling to $target")
 }
 
 class DeltaTemperature2(
@@ -45,11 +45,11 @@ class DeltaTemperature2(
 ) {
   fun heat() {
     if (current < target)
-      trace("heating to $target ")
+      trace("heating to $target")
   }
   fun cool() {
     if (current > target)
-      trace("cooling to $target ")
+      trace("cooling to $target")
   }
   fun openWindow() {
     if (current > target)
@@ -57,7 +57,7 @@ class DeltaTemperature2(
   }
   fun fan() {
     if (current > target)
-      trace("cooling to $target ")
+      trace("cooling to $target")
   }
 }
 
