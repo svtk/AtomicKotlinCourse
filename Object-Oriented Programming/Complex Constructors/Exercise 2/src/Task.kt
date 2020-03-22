@@ -1,3 +1,16 @@
+// ComplexConstructors/Exercise2.kt
 package complexConstructorsExercise2
+import atomictest.eq
 
-// type your solution here
+class SumChars(text: String) {
+  val sum: Int
+  init {
+    fun calc() =
+      text.fold(0, {s, c -> s + c.toInt() })
+    sum = calc()
+  }
+}
+
+fun main() {
+  SumChars("What?").sum eq 467
+}

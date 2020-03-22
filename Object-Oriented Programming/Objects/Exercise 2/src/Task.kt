@@ -1,3 +1,32 @@
+// Objects/ObjectEx2.kt
 package objectsExercise2
+import atomictest.eq
 
-// type your solution here
+object Outer {
+  object Nested {
+    val a = "Outer.Nested.a"
+    object Nested {
+      val a = "Outer.Nested.Nested.a"
+    }
+  }
+}
+
+class HasObject {
+  object Nested {
+    val a = "HasObject.Nested.a"
+    object Nested {
+      val a = "HasObject.Nested.Nested.a"
+    }
+  }
+}
+
+fun main() {
+  Outer.Nested.a eq
+    "Outer.Nested.a"
+  HasObject.Nested.a eq
+    "HasObject.Nested.a"
+  Outer.Nested.Nested.a eq
+    "Outer.Nested.Nested.a"
+  HasObject.Nested.Nested.a eq
+    "HasObject.Nested.Nested.a"
+}
