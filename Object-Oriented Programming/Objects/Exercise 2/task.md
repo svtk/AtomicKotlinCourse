@@ -4,38 +4,3 @@ Add more nesting to `ObjectNesting.kt`. Inside both the `Nested` objects, add
 another `Nested` object that looks the same as its enclosing `Nested`, with the
 same name and property, and an appropriate `String` for `a`. The code in
 `main()` provides tests. Notice how the namespaces work.
-
-```kotlin
-// Objects/ObjectEx2.kt
-package objectex2
-import atomictest.eq
-
-object Outer {
-  object Nested {
-    val a = "Outer.Nested.a"
-    object Nested {
-      val a = "Outer.Nested.Nested.a"
-    }
-  }
-}
-
-class HasObject {
-  object Nested {
-    val a = "HasObject.Nested.a"
-    object Nested {
-      val a = "HasObject.Nested.Nested.a"
-    }
-  }
-}
-
-fun main() {
-  Outer.Nested.a eq
-    "Outer.Nested.a"
-  HasObject.Nested.a eq
-    "HasObject.Nested.a"
-  Outer.Nested.Nested.a eq
-    "Outer.Nested.Nested.a"
-  HasObject.Nested.Nested.a eq
-    "HasObject.Nested.Nested.a"
-}
-```
