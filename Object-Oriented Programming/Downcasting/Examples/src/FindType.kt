@@ -1,4 +1,4 @@
-// Downcasting/FindType.kt
+// DownCasting/FindType.kt
 package downcasting
 import atomictest.eq
 

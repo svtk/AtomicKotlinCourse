@@ -547,11 +547,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testTrace2() {
-        testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Examples/src/Trace2.kt", Trace2Kt::main);
-    }
-
-    @Test
     public void testTDDWorks() {
         testExample("../AtomicKotlinCourse/Introduction to Objects/Testing/Examples/src/TDDWorks.kt", testing3.TDDWorksKt::main);
     }
@@ -1447,6 +1442,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testPlayingCards() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Manipulating Lists/Examples/src/PlayingCards.kt", manipulatinglists.PlayingCardsKt::main);
+    }
+
+    @Test
     public void testGetOrPut() {
         testExample("../AtomicKotlinCourse/Functional Programming/Building Maps/Examples/src/GetOrPut.kt", GetOrPutKt::main);
     }
@@ -2169,6 +2169,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testCarHolder() {
         testExample("../AtomicKotlinCourse/Power Tools/More Generics/Examples/src/CarHolder.kt", generics.CarHolderKt::main);
+    }
+
+    @Test
+    public void testGenericSafeCast() {
+        testExample("../AtomicKotlinCourse/Power Tools/More Generics/Examples/src/GenericSafeCast.kt", generics.GenericSafeCastKt::main);
     }
 
     @Test

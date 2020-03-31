@@ -4,8 +4,6 @@ files:
   visible: true
 - name: src/Trace1.kt
   visible: true
-- name: src/Trace2.kt
-  visible: true
 - name: src/TDDFail.kt
   visible: true
 - name: src/TDDStillFails.kt

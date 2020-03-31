@@ -1,4 +1,4 @@
-// Downcasting/FilterIsInstance.kt
+// DownCasting/FilterIsInstance.kt
 package downcasting
 import atomictest.eq
 
