@@ -2043,32 +2043,32 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testRequireNotNull() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/RequireNotNull.kt", checkinstructions.RequireNotNullKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/RequireNotNull.kt", checkinstructions.RequireNotNullKt::main);
     }
 
     @Test
     public void testPostconditions() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/Postconditions.kt", checkinstructions.PostconditionsKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/Postconditions.kt", checkinstructions.PostconditionsKt::main);
     }
 
     @Test
     public void testSingleArgRequire() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/SingleArgRequire.kt", checkinstructions.SingleArgRequireKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/SingleArgRequire.kt", checkinstructions.SingleArgRequireKt::main);
     }
 
     @Test
     public void testGetTrace() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/GetTrace.kt", checkinstructions.GetTraceKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/GetTrace.kt", checkinstructions.GetTraceKt::main);
     }
 
     @Test
     public void testQuadraticRequire() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/QuadraticRequire.kt", checkinstructions.QuadraticRequireKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/QuadraticRequire.kt", checkinstructions.QuadraticRequireKt::main);
     }
 
     @Test
     public void testLocalFile() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/LocalFile.kt", checkinstructions.LocalFileKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/LocalFile.kt", checkinstructions.LocalFileKt::main);
     }
 
     @Test
@@ -2093,37 +2093,37 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testCloseable() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/Closeable.kt", resourcecleanup.CloseableKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/Closeable.kt", resourcecleanup.CloseableKt::main);
     }
 
     @Test
     public void testUseLines() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/UseLines.kt", resourcecleanup.UseLinesKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/UseLines.kt", resourcecleanup.UseLinesKt::main);
     }
 
     @Test
     public void testUsable() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/Usable.kt", resourcecleanup.UsableKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/Usable.kt", resourcecleanup.UsableKt::main);
     }
 
     @Test
     public void testForEachLine() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/ForEachLine.kt", resourcecleanup.ForEachLineKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/ForEachLine.kt", resourcecleanup.ForEachLineKt::main);
     }
 
     @Test
     public void testUseAtomicLog() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Examples/src/UseAtomicLog.kt", UseAtomicLogKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Examples/src/UseAtomicLog.kt", UseAtomicLogKt::main);
     }
 
     @Test
     public void testBasicLogging() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Examples/src/BasicLogging.kt", logging.BasicLoggingKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Examples/src/BasicLogging.kt", logging.BasicLoggingKt::main);
     }
 
     @Test
     public void testSimpleLoggingStrategy() {
-        //testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Examples/src/SimpleLoggingStrategy.kt", logging.SimpleLoggingStrategyKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Examples/src/SimpleLoggingStrategy.kt", logging.SimpleLoggingStrategyKt::main);
     }
 
     @Test

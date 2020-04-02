@@ -8,26 +8,24 @@ package atomictest
 import kotlin.math.abs
 
 const val ERROR_TAG = "[Error]: "
-val NL = System.getProperty("line.separator")
 
 private fun <L, R> runTest(
-        actual: L,
-        expected: R,
-        checkEquals: Boolean = true,
-        test: () -> Boolean
+  actual: L,
+  expected: R,
+  checkEquals: Boolean = true,
+  test: () -> Boolean
 ) {
   println(actual)
   if (!test()) {
     print(ERROR_TAG)
     val message: String =
-            if (checkEquals)
-              "$actual != $expected"
-            else
-              "$actual == $expected"
+      if (checkEquals)
+        "$actual != $expected"
+      else
+        "$actual == $expected"
     println(message)
   }
 }
-
 /**
  * Compares the string representation
  * of the object with the string `value`.
@@ -37,9 +35,8 @@ infix fun <T : Any> T.eq(value: String) {
     this.toString() == value
   }
 }
-
 /**
- * Checks that this object is
+ * Verifies that this object is
  * equal to `value`.
  */
 infix fun <T> T.eq(value: T) {
@@ -47,9 +44,8 @@ infix fun <T> T.eq(value: T) {
     this == value
   }
 }
-
 /**
- * Checks that this object is not
+ * Verifies that this object is not
  * equal to `value`.
  */
 infix fun <T> T.neq(value: T) {
@@ -57,9 +53,8 @@ infix fun <T> T.neq(value: T) {
     this != value
   }
 }
-
 /**
- * Checks that a `Double` number is equal
+ * Verfies that a `Double` number is equal
  * to `value` within a positive delta.
  */
 infix fun Double.eq(value: Double) {
@@ -78,45 +73,46 @@ infix fun Double.eq(value: Double) {
  *   ```
  */
 fun capture(f: () -> Unit): String =
-        try {
-          f()
-          "$ERROR_TAG Expected an exception"
-        } catch (e: Throwable) {
-          e::class.simpleName +
-                  (e.message?.let { ": $it" } ?: "")
-        }
+  try {
+    f()
+    "$ERROR_TAG Expected an exception"
+  } catch (e: Throwable) {
+    e::class.simpleName +
+      (e.message?.let { ": $it" } ?: "")
+  }
 
-/**
- * Use instead of println() to capture
- * and compare results.
- */
 class Trace(
-  private val moreOutput: Boolean = false
+  private val details: Boolean = false
 ) {
   private val content =
     mutableListOf<String>()
-
   operator fun invoke(obj: Any?) {
     content += obj.toString()
   }
-
+  constructor(result: Any) : this() {
+    result.toString().trim().split("\n")
+      .forEach {
+        content.add(it.trim())
+      }
+  }
   /**
-   * Compares a Trace content to a multiline
-   * String by ignoring line separators:
-   * they can be either new line characters or whitespaces.
+   * Compares Trace contents to a multiline
+   * String by ignoring line separators.
+   * Separators can be either newlines
+   * or whitespaces.
    */
-  infix fun eq(value: String) {
+  infix fun eq(multiline: String) {
     val left = content.joinToString(" ") {
-      it.replace(NL, " ")
+      it.replace("\n", " ")
     }
-    val right = value.trimIndent()
-      .replace(NL, " ")
-    if (moreOutput) {
+    val right = multiline.trimIndent()
+      .replace("\n", " ")
+    if (details) {
       println("[Trace]: $left")
       println("[Value]: $right")
     }
-    val output = content.joinToString(NL)
-    runTest(output, value) {
+    val output = content.joinToString("\n")
+    runTest(output, multiline) {
       left == right
     }
   }
