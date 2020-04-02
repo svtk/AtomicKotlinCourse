@@ -4,8 +4,8 @@ import atomictest.eq
 import java.io.File
 import java.nio.file.Paths
 
-fun localFile(name: String): File {
-  val targetDir = File("LocalFiles")
+fun dataFile(name: String): File {
+  val targetDir = File("DataFiles")
   require(targetDir.exists()) {
     "$targetDir does not exist"
   }
@@ -13,7 +13,7 @@ fun localFile(name: String): File {
 }
 
 fun main() {
-  localFile("Test.txt") eq
-    Paths.get("LocalFiles",
+  dataFile("Test.txt") eq
+    Paths.get("DataFiles",
       "Test.txt").toString()
 }

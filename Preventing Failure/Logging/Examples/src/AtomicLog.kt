@@ -1,8 +1,8 @@
 // Logging/AtomicLog.kt
 package atomiclog
-import checkinstructions.localFile
+import checkinstructions.dataFile
 
-val logFile = localFile("atomicLog.txt")
+val logFile = dataFile("atomicLog.txt")
 
 object log {
   init {
