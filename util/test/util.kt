@@ -5,10 +5,8 @@ import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 import java.lang.reflect.Method
-import kotlin.reflect.KClass
-import kotlin.reflect.KFunction
-import kotlin.reflect.KParameter
-import kotlin.reflect.KProperty
+import kotlin.reflect.*
+import kotlin.reflect.full.createType
 import kotlin.reflect.full.memberFunctions
 import kotlin.reflect.full.memberProperties
 
@@ -60,6 +58,17 @@ fun checkInputOutput(message: String, input: String, expectedOutput: String, act
   checkSystemOutput(message, expectedOutput, out.toString())
 }
 
+
+private fun assertKType(actualKType: KType, expectedKType: KType, what: () -> String) {
+  if (actualKType != expectedKType) {
+    incorrectTypeError(actualKType.toString(), expectedKType.toString(), what())
+  }
+}
+
+private fun incorrectTypeError(actualType: String, expectedType: String, what: String): Nothing {
+  throw AssertionError("Expected type of $what: $expectedType, found: $actualType")
+}
+
 private fun notFoundError(what: String, where: String): Nothing {
   throw AssertionError("Can't find the $what in $where")
 }
@@ -72,6 +81,16 @@ private fun <T> List<T>.checkFoundEntities(what: String, where: String): List<T>
   if (isEmpty()) notFoundError(what, where)
   if (size > 1) tooManyError(what, where)
   return this
+}
+
+inline fun<reified T> createInstance(vararg args: Any?): T {
+  val className = T::class.simpleName
+          ?: throw AssertionError("Class should not be an anonymous object literal")
+  val packageName = T::class.qualifiedName
+          ?.substringBeforeLast('.')
+          ?: throw AssertionError("Class should not be local or an anonymous object literal")
+  return loadClass(packageName, className).constructors.firstOrNull()?.call(*args) as T
+          ?: throw AssertionError("Class $className should define at least one constructor")
 }
 
 fun loadClass(packageName: String, className: String): KClass<*> {
@@ -94,6 +113,18 @@ fun loadMemberProperty(kClass: KClass<*>, propertyName: String): KProperty<*> {
     .filter { it.name == propertyName }
     .checkFoundEntities("the '$propertyName' member property", "'${kClass.simpleName}' class")
     .single()
+}
+
+fun loadAssertedMemberProperty(kClass: KClass<*>, propertyName: String, expectedType: KClass<*>): KProperty<*> {
+  return kClass.memberProperties
+          .filter { it.name == propertyName }
+          .checkFoundEntities("the '$propertyName' member property", "'${kClass.simpleName}' class")
+          .single()
+          .also { property ->
+            assertKType(actualKType = property.returnType, expectedKType = expectedType.createType()) {
+              "'${kClass.simpleName}.${propertyName}' property"
+            }
+          }
 }
 
 class KFileFacade(val packageName: String, val fileName: String, val jClass: Class<*>)

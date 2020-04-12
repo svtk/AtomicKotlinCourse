@@ -9,9 +9,9 @@ class TestDestructuringDeclarationsExercise2 {
 
     @Test
     fun `class declaration`() {
-        val actualFun = Computation::class
+        val actualClass = Computation::class
         assertFalse(
-                actual = actualFun.isData,
+                actual = actualClass.isData,
                 message = "Computation should not be declared as a data class"
         )
     }
