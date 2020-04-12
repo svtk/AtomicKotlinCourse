@@ -1,6 +1,6 @@
 ## Destructuring Declarations (#3)
 
-Create a `data` class `Person` with two properties: `name: String` and
+Initial code contains a `data` class `Person` with two properties: `name: String` and
 `age: Int`. Write a `displayPersonInfo()` function that takes a parameter of
 `person: Person`, which it destructures using the following syntax:
 
