@@ -510,28 +510,28 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#167 BuildingMaps Exercise#3`() = testClass(buildingMapsExercise3.TestBuildingMapsExercise3::class)
 
   @Test
-  fun `test#168 CreatingSequences Exercise#1`() = testClass(creatingSequencesExercise1.TestCreatingSequencesExercise1::class)
+  fun `test#168 Sequences Exercise#1`() = testClass(sequencesExercise1.TestSequencesExercise1::class)
 
   @Test
-  fun `test#169 CreatingSequences Exercise#2`() = testClass(creatingSequencesExercise2.TestCreatingSequencesExercise2::class)
+  fun `test#169 Sequences Exercise#2`() = testClass(sequencesExercise2.TestSequencesExercise2::class)
 
   @Test
-  fun `test#170 CreatingSequences Exercise#3`() = testClass(creatingSequencesExercise3.TestCreatingSequencesExercise3::class)
+  fun `test#170 Sequences Exercise#3`() = testClass(sequencesExercise3.TestSequencesExercise3::class)
 
   @Test
-  fun `test#171 CreatingSequences Exercise#4`() = testClass(creatingSequencesExercise4.TestCreatingSequencesExercise4::class)
+  fun `test#171 Sequences Exercise#4`() = testClass(sequencesExercise4.TestSequencesExercise4::class)
 
   @Test
-  fun `test#172 CreatingSequences Exercise#5`() = testClass(creatingSequencesExercise5.TestCreatingSequencesExercise5::class)
+  fun `test#172 Sequences Exercise#5`() = testClass(sequencesExercise5.TestSequencesExercise5::class)
 
   @Test
-  fun `test#173 HelperFunctions Exercise#1`() = testClass(helperFunctionsExercise1.TestHelperFunctionsExercise1::class)
+  fun `test#173 Sequences Exercise#6`() = testClass(sequencesExercise6.TestSequencesExercise6::class)
 
   @Test
-  fun `test#174 HelperFunctions Exercise#2`() = testClass(helperFunctionsExercise2.TestHelperFunctionsExercise2::class)
+  fun `test#174 Sequences Exercise#7`() = testClass(sequencesExercise7.TestSequencesExercise7::class)
 
   @Test
-  fun `test#175 HelperFunctions Exercise#3`() = testClass(helperFunctionsExercise3.TestHelperFunctionsExercise3::class)
+  fun `test#175 Sequences Exercise#8`() = testClass(sequencesExercise8.TestSequencesExercise8::class)
 
   @Test
   fun `test#176 LocalFunctions Exercise#1`() = testClass(localFunctionsExercise1.TestLocalFunctionsExercise1::class)

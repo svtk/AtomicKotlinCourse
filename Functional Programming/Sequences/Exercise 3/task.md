@@ -1,4 +1,4 @@
-## Creating Sequences (#3)
+## Sequences (#3)
 
 Implement the `School` extension function `averageInstructorRating()` which
 takes `Instructor` as a parameter and calculates the average rating that the

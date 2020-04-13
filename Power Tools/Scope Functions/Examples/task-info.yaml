@@ -16,3 +16,7 @@ files:
   visible: true
 - name: src/Let.kt
   visible: true
+- name: src/ReadingName.kt
+  visible: true
+- name: src/ReadingNameWithIf.kt
+  visible: true

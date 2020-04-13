@@ -1,4 +1,4 @@
-package creatingSequencesExercise2
+package sequencesExercise2
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -28,7 +28,7 @@ abstract class TestSchool {
 }
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestCreatingSequencesExercise2 : TestSchool() {
+class TestSequencesExercise2 : TestSchool() {
   private fun checkInstructors(
     student: Student,
     schoolLessons: List<Lesson>,

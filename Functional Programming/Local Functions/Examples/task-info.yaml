@@ -18,5 +18,3 @@ files:
   visible: true
 - name: src/ReturnInsideLambda.kt
   visible: true
-- name: src/HelperFunction.kt
-  visible: true

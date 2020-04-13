@@ -1,4 +1,4 @@
-package creatingSequencesExercise5
+package sequencesExercise5
 
 data class Instructor(val name: String)
 

@@ -1,4 +1,4 @@
-## Creating Sequences (#4)
+## Sequences (#4)
 
 Implement the `School` extension function `favoriteInstructor()`. It takes
 `Student` as a parameter and finds an instructor whose classes this student

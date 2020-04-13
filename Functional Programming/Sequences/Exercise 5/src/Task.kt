@@ -1,4 +1,4 @@
-package creatingSequencesExercise5
+package sequencesExercise5
 
 fun School.findInstructorsWithLargestClass(): Set<Instructor> {
   val maxClassSize = lessons

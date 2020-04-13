@@ -8,3 +8,13 @@ files:
   visible: true
 - name: src/TerminalOperations.kt
   visible: true
+- name: src/NumberSequence1.kt
+  visible: true
+- name: src/InputLines1.kt
+  visible: true
+- name: src/InputLines2.kt
+  visible: true
+- name: src/DefineTakeIf.kt
+  visible: true
+- name: src/NumberSequence2.kt
+  visible: true

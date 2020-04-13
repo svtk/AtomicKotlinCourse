@@ -1,4 +1,4 @@
-## Creating Sequences (#5)
+## Sequences (#5)
 
 Implement the `School` extension function `instructorsWithLargestClass()`. It
 first finds the maximum number of students that attended any one lesson. Then

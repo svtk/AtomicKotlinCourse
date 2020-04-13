@@ -1,4 +1,4 @@
-package creatingSequencesExercise4
+package sequencesExercise4
 
 fun School.favouriteInstructor(student: Student): Instructor? =
   lessons

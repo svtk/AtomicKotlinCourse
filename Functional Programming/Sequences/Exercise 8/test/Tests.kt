@@ -1,4 +1,4 @@
-package helperFunctionsExercise3
+package sequencesExercise8
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -7,7 +7,7 @@ import org.junit.runners.MethodSorters
 import util.TIMEOUT
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestHelperFunctionsExercise3 {
+class TestSequencesExercise8 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     Assert.assertEquals("Wrong result for sample",

@@ -1,4 +1,4 @@
-// CreatingSequences/NoComputationYet.kt
+// Sequences/NoComputationYet.kt
 package creatingsequences
 
 fun main() {

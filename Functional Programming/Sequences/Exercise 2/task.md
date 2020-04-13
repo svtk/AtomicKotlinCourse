@@ -1,4 +1,4 @@
-## Creating Sequences (#2)
+## Sequences (#2)
 
 Implement the `School` extension functions `studentInstructors()` and
 `studentsOf()`. `studentInstructors()` takes `Student` as a parameter and finds

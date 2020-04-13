@@ -1,4 +1,4 @@
-## Helper Functions (#3)
+## Sequences (#8)
 
 Complete the function `fibonacci()` so it generates an infinite sequence
 of Fibonacci numbers. Each new Fibonacci number is the sum of the previous two.

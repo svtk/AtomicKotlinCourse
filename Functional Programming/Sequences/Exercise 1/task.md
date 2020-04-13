@@ -1,4 +1,4 @@
-## Creating Sequences (#1)
+## Sequences (#1)
 
 All exercises for this atom use the classes `Instructor`, `Student`, `Lesson`
 and `School` defined in `School.kt` in the starter code. These classes model an

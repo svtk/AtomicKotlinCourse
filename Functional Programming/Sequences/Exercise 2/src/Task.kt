@@ -1,4 +1,4 @@
-package creatingSequencesExercise2
+package sequencesExercise2
 
 fun School.studentInstructors(
   student: Student

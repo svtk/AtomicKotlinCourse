@@ -1,4 +1,4 @@
-// CreatingSequences/TerminalOperations.kt
+// Sequences/TerminalOperations.kt
 package creatingsequences
 
 fun main() {

@@ -14,3 +14,7 @@ files:
   visible: true
 - name: src/GuaranteedCleanup.kt
   visible: true
+- name: src/CaptureImplementation.kt
+  visible: true
+- name: src/Stacktrace.kt
+  visible: true

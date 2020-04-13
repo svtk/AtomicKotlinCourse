@@ -45,7 +45,10 @@ class Wall(
   override val symbol = '#'
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
-  override fun makeActor(r: Room) = Wall(r)
+  override fun makeActor(r: Room) = wall
+  companion object {
+    val wall = Wall()
+  }
 }
 // Continued ...
 // ... Continuing

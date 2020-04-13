@@ -1,4 +1,4 @@
-package creatingSequencesExercise5
+package sequencesExercise5
 
 import org.junit.Assert
 import org.junit.FixMethodOrder
@@ -28,7 +28,7 @@ abstract class TestSchool {
 }
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestCreatingSequencesExercise5 : TestSchool() {
+class TestSequencesExercise5 : TestSchool() {
   private fun checkInstructorsWithLargestClass(
     schoolLessons: List<Lesson>,
     instructors: List<Char>

@@ -1,8 +1,9 @@
 ## Destructuring Declarations (#3)
 
-Initial code contains a `data` class `Person` with two properties: `name: String` and
-`age: Int`. Write a `displayPersonInfo()` function that takes a parameter of
-`person: Person`, which it destructures using the following syntax:
+Initial code contains a `data` class `Person` with two properties:
+`name: String` and `age: Int`. Write a `displayPersonInfo()` function that takes
+a parameter of `person: Person`, which it destructures using the following
+syntax:
 
 ```
 val (name, age) = person
