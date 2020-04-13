@@ -2,6 +2,8 @@ type: theory
 files:
 - name: src/DefiningExceptions.kt
   visible: true
+- name: src/Stacktrace.kt
+  visible: true
 - name: src/Handlers.kt
   visible: true
 - name: src/Hierarchy.kt
@@ -15,6 +17,4 @@ files:
 - name: src/GuaranteedCleanup.kt
   visible: true
 - name: src/CaptureImplementation.kt
-  visible: true
-- name: src/Stacktrace.kt
   visible: true

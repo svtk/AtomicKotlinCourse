@@ -2122,6 +2122,16 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testNoFramework() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Unit Testing/Examples/src/NoFramework.kt", unittesting.NoFrameworkKt::main);
+    }
+
+    @Test
+    public void testUsingExpect() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Unit Testing/Examples/src/UsingExpect.kt", unittesting.UsingExpectKt::main);
+    }
+
+    @Test
     public void testRegularLambda() {
         testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/RegularLambda.kt", regularlambda.RegularLambdaKt::main);
     }
