@@ -1,15 +1,13 @@
 package localFunctionsExercise1
 
-import atomictest.eq
-
-fun <T> List<T>.find(predicate: (T) -> Boolean): T? {
-  forEach {
-    if (predicate(it)) return it
+fun f(): Int {
+  fun g(): Int {
+    fun h() = 47
+    return h()
   }
-  return null
+  return g()
 }
 
 fun main() {
-  listOf(1, 2, 3).find { it < 0 } eq null
-  listOf(1, -2, -3).find { it < 0 } eq -2
+  println(f())
 }

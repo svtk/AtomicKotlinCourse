@@ -1,6 +1,6 @@
 ## Local Functions (#3)
 
-Demonstrate that you can put a local function inside another local function by
-writing a function `f()` which returns the result of its local function `g()`
-which in turn returns the result of *it's* local function `h()`, which simply
-returns the value `47`.
+Complete the implementation of the `createContainer()` function. It returns 
+a pair of functions to control the integer container. The first function adds
+an integer element to the container, the second function removes an element
+from the container and returns it. If the container is empty, it returns `null`.

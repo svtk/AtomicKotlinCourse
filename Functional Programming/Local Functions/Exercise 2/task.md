@@ -1,7 +1,19 @@
 ## Local Functions (#2)
 
-Demonstrate that you can put a local function inside a member function by
-creating a class called `Fibonacci` with a member function `list(n: Int):
-List<Int>`, where `n` indicates the quantity of Fibonacci numbers you want in
-the result. Within `list()`, define a local function `next()` which produces
-the next Fibonacci number.
+The `createCounter()` function creates a pair of functions for managing the
+counter. Instead of creating a class, we manipulate with a counter using only
+functions.
+
+In `createCounter` define a local variable `counter`. Then define two local                                              
+functions:
+
+- `inc()` - increases the `counter` value by one
+- `value()` - returns the value of `counter`
+
+At last, return a pair of function references to these local functions:
+
+`return Pair(::inc, ::value)`
+
+Two local functions capture the same local variable `counter`. Such style of
+managing state is commonly used in pure functional programming languages that
+don't have classes.
