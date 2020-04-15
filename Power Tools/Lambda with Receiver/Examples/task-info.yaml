@@ -1,14 +1,22 @@
 type: theory
 files:
-- name: src/StringBuilder.kt
+- name: src/StateMachine.kt
   visible: true
-- name: src/RegularLambda.kt
+- name: src/UseNewStateMachine1.kt
   visible: true
-- name: src/BuildString.kt
+- name: src/NewStateMachine1.kt
+  visible: true
+- name: src/UseNewStateMachine2.kt
   visible: true
 - name: src/Extensions.kt
   visible: true
-- name: src/Declarations.kt
+- name: src/NewStateMachine2.kt
   visible: true
-- name: src/NestedLWR.kt
+- name: src/AnonymousFunction.kt
+  visible: true
+- name: src/StringBuilder.kt
+  visible: true
+- name: src/BuildString.kt
+  visible: true
+- name: src/BuildStringDef.kt
   visible: true

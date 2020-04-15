@@ -1,4 +1,4 @@
 ## Lambda with Receiver (#2)
 
-Implement `buildList()` which is similar to `buildString()`. `buildList()`
-creates a mutable list and applies actions passed in a lambda parameter.
+Implement `buildMap()` which is similar to `buildList()`. `buildMap()`
+creates a mutable map and applies actions passed in a lambda parameter.

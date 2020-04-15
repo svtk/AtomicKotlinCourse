@@ -4,7 +4,7 @@ The `createCounter()` function creates a pair of functions for managing the
 counter. Instead of creating a class, we manipulate with a counter using only
 functions.
 
-In `createCounter` define a local variable `counter`. Then define two local                                              
+In `createCounter` define a local variable `counter`. Then define two local
 functions:
 
 - `inc()` - increases the `counter` value by one

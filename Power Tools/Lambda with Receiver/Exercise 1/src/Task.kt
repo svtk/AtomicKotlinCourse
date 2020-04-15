@@ -11,6 +11,6 @@ fun drawSquare(width: Int) = buildString {
 fun main() {
   drawSquare(3) eq
     """|***
-               |***
-               |***""".trimMargin()
+       |***
+       |***""".trimMargin()
 }

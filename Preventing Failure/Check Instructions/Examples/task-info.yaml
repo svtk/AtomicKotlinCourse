@@ -2,7 +2,7 @@ type: theory
 files:
 - name: src/QuadraticRequire.kt
   visible: true
-- name: src/LocalFile.kt
+- name: src/DataFile.kt
   visible: true
 - name: src/GetTrace.kt
   visible: true

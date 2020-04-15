@@ -18,3 +18,5 @@ files:
   visible: true
 - name: src/ReturnInsideLambda.kt
   visible: true
+- name: src/ReturningFunc.kt
+  visible: true

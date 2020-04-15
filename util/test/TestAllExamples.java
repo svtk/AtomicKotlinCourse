@@ -1542,6 +1542,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testReturningFunc() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Local Functions/Examples/src/ReturningFunc.kt", lambdawithreceiver.ReturningFuncKt::main);
+    }
+
+    @Test
     public void testReturnFromFun() {
         testExample("../AtomicKotlinCourse/Functional Programming/Local Functions/Examples/src/ReturnFromFun.kt", ReturnFromFunKt::main);
     }
@@ -2047,6 +2052,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testDataFile() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/DataFile.kt", checkinstructions.DataFileKt::main);
+    }
+
+    @Test
     public void testSingleArgRequire() {
         testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/SingleArgRequire.kt", checkinstructions.SingleArgRequireKt::main);
     }
@@ -2059,11 +2069,6 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testQuadraticRequire() {
         testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/QuadraticRequire.kt", checkinstructions.QuadraticRequireKt::main);
-    }
-
-    @Test
-    public void testLocalFile() {
-        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Examples/src/LocalFile.kt", checkinstructions.LocalFileKt::main);
     }
 
     @Test
@@ -2132,18 +2137,18 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testRegularLambda() {
-        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/RegularLambda.kt", regularlambda.RegularLambdaKt::main);
+    public void testNewStateMachine2() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/NewStateMachine2.kt", statemachine2.NewStateMachine2Kt::main);
     }
 
     @Test
     public void testBuildString() {
-        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/BuildString.kt", BuildStringKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/BuildString.kt", buildstring.BuildStringKt::main);
     }
 
     @Test
-    public void testDeclarations() {
-        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/Declarations.kt", lambdawithreceiver.DeclarationsKt::main);
+    public void testUseNewStateMachine2() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/UseNewStateMachine2.kt", statemachine2.UseNewStateMachine2Kt::main);
     }
 
     @Test
@@ -2152,8 +2157,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testNestedLWR() {
-        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/NestedLWR.kt", lambdawithreceiver.NestedLWRKt::main);
+    public void testAnonymousFunction() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/AnonymousFunction.kt", lambdawithreceiver.AnonymousFunctionKt::main);
+    }
+
+    @Test
+    public void testUseNewStateMachine1() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/UseNewStateMachine1.kt", statemachine.UseNewStateMachine1Kt::main);
     }
 
     @Test

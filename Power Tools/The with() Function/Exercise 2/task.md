@@ -5,4 +5,4 @@ a lambda with receiver, implement the toy `with2()` function which
 takes an ordinary lambda as a parameter instead of a lambda with receiver.
 Note that there're no function analogous to `with2()` in the standard
 library, however, there're similar extension functions taking ordinary
-lambdas, as explained in [Library Helpers] atom.
+lambdas, as explained in [Scope Functions] atom.
