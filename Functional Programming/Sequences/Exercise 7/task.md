@@ -1,5 +1,6 @@
 ## Sequences (#7)
 
 Write a function `oddWithout1` that creates an infinite sequence of odd numbers
-that do not contain the digit `1`. In `main`, display to the console the sum of
-the first 20 elements of this sequence.
+starting with 3 that do not contain the digit `1`:
+3, 5, 7, 9, 23, 25, 27, 29, 33 ...
+In `main`, display to the console the sum of the first 20 elements of this sequence.
