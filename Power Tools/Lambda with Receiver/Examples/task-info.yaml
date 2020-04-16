@@ -1,6 +1,6 @@
 type: theory
 files:
-- name: src/StateMachine.kt
+- name: src/LWRStateMachine.kt
   visible: true
 - name: src/UseNewStateMachine1.kt
   visible: true

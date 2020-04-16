@@ -1,4 +1,4 @@
-// LambdaWithReceiver/StateMachine.kt
+// LambdaWithReceiver/LWRStateMachine.kt
 package statemachine
 import statemachine.State.*
 

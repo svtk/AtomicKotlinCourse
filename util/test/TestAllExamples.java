@@ -2153,7 +2153,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testStringBuilder() {
-        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/StringBuilder.kt", StringBuilderKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/StringBuilder.kt", lambdawithreceiver.StringBuilderKt::main);
     }
 
     @Test
