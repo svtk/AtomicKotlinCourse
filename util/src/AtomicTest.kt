@@ -89,12 +89,6 @@ class Trace(
   operator fun invoke(obj: Any?) {
     content += obj.toString()
   }
-  constructor(result: Any) : this() {
-    result.toString().trim().split("\n")
-      .forEach {
-        content.add(it.trim())
-      }
-  }
   /**
    * Compares Trace contents to a multiline
    * String by ignoring line separators.
@@ -108,12 +102,16 @@ class Trace(
     val right = multiline.trimIndent()
       .replace("\n", " ")
     if (details) {
-      println("[Trace]: $left")
-      println("[Value]: $right")
+      println("[Trace]: <$left>")
+      println("[Value]: <$right>")
     }
     val output = content.joinToString("\n")
     runTest(output, multiline) {
       left == right
     }
+  }
+
+  fun clear() {
+    content.clear()
   }
 }
