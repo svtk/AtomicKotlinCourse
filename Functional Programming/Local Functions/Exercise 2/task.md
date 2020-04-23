@@ -7,8 +7,9 @@ functions.
 In `createCounter` define a local variable `counter`. Then define two local
 functions:
 
-- `inc()` - increases the `counter` value by one
-- `value()` - returns the value of `counter`
+-   `inc()` - increases the `counter` value by one
+
+-   `value()` - returns the value of `counter`
 
 At last, return a pair of function references to these local functions:
 

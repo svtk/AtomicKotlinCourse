@@ -18,10 +18,10 @@ the initial `number` equals the sum of the `remainder` and `result`.
 Store the Roman numerals in a mapping from `Int` to the associated `String`
 representation. For each pair `int = roman` starting from `1000 = M`:
 
-- Divide `remainder` into `int` to discover how many times you need to repeat
-`roman` in the `result`.
+-   Divide `remainder` into `int` to discover how many times you need to repeat
+    `roman` in the `result`.
 
-- Subtract the result from `remainder` to update it: `remainder -= remainder /
-int`.
+-   Subtract the result from `remainder` to update it: `remainder -= remainder /
+    int`.
 
 </div>

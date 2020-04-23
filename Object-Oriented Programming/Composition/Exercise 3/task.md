@@ -14,8 +14,10 @@ composition by containing a `DataBase`. `Holder` contains a `test()` function
 which is used in `main()` to test three different `DataBase` classes, which
 you write:
 
-- `NonRelational`, implemented with a `mutableListOf<Pair<String, String>>()`
-- `InMemory`, implemented with a `mutableMapOf<String, String>()`
-- `Mock`, implemented with two `String` `var`s.
+-   `NonRelational`, implemented with a `mutableListOf<Pair<String, String>>()`
+
+-   `InMemory`, implemented with a `mutableMapOf<String, String>()`
+
+-   `Mock`, implemented with two `String` `var`s.
 
 Write these classes so they pass the tests given in `main()`.

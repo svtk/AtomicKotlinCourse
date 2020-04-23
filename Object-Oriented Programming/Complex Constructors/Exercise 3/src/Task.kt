@@ -3,18 +3,18 @@ package complexConstructorsExercise3
 import atomictest.eq
 
 class MultipleInit {
-  val list = mutableListOf<String>()
+  val initOrder = mutableListOf<String>()
   init {
-    list += "one"
+    initOrder += "one"
   }
   init {
-    list += "two"
+    initOrder += "two"
   }
   init {
-    list += "three"
+    initOrder += "three"
   }
 }
 
 fun main() {
-  MultipleInit().list eq "one two three"
+  MultipleInit().initOrder eq "[one, two, three]"
 }

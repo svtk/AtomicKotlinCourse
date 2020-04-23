@@ -24,4 +24,4 @@ class House(
 }
 ```
 
-Make your code satisfy the tests in `main()`.
+Make your code satisfy the tests in the starter code in `main()`.

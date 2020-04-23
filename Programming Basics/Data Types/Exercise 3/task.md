@@ -1,7 +1,7 @@
 ## Data Types (#3)
 
-Guess the results of the following expressions and then check yourself using
-Kotlin:
+Guess the results of the following expressions and then check your guesses
+using Kotlin:
 
 ```kotlin
 val c1 = 'a' + 1
