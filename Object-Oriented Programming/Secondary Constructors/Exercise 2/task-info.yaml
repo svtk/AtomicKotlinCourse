@@ -2,9 +2,5 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
-  placeholders:
-  - offset: 40
-    length: 15
-    placeholder_text: class SpaceShip
 - name: test/Tests.kt
   visible: false

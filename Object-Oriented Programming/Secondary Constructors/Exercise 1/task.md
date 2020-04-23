@@ -1,5 +1,9 @@
 ## Secondary Constructors (#1)
 
-Create a `Flower` class with a `val` class argument of `type: String`. Add a
-secondary constructor that takes no arguments and initializes `type` to
-`Daisy`.
+Starter code contains two data classes `Flower1` and `Flower2`. Both define
+only one property `type` of the type `String`. Add a secondary constructor to 
+the class `Flower1` that takes no arguments and initializes `type` to `Daisy`.
+Add a default value `Daisy` to the constructor argument of the `Flower2` class.
+
+Uncomment the code in `main` to make sure you can now create both classes
+without constructor arguments.

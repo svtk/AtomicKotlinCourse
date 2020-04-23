@@ -2,5 +2,9 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 95
+    length: 81
+    placeholder_text: 'class Alien(val name: String)'
 - name: test/Tests.kt
   visible: false

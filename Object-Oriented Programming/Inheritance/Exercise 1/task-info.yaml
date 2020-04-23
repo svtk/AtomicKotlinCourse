@@ -2,5 +2,20 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 76
+    length: 154
+    placeholder_text: // TODO add property and functions
+  - offset: 282
+    length: 148
+    placeholder_text: |-
+      /*
+        val detergent = Detergent()
+        detergent.dilute()
+        detergent.apply()
+        detergent.scrub()
+        detergent.ops eq
+          listOf("dilute", "apply", "scrub")
+      */
 - name: test/Tests.kt
   visible: false

@@ -2,7 +2,7 @@
 package complexConstructorsExercise1
 import atomictest.eq
 
-class Alien2(private val name: String) {
+class Alien(name: String) {
   val myName: String
   init {
     myName = name
@@ -10,6 +10,6 @@ class Alien2(private val name: String) {
 }
 
 fun main() {
-  val alien = Alien2("Pencilvester")
+  val alien = Alien("Pencilvester")
   alien.myName eq "Pencilvester"
 }

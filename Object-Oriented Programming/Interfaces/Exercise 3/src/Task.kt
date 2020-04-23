@@ -1,24 +1,24 @@
 package interfacesExercise3
 
 interface Pet {
-  fun speak(): String
+  val sound: String
 }
 
 class Dog: Pet {
-  override fun speak() = "Bark!"
+  override val sound get() = "Bark!"
 }
 
 class Cat: Pet {
-  override fun speak() = "Meow!"
+  override val sound get() = "Meow!"
 }
 
 class Hamster: Pet {
-  override fun speak() = "Squeak!"
+  override val sound get() = "Squeak!"
 }
 
 fun main() {
   val pets = listOf(Dog(), Cat(), Hamster())
   for (pet in pets) {
-    println(pet.speak())
+    println(pet.sound)
   }
 }

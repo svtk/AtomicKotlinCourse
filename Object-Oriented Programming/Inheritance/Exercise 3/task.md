@@ -1,6 +1,8 @@
 ## Inheritance (#3)
 
-Create a class `Game` with a property `var result: String`. From `Game`,
-inherit `BoardGame`, and from `BoardGame` inherit `Chess`. Give each class an
-`init` clause that appends its class name to `result`. Now create a
-`BoardGame` object and show the order of initialization of base classes.
+The starter code contains the class hierarchy: `Game`, `BoardGame` which
+inherits `Game` and `Chess` which inherits `BoardGame`.
+Add a property `val initOrder = mutableListOf<String>()` to `Game`.
+Give each class an `init` clause that appends its class name to `initOrder`.
+Now create a `Chess` object and show the order of initialization of base
+classes.

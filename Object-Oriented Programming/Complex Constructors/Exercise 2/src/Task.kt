@@ -5,8 +5,7 @@ import atomictest.eq
 class SumChars(text: String) {
   val sum: Int
   init {
-    fun calc() =
-      text.fold(0, {s, c -> s + c.toInt() })
+    fun calc() = text.sumBy { it.toInt() }
     sum = calc()
   }
 }

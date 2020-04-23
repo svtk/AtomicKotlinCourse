@@ -2,5 +2,21 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 90
+    length: 82
+    placeholder_text: class Disinfectant
+  - offset: 187
+    length: 206
+    placeholder_text: |-
+      /*
+        val disinfectant = Disinfectant()
+        disinfectant.dilute()
+        disinfectant.apply()
+        disinfectant.scrub()
+        disinfectant.sterilize()
+        disinfectant.ops eq
+          listOf("dilute", "apply", "scrub", "sterilize")
+      */
 - name: test/Tests.kt
   visible: false

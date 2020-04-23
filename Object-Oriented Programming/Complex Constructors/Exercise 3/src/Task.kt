@@ -2,19 +2,19 @@
 package complexConstructorsExercise3
 import atomictest.eq
 
-class MultipleInit() {
-  var result: String
+class MultipleInit {
+  val list = mutableListOf<String>()
   init {
-    result = "one "
+    list += "one"
   }
   init {
-    result += "two "
+    list += "two"
   }
   init {
-    result += "three"
+    list += "three"
   }
 }
 
 fun main() {
-  MultipleInit().result eq "one two three"
+  MultipleInit().list eq "one two three"
 }

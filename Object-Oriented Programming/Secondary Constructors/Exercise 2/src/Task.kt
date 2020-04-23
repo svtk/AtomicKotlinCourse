@@ -1,16 +1,15 @@
 package secondaryConstructorsExercise2
 
-class SpaceShip(val name: String) {
+import atomictest.eq
 
-    constructor(name: String, shipClass: String) : this(name) {
-        this.shipClass = shipClass
-    }
+data class SpaceShip(val name: String) {
+    constructor(shipClass: String, model: Int)
+      : this("$shipClass-$model")
+}
 
-    constructor(name: String, shipClass: String, weight: Int) : this(name) {
-        this.shipClass = shipClass
-        this.weight = weight
-    }
-
-    var shipClass: String = "Unknown"
-    var weight: Int = 100
+fun main() {
+    SpaceShip("SuperhighspeedShip") eq
+      "SpaceShip(name=SuperhighspeedShip)"
+    SpaceShip("MClass", 29321) eq
+      "SpaceShip(name=MClass-29321)"
 }

@@ -1,6 +1,7 @@
 ## Inheritance (#1)
 
-Create a class called `Cleanser` with a property `var result: String`. Add the
-functions `dilute()`, `apply()` and `scrub()` which simply append their names
-to `result`. Inherit a class `Detergent` from `Cleanser` and show that
-`Detergent` has the same functions as `Cleanser`.
+The starter code contains an `open` class `Cleanser` and a class `Detergent`
+that inherits it. Add to the `Cleanser` class the property
+`var ops: MutableList<String>` and the functions `dilute()`, `apply()` and
+`scrub()` which simply add their names to `ops`. In `main`, make sure that
+`Detergent` has now the same functions as `Cleanser`.
