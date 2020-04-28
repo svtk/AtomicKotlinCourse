@@ -1,14 +1,14 @@
 ## `break` & `continue` (#2)
 
 Complete the implementation of the functions `analyzeStrings1()` and
-`analyzeStrings2()` provided in the starter code. Both take a
-`List<List<String>>` as an argument and display its contents to the console. If
-a `String` is the word `"stop"`, don't display any more elements from the
+`analyzeStrings2()` provided in the starter code. Each function takes a
+`List<List<String>>` as an argument and displays its contents to the console.
+If a `String` is the word `"stop"`, don't display any more elements from the
 current (inner) `List`. `analyzeStrings1()` uses `break`, while
 `analyzeStrings2()` uses `continue`. Add the missing labels for `break` and
 `continue`.
 
-Next, rewrite `analyzeStrings1()` without using labels.
+Now rewrite `analyzeStrings1()` without using labels.
 
 <div class="hint">
 

@@ -14,7 +14,7 @@ In the first package `aaa`, define:
 
 In `package bbb`, `import` all the components from `aaa` and use them in a
 function `g()`. `g()` takes an `Int` parameter `i` and returns the following
-string literal using members from `aaa`:
+`String` literal using members from `aaa`:
 
 ```
 "${K()} ${fa(i)}"

@@ -6,8 +6,8 @@ original letters exactly once.
 
 <div class="hint">
 
-Compare two sorted `Lists` of characters obtained from two strings.
-Convert a string to a `List` by calling `toList()`. If the `Lists` are equal,
+Compare two sorted `Lists` of characters obtained from two `String`s.
+Convert a `String` to a `List` by calling `toList()`. If the `Lists` are equal,
 the words are anagrams. For example, for two anagrams "terrain" and "trainer"
 the sorted character `List` will be `[a, e, i, n, r, r, t]`.
 

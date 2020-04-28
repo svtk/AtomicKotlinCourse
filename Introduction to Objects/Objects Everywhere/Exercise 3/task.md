@@ -5,8 +5,8 @@ Building on the previous exercise, strip out special characters before testing.
 
 <div class="hint">
 
-Build a new string consisting of letters only, and check whether it's
-a palindrome. Use `in` to check if a character is an alphabetical letter:
+Build a new `String` consisting of letters only, and check whether it's
+a palindrome. Use `in` to check whether a character is a letter:
 `ch in 'a'..'z' || ch in 'A'..'Z'`.
 
 </div>

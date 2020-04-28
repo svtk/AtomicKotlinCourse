@@ -18,5 +18,7 @@ files:
   visible: true
 - name: src/ReadOnlyBlendMap3.kt
   visible: true
+- name: src/ReadOnlyBlendMap4.kt
+  visible: true
 - name: src/DataClassCopy.kt
   visible: true

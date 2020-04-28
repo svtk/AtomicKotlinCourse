@@ -1,6 +1,7 @@
 ## Expressions & Statements (#3)
 
-Guess what the following code will display and then check yourself:
+Guess what the following code will display and then check yourself using
+Kotlin:
 
 ```kotlin
 var i = 1

@@ -2292,6 +2292,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testReadOnlyBlendMap4() {
+        testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/ReadOnlyBlendMap4.kt", readonlyblendmap4.ReadOnlyBlendMap4Kt::main);
+    }
+
+    @Test
     public void testDataClassCopy() {
         testExample("../AtomicKotlinCourse/Power Tools/Immutability/Examples/src/DataClassCopy.kt", DataClassCopyKt::main);
     }

@@ -1,4 +1,4 @@
 ## Overloading (#2)
 
-Replace two `bark` functions implemented in the previous exercise with
-one function with default value for `say` argument.
+Replace the two `bark()` functions implemented in the previous exercise with a
+single function that has a default value for the `say` argument.

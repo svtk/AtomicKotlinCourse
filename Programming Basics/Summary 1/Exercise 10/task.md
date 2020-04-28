@@ -10,5 +10,5 @@ filled with sequential numbers in a form of snake. For example, `showSnake(3,
  6 7 8
 ```
 
-For proper alignment use `"%3d".format(number)` to place any necessary spaces
+For proper alignment, use `"%3d".format(number)` to place any necessary spaces
 before the number.

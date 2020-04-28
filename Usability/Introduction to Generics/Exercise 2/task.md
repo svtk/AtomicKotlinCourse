@@ -1,6 +1,6 @@
 ## Introduction to Generics (#2)
 
-Implement a generic `reversed()` extension function for `List`. It returns a
+Implement a generic `reversed()` extension function for `List`, which returns a
 new `List` containing the same elements but in reverse order.
 
 This function already exists in the standard Kotlin library, but for learning

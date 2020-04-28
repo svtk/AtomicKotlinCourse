@@ -1,8 +1,8 @@
 ## Destructuring Declarations (#3)
 
-Initial code contains a `data` class `Person` with two properties:
-`name: String` and `age: Int`. Write a `displayPersonInfo()` function that takes
-a parameter of `person: Person`, which it destructures using the following
+The starter code contains a `data` class `Person` with two properties: `name:
+String` and `age: Int`. Write a `displayPersonInfo()` function that takes a
+parameter of `person: Person`, which it destructures using the following
 syntax:
 
 ```
@@ -17,6 +17,6 @@ Age: $age
 ```
 
 Add a new second property `surname` between `name` and `age` in `Person`.
-`name` should be the first property, `age` should be the third property. Don't
-modify `displayPersonInfo()`. In `main()`, show that `displayPersonInfo()` now
-works incorrectly.
+`name` should be the first property and `age` should be the third property.
+Don't modify `displayPersonInfo()`. In `main()`, show that
+`displayPersonInfo()` now works incorrectly.

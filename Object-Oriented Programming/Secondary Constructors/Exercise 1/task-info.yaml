@@ -3,16 +3,8 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 105
-    length: 28
-    placeholder_text: // TODO add a secondary constructor
-  - offset: 156
-    length: 26
-    placeholder_text: 'val type: String'
-  - offset: 198
-    length: 59
-    placeholder_text: |-
-      //    Flower1().type eq "Daisy"
-      //    Flower2().type eq "Daisy"
+  - offset: 40
+    length: 67
+    placeholder_text: class Flower
 - name: test/Tests.kt
   visible: false

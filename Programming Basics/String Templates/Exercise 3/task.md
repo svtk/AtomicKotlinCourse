@@ -1,10 +1,10 @@
 ## String Templates (#3)
 
-Write a function `show()` with parameters `i: Int`, `s: String`, `c: Char`
-and `d: Double`. On the console, the function displays the value of each
-parameter on its own line: first the name of the identifier, a colon and space,
-and then the value of that identifier. Surround the string value with double
-quotes and the char value with single quotes.
+Write a function `show()` with parameters `i: Int`, `s: String`, `c: Char` and
+`d: Double`. On the console, `show()` displays the value of each parameter on
+its own line: first the name of the identifier, then a colon and a space, and
+then the value of that identifier. Surround the `String` value with double quotes
+and the char value with single quotes.
 
 Sample output:
 

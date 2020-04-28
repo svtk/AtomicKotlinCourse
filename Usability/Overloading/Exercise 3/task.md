@@ -1,8 +1,8 @@
 ## Overloading (#3)
 
-Implement overloaded versions of the `myJoinToString()` function. Pass default
-values for arguments in each overloaded function invocation, without using the
-language support for this feature.
+Implement overloaded versions of a function called `myJoinToString()`. Pass
+default values for arguments in each overloaded function invocation, without
+using the language support for this feature.
 
 Why can't you define the following overloaded functions?
 

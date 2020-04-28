@@ -2,8 +2,8 @@
 
 Using `Pairs.kt` as a model, write a function `calculate(n1: Int, n2: Int)`
 which returns a `Triple` containing a `Boolean` and two `Int`s. If either `n1`
-or `n2` is less than zero, it returns `false` and two zeros. Otherwise, it
-returns a `Triple` containing:
+or `n2` is less than zero, it returns a `Triple` containing `false` and two
+zeros. Otherwise, it returns a `Triple` containing:
 
 -   `true`
 

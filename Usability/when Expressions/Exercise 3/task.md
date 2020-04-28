@@ -22,8 +22,8 @@ Some examples:
 
 <div class="hint">
 
-Iterate over the `String` and count the number of left braces which are
-unmatched after each step. At the end, this number should be 0. If the number
-is less than zero, the argument is unbalanced.
+Iterate over the `String` and count the number of left parentheses which
+are unmatched after each step. At the end, this number should be 0. If the
+number is less than zero, the argument is unbalanced.
 
 </div>

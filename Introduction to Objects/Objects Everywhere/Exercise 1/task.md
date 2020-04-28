@@ -16,6 +16,6 @@ Write a function that checks whether a word or phrase is a palindrome.
 <div class="hint">
 
 `String`'s `reversed()` member function may prove useful here. Use `==`
-to check whether two strings are equal.
+to check whether two `String`s are equivalent.
 
 </div>

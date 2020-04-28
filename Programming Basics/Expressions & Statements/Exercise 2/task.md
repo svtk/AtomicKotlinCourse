@@ -8,6 +8,6 @@ Write three functions using expression body syntax:
 
 -   `h()` calls `println()` to display `"h()"`.
 
-In 'main', assign the result of each function to a `val`, and specify the
+In `main()`, assign the result of each function to a `val`, and specify the
 type. Then display on the console the types of all the functions `f()`, `g()`
 and `h()`, each one on its own line.
