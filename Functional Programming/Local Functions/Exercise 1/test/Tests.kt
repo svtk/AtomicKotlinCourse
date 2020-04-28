@@ -1,11 +1,16 @@
 package localFunctionsExercise1
 
-import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
+import util.loadFileFacade
+import util.loadToplevelFunction
+import kotlin.test.assertEquals
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestLocalFunctionsExercise1 {
-    @Test fun testSolution() {
-        //TODO: implement your test here
-        Assert.assertTrue("Tests not implemented for the task", false)
+    @Test
+    fun `#01 nested calls of local functions`() {
+        assertEquals(47, f(), "Wrong result")
     }
 }
