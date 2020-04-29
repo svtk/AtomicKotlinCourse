@@ -1,25 +1,24 @@
 package destructuringDeclarationsExercise1
 
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import kotlin.reflect.KTypeProjection
 import kotlin.reflect.full.createType
+import kotlin.reflect.typeOf
 import kotlin.test.assertEquals
 
+@OptIn(ExperimentalStdlibApi::class)
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestDestructuringDeclarationsExercise1 {
     companion object {
-        private val KBoolean = Boolean::class.createType()
-        private val KInt = Int::class.createType()
-        private val ExpectedKTriple = Triple::class.createType(
-                arguments = listOf(
-                        KTypeProjection.invariant(KBoolean),
-                        KTypeProjection.invariant(KInt),
-                        KTypeProjection.invariant(KInt)
-                )
-        )
+        private val KBoolean = typeOf<Boolean>()
+        private val KInt = typeOf<Int>()
+        private val ExpectedKTriple = typeOf<Triple<Boolean, Int, Int>>()
     }
 
     @Test
-    fun signature() {
+    fun `#1 signature`() {
         val actualFun = ::calculate
         assertEquals(
                 expected = ExpectedKTriple,
@@ -29,8 +28,13 @@ class TestDestructuringDeclarationsExercise1 {
     }
 
     @Test
-    fun destructuring() {
-        val (a, b, c) = calculate(0, 0)
+    fun `#2 destructuring`() {
+        val calculateFun = ::calculate
+        val triple = calculateFun.call(0, 0)
+          as Triple<Boolean, Int, Int>
+        val a = triple.first
+        val b = triple.second
+        val c = triple.third
         assertEquals(
                 expected = KBoolean,
                 actual = a::class.createType(),
@@ -49,7 +53,7 @@ class TestDestructuringDeclarationsExercise1 {
     }
 
     @Test
-    fun solution() {
+    fun `#3 solution`() {
         assert(5 to 7, Triple(true, 12, 35))
         assert(11 to 13, Triple(true, 24, 143))
         assert(0 to 100, Triple(true, 100, 0))
@@ -62,9 +66,11 @@ class TestDestructuringDeclarationsExercise1 {
 
     private fun assert(input: Pair<Int, Int>, expectedOutput: Triple<Boolean, Int, Int>) {
         val (a, b) = input
+        val calculateFun = ::calculate
+        val actual: Any = calculateFun.call(a, b)
         assertEquals(
                 expected = expectedOutput,
-                actual = calculate(a, b),
+                actual = actual,
                 message = "Incorrect result for 'calculate($a, $b)"
         )
     }
