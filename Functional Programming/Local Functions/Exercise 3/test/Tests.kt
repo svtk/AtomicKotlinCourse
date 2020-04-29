@@ -5,17 +5,19 @@ import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.loadFileFacade
 import util.loadToplevelFunction
+import kotlin.reflect.typeOf
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@OptIn(ExperimentalStdlibApi::class)
 class TestLocalFunctionsExercise3 {
     @Test
     fun `#01 function signature`() {
-        val method = loadToplevelFunction(loadFileFacade("localFunctionsExercise3"), "createContainer")
+        val createContainerFunc = ::createContainer
         assertEquals(
-                actual = method.genericReturnType.typeName,
-                expected = "kotlin.Pair<kotlin.reflect.KFunction<kotlin.Unit>, kotlin.reflect.KFunction<java.lang.Integer>>",
-                message = "Invalid return type of the method"
+                actual = createContainerFunc.returnType,
+                expected = typeOf<Pair<(Int) -> Unit, () -> Int?>>(),
+                message = "Invalid return type of the 'createContainer' function'"
         )
     }
 
