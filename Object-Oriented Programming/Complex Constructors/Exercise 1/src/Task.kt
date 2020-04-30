@@ -10,6 +10,6 @@ class Alien(name: String) {
 }
 
 fun main() {
-  val alien = Alien("Pencilvester")
-  alien.myName eq "Pencilvester"
+//  val alien = Alien("Pencilvester")
+//  alien.myName eq "Pencilvester"
 }

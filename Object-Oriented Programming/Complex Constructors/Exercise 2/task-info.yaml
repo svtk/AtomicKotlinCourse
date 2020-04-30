@@ -2,5 +2,9 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 95
+    length: 120
+    placeholder_text: class SumChars
 - name: test/Tests.kt
   visible: false
