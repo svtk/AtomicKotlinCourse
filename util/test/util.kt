@@ -10,6 +10,7 @@ import kotlin.reflect.full.createType
 import kotlin.reflect.full.memberFunctions
 import kotlin.reflect.full.memberProperties
 import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
 const val TIMEOUT = 3000L
 
@@ -111,11 +112,24 @@ fun loadClass(packageName: String, className: String): KClass<*> {
     }
 }
 
+fun assertInheritance(derivedClass: KClass<*>, baseClass: KClass<*>) {
+    assertTrue(
+            actual = derivedClass.supertypes.contains(baseClass.createType()),
+            message = "${derivedClass.simpleName} should inherit ${baseClass.simpleName}"
+    )
+}
+
 fun loadMemberFunction(kClass: KClass<*>, methodName: String): KFunction<*> {
     return kClass.memberFunctions
             .filter { it.name == methodName }
             .checkFoundEntities(what = "the '$methodName()' member function", where = "'${kClass.simpleName}' class")
             .single()
+}
+
+fun assertNoMemberFunction(kClass: KClass<*>, methodName: String) {
+    kClass.memberFunctions
+            .filter { it.name == methodName }
+            .checkNotFoundEntities("the '$methodName' member function", "'${kClass.simpleName}' class")
 }
 
 fun loadMemberProperty(kClass: KClass<*>, propertyName: String): KProperty<*> {
