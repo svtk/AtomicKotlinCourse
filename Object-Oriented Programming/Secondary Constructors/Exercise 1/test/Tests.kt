@@ -1,24 +1,47 @@
 package secondaryConstructorsExercise1
 
-import org.junit.Assert
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
+import util.assertConstructorNumber
+import util.checkParametersOfConstructor
 import util.loadMemberProperty
 import kotlin.test.assertEquals
+import kotlin.test.assertNotNull
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSecondaryConstructorsExercise1 {
-    @Test fun testFlower1() {
+
+    @Test
+    fun `#01 flower1 constructing`() {
         val flowerClass = Flower1::class
         val typeProp = loadMemberProperty(flowerClass, "type")
+        flowerClass.assertConstructorNumber(2)
         val constructor = flowerClass.constructors.find { it.parameters.isEmpty() }
                 ?: throw AssertionError("Can't find constructor without parameters in the class 'Flower1'")
         val flowerInstance = constructor.call()
         val typeValue = typeProp.getter.call(flowerInstance)
 
-        assertEquals("Daisy", typeValue, "After calling a constructor without parameters the value of 'type' should be 'Daisy'")
+        assertEquals(
+                expected = "Daisy",
+                actual = typeValue,
+                message = "After calling a constructor without parameters the value of 'type' should be 'Daisy'"
+        )
     }
 
-    @Test fun testFlower2() {
-        //TODO: implement tests for Flower2 after description was slightly updated
-        Assert.assertTrue("Tests not implemented for the task", false)
+    @Test
+    fun `#02 flower2 constructing`() {
+        val flowerClass = Flower2::class
+        val typeProp = loadMemberProperty(flowerClass, "type")
+        flowerClass.assertConstructorNumber(1)
+        val constructor = flowerClass.constructors.first()
+        val flowerInstance = constructor.callBy(mapOf())
+        val typeValue = typeProp.getter.call(flowerInstance)
+
+        assertEquals(
+                expected = "Daisy",
+                actual = typeValue,
+                message = "After calling a constructor without parameters the value of 'type' should be 'Daisy'"
+        )
     }
 }

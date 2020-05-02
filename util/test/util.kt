@@ -235,8 +235,11 @@ private fun checkParameters(
 
     val expectedSize = params.size.decIfMember()
     val actualSize = function.parameters.size.decIfMember()
-    Assert.assertEquals("${funcOrConstructorName.capitalize()} is expected to have $expectedSize parameter(s)",
-            expectedSize, actualSize)
+    assertEquals(
+            expected = expectedSize,
+            actual = actualSize,
+            message = "${funcOrConstructorName.capitalize()} is expected to have $expectedSize parameter(s)"
+    )
 
     val expectedParams = params.toList()
     function.parameters.forEachIndexed { index, kParameter ->
