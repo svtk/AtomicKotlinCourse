@@ -7,9 +7,9 @@ parameter and returns the corresponding description ("Hot", "Warm", "Cool",
 | Description     | Temperature      |
 |-----------------|------------------|
 | Hot             | 25 C and Above   |
-| Warm            | from 15 to 24 C  |
-| Cool            | from 5 to 14 C   |
-| Cold            | from -5 to 4 C   |
+| Warm            | From 15 to 24 C  |
+| Cool            | From 5 to 14 C   |
+| Cold            | From -5 to 4 C   |
 | Freezing        | Below -5 C       |
 
 There are no upper or lower bounds on the argument.

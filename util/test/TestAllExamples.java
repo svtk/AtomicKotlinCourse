@@ -2008,12 +2008,12 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testCaptureImplementation() {
-        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/CaptureImplementation.kt", captureimpl.CaptureImplementationKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/CaptureImplementation.kt", exceptionhandling.CaptureImplementationKt::main);
     }
 
     @Test
     public void testGuaranteedCleanup() {
-        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/GuaranteedCleanup.kt", GuaranteedCleanupKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Examples/src/GuaranteedCleanup.kt", exceptionhandling.GuaranteedCleanupKt::main);
     }
 
     @Test
@@ -2152,6 +2152,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testBuildLists() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/BuildLists.kt", buildinglists.BuildListsKt::main);
+    }
+
+    @Test
     public void testStringBuilder() {
         testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Examples/src/StringBuilder.kt", lambdawithreceiver.StringBuilderKt::main);
     }
@@ -2174,6 +2179,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testBasicGenerics() {
         testExample("../AtomicKotlinCourse/Power Tools/More Generics/Examples/src/BasicGenerics.kt", generics.BasicGenericsKt::main);
+    }
+
+    @Test
+    public void testPerform() {
+        testExample("../AtomicKotlinCourse/Power Tools/More Generics/Examples/src/Perform.kt", generics.PerformKt::main);
     }
 
     @Test

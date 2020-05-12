@@ -13,7 +13,7 @@ In the first package `aaa`, define:
 -   A class `K` with a `toString()` that returns `"K"`
 
 In `package bbb`, `import` all the components from `aaa` and use them in a
-function `g()`. `g()` takes an `Int` parameter `i` and returns the following
+function `g()`, which takes an `Int` parameter `i` and returns the following
 `String` literal using members from `aaa`:
 
 ```

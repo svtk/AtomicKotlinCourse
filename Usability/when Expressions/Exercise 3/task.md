@@ -2,23 +2,24 @@
 
 Implement the function `balanced()` that takes a `String` parameter. The
 argument must consist of parentheses and optional spaces; for example:
-`()(())`. `balanced()` checks whether each opening parenthesis has a
-corresponding closing parenthesis and if all parentheses are properly nested.
+`"()(())"`. When you pass this argument to `balanced()`, it checks whether each
+opening parenthesis has a corresponding closing parenthesis and if all
+parentheses are properly nested.
 
 Ignore whitespace in the input `String`. If the `String` contains characters
 other than parentheses and whitespace, throw an `IllegalArgumentException`.
 
 Some examples:
 
--   `()` is balanced
+-   `"()"` is balanced
 
--   `(()` is unbalanced
+-   `"(()"` is unbalanced
 
--   `)(` is unbalanced
+-   `")("` is unbalanced
 
--   `( ()() )` is balanced
+-   `"( ()() )"` is balanced
 
--   `*()` produces an `IllegalArgumentException`
+-   `"*()"` produces an `IllegalArgumentException`
 
 <div class="hint">
 

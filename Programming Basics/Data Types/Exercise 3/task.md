@@ -9,7 +9,7 @@ val c2 = 'a' + 25
 val c3 = 'E' - 2
 ```
 
-You can open the hint within Intellij IDEA to understand the results.
+You can open the hint within IntelliJ IDEA to understand the results.
 
 <div class="hint">
 

@@ -1,7 +1,7 @@
 ## Maps (#3)
 
 If you commonly select elements from a `List` using keys, it makes sense to
-optimize by using a `Map` instead of a `List`. `Map` finds an element in
+optimize by using a `Map` instead of a `List`. A `Map` finds an element in
 constant time. With a `List`, in the worst case you must iterate over every
 element.
 

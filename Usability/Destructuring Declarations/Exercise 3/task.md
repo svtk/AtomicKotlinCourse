@@ -5,7 +5,7 @@ String` and `age: Int`. Write a `displayPersonInfo()` function that takes a
 parameter of `person: Person`, which it destructures using the following
 syntax:
 
-```
+```kotlin
 val (name, age) = person
 ```
 
@@ -16,7 +16,7 @@ Name: $name
 Age: $age
 ```
 
-Add a new second property `surname` between `name` and `age` in `Person`.
-`name` should be the first property and `age` should be the third property.
-Don't modify `displayPersonInfo()`. In `main()`, show that
-`displayPersonInfo()` now works incorrectly.
+Add a new second property `surname` between `name` and `age` in `Person`. The
+first property should be `name` and the third property should be `age`. Don't
+modify `displayPersonInfo()`. In `main()`, show that `displayPersonInfo()` now
+works incorrectly.

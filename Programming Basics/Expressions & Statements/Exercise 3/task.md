@@ -8,7 +8,7 @@ var i = 1
 println(i-- - --i)
 ```
 
-Open the hint in Intellij IDEA to see the explanation.
+Open the hint in IntelliJ IDEA to see the explanation.
 
 <div class="hint">
 

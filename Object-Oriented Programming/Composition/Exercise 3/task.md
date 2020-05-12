@@ -9,10 +9,10 @@ interface DataBase {
 }
 ```
 
-The starter code also provides `class Holder(val db: DataBase)`. `Holder` uses
-composition by containing a `DataBase`. `Holder` contains a `test()` function
-which is used in `main()` to test three different `DataBase` classes, which
-you write:
+`class Holder(val db: DataBase)` is defined in the starter code. `Holder`
+contains a `DataBase` using composition. `Holder` contains a `test()` function
+which is used in `main()` to test three different `DataBase` classes, which you
+write:
 
 -   `NonRelational`, implemented with a `mutableListOf<Pair<String, String>>()`
 
