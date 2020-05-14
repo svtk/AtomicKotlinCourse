@@ -2,5 +2,23 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 84
+    length: 17
+    placeholder_text: abstract class Movable
+  - offset: 129
+    length: 19
+    placeholder_text: abstract class Sleepable
+  - offset: 180
+    length: 30
+    placeholder_text: '// class Sofa: Movable(), Sleepable()'
+  - offset: 225
+    length: 71
+    placeholder_text: |-
+      /*
+        val sofa = Sofa()
+        sofa.move() eq "move"
+        sofa.sleepOn() eq "sleep"
+      */
 - name: test/Tests.kt
   visible: false

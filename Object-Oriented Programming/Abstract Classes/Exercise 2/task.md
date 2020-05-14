@@ -1,17 +1,16 @@
 ## Abstract Classes (#2)
 
-Make an `enum` called `Note` with values `A`-`G`. Create an `abstract` class
-`Instrument` that takes a `val` class argument `name: String` which holds the
-name of the class. Add an `abstract` member function `play(n: Note)`.
+The starter code contains an `abstract` class `Instrument` that contains
+an `abstract` member function `play(n: Note)`. `Note` is defined as an enum
+with values `A`-`G`. 
 
-Now inherit `Wind`, `Percussion` and `Stringed` from `Instrument`, overriding
-`play()` in each case to use `atomictest.Trace` to show the class name, then
-`blow` for `Wind`, `strike` for `Percussion`, and `pluck` for `Stringed`, and
-finally the `Note` being played.
+The classes `Wind`, `Percussion` and `Stringed` all inherit `Instrument`, 
+overriding `play()` in each case to return the string containing the class name,
+then `blow` for `Wind`, `strike` for `Percussion`, and `pluck` for `Stringed`,
+and finally the `Note` being played.
 
-Add a function `tune()` that takes an `Instrument` parameter and plays that
-`Instrument` using `Note.C`.
-
-In `main()`, create an `orchestra` which is a `List<Instrument>` containing an
-instance of each type of `Instrument`. Call `tune()` for each `Instrument` in
-the `orchestra`, and validate the results using `Trace`.
+Add two constructor arguments to the class `Instrument`: `name` and `action`,
+and pass the corresponding values in the subclasses. Make `name` and `action`
+`val` properties and provide an implementation of the `play` function in the
+superclass so that it returned the same value as before for each subclass.
+Remove implementations of `play` from the subclasses.

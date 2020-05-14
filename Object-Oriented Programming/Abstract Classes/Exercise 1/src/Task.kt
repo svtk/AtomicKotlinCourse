@@ -1,29 +1,20 @@
 // Abstract/AbsExercise1.kt
 package abstractClassesExercise1
-import atomictest.*
 
-private val trace = Trace()
+import atomictest.eq
 
-abstract class WithParams(
-  val i: Int,
-  var s: String = ""
-) {
-  init {
-    trace("WithParams $i $s")
-  }
+interface Movable {
+  fun move() = "move"
 }
 
-class Concrete(i: Int, s: String):
-  WithParams(i, s) {
-  init {
-    trace("Concrete $i $s")
-  }
+interface Sleepable {
+  fun sleepOn() = "sleep"
 }
+
+class Sofa: Movable, Sleepable
 
 fun main() {
-  Concrete(11, "One Louder")
-  trace eq """
-    WithParams 11 One Louder
-    Concrete 11 One Louder
-  """
+  val sofa = Sofa()
+  sofa.move() eq "move"
+  sofa.sleepOn() eq "sleep"
 }
