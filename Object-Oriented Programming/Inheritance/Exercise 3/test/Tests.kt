@@ -42,7 +42,7 @@ class TestInheritanceExercise3 {
                 .also { opt ->
                     assertEquals(
                             expected = listOf("Game", "BoardGame", "Chess"),
-                            actual = opt as List<String>,
+                            actual = opt,
                             message = "Member property `initOrder` of class Chess should be equal to " +
                                     "[\"Game\", \"BoardGame\", \"Chess\""
                     )
