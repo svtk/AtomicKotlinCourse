@@ -1,8 +1,12 @@
 ## Base Class Initialization (#1)
 
-`atomictest` includes a class called `Trace` and an accompanying `eq` to
-compare a `Trace` object to a multiline `String`. Create a global `private`
-`val trace` initialized to `Trace()`. Create a class `A`; inside its `init`,
-and call `trace(className)` to append the name of the class to `trace`.
-Inherit `B` from `A` and `C` from `B`, and give them similar `init`s. Create
-an instance of `C` to see the initialization order.
+Define a class hierarchy: a parent class `Animal`, and two children: `Cat` and
+`Dog`. Add a property `sound` of type `String` to `Animal`. Add the
+corresponding constructor parameters to the subclasses: `Cat` doesn't define its
+own `sound` property but only passes `sound` value to the parent class.
+
+Provide different default values for `sound`: `???` for `Animal`,  `meow` for
+`Cat` and `woof` for `Dog`.
+
+Uncomment the code in `main` to check what default values are used when you
+create instances of specific classes.
