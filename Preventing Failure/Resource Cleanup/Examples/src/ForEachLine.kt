@@ -1,13 +1,14 @@
 // ResourceCleanup/ForEachLine.kt
 package resourcecleanup
-import checkinstructions.dataFile
+import checkinstructions.DataFile
+import atomictest.*
+
+private val trace = Trace()
 
 fun main() {
-  dataFile("Results.txt").forEachLine {
+  DataFile("Results.txt").forEachLine {
     if (it.startsWith("#"))
-      println("'$it'")
+      trace("$it")
   }
+  trace eq "# ok"
 }
-/* Output:
-'# ok'
-*/

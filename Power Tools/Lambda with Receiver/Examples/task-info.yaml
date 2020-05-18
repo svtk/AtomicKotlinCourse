@@ -8,6 +8,8 @@ files:
   visible: true
 - name: src/UseNewStateMachine2.kt
   visible: true
+- name: src/SMExtensions.kt
+  visible: true
 - name: src/NewStateMachine2.kt
   visible: true
 - name: src/AnonymousFunction.kt
@@ -19,6 +21,4 @@ files:
 - name: src/BuildStringDef.kt
   visible: true
 - name: src/BuildLists.kt
-  visible: true
-- name: src/SMExtensions.kt
   visible: true
