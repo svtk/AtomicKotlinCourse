@@ -1,27 +1,37 @@
 // Polymorphism/PolyExercise1.kt
 package polymorphismExercise1
-import atomictest.eq
+import atomictest.*
 
-open class Pet {
-  open fun speak() = "Pet"
+private val trace = Trace()
+
+open class Animal {
+  open fun talk() {
+    trace("Animal: talk")
+  }
+  open fun jump() {
+    trace("Animal: jump")
+    talk()
+  }
 }
 
-class Dog : Pet() {
-  override fun speak() = "Bark!"
+class Frog : Animal() {
+  override fun talk() {
+    trace("Frog: talk")
+    super.talk()
+  }
+  override fun jump() {
+    trace("Frog: jump")
+    super.jump()
+  }
 }
-
-class Cat : Pet() {
-  override fun speak() = "Meow"
-}
-
-class Hamster : Pet() {
-  override fun speak() = "Squeak!"
-}
-
-fun talk(pet: Pet) = pet.speak()
 
 fun main() {
-  talk(Dog()) eq "Bark!"
-  talk(Cat()) eq "Meow"
-  talk(Hamster()) eq "Squeak!"
+  val animal: Animal = Frog()
+  animal.jump()
+  trace eq """
+  Frog: jump
+  Animal: jump
+  Frog: talk
+  Animal: talk
+  """
 }
