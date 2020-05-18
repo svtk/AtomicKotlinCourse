@@ -172,7 +172,7 @@ fun loadFileFacade(packageName: String, fileName: String = "Task"): KFileFacade 
         KFileFacade(packageName, fileName,
                 ClassLoader.getSystemClassLoader().loadClass("$packageName.${fileName.capitalize()}Kt"))
     } catch (e: ClassNotFoundException) {
-        notFoundError(what = "the '$fileName.kt' file", where = "'$packageName' package")
+        notFoundError(what = "'$fileName.kt' file", where = "'$packageName' package")
     }
 }
 
