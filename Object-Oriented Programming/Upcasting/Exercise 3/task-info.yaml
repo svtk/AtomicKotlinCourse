@@ -2,5 +2,31 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 430
+    length: 18
+    placeholder_text: TODO()
+  - offset: 480
+    length: 17
+    placeholder_text: TODO()
+  - offset: 526
+    length: 16
+    placeholder_text: TOOD()
+  - offset: 583
+    length: 18
+    placeholder_text: TODO()
+  - offset: 618
+    length: 169
+    placeholder_text: |-
+      /*
+        val h = Hero()
+        tryFight(h) // Treat it as a Fight
+        trySwim(h) // Treat it as a Swim
+        tryFly(h) // Treat it as a Fly
+        doAction(h) // Treat it as an ActionCharacter
+      */
+  - offset: 270
+    length: 129
+    placeholder_text: class Hero
 - name: test/Tests.kt
   visible: false

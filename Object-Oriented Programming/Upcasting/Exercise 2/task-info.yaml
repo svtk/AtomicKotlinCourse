@@ -2,5 +2,21 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 105
+    length: 76
+    placeholder_text: class GrannySmith
+  - offset: 183
+    length: 61
+    placeholder_text: class Gala
+  - offset: 246
+    length: 62
+    placeholder_text: class Fuji
+  - offset: 310
+    length: 69
+    placeholder_text: class Braeburn
+  - offset: 498
+    length: 25
+    placeholder_text: //    println(it.consume())
 - name: test/Tests.kt
   visible: false

@@ -1,47 +1,47 @@
 // Upcasting/UpcastExercise3.kt
 package upcastingExercise3
-import atomictest.*
 
-private val trace = Trace()
-
-interface Fight {
-  fun fight()
+interface Fighter {
+  fun fight(): String
 }
 
-interface Swim {
-  fun swim()
+interface Swimmer {
+  fun swim(): String
 }
 
-interface Fly {
-  fun fly()
+interface Flyer {
+  fun fly(): String
 }
 
 open class ActionCharacter {
-  fun fight() =
-    trace("ActionCharacter fight")
+  fun fight(): String = "ActionCharacter fight"
 }
 
-class Hero :
-  ActionCharacter(), Fight, Swim, Fly {
-  override fun swim() = trace("Hero swim")
-  override fun fly() = trace("Hero fly")
+class Hero : ActionCharacter(), Fighter, Swimmer, Flyer {
+  override fun swim() = "Hero swim"
+  override fun fly() = "Hero fly"
 }
 
-fun t(x: Fight) = x.fight()
-fun u(x: Swim) = x.swim()
-fun v(x: Fly) = x.fly()
-fun w(x: ActionCharacter) = x.fight()
+fun tryFight(x: Fighter) {
+  println(x.fight())
+}
+
+fun trySwim(x: Swimmer) {
+  println(x.swim())
+}
+
+fun tryFly(x: Flyer) {
+  println(x.fly())
+}
+
+fun doAction(x: ActionCharacter) {
+  println(x.fight())
+}
 
 fun main() {
   val h = Hero()
-  t(h) // Treat it as a Fight
-  u(h) // Treat it as a Swim
-  v(h) // Treat it as a Fly
-  w(h) // Treat it as an ActionCharacter
-  trace eq """
-    ActionCharacter fight
-    Hero swim
-    Hero fly
-    ActionCharacter fight
-  """
+  tryFight(h) // Treat it as a Fight
+  trySwim(h) // Treat it as a Swim
+  tryFly(h) // Treat it as a Fly
+  doAction(h) // Treat it as an ActionCharacter
 }
