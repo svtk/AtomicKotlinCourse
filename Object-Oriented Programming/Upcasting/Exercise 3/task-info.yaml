@@ -11,7 +11,7 @@ files:
     placeholder_text: TODO()
   - offset: 526
     length: 16
-    placeholder_text: TOOD()
+    placeholder_text: TODO()
   - offset: 583
     length: 18
     placeholder_text: TODO()
