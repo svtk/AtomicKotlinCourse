@@ -3,8 +3,14 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 482
-    length: 65
-    placeholder_text: TODO()
+  - offset: 596
+    length: 76
+    placeholder_text: class Dragon
+  - offset: 674
+    length: 100
+    placeholder_text: class Wizard
+  - offset: 980
+    length: 16
+    placeholder_text: //    c.playTurn()
 - name: test/Tests.kt
   visible: false

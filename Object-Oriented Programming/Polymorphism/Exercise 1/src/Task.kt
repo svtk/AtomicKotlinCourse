@@ -1,37 +1,69 @@
-// Polymorphism/PolyExercise1.kt
 package polymorphismExercise1
 import atomictest.*
 
 private val trace = Trace()
 
-open class Animal {
-  open fun talk() {
-    trace("Animal: talk")
-  }
-  open fun jump() {
-    trace("Animal: jump")
-    talk()
-  }
+abstract class Character(val name: String) {
+  abstract fun play(): String
 }
 
-class Frog : Animal() {
-  override fun talk() {
-    trace("Frog: talk")
-    super.talk()
-  }
-  override fun jump() {
-    trace("Frog: jump")
-    super.jump()
-  }
+interface Fighter {
+  fun fight() = "Fight!"
 }
+
+interface Magician {
+  fun doMagic() = "Magic!"
+}
+
+interface Flyer {
+  fun fly() = "Fly!"
+}
+
+class Warrior :
+  Character("Warrior"), Fighter {
+  override fun play() = fight()
+}
+
+open class Elf(name: String = "Elf") :
+  Character(name), Magician {
+  override fun play() = doMagic()
+}
+
+class FightingElf :
+  Elf("FightingElf"), Fighter {
+  override fun play() =
+    super.play() + fight()
+}
+
+class Dragon:
+  Character("Dragon"), Flyer {
+  override fun play() = fly()
+}
+
+class Wizard:
+  Character("Magician"), Magician, Flyer {
+  override fun play() = doMagic() + fly()
+}
+
+fun Character.playTurn() =
+  trace((name + ": " + play()))
 
 fun main() {
-  val animal: Animal = Frog()
-  animal.jump()
+  val characters = listOf(
+    Warrior(),
+    Elf(),
+    FightingElf(),
+    Dragon(),
+    Wizard()
+  )
+  characters.forEach { c ->
+    c.playTurn()
+  }
   trace eq """
-  Frog: jump
-  Animal: jump
-  Frog: talk
-  Animal: talk
+    Warrior: Fight!
+    Elf: Magic!
+    FightingElf: Magic!Fight!
+    Dragon: Fly!
+    Magician: Magic!Fly!
   """
 }

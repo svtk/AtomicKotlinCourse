@@ -1,9 +1,9 @@
 ## Polymorphism (#1)
 
-The starter code contains two classes: `Frog` extends `Animal`. `Animal`
-defines two member functions `talk` and `jump`, and `Frog` overrides them.
-All the functions record the corresponding information in `trace`. 
-Note that our animal always talks right after it jumps.
+The starter code contains the same content as `FantasyGame.kt`. Add an interface
+`Flyer` that defines a `fly` method. Then add two new characters:
 
-`main` creates `Frog`, stores it as `Animal` and calls `jump` on it.
-Your task is to guess what will be stored in `trace` after this program runs.
+- `Dragon` who can fly (and implements `Flyer`);
+- `Wizard` who can do magic and fly (and implements `Magician` and `Flyer`). 
+
+Uncomment `playTurn()` invocation in `main` and make sure it compiles.
