@@ -12,5 +12,5 @@ files:
   visible: true
 - name: src/Learner.kt
   visible: true
-- name: src/TestingLearner.kt
+- name: src/TestLearner.kt
   visible: true

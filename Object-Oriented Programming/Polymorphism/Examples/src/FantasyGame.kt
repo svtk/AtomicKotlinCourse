@@ -28,7 +28,7 @@ open class Elf(name: String = "Elf") :
 
 class FightingElf :
   Elf("FightingElf"), Fighter {
-  override fun play() =
+  override fun play() = 
     super.play() + fight()
 }
 
