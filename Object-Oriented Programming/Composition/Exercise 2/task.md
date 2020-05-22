@@ -1,10 +1,15 @@
 ## Composition (#2)
 
-Modify `House3.kt` to replace all the `interface`s with classes, and add a
-`name` property to each. Using the same form, add `Bedroom` and `Bathroom`
-classes, and a `List<Bathroom>` and `List<Bedroom>` to `House`. Create a
-`House` named "Our House", with `Kitchen`s called "Main" and "Guest".  Add
-`Bathroom`s called "Master", "Shared", and "Guest". Add `Bedroom`s called
-"Master", "Son", "Daughter", and "Guest". Use `atomictest.Trace` to capture all
-the class names and `name` properties as the `House` is constructed. Also
-notice the order of construction.
+The started code contains implementations of `Stack` and `Queue` classes.
+
+`Stack` provides a last-in-first-out access to elements. You can add ("push") 
+new elements to it, and get ("pop") the last one which was added.
+
+`Queue` provides a first-in-first-out access to elements. You can add new
+elements to it, and get ("poll") returns you the first one which was added.
+
+In the started code, both `Stack` and `Queue` extend `ArrayList`, which
+opens too many methods in public API (for example, you can get the first element
+in `Stack` which contradicts its design).
+
+Use composition instead of inheritance to implement `Stack` and `Queue`.

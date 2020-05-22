@@ -1,78 +1,41 @@
-// Composition/CompositionExercise3.kt
 package compositionExercise3
 import atomictest.*
 
-private val trace = Trace()
+class Stack<E> {
+  private val list = mutableListOf<E>()
 
-interface DataBase {
-  fun write(key: String, value: String)
-  fun read(key: String): String
-}
-
-class NonRelational : DataBase {
-  private val db =
-    mutableListOf<Pair<String, String>>()
-  override fun write(
-    key: String, value: String
-  ) {
-    db.add(Pair(key, value))
+  fun push(e: E) {
+    list += e
   }
-  override fun read(key: String) =
-    db.first { it.first == key }.second
+
+  fun pop(): E = list.removeAt(list.lastIndex)
 }
 
-class InMemory : DataBase {
-  private val db =
-    mutableMapOf<String, String>()
-  override fun write(
-    key: String, value: String
-  ) {
-    db[key] = value
+@OptIn(ExperimentalStdlibApi::class)
+class Queue<E> {
+  private val arrayDeque = ArrayDeque<E>()
+
+  fun add(e: E) {
+    arrayDeque.addLast(e)
   }
-  override fun read(key: String) =
-    db[key] ?: ""
-}
 
-class Mock : DataBase {
-  private var k = ""
-  private var v = ""
-  override fun write(
-    key: String, value: String
-  ) { k = key; v = value }
-  override fun read(key: String) = v
-}
-
-class Holder(val db: DataBase) {
-  fun store(k: String, v: String) =
-    db.write(k, v)
-  fun fetch(k: String) = db.read(k)
-  private val data = """
-  color: purple
-  dog: husky
-  art: deco
-  """.trimIndent().lines()
-     .map { it.split(": ") }
-  fun test() {
-    for(line in data) {
-      store(line[0], line[1])
-      trace(fetch(line[0]))
-    }
-  }
+  fun poll(): E = arrayDeque.removeFirst()
 }
 
 fun main() {
-    Holder(NonRelational()).test()
-    Holder(InMemory()).test()
-    Holder(Mock()).test()
-  trace eq """
-    purple
-    husky
-    deco
-    purple
-    husky
-    deco
-    purple
-    husky
-    deco
-  """
+  val stack = Stack<Int>()
+  stack.push(1)
+  stack.push(2)
+  stack.push(3)
+  stack.push(4)
+  stack.pop() eq 4
+  stack.pop() eq 3
+
+  val queue = Queue<String>()
+  queue.add("a")
+  queue.add("b")
+  queue.add("c")
+  queue.add("d")
+  queue.poll() eq "a"
+  queue.poll() eq "b"
 }

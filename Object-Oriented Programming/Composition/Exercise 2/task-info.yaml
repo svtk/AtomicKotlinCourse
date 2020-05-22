@@ -2,5 +2,32 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 50
+    length: 144
+    placeholder_text: |-
+      class Stack<E> : ArrayList<E>() {
+
+        fun push(e: E) {
+          add(e)
+        }
+
+        fun pop(): E = removeAt(lastIndex)
+      }
+  - offset: 196
+    length: 131
+    placeholder_text: |-
+      class Queue<E>: ArrayList<E>() {
+
+        fun poll(): E = removeAt(0)
+      }
+  - offset: 501
+    length: 17
+    placeholder_text: stack[0] eq 1
+  - offset: 692
+    length: 45
+    placeholder_text: |-
+      queue.add(2, "???")
+        queue[2] eq "???"
 - name: test/Tests.kt
   visible: false

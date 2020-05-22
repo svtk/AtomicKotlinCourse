@@ -1,4 +1,5 @@
 ## Composition (#1)
 
-In `Car.kt`, add a `service()` member function to `Engine` and add a call to
-this function in `main()`.
+The starter code contains the classes `Shape`, `Circle` and `Rectangle`.
+`Circle` and `Rectangle` use composition and store an instance of `Shape`.
+Modify them to use inheritance instead.

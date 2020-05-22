@@ -1,23 +1,14 @@
 ## Composition (#3)
 
-The starter code provides:
+Based on your solution for the previous exercise, 
+modify the implementation of `Queue` by using the class `ArrayDeque` from the
+Kotlin standard library instead of `MutableList`. `ArrayDeque` represents
+a "double ended queue", so it naturally provides member functions to add last
+and remove first elements.
 
-```kotlin
-interface DataBase {
-  fun write(key: String, value: String)
-  fun read(key: String): String
-}
-```
+Note how with composition you can change the internal implementation of the
+class without changing the code that uses this class.
 
-`class Holder(val db: DataBase)` is defined in the starter code. `Holder`
-contains a `DataBase` using composition. `Holder` contains a `test()` function
-which is used in `main()` to test three different `DataBase` classes, which you
-write:
-
--   `NonRelational`, implemented with a `mutableListOf<Pair<String, String>>()`
-
--   `InMemory`, implemented with a `mutableMapOf<String, String>()`
-
--   `Mock`, implemented with two `String` `var`s.
-
-Write these classes so they pass the tests given in `main()`.
+`ArrayDeque` is so far experimental in the Kotlin library, and we add
+`@OptIn(ExperimentalStdlibApi::class)` to explicitly "agree" that we're using
+the experimental functionality.

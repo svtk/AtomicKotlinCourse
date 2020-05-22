@@ -1,53 +1,32 @@
-// Composition/CompositionExercise1.kt
 package compositionExercise1
 import atomictest.*
 
-private val trace = Trace()
-
-class Engine {
-  fun start() = trace("Engine start")
-  fun stop() = trace("Engine stop")
-  fun service() = trace("Engine service")
+open class Shape(
+  val name: String,
+  open val color: String
+) {
+  fun draw() = "drawing $color $name"
 }
 
-class Wheel {
-  fun inflate(psi: Int) =
-    trace("Wheel inflate($psi)")
-}
+class Circle(
+  val radius: Int,
+  override val color: String
+): Shape("circle of radius $radius", color)
 
-class Window(val side: String) {
-  fun rollUp() =
-    trace("$side Window roll up")
-  fun rollDown() =
-    trace("$side Window roll down")
-}
-
-class Door(val side: String) {
-  val window = Window(side)
-  fun open() = trace("$side Door open")
-  fun close() = trace("$side Door close")
-}
-
-class Car {
-  val engine = Engine()
-  val wheel = List(4) { Wheel() }
-  // Two door:
-  val leftDoor = Door("left")
-  val rightDoor = Door("right")
-}
+class Rectangle(
+  val height: Int,
+  val width: Int,
+  override val color: String
+) : Shape("rectangle of size ${height}x$width", color)
 
 fun main() {
-  val car = Car()
-  car.leftDoor.open()
-  car.rightDoor.window.rollUp()
-  car.wheel[0].inflate(72)
-  car.engine.start()
-  car.engine.service()
+  val trace = Trace()
+  val circle = Circle(10, "red")
+  val rectangle = Rectangle(3, 4, "blue")
+  trace(circle.draw())
+  trace(rectangle.draw())
   trace eq """
-    left Door open
-    right Window roll up
-    Wheel inflate(72)
-    Engine start
-    Engine service
+    drawing red circle of radius 10
+    drawing blue rectangle of size 3x4
   """
 }

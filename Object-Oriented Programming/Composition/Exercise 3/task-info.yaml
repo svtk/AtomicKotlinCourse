@@ -2,5 +2,24 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 69
+    length: 37
+    placeholder_text: // private val list
+  - offset: 131
+    length: 9
+    placeholder_text: TODO()
+  - offset: 163
+    length: 29
+    placeholder_text: TODO()
+  - offset: 252
+    length: 40
+    placeholder_text: // private val arrayDeque
+  - offset: 316
+    length: 21
+    placeholder_text: TODO()
+  - offset: 361
+    length: 24
+    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false
