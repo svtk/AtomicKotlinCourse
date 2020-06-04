@@ -41,8 +41,8 @@ class TestExpressionsAndStatementsExercise2 {
       Assert.assertTrue("The return type of '$func()' is '$type'; " +
         "'$type' should be printed to the console", type in output)
     }
-    checkType("Int", "g")
-    checkType("String", "h")
-    checkType("Unit", "f")
+    checkType("Int", "f")
+    checkType("String", "g")
+    checkType("Unit", "h")
   }
 }
