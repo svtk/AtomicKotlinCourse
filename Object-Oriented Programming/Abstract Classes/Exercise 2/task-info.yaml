@@ -3,29 +3,22 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 105
-    length: 112
+  - offset: 84
+    length: 17
+    placeholder_text: abstract class Movable
+  - offset: 129
+    length: 19
+    placeholder_text: abstract class Sleepable
+  - offset: 180
+    length: 30
+    placeholder_text: '// class Sofa: Movable(), Sleepable()'
+  - offset: 225
+    length: 71
     placeholder_text: |-
-      abstract class Instrument {
-        abstract fun play(n: Note): String
-      }
-  - offset: 219
-    length: 39
-    placeholder_text: |-
-      class Wind : Instrument() {
-        override fun play(n: Note) = "Wind blow $n"
-      }
-  - offset: 260
-    length: 53
-    placeholder_text: |-
-      class Percussion : Instrument() {
-        override fun play(n: Note) = "Percussion strike $n"
-      }
-  - offset: 315
-    length: 48
-    placeholder_text: |-
-      class Stringed : Instrument() {
-        override fun play(n: Note) = "Stringed pluck $n"
-      }
+      /*
+        val sofa = Sofa()
+        sofa.move() eq "move"
+        sofa.sleepOn() eq "sleep"
+      */
 - name: test/Tests.kt
   visible: false

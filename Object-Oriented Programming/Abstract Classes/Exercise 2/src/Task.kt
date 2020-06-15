@@ -1,34 +1,20 @@
-// Abstract/AbsExercise2.kt
-package abstractClassesExercise2
+// Abstract/AbsExercise1.kt
+package abstractClassesExercise1
 
-enum class Note {
-  A, B, C, D, E, F, G
+import atomictest.eq
+
+interface Movable {
+  fun move() = "move"
 }
 
-open class Instrument(val name: String, val action: String) {
-  fun play(n: Note): String = "$name $action $n"
+interface Sleepable {
+  fun sleepOn() = "sleep"
 }
 
-class Wind : Instrument("Wind", "blow")
-
-class Percussion : Instrument("Percussion", "strike")
-
-class Stringed : Instrument("Stringed", "pluck")
-
-fun tune(i: Instrument) = i.play(Note.C)
+class Sofa: Movable, Sleepable
 
 fun main() {
-  val orchestra = listOf(
-    Wind(),
-    Percussion(),
-    Stringed()
-  )
-  for (instrument in orchestra) {
-    println(tune(instrument))
-  }
+  val sofa = Sofa()
+  sofa.move() eq "move"
+  sofa.sleepOn() eq "sleep"
 }
-/* Output:
-Wind blow C
-Percussion strike C
-Stringed pluck C
- */

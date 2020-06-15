@@ -1,9 +1,9 @@
-package abstractClassesExercise1
+package abstractClassesExercise2
 
 import org.junit.Test
 import util.unimplementedTest
 
-class TestAbstractClassesExercise1 {
+class TestAbstractClassesExercise2 {
     @Test fun testSolution() {
         //TODO: implement your test here
         unimplementedTest()

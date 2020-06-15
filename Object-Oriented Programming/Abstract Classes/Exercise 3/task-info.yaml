@@ -1,0 +1,31 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 105
+    length: 112
+    placeholder_text: |-
+      abstract class Instrument {
+        abstract fun play(n: Note): String
+      }
+  - offset: 219
+    length: 39
+    placeholder_text: |-
+      class Wind : Instrument() {
+        override fun play(n: Note) = "Wind blow $n"
+      }
+  - offset: 260
+    length: 53
+    placeholder_text: |-
+      class Percussion : Instrument() {
+        override fun play(n: Note) = "Percussion strike $n"
+      }
+  - offset: 315
+    length: 48
+    placeholder_text: |-
+      class Stringed : Instrument() {
+        override fun play(n: Note) = "Stringed pluck $n"
+      }
+- name: test/Tests.kt
+  visible: false

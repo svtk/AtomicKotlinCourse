@@ -1,11 +1,9 @@
-package baseClassInitializationExercise1
-
+import org.junit.Assert
 import org.junit.Test
-import util.unimplementedTest
 
-class TestBaseClassInitializationExercise1 {
+class Test {
     @Test fun testSolution() {
         //TODO: implement your test here
-        unimplementedTest()
+        Assert.assertTrue("Tests not implemented for the task", false)
     }
 }

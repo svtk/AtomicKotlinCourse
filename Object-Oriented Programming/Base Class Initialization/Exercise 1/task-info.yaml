@@ -2,20 +2,5 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
-  placeholders:
-  - offset: 75
-    length: 146
-    placeholder_text: '/* TODO: Implement Animal, Cat and Dog classes */'
-  - offset: 236
-    length: 125
-    placeholder_text: |-
-      /*
-        val animal = Animal()
-        println(animal.sound)
-        val cat = Cat()
-        println(cat.sound)
-        val dog = Dog()
-        println(dog.sound)
-      */
 - name: test/Tests.kt
   visible: false
