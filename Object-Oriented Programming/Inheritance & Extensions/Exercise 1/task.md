@@ -1,7 +1,9 @@
 ## Inheritance & Extensions (#1)
 
-Following `AdjustTemp.kt`, add two extension functions `openWindow()` and
-`fan()` as ways of cooling. Add a class `DeltaTemperature2` where the extension
-functions are instead member functions, and an overloaded `adjust()` function
-which takes a `DeltaTemperature2`. Which approach seems better, or are they
-about the same?
+Starting with `TemperatureDelta.kt`, add two extension functions `openWindow()`
+and `fan()` as cooling strategies. Add a class `TemperatureDelta2`, but use
+member functions instead of extension functions. Add an overloaded `adjust()`
+function that takes a `TemperatureDelta2`. Which approach is better, or do they
+seem about the same?
+
+{{ Solution already exists but names need to be changed }}

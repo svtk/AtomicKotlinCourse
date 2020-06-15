@@ -31,10 +31,9 @@ fun adapt(mc: MyClass) =
   MyClassAdaptedForLib(mc)
 
 fun main() {
-  val library = UsefulLibrary()
   val mc = adapt(MyClass())
-  library.utility1(mc)
-  library.utility2(mc)
+  utility1(mc)
+  utility2(mc)
   useMyType(mc)
   trace eq """
   h()

@@ -12,6 +12,7 @@ content:
 - Class Delegation
 - Downcasting
 - Sealed Classes
+- Type Checking
 - Nested Classes
 - Inner Classes
 - Objects

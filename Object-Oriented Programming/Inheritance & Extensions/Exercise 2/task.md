@@ -1,17 +1,37 @@
 ## Inheritance & Extensions (#2)
 
-Refactor `BatteryPet2.kt` to improve the design:
+Use composition to create `HVAC` instead of inheritance. The starter code
+provides an identical copy of `warmAndCool()` for your new `HVAC` type, and
+test code in `main()`. Prove to yourself that `warm()` doesn't work with your
+composed type.
 
--   In `Pet`, add an open function `settle()` which calls `trace("")`
+> Solution 2
 
--   In `Pet`, add an open function `feed()` which calls `energy.replenish()`
+```kotlin
+// InheritanceExtensions/InhExtensionsEx2.kt
+package inheritanceAndExtensionsExercise2
+import inheritanceextensions.Heater
+import inheritanceextensions.warm
+import atomictest.*
 
--   In `Dog`, override `settle()` to call `trace("Sitting...")
+class HVAC {
+  private val heater = Heater()
+  fun heat(temperature: Int) =
+    heater.heat(temperature)
+  fun cool(temperature: Int) =
+    "cooling to $temperature"
+}
 
--   You no longer need `Dog.sit()`
+fun warmAndCool(hvac: HVAC) {
+  hvac.heat(70) eq "heating to 70"
+  hvac.cool(60) eq "cooling to 60"
+}
 
--   Change `playWithDog(dog: Dog)` to `playWithPet(pet: Pet)`
-
--   Add a `CatFood` type of `Energy`, and define the associated `Cat` class
-
--   In `main()`, test all types of `Pet`
+fun main() {
+  val heater = Heater()
+  val hvac = HVAC()
+  warm(heater)
+  // warm(hvac) // Doesn't work
+  warmAndCool(hvac)
+}
+```

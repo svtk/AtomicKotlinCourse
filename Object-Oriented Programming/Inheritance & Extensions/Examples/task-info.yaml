@@ -1,14 +1,12 @@
 type: theory
 files:
+- name: src/Heater.kt
+  visible: true
 - name: src/InheritAdd.kt
   visible: true
 - name: src/ExtensionFuncs.kt
   visible: true
-- name: src/AdjustTemp.kt
-  visible: true
-- name: src/BatteryPet.kt
-  visible: true
-- name: src/BatteryPet2.kt
+- name: src/TemperatureDelta.kt
   visible: true
 - name: src/Convention.kt
   visible: true

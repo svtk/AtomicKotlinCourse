@@ -1,5 +1,5 @@
 // Abstract/AbsExercise1.kt
-package abstractClassesExercise1
+package abstractClassesExercise2
 
 import atomictest.eq
 

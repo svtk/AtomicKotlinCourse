@@ -7,7 +7,7 @@ content:
 - Hashing
 - Operator Overloading
 - Using Operators
-- Lazy Initialization
-- Late Initialization
 - Property Delegation
 - Property Delegation Tools
+- Lazy Initialization
+- Late Initialization

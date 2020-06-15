@@ -1,9 +1,9 @@
 ## Polymorphism (#1)
 
-The starter code contains the same content as `FantasyGame.kt`. Add an interface
-`Flyer` that defines a `fly` method. Then add two new characters:
+The starter code contains the code from `FantasyGame.kt`. Add an interface
+`Flyer` with a `fly()` method. Add two new characters:
 
-- `Dragon` who can fly (and implements `Flyer`);
-- `Wizard` who can do magic and fly (and implements `Magician` and `Flyer`). 
+- A `Dragon` that can fly, by implementing `Flyer`.
+- A `Wizard` that can perform magic and fly, by implementing `Magician` and `Flyer`.
 
-Uncomment `playTurn()` invocation in `main` and make sure it compiles.
+Uncomment the  call to `playTurn()` in `main()` and ensure it compiles.

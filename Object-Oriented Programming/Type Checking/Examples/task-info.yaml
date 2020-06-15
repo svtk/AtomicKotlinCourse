@@ -1,0 +1,18 @@
+type: theory
+files:
+- name: src/Insects.kt
+  visible: true
+- name: src/AnyName.kt
+  visible: true
+- name: src/TypeCheck1.kt
+  visible: true
+- name: src/TypeCheck2.kt
+  visible: true
+- name: src/BeverageContainer.kt
+  visible: true
+- name: src/TypeCheck3.kt
+  visible: true
+- name: src/BeverageContainer2.kt
+  visible: true
+- name: src/BeverageContainer3.kt
+  visible: true

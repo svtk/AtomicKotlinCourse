@@ -1,6 +1,6 @@
 type: theory
 files:
-- name: src/Closeable.kt
+- name: src/AutoCloseable.kt
   visible: true
 - name: src/UseLines.kt
   visible: true

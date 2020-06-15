@@ -1,5 +1,5 @@
 // Abstract/AbsExercise2.kt
-package abstractClassesExercise2
+package abstractClassesExercise3
 
 enum class Note {
   A, B, C, D, E, F, G

@@ -1,5 +1,5 @@
 // BaseClassInit/BCIExercise1.kt
-package baseClassInitializationExercise1
+package baseClassInitializationExercise3
 
 open class Animal(val sound: String = "???")
 

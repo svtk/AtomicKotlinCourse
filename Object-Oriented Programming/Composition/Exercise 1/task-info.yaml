@@ -3,6 +3,15 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
+  - offset: 50
+    length: 106
+    placeholder_text: |-
+      class Shape(
+        val name: String,
+        val color: String
+      ) {
+        fun draw() = "drawing $color $name"
+      }
   - offset: 158
     length: 105
     placeholder_text: "class Circle(\n  val radius: Int, \n  val color: String\n)\
@@ -23,14 +32,5 @@ files:
   - offset: 545
     length: 16
     placeholder_text: rectangle.shape.draw()
-  - offset: 50
-    length: 106
-    placeholder_text: |-
-      class Shape(
-        val name: String,
-        val color: String
-      ) {
-        fun draw() = "drawing $color $name"
-      }
 - name: test/Tests.kt
   visible: false

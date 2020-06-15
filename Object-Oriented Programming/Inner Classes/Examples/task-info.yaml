@@ -2,8 +2,6 @@ type: theory
 files:
 - name: src/Hotel.kt
   visible: true
-- name: src/WhichThis.kt
-  visible: true
 - name: src/QualifiedThis.kt
   visible: true
 - name: src/InnerClassInheritance.kt

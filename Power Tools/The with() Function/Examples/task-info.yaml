@@ -4,5 +4,7 @@ files:
   visible: true
 - name: src/UsingWith.kt
   visible: true
-- name: src/WithDeclaration.kt
+- name: src/DefiningWith.kt
+  visible: true
+- name: src/WithCleanup.kt
   visible: true

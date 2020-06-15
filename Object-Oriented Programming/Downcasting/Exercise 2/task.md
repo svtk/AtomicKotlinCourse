@@ -6,7 +6,7 @@ then map each of the resulting objects onto `bark()` and test the result using
 already-downcast `Dog` objects.
 
 There's a second, more dynamic form of `filterIsInstance()`, which takes a
-class object as a parameter. Pass `Dog::class.java` as the argument to
+*class object* as a parameter. Pass `Dog::class.java` as the argument to
 `filterIsInstance()`, with the rest of the expression as described in the
 previous paragraph. How is this version of `filterIsInstance()` different from
 the version that uses a generic argument?

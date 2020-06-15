@@ -1752,23 +1752,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testAdjustTemp() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Examples/src/AdjustTemp.kt", inheritanceextensions.AdjustTempKt::main);
-    }
-
-    @Test
-    public void testBatteryPet() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Examples/src/BatteryPet.kt", inheritanceextensions.BatteryPetKt::main);
-    }
-
-    @Test
     public void testDeviceExtensions() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Examples/src/DeviceExtensions.kt", inheritanceextensions2.DeviceExtensionsKt::main);
-    }
-
-    @Test
-    public void testBatteryPet2() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Examples/src/BatteryPet2.kt", inheritanceextensions2.BatteryPet2Kt::main);
     }
 
     @Test
@@ -1789,6 +1774,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testConvention() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Examples/src/Convention.kt", inheritanceextensions.ConventionKt::main);
+    }
+
+    @Test
+    public void testTemperatureDelta() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Examples/src/TemperatureDelta.kt", inheritanceextensions.TemperatureDeltaKt::main);
     }
 
     @Test
@@ -1864,6 +1854,41 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testSealedVsAbstract() {
         testExample("../AtomicKotlinCourse/Object-Oriented Programming/Sealed Classes/Examples/src/SealedVsAbstract.kt", sealedclasses.SealedVsAbstractKt::main);
+    }
+
+    @Test
+    public void testTypeCheck3() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Examples/src/TypeCheck3.kt", typechecking3.TypeCheck3Kt::main);
+    }
+
+    @Test
+    public void testTypeCheck2() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Examples/src/TypeCheck2.kt", typechecking.TypeCheck2Kt::main);
+    }
+
+    @Test
+    public void testInsects() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Examples/src/Insects.kt", typechecking.InsectsKt::main);
+    }
+
+    @Test
+    public void testBeverageContainer3() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Examples/src/BeverageContainer3.kt", typechecking3.BeverageContainer3Kt::main);
+    }
+
+    @Test
+    public void testBeverageContainer2() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Examples/src/BeverageContainer2.kt", typechecking2.BeverageContainer2Kt::main);
+    }
+
+    @Test
+    public void testBeverageContainer() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Examples/src/BeverageContainer.kt", typechecking.BeverageContainerKt::main);
+    }
+
+    @Test
+    public void testTypeCheck1() {
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Examples/src/TypeCheck1.kt", typechecking.TypeCheck1Kt::main);
     }
 
     @Test
@@ -2107,11 +2132,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testCloseable() {
-        testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/Closeable.kt", resourcecleanup.CloseableKt::main);
-    }
-
-    @Test
     public void testUseLines() {
         testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/UseLines.kt", resourcecleanup.UseLinesKt::main);
     }
@@ -2119,6 +2139,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testUsable() {
         testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/Usable.kt", resourcecleanup.UsableKt::main);
+    }
+
+    @Test
+    public void testAutoCloseable() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Examples/src/AutoCloseable.kt", resourcecleanup.AutoCloseableKt::main);
     }
 
     @Test
@@ -2224,6 +2249,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testGenericSpeakers() {
         testExample("../AtomicKotlinCourse/Power Tools/More Generics/Examples/src/GenericSpeakers.kt", generics.GenericSpeakersKt::main);
+    }
+
+    @Test
+    public void testWithCleanup() {
+        testExample("../AtomicKotlinCourse/Power Tools/The with() Function/Examples/src/WithCleanup.kt", withfunction.WithCleanupKt::main);
     }
 
     @Test
@@ -2452,6 +2482,56 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testNickName() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/NickName.kt", propertydelegation.NickNameKt::main);
+    }
+
+    @Test
+    public void testBasicReadWrite() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/BasicReadWrite.kt", propertydelegation.BasicReadWriteKt::main);
+    }
+
+    @Test
+    public void testBasicReadWrite2() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/BasicReadWrite2.kt", propertydelegation.BasicReadWrite2Kt::main);
+    }
+
+    @Test
+    public void testBasicRead2() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/BasicRead2.kt", propertydelegation.BasicRead2Kt::main);
+    }
+
+    @Test
+    public void testCarService() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/CarService.kt", propertydelegation.CarServiceKt::main);
+    }
+
+    @Test
+    public void testFibonacciProperty() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/FibonacciProperty.kt", propertydelegation.FibonacciPropertyKt::main);
+    }
+
+    @Test
+    public void testConfiguration() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/Configuration.kt", propertydelegation.ConfigurationKt::main);
+    }
+
+    @Test
+    public void testBasicRead() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/BasicRead.kt", propertydelegation.BasicReadKt::main);
+    }
+
+    @Test
+    public void testTeamWithTraditions() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation Tools/Examples/src/TeamWithTraditions.kt", TeamWithTraditionsKt::main);
+    }
+
+    @Test
+    public void testTeam() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation Tools/Examples/src/Team.kt", TeamKt::main);
+    }
+
+    @Test
     public void testPropertyOptions() {
         testExample("../AtomicKotlinCourse/Power Tools/Lazy Initialization/Examples/src/PropertyOptions.kt", lazyinitialization.PropertyOptionsKt::main);
     }
@@ -2479,26 +2559,6 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testSuitcase() {
         testExample("../AtomicKotlinCourse/Power Tools/Late Initialization/Examples/src/Suitcase.kt", lateinitialization.SuitcaseKt::main);
-    }
-
-    @Test
-    public void testNickName() {
-        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/NickName.kt", propertydelegation.NickNameKt::main);
-    }
-
-    @Test
-    public void testFibonacciProperty() {
-        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Examples/src/FibonacciProperty.kt", FibonacciPropertyKt::main);
-    }
-
-    @Test
-    public void testTeamWithTraditions() {
-        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation Tools/Examples/src/TeamWithTraditions.kt", TeamWithTraditionsKt::main);
-    }
-
-    @Test
-    public void testTeam() {
-        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation Tools/Examples/src/Team.kt", TeamKt::main);
     }
 
     @Test
@@ -3583,7 +3643,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask213() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Exercise 1/src/Task.kt", abstractClassesExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Base Class Initialization/Exercise 3/src/Task.kt", baseClassInitializationExercise3.TaskKt::main);
     }
 
     @Test
@@ -3593,216 +3653,236 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask215() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Upcasting/Exercise 1/src/Task.kt", upcastingExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Abstract Classes/Exercise 3/src/Task.kt", abstractClassesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask216() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Upcasting/Exercise 2/src/Task.kt", upcastingExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Upcasting/Exercise 1/src/Task.kt", upcastingExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask217() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Upcasting/Exercise 3/src/Task.kt", upcastingExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Upcasting/Exercise 2/src/Task.kt", upcastingExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask218() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Polymorphism/Exercise 1/src/Task.kt", polymorphismExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Upcasting/Exercise 3/src/Task.kt", upcastingExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask219() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Polymorphism/Exercise 2/src/Task.kt", polymorphismExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Polymorphism/Exercise 1/src/Task.kt", polymorphismExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask220() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Composition/Exercise 1/src/Task.kt", compositionExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Polymorphism/Exercise 2/src/Task.kt", polymorphismExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask221() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Composition/Exercise 2/src/Task.kt", compositionExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Composition/Exercise 1/src/Task.kt", compositionExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask222() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Composition/Exercise 3/src/Task.kt", compositionExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Composition/Exercise 2/src/Task.kt", compositionExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask223() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Exercise 1/src/Task.kt", inheritanceAndExtensionsExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Composition/Exercise 3/src/Task.kt", compositionExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask224() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Exercise 2/src/Task.kt", inheritanceAndExtensionsExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Exercise 1/src/Task.kt", inheritanceAndExtensionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask225() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Exercise 3/src/Task.kt", inheritanceAndExtensionsExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Exercise 2/src/Task.kt", inheritanceAndExtensionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask226() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Class Delegation/Exercise 1/src/Task.kt", classDelegationExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inheritance & Extensions/Exercise 3/src/Task.kt", inheritanceAndExtensionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask227() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Class Delegation/Exercise 2/src/Task.kt", classDelegationExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Class Delegation/Exercise 1/src/Task.kt", classDelegationExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask228() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Class Delegation/Exercise 3/src/Task.kt", classDelegationExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Class Delegation/Exercise 2/src/Task.kt", classDelegationExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask229() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Downcasting/Exercise 1/src/Task.kt", downcastingExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Class Delegation/Exercise 3/src/Task.kt", classDelegationExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask230() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Downcasting/Exercise 2/src/Task.kt", downcastingExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Downcasting/Exercise 1/src/Task.kt", downcastingExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask231() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Downcasting/Exercise 3/src/Task.kt", downcastingExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Downcasting/Exercise 2/src/Task.kt", downcastingExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask232() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Sealed Classes/Exercise 1/src/Task.kt", sealedClassesExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Downcasting/Exercise 3/src/Task.kt", downcastingExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask233() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Sealed Classes/Exercise 2/src/Task.kt", sealedClassesExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Sealed Classes/Exercise 1/src/Task.kt", sealedClassesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask234() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Sealed Classes/Exercise 3/src/Task.kt", sealedClassesExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Sealed Classes/Exercise 2/src/Task.kt", sealedClassesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask235() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Nested Classes/Exercise 1/src/Task.kt", nestedClassesExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Sealed Classes/Exercise 3/src/Task.kt", sealedClassesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask236() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Nested Classes/Exercise 2/src/Task.kt", nestedClassesExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Exercise 1/src/Task.kt", typecheckingsoln1.TaskKt::main);
     }
 
     @Test
     public void testTask237() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Nested Classes/Exercise 3/src/Task.kt", nestedClassesExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Exercise 2/src/Task.kt", typecheckingsoln2a.TaskKt::main);
     }
 
     @Test
     public void testTask238() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Nested Classes/Exercise 4/src/Task.kt", nestedClassesExercise4.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Exercise 3/src/Task.kt", typecheckingsoln2b.TaskKt::main);
     }
 
     @Test
     public void testTask239() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inner Classes/Exercise 1/src/Task.kt", innerClassesExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Nested Classes/Exercise 1/src/Task.kt", nestedClassesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask240() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inner Classes/Exercise 2/src/Task.kt", innerClassesExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Nested Classes/Exercise 2/src/Task.kt", nestedClassesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask241() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inner Classes/Exercise 3/src/Task.kt", innerClassesExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Nested Classes/Exercise 3/src/Task.kt", nestedClassesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask242() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Objects/Exercise 1/src/Task.kt", objectsExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Nested Classes/Exercise 4/src/Task.kt", nestedClassesExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask243() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Objects/Exercise 2/src/Task.kt", objectsExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inner Classes/Exercise 1/src/Task.kt", innerClassesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask244() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Objects/Exercise 3/src/Task.kt", objectsExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inner Classes/Exercise 2/src/Task.kt", innerClassesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask245() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Exercise 1/src/Task.kt", companionObjectsExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Inner Classes/Exercise 3/src/Task.kt", innerClassesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask246() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Exercise 2/src/Task.kt", companionObjectsExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Objects/Exercise 1/src/Task.kt", objectsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask247() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Exercise 3/src/Task.kt", companionObjectsExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Objects/Exercise 2/src/Task.kt", objectsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask248() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Object-Oriented Design/Exercise 2/src/Task.kt", objectOrientedDesignExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Objects/Exercise 3/src/Task.kt", objectsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask249() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Object-Oriented Design/Exercise 3/src/Task.kt", objectOrientedDesignExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Exercise 1/src/Task.kt", companionObjectsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask250() {
-        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Exercise 1/src/Task.kt", lambdaWithReceiverExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Exercise 2/src/Task.kt", companionObjectsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask251() {
-        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Exercise 2/src/Task.kt", lambdaWithReceiverExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Companion Objects/Exercise 3/src/Task.kt", companionObjectsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask252() {
-        testExample("../AtomicKotlinCourse/Power Tools/The with() Function/Exercise 1/src/Task.kt", theWithFunctionExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Object-Oriented Design/Exercise 2/src/Task.kt", objectOrientedDesignExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask253() {
-        testExample("../AtomicKotlinCourse/Power Tools/The with() Function/Exercise 2/src/Task.kt", theWithFunctionExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Object-Oriented Design/Exercise 3/src/Task.kt", objectOrientedDesignExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask254() {
-        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 1/src/Task.kt", scopeFunctionsExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Exercise 1/src/Task.kt", lambdaWithReceiverExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask255() {
-        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 2/src/Task.kt", scopeFunctionsExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/Lambda with Receiver/Exercise 2/src/Task.kt", lambdaWithReceiverExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask256() {
-        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 3/src/Task.kt", scopeFunctionsExercise3.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Power Tools/The with() Function/Exercise 1/src/Task.kt", theWithFunctionExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask257() {
+        testExample("../AtomicKotlinCourse/Power Tools/The with() Function/Exercise 2/src/Task.kt", theWithFunctionExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask258() {
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 1/src/Task.kt", scopeFunctionsExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask259() {
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 2/src/Task.kt", scopeFunctionsExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask260() {
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 3/src/Task.kt", scopeFunctionsExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask261() {
         testExample("../AtomicKotlinCourse/Power Tools/Hashing/Exercise 1/src/Task.kt", hashingExercise1.TaskKt::main);
     }
 }

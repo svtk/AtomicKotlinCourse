@@ -1,6 +1,18 @@
 type: theory
 files:
+- name: src/BasicRead.kt
+  visible: true
+- name: src/BasicReadWrite.kt
+  visible: true
+- name: src/BasicRead2.kt
+  visible: true
+- name: src/BasicReadWrite2.kt
+  visible: true
 - name: src/NickName.kt
   visible: true
 - name: src/FibonacciProperty.kt
+  visible: true
+- name: src/CarService.kt
+  visible: true
+- name: src/Configuration.kt
   visible: true
