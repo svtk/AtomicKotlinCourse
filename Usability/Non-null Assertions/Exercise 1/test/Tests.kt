@@ -25,10 +25,10 @@ class TestNonNullAssertionsExercise1 {
         }
         try {
             launchFunc.call(null)
-            throw AssertionError("Wrong result after calling 'launch(null)', expected KotlinNullPointerException")
+            throw AssertionError("Wrong result after calling 'launch(null)', expected NullPointerException")
         } catch (e: InvocationTargetException) {
-            Assert.assertEquals("Wrong result after calling 'launch(null)', expected KotlinNullPointerException",
-              e.targetException::class.simpleName, "KotlinNullPointerException")
+            Assert.assertEquals("Wrong result after calling 'launch(null)', expected NullPointerException",
+              e.targetException::class.simpleName, "NullPointerException")
         }
     }
 }
