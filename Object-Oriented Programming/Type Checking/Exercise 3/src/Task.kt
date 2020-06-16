@@ -1,5 +1,5 @@
 // TypeChecking/TypeCheckingSoln2b.kt
-package typecheckingsoln2b
+package typeCheckingExercise3
 import atomictest.eq
 import typechecking.name
 

@@ -1,5 +1,5 @@
 // TypeChecking/TypeCheckingSoln2a.kt
-package typecheckingsoln2a
+package typeCheckingExercise2
 import atomictest.eq
 
 sealed class BeverageContainer {

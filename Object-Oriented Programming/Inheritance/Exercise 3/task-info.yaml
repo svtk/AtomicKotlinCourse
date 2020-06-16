@@ -9,13 +9,13 @@ files:
   - offset: 190
     length: 39
     placeholder_text: // TODO
+  - offset: 262
+    length: 35
+    placeholder_text: // TODO
   - offset: 316
     length: 85
     placeholder_text: |-
       val chess = Chess()
       //  chess.initOrder eq listOf("???")
-  - offset: 262
-    length: 35
-    placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false
