@@ -1,5 +1,4 @@
-// BaseClassInit/BCIExercise2.kt
-package baseClassInitializationExercise2
+package baseClassInitializationExercise4
 
 open class Plate(description: String) {
   init {
