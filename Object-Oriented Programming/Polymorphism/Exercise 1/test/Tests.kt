@@ -1,12 +1,13 @@
 package polymorphismExercise1
 
-import atomictest.Trace
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
-import util.*
+import util.assertConstructorNumber
+import util.assertInheritance
+import util.loadClass
+import util.loadTraceContent
 import kotlin.reflect.full.createInstance
-import kotlin.reflect.jvm.isAccessible
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -44,17 +45,9 @@ class TestPolymorphismExercise1 {
                 .map { loadClass(packageName, it).createInstance() as Character }
                 .forEach { c -> c.playTurn() }
 
-        val fileFacade = loadFileFacade(packageName)
-        val trace: Trace = loadToplevelField(fileFacade, "trace")
-                .apply { isAccessible = true }
-                .let { it.get(null) as Trace }
-        val actualContent = Trace::class.members
-                .first { it.name == "content" }
-                .apply { isAccessible = true }
-                .let { it.call(trace) as List<String> }
         assertEquals(
                 message = "Incorrect result of playTurn() for all characters",
-                actual = actualContent,
+                actual = loadTraceContent(packageName),
                 expected = listOf(
                         "Warrior: Fight!",
                         "Elf: Magic!",
