@@ -2,14 +2,12 @@
 package companionobjects
 import atomictest.*
 
-private val trace = Trace()
-
 interface ZI {
   fun f(): String
   fun g(): String
 }
 
-open class ZIOpen : ZI {
+open class ZIOpen: ZI {
   override fun f() = "ZIOpen.f()"
   override fun g() = "ZIOpen.g()"
 }
@@ -52,5 +50,5 @@ fun main() {
     ZIOpen.f()
     ZICompanionInheritance.g()
     ZICompanionInheritance.h()
-    """
+  """
 }

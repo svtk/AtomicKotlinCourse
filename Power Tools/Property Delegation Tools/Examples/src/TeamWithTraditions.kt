@@ -1,19 +1,24 @@
-// PropertyDelegation/TeamWithTraditions.kt
-import atomictest.eq
+// DelegationTools/TeamWithTraditions.kt
+package delegationtools
+import atomictest.*
 import kotlin.properties.Delegates
+import kotlin.reflect.KProperty
+
+fun AName(
+  property: KProperty<*>,
+  old: String,
+  new: String
+) = if (new.startsWith("A")) {
+    trace("$old -> $new")
+    true
+  } else {
+    trace("Name must start with 'A'")
+    false
+  }
 
 class TeamWithTraditions {
   var captain: String
-    by Delegates
-      .vetoable("Adam") { _, old, new ->
-        val canChange = new.startsWith("A")
-        if (canChange)
-          println("$old -> $new")
-        else
-          println("It's tradition, sorry " +
-            "$new")
-        canChange
-      }
+    by Delegates.vetoable("Adam", ::AName)
 }
 
 fun main() {
@@ -21,9 +26,8 @@ fun main() {
   team.captain = "Amanda"
   team.captain = "Bill"
   team.captain eq "Amanda"
+  trace eq """
+    Adam -> Amanda
+    Name must start with 'A'
+  """
 }
-/* Output:
-Adam -> Amanda
-It's tradition, sorry Bill
-Amanda
-*/

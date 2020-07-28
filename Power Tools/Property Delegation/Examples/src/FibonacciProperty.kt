@@ -5,7 +5,7 @@ import kotlin.reflect.KProperty
 import recursion.fibonacci
 import atomictest.eq
 
-class Fibonacci :
+class Fibonacci:
   ReadWriteProperty<Any?, Long> {
   private var current: Long = 0
   override operator fun getValue(
@@ -21,11 +21,13 @@ class Fibonacci :
   }
 }
 
-fun main() {
-  var f by Fibonacci()
-  f eq 0L
-  f = 22L
-  f eq 17711L
-  f = 90L
-  f eq 2880067194370816120L
+fun test() {
+  var fib by Fibonacci()
+  fib eq 0L
+  fib = 22L
+  fib eq 17711L
+  fib = 90L
+  fib eq 2880067194370816120L
 }
+
+fun main() = test()

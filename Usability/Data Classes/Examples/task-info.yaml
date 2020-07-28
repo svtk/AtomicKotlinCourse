@@ -6,3 +6,5 @@ files:
   visible: true
 - name: src/CopyDataClass.kt
   visible: true
+- name: src/HashCode.kt
+  visible: true

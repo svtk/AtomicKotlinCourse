@@ -4,17 +4,19 @@ import atomictest.eq
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
-class ReadWritable2(var i: Int) {
+class ReadWriteable2(var i: Int) {
   var msg = ""
   var value: String by BasicReadWrite2()
 }
 
-class BasicReadWrite2 {
-  operator fun getValue(
-    rw: ReadWritable2, prop: KProperty<*>
+class BasicReadWrite2:
+  ReadWriteProperty<ReadWriteable2, String> {
+  override operator fun getValue(
+    rw: ReadWriteable2,
+    property: KProperty<*>
   ) = "getValue: ${rw.i}"
-  operator fun setValue(
-    rw: ReadWritable2,
+  override operator fun setValue(
+    rw: ReadWriteable2,
     property: KProperty<*>,
     s: String
   ) {
@@ -24,7 +26,7 @@ class BasicReadWrite2 {
 }
 
 fun main() {
-  val x = ReadWritable2(11)
+  val x = ReadWriteable2(11)
   x.value eq "getValue: 11"
   x.value = "99"
   x.msg eq "setValue to 99"

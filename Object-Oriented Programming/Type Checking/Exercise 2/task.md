@@ -23,10 +23,10 @@ sealed class Can: BeverageContainer() {
   override fun pour() = "Can: Pour"
 }
 
-class SteelCan : Can()
+class SteelCan: Can()
 class AluminumCan: Can()
 
-sealed class Bottle : BeverageContainer() {
+sealed class Bottle: BeverageContainer() {
   override fun open() = "Remove Cap"
   override fun pour() = "Bottle: Pour"
 }
@@ -87,7 +87,7 @@ abstract class Can: BeverageContainer {
   override fun open() = "Pop Top"
 }
 
-class SteelCan : Can() {
+class SteelCan: Can() {
   override fun recycle() = "Recycle Steel"
 }
 
@@ -95,7 +95,7 @@ class AluminumCan: Can() {
   override fun recycle() = "Recycle Aluminum"
 }
 
-abstract class Bottle : BeverageContainer {
+abstract class Bottle: BeverageContainer {
   override fun open() = "Remove Cap"
 }
 

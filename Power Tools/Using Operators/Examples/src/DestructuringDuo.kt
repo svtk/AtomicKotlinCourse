@@ -1,8 +1,6 @@
 // UsingOperators/DestructuringDuo.kt
 import atomictest.*
 
-private val trace = Trace()
-
 class Duo(val x: Int, val y: Int) {
   operator fun component1(): Int {
     trace("component1()")
@@ -18,9 +16,8 @@ fun main() {
   val (a, b) = Duo(1, 2)
   a eq 1
   b eq 2
-  trace eq
-  """
-  component1()
-  component2()
+  trace eq """
+    component1()
+    component2()
   """
 }

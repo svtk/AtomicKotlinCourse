@@ -9,7 +9,8 @@ class Readable(val i: Int) {
 
 class BasicRead {
   operator fun getValue(
-    r: Readable, prop: KProperty<*>
+    r: Readable,
+    property: KProperty<*>
   ) = "getValue: ${r.i}"
 }
 

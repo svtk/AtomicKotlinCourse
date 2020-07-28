@@ -22,5 +22,5 @@ interface B {
 Create a class `AA` that implements `A`, producing the value `1` for `x` and
 `z`, and tracing `"AA.u()"` for `u()` and `"AA.v()"` for `v()`. Create a
 similar implementation `BB` implementing `B`. Now create a class `Delegation`
-which delegates to both `A` and `B`. IntelliJ or the compiler will tell you
-what you need to do to solve the collisions.
+which delegates to both `A` and `B`. IntelliJ or the compiler will guide you in
+resolving the collisions.

@@ -1,20 +1,21 @@
 // LazyInitialization/LazySyntax.kt
 package lazyinitialization
+import atomictest.*
 
-val unused: String by lazy {
-  println("Initializing 'unused'")
-  "'unused' initialization value"
+val idle: String by lazy {
+  trace("Initializing 'idle'")
+  "I'm never used"
 }
 
-val used: String by lazy {
-  println("Initializing 'used'")
-  "'used' initialization value"
+val helpful: String by lazy {
+  trace("Initializing 'helpful'")
+  "I'm being used!"
 }
 
 fun main() {
-  println(used)
+  trace(helpful)
+  trace eq """
+    Initializing 'helpful'
+    I'm being used!
+  """
 }
-/* Output:
-Initializing 'used'
-'used' initialization value
-*/

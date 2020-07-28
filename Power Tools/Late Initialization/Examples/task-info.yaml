@@ -8,3 +8,5 @@ files:
   visible: true
 - name: src/FaultySuitcase.kt
   visible: true
+- name: src/IsInitialized.kt
+  visible: true

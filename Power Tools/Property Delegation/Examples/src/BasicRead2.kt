@@ -8,10 +8,12 @@ class Readable2(val i: Int) {
   val value: String by BasicRead2()
 }
 
-class BasicRead2 {
-  operator fun getValue(
-    r: Readable2, prop: KProperty<*>
-  ) = "getValue: ${r.i}"
+class BasicRead2:
+  ReadOnlyProperty<Readable2, String> {
+  override operator fun getValue(
+    thisRef: Readable2,
+    property: KProperty<*>
+  ) = "getValue: ${thisRef.i}"
 }
 
 fun main() {

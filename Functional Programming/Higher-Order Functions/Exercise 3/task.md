@@ -8,4 +8,4 @@ Note the generic types `R?` (in `(Int, T) -> R?`) and `List<R>`. The `?` in
 `R?` means the lambda's return type is nullable. `mapIndexedNotNull()` returns
 a list of non-nullable elements, so the function return type is `List<R>`. To
 express that `R` is a non-nullable type, we specify a *constraint* on the
-generic type parameter: `R : Any`.
+generic type parameter: `R: Any`.

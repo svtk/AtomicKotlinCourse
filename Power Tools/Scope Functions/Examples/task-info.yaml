@@ -1,22 +1,14 @@
 type: theory
 files:
-- name: src/NullableReceiver.kt
+- name: src/Differences.kt
   visible: true
-- name: src/ResultOfWith.kt
+- name: src/Gnome.kt
   visible: true
-- name: src/ResultOfApply.kt
+- name: src/NullGnome.kt
   visible: true
-- name: src/ApplyIfNotNull.kt
+- name: src/MapLookup.kt
   visible: true
-- name: src/Also.kt
+- name: src/NameTag.kt
   visible: true
-- name: src/ApplyVsAlso.kt
-  visible: true
-- name: src/CheckingArgument.kt
-  visible: true
-- name: src/Let.kt
-  visible: true
-- name: src/ReadingName.kt
-  visible: true
-- name: src/ReadingNameWithIf.kt
+- name: src/Blob.kt
   visible: true

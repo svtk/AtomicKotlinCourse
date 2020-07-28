@@ -27,14 +27,13 @@ val deck: List<Card> =
 
 fun main() {
   val rand = Random(26)
-  val trace = Trace()
   repeat(7) {
     trace("'${deck.random(rand)}'")
   }
   trace eq """
-  'Jack of Hearts' 'Four of Hearts'
-  'Five of Clubs' 'Seven of Clubs'
-  'Jack of Diamonds' 'Ten of Spades'
-  'Seven of Spades'
+    'Jack of Hearts' 'Four of Hearts'
+    'Five of Clubs' 'Seven of Clubs'
+    'Jack of Diamonds' 'Ten of Spades'
+    'Seven of Spades'
   """
 }

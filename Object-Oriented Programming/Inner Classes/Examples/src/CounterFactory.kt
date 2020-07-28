@@ -2,8 +2,6 @@
 package innerclasses
 import atomictest.*
 
-private val trace = Trace()
-
 interface Counter {
   fun next(): Int
 }
@@ -12,7 +10,7 @@ class CounterFactory {
   private var count = 0
   fun new(name: String): Counter {
     // Local inner class:
-    class Local : Counter {
+    class Local: Counter {
       init { trace("Local()") }
       override fun next(): Int {
         // Access local identifiers:
@@ -24,7 +22,7 @@ class CounterFactory {
   }
   fun new2(name: String): Counter {
     // Instance of an anonymous inner class:
-    return object : Counter {
+    return object: Counter {
       init { trace("Counter()") }
       override fun next(): Int {
         // Access local identifiers:
@@ -45,5 +43,5 @@ fun main() {
   trace eq """
     Local() Local 0 Local 1 Local 2 Local 3
     Counter() Anon 4 Anon 5 Anon 6 Anon 7
-    """
+  """
 }

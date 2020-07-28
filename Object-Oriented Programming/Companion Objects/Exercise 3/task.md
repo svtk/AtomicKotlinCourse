@@ -17,7 +17,7 @@ data class ID(
 }
 ```
 
-`ID` only contains a `companion object` with `idGenerator()` and the code to
+`ID` only contains a companion object with `idGenerator()` and the code to
 support that function: the `size` of each `id`, a random-number generator
 seeded to the value of `47`, and a `source` of the characters used to randomly
 create the `id`. In `main()`, the output is checked using `test()`, which

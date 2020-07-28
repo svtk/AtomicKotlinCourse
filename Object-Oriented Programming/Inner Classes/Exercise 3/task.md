@@ -18,9 +18,9 @@ interface Selector<T> {
 returns the current element pointed to by the `Selector`, and `next()` moves
 to the next element in the `List`.
 
-Define a standalone function `<T> traceAll(select: Selector<T>)` that creates a
-`Trace` object called `trace`, then uses `select` to append all the values of
-`current()` to `trace` using `+=`, then returns `trace`.
+Define a standalone function `<T> traceAll(select: Selector<T>)` that uses
+`select` to append all the values of `current()` to `trace` using `+=`, then
+returns `trace`.
 
 Now make `Container` inherit from `Iterable<T>`, and add a function called
 `iterator()` that returns an instance of an anonymous inner class that inherits

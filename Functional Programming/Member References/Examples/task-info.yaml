@@ -10,3 +10,5 @@ files:
   visible: true
 - name: src/ConstructorReference.kt
   visible: true
+- name: src/ExtensionReference.kt
+  visible: true

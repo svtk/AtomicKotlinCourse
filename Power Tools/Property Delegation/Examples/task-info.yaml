@@ -8,11 +8,15 @@ files:
   visible: true
 - name: src/BasicReadWrite2.kt
   visible: true
-- name: src/NickName.kt
+- name: src/Accessibility.kt
+  visible: true
+- name: src/Add.kt
   visible: true
 - name: src/FibonacciProperty.kt
   visible: true
-- name: src/CarService.kt
+- name: src/FileDelegate.kt
   visible: true
 - name: src/Configuration.kt
+  visible: true
+- name: src/CarService.kt
   visible: true

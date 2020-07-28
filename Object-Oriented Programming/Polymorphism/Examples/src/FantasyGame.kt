@@ -2,8 +2,6 @@
 package polymorphism
 import atomictest.*
 
-private val trace = Trace()
-
 abstract class Character(val name: String) {
   abstract fun play(): String
 }
@@ -16,17 +14,17 @@ interface Magician {
   fun doMagic() = "Magic!"
 }
 
-class Warrior :
+class Warrior:
   Character("Warrior"), Fighter {
   override fun play() = fight()
 }
 
-open class Elf(name: String = "Elf") :
+open class Elf(name: String = "Elf"):
   Character(name), Magician {
   override fun play() = doMagic()
 }
 
-class FightingElf :
+class FightingElf:
   Elf("FightingElf"), Fighter {
   override fun play() =
     super.play() + fight()
@@ -41,8 +39,8 @@ fun main() {
   )
   characters.forEach { it.playTurn() } // [3]
   trace eq """
-  Warrior: Fight!
-  Elf: Magic!
-  FightingElf: Magic!Fight!
+    Warrior: Fight!
+    Elf: Magic!
+    FightingElf: Magic!Fight!
   """
 }

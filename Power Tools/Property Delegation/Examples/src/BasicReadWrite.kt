@@ -3,17 +3,18 @@ package propertydelegation
 import atomictest.eq
 import kotlin.reflect.KProperty
 
-class ReadWritable(var i: Int) {
+class ReadWriteable(var i: Int) {
   var msg = ""
   var value: String by BasicReadWrite()
 }
 
 class BasicReadWrite {
   operator fun getValue(
-    rw: ReadWritable, prop: KProperty<*>
+    rw: ReadWriteable,
+    property: KProperty<*>
   ) = "getValue: ${rw.i}"
   operator fun setValue(
-    rw: ReadWritable,
+    rw: ReadWriteable,
     property: KProperty<*>,
     s: String
   ) {
@@ -23,7 +24,7 @@ class BasicReadWrite {
 }
 
 fun main() {
-  val x = ReadWritable(11)
+  val x = ReadWriteable(11)
   x.value eq "getValue: 11"
   x.value = "99"
   x.msg eq "setValue to 99"

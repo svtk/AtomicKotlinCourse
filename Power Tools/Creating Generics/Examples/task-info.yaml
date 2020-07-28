@@ -1,0 +1,28 @@
+type: theory
+files:
+- name: src/Speakers.kt
+  visible: true
+- name: src/BasicGenerics.kt
+  visible: true
+- name: src/CarCrate.kt
+  visible: true
+- name: src/Crate.kt
+  visible: true
+- name: src/Constraints.kt
+  visible: true
+- name: src/GetAShape.kt
+  visible: true
+- name: src/ReificationA.kt
+  visible: true
+- name: src/ReificationB.kt
+  visible: true
+- name: src/ReificationC.kt
+  visible: true
+- name: src/ReificationD.kt
+  visible: true
+- name: src/CheckType.kt
+  visible: true
+- name: src/InAndOutCrates.kt
+  visible: true
+- name: src/Variance.kt
+  visible: true

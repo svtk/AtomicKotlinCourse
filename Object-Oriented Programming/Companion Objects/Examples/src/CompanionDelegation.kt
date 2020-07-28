@@ -2,9 +2,7 @@
 package companionobjects
 import atomictest.*
 
-private val trace = Trace()
-
-class ZIClosed : ZI {
+class ZIClosed: ZI {
   override fun f() = "ZIClosed.f()"
   override fun g() = "ZIClosed.g()"
 }
@@ -36,5 +34,5 @@ fun main() {
     ZIClosed.f()
     ZIDelegationInheritance.g()
     ZIDelegationInheritance.h()
-    """
+  """
 }

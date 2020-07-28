@@ -1,10 +1,7 @@
 content:
-- Lambda with Receiver
-- More Generics
-- The with() Function
 - Scope Functions
-- Immutability
-- Hashing
+- Extension Lambdas
+- Creating Generics
 - Operator Overloading
 - Using Operators
 - Property Delegation

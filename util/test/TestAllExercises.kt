@@ -726,35 +726,11 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#239 CompanionObjects Exercise#3`() = testClass(companionObjectsExercise3.TestCompanionObjectsExercise3::class)
 
   @Test
-  fun `test#240 ObjectOrientedDesign Exercise#1`() = testClass(objectOrientedDesignExercise1.TestObjectOrientedDesignExercise1::class)
+  fun `test#240 ScopeFunctions Exercise#1`() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
 
   @Test
-  fun `test#241 ObjectOrientedDesign Exercise#2`() = testClass(objectOrientedDesignExercise2.TestObjectOrientedDesignExercise2::class)
+  fun `test#241 ScopeFunctions Exercise#2`() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
 
   @Test
-  fun `test#242 ObjectOrientedDesign Exercise#3`() = testClass(objectOrientedDesignExercise3.TestObjectOrientedDesignExercise3::class)
-
-  @Test
-  fun `test#243 LambdaWithReceiver Exercise#1`() = testClass(lambdaWithReceiverExercise1.TestLambdaWithReceiverExercise1::class)
-
-  @Test
-  fun `test#244 LambdaWithReceiver Exercise#2`() = testClass(lambdaWithReceiverExercise2.TestLambdaWithReceiverExercise2::class)
-
-  @Test
-  fun `test#245 TheWithFunction Exercise#1`() = testClass(theWithFunctionExercise1.TestTheWithFunctionExercise1::class)
-
-  @Test
-  fun `test#246 TheWithFunction Exercise#2`() = testClass(theWithFunctionExercise2.TestTheWithFunctionExercise2::class)
-
-  @Test
-  fun `test#247 ScopeFunctions Exercise#1`() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
-
-  @Test
-  fun `test#248 ScopeFunctions Exercise#2`() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
-
-  @Test
-  fun `test#249 ScopeFunctions Exercise#3`() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
-
-  @Test
-  fun `test#250 Hashing Exercise#1`() = testClass(hashingExercise1.TestHashingExercise1::class)
+  fun `test#242 ScopeFunctions Exercise#3`() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
 }

@@ -21,6 +21,7 @@ fun main() {
     "coord" to Pair(111.93, 1231.12)
   )
   val driver = Driver(info);
+  driver.available eq false
   driver.available = true
   info eq "{name=Bruno Fiat, age=22, " +
     "id=X97C111, available=true, " +

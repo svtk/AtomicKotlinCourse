@@ -1,8 +1,6 @@
 // SealedClasses/SealedClasses.kt
 package sealedclasses
-import atomictest.*
-
-private val trace = Trace()
+import atomictest.eq
 
 sealed class Transport
 
@@ -18,17 +16,14 @@ data class Bus(
 fun travel(transport: Transport) =
   when (transport) {
     is Train ->
-      trace("Train ${transport.line}")
+      "Train ${transport.line}"
     is Bus ->
-      trace("Bus ${transport.number}, " +
-        "size ${transport.capacity}")
+      "Bus ${transport.number}: " +
+      "size ${transport.capacity}"
   }
 
 fun main() {
   listOf(Train("S1"), Bus("11", 90))
-    .forEach(::travel)
-  trace eq """
-  Train S1
-  Bus 11, size 90
-  """
+    .map(::travel) eq
+    "[Train S1, Bus 11: size 90]"
 }

@@ -1,9 +1,9 @@
 ## Class Delegation (#2)
 
-Exercise 3 in [Inheritance & Extensions] uses composition to adapt `MyClass` to
-work with `UsefulLibrary`. This produces an inconsistency when using `MyClass`
-with the `useMyClass()` function: the composed `field` must be explicitly named
-during the call:
+Exercise 3 in [Inheritance & Extensions] uses
+composition to adapt `MyClass` to work with `UsefulLibrary`. This produces an
+inconsistency when using `MyClass` with the `useMyClass()` function: the
+composed `field` must be explicitly named during the call:
 
 ```kotlin
 useMyClass(mc.field)

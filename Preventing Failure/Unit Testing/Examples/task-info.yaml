@@ -8,9 +8,9 @@ files:
   visible: true
 - name: src/StateMachine.kt
   visible: true
-- name: src/TestStateMachine.kt
+- name: src/StateMachineTest.kt
   visible: true
 - name: src/Learner.kt
   visible: true
-- name: src/TestLearner.kt
+- name: src/LearnerTest.kt
   visible: true

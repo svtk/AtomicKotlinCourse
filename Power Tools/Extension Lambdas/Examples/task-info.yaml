@@ -1,0 +1,24 @@
+type: theory
+files:
+- name: src/Vanbo.kt
+  visible: true
+- name: src/Parameters.kt
+  visible: true
+- name: src/FunctionParameters.kt
+  visible: true
+- name: src/LambdaUnitReturn.kt
+  visible: true
+- name: src/Transform.kt
+  visible: true
+- name: src/FuncReferences.kt
+  visible: true
+- name: src/ExtensionPolymorphism.kt
+  visible: true
+- name: src/AnonymousFunction.kt
+  visible: true
+- name: src/StringCreation.kt
+  visible: true
+- name: src/ListsAndMaps.kt
+  visible: true
+- name: src/Sandwich.kt
+  visible: true

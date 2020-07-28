@@ -2,8 +2,6 @@
 package exceptionhandling
 import atomictest.*
 
-private val trace = Trace()
-
 fun checkValue(value: Int) {
   try {
     trace(value)
@@ -25,11 +23,11 @@ fun main() {
     }
   }
   trace eq """
-  10
-  In finally clause for 10
-  -10
-  In finally clause for -10
-  In catch clause for main()
-  value must be positive: -10
+    10
+    In finally clause for 10
+    -10
+    In finally clause for -10
+    In catch clause for main()
+    value must be positive: -10
   """
 }

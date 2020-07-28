@@ -2,8 +2,6 @@
 package innerclasses
 import atomictest.*
 
-private val trace = Trace()
-
 open class Egg {
   private var yolk = Yolk()
   open inner class Yolk {
@@ -15,8 +13,8 @@ open class Egg {
   fun g() { yolk.f() }
 }
 
-class BigEgg : Egg() {
-  inner class Yolk : Egg.Yolk() {
+class BigEgg: Egg() {
+  inner class Yolk: Egg.Yolk() {
     init { trace("BigEgg.Yolk()") }
     override fun f() {
       trace("BigEgg.Yolk.f()")
@@ -28,10 +26,10 @@ class BigEgg : Egg() {
 fun main() {
   BigEgg().g()
   trace eq """
-  Egg.Yolk()
-  New Egg()
-  Egg.Yolk()
-  BigEgg.Yolk()
-  BigEgg.Yolk.f()
+    Egg.Yolk()
+    New Egg()
+    Egg.Yolk()
+    BigEgg.Yolk()
+    BigEgg.Yolk.f()
   """
 }
