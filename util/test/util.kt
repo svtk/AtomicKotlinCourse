@@ -4,6 +4,7 @@ import org.junit.Assert
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
+import java.lang.reflect.Field
 import java.lang.reflect.Method
 import kotlin.reflect.*
 import kotlin.reflect.full.createType
@@ -123,6 +124,19 @@ fun assertInheritance(derivedClass: KClass<*>, baseClass: KClass<*>) {
     )
 }
 
+fun assertInheritance(derivedClass: KClass<*>, baseClassNames: List<String>) {
+    val packageName = derivedClass.qualifiedName!!
+            .removeSuffix(derivedClass.simpleName!!)
+            .removeSuffix(".")
+    baseClassNames.forEach { className ->
+        val baseClass = loadClass(packageName, className)
+        assertTrue(
+                actual = derivedClass.supertypes.contains(baseClass.createType()),
+                message = "${derivedClass.simpleName} should inherit ${baseClass.simpleName}"
+        )
+    }
+}
+
 fun loadMemberFunction(kClass: KClass<*>, methodName: String): KFunction<*> {
     return kClass.memberFunctions
             .filter { it.name == methodName }
@@ -176,6 +190,15 @@ fun loadFileFacade(packageName: String, fileName: String = "Task"): KFileFacade 
     }
 }
 
+fun loadToplevelField(fileFacade: KFileFacade, memberName: String): Field {
+    return fileFacade.jClass.declaredFields
+            .filter { it.name == memberName }
+            .checkFoundEntities(
+                    what = "'$memberName' value",
+                    where = "'${fileFacade.fileName}.kt' file"
+            ).single()
+}
+
 private fun loadToplevelMember(fileFacade: KFileFacade, memberName: String, isGetter: Boolean): Method {
     val name = if (isGetter && !memberName.startsWith("is"))
         "get" + memberName.capitalize()
@@ -183,9 +206,10 @@ private fun loadToplevelMember(fileFacade: KFileFacade, memberName: String, isGe
         memberName
     return fileFacade.jClass.declaredMethods
             .filter { it.name == name }
-            .checkFoundEntities(what = if (isGetter) "'$memberName' property" else "'$memberName()' function",
-                    where = "'${fileFacade.fileName}.kt' file")
-            .single()
+            .checkFoundEntities(
+                    what = if (isGetter) "'$memberName' property" else "'$memberName()' function",
+                    where = "'${fileFacade.fileName}.kt' file"
+            ).single()
 }
 
 fun loadToplevelFunction(fileFacade: KFileFacade, functionName: String): Method {
