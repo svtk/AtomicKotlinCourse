@@ -26,10 +26,10 @@ files:
       ) {
         val shape = Shape("rectangle of size ${height}x$width", color)
       }
-  - offset: 522
+  - offset: 500
     length: 13
     placeholder_text: circle.shape.draw()
-  - offset: 545
+  - offset: 523
     length: 16
     placeholder_text: rectangle.shape.draw()
 - name: test/Tests.kt

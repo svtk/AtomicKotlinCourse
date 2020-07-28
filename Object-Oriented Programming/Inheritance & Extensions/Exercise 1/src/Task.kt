@@ -3,8 +3,6 @@ package inheritanceAndExtensionsExercise1
 
 import atomictest.*
 
-private val trace = Trace()
-
 class DeltaTemperature(
   val current: Double,
   val target: Double

@@ -1,8 +1,6 @@
 package polymorphismExercise2
 import atomictest.*
 
-private val trace = Trace()
-
 open class Animal {
   open fun talk() {
     trace("Animal: talk")

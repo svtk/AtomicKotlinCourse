@@ -3,8 +3,6 @@ package inheritanceAndExtensionsExercise3
 import usefullibrary.*
 import atomictest.*
 
-private val trace = Trace()
-
 class MyClass {
   fun g() = trace("g()")
   fun h() = trace("h()")

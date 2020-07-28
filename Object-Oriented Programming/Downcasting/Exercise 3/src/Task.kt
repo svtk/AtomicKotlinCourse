@@ -2,8 +2,6 @@
 package downcastingExercise3
 import atomictest.*
 
-private val trace = Trace()
-
 interface Animal1
 
 class Worm1: Animal1 {

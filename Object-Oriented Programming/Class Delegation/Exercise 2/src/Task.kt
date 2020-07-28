@@ -3,8 +3,6 @@ package classDelegationExercise2
 import usefullibrary.*
 import atomictest.*
 
-private val trace = Trace()
-
 interface MyType {
   fun g()
   fun h()

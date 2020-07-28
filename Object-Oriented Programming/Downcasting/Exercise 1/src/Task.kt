@@ -2,8 +2,6 @@
 package downcastingExercise1
 import atomictest.*
 
-private val trace = Trace()
-
 interface Base {
   fun f()
 }

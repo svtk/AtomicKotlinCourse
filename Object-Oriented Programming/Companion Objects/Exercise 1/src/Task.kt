@@ -2,8 +2,6 @@
 package companionObjectsExercise1
 import atomictest.*
 
-private val trace = Trace()
-
 interface Vendor {
   fun pencil()
   fun pen()

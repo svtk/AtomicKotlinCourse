@@ -2,8 +2,6 @@
 package inheritanceAndExtensionsExercise2
 import atomictest.*
 
-private val trace = Trace()
-
 interface Energy {
   fun replenish() = trace("Fill Bowl")
 }

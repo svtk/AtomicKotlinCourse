@@ -2,8 +2,6 @@
 package classDelegationExercise3
 import atomictest.*
 
-private val trace = Trace()
-
 interface A {
   val x: Int
   val z: Int

@@ -1003,7 +1003,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testHashCode() {
-        testExample("../AtomicKotlinCourse/Usability/Data Classes/Examples/src/HashCode.kt", HashCodeKt::main);
+        testExample("../AtomicKotlinCourse/Usability/Data Classes/Examples/src/HashCode.kt", dataclasses.HashCodeKt::main);
     }
 
     @Test

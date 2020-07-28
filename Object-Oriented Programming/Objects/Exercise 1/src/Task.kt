@@ -2,8 +2,6 @@
 package objectsExercise1
 import atomictest.*
 
-private val trace = Trace()
-
 private fun f() = trace("f() $p")
 private val p = "p"
 

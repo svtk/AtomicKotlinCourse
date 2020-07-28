@@ -20,7 +20,6 @@ class Rectangle(
 ) : Shape("rectangle of size ${height}x$width", color)
 
 fun main() {
-  val trace = Trace()
   val circle = Circle(10, "red")
   val rectangle = Rectangle(3, 4, "blue")
   trace(circle.draw())

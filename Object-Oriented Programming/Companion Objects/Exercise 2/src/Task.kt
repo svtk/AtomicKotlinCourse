@@ -2,8 +2,6 @@
 package companionObjectsExercise2
 import atomictest.*
 
-private val trace = Trace()
-
 interface BoardGame {
   fun move(): Boolean
   companion object {

@@ -1,4 +1,5 @@
 // Hashing/KeyFailure.kt
+package hashing
 import atomictest.eq
 
 data class Key(var id: String)

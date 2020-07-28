@@ -1,8 +1,9 @@
 // LambdaWithReceiver/UseNewStateMachine1.kt
 package statemachine
 
+import atomictest.trace
+
 fun main() {
-  trace.clear()
   trace("first")
   newStateMachine1 { sm ->    // [1]
     sm.finish()               // [2]

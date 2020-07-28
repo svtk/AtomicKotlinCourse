@@ -2,8 +2,6 @@
 package sealedClassesExercise1
 import atomictest.*
 
-private val trace = Trace()
-
 sealed class Transport {
   abstract val capacity: Int
 }

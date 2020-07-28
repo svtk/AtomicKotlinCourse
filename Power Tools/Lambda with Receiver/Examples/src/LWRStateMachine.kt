@@ -1,9 +1,8 @@
 // LambdaWithReceiver/LWRStateMachine.kt
 package statemachine
-import atomictest.Trace
-import statemachine.State.*
 
-val trace = Trace()
+import atomictest.trace
+import statemachine.State.*
 
 enum class State { ON, OFF, PAUSED }
 

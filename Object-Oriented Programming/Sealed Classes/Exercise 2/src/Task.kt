@@ -3,8 +3,6 @@ package sealedClassesExercise2
 import sealedClassesExercise1.*
 import atomictest.*
 
-private val trace = Trace()
-
 fun main() {
   Transport::class.sealedSubclasses
     .map { it.simpleName }

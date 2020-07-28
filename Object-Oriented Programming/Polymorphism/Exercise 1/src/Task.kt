@@ -1,8 +1,6 @@
 package polymorphismExercise1
 import atomictest.*
 
-private val trace = Trace()
-
 abstract class Character(val name: String) {
   abstract fun play(): String
 }

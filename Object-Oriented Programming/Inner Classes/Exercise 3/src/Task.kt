@@ -29,31 +29,27 @@ class Container<T>(
   }
 }
 
-fun <T> traceAll(select: Selector<T>): Trace {
-  val trace = Trace()
+fun <T> traceAll(select: Selector<T>) {
   while (!select.end()) {
     trace("${select.current()}")
     select.next()
   }
-  return trace
 }
 
-fun <T> traceAll2(ib: Iterable<T>): Trace {
-  val trace = Trace()
+fun <T> traceAll2(ib: Iterable<T>) {
   val iter = ib.iterator()
   while (iter.hasNext())
     trace("${iter.next()}")
-  return trace
 }
 
 fun main() {
-  traceAll(Container(0..9).selector()) eq
-    "0 1 2 3 4 5 6 7 8 9"
-  traceAll2(Container(0..9)) eq
-    "0 1 2 3 4 5 6 7 8 9"
+  traceAll(Container(0..9).selector())
+  trace eq "0 1 2 3 4 5 6 7 8 9"
+  traceAll2(Container(0..9))
+  trace eq "0 1 2 3 4 5 6 7 8 9"
   traceAll(Container(List(10){ it * it })
-    .selector()) eq
-    "0 1 4 9 16 25 36 49 64 81"
-  traceAll2(Container(List(10){ it * it })) eq
-    "0 1 4 9 16 25 36 49 64 81"
+    .selector())
+  trace eq "0 1 4 9 16 25 36 49 64 81"
+  traceAll2(Container(List(10){ it * it }))
+  trace eq "0 1 4 9 16 25 36 49 64 81"
 }
