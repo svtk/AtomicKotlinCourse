@@ -235,8 +235,14 @@ fun loadToplevelPropertyGetter(fileFacade: KFileFacade, propertyName: String): M
 
 fun loadMainFunction(fileFacade: KFileFacade): Method {
     return fileFacade.jClass.declaredMethods
-            .find { it.name == "main" }
-            ?: notFoundError(what = "'main' function", where = "'${fileFacade.fileName}.kt' file")
+            .filter { it.name == "main" }
+            .let { mains ->
+                when (mains.size) {
+                    0 -> null
+                    1 -> mains.single()
+                    else -> mains.find { it.parameters.isEmpty() }
+                }
+            } ?: notFoundError(what = "'main' function", where = "'${fileFacade.fileName}.kt' file")
 }
 
 fun KClass<*>.assertConstructorNumber(expectedNumber: Int) {
