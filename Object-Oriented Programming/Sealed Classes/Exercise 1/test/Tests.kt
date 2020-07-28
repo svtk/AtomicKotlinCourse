@@ -58,7 +58,7 @@ class TestSealedClassesExercise1 {
 
         assertEquals(
                 message = "Incorrect result of travel() invocation",
-                actual = loadTraceContent(packageName),
+                actual = loadTraceContent(),
                 expected = listOf(
                         "Train S1",
                         "size 200",

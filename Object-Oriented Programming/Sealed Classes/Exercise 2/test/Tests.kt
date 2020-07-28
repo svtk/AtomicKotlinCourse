@@ -17,7 +17,7 @@ class TestSealedClassesExercise2 {
 
         assertEquals(
                 message = "Incorrect result of main() invocation",
-                actual = loadTraceContent(packageName).sorted(),
+                actual = loadTraceContent().sorted(),
                 expected = listOf(
                         "Bus",
                         "Plane",

@@ -47,7 +47,7 @@ class TestPolymorphismExercise1 {
 
         assertEquals(
                 message = "Incorrect result of playTurn() for all characters",
-                actual = loadTraceContent(packageName),
+                actual = loadTraceContent(),
                 expected = listOf(
                         "Warrior: Fight!",
                         "Elf: Magic!",

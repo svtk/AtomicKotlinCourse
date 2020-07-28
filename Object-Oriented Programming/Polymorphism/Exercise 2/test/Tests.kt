@@ -32,7 +32,7 @@ class TestPolymorphismExercise2 {
 
         assertEquals(
                 message = "Incorrect result of frog jump()",
-                actual = loadTraceContent(packageName),
+                actual = loadTraceContent(),
                 expected = listOf(
                         "Frog: jump",
                         "Animal: jump",

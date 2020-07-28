@@ -1,5 +1,6 @@
 package util
 
+import atomictest.trace
 import org.junit.Assert
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
@@ -35,18 +36,11 @@ inline fun runAndGetSystemOutput(action: () -> Unit): String {
     return byteArrayOutputStream.toString()
 }
 
-fun loadTraceContent(packageName: String, fileName: String = "Task"): List<String> {
-/*
-    val fileFacade = loadFileFacade(packageName, fileName)
-    val trace: Trace = loadToplevelField(fileFacade, "trace")
+fun loadTraceContent(): List<String> {
+    return trace::class.members
+            .first { it.name == "trc" }
             .apply { isAccessible = true }
-            .let { it.get(null) as Trace }
-    return Trace::class.members
-            .first { it.name == "content" }
-            .apply { isAccessible = true }
-            .let { it.call(trace) as List<String> }
-*/
-    return listOf()
+            .let { it.call() as List<String> }
 }
 
 inline fun runAndCheckSystemOutput(message: String, expectedOutput: String, action: () -> Unit) {
