@@ -13,7 +13,6 @@ import kotlin.reflect.full.memberFunctions
 import kotlin.reflect.full.memberProperties
 import kotlin.reflect.jvm.isAccessible
 import kotlin.test.assertEquals
-import kotlin.test.assertTrue
 
 const val TIMEOUT = 3000L
 
@@ -179,6 +178,10 @@ fun loadMemberFunction(kClass: KClass<*>, methodName: String): KFunction<*> {
             .single()
 }
 
+fun KClass<*>.assertMemberFunction(methodName: String) {
+    loadMemberFunction(this, methodName)
+}
+
 fun KClass<*>.assertNoMemberFunction(methodName: String) {
     memberFunctions
             .filter { it.name == methodName }
@@ -192,10 +195,14 @@ fun loadMemberProperty(kClass: KClass<*>, propertyName: String): KProperty<*> {
             .single()
 }
 
-fun assertNoMemberProperty(kClass: KClass<*>, propertyName: String) {
-    kClass.memberProperties
+fun KClass<*>.assertNoMemberProperty(propertyName: String) {
+    memberProperties
             .filter { it.name == propertyName }
-            .checkNotFoundEntities("the '$propertyName' member property", "'${kClass.simpleName}' class")
+            .checkNotFoundEntities("the '$propertyName' member property", "'$simpleName' class")
+}
+
+fun KClass<*>.assertMemberProperty(propertyName: String, expectedType: KType) {
+    loadMemberPropertyWithType(this, propertyName, expectedType)
 }
 
 fun loadMemberPropertyWithType(kClass: KClass<*>, propertyName: String, expectedType: KType): KProperty<*> {
