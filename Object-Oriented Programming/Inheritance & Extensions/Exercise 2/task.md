@@ -1,37 +1,23 @@
 ## Inheritance & Extensions (#2)
 
-Use composition to create `HVAC` instead of inheritance. The starter code
-provides an identical copy of `warmAndCool()` for your new `HVAC` type, and
-test code in `main()`. Prove to yourself that `warm()` doesn't work with your
-composed type.
+The starter code defines the following hierarchy: a superclass `Dog` and two
+subclasses, `ToyDog` and `RealDog`. Implement an extension function `play` to
+`Dog` which first calls `speak()`, then `sit()`.
 
-> Solution 2
+Implement two more extension functions with the same name `play` to `RealDog`
+and to `ToyDog`. Both functions should call `Dog.play()` first, then
+`RealdDog.play()` should call `feed()`, while `ToyDog.play()` should call
+`changeBatteries()`.
+
+Guess what the code in `main()` will trace and then check yourself.
+
+<div class="hint">
+
+To call a `Dog.play` function inside an extension to a `Dog` subclass 
+(e.g. inside `ToyDog.play()`), cast `this` to `Dog` explicitly:
 
 ```kotlin
-// InheritanceExtensions/InhExtensionsEx2.kt
-package inheritanceAndExtensionsExercise2
-import inheritanceextensions.Heater
-import inheritanceextensions.warm
-import atomictest.*
-
-class HVAC {
-  private val heater = Heater()
-  fun heat(temperature: Int) =
-    heater.heat(temperature)
-  fun cool(temperature: Int) =
-    "cooling to $temperature"
-}
-
-fun warmAndCool(hvac: HVAC) {
-  hvac.heat(70) eq "heating to 70"
-  hvac.cool(60) eq "cooling to 60"
-}
-
-fun main() {
-  val heater = Heater()
-  val hvac = HVAC()
-  warm(heater)
-  // warm(hvac) // Doesn't work
-  warmAndCool(hvac)
-}
+(this as Dog).play()
 ```
+
+</div>

@@ -1,82 +1,54 @@
-// InheritanceExtensions/InhExtensionsEx1.kt
 package inheritanceAndExtensionsExercise1
+import atomictest.trace
 
-import atomictest.*
-
-class DeltaTemperature(
-  val current: Double,
-  val target: Double
-)
-
-fun DeltaTemperature.heat() {
-  if (current < target)
-    trace("heating to $target")
+// Duck Library
+interface Duck {
+  fun quack()
+  fun swim()
 }
 
-fun DeltaTemperature.cool() {
-  if (current > target)
-    trace("cooling to $target")
+class RealDuck: Duck {
+  override fun quack() = trace("quack")
+  override fun swim() = trace("swim")
 }
 
-fun DeltaTemperature.openWindow() {
-  if (current > target)
-    trace("cooling to $target")
+fun interactWithDuck(duck: Duck) {
+  duck.quack()
+  duck.swim()
 }
 
-fun DeltaTemperature.fan() {
-  if (current > target)
-    trace("cooling to $target")
+// Our codebase
+interface Crocodile {
+  fun bite()
 }
 
-class DeltaTemperature2(
-  val current: Double,
-  val target: Double
-) {
-  fun heat() {
-    if (current < target)
-      trace("heating to $target")
-  }
-  fun cool() {
-    if (current > target)
-      trace("cooling to $target")
-  }
-  fun openWindow() {
-    if (current > target)
-      trace("cooling to $target")
-  }
-  fun fan() {
-    if (current > target)
-      trace("cooling to $target")
-  }
+class RealCrocodile: Crocodile {
+  override fun bite() = trace("Mnom-mnom")
 }
 
-fun adjust(deltaT: DeltaTemperature) {
-  deltaT.heat()
-  deltaT.cool()
-  deltaT.openWindow()
-  deltaT.fan()
+fun interactWithCrocodile(crocodile: Crocodile) {
+  trace("Panic!!!")
+  crocodile.bite()
 }
 
-fun adjust(deltaT: DeltaTemperature2) {
-  deltaT.heat()
-  deltaT.cool()
-  deltaT.openWindow()
-  deltaT.fan()
+class IAmHonestlyDuck(
+  val crocodile: Crocodile
+) : Duck {
+  override fun quack() = crocodile.bite()
+  override fun swim() = crocodile.bite()
 }
+
+fun mimicDuck(crocodile: Crocodile): IAmHonestlyDuck =
+  IAmHonestlyDuck(crocodile)
 
 fun main() {
-  adjust(DeltaTemperature(60.0, 70.0))
-  adjust(DeltaTemperature(80.0, 60.0))
-  adjust(DeltaTemperature2(60.0, 70.0))
-  adjust(DeltaTemperature2(80.0, 60.0))
+  val honestlyDuck = mimicDuck(RealCrocodile())
+  interactWithDuck(honestlyDuck)
+  interactWithCrocodile(honestlyDuck.crocodile)
   trace eq """
-  heating to 70.0
-  cooling to 60.0
-  cooling to 60.0
-  cooling to 60.0
-  heating to 70.0
-  cooling to 60.0
-  cooling to 60.0
-  cooling to 60.0
+  Mnom-mnom
+  Mnom-mnom
+  Panic!!!
+  Mnom-mnom
   """
 }

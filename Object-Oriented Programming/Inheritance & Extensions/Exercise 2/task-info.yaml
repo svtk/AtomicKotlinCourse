@@ -2,5 +2,18 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 405
+    length: 15
+    placeholder_text: TODO()
+  - offset: 447
+    length: 29
+    placeholder_text: TODO()
+  - offset: 502
+    length: 40
+    placeholder_text: TODO()
+  - offset: 617
+    length: 23
+    placeholder_text: TODO
 - name: test/Tests.kt
   visible: false

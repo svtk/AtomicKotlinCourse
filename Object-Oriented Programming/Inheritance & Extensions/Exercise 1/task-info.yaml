@@ -2,5 +2,20 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 526
+    length: 145
+    placeholder_text: |-
+      class IAmHonestlyDuck(
+        val crocodile: Crocodile
+      )
+  - offset: 730
+    length: 26
+    placeholder_text: TODO()
+  - offset: 819
+    length: 80
+    placeholder_text: |-
+      //  interactWithDuck(honestlyDuck)
+      //  interactWithCrocodile(honestlyDuck.crocodile)
 - name: test/Tests.kt
   visible: false
