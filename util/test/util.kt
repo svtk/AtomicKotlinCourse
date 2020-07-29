@@ -43,6 +43,14 @@ fun loadTraceContent(): List<String> {
             .let { it.call() as List<String> }
 }
 
+fun resetTraceContent() {
+    trace::class.members
+        .first { it.name == "trc" }
+        .apply { isAccessible = true }
+        .let { it.call() as MutableList<String> }
+        .apply { clear() }
+}
+
 inline fun runAndCheckSystemOutput(message: String, expectedOutput: String, action: () -> Unit) {
     val actual = runAndGetSystemOutput(action)
     checkSystemOutput(message, expectedOutput, actual)
