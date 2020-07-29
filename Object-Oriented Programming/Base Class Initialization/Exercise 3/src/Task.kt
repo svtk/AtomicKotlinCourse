@@ -1,5 +1,6 @@
-// BaseClassInit/BCIExercise1.kt
 package baseClassInitializationExercise3
+
+import atomictest.trace
 
 open class Animal(val sound: String = "???")
 
@@ -9,9 +10,14 @@ class Dog(sound: String = "woof") : Animal(sound)
 
 fun main() {
   val animal = Animal()
-  println(animal.sound)
+  trace(animal.sound)
   val cat = Cat()
-  println(cat.sound)
+  trace(cat.sound)
   val dog = Dog()
-  println(dog.sound)
+  trace(dog.sound)
+  trace eq """
+    ???
+    meow
+    woof
+  """
 }

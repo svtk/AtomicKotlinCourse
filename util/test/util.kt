@@ -9,6 +9,7 @@ import java.lang.reflect.Field
 import java.lang.reflect.Method
 import kotlin.reflect.*
 import kotlin.reflect.full.createType
+import kotlin.reflect.full.declaredMemberProperties
 import kotlin.reflect.full.memberFunctions
 import kotlin.reflect.full.memberProperties
 import kotlin.reflect.jvm.isAccessible
@@ -195,14 +196,20 @@ fun loadMemberProperty(kClass: KClass<*>, propertyName: String): KProperty<*> {
             .single()
 }
 
+fun KClass<*>.assertNoDeclaredMemberProperty(propertyName: String) {
+    declaredMemberProperties
+        .filter { it.name == propertyName }
+        .checkNotFoundEntities("the '$propertyName' member property", "'$simpleName' class")
+}
+
 fun KClass<*>.assertNoMemberProperty(propertyName: String) {
     memberProperties
             .filter { it.name == propertyName }
             .checkNotFoundEntities("the '$propertyName' member property", "'$simpleName' class")
 }
 
-fun KClass<*>.assertMemberProperty(propertyName: String, expectedType: KType) {
-    loadMemberPropertyWithType(this, propertyName, expectedType)
+fun KClass<*>.assertMemberProperty(propertyName: String, expectedType: KClass<*>) {
+    loadMemberPropertyWithType(this, propertyName, expectedType.createType())
 }
 
 fun loadMemberPropertyWithType(kClass: KClass<*>, propertyName: String, expectedType: KType): KProperty<*> {
