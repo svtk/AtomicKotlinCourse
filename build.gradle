@@ -7,6 +7,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
+
 def printOutput(def output) {
     return tasks.create("printOutput") {
         for (line in output.toString().readLines()) {
@@ -14,6 +15,7 @@ def printOutput(def output) {
         }
     }
 }
+
 allprojects {
     apply plugin: 'java'
     apply plugin: 'kotlin'
@@ -92,9 +94,11 @@ sourceSets {
         }
     }
 }
+
 static def isTaskDir(File dir) {
     return new File(dir, "src").exists()
 }
+
 mainClassName = project.hasProperty("mainClass") ? project.getProperty("mainClass") : ""
 test {
     outputs.upToDateWhen { false }
@@ -103,11 +107,13 @@ test {
             def message = result.exception?.message ?: "Wrong answer"
             def lines = message.readLines()
             println "#educational_plugin FAILED + " + lines[0]
-            lines[1..-1].forEach { line ->
-                println "#educational_plugin" + line
+            if (lines.size() > 1) {
+                lines[1..-1].forEach { line ->
+                    println "#educational_plugin" + line
+                }
             }
             // we need this to separate output of different tests
-            println
+            println ""
         }
     }
 }
