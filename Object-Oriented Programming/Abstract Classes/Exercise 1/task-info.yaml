@@ -1,0 +1,19 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 34
+    length: 69
+    placeholder_text: abstract class Shape
+  - offset: 105
+    length: 134
+    placeholder_text: class Circle
+  - offset: 241
+    length: 134
+    placeholder_text: class Square
+  - offset: 377
+    length: 140
+    placeholder_text: class Triangle
+- name: test/Tests.kt
+  visible: false
