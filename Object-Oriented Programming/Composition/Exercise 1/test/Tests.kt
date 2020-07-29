@@ -23,7 +23,7 @@ class TestCompositionExercise1 {
           "radius" to Int::class,
           "color" to String::class
       )
-      assertInheritance(this, listOf("Shape"))
+      assertInheritance("Shape")
     }
     loadClass(packageName, "Rectangle").apply {
       assertConstructorNumber(1)
@@ -32,7 +32,7 @@ class TestCompositionExercise1 {
           "width" to Int::class,
           "color" to String::class
       )
-      assertInheritance(this, listOf("Shape"))
+      assertInheritance("Shape")
     }
   }
 

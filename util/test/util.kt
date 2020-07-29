@@ -141,15 +141,15 @@ fun assertInheritance(derivedClass: KClass<*>, baseClass: KClass<*>) {
     )
 }
 
-fun assertInheritance(derivedClass: KClass<*>, baseClassNames: List<String>) {
-    val packageName = derivedClass.qualifiedName!!
-            .removeSuffix(derivedClass.simpleName!!)
+fun KClass<*>.assertInheritance(vararg baseClassNames: String) {
+    val packageName = qualifiedName!!
+            .removeSuffix(simpleName!!)
             .removeSuffix(".")
     baseClassNames.forEach { className ->
         val baseClass = loadClass(packageName, className)
         assertTrue(
-                actual = derivedClass.supertypes.contains(baseClass.createType()),
-                message = "${derivedClass.simpleName} should inherit ${baseClass.simpleName}"
+                actual = supertypes.contains(baseClass.createType()),
+                message = "$simpleName should inherit ${baseClass.simpleName}"
         )
     }
 }

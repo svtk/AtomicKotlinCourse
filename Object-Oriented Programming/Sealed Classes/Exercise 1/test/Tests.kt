@@ -30,7 +30,7 @@ class TestSealedClassesExercise1 {
                 mainParameterName to String::class,
                 "capacity" to Int::class
             )
-            assertInheritance(this, listOf("Transport"))
+            assertInheritance("Transport")
         }
     }
 

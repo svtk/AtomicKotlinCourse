@@ -22,7 +22,7 @@ class TestPolymorphismExercise2 {
         }
         loadClass(packageName, "Frog").apply {
             assertConstructorNumber(1)
-            assertInheritance(this, listOf("Animal"))
+            assertInheritance("Animal")
         }
     }
 
