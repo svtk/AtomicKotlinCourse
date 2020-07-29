@@ -1,10 +1,13 @@
 package compositionExercise1
 
 import atomictest.trace
+import org.junit.FixMethodOrder
 import org.junit.Test
+import org.junit.runners.MethodSorters
 import util.*
 import kotlin.test.assertEquals
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestCompositionExercise1 {
 
   private val packageName = "compositionExercise1"
