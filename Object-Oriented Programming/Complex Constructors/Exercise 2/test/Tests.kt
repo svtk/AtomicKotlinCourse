@@ -10,23 +10,26 @@ import kotlin.test.assertEquals
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestComplexConstructorsExercise2 {
 
-    @Test
-    fun `#01 SumChars class structure`() {
-        val sumCharsClass = loadClass("complexConstructorsExercise2", "SumChars")
-        sumCharsClass.assertConstructorNumber(1)
-        val sumCharsConstructor = sumCharsClass.constructors.first()
-        checkParametersOfConstructor(sumCharsConstructor, sumCharsClass, listOf("text" to "kotlin.String"))
-        loadAssertedMemberProperty(sumCharsClass, "sum", Int::class)
-    }
+  @Test
+  fun `#01 SumChars class structure`() {
+    loadClass("complexConstructorsExercise2", "SumChars")
+        .apply {
+          assertConstructorNumber(1)
+          assertParametersOfFirstConstructor(
+              "text" to String::class
+          )
+          loadAssertedMemberProperty(this, "sum", Int::class)
+        }
+  }
 
-    @Test
-    fun `#02 SumChars initialisation block`() {
-        val sumCharsClass = loadClass("complexConstructorsExercise2", "SumChars")
-        val sumCharsInstance = sumCharsClass.constructors.first().call("What?")
-        assertEquals(
-                expected = 467,
-                actual = sumCharsClass.memberProperties.firstOrNull { it.name == "sum" }?.call(sumCharsInstance),
-                message = "SumChars member property 'sum' should be equal to 467"
-        )
-    }
+  @Test
+  fun `#02 SumChars initialisation block`() {
+    val sumCharsClass = loadClass("complexConstructorsExercise2", "SumChars")
+    val sumCharsInstance = sumCharsClass.createInstance("What?")
+    assertEquals(
+        expected = 467,
+        actual = sumCharsClass.memberProperties.firstOrNull { it.name == "sum" }?.call(sumCharsInstance),
+        message = "SumChars member property 'sum' should be equal to 467"
+    )
+  }
 }

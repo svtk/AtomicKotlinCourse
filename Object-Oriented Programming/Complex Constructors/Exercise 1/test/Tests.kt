@@ -12,12 +12,14 @@ class TestComplexConstructorsExercise1 {
 
     @Test
     fun `#01 Alien class structure`() {
-        val alienClass = loadClass("complexConstructorsExercise1", "Alien")
-        alienClass.assertConstructorNumber(1)
-        val alienConstructor = alienClass.constructors.first()
-        checkParametersOfConstructor(alienConstructor, alienClass, listOf("name" to "kotlin.String"))
-        loadAssertedMemberProperty(alienClass, "myName", String::class)
-        assertNoMemberProperty(alienClass, "name")
+        loadClass("complexConstructorsExercise1", "Alien").apply {
+            assertConstructorNumber(1)
+            assertParametersOfFirstConstructor(
+                "name" to String::class
+            )
+            loadAssertedMemberProperty(this, "myName", String::class)
+            assertNoMemberProperty(this, "name")
+        }
     }
 
     @Test

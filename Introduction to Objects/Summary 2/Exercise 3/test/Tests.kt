@@ -13,18 +13,19 @@ import kotlin.reflect.KProperty
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSummaryIIExercise3 {
   private inline fun testHolderClass(
-    size: Int,
-    action: (
-      holderClass: KClass<*>,
-      holderInstance: Any,
-      addFunction: KFunction<*>,
-      fullProperty: KProperty<*>
-    ) -> Unit
+      size: Int,
+      action: (
+          holderClass: KClass<*>,
+          holderInstance: Any,
+          addFunction: KFunction<*>,
+          fullProperty: KProperty<*>
+      ) -> Unit
   ) {
     val holderClass = loadClass("summaryIIExercise3", "FixedSizeHolder")
-    val constructor = holderClass.constructors.first()
-    checkParametersOfConstructor(constructor, holderClass, listOf("" to "kotlin.Int"))
-    val holderInstance = constructor.call(size)
+        .apply {
+          assertParametersOfFirstConstructor("" to Int::class)
+        }
+    val holderInstance = holderClass.createInstance(size)
 
     val addFunction = loadMemberFunction(holderClass, "add")
     checkParametersOfMemberFunction(addFunction, listOf("" to "kotlin.Any"))
@@ -36,14 +37,14 @@ class TestSummaryIIExercise3 {
   fun test1() = testHolderClass(2) { holderClass, holderInstance, addFunction, fullProperty ->
     addFunction.call(holderInstance, "abc")
     Assert.assertEquals("The holder of size 2 is expected to be not full after adding one element",
-      false, fullProperty.getter.call(holderInstance))
+        false, fullProperty.getter.call(holderInstance))
 
     addFunction.call(holderInstance, 2)
     Assert.assertEquals("The holder of size 2 is expected to be full after adding two elements",
-      true, fullProperty.getter.call(holderInstance))
+        true, fullProperty.getter.call(holderInstance))
 
     val message = "The holder is expected to throw 'IllegalStateException' " +
-      "on adding a new element when it's full"
+        "on adding a new element when it's full"
 
     try {
       addFunction.call(holderInstance, '3')
@@ -62,17 +63,17 @@ class TestSummaryIIExercise3 {
       addFunction.call(holderInstance, it)
     }
     Assert.assertEquals("The holder of size 2 is expected to be not full after adding five elements",
-      false, fullProperty.getter.call(holderInstance))
+        false, fullProperty.getter.call(holderInstance))
 
     repeat(5) {
       addFunction.call(holderInstance, "$it")
     }
 
     Assert.assertEquals("The holder of size 10 is expected to be full after adding ten elements",
-      true, fullProperty.getter.call(holderInstance))
+        true, fullProperty.getter.call(holderInstance))
 
     val message = "The holder is expected to throw 'IllegalStateException' " +
-      "on adding a new element when it's full"
+        "on adding a new element when it's full"
 
     try {
       addFunction.call(holderInstance, 11)

@@ -26,14 +26,9 @@ class TestSealedClassesExercise1 {
     private fun assertDerivedTransport(transportName: String, mainParameterName: String) {
         loadClass(packageName, transportName).apply {
             assertConstructorNumber(1)
-            val alienConstructor = constructors.first()
-            checkParametersOfConstructor(
-                    alienConstructor,
-                    this,
-                    listOf(
-                            mainParameterName to "kotlin.String",
-                            "capacity" to "kotlin.Int"
-                    )
+            assertParametersOfFirstConstructor(
+                mainParameterName to String::class,
+                "capacity" to Int::class
             )
             assertInheritance(this, listOf("Transport"))
         }
@@ -49,11 +44,8 @@ class TestSealedClassesExercise1 {
                 listOf("Plane", "1103", "190")
         ).forEach { params ->
             loadClass(packageName, params[0])
-                    .constructors.first()
-                    .call(params[1], params[2].toInt())
-                    .also {
-                        transport -> travel.invoke(null, transport)
-                    }
+                    .createInstance(params[1], params[2].toInt())
+                    .also { transport -> travel.invoke(null, transport) }
         }
 
         assertEquals(

@@ -4,19 +4,22 @@ import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
-import util.TIMEOUT
-import util.loadClass
-import util.checkParametersOfConstructor
+import util.*
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestConstructorsExercise2 {
   class RobotHandler(fieldSize: Int, var x: Int, var y: Int) {
     val robot: Robot = run {
       val robotClass = loadClass("constructorsExercise2", "Robot")
-      val robotConstructor = robotClass.constructors.first()
-      checkParametersOfConstructor(robotConstructor, robotClass,
-        listOf("fieldSize" to "kotlin.Int", "x" to "kotlin.Int", "y" to "kotlin.Int"))
-      robotConstructor.call(fieldSize, x, y) as Robot
+          .apply {
+            assertConstructorNumber(1)
+            assertParametersOfFirstConstructor(
+                "fieldSize" to Int::class,
+                "x" to Int::class,
+                "y" to Int::class
+            )
+          }
+      robotClass.createInstance(fieldSize, x, y) as Robot
     }
     val loggedMovements = StringBuilder()
 
@@ -52,7 +55,7 @@ class TestConstructorsExercise2 {
       "Initial location of the robot should be ($x, $y)"
     } else {
       "Starting location: ($x, $y), field size: $fieldSize.\n" +
-        "Wrong location after:\n" + robotHandler.loggedMovements
+          "Wrong location after:\n" + robotHandler.loggedMovements
     }
     Assert.assertEquals(message, location, actualLocation)
   }

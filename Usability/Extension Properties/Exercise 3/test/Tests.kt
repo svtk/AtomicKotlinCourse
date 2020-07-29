@@ -7,10 +7,13 @@ import util.*
 class TestExtensionPropertiesExercise3 {
   private fun testRectangle(width: Int, height: Int) {
     val rectangleClass = loadClass("extensionPropertiesExercise3", "Rectangle")
-    val constructor = rectangleClass.constructors.first()
-    checkParametersOfConstructor(constructor, rectangleClass,
-      listOf("width" to "kotlin.Int", "height" to "kotlin.Int"))
-    val rectangleInstance = constructor.call(width, height)
+        .apply {
+          assertParametersOfFirstConstructor(
+              "width" to Int::class,
+              "height" to Int::class
+          )
+        }
+    val rectangleInstance = rectangleClass.createInstance(width, height)
 
     val fileFacade = loadFileFacade("extensionPropertiesExercise3")
     val property = loadToplevelPropertyGetter(fileFacade, "isSquare")
@@ -19,7 +22,7 @@ class TestExtensionPropertiesExercise3 {
 
     val actual = property.invoke(Object(), rectangleInstance)
     Assert.assertEquals("Wrong result for 'isSquare' for Rectangle($width, $height)",
-      width == height, actual)
+        width == height, actual)
   }
 
   @Test

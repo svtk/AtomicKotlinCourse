@@ -5,21 +5,20 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import util.checkParametersOfConstructor
+import util.assertParametersOfFirstConstructor
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestNamedAndDefaultArgumentsExercise1 {
   @Test(timeout = TIMEOUT)
   fun testBuildingClass() {
-    val rectangleClass = Rectangle::class
+    val rectangleClass = Rectangle::class.apply {
+      assertParametersOfFirstConstructor(
+          "side1" to Double::class,
+          "side2" to Double::class,
+          "color" to String::class
+      )
+    }
     val constructor = rectangleClass.constructors.first()
-
-    checkParametersOfConstructor(constructor, rectangleClass, listOf(
-      "side1" to "kotlin.Double",
-      "side2" to "kotlin.Double",
-      "color" to "kotlin.String"
-    ))
-
     val (side1, side2, color) = constructor.parameters
     fun testValues(map: Map<String, Any>) {
       val paramMap = map.mapKeys { (paramName, _) ->

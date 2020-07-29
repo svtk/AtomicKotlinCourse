@@ -4,10 +4,8 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.assertConstructorNumber
-import util.checkParametersOfConstructor
 import util.loadMemberProperty
 import kotlin.test.assertEquals
-import kotlin.test.assertNotNull
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSecondaryConstructorsExercise1 {

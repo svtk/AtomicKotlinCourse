@@ -256,15 +256,22 @@ fun KClass<*>.assertConstructorNumber(expectedNumber: Int) {
     )
 }
 
-fun KClass<*>.assertParametersOfFirstConstructor(
-        params: List<Pair<String, KClass<*>>>
-) {
+fun KClass<*>.assertParametersOfFirstConstructor(vararg params: Pair<String, KClass<*>>) {
     val constructor = constructors.first()
     val paramsStr = params.map { it.first to it.second.qualifiedName!! }
     checkParametersOfConstructor(constructor, this, paramsStr)
 }
 
-fun checkParametersOfConstructor(
+fun KClass<*>.assertParametersOfConstructor(constructor: KFunction<*>, vararg params: Pair<String, KClass<*>>) {
+    val paramsStr = params.map { it.first to it.second.qualifiedName!! }
+    checkParametersOfConstructor(constructor, this, paramsStr)
+}
+
+fun KClass<*>.createInstance(vararg args: Any?): Any {
+    return constructors.first().call(*args)
+}
+
+private fun checkParametersOfConstructor(
         constructor: KFunction<*>,
         kClass: KClass<*>,
         params: List<Pair<String, String>>

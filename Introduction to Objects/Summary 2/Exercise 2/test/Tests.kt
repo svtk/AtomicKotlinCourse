@@ -16,15 +16,18 @@ class TestSummaryIIExercise2 {
     val bFunction = loadMemberFunction(boringClass, "b")
     val cFunction = loadMemberFunction(boringClass, "c")
     val constructor = boringClass.primaryConstructor
-      ?: throw AssertionError("The Boring2 class doesn't have a primary constructor")
+        ?: throw AssertionError("The Boring2 class doesn't have a primary constructor")
     Assert.assertEquals("The Boring2 primary constructor should have 3 parameters",
-      3, constructor.parameters.size)
-    checkParametersOfConstructor(constructor, boringClass,
-      listOf("" to "kotlin.Double", "" to "kotlin.String", "" to "kotlin.Int"))
+        3, constructor.parameters.size)
+    boringClass.assertParametersOfConstructor(constructor,
+        "" to Double::class,
+        "" to String::class,
+        "" to Int::class
+    )
 
     val instance = constructor.call(6.0, "abc", 55)
     fun message(fName: String, value: String) =
-      "The '$fName()' function should return $value for 'Boring2(6.0, \"abc\", 55)'"
+        "The '$fName()' function should return $value for 'Boring2(6.0, \"abc\", 55)'"
     Assert.assertEquals(message("a", "6.0"), 6.0, aFunction.call(instance))
     Assert.assertEquals(message("b", "abc"), "abc", bFunction.call(instance))
     Assert.assertEquals(message("c", "55"), 55, cFunction.call(instance))
