@@ -1,4 +1,4 @@
-package baseClassInitializationExercise4
+package baseClassInitializationExercise2
 
 open class Plate(description: String) {
   init {
