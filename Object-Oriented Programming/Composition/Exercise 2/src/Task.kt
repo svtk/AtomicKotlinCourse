@@ -30,7 +30,9 @@ fun main() {
   stack.pop() eq 4
   stack.pop() eq 3
 
-  // shouldn't be available:
+  // The following code shouldn't compile.
+  // The member function to get an element by its index
+  // shouldn't be available via the Stack interface:
 //  stack[0] eq 1
 
   val queue = Queue<String>()
@@ -41,7 +43,9 @@ fun main() {
   queue.poll() eq "a"
   queue.poll() eq "b"
 
-  // shouldn't be available:
+  // The following code shouldn't compile.
+  // The member functions to add or get element by its index
+  // shouldn't be available via the Queue interface:
 //  queue.add(2, "???")
 //  queue[2] eq "???"
 }

@@ -21,13 +21,5 @@ files:
 
         fun poll(): E = removeAt(0)
       }
-  - offset: 501
-    length: 17
-    placeholder_text: stack[0] eq 1
-  - offset: 692
-    length: 45
-    placeholder_text: |-
-      queue.add(2, "???")
-        queue[2] eq "???"
 - name: test/Tests.kt
   visible: false
