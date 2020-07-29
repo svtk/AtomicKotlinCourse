@@ -26,13 +26,13 @@ class TestInheritanceExercise2 {
         loadMemberFunction(cleanserClass, "dilute")
         loadMemberFunction(cleanserClass, "apply")
         loadMemberFunction(cleanserClass, "scrub")
-        assertNoMemberFunction(cleanserClass, "sterilize")
+        cleanserClass.assertNoMemberFunction("sterilize")
 
         val detergentClass = Detergent::class
-        assertNoMemberFunction(detergentClass, "sterilize")
+        detergentClass.assertNoMemberFunction("sterilize")
 
         val disinfectantClass = Disinfectant::class
-        assertInheritance(disinfectantClass, detergentClass)
+        disinfectantClass.assertInheritance(detergentClass)
         loadMemberFunction(disinfectantClass, "sterilize")
     }
 

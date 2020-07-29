@@ -21,8 +21,8 @@ class TestInheritanceExercise3 {
         bClass.assertConstructorNumber(1)
         cClass.assertConstructorNumber(1)
 
-        assertInheritance(bClass, aClass)
-        assertInheritance(cClass, bClass)
+        bClass.assertInheritance(aClass)
+        cClass.assertInheritance(bClass)
 
         val optProperty = loadMemberProperty(aClass, "initOrder")
         assertEquals(

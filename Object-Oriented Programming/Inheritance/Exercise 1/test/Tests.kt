@@ -28,7 +28,7 @@ class TestInheritanceExercise1 {
         loadMemberFunction(cleanserClass, "scrub")
 
         val detergentClass = Detergent::class
-        assertInheritance(detergentClass, cleanserClass)
+        detergentClass.assertInheritance(cleanserClass)
     }
 
     @Test

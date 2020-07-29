@@ -134,22 +134,40 @@ fun loadClass(packageName: String, className: String): KClass<*> {
     }
 }
 
-fun assertInheritance(derivedClass: KClass<*>, baseClass: KClass<*>) {
-    assertTrue(
-            actual = derivedClass.supertypes.contains(baseClass.createType()),
-            message = "${derivedClass.simpleName} should inherit ${baseClass.simpleName}"
+fun KClass<*>.assertInheritance(baseClass: KClass<*>) {
+    assertInherit(true, baseClass)
+}
+
+fun KClass<*>.assertNoInheritance(baseClass: KClass<*>) {
+    assertInherit(false, baseClass)
+}
+
+private fun KClass<*>.assertInherit(inherited: Boolean, baseClass: KClass<*>) {
+    assertEquals(
+        actual = supertypes.contains(baseClass.createType()),
+        expected = inherited,
+        message = "$simpleName should ${if(inherited) "" else "not "}inherit ${baseClass.simpleName}",
     )
 }
 
 fun KClass<*>.assertInheritance(vararg baseClassNames: String) {
+    assertInherit(true, *baseClassNames)
+}
+
+fun KClass<*>.assertNoInheritance(vararg baseClassNames: String) {
+    assertInherit(false, *baseClassNames)
+}
+
+private fun KClass<*>.assertInherit(inherited: Boolean, vararg baseClassNames: String) {
     val packageName = qualifiedName!!
-            .removeSuffix(simpleName!!)
-            .removeSuffix(".")
+        .removeSuffix(simpleName!!)
+        .removeSuffix(".")
     baseClassNames.forEach { className ->
         val baseClass = loadClass(packageName, className)
-        assertTrue(
-                actual = supertypes.contains(baseClass.createType()),
-                message = "$simpleName should inherit ${baseClass.simpleName}"
+        assertEquals(
+            message = "$simpleName should ${if(inherited) "" else "not "}inherit ${baseClass.simpleName}",
+            actual = supertypes.contains(baseClass.createType()),
+            expected = inherited
         )
     }
 }
@@ -161,10 +179,10 @@ fun loadMemberFunction(kClass: KClass<*>, methodName: String): KFunction<*> {
             .single()
 }
 
-fun assertNoMemberFunction(kClass: KClass<*>, methodName: String) {
-    kClass.memberFunctions
+fun KClass<*>.assertNoMemberFunction(methodName: String) {
+    memberFunctions
             .filter { it.name == methodName }
-            .checkNotFoundEntities("the '$methodName' member function", "'${kClass.simpleName}' class")
+            .checkNotFoundEntities("the '$methodName' member function", "'$simpleName' class")
 }
 
 fun loadMemberProperty(kClass: KClass<*>, propertyName: String): KProperty<*> {
