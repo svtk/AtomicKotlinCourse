@@ -1,8 +1,10 @@
 package baseClassInitializationExercise2
 
+import atomictest.trace
+
 open class Plate(description: String) {
   init {
-    println("Plate-$description")
+    trace("Plate-$description")
   }
 }
 
@@ -10,7 +12,7 @@ class DinnerPlate : Plate("DinnerPlate")
 
 open class Utensil(description: String) {
   init {
-    println("Utensil-$description")
+    trace("Utensil-$description")
   }
 }
 
@@ -22,7 +24,7 @@ class Knife : Utensil("Knife")
 
 open class Custom {
   init {
-    println("Custom")
+    trace("Custom")
   }
 }
 
@@ -32,10 +34,18 @@ class PlaceSetting : Custom() {
   val knife = Knife()
   val plate = DinnerPlate()
   init {
-    println("PlaceSetting")
+    trace("PlaceSetting")
   }
 }
 
 fun main() {
   PlaceSetting()
+  trace eq """
+    Custom
+    Utensil-Spoon
+    Utensil-Fork
+    Utensil-Knife
+    Plate-DinnerPlate
+    PlaceSetting
+  """
 }
