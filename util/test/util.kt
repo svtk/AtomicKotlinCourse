@@ -256,6 +256,14 @@ fun KClass<*>.assertConstructorNumber(expectedNumber: Int) {
     )
 }
 
+fun KClass<*>.assertParametersOfFirstConstructor(
+        params: List<Pair<String, KClass<*>>>
+) {
+    val constructor = constructors.first()
+    val paramsStr = params.map { it.first to it.second.qualifiedName!! }
+    checkParametersOfConstructor(constructor, this, paramsStr)
+}
+
 fun checkParametersOfConstructor(
         constructor: KFunction<*>,
         kClass: KClass<*>,
