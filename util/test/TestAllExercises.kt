@@ -633,9 +633,6 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#208 Polymorphism Exercise#2`() = testClass(polymorphismExercise2.TestPolymorphismExercise2::class)
 
   @Test
-  fun `test#209 Polymorphism Exercise#3`() = testClass(polymorphismExercise3.TestPolymorphismExercise3::class)
-
-  @Test
   fun `test#210 Composition Exercise#1`() = testClass(compositionExercise1.TestCompositionExercise1::class)
 
   @Test
