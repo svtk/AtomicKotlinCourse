@@ -37,7 +37,7 @@ class TestCompositionExercise1 {
     }
 
     @Test
-    fun `#02 how does the frog jump`() {
+    fun `#02 how are the shapes drawn`() {
         loadClass(packageName, "Circle").also { circleClass ->
             circleClass.constructors.first()
                     .call(10, "red")
