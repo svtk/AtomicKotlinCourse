@@ -1,4 +1,5 @@
 package inheritanceAndExtensionsExercise1
+
 import atomictest.trace
 
 // Duck Library
@@ -7,7 +8,7 @@ interface Duck {
   fun swim()
 }
 
-class RealDuck: Duck {
+class RealDuck : Duck {
   override fun quack() = trace("quack")
   override fun swim() = trace("swim")
 }
@@ -22,7 +23,7 @@ interface Crocodile {
   fun bite()
 }
 
-class RealCrocodile: Crocodile {
+class RealCrocodile : Crocodile {
   override fun bite() = trace("Mnom-mnom")
 }
 
@@ -32,23 +33,23 @@ fun interactWithCrocodile(crocodile: Crocodile) {
 }
 
 class IAmHonestlyDuck(
-  val crocodile: Crocodile
+    val crocodile: Crocodile
 ) : Duck {
   override fun quack() = crocodile.bite()
   override fun swim() = crocodile.bite()
 }
 
 fun mimicDuck(crocodile: Crocodile): IAmHonestlyDuck =
-  IAmHonestlyDuck(crocodile)
+    IAmHonestlyDuck(crocodile)
 
 fun main() {
   val honestlyDuck = mimicDuck(RealCrocodile())
   interactWithDuck(honestlyDuck)
   interactWithCrocodile(honestlyDuck.crocodile)
   trace eq """
-  Mnom-mnom
-  Mnom-mnom
-  Panic!!!
-  Mnom-mnom
+    Mnom-mnom
+    Mnom-mnom
+    Panic!!!
+    Mnom-mnom
   """
 }

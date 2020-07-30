@@ -312,13 +312,19 @@ fun KClass<*>.assertMemberProperty(propertyName: String, expectedType: KClass<*>
       }
 }
 
-fun KClass<*>.assertDeclaredMemberProperty(propertyName: String): KProperty<*> {
+fun KClass<*>.assertDeclaredMemberProperty(propertyName: String, expectedType: KClass<*>? = null): KProperty<*> {
   return declaredMemberProperties
       .assertSingle(
           memberName = propertyName,
           what = { "the '${simpleName}.${propertyName}' property" },
           where = { "'${simpleName}' class"}
-      )
+      ).also { property ->
+        expectedType?.let {
+          assertKType(actualKType = property.returnType, expectedKType = expectedType.createType()) {
+            "the '${simpleName}.${propertyName}' property"
+          }
+        }
+      }
 }
 
 class KFileFacade(val packageName: String, val fileName: String, val jClass: Class<*>)
