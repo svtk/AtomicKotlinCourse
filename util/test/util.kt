@@ -131,6 +131,19 @@ fun loadClass(packageName: String, className: String): KClass<*> {
     }
 }
 
+fun KClass<*>.assertIsAbstract(expected: Boolean = true) {
+    assertEquals(
+        message = "Class ${this.simpleName} should be abstract",
+        expected = expected,
+        actual = isAbstract
+    )
+}
+
+fun KClass<*>.assertIsInterface(expected: Boolean = true) {
+    assertIsAbstract()
+    assertConstructorNumber(0)
+}
+
 fun KClass<*>.assertInheritance(baseClass: KClass<*>) {
     assertInherit(true, baseClass)
 }
@@ -200,6 +213,14 @@ fun KClass<*>.assertNoDeclaredMemberFunction(methodName: String) {
     declaredMemberFunctions
         .filter { it.name == methodName }
         .checkNotFoundEntities("the declared '$methodName' member function", "'$simpleName' class")
+}
+
+fun KFunction<*>.assertAbstract(expected: Boolean = true) {
+    assertEquals(
+        message = "Method ${this.name}() should be abstract",
+        expected = expected,
+        actual = isAbstract
+    )
 }
 
 fun loadMemberProperty(kClass: KClass<*>, propertyName: String): KProperty<*> {

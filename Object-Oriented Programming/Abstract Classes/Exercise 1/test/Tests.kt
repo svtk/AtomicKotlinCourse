@@ -4,6 +4,7 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.*
+import kotlin.reflect.KClass
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -11,31 +12,21 @@ class TestAbstractClassesExercise1 {
 
   private val packageName = "abstractClassesExercise1"
 
+  private fun loadClass(className: String): KClass<*> = loadClass(packageName, className)
+
   @Test
   fun `#01 classes structure`() {
-    loadClass(packageName, "Shape").apply {
-      assertEquals(
-          message = "Class should have modifier 'abstract'",
-          expected = true,
-          actual = isAbstract
-      )
+    loadClass("Shape").apply {
+      assertIsAbstract()
       loadMemberFunction(this, "draw").apply {
-        assertEquals(
-            message = "Method 'draw()' should have modifier 'abstract'",
-            expected = true,
-            actual = isAbstract
-        )
+        assertIsAbstract()
       }
       loadMemberFunction(this, "erase").apply {
-        assertEquals(
-            message = "Method 'erase()' should have modifier 'abstract'",
-            expected = true,
-            actual = isAbstract
-        )
+        assertIsAbstract()
       }
     }
     listOf("Circle", "Square", "Triangle").forEach {
-      loadClass(packageName, it).apply {
+      loadClass(it).apply {
         assertDeclaredMemberFunction("draw")
         assertDeclaredMemberFunction("erase")
       }
@@ -44,11 +35,11 @@ class TestAbstractClassesExercise1 {
 
   @Test
   fun `#02 shape operations`() {
-    val (draw, erase) = loadClass(packageName, "Shape").let {
+    val (draw, erase) = loadClass("Shape").let {
       loadMemberFunction(it, "draw") to loadMemberFunction(it, "erase")
     }
     val shapes = listOf("Circle", "Square", "Triangle").map {
-      loadClass(packageName, it).createInstance()
+      loadClass(it).createInstance()
     }
     shapes.forEach { draw.call(it) }
     shapes.forEach { erase.call(it) }
