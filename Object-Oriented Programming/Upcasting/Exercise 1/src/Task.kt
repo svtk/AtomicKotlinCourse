@@ -1,6 +1,8 @@
 // Upcasting/UpcastExercise1.kt
 package upcastingExercise1
 
+import atomictest.trace
+
 interface Rodent {
   fun eat(): String
   fun speak(): String
@@ -18,15 +20,22 @@ class KangarooRat: Rodent {
 }
 
 fun upcast(rodent: Rodent) {
-  println(rodent.eat())
-  println(rodent.speak())
+  trace(rodent.eat())
+  trace(rodent.speak())
 //   rodent.jump() // Won't compile
 }
 
 fun main() {
   val mouse = Mouse()
   val kangarooRat = KangarooRat()
-  println(kangarooRat.jump())
+  trace(kangarooRat.jump())
   upcast(mouse)
   upcast(kangarooRat)
+  trace eq """
+    KangarooRat.jump
+    Mouse.eat
+    Mouse.speak
+    KangarooRat.eat
+    KangarooRat.speak
+  """
 }

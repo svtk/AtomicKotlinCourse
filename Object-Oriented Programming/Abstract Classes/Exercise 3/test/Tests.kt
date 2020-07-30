@@ -39,9 +39,7 @@ class TestAbstractClassesExercise3 {
         assertNoDeclaredMemberProperty()
       }
     }
-    loadToplevelFunction(loadFileFacade(packageName), "tune").apply {
-
-    }
+    loadToplevelFunction(loadFileFacade(packageName), "tune")
   }
 
   @Test

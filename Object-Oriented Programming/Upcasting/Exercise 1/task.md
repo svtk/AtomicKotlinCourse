@@ -6,7 +6,7 @@ The starter code contains a `Rodent` interface and its two implementations:
 `jump()` function.
 
 Create a function `upcast(rodent: Rodent)` which displays the result of `eat()`
-and `speak()` using `println()`. Show that the compiler won't allow you to call
+and `speak()` using `trace()`. Show that the compiler won't allow you to call
 `jump()`.
 
 `main()` creates an instance of `Mouse` and `KangarooRat`, and shows that you
