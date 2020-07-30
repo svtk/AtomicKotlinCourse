@@ -3,17 +3,17 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 34
+  - offset: 59
     length: 69
     placeholder_text: abstract class Shape
-  - offset: 105
-    length: 134
+  - offset: 130
+    length: 130
     placeholder_text: class Circle
-  - offset: 241
-    length: 134
+  - offset: 262
+    length: 130
     placeholder_text: class Square
-  - offset: 377
-    length: 140
+  - offset: 394
+    length: 136
     placeholder_text: class Triangle
 - name: test/Tests.kt
   visible: false

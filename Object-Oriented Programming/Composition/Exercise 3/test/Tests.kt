@@ -4,9 +4,7 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.*
-import kotlin.reflect.KTypeProjection
 import kotlin.reflect.full.createInstance
-import kotlin.reflect.full.createType
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

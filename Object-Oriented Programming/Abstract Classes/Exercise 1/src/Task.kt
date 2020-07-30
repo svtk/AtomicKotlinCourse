@@ -1,5 +1,7 @@
 package abstractClassesExercise1
 
+import atomictest.trace
+
 abstract class Shape {
   abstract fun draw()
   abstract fun erase()
@@ -7,23 +9,23 @@ abstract class Shape {
 
 open class Circle: Shape() {
   override fun draw() =
-    println("Draw Circle")
+    trace("Draw Circle")
   override fun erase() =
-    println("Erase Circle")
+    trace("Erase Circle")
 }
 
 open class Square: Shape() {
   override fun draw() =
-    println("Draw Square")
+    trace("Draw Square")
   override fun erase() =
-    println("Erase Square")
+    trace("Erase Square")
 }
 
 open class Triangle: Shape() {
   override fun draw() =
-    println("Draw Triangle")
+    trace("Draw Triangle")
   override fun erase() =
-    println("Erase Triangle")
+    trace("Erase Triangle")
 }
 
 fun main() {
@@ -36,12 +38,12 @@ fun main() {
   shapes.forEach { it.draw() }
   shapes.forEach { it.erase() }
 */
+  trace eq """
+    Draw Circle
+    Draw Square
+    Draw Triangle
+    Erase Circle
+    Erase Square
+    Erase Triangle
+  """
 }
-/* Exercise Output:
-Draw Circle
-Draw Square
-Draw Triangle
-Erase Circle
-Erase Square
-Erase Triangle
-*/

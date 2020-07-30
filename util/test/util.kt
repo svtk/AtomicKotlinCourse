@@ -8,10 +8,7 @@ import java.io.PrintStream
 import java.lang.reflect.Field
 import java.lang.reflect.Method
 import kotlin.reflect.*
-import kotlin.reflect.full.createType
-import kotlin.reflect.full.declaredMemberProperties
-import kotlin.reflect.full.memberFunctions
-import kotlin.reflect.full.memberProperties
+import kotlin.reflect.full.*
 import kotlin.reflect.jvm.isAccessible
 import kotlin.test.assertEquals
 
@@ -179,8 +176,18 @@ fun loadMemberFunction(kClass: KClass<*>, methodName: String): KFunction<*> {
             .single()
 }
 
-fun KClass<*>.assertMemberFunction(methodName: String) {
-    loadMemberFunction(this, methodName)
+fun KClass<*>.assertMemberFunction(methodName: String): KFunction<*> {
+    return memberFunctions
+        .filter { it.name == methodName }
+        .checkFoundEntities(what = "the '$methodName()' member function", where = "'${simpleName}' class")
+        .single()
+}
+
+fun KClass<*>.assertDeclaredMemberFunction(methodName: String): KFunction<*> {
+    return declaredMemberFunctions
+        .filter { it.name == methodName }
+        .checkFoundEntities(what = "the '$methodName()' member function", where = "'${simpleName}' class")
+        .single()
 }
 
 fun KClass<*>.assertNoMemberFunction(methodName: String) {
