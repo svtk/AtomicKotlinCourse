@@ -14,9 +14,10 @@ class TestSecondaryConstructorsExercise2 {
 
   @Test
   fun `#01 constructors structure`() {
-    val actualClass = loadClass("secondaryConstructorsExercise2", SpaceShip::class.simpleName!!)
-    loadAssertedMemberProperty(actualClass, "name", String::class)
-    actualClass.assertConstructorNumber(2)
+    val actualClass = loadClass("secondaryConstructorsExercise2", SpaceShip::class.simpleName!!).apply {
+      assertConstructorNumber(2)
+      assertMemberProperty( "name", String::class)
+    }
 
     actualClass
         .findConstructorBySignatureSize(1)
@@ -39,7 +40,7 @@ class TestSecondaryConstructorsExercise2 {
   @Test
   fun `#02 apply constructors`() {
     val actualClass = loadClass("secondaryConstructorsExercise2", SpaceShip::class.simpleName!!)
-    val nameProp = loadAssertedMemberProperty(actualClass, "name", String::class)
+    val nameProp = actualClass.assertMemberProperty("name", String::class)
 
     val spaceShip1 = actualClass.findConstructorBySignatureSize(1).call("SuperhighspeedShip")
     assertEquals(

@@ -17,7 +17,7 @@ class TestComplexConstructorsExercise1 {
             assertParametersOfFirstConstructor(
                 "name" to String::class
             )
-            loadAssertedMemberProperty(this, "myName", String::class)
+            assertMemberProperty( "myName", String::class)
             assertNoMemberProperty("name")
         }
     }

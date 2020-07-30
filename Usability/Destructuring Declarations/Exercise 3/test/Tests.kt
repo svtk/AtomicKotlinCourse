@@ -22,9 +22,11 @@ class TestDestructuringDeclarationsExercise3 {
                 actual = actualClass.isData,
                 message = "Class Person has to be declared as a data class"
         )
-        loadAssertedMemberProperty(actualClass, "name", String::class)
-        loadAssertedMemberProperty(actualClass, "surname", String::class)
-        loadAssertedMemberProperty(actualClass, "age", Int::class)
+        actualClass.apply {
+            assertMemberProperty("name", String::class)
+            assertMemberProperty("surname", String::class)
+            assertMemberProperty("age", Int::class)
+        }
     }
 
     @Test

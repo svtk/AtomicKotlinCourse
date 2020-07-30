@@ -5,16 +5,17 @@ import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
 import util.assertConstructorNumber
-import util.loadAssertedMemberProperty
+import util.assertMemberProperty
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestSecondaryConstructorsExercise3 {
 
   @Test(timeout = TIMEOUT)
   fun `class structure`() {
-    val gardenItemClass = GardenItem::class
-    gardenItemClass.assertConstructorNumber(1)
-    loadAssertedMemberProperty(gardenItemClass, "name", String::class)
-    loadAssertedMemberProperty(gardenItemClass, "material", Material::class)
+    GardenItem::class.apply {
+      assertConstructorNumber(1)
+      assertMemberProperty("name", String::class)
+      assertMemberProperty("material", Material::class)
+    }
   }
 }

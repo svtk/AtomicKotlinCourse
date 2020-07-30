@@ -263,10 +263,10 @@ fun loadMemberProperty(kClass: KClass<*>, propertyName: String): KProperty<*> {
 
 fun KClass<*>.assertNoDeclaredMemberProperty(propertyName: String? = null) {
   declaredMemberProperties
-      .let { functions ->
+      .let { properties ->
         when (propertyName) {
-          null -> functions.toList()
-          else -> functions.filter { it.name == propertyName }
+          null -> properties.toList()
+          else -> properties.filter { it.name == propertyName }
         }
       }.apply {
         when (propertyName) {
@@ -276,12 +276,12 @@ fun KClass<*>.assertNoDeclaredMemberProperty(propertyName: String? = null) {
       }
 }
 
-fun KClass<*>.assertNoMemberProperty(propertyName: String) {
+fun KClass<*>.assertNoMemberProperty(propertyName: String? = null) {
   memberProperties
-      .let { functions ->
+      .let { properties ->
         when (propertyName) {
-          null -> functions.toList()
-          else -> functions.filter { it.name == propertyName }
+          null -> properties.toList()
+          else -> properties.filter { it.name == propertyName }
         }
       }.apply {
         when (propertyName) {
@@ -291,38 +291,26 @@ fun KClass<*>.assertNoMemberProperty(propertyName: String) {
       }
 }
 
-fun <T : KCallable<*>> Collection<T>.single(name: String, className: String?): T {
-  return filter { it.name == name }
-      .checkFoundEntities("the '$name' member", "'${className}' class")
+private fun <T : KCallable<*>> Collection<T>.assertSingle(memberName: String, className: String?): T {
+  return filter { it.name == memberName }
+      .checkFoundEntities("the '$memberName' member", "'${className}' class")
       .single()
 }
 
-fun KClass<*>.assertMemberProperty(propertyName: String): KProperty<*> {
-  return memberProperties.single(propertyName, simpleName)
+fun KClass<*>.assertMemberProperty(propertyName: String, expectedType: KClass<*>? = null): KProperty<*> {
+  return memberProperties
+      .assertSingle(propertyName, simpleName)
+      .also { property ->
+        expectedType?.let {
+          assertKType(actualKType = property.returnType, expectedKType = expectedType.createType()) {
+            "'${simpleName}.${propertyName}' property"
+          }
+        }
+      }
 }
 
 fun KClass<*>.assertDeclaredMemberProperty(propertyName: String): KProperty<*> {
-  return declaredMemberProperties.single(propertyName, simpleName)
-}
-
-fun KClass<*>.assertMemberProperty(propertyName: String, expectedType: KClass<*>) {
-  loadMemberPropertyWithType(this, propertyName, expectedType.createType())
-}
-
-fun loadMemberPropertyWithType(kClass: KClass<*>, propertyName: String, expectedType: KType): KProperty<*> {
-  return kClass.memberProperties
-      .filter { it.name == propertyName }
-      .checkFoundEntities("the '$propertyName' member property", "'${kClass.simpleName}' class")
-      .single()
-      .also { property ->
-        assertKType(actualKType = property.returnType, expectedKType = expectedType) {
-          "'${kClass.simpleName}.${propertyName}' property"
-        }
-      }
-}
-
-fun loadAssertedMemberProperty(kClass: KClass<*>, propertyName: String, expectedType: KClass<*>): KProperty<*> {
-  return loadMemberPropertyWithType(kClass, propertyName, expectedType.createType())
+  return declaredMemberProperties.assertSingle(propertyName, simpleName)
 }
 
 class KFileFacade(val packageName: String, val fileName: String, val jClass: Class<*>)

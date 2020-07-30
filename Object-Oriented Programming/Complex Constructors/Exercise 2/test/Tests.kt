@@ -18,7 +18,7 @@ class TestComplexConstructorsExercise2 {
           assertParametersOfFirstConstructor(
               "text" to String::class
           )
-          loadAssertedMemberProperty(this, "sum", Int::class)
+          assertMemberProperty("sum", Int::class)
         }
   }
 
