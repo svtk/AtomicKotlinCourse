@@ -1,5 +1,6 @@
-// Upcasting/UpcastExercise2.kt
 package upcastingExercise2
+
+import atomictest.trace
 
 interface Apple {
   fun consume(): String
@@ -29,6 +30,12 @@ fun main() {
     Braeburn()
   )
   apples.forEach {
-    println(it.consume())
+    trace(it.consume())
   }
+  trace eq """
+    chomp GrannySmith 
+    bite Gala
+    press Fuji
+    peel Braeburn
+  """
 }
