@@ -17,12 +17,12 @@ class TestAbstractClassesExercise1 {
   @Test
   fun `#01 classes structure`() {
     loadClass("Shape").apply {
-      assertIsAbstract()
+      assertAbstract()
       loadMemberFunction(this, "draw").apply {
-        assertIsAbstract()
+        assertAbstract()
       }
       loadMemberFunction(this, "erase").apply {
-        assertIsAbstract()
+        assertAbstract()
       }
     }
     listOf("Circle", "Square", "Triangle").forEach {

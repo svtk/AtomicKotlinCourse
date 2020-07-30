@@ -18,11 +18,11 @@ class TestAbstractClassesExercise2 {
     @Test
     fun `#01 classes structure`() {
         loadClass("Movable").apply {
-            assertIsInterface()
+            assertInterface()
             assertDeclaredMemberFunction("move")
         }
         loadClass("Sleepable").apply {
-            assertIsInterface()
+            assertInterface()
             assertDeclaredMemberFunction("sleepOn")
         }
         loadClass("Sofa").apply {

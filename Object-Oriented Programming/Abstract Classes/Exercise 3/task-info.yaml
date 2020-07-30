@@ -3,25 +3,25 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 105
+  - offset: 102
     length: 112
     placeholder_text: |-
       abstract class Instrument {
         abstract fun play(n: Note): String
       }
-  - offset: 219
+  - offset: 216
     length: 39
     placeholder_text: |-
       class Wind : Instrument() {
         override fun play(n: Note) = "Wind blow $n"
       }
-  - offset: 260
+  - offset: 257
     length: 53
     placeholder_text: |-
       class Percussion : Instrument() {
         override fun play(n: Note) = "Percussion strike $n"
       }
-  - offset: 315
+  - offset: 312
     length: 48
     placeholder_text: |-
       class Stringed : Instrument() {

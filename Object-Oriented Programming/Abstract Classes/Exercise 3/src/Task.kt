@@ -1,5 +1,6 @@
-// Abstract/AbsExercise2.kt
 package abstractClassesExercise3
+
+import atomictest.trace
 
 enum class Note {
   A, B, C, D, E, F, G
@@ -24,11 +25,11 @@ fun main() {
     Stringed()
   )
   for (instrument in orchestra) {
-    println(tune(instrument))
+    trace(tune(instrument))
   }
+  trace eq """
+    Wind blow C
+    Percussion strike C
+    Stringed pluck C
+  """
 }
-/* Output:
-Wind blow C
-Percussion strike C
-Stringed pluck C
- */
