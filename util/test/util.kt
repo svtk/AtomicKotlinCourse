@@ -183,17 +183,23 @@ fun KClass<*>.assertMemberFunction(methodName: String): KFunction<*> {
         .single()
 }
 
+fun KClass<*>.assertNoMemberFunction(methodName: String) {
+    memberFunctions
+        .filter { it.name == methodName }
+        .checkNotFoundEntities("the '$methodName' member function", "'$simpleName' class")
+}
+
 fun KClass<*>.assertDeclaredMemberFunction(methodName: String): KFunction<*> {
     return declaredMemberFunctions
         .filter { it.name == methodName }
-        .checkFoundEntities(what = "the '$methodName()' member function", where = "'${simpleName}' class")
+        .checkFoundEntities(what = "the declared '$methodName()' member function", where = "'${simpleName}' class")
         .single()
 }
 
-fun KClass<*>.assertNoMemberFunction(methodName: String) {
-    memberFunctions
-            .filter { it.name == methodName }
-            .checkNotFoundEntities("the '$methodName' member function", "'$simpleName' class")
+fun KClass<*>.assertNoDeclaredMemberFunction(methodName: String) {
+    declaredMemberFunctions
+        .filter { it.name == methodName }
+        .checkNotFoundEntities("the declared '$methodName' member function", "'$simpleName' class")
 }
 
 fun loadMemberProperty(kClass: KClass<*>, propertyName: String): KProperty<*> {

@@ -3,16 +3,16 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 84
+  - offset: 56
     length: 17
     placeholder_text: abstract class Movable
-  - offset: 129
+  - offset: 101
     length: 19
     placeholder_text: abstract class Sleepable
-  - offset: 180
+  - offset: 152
     length: 30
     placeholder_text: '// class Sofa: Movable(), Sleepable()'
-  - offset: 225
+  - offset: 197
     length: 71
     placeholder_text: |-
       /*

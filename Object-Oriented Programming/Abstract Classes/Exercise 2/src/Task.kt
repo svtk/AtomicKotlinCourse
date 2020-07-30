@@ -1,4 +1,3 @@
-// Abstract/AbsExercise1.kt
 package abstractClassesExercise2
 
 import atomictest.eq
