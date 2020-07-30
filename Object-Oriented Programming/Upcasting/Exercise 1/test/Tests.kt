@@ -43,7 +43,7 @@ class TestUpcastingExercise1 {
   }
 
   @Test
-  fun `#02 sofa operations`() {
+  fun `#02 rodents actions`() {
     val mouse = loadClass("Mouse").createInstance()
     val kangarooRat = loadClass("KangarooRat").createInstance()
     val upcast = loadToplevelFunction(loadFileFacade(packageName), "upcast")
