@@ -347,25 +347,48 @@ fun loadToplevelField(fileFacade: KFileFacade, memberName: String): Field {
       ).single()
 }
 
-private fun loadToplevelMember(fileFacade: KFileFacade, memberName: String, isGetter: Boolean): Method {
+private fun loadToplevelMember(
+    fileFacade: KFileFacade,
+    memberName: String,
+    firstParameterType: KClass<*>? = null,
+    isGetter: Boolean
+): Method {
   val name = if (isGetter && !memberName.startsWith("is"))
     "get" + memberName.capitalize()
   else
     memberName
   return fileFacade.jClass.declaredMethods
       .filter { it.name == name }
-      .checkFoundEntities(
-          what = if (isGetter) "'$memberName' property" else "'$memberName()' function",
-          where = "'${fileFacade.fileName}.kt' file"
-      ).single()
+      .let { memberCandidates ->
+        when(firstParameterType) {
+          null -> memberCandidates
+          else -> memberCandidates.filter {
+            it.parameters.first().type == firstParameterType.javaObjectType
+          }
+        }
+      }.apply {
+        val member = if (isGetter) "'$memberName' property" else "'$memberName()' function"
+        val what = when(firstParameterType) {
+          null -> member
+          else -> "${firstParameterType.simpleName}.$member"
+        }
+        checkFoundEntities(
+            what = what,
+            where = "'${fileFacade.fileName}.kt' file"
+        )
+      }.single()
 }
 
 fun loadToplevelFunction(fileFacade: KFileFacade, functionName: String): Method {
-  return loadToplevelMember(fileFacade, functionName, false)
+  return loadToplevelMember(fileFacade, functionName, null,false)
+}
+
+fun loadToplevelFunction(fileFacade: KFileFacade, functionName: String, firstParameterType: KClass<*>): Method {
+  return loadToplevelMember(fileFacade, functionName, firstParameterType, false)
 }
 
 fun loadToplevelPropertyGetter(fileFacade: KFileFacade, propertyName: String): Method {
-  return loadToplevelMember(fileFacade, propertyName, true)
+  return loadToplevelMember(fileFacade, propertyName, null,true)
 }
 
 fun loadMainFunction(fileFacade: KFileFacade): Method {
