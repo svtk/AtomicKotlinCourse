@@ -1,6 +1,5 @@
 package inheritanceAndExtensionsExercise1
 
-import logging.trace
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
@@ -53,7 +52,7 @@ class TestInheritanceAndExtensionsExercise1 {
   }
 
   @Test
-  fun `#02 hero actions`() {
+  fun `#02 ducks and crocodiles`() {
     val fileFacade = loadFileFacade(packageName)
     val interactWithDuck = loadToplevelFunction(fileFacade, "interactWithDuck")
     val interactWithCrocodile = loadToplevelFunction(fileFacade, "interactWithCrocodile")
@@ -69,7 +68,7 @@ class TestInheritanceAndExtensionsExercise1 {
     interactWithCrocodile(null, crocodile)
 
     assertEquals(
-        message = "Incorrect sequence of actions applied to the apples",
+        message = "Incorrect sequence of bites and panic",
         actual = loadTraceContent(),
         expected = listOf(
             "Mnom-mnom",
