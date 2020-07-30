@@ -291,26 +291,34 @@ fun KClass<*>.assertNoMemberProperty(propertyName: String? = null) {
       }
 }
 
-private fun <T : KCallable<*>> Collection<T>.assertSingle(memberName: String, className: String?): T {
+private fun <T : KCallable<*>> Collection<T>.assertSingle(memberName: String, where: () -> String, what: () -> String): T {
   return filter { it.name == memberName }
-      .checkFoundEntities("the '$memberName' member", "'${className}' class")
+      .checkFoundEntities(what(), where())
       .single()
 }
 
 fun KClass<*>.assertMemberProperty(propertyName: String, expectedType: KClass<*>? = null): KProperty<*> {
   return memberProperties
-      .assertSingle(propertyName, simpleName)
-      .also { property ->
+      .assertSingle(
+          memberName = propertyName,
+          what = { "the '${simpleName}.${propertyName}' property" },
+          where = { "'${simpleName}' class"}
+      ).also { property ->
         expectedType?.let {
           assertKType(actualKType = property.returnType, expectedKType = expectedType.createType()) {
-            "'${simpleName}.${propertyName}' property"
+            "the '${simpleName}.${propertyName}' property"
           }
         }
       }
 }
 
 fun KClass<*>.assertDeclaredMemberProperty(propertyName: String): KProperty<*> {
-  return declaredMemberProperties.assertSingle(propertyName, simpleName)
+  return declaredMemberProperties
+      .assertSingle(
+          memberName = propertyName,
+          what = { "the '${simpleName}.${propertyName}' property" },
+          where = { "'${simpleName}' class"}
+      )
 }
 
 class KFileFacade(val packageName: String, val fileName: String, val jClass: Class<*>)
