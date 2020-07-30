@@ -15,7 +15,7 @@ needed by the `Fight` interface. Define `swim()` to return `"Hero swim"` and
 
 Next, implement `tryFight(x: Fight)`, `trySwim(x: Swim)`, `tryFly(x: Fly)`,
 and `doAction(x: ActionCharacter)`, so that each function calls the member
-function available to its parameter and displays its result on the console.
+function available to its parameter and traces its result using the method `trace()`.
 
 In `main()`, make a `Hero` object and pass it to each of the functions
 `tryFight()`, `trySwim()`, `tryFly()`, and `doAction()`. Run `main()` to check

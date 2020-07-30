@@ -1,5 +1,6 @@
-// Upcasting/UpcastExercise3.kt
 package upcastingExercise3
+
+import atomictest.trace
 
 interface Fighter {
   fun fight(): String
@@ -23,19 +24,19 @@ class Hero : ActionCharacter(), Fighter, Swimmer, Flyer {
 }
 
 fun tryFight(x: Fighter) {
-  println(x.fight())
+  trace(x.fight())
 }
 
 fun trySwim(x: Swimmer) {
-  println(x.swim())
+  trace(x.swim())
 }
 
 fun tryFly(x: Flyer) {
-  println(x.fly())
+  trace(x.fly())
 }
 
 fun doAction(x: ActionCharacter) {
-  println(x.fight())
+  trace(x.fight())
 }
 
 fun main() {
@@ -44,4 +45,10 @@ fun main() {
   trySwim(h) // Treat it as a Swim
   tryFly(h) // Treat it as a Fly
   doAction(h) // Treat it as an ActionCharacter
+  trace eq """
+    ActionCharacter fight
+    Hero swim
+    Hero fly
+    ActionCharacter fight
+  """
 }
