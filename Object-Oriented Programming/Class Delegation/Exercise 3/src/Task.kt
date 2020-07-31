@@ -1,57 +1,46 @@
-// ClassDelegation/ClassDelegEx3.kt
 package classDelegationExercise3
 import atomictest.*
 
 interface A {
-  val x: Int
-  val z: Int
-  fun u()
-  fun v()
+  fun foo()
+  fun bar()
 }
 
 interface B {
-  val y: Int
-  val z: Int
-  fun v()
-  fun w()
+  fun foo()
+  fun baz()
 }
 
 class AA : A {
-  override val x = 1
-  override val z = 1
-  override fun u() = trace("AA.u()")
-  override fun v() = trace("AA.v()")
+  override fun foo() = trace("AA.foo()")
+  override fun bar() = trace("AA.bar()")
 }
 
 class BB : B {
-  override val y = 1
-  override val z = 1
-  override fun v() = trace("BB.v()")
-  override fun w() = trace("BB.w()")
+  override fun foo() = trace("BB.foo()")
+  override fun baz() = trace("BB.baz()")
 }
 
 class Delegation(val a: A, val b: B) :
   A by a, B by b {
-  override val z = a.z + b.z
-  override fun v() {
-    trace("Delegation.v()")
-    a.v()
-    b.v()
-    trace("Delegation.z: $z")
+  override fun foo() {
+    a.foo()
+    b.foo()
+    trace("Delegation.foo()")
   }
 }
 
 fun main() {
   val d = Delegation(AA(), BB())
-  d.u()
-  d.v()
-  d.w()
-  trace eq """
-  AA.u()
-  Delegation.v()
-  AA.v()
-  BB.v()
-  Delegation.z: 2
-  BB.w()
-  """
+  d.foo()
+  d.bar()
+  d.baz()
+  trace eq
+    """
+      AA.foo()
+      BB.foo()
+      Delegation.foo()
+      AA.bar()
+      BB.baz()
+    """
 }
