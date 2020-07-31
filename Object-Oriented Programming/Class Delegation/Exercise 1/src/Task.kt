@@ -1,4 +1,3 @@
-// ClassDelegation/ClassDelegEx1.kt
 package classDelegationExercise1
 import atomictest.eq
 

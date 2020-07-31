@@ -187,7 +187,7 @@ private fun KClass<*>.assertInherit(inherited: Boolean, vararg baseClassNames: S
   baseClassNames.forEach { className ->
     val baseClass = loadClass(packageName, className)
     assertEquals(
-        message = "$simpleName should ${if (inherited) "" else "not "}inherit ${baseClass.simpleName}",
+        message = "Class `$simpleName` should ${if (inherited) "" else "not "}inherit ${baseClass.simpleName}",
         actual = supertypes.contains(baseClass.createType()),
         expected = inherited
     )
