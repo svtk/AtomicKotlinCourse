@@ -43,8 +43,9 @@ class TestInheritanceAndExtensionsExercise2 {
   @Test
   fun `#02 play with toy dog`() {
     val fileFacade = loadFileFacade(packageName)
+    val dogClass = loadClass("Dog")
     val toyDogClass = loadClass("ToyDog")
-    val play = loadToplevelFunction(fileFacade, "play", toyDogClass)
+    val play = loadToplevelFunction(fileFacade, "play", dogClass)
     play.invoke(null, toyDogClass.createInstance())
 
     assertEquals(
