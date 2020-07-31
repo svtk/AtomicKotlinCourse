@@ -2,5 +2,15 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 545
+    length: 7
+    placeholder_text: /* private */
+  - offset: 586
+    length: 24
+    placeholder_text: /* TODO */
+  - offset: 902
+    length: 12
+    placeholder_text: honestlyDuck.crocodile
 - name: test/Tests.kt
   visible: false

@@ -1,44 +1,55 @@
-// ClassDelegation/ClassDelegEx2.kt
 package classDelegationExercise2
-import usefullibrary.*
-import atomictest.*
 
-interface MyType {
-  fun g()
-  fun h()
+import atomictest.trace
+
+// Duck Library
+interface Duck {
+  fun quack()
+  fun swim()
 }
 
-class MyClass: MyType {
-  override fun g() = trace("g()")
-  override fun h() = trace("h()")
+class RealDuck : Duck {
+  override fun quack() = trace("quack")
+  override fun swim() = trace("swim")
 }
 
-fun useMyType(mt: MyType) {
-  mt.g()
-  mt.h()
+fun interactWithDuck(duck: Duck) {
+  duck.quack()
+  duck.swim()
 }
 
-class MyClassAdaptedForLib(
-  private val field: MyClass
-) : LibType, MyType by field {
-  override fun f1() = field.h()
-  override fun f2() = field.g()
+// Our codebase
+interface Crocodile {
+  fun bite()
 }
 
-fun adapt(mc: MyClass) =
-  MyClassAdaptedForLib(mc)
+class RealCrocodile : Crocodile {
+  override fun bite() = trace("Mnom-mnom")
+}
+
+fun interactWithCrocodile(crocodile: Crocodile) {
+  trace("Panic!!!")
+  crocodile.bite()
+}
+
+class IAmHonestlyDuck(
+  private val crocodile: Crocodile
+) : Duck, Crocodile by crocodile {
+  override fun quack() = crocodile.bite()
+  override fun swim() = crocodile.bite()
+}
+
+fun mimicDuck(crocodile: Crocodile): IAmHonestlyDuck =
+  IAmHonestlyDuck(crocodile)
 
 fun main() {
-  val mc = adapt(MyClass())
-  utility1(mc)
-  utility2(mc)
-  useMyType(mc)
+  val honestlyDuck = mimicDuck(RealCrocodile())
+  interactWithDuck(honestlyDuck)
+  interactWithCrocodile(honestlyDuck)
   trace eq """
-  h()
-  g()
-  g()
-  h()
-  g()
-  h()
+    Mnom-mnom
+    Mnom-mnom
+    Panic!!!
+    Mnom-mnom
   """
 }
