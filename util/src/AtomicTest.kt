@@ -1,6 +1,7 @@
 // AtomicTest/AtomicTest.kt
 package atomictest
 import kotlin.math.abs
+import kotlin.reflect.KClass
 
 const val ERROR_TAG = "[Error]: "
 
@@ -25,7 +26,7 @@ private fun <L, R> runTest(
  */
 infix fun <T: Any> T.eq(value: String) {
   runTest(this, value) {
-    this.toString() == value
+    this.toString() == value.trimIndent()
   }
 }
 
@@ -58,23 +59,49 @@ infix fun Double.eq(value: Double) {
     abs(this - value) < 0.0000001
   }
 }
+/**
+ * Auxiliary class that contains the information
+ * about the captured exception type and its message.
+ */
+class CapturedException(
+  private val exceptionClass: KClass<*>?,
+  private val actualMessage: String
+) {
+  private val fullMessage: String
+    get() {
+      val className = this.exceptionClass?.simpleName ?: ""
+      return className + this.actualMessage
+    }
+  infix fun eq(message: String) {
+    fullMessage eq message
+  }
+  infix fun contains(messageParts: List<String>) {
+    if (messageParts.any { it !in fullMessage }) {
+      print(ERROR_TAG)
+      println("Actual message: $fullMessage")
+      println("Expected parts: $messageParts")
+    }
+  }
+}
 
 /**
- * Captures an exception and produces its name.
+ * Captures an exception and produces information
+ * about its type and message.
  * Usage:
- *   ```
- *   capture {
- *     // Code that fails
- *   } eq "FailureException"
- *   ```
+ *
+ * ```
+ * capture {
+ *   // Code that fails
+ * } eq "FailureException: message"
+ * ```
  */
-fun capture(f: () -> Unit): String =
+fun capture(f: () -> Unit): CapturedException =
   try {
     f()
-    "$ERROR_TAG Expected an exception"
+    CapturedException(null, "$ERROR_TAG Expected an exception")
   } catch (e: Throwable) {
-    e::class.simpleName +
-      (e.message?.let { ": $it" } ?: "")
+    CapturedException(e::class,
+      (e.message?.let { ": $it" } ?: ""))
   }
 
 object trace {
@@ -84,7 +111,7 @@ object trace {
   }
   /**
    * Compares Trace contents to a multiline
-   * String by ignoring line separators.
+   * `String` by ignoring line separators.
    */
   infix fun eq(multiline: String) {
     val trace = trc.joinToString("\n")
