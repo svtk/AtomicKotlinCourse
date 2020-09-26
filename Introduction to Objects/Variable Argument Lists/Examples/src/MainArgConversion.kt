@@ -1,5 +1,4 @@
 // Varargs/MainArgConversion.kt
-package varargs
 
 fun main(args: Array<String>) {
   if (args.size < 3) return

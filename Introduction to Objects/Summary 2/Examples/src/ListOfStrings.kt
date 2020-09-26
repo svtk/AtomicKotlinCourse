@@ -1,5 +1,4 @@
 // Summary2/ListOfStrings.kt
-package summary2
 
 fun main() {
   val jabber = """

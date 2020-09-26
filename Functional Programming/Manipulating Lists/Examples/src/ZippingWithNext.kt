@@ -1,5 +1,4 @@
 // ManipulatingLists/ZippingWithNext.kt
-package manipulatinglists
 import atomictest.eq
 
 fun main() {

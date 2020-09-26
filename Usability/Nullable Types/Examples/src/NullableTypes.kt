@@ -1,5 +1,4 @@
 // NullableTypes/NullableTypes.kt
-package nullabletypes
 import atomictest.eq
 
 fun main() {

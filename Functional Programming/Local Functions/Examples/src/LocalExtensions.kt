@@ -1,5 +1,4 @@
 // LocalFunctions/LocalExtensions.kt
-package localfunctions
 import atomictest.eq
 
 fun main() {

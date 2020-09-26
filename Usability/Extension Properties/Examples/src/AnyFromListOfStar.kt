@@ -1,5 +1,4 @@
 // ExtensionProperties/AnyFromListOfStar.kt
-package extensionproperties
 import atomictest.eq
 
 fun main() {

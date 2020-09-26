@@ -1,5 +1,4 @@
 // Lists/OutOfBounds.kt
-package lists
 import atomictest.*
 
 fun main() {

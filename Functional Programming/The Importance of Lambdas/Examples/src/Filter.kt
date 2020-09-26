@@ -1,5 +1,4 @@
 // ImportanceOfLambdas/Filter.kt
-package importanceoflambdas
 import atomictest.eq
 
 fun main() {

@@ -1,5 +1,4 @@
 // Sets/Sets.kt
-package sets
 import atomictest.eq
 
 fun main() {

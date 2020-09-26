@@ -1,5 +1,5 @@
 // DownCasting/FilterIsInstance.kt
-package downcasting
+import downcasting.*
 import atomictest.eq
 
 fun main() {

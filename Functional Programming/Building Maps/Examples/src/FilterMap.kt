@@ -1,5 +1,4 @@
 // BuildingMaps/FilterMap.kt
-package buildingmaps
 import atomictest.eq
 
 fun main() {

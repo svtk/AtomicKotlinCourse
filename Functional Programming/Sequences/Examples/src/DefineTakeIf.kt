@@ -1,5 +1,5 @@
 // Sequences/DefineTakeIf.kt
-package sequences
+package usingsequences
 import atomictest.eq
 
 fun <T> T.takeIf(

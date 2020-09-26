@@ -1,5 +1,4 @@
 // Enumerations/EnumImport.kt
-package enumerations
 import atomictest.eq
 import enumerations.Level.*    // [1]
 

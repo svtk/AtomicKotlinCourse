@@ -1,5 +1,5 @@
 // Upcasting/Assignment.kt
-package upcasting
+import upcasting.*
 
 fun main() {
   val shape1: Shape = Square()

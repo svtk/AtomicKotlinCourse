@@ -1,5 +1,4 @@
 // ImportanceOfLambdas/Closures2.kt
-package importanceoflambdas
 import atomictest.eq
 
 fun main() {

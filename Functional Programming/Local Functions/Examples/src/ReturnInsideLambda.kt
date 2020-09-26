@@ -1,5 +1,5 @@
 // LocalFunctions/ReturnInsideLambda.kt
-package localfunctions
+import localfunctions.*
 import atomictest.eq
 
 fun main() {

@@ -1,5 +1,4 @@
 // NothingType/ListOfNothing.kt
-package nothingtype
 
 fun main() {
   val none: Nothing? = null

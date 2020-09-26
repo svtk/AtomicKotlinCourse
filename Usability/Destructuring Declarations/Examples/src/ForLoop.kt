@@ -1,5 +1,4 @@
 // Destructuring/ForLoop.kt
-package destructuring
 import atomictest.eq
 
 fun main() {

@@ -1,5 +1,5 @@
 // Destructuring/PairDestructuring.kt
-package destructuring
+import destructuring.compute
 import atomictest.eq
 
 fun main() {

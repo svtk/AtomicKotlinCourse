@@ -1,5 +1,4 @@
 // NonNullAssertions/NonNullAssertCall.kt
-package nonnullassertions
 import atomictest.eq
 
 fun main() {

@@ -1,5 +1,5 @@
 // MemberReferences/SortWith.kt
-package memberreferences1
+import memberreferences1.Message
 import atomictest.eq
 
 fun main() {

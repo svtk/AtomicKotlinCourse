@@ -1,5 +1,5 @@
 // DownCasting/IsKeyword.kt
-package downcasting
+import downcasting.*
 
 fun main() {
   val b1: Base = Derived1() // Upcast

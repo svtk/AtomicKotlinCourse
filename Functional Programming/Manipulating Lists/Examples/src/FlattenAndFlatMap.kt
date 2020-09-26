@@ -1,5 +1,4 @@
 // ManipulatingLists/FlattenAndFlatMap.kt
-package manipulatinglists
 import atomictest.eq
 
 fun main() {

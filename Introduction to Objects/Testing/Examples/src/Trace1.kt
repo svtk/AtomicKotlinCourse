@@ -1,5 +1,4 @@
 // Testing/Trace1.kt
-package testing
 import atomictest.*
 
 fun main() {

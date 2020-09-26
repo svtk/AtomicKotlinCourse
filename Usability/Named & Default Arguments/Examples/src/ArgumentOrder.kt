@@ -1,5 +1,4 @@
 // NamedAndDefaultArgs/ArgumentOrder.kt
-package namedanddefault
 import color1.color
 import atomictest.eq
 

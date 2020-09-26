@@ -1,5 +1,4 @@
 // UsingOperators/DestructuringMap.kt
-package usingoperators
 import atomictest.eq
 
 fun main() {

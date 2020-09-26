@@ -1,5 +1,4 @@
 // FoldingLists/FoldAndReduce.kt
-package foldinglists
 import atomictest.eq
 
 fun main() {

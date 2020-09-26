@@ -1,5 +1,4 @@
 // Summary2/MultipleListReferences.kt
-package summary2
 import atomictest.eq
 
 fun main() {

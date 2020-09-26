@@ -1,5 +1,4 @@
 // BreakAndContinue/WhileControl.kt
-package breakandcontinue
 import atomictest.eq
 
 fun main() {

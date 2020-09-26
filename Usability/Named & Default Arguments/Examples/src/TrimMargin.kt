@@ -1,5 +1,4 @@
 // NamedAndDefaultArgs/TrimMargin.kt
-package namedanddefault
 import atomictest.eq
 
 fun main() {

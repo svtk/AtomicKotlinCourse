@@ -1,5 +1,4 @@
 // ResourceCleanup/ForEachLine.kt
-package resourcecleanup
 import checkinstructions.DataFile
 import atomictest.*
 

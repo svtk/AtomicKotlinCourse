@@ -1,5 +1,4 @@
 // ResourceCleanup/UseLines.kt
-package resourcecleanup
 import atomictest.eq
 import checkinstructions.DataFile
 

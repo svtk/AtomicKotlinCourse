@@ -1,5 +1,4 @@
 // Destructuring/LoopWithIndex.kt
-package destructuring
 import atomictest.trace
 
 fun main() {

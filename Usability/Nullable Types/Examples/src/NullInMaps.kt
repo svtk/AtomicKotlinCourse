@@ -1,5 +1,4 @@
 // NullableTypes/NullInMaps.kt
-package nullabletypes
 import atomictest.eq
 
 fun main() {

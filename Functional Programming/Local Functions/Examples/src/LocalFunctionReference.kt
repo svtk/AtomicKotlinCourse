@@ -1,5 +1,4 @@
 // LocalFunctions/LocalFunctionReference.kt
-package localfunctions
 import localfunctions.*
 import atomictest.eq
 

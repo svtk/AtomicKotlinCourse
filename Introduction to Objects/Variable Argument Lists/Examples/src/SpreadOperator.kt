@@ -1,5 +1,5 @@
 // Varargs/SpreadOperator.kt
-package varargs
+import varargs.sum
 import atomictest.eq
 
 fun main() {

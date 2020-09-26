@@ -1,5 +1,4 @@
 // ImportanceOfLambdas/StoringLambda.kt
-package importanceoflambdas
 import atomictest.eq
 
 fun main() {

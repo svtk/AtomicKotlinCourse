@@ -1,5 +1,5 @@
 // Summary2/ArraySpread.kt
-package summary2
+import summary2.varargs
 
 fun main() {
   val array = intArrayOf(4, 5)      // [1]

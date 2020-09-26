@@ -1,5 +1,4 @@
 // Lambdas/JoinToString.kt
-package lambdas
 import atomictest.eq
 
 fun main() {

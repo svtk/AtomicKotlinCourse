@@ -1,5 +1,4 @@
 // LocalFunctions/LocalFunctions.kt
-package localfunctions
 
 fun main() {
   val logMsg = StringBuilder()
