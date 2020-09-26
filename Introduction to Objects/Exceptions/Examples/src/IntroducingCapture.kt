@@ -1,4 +1,5 @@
 // Exceptions/IntroducingCapture.kt
+package exceptions
 import atomictest.*
 
 fun main() {

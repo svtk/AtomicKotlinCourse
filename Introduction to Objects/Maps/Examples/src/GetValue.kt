@@ -1,4 +1,5 @@
 // Maps/GetValue.kt
+package maps
 import atomictest.*
 
 fun main() {

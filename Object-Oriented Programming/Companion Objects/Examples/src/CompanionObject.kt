@@ -1,4 +1,5 @@
 // CompanionObjects/CompanionObject.kt
+package companionobjects
 import atomictest.eq
 
 class WithCompanion {

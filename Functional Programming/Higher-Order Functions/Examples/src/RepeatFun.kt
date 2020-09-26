@@ -1,5 +1,5 @@
 // HigherOrderFunctions/RepeatFun.kt
-package definingrepeat
+package higherorderfunctions
 
 fun repeat(
   times: Int,

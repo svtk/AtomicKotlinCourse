@@ -1,4 +1,5 @@
 // UsingOperators/ReadOnlyAndPlus.kt
+package usingoperators
 import atomictest.eq
 
 fun main() {

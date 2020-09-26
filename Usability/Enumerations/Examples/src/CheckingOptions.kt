@@ -1,4 +1,5 @@
 // Enumerations/CheckingOptions.kt
+package enumerations
 import atomictest.eq
 import enumerations.Level
 import enumerations.Level.*

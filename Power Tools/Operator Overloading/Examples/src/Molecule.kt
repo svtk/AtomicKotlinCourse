@@ -1,4 +1,5 @@
 // OperatorOverloading/Molecule.kt
+package operatoroverloading
 import atomictest.eq
 
 data class Molecule(

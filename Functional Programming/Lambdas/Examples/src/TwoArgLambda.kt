@@ -1,4 +1,5 @@
 // Lambdas/TwoArgLambda.kt
+package lambdas
 import atomictest.eq
 
 fun main() {

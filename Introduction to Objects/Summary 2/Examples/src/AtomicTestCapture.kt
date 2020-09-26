@@ -1,4 +1,5 @@
 // Summary2/AtomicTestCapture.kt
+package summary2
 import atomictest.*
 
 fun main() {

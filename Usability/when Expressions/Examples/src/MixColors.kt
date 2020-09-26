@@ -1,4 +1,5 @@
 // WhenExpressions/MixColors.kt
+package whenexpressions
 import atomictest.eq
 
 fun mixColors(first: String, second: String) =

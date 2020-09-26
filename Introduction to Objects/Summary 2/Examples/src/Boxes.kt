@@ -1,4 +1,5 @@
 // Summary2/Boxes.kt
+package summary2
 
 private var count = 0                   // [1]
 

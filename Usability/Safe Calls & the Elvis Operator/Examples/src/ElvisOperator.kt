@@ -1,4 +1,5 @@
 // SafeCallsAndElvis/ElvisOperator.kt
+package safecalls
 import atomictest.eq
 
 fun main() {

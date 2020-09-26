@@ -3,7 +3,7 @@
 Define a `class Container<T>(iterable: Iterable<T>)` with a property `items`
 which is a `MutableList<T>`. Initialize `items` using `iterable` as its data
 source. Include a function `add(x: T)` that adds an element to `items`. Define
-a member function `selector()` which returns an object of an anonymous inner
+a member function `selector()` that returns an object of an anonymous inner
 class that implements:
 
 ```kotlin

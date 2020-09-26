@@ -1,4 +1,5 @@
 // NamedAndDefaultArgs/CreateString2.kt
+package namedanddefault
 import atomictest.eq
 
 fun main() {

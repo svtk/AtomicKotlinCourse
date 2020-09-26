@@ -1,5 +1,6 @@
 // NamedAndDefaultArgs/ArgumentOrder.kt
-package color1
+package namedanddefault
+import color1.color
 import atomictest.eq
 
 fun main() {

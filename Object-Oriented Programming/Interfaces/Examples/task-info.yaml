@@ -4,3 +4,9 @@ files:
   visible: true
 - name: src/PlayerInterface.kt
   visible: true
+- name: src/Hotness.kt
+  visible: true
+- name: src/SAM.kt
+  visible: true
+- name: src/SAMImplementation.kt
+  visible: true

@@ -1,4 +1,5 @@
 // HigherOrderFunctions/RepeatByInt.kt
+package higherorderfunctions
 
 fun main() {
   repeat(2) { println("hi!") }

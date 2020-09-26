@@ -1,4 +1,5 @@
 // OperatorOverloading/Swearing.kt
+package operatoroverloading
 import atomictest.eq
 
 infix fun String.`#!%`(s: String) =

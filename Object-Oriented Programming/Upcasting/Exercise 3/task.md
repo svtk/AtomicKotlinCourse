@@ -5,7 +5,7 @@ class to each different interface.
 
 The starter code contains three interfaces: `Fight` with a function `fight()`,
 `Swim` with a function `swim()`, and `Fly` with a function `fly()`, and a class
-`ActionCharacter` which has a `fight()` function that returns `"ActionCharacter
+`ActionCharacter` with a `fight()` function that returns `"ActionCharacter
 fight"`.
 
 Define a class `Hero` that combines `ActionCharacter`, `Fight`, `Swim` and
@@ -15,7 +15,7 @@ needed by the `Fight` interface. Define `swim()` to return `"Hero swim"` and
 
 Next, implement `tryFight(x: Fight)`, `trySwim(x: Swim)`, `tryFly(x: Fly)`,
 and `doAction(x: ActionCharacter)`, so that each function calls the member
-function available to its parameter and traces its result using the method `trace()`.
+function available to its parameter and displays its result on the console.
 
 In `main()`, make a `Hero` object and pass it to each of the functions
 `tryFight()`, `trySwim()`, `tryFly()`, and `doAction()`. Run `main()` to check

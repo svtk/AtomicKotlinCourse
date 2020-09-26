@@ -48,5 +48,5 @@ fun main() {
   [X, X, O, O, X, X, O, X]
   [O, X, X, O, O, O, X, O]
   [X, O, X, X, X, O, X, X]
-  """.trimIndent()
+  """
 }

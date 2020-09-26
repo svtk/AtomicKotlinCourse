@@ -1,4 +1,5 @@
 // LazyInitialization/LazyInt.kt
+package lazyinitialization
 import atomictest.*
 
 class LazyInt(val init: () -> Int) {

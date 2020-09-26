@@ -2,15 +2,23 @@ type: theory
 files:
 - name: src/Speakers.kt
   visible: true
-- name: src/BasicGenerics.kt
+- name: src/DefiningGenerics.kt
   visible: true
 - name: src/CarCrate.kt
   visible: true
 - name: src/Crate.kt
   visible: true
-- name: src/Constraints.kt
+- name: src/MapCrate.kt
   visible: true
-- name: src/GetAShape.kt
+- name: src/Disposable.kt
+  visible: true
+- name: src/Constrained.kt
+  visible: true
+- name: src/NonGenericConstraint.kt
+  visible: true
+- name: src/SameReturnType.kt
+  visible: true
+- name: src/Constraints.kt
   visible: true
 - name: src/ReificationA.kt
   visible: true
@@ -22,7 +30,15 @@ files:
   visible: true
 - name: src/CheckType.kt
   visible: true
+- name: src/Select.kt
+  visible: true
 - name: src/InAndOutCrates.kt
   visible: true
-- name: src/Variance.kt
+- name: src/GrapeSoda.kt
+  visible: true
+- name: src/CrateAssignment.kt
+  visible: true
+- name: src/OutCrateAssignment.kt
+  visible: true
+- name: src/InCrateAssignment.kt
   visible: true

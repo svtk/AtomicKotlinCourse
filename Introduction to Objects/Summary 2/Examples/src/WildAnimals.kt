@@ -1,4 +1,5 @@
 // Summary2/WildAnimals.kt
+package summary2
 import atomictest.eq
 
 class Badger(id: String, years: Int) {

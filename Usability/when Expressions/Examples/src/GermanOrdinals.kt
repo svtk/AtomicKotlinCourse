@@ -1,4 +1,5 @@
 // WhenExpressions/GermanOrdinals.kt
+package whenexpressions
 import atomictest.eq
 
 val numbers = mapOf(

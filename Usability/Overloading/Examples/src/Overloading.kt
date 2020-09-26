@@ -1,4 +1,5 @@
 // Overloading/Overloading.kt
+package overloading
 import atomictest.eq
 
 class Overloading {

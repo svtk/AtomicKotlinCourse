@@ -1,4 +1,5 @@
 // OperatorOverloading/StringInvoke.kt
+package operatoroverloading
 import atomictest.eq
 
 operator fun String.invoke(

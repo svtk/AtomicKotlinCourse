@@ -1,4 +1,5 @@
 // WhenExpressions/AnalyzeInput.kt
+package whenexpressions
 
 class Coordinates(var x: Int, var y: Int) {
   override fun toString(): String {

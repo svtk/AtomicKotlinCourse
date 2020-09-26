@@ -6,7 +6,7 @@ and `BeverageContainer3.kt`. `DecomposableBottle`'s recycling `String` is
 
 Notice the different experience between the two examples.
 
-> Solution 2
+> Solution 2a
 
 ```kotlin
 // TypeChecking/TypeCheckingSoln2a.kt
@@ -18,24 +18,24 @@ sealed class BeverageContainer {
   abstract fun pour(): String
 }
 
-sealed class Can: BeverageContainer() {
+sealed class Can : BeverageContainer() {
   override fun open() = "Pop Top"
   override fun pour() = "Can: Pour"
 }
 
-class SteelCan: Can()
-class AluminumCan: Can()
+class SteelCan : Can()
+class AluminumCan : Can()
 
-sealed class Bottle: BeverageContainer() {
+sealed class Bottle : BeverageContainer() {
   override fun open() = "Remove Cap"
   override fun pour() = "Bottle: Pour"
 }
 
-class GlassBottle: Bottle()
-sealed class PlasticBottle: Bottle()
-class PETBottle: PlasticBottle()
-class HDPEBottle: PlasticBottle()
-class DecomposableBottle: PlasticBottle()
+class GlassBottle : Bottle()
+sealed class PlasticBottle : Bottle()
+class PETBottle : PlasticBottle()
+class HDPEBottle : PlasticBottle()
+class DecomposableBottle : PlasticBottle()
 
 fun BeverageContainer.recycle2() =
   when(this) {
@@ -71,6 +71,8 @@ fun main() {
 }
 ```
 
+> Solution 2b
+
 ```kotlin
 // TypeChecking/TypeCheckingSoln2b.kt
 package typecheckingsoln2b
@@ -83,37 +85,37 @@ interface BeverageContainer {
   fun recycle(): String
 }
 
-abstract class Can: BeverageContainer {
+abstract class Can : BeverageContainer {
   override fun open() = "Pop Top"
 }
 
-class SteelCan: Can() {
+class SteelCan : Can() {
   override fun recycle() = "Recycle Steel"
 }
 
-class AluminumCan: Can() {
+class AluminumCan : Can() {
   override fun recycle() = "Recycle Aluminum"
 }
 
-abstract class Bottle: BeverageContainer {
+abstract class Bottle : BeverageContainer {
   override fun open() = "Remove Cap"
 }
 
-class GlassBottle: Bottle() {
+class GlassBottle : Bottle() {
   override fun recycle() = "Recycle Glass"
 }
 
-abstract class PlasticBottle: Bottle()
+abstract class PlasticBottle : Bottle()
 
-class PETBottle: PlasticBottle() {
+class PETBottle : PlasticBottle() {
   override fun recycle() = "Recycle PET"
 }
 
-class HDPEBottle: PlasticBottle() {
+class HDPEBottle : PlasticBottle() {
   override fun recycle() = "Recycle HDPE"
 }
 
-class DecomposableBottle: PlasticBottle() {
+class DecomposableBottle : PlasticBottle() {
   override fun recycle() = "Decomposition tank"
 }
 

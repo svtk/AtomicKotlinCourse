@@ -1,4 +1,5 @@
 // Summary2/JetPack.kt
+package summary2
 
 class JetPack(
   private var fuel: Double     // [1]
@@ -10,7 +11,6 @@ class JetPack(
       warning = true
     } else
       fuel -= 1
-
   public fun fly() = burn()    // [3]
   fun check() =                // [4]
     if (warning)               // [5]

@@ -1,4 +1,5 @@
 // NullableExtensions/NullableParameter.kt
+package nullableextensions
 import atomictest.eq
 
 fun isNullOrEmpty(s: String?): Boolean =

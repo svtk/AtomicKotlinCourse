@@ -1,4 +1,5 @@
 // Lambdas/OmittingParentheses.kt
+package lambdas
 import atomictest.eq
 
 fun main() {

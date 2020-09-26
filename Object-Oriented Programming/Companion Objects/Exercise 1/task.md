@@ -17,11 +17,11 @@ interface VendorFactory {
 }
 ```
 
-Create `Vendor1` and `Vendor2` which implement `Vendor`. The member functions
+Create `Vendor1` and `Vendor2` that implement `Vendor`. The member functions
 use `trace()` to report the `Vendor` class name and "pencil" or "pen". Each
 `Vendor` implementation also has a companion object with a `factory` property
 containing an anonymous inner class that implements `VendorFactory`.
 
-Now write a standalone function `consumer(factory: VendorFactory)` which uses
+Now write a standalone function `consumer(factory: VendorFactory)` that uses
 `factory` to create a `Vendor`. Use that `Vendor` to call `pencil()` and
 `pen()`. The starter code in `main()` will validate your solution.

@@ -1,4 +1,5 @@
 // Summary2/ColorSet.kt
+package summary2
 import atomictest.eq
 
 val colors =
@@ -8,19 +9,15 @@ val colors =
 fun main() {
   colors eq
     listOf("Blue", "Green", "Green", "Yellow")
-
   val colorSet = colors.toSet()        // [2]
   colorSet eq
     setOf("Yellow", "Green", "Blue")
-
   (colorSet + colorSet) eq colorSet    // [3]
-
   val mSet = colorSet.toMutableSet()   // [4]
   mSet -= "Blue"
   mSet += "Red"                        // [5]
   mSet eq
     setOf("Yellow", "Green", "Red")
-
   // Set membership:
   ("Green" in colorSet) eq true        // [6]
   colorSet.contains("Red") eq false

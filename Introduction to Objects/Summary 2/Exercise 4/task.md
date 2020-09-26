@@ -7,7 +7,7 @@ present in the `Dictionary`, `addTranslations()` throws an
 `IllegalArgumentException` with the message
 `"Dictionary already has translations for '$word'"`.
 
-`Dictionary` also contains a read-only `translations` property which is a `Map`
+`Dictionary` also contains a read-only `translations` property that is a `Map`
 of `List`s containing `String`s. The keys for the `Map` are also `String`s.
 
 <div class="hint">

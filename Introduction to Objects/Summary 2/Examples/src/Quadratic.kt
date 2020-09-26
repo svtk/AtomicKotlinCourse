@@ -1,4 +1,5 @@
 // Summary2/Quadratic.kt
+package summary2
 import kotlin.math.sqrt
 import atomictest.*
 

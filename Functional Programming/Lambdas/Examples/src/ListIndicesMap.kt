@@ -1,4 +1,5 @@
 // Lambdas/ListIndicesMap.kt
+package lambdas
 import atomictest.eq
 
 fun main() {

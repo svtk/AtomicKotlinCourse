@@ -1,4 +1,5 @@
 // PropertyAccessors/Default.kt
+package propertyaccessors
 
 class Default {
   var i: Int = 0

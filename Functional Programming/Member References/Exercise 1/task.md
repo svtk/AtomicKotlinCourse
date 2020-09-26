@@ -3,7 +3,7 @@
 The starter code includes a `data` class called `Pet` containing a `var String`
 property `name` and an `enum` property `habitat`. The `Habitat` enumeration can
 be `LAND`, `WATER` or `AMPHIBIOUS`, and it also contains a member function
-`livesIn(pet: Pet)` which tests to see whether a `pet` lives in a particular
+`livesIn(pet: Pet)` that tests to see whether `pet` lives in a particular
 `Habitat`.
 
 The `main()` starter code creates a `List<Pet>`. Using `filter()` together with

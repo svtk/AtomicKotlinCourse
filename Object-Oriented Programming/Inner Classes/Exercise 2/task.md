@@ -9,10 +9,10 @@ Create a `class Box(contains: String, label: String)`, with `inner` classes
 a `val`. Make two `private` references: `contents` and `destination`,
 initialized to instances of their associated `inner` classes.
 
-Now create a `private val x` which is initialized to an object of an anonymous
+Now create a `private val x` that is initialized to an object of an anonymous
 inner class. In this case, however, the base-class is `Any`. Include a member
-function `f()` which returns `"Any-based"`.
+function `f()` that returns `"Any-based"`.
 
-Add a member function `manifest()` which produces a `String` containing the
+Add a member function `manifest()` that produces a `String` containing the
 properties `contains` and `label` and the output of `f()`. The starter code in
 `main()` tests your solution.

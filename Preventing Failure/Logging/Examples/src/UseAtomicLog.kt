@@ -1,4 +1,5 @@
 // Logging/UseAtomicLog.kt
+package useatomiclog
 import atomiclog.Logger
 import atomictest.eq
 

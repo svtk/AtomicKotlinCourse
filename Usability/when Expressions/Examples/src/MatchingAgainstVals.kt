@@ -1,4 +1,5 @@
 // WhenExpressions/MatchingAgainstVals.kt
+package whenexpressions
 
 fun main() {
   val yes = "yes"

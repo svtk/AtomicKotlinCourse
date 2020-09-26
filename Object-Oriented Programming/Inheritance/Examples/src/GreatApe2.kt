@@ -8,15 +8,13 @@ open class GreatApe {
   open fun eat() {
     energy += 10
   }
-
   fun climb(x: Int) {
     energy -= x
   }
-
   fun energyLevel() = "Energy: $energy"
 }
 
-class Bonobo: GreatApe() {
+class Bonobo : GreatApe() {
   override fun call() = "Eep!"
   override fun eat() {
     // Modify the base-class var:
@@ -24,21 +22,18 @@ class Bonobo: GreatApe() {
     // Call the base-class version:
     super.eat()
   }
-
   // Add a function:
   fun run() = "Bonobo run"
 }
 
-class Chimpanzee: GreatApe() {
+class Chimpanzee : GreatApe() {
   // New property
   val additionalEnergy = 20
-
   override fun call() = "Yawp!"
   override fun eat() {
     energy += additionalEnergy
     super.eat()
   }
-
   // Add a function:
   fun jump() = "Chimp jump"
 }

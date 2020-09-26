@@ -1,4 +1,5 @@
 // OperationsOnCollections/TakeOrDrop.kt
+package operationsoncollections
 import atomictest.eq
 
 fun main() {

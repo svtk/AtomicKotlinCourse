@@ -1,4 +1,5 @@
 // Sequences/NumberSequence1.kt
+package sequences
 import atomictest.eq
 
 fun main() {

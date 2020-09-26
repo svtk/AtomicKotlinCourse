@@ -1,4 +1,5 @@
 // BreakAndContinue/Improved.kt
+package breakandcontinue
 import atomictest.eq
 
 fun main() {

@@ -3,7 +3,7 @@
 The starter code defines classes describing a dinner place setting:
 
 - `Plate`, and `DinnerPlate` inherit from `Plate`
-- `Utensil`, and then `Spoon`, `Fork` and `Knife` which all inherit from `Utensil`
+- `Utensil`, and then `Spoon`, `Fork` and `Knife` that all inherit from `Utensil`
 - `Custom` (as in "a cultural tradition")
 
 Inherit `PlaceSetting` from `Custom`. Inside `PlaceSetting`, create properties

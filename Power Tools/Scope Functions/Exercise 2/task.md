@@ -21,7 +21,6 @@ output.
 
 ```kotlin
 // ScopeFunctions/ScopeFuncSoln2.kt
-package scopefuncsoln2
 import classdelegation.SpaceShipControls
 import atomictest.*
 

@@ -1,4 +1,5 @@
 // Lists/MutableList.kt
+package lists
 import atomictest.eq
 
 fun main() {

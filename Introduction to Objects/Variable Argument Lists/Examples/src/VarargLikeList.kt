@@ -1,4 +1,5 @@
 // Varargs/VarargLikeList.kt
+package varargs
 
 fun evaluate(vararg ints: Int) {
   println("Size: ${ints.size}")

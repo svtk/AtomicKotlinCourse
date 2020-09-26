@@ -1,4 +1,5 @@
 // Varargs/VarargSum.kt
+package varargs
 import atomictest.eq
 
 fun sum(vararg numbers: Int): Int {

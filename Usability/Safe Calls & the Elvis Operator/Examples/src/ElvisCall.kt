@@ -1,5 +1,5 @@
 // SafeCallsAndElvis/ElvisCall.kt
-package elvisoperator
+package safecalls
 import atomictest.eq
 
 fun checkLength(s: String?, expected: Int) {

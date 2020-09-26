@@ -1,4 +1,5 @@
 // UsingOperators/DestructuringDuo.kt
+package usingoperators
 import atomictest.*
 
 class Duo(val x: Int, val y: Int) {

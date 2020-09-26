@@ -1,4 +1,5 @@
 // Lists/ListUsefulFunction.kt
+package lists
 import atomictest.eq
 
 fun main() {

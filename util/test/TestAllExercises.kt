@@ -9,10 +9,10 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#000 HelloWorld Exercise#1`() = testClass(helloWorldExercise1.TestHelloWorldExercise1::class)
 
   @Test
-  fun `test#001 HelloWorld Exercise#2`() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World!/Exercise 2/test/output.txt"){ helloWorldExercise2.main() }
+  fun `test#001 HelloWorld Exercise#2`() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World/Exercise 2/test/output.txt"){ helloWorldExercise2.main() }
 
   @Test
-  fun `test#002 HelloWorld Exercise#3`() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World!/Exercise 3/test/output.txt"){ helloWorldExercise3.main() }
+  fun `test#002 HelloWorld Exercise#3`() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World/Exercise 3/test/output.txt"){ helloWorldExercise3.main() }
 
   @Test
   fun `test#003 VarAndVal Exercise#1`() = testOutput("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 1/test/output.txt"){ varAndValExercise1.main() }
@@ -696,22 +696,22 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#229 NestedClasses Exercise#4`() = testClass(nestedClassesExercise4.TestNestedClassesExercise4::class)
 
   @Test
-  fun `test#230 InnerClasses Exercise#1`() = testClass(innerClassesExercise1.TestInnerClassesExercise1::class)
+  fun `test#230 Objects Exercise#1`() = testClass(objectsExercise1.TestObjectsExercise1::class)
 
   @Test
-  fun `test#231 InnerClasses Exercise#2`() = testClass(innerClassesExercise2.TestInnerClassesExercise2::class)
+  fun `test#231 Objects Exercise#2`() = testClass(objectsExercise2.TestObjectsExercise2::class)
 
   @Test
-  fun `test#232 InnerClasses Exercise#3`() = testClass(innerClassesExercise3.TestInnerClassesExercise3::class)
+  fun `test#232 Objects Exercise#3`() = testClass(objectsExercise3.TestObjectsExercise3::class)
 
   @Test
-  fun `test#233 Objects Exercise#1`() = testClass(objectsExercise1.TestObjectsExercise1::class)
+  fun `test#233 InnerClasses Exercise#1`() = testClass(innerClassesExercise1.TestInnerClassesExercise1::class)
 
   @Test
-  fun `test#234 Objects Exercise#2`() = testClass(objectsExercise2.TestObjectsExercise2::class)
+  fun `test#234 InnerClasses Exercise#2`() = testClass(innerClassesExercise2.TestInnerClassesExercise2::class)
 
   @Test
-  fun `test#235 Objects Exercise#3`() = testClass(objectsExercise3.TestObjectsExercise3::class)
+  fun `test#235 InnerClasses Exercise#3`() = testClass(innerClassesExercise3.TestInnerClassesExercise3::class)
 
   @Test
   fun `test#236 CompanionObjects Exercise#1`() = testClass(companionObjectsExercise1.TestCompanionObjectsExercise1::class)

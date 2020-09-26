@@ -1,4 +1,5 @@
 // OperationsOnCollections/ByOperations.kt
+package operationsoncollections
 import atomictest.eq
 
 data class Product(

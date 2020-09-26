@@ -1,4 +1,5 @@
 // HigherOrderFunctions/Any.kt
+package higherorderfunctions
 import atomictest.eq
 
 fun <T> List<T>.any(                    // [1]

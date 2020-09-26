@@ -1,10 +1,13 @@
 // UsingOperators/OperatorPlus.kt
+package usingoperators
 import atomictest.eq
 
 fun main() {
   val mutableList = mutableListOf(1, 2, 3)
   mutableList += 4  // operator plusAssign()
   mutableList.plusAssign(5) // Explicit
+  mutableList eq "[1, 2, 3, 4, 5]"
+  mutableList + 99 eq "[1, 2, 3, 4, 5, 99]"
   mutableList eq "[1, 2, 3, 4, 5]"
   val list = listOf(1)  // Read-only
   val newList = list + 2  // operator plus()

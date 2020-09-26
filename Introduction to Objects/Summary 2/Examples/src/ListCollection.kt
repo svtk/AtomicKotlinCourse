@@ -1,4 +1,5 @@
 // Summary2/ListCollection.kt
+package summary2
 import atomictest.eq
 
 fun main() {

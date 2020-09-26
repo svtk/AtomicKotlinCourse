@@ -1,4 +1,5 @@
 // Varargs/TwoFunctionsWithVarargs.kt
+package varargs
 
 fun first(vararg numbers: Int) {
   for (i in numbers) {

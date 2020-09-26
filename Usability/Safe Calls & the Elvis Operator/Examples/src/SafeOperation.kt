@@ -1,4 +1,5 @@
 // SafeCallsAndElvis/SafeOperation.kt
+package safecalls
 
 fun String.echo() {
   println(this.toUpperCase())

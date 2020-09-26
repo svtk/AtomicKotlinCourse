@@ -2,14 +2,13 @@
 
 The starter code contains implementations of `Stack` and `Queue` classes.
 
-`Stack` provides a last-in-first-out access to elements. You can add ("push") 
-new elements to it, and get ("pop") the last one which was added.
+`Stack` provides a last-in-first-out access to elements. You can add ("push")
+new elements to it, and get ("pop") the last one that was added.
 
 `Queue` provides a first-in-first-out access to elements. You can add new
-elements to it, and get ("poll") returns you the first one which was added.
+elements to it, and get ("poll") returns you the first one that was added.
 
-In the starter code, both `Stack` and `Queue` extend `ArrayList`, which
-opens too many methods in public API (for example, you can get the first element
-in `Stack` which contradicts its design).
-
-Use composition instead of inheritance to implement `Stack` and `Queue`.
+In the starter code, both `Stack` and `Queue` extend `ArrayList`, which opens
+too many methods in the public API (for example, you can get the first element
+in `Stack`, which contradicts its design). Use composition instead of
+inheritance to implement `Stack` and `Queue`.

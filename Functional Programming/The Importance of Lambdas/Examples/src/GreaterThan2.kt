@@ -1,4 +1,5 @@
 // ImportanceOfLambdas/GreaterThan2.kt
+package importanceoflambdas
 import atomictest.eq
 
 fun greaterThan2(nums: List<Int>): List<Int> {

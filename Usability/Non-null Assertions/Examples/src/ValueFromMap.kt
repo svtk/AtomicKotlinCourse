@@ -1,4 +1,5 @@
 // NonNullAssertions/ValueFromMap.kt
+package nonnullassertions
 import atomictest.*
 
 fun main() {

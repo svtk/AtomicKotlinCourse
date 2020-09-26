@@ -10,7 +10,7 @@ class ButtonImage(
   val width: Int,
   val height: Int
 ): Rectangle {
-  override fun paint() =
+  override fun paint() = 
     "painting ButtonImage($width, $height)"
 }
 
@@ -19,7 +19,7 @@ interface MouseManager {
   fun hovering(): Boolean
 }
 
-class UserInput: MouseManager {
+class UserInput : MouseManager {
   override fun clicked() = true
   override fun hovering() = true
 }
@@ -27,7 +27,7 @@ class UserInput: MouseManager {
 // Even if we make the classes open, we
 // get an error because only one class may
 // appear in a supertype list:
-// class Button: ButtonImage(), UserInput()
+// class Button : ButtonImage(), UserInput()
 
 class Button(
   val width: Int,
@@ -43,4 +43,7 @@ fun main() {
     "painting ButtonImage(10, 5)"
   button.clicked() eq true
   button.hovering() eq true
+  // Can upcast to both delegated types:
+  val rectangle: Rectangle = button
+  val mouseManager: MouseManager = button
 }

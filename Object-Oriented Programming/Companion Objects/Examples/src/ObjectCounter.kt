@@ -1,4 +1,5 @@
 // CompanionObjects/ObjectCounter.kt
+package companionobjects
 import atomictest.eq
 
 class Counted {

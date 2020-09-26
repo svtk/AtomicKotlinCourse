@@ -1,12 +1,33 @@
 // CreatingGenerics/Constraints.kt
 package creatinggenerics
+import kotlin.random.Random
 
-fun <T> f(h: Crate<T>, t: T): T {
-  h.add(t)
-  return h.get()
+private val rnd = Random(47)
+
+// Accesses action() but can't return
+// the exact type:
+fun List<Disposable>.inexact(): Disposable {
+  val d: Disposable = this[rnd.nextInt(size)]
+  d.action()
+  return d
 }
 
-fun <T, U: T> g(h: Crate<T>, u: U): T {
-  h.add(u)
-  return h.get()
+// Can't access action() without a constraint:
+fun <T> List<T>.noAccess(): T {
+  val d: T = this[rnd.nextInt(size)]
+  // d.action()
+  return d
+}
+
+// Access action() and return the exact type:
+fun <T: Disposable> List<T>.both(): T {
+  val d: T = this[rnd.nextInt(size)]
+  d.action()
+  return d
+}
+
+fun constraints() {
+  val i: Disposable = recyclables.inexact()
+  val n: Recyclable = recyclables.noAccess()
+  val b: Recyclable = recyclables.both()
 }

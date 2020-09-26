@@ -1,7 +1,6 @@
 // ExtensionFunctions/StrangeQuote.kt
+package extensionfunctions
 import atomictest.eq
-import quoting.singleQuote
-import quoting.doubleQuote
 
 // Apply two sets of single quotes:
 fun String.strangeQuote() =

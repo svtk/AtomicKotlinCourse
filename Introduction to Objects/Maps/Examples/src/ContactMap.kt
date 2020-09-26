@@ -1,4 +1,5 @@
 // Maps/ContactMap.kt
+package maps
 import atomictest.eq
 
 class Contact(

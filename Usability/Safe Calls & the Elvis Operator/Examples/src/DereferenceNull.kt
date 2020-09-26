@@ -1,7 +1,8 @@
 // SafeCallsAndElvis/DereferenceNull.kt
+package safecalls
 
 fun main() {
   val s: String? = null
-  // Won't compile:
+  // Doesn't compile:
   // s.length        // [1]
 }

@@ -1,4 +1,5 @@
 // CompanionObjects/NamingCompanionObjects.kt
+package companionobjects
 import atomictest.eq
 
 class WithNamed {

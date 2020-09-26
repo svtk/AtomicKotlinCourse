@@ -1,8 +1,8 @@
 // ExtensionFunctions/Quote.kt
 package other
 import atomictest.eq
-import quoting.doubleQuote
-import quoting.singleQuote
+import extensionfunctions.doubleQuote
+import extensionfunctions.singleQuote
 
 fun main() {
   "Single".singleQuote() eq "'Single'"

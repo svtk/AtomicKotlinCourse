@@ -1,4 +1,5 @@
 // Testing/TestingExample.kt
+package testing
 import atomictest.*
 
 fun main() {

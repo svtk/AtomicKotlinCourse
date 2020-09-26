@@ -1,4 +1,5 @@
 // ExtensionFunctions/BookExtensions.kt
+package extensionfunctions
 import atomictest.eq
 
 class Book(val title: String)

@@ -1,4 +1,5 @@
 // DataClasses/Simple.kt
+package dataclasses
 import atomictest.eq
 
 data class Simple(

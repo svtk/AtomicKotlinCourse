@@ -1,4 +1,5 @@
 // Varargs/VariableArgList.kt
+package varargs
 
 fun v(s: String, vararg d: Double) {}
 

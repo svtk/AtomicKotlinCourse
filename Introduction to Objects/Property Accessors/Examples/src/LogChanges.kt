@@ -1,4 +1,5 @@
 // PropertyAccessors/LogChanges.kt
+package propertyaccessors
 import atomictest.eq
 
 class LogChanges {

@@ -1,5 +1,5 @@
 // Sequences/EagerVsLazyEvaluation.kt
-package creatingsequences
+package sequences
 import atomictest.*
 
 fun Int.isEven(): Boolean {

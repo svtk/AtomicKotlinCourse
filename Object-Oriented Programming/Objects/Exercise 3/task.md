@@ -13,7 +13,7 @@ interface AdventureGame {
 ```
 
 Define a class `Jungle` which is an `Environment`, and classes `Monkey` and
-`Snake` which are each `Character`s. Within each class, place an `object
+`Snake` that are each `Character`s. Within each class, place an `object
 Factory` with a `create()` function. Give `Monkey` and `Snake` a `toString()`
 that returns their class name.
 

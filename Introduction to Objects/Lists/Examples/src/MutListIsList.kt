@@ -1,4 +1,5 @@
 // Lists/MutListIsList.kt
+package lists
 import atomictest.eq
 
 fun getList(): List<Int> {

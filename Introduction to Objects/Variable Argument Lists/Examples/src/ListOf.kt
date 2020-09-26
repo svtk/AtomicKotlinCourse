@@ -1,4 +1,5 @@
 // Varargs/ListOf.kt
+package varargs
 import atomictest.eq
 
 fun main() {

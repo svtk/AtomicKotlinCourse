@@ -1,4 +1,5 @@
 // Summary2/VarArgs.kt
+package summary2
 
 fun varargs(s: String, vararg ints: Int) {
   for (i in ints) {

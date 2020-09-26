@@ -1,4 +1,5 @@
 // Lists/ParameterizedReturn.kt
+package lists
 import atomictest.eq
 
 // Return type is inferred:

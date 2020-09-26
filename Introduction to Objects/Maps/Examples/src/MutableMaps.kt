@@ -1,4 +1,5 @@
 // Maps/MutableMaps.kt
+package maps
 import atomictest.eq
 
 fun main() {

@@ -1,5 +1,5 @@
 // ExtensionFunctions/Quoting.kt
-package quoting
+package extensionfunctions
 import atomictest.eq
 
 fun String.singleQuote() = "'$this'"

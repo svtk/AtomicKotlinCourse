@@ -1,4 +1,5 @@
 // OperationsOnCollections/PairOfLists.kt
+package operationsoncollections
 import atomictest.eq
 
 fun createPair() = Pair(1, "one")
