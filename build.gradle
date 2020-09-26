@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.4.0-rc'
+    ext.kotlin_version = '1.4.0'
     repositories {
         mavenCentral()
     }
@@ -21,7 +21,6 @@ allprojects {
     apply plugin: 'kotlin'
     repositories {
         jcenter()
-        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
     }
     dependencies {
         compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
@@ -33,19 +32,9 @@ allprojects {
         compile "org.jetbrains.kotlin:kotlin-test-junit5"
         compile "org.junit.jupiter:junit-jupiter:$junit_version"
 
-        // coroutines
-        def coroutines_version = '1.2.1'
-        compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
-        compile "org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:$coroutines_version"
-
         // Logging support for samples:
         compile 'io.github.microutils:kotlin-logging:1.6.24'
         compile 'org.slf4j:slf4j-simple:1.8.0-beta4'
-
-        // Zircon
-        implementation "org.jetbrains.kotlinx:kotlinx-collections-immutable-jvm:0.3"
-        implementation "org.hexworks.zircon:zircon.core-jvm:2020.0.2-PREVIEW"
-        implementation "org.hexworks.zircon:zircon.jvm.swing:2020.0.2-PREVIEW"
     }
     compileKotlin.destinationDir = compileJava.destinationDir
     compileKotlin {
