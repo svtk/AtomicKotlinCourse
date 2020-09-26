@@ -2,7 +2,7 @@ package classDelegationExercise1
 import atomictest.eq
 
 interface Rectangle {
-  fun paint(): Int
+  fun paint(): String
   fun resize(scale: Int): Int
 }
 
@@ -10,7 +10,8 @@ class ButtonImage(
   val width: Int,
   val height: Int
 ) : Rectangle {
-  override fun paint() = width * height
+  override fun paint() =
+    "painting ButtonImage($width, $height)"
   override fun resize(scale: Int) = scale
 }
 
@@ -36,7 +37,8 @@ class Button(
 
 fun main() {
   val button = Button(10, 5)
-  button.paint() eq 50
+  button.paint() eq
+    "painting ButtonImage(10, 5)"
   button.clicked() eq true
   button.hovering() eq true
   button.resize(10) eq 10
