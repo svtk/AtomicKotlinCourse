@@ -40,7 +40,7 @@ class TestSummaryIIExercise4 {
       }
       val code = buildString {
         for ((key, values) in expected) {
-          appendln("addTranslations(\"$key\", \"${values.joinToString(" ")}\")")
+          appendLine("addTranslations(\"$key\", \"${values.joinToString(" ")}\")")
         }
       }
 

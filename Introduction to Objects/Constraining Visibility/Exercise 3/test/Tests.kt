@@ -16,25 +16,25 @@ class TestConstrainingVisibilityExercise3 {
 
     fun goRight(steps: Int) {
       robot.right(steps)
-      loggedMovements.appendln("right($steps)")
+      loggedMovements.appendLine("right($steps)")
       loggedSteps = steps
     }
 
     fun goLeft(steps: Int) {
       robot.left(steps)
-      loggedMovements.appendln("left($steps)")
+      loggedMovements.appendLine("left($steps)")
       loggedSteps = steps
     }
 
     fun goDown(steps: Int) {
       robot.down(steps)
-      loggedMovements.appendln("down($steps)")
+      loggedMovements.appendLine("down($steps)")
       loggedSteps = steps
     }
 
     fun goUp(steps: Int) {
       robot.up(steps)
-      loggedMovements.appendln("up($steps)")
+      loggedMovements.appendLine("up($steps)")
       loggedSteps = steps
     }
   }

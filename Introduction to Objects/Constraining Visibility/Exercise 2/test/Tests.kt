@@ -20,10 +20,10 @@ class TestConstrainingVisibilityExercise2 {
     val properties = getters.map { it.substringAfter("get").decapitalize() }
     val message = buildString {
       properties.forEach {
-        appendln("The property '$it' should be private")
+        appendLine("The property '$it' should be private")
       }
       methods.forEach {
-        appendln("The member function '$it' should be private")
+        appendLine("The member function '$it' should be private")
       }
     }
     Assert.assertTrue(message, otherMethods.isEmpty())

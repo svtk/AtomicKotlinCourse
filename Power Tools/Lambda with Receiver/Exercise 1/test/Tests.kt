@@ -12,7 +12,7 @@ class TestLambdaWithReceiverExercise1 {
     Assert.assertEquals("Wrong result for width = $width:",
       buildString {
         repeat(width) {
-          appendln("*".repeat(width))
+          appendLine("*".repeat(width))
         }
       }.trim(),
       drawSquare(width))

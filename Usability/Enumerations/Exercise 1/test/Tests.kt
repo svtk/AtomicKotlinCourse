@@ -15,24 +15,24 @@ class TestEnumerationsExercise1 {
 
     fun goRight(steps: Int) {
       robot.go(RIGHT, steps)
-      loggedMovements.appendln("goRight($steps)")
+      loggedMovements.appendLine("goRight($steps)")
     }
 
     fun goLeft(steps: Int) {
       robot.go(LEFT, steps)
-      loggedMovements.appendln("goLeft($steps)")
+      loggedMovements.appendLine("goLeft($steps)")
 
     }
 
     fun goDown(steps: Int) {
       robot.go(DOWN, steps)
-      loggedMovements.appendln("goDown($steps)")
+      loggedMovements.appendLine("goDown($steps)")
 
     }
 
     fun goUp(steps: Int) {
       robot.go(UP, steps)
-      loggedMovements.appendln("goUp($steps)")
+      loggedMovements.appendLine("goUp($steps)")
     }
   }
 

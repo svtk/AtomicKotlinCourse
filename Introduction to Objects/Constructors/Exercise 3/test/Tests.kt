@@ -14,24 +14,24 @@ class TestConstructorsExercise3 {
 
     fun goRight(steps: Int) {
       robot.goRight(steps)
-      loggedMovements.appendln("right($steps)")
+      loggedMovements.appendLine("right($steps)")
     }
 
     fun goLeft(steps: Int) {
       robot.goLeft(steps)
-      loggedMovements.appendln("left($steps)")
+      loggedMovements.appendLine("left($steps)")
 
     }
 
     fun goDown(steps: Int) {
       robot.goDown(steps)
-      loggedMovements.appendln("down($steps)")
+      loggedMovements.appendLine("down($steps)")
 
     }
 
     fun goUp(steps: Int) {
       robot.goUp(steps)
-      loggedMovements.appendln("up($steps)")
+      loggedMovements.appendLine("up($steps)")
     }
   }
 

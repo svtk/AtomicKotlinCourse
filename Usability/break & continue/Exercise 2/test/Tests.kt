@@ -16,7 +16,7 @@ class TestBreakAndContinueExercise2 {
     for (list in strings) {
       for (string in list) {
         if (string == "stop") break
-        appendln(string)
+        appendLine(string)
       }
     }
   }

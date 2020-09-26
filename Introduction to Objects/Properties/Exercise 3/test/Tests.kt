@@ -14,24 +14,24 @@ class TestPropertiesExercise3 {
 
     fun goRight(steps: Int) {
       robot.right(steps)
-      loggedMovements.appendln("goRight($steps)")
+      loggedMovements.appendLine("goRight($steps)")
     }
 
     fun goLeft(steps: Int) {
       robot.left(steps)
-      loggedMovements.appendln("goLeft($steps)")
+      loggedMovements.appendLine("goLeft($steps)")
 
     }
 
     fun goDown(steps: Int) {
       robot.down(steps)
-      loggedMovements.appendln("goDown($steps)")
+      loggedMovements.appendLine("goDown($steps)")
 
     }
 
     fun goUp(steps: Int) {
       robot.up(steps)
-      loggedMovements.appendln("goUp($steps)")
+      loggedMovements.appendLine("goUp($steps)")
     }
   }
 

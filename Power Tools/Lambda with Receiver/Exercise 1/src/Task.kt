@@ -4,7 +4,7 @@ import atomictest.eq
 
 fun drawSquare(width: Int) = buildString {
   repeat(width) {
-    appendln("*".repeat(width))
+    appendLine("*".repeat(width))
   }
 }.trim()
 

@@ -11,7 +11,7 @@ import util.runAndCheckSystemOutput
 class TestRecursionExercise1 {
   private fun expectedOutput(group: String, n: Int) = buildString {
     (n downTo 0).forEach {
-      appendln("Simulation: $group Reality: $it")
+      appendLine("Simulation: $group Reality: $it")
     }
   }
 
