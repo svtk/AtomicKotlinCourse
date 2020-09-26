@@ -71,7 +71,7 @@ class TestClassDelegationExercise1 {
           buttonImageClass.createInstance(10, 5),
           userInputClass.createInstance()
       )
-      assertEquals(50, assertMemberFunction("paint").call(button))
+      assertEquals("painting ButtonImage(10, 5)", assertMemberFunction("paint").call(button))
       assertEquals(true, assertMemberFunction("clicked").call(button))
       assertEquals(true, assertMemberFunction("hovering").call(button))
       assertEquals(10, assertMemberFunction("resize").call(button, 10))
