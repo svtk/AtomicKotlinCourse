@@ -10,7 +10,7 @@ class ButtonImage(
   val width: Int,
   val height: Int
 ): Rectangle {
-  override fun paint() = 
+  override fun paint() =
     "painting ButtonImage($width, $height)"
 }
 

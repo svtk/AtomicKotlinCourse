@@ -12,8 +12,8 @@ fun main() {
   capture {
     testFortyTwo2(43)
   } contains
-    listOf("expected:", "<43> " +
-      "but was:", "<42>")
+    listOf("expected:",
+      "<43> but was:", "<42>")
   assertFails { testFortyTwo2(43) }
   capture {
     assertFails { testFortyTwo2() }
