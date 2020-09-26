@@ -6,5 +6,14 @@ files:
   - offset: 101
     length: 27
     placeholder_text: // TODO
+  - offset: 274
+    length: 39
+    placeholder_text: // TODO
+  - offset: 526
+    length: 34
+    placeholder_text: // TODO
+  - offset: 912
+    length: 55
+    placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false
