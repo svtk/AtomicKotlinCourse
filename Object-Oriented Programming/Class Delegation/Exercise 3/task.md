@@ -1,26 +1,10 @@
 ## Class Delegation (#3)
 
 What happens when you delegate to two interfaces that have one or more
-functions or fields in common? Start with two interfaces:
+members in common? The started code contains two interfaces `A` and `B`
+that both have `foo()` member function. 
 
-```kotlin
-interface A {
-  val x: Int
-  val z: Int
-  fun u()
-  fun v()
-}
-
-interface B {
-  val y: Int
-  val z: Int
-  fun v()
-  fun w()
-}
-```
-
-Create a class `AA` that implements `A`, producing the value `1` for `x` and
-`z`, and tracing `"AA.u()"` for `u()` and `"AA.v()"` for `v()`. Create a
-similar implementation `BB` implementing `B`. Now create a class `Delegation`
-which delegates to both `A` and `B`. IntelliJ or the compiler will guide you in
-resolving the collisions.
+Create a class `AImpl` that implements `A`, that traces `"A.foo()"` for `foo()`
+and `"A.bar()"` for `bar()`. Create a similar implementation `BImpl`
+implementing `B`. Now create a class `Delegation` which delegates to both `A`
+and `B`. IntelliJ or the compiler will guide you in resolving the collisions.
