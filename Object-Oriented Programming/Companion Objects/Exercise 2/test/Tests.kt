@@ -5,7 +5,6 @@ import util.unimplementedTest
 
 class TestCompanionObjectsExercise2 {
     @Test fun testSolution() {
-        //TODO: implement your test here
         unimplementedTest()
     }
 }
