@@ -82,6 +82,7 @@ class CapturedException(
       println("Expected parts: $messageParts")
     }
   }
+  override fun toString() = fullMessage
 }
 
 /**

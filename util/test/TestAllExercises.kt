@@ -723,11 +723,137 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#238 CompanionObjects Exercise#3`() = testClass(companionObjectsExercise3.TestCompanionObjectsExercise3::class)
 
   @Test
-  fun `test#239 ScopeFunctions Exercise#1`() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
+  fun `test#239 ExceptionHandling Exercise#1`() = testClass(exceptionHandlingExercise1.TestExceptionHandlingExercise1::class)
 
   @Test
-  fun `test#240 ScopeFunctions Exercise#2`() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
+  fun `test#240 ExceptionHandling Exercise#2`() = testClass(exceptionHandlingExercise2.TestExceptionHandlingExercise2::class)
 
   @Test
-  fun `test#241 ScopeFunctions Exercise#3`() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
+  fun `test#241 ExceptionHandling Exercise#3`() = testClass(exceptionHandlingExercise3.TestExceptionHandlingExercise3::class)
+
+  @Test
+  fun `test#242 CheckInstructions Exercise#1`() = testClass(checkInstructionsExercise1.TestCheckInstructionsExercise1::class)
+
+  @Test
+  fun `test#243 CheckInstructions Exercise#2`() = testClass(checkInstructionsExercise2.TestCheckInstructionsExercise2::class)
+
+  @Test
+  fun `test#244 CheckInstructions Exercise#3`() = testClass(checkInstructionsExercise3.TestCheckInstructionsExercise3::class)
+
+  @Test
+  fun `test#245 TheNothingType Exercise#1`() = testClass(theNothingTypeExercise1.TestTheNothingTypeExercise1::class)
+
+  @Test
+  fun `test#246 TheNothingType Exercise#2`() = testClass(theNothingTypeExercise2.TestTheNothingTypeExercise2::class)
+
+  @Test
+  fun `test#247 TheNothingType Exercise#3`() = testClass(theNothingTypeExercise3.TestTheNothingTypeExercise3::class)
+
+  @Test
+  fun `test#248 ResourceCleanup Exercise#1`() = testClass(resourceCleanupExercise1.TestResourceCleanupExercise1::class)
+
+  @Test
+  fun `test#249 ResourceCleanup Exercise#2`() = testClass(resourceCleanupExercise2.TestResourceCleanupExercise2::class)
+
+  @Test
+  fun `test#250 ResourceCleanup Exercise#3`() = testClass(resourceCleanupExercise3.TestResourceCleanupExercise3::class)
+
+  @Test
+  fun `test#251 Logging Exercise#1`() = testClass(loggingExercise1.TestLoggingExercise1::class)
+
+  @Test
+  fun `test#252 Logging Exercise#2`() = testClass(loggingExercise2.TestLoggingExercise2::class)
+
+  @Test
+  fun `test#253 Logging Exercise#3`() = testClass(loggingExercise3.TestLoggingExercise3::class)
+
+  @Test
+  fun `test#254 UnitTesting Exercise#1`() = testClass(unitTestingExercise1.TestUnitTestingExercise1::class)
+
+  @Test
+  fun `test#255 UnitTesting Exercise#2`() = testClass(unitTestingExercise2.TestUnitTestingExercise2::class)
+
+  @Test
+  fun `test#256 UnitTesting Exercise#3`() = testClass(unitTestingExercise3.TestUnitTestingExercise3::class)
+
+  @Test
+  fun `test#257 ScopeFunctions Exercise#1`() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
+
+  @Test
+  fun `test#258 ScopeFunctions Exercise#2`() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
+
+  @Test
+  fun `test#259 ScopeFunctions Exercise#3`() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
+
+  @Test
+  fun `test#260 ExtensionLambdas Exercise#1`() = testClass(extensionLambdasExercise1.TestExtensionLambdasExercise1::class)
+
+  @Test
+  fun `test#261 ExtensionLambdas Exercise#2`() = testClass(extensionLambdasExercise2.TestExtensionLambdasExercise2::class)
+
+  @Test
+  fun `test#262 ExtensionLambdas Exercise#3`() = testClass(extensionLambdasExercise3.TestExtensionLambdasExercise3::class)
+
+  @Test
+  fun `test#263 CreatingGenerics Exercise#1`() = testClass(creatingGenericsExercise1.TestCreatingGenericsExercise1::class)
+
+  @Test
+  fun `test#264 CreatingGenerics Exercise#2`() = testClass(creatingGenericsExercise2.TestCreatingGenericsExercise2::class)
+
+  @Test
+  fun `test#265 CreatingGenerics Exercise#3`() = testClass(creatingGenericsExercise3.TestCreatingGenericsExercise3::class)
+
+  @Test
+  fun `test#266 OperatorOverloading Exercise#1`() = testClass(operatorOverloadingExercise1.TestOperatorOverloadingExercise1::class)
+
+  @Test
+  fun `test#267 OperatorOverloading Exercise#2`() = testClass(operatorOverloadingExercise2.TestOperatorOverloadingExercise2::class)
+
+  @Test
+  fun `test#268 OperatorOverloading Exercise#3`() = testClass(operatorOverloadingExercise3.TestOperatorOverloadingExercise3::class)
+
+  @Test
+  fun `test#269 UsingOperators Exercise#1`() = testClass(usingOperatorsExercise1.TestUsingOperatorsExercise1::class)
+
+  @Test
+  fun `test#270 UsingOperators Exercise#2`() = testClass(usingOperatorsExercise2.TestUsingOperatorsExercise2::class)
+
+  @Test
+  fun `test#271 UsingOperators Exercise#3`() = testClass(usingOperatorsExercise3.TestUsingOperatorsExercise3::class)
+
+  @Test
+  fun `test#272 PropertyDelegation Exercise#1`() = testClass(propertyDelegationExercise1.TestPropertyDelegationExercise1::class)
+
+  @Test
+  fun `test#273 PropertyDelegation Exercise#2`() = testClass(propertyDelegationExercise2.TestPropertyDelegationExercise2::class)
+
+  @Test
+  fun `test#274 PropertyDelegation Exercise#3`() = testClass(propertyDelegationExercise3.TestPropertyDelegationExercise3::class)
+
+  @Test
+  fun `test#275 PropertyDelegation Exercise#4`() = testClass(propertyDelegationExercise4.TestPropertyDelegationExercise4::class)
+
+  @Test
+  fun `test#276 PropertyDelegationTools Exercise#1`() = testClass(propertyDelegationToolsExercise1.TestPropertyDelegationToolsExercise1::class)
+
+  @Test
+  fun `test#277 PropertyDelegationTools Exercise#2`() = testClass(propertyDelegationToolsExercise2.TestPropertyDelegationToolsExercise2::class)
+
+  @Test
+  fun `test#278 PropertyDelegationTools Exercise#3`() = testClass(propertyDelegationToolsExercise3.TestPropertyDelegationToolsExercise3::class)
+
+  @Test
+  fun `test#279 LazyInitialization Exercise#1`() = testClass(lazyInitializationExercise1.TestLazyInitializationExercise1::class)
+
+  @Test
+  fun `test#280 LazyInitialization Exercise#2`() = testClass(lazyInitializationExercise2.TestLazyInitializationExercise2::class)
+
+  @Test
+  fun `test#281 LazyInitialization Exercise#3`() = testClass(lazyInitializationExercise3.TestLazyInitializationExercise3::class)
+
+  @Test
+  fun `test#282 LateInitialization Exercise#1`() = testClass(lateInitializationExercise1.TestLateInitializationExercise1::class)
+
+  @Test
+  fun `test#283 LateInitialization Exercise#2`() = testClass(lateInitializationExercise2.TestLateInitializationExercise2::class)
 }

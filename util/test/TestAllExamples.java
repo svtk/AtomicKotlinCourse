@@ -3768,16 +3768,211 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask251() {
-        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 1/src/Task.kt", scopeFunctionsExercise1.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Exercise 1/src/Task.kt", exceptionHandlingExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask252() {
-        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 2/src/Task.kt", scopeFunctionsExercise2.TaskKt::main);
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Exercise 2/src/Task.kt", exceptionHandlingExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask253() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Exception Handling/Exercise 3/src/Task.kt", exceptionHandlingExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask254() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Exercise 1/src/Task.kt", checkInstructionsExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask255() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Exercise 2/src/Task.kt", checkInstructionsExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask256() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Check Instructions/Exercise 3/src/Task.kt", checkInstructionsExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask257() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/The Nothing Type/Exercise 1/src/Task.kt", theNothingTypeExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask258() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/The Nothing Type/Exercise 2/src/Task.kt", theNothingTypeExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask259() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/The Nothing Type/Exercise 3/src/Task.kt", theNothingTypeExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask260() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Exercise 1/src/Task.kt", resourceCleanupExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask261() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Exercise 2/src/Task.kt", resourceCleanupExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask262() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Resource Cleanup/Exercise 3/src/Task.kt", resourceCleanupExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask263() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Exercise 1/src/Task.kt", loggingExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask264() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Exercise 2/src/Task.kt", loggingExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask265() {
+        testExample("../AtomicKotlinCourse/Preventing Failure/Logging/Exercise 3/src/Task.kt", loggingExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask266() {
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 1/src/Task.kt", scopeFunctionsExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask267() {
+        testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 2/src/Task.kt", scopeFunctionsExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask268() {
         testExample("../AtomicKotlinCourse/Power Tools/Scope Functions/Exercise 3/src/Task.kt", scopeFunctionsExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask269() {
+        testExample("../AtomicKotlinCourse/Power Tools/Extension Lambdas/Exercise 1/src/Task.kt", extensionLambdasExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask270() {
+        testExample("../AtomicKotlinCourse/Power Tools/Extension Lambdas/Exercise 2/src/Task.kt", extensionLambdasExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask271() {
+        testExample("../AtomicKotlinCourse/Power Tools/Extension Lambdas/Exercise 3/src/Task.kt", extensionLambdasExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask272() {
+        testExample("../AtomicKotlinCourse/Power Tools/Creating Generics/Exercise 1/src/Task.kt", creatingGenericsExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask273() {
+        testExample("../AtomicKotlinCourse/Power Tools/Creating Generics/Exercise 2/src/Task.kt", creatingGenericsExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask274() {
+        testExample("../AtomicKotlinCourse/Power Tools/Creating Generics/Exercise 3/src/Task.kt", creatingGenericsExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask275() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Exercise 1/src/Task.kt", operatorOverloadingExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask276() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Exercise 2/src/Task.kt", operatorOverloadingExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask277() {
+        testExample("../AtomicKotlinCourse/Power Tools/Operator Overloading/Exercise 3/src/Task.kt", operatorOverloadingExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask278() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Exercise 1/src/Task.kt", usingOperatorsExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask279() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Exercise 2/src/Task.kt", usingOperatorsExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask280() {
+        testExample("../AtomicKotlinCourse/Power Tools/Using Operators/Exercise 3/src/Task.kt", usingOperatorsExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask281() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Exercise 1/src/Task.kt", propertyDelegationExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask282() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Exercise 2/src/Task.kt", propertyDelegationExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask283() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Exercise 3/src/Task.kt", propertyDelegationExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask284() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation/Exercise 4/src/Task.kt", propertyDelegationExercise4.TaskKt::main);
+    }
+
+    @Test
+    public void testTask285() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation Tools/Exercise 1/src/Task.kt", propertyDelegationToolsExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask286() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation Tools/Exercise 2/src/Task.kt", propertyDelegationToolsExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask287() {
+        testExample("../AtomicKotlinCourse/Power Tools/Property Delegation Tools/Exercise 3/src/Task.kt", propertyDelegationToolsExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask288() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lazy Initialization/Exercise 1/src/Task.kt", lazyInitializationExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask289() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lazy Initialization/Exercise 2/src/Task.kt", lazyInitializationExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask290() {
+        testExample("../AtomicKotlinCourse/Power Tools/Lazy Initialization/Exercise 3/src/Task.kt", lazyInitializationExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask291() {
+        testExample("../AtomicKotlinCourse/Power Tools/Late Initialization/Exercise 1/src/Task.kt", lateInitializationExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask292() {
+        testExample("../AtomicKotlinCourse/Power Tools/Late Initialization/Exercise 2/src/Task.kt", lateInitializationExercise2.TaskKt::main);
     }
 }

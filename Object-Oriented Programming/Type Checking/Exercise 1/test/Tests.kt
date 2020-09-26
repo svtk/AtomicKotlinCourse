@@ -1,10 +1,10 @@
 package typeCheckingExercise1
 
-import org.junit.Assert
 import org.junit.Test
+import util.unimplementedTest
 
 class TestTypeCheckingExercise1 {
     @Test fun testSolution() {
-        Assert.assertTrue("Tests not implemented for the task", false)
+        unimplementedTest()
     }
 }
