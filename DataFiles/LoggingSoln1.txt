@@ -1,0 +1,6 @@
+Error: DBOpenFail
+Error: NetworkOpenFail
+Error: DBWriteFail
+Error: NetworkCloseFail
+Error: DBCloseFail
+Error: main(): DBCloseFail

@@ -1,0 +1,6 @@
+Trace: Level 2
+Debug: Level 4
+Info: Level 6
+Warn: Level 8
+Error: Level 10
+Error: Level 10
