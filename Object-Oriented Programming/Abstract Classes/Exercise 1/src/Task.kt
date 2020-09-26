@@ -34,10 +34,8 @@ fun main() {
     Square(),
     Triangle(),
   )
-/*
   shapes.forEach { it.draw() }
   shapes.forEach { it.erase() }
-*/
   trace eq """
     Draw Circle
     Draw Square

@@ -15,5 +15,12 @@ files:
   - offset: 394
     length: 136
     placeholder_text: class Triangle
+  - offset: 616
+    length: 62
+    placeholder_text: |-
+      /*
+        shapes.forEach { it.draw() }
+        shapes.forEach { it.erase() }
+      */
 - name: test/Tests.kt
   visible: false

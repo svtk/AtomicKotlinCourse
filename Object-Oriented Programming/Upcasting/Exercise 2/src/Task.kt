@@ -33,9 +33,9 @@ fun main() {
     trace(it.consume())
   }
   trace eq """
-    chomp GrannySmith 
+    chomp GrannySmith
     bite Gala
     press Fuji
     peel Braeburn
-  """
+    """
 }
