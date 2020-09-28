@@ -2,5 +2,21 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 203
+    length: 139
+    placeholder_text: '// val generator: Generator'
+  - offset: 409
+    length: 31
+    placeholder_text: TODO()
+  - offset: 527
+    length: 31
+    placeholder_text: TODO()
+  - offset: 605
+    length: 73
+    placeholder_text: TODO()
+  - offset: 704
+    length: 51
+    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false

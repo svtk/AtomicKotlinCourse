@@ -53,7 +53,6 @@ fun transact(level: Int): Status {
     return Failed
   }
   fun transfer(net: NetConnection): Status {
-// Everything up to here is STARTER CODE
     try {
       net.open(2, level)
       db.write(net.read(), 3, level)
@@ -89,7 +88,6 @@ fun transact(level: Int): Status {
   return Success
 }
 
-// All of main() is STARTER CODE:
 fun main() {
   for (level in 0..5)
     try {

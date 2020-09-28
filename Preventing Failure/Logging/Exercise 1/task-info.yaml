@@ -2,5 +2,28 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 588
+    length: 314
+    placeholder_text: class Pipe
+  - offset: 917
+    length: 248
+    placeholder_text: |-
+      /*
+        val pipe = Pipe()
+        (0..10).forEach {
+          pipe.level.up()
+          pipe.checkLevel()
+        }
+        pipe.logger.logFile.readText().trimIndent() eq
+        """
+        Trace: Level 2
+        Debug: Level 4
+        Info: Level 6
+        Warn: Level 8
+        Error: Level 10
+        Error: Level 10
+        """
+      */
 - name: test/Tests.kt
   visible: false

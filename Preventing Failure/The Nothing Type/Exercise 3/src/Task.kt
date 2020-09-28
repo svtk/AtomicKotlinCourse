@@ -2,7 +2,7 @@
 package theNothingTypeExercise3
 import atomictest.*
 
-private var _debug = true
+private var _debug: Boolean = true
 
 class Failure(msg: String) : Exception(msg)
 

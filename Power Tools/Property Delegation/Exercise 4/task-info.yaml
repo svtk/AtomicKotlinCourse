@@ -2,5 +2,29 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 188
+    length: 216
+    placeholder_text: // TODO getValue and setValue extensions
+  - offset: 408
+    length: 357
+    placeholder_text: |-
+      /*
+      class Holders {
+        var strings by Holder<String>()
+        var ints by Holder<Int>()
+        var bools by Holder<Boolean>()
+      }
+
+      fun main() {
+        val x = Holders()
+        x.strings = listOf("99", "17")
+        x.strings eq "[99, 17]"
+        x.ints = listOf(12, 23, 34, 45)
+        x.ints eq "[12, 23, 34, 45]"
+        x.bools = listOf(true, true, false, true)
+        x.bools eq "[true, true, false, true]"
+      }
+      */
 - name: test/Tests.kt
   visible: false

@@ -1,47 +1,34 @@
-package scopeFunctionsExercise1
+// ScopeFunctions/ScopeFuncSoln1.kt
+package scopefuncsoln1
+import atomictest.eq
 
-class X {
-  var first = 0
-  var second = 0
-  var third = 0
-}
-
-fun example1(x: X): String {
-  with(x) {
-    first = 1
-    second = 2
-    third = 3
-  }
-  return "with"
-}
-
-class Y {
-  fun start() {}
-  fun finish() {}
-}
-
-fun example2(y: Y?): String {
-  y?.run {
-    start()
-    finish()
-  }
-  return "run"
-}
-
-class Z {
-  fun init() {}
-}
-
-fun example3(z: Z): String {
-  val result = z.apply {
-    init()
-  }
-  println(result)
-  return "apply"
+data class NumPair(var x: Int, var y: Int) {
+  fun add() = x + y
+  fun subtract() = x - y
+  fun multiply() = x * y
 }
 
 fun main() {
-  example1(X())
-  example2(Y())
-  example3(Z())
+  val np1: NumPair = NumPair(10, 20).apply {
+    x += 5
+    y += 6
+  }
+  np1 eq NumPair(15, 26)
+  val np2: NumPair = NumPair(30, 40).also {
+    it.x += 7
+    it.y += 8
+  }
+  np2 eq NumPair(37, 48)
+  val result1: Int = np1.run {
+    add() + subtract() + multiply()
+  }
+  result1 eq 420
+  val result2: Int = np1.let {
+    it.add() + it.subtract() + it.multiply()
+  }
+  result2 eq 420
+  val result3: Int = with(np1) {
+    add() + subtract() + multiply()
+  }
+  result3 eq 420
 }

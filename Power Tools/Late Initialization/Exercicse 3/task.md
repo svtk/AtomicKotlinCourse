@@ -1,36 +1,31 @@
-This is a task description file.
-Its content will be displayed to a learner
-in the **Task Description** window.
+## Late Initialization (#3)
 
-It supports both Markdown and HTML.
-To toggle the format, you can rename **task.md**
-to **task.html**, or vice versa.
-The default task description format can be changed
-in **Preferences | Tools | Education**,
-but this will not affect any existing task description files.
+The starter code provides:
 
-The following features are available in
-**task.md/task.html** which are specific to the EduTools plugin:
+```kotlin
+data class Generator(val id: Int)
 
-- Hints can be added anywhere in the task text.
-Type "hint" and press Tab.
-Hints should be added to an empty line in the task text.
-In hints you can use HTML only.
-<div class="hint">Text of your hint</div>
+class Turbine(val id: Int) {
+  private lateinit var _generator: Generator
+  val generator: Generator
+...
+```
 
-- You can insert shortcuts in the task description.
-While **task.html/task.md** is open, right-click anywhere
-on the **Editor** tab and choose the **Insert shortcut** option
-from the context menu.
-For example: &shortcut:FileStructurePopup;.
+Add a `get()` for `generator` that checks to see if `_generator` has been
+initialized, and if not initializes it before returning `_generator`. Add a
+`toString()` that starts with "Generator $id running: " and then indicates
+if the generator is running.
 
-- Insert the &percnt;`IDE_NAME`&percnt; macro,
-which will be replaced by the actual IDE name.
-For example, **%IDE_NAME%**.
+The starter code provides:
 
-- Insert PSI elements, by using links like
-`<a href="psi_element://link.to.element">element description</a>`.
-To get such a link, right-click the class or method
-and select **Copy Reference**.
-Then press &shortcut:EditorPaste; to insert the link where appropriate.
-For example, a <a href="psi_element://java.lang.String#contains">link to the "contains" method</a>.
+```kotlin
+class PowerPlant(nTurbines: Int = 4) {
+  private val turbines: List<Turbine> =
+...
+```
+
+Finish the initialization for `turbines`, then add
+`fun generator(number: Int): Generator` which checks to make sure `number`
+is in range, then returns the desired generator. Finally, add a `status()`
+member function that uses `forEach` to show the status of each generator in the
+`PowerPlant`. The code in `main()` tests your solution.

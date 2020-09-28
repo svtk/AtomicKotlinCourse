@@ -2,5 +2,37 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 103
+    length: 740
+    placeholder_text: class Repository
+  - offset: 858
+    length: 570
+    placeholder_text: |-
+      /*
+        val r = Repository<Int>(5)
+        (1..7).forEach {
+          r += it * 10
+          println(r)
+        }
+        println("r[4]: ${r[4]}")
+        r[4] = 99
+        println("r[4]: ${r[4]}")
+        println(r)
+        capture { r[7] } eq
+          "IllegalArgumentException: get() " +
+          "index 7 out of range"
+        capture { r[7] = 100 } eq
+          "IllegalArgumentException: set() " +
+          "index 7 out of range"
+        val r2 = Repository<Int>(5)
+        capture { r2[3] } eq
+          "IllegalArgumentException: get() " +
+          "accessing null element"
+        capture { r2[3] = 100 } eq
+          "IllegalArgumentException: set() " +
+          "accessing null element"
+
+      */
 - name: test/Tests.kt
   visible: false

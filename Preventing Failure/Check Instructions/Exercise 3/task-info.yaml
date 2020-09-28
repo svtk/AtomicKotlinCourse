@@ -2,5 +2,29 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 103
+    length: 489
+    placeholder_text: // TODO class Level
+  - offset: 607
+    length: 386
+    placeholder_text: |-
+      /*
+        val level = Level(1..10)
+        println(capture { level.set(0) })
+        println(capture { level.set(11) })
+        println(capture { Level(1..10, -1) })
+        println(capture { Level(1..10, 42) })
+        fun testUp() =
+          println("${level.value}, ${level.up()}")
+        fun testDown() =
+          println("${level.value}, ${level.down()}")
+        testUp()
+        testDown()
+        level.set(10)
+        testUp()
+        level.set(1)
+        testDown()
+      */
 - name: test/Tests.kt
   visible: false

@@ -1,7 +1,7 @@
 // UsingOperators/UsingOperatorsSoln2.kt
 package usingOperatorsExercise2
 
-fun create() = MutableList(10) { it }
+fun create(): MutableList<Int> = MutableList(10) { it }
 
 fun assignAppendIncrementContains() {
   println("assignAppendIncrementContains()")

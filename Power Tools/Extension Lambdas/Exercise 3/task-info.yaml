@@ -2,5 +2,37 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 500
+    length: 173
+    placeholder_text: |-
+      fun cleanser(): Cleanser {
+        TODO()
+      }
+  - offset: 675
+    length: 218
+    placeholder_text: |-
+      fun sprayCleanser(): SprayCleanser {
+        TODO()
+      }
+  - offset: 908
+    length: 343
+    placeholder_text: |-
+      /*
+        val c: Cleanser = cleanser {
+          detergent()
+          abrasive()
+        }
+        c eq "[Container selected, detergent, " +
+          "abrasive, Container sealed]"
+        val sc: SprayCleanser = sprayCleanser {
+          detergent()
+          ammonia()
+          water()
+        }
+        sc eq "[Container selected, " +
+          "Sprayer selected, detergent, " +
+          "ammonia, water, Container sealed]"
+      */
 - name: test/Tests.kt
   visible: false

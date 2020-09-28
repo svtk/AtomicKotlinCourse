@@ -3,20 +3,20 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 109
-    length: 23
+  - offset: 193
+    length: 48
     placeholder_text: TODO()
-  - offset: 178
-    length: 14
+  - offset: 265
+    length: 101
     placeholder_text: TODO()
-  - offset: 237
-    length: 18
+  - offset: 388
+    length: 92
     placeholder_text: TODO()
-  - offset: 303
-    length: 21
+  - offset: 506
+    length: 92
     placeholder_text: TODO()
-  - offset: 370
-    length: 25
+  - offset: 614
+    length: 101
     placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false

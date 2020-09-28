@@ -1,23 +1,21 @@
-package scopeFunctionsExercise3
-
+// ScopeFunctions/ScopeFuncSoln3.kt
+package scopefuncsoln3
 import atomictest.eq
+import scopefuncsoln1.NumPair
 
-fun transformVersion1(list: List<Int>): List<Int> {
-  val intermediateResult = list
-    .filter { it % 2 == 1 }
-    .map { it * it }
-  return intermediateResult.subList(
-    1, intermediateResult.size)
-}
-
-fun transformVersion2(list: List<Int>): List<Int> {
-  return list
-    .filter { it % 2 == 1 }
-    .map { it * it }
-    .run { subList(1, size) }
+class Math {
+  fun np(x: Int, y: Int) = NumPair(x, y)
+  fun add() = 1000
+  fun subtract() = -1000
+  fun NumPair.calc() = multiply()
 }
 
 fun main() {
-  transformVersion1(listOf(1, 2, 3, 4, 5)) eq listOf(9, 25)
-  transformVersion2(listOf(1, 2, 3, 4, 5)) eq listOf(9, 25)
+  Math().run {
+    val z = np(11, 7).apply {
+      add() + subtract()
+    }.calc()
+    z eq 77
+    z + add()
+  } eq 1077
 }

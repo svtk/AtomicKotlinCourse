@@ -2,5 +2,15 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 146
+    length: 380
+    placeholder_text: // TODO exception classes
+  - offset: 1191
+    length: 413
+    placeholder_text: // TODO
+  - offset: 641
+    length: 378
+    placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false

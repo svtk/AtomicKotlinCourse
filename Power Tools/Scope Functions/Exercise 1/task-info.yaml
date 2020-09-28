@@ -3,33 +3,9 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 126
-    length: 72
-    placeholder_text: |-
-      x.let {
-          it.first = 1
-          it.second = 2
-          it.third = 3
-        }
-        return "let"
-  - offset: 282
-    length: 52
-    placeholder_text: |-
-      y?.let {
-          with(it) {
-            start()
-            finish()
-          }
-        }
-        return "let & with"
-  - offset: 398
-    length: 72
-    placeholder_text: |-
-      val result = with(z) {
-          init()
-          this
-        }
-        return "with"
+  - offset: 214
+    length: 469
+    placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false
 feedback_link: |

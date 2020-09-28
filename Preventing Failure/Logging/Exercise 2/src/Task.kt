@@ -42,8 +42,6 @@ class NetConnection(val url: String) {
 
 enum class Status { Success, Failed }
 
-// Everything up to here is STARTER CODE
-
 private val logger = Logger("LoggingSoln1.txt")
 
 fun transact(level: Int): Status {
@@ -90,8 +88,6 @@ fun transact(level: Int): Status {
   }
   return Success
 }
-
-// From here on is STARTER CODE
 
 fun main() {
   for (level in 0..5)

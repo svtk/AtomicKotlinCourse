@@ -24,10 +24,7 @@ fun convertNumber(s: String): Int =
 
 fun embedNumber(n: Int) = "AbCdE${n}fGhIj"
 
-// All up to here is STARTER CODE
-// The learner defines the following two functions:
-
-fun justFail(s: String) =
+fun justFail(s: String) {
   try {
     println(embedNumber(
       convertNumber(
@@ -35,6 +32,7 @@ fun justFail(s: String) =
   } catch (e: NumberFail) {
     println("$e")
   }
+}
 
 fun recover(s: String) {
   val ns: String = try {
@@ -49,8 +47,6 @@ fun recover(s: String) {
   }
   println(embedNumber(n))
 }
-
-// From here on is STARTER CODE:
 
 fun test(s: String) {
   println("justFail($s)")

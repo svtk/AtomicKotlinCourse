@@ -5,7 +5,7 @@ import kotlin.reflect.KProperty
 
 class Delegator {
   private var list = List(8) { "$it" }
-  var strings by list
+  var strings: List<String> by list
   operator fun List<String>.getValue(
     r: Delegator,
     property: KProperty<*>

@@ -2,5 +2,18 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 138
+    length: 254
+    placeholder_text: // TODO
+  - offset: 407
+    length: 134
+    placeholder_text: |-
+      /*
+        val cg: Crate<Grape> = Crate(Grape())
+        val oc: OutCrate<Can> = cg
+        val cc: Crate<Can> = Crate(Can())
+        val ic: InCrate<Grape> = cc
+      */
 - name: test/Tests.kt
   visible: false

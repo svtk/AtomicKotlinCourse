@@ -15,8 +15,7 @@ interface GameFactory {
   fun create(): BoardGame
 }
 
-class
-Checkers private constructor() : BoardGame {
+class Checkers private constructor() : BoardGame {
   private var moves = 0
   override fun move(): Boolean {
     trace("Checkers move $moves")
@@ -31,8 +30,7 @@ Checkers private constructor() : BoardGame {
   }
 }
 
-class
-Chess private constructor() : BoardGame {
+class Chess private constructor() : BoardGame {
   private var moves = 0
   override fun move(): Boolean {
     trace("Chess move $moves")

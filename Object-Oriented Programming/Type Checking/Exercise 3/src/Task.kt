@@ -3,59 +3,62 @@ package typeCheckingExercise3
 import atomictest.eq
 import typechecking.name
 
-interface BeverageContainer {
-  fun open(): String
-  fun pour() = "${this.name}: Pour"
-  fun recycle(): String
+sealed class Insect {
+  open fun walk() = "${this.name}: walk"
+  open fun fly() = "${this.name}: fly"
 }
 
-abstract class Can: BeverageContainer {
-  override fun open() = "Pop Top"
+class HouseFly : Insect()
+
+class Flea : Insect() {
+  override fun fly() =
+    throw Exception("Flea cannot fly")
+  fun crawl() = "Flea: crawl"
 }
 
-class SteelCan : Can() {
-  override fun recycle() = "Recycle Steel"
+fun Insect.basic() =
+  this.walk() + " " +
+    when(this) {
+      is Flea -> this.crawl()
+      else -> this.fly()
+    }
+
+interface SwimmingInsect {
+  fun swim() = "${this.name}: swim"
 }
 
-class AluminumCan: Can() {
-  override fun recycle() = "Recycle Aluminum"
+interface WaterWalker {
+  fun walkWater() =
+    "${this.name}: walk on water"
 }
 
-abstract class Bottle : BeverageContainer {
-  override fun open() = "Remove Cap"
-}
+class WaterBeetle : Insect(), SwimmingInsect
+class WaterStrider : Insect(), WaterWalker
+class WhirligigBeetle : Insect(),
+  SwimmingInsect, WaterWalker
 
-class GlassBottle: Bottle() {
-  override fun recycle() = "Recycle Glass"
-}
-
-abstract class PlasticBottle: Bottle()
-
-class PETBottle: PlasticBottle() {
-  override fun recycle() = "Recycle PET"
-}
-
-class HDPEBottle: PlasticBottle() {
-  override fun recycle() = "Recycle HDPE"
-}
-
-class DecomposableBottle: PlasticBottle() {
-  override fun recycle() = "Decomposition tank"
-}
+fun Insect.water() =
+  when(this) {
+    is SwimmingInsect -> this.swim()
+    is WaterWalker -> this.walkWater()
+    else -> "${this.name}: drown"
+  }
 
 fun main() {
-  val refrigerator = listOf(
-    SteelCan(), AluminumCan(),
-    GlassBottle(),
-    PETBottle(), HDPEBottle(),
-    DecomposableBottle()
+  val insects = listOf(
+    HouseFly(), Flea(), WaterStrider(),
+    WaterBeetle(), WhirligigBeetle()
   )
-  refrigerator.map { it.open() } eq
-    "[Pop Top, Pop Top, Remove Cap, " +
-    "Remove Cap, Remove Cap, Remove Cap]"
-  refrigerator.map { it.recycle() } eq
-    "[Recycle Steel, Recycle Aluminum, " +
-    "Recycle Glass, " +
-    "Recycle PET, Recycle HDPE, " +
-    "Decomposition tank]"
+  insects.map { it.basic() } eq
+    "[HouseFly: walk HouseFly: fly, " +
+    "Flea: walk Flea: crawl, " +
+    "WaterStrider: walk WaterStrider: fly, " +
+    "WaterBeetle: walk WaterBeetle: fly, " +
+    "WhirligigBeetle: walk " +
+    "WhirligigBeetle: fly]"
+  insects.map { it.water() } eq
+    "[HouseFly: drown, Flea: drown, " +
+    "WaterStrider: walk on water, " +
+    "WaterBeetle: swim, " +
+    "WhirligigBeetle: swim]"
 }

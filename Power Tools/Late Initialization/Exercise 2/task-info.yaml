@@ -2,5 +2,19 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 97
+    length: 102
+    placeholder_text: class A
+  - offset: 201
+    length: 48
+    placeholder_text: class B
+  - offset: 264
+    length: 38
+    placeholder_text: |-
+      /*
+        val b = B()
+        b.a.s eq "Initialized"
+      */
 - name: test/Tests.kt
   visible: false

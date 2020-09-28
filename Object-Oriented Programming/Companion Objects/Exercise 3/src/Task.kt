@@ -34,17 +34,19 @@ class Bank(val name: String) {
     }
     companion object Numbers {
       private var i: Long = 1000
-      private fun nextAccountNumber() = i++
+      private fun nextAccountNumber(): Long = i++
     }
     fun finish() {
       number = nextAccountNumber()
     }
     override fun toString() = "$id $number"
   }
-  fun applyForAccount(name: String) =
+  fun applyForAccount(name: String) {
     applied.add(Account(name))
-  fun addID(id: ID) = applied
-    .first { it.name == id.name }.addID(id)
+  }
+  fun addID(id: ID) {
+    applied.first { it.name == id.name }.addID(id)
+  }
   fun completeAccount(verifiedID: ID) {
     val account =
       applied.first { it.id == verifiedID }

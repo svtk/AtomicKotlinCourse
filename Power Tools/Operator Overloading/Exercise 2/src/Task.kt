@@ -8,12 +8,12 @@ enum class Count {
   }
 }
 
-operator fun Count.inc() =
+operator fun Count.inc(): Count =
   Count.values()[
     (this.ordinal + 1) % Count.values().size
   ]
 
-operator fun Count.dec() =
+operator fun Count.dec(): Count =
   if (this.ordinal - 1 < 0)
     Count.max
   else
