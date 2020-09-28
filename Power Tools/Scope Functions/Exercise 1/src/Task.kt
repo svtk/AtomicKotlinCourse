@@ -1,5 +1,5 @@
 // ScopeFunctions/ScopeFuncSoln1.kt
-package scopefuncsoln1
+package scopeFunctionsExercise1
 import atomictest.eq
 
 data class NumPair(var x: Int, var y: Int) {

@@ -3,6 +3,9 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
+  - offset: 74
+    length: 203
+    placeholder_text: class DataMany
   - offset: 293
     length: 159
     placeholder_text: TODO()
@@ -15,8 +18,5 @@ files:
   - offset: 691
     length: 89
     placeholder_text: TODO()
-  - offset: 74
-    length: 203
-    placeholder_text: class DataMany
 - name: test/Tests.kt
   visible: false

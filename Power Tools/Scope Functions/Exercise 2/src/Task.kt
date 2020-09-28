@@ -1,4 +1,5 @@
 // ScopeFunctions/ScopeFuncSoln2.kt
+package scopeFunctionsExercise2
 import classdelegation.SpaceShipControls
 import atomictest.*
 

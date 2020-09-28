@@ -1,7 +1,7 @@
 // ScopeFunctions/ScopeFuncSoln3.kt
-package scopefuncsoln3
+package scopeFunctionsExercise3
 import atomictest.eq
-import scopefuncsoln1.NumPair
+import scopeFunctionsExercise1.NumPair
 
 class Math {
   fun np(x: Int, y: Int) = NumPair(x, y)

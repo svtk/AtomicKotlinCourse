@@ -3,11 +3,11 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 230
-    length: 242
-    placeholder_text: // TODO getValue and setValue extensions
   - offset: 220
     length: 7
     placeholder_text: = mutableListOf() // replace with 'by list'
+  - offset: 230
+    length: 242
+    placeholder_text: // TODO getValue and setValue extensions
 - name: test/Tests.kt
   visible: false
