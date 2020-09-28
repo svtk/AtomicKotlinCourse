@@ -33,5 +33,8 @@ files:
         Error: debugLevel(Error)
         """
       */
+  - offset: 107
+    length: 31
+    placeholder_text: // import loggingExercise3.Level.*
 - name: test/Tests.kt
   visible: false

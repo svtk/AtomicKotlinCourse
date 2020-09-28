@@ -43,14 +43,4 @@ class TestSealedClassesExercise3 {
                     }
         }
     }
-
-    @Test
-    fun `#02 random sealed subclass`() {
-        val rand = Random(17)
-        assertEquals(
-                message = "Expected sealed subclass Middle3",
-                expected = "Middle3",
-                actual = Top::class.sealedSubclasses.random(rand).simpleName
-        )
-    }
 }

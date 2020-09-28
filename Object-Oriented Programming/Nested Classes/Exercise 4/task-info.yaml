@@ -6,5 +6,8 @@ files:
   - offset: 120
     length: 1224
     placeholder_text: // TODO
+  - offset: 82
+    length: 36
+    placeholder_text: // import nestedClassesExercise4.Seat.*
 - name: test/Tests.kt
   visible: false

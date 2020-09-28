@@ -4,7 +4,15 @@ files:
   visible: true
   placeholders:
   - offset: 111
-    length: 331
-    placeholder_text: // TODO
+    length: 125
+    placeholder_text: |-
+      sealed class Top
+      class Middle1 : Top()
+      class Middle2 : Top()
+      open class Middle3 : Top()
+      class Bottom3 : Middle3()
+  - offset: 347
+    length: 93
+    placeholder_text: // TODO display random subclasses
 - name: test/Tests.kt
   visible: false
