@@ -3693,12 +3693,12 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testUpdatedContainer2() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Exercise 2/src/UpdatedContainer2.kt", typeCheckingExercise2.UpdatedContainer2Kt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Exercise 2/src/UpdatedContainer2.kt", typeCheckingExercise2a.UpdatedContainer2Kt::main);
     }
 
     @Test
     public void testUpdatedContainer3() {
-        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Exercise 2/src/UpdatedContainer3.kt", typeCheckingExercise2.UpdatedContainer3Kt::main);
+        testExample("../AtomicKotlinCourse/Object-Oriented Programming/Type Checking/Exercise 2/src/UpdatedContainer3.kt", typeCheckingExercise2b.UpdatedContainer3Kt::main);
     }
 
     @Test

@@ -3,11 +3,11 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 191
-    length: 984
-    placeholder_text: // TODO
   - offset: 81
     length: 41
     placeholder_text: // import nestedClassesExercise1.Game.Mark.*
+  - offset: 191
+    length: 984
+    placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false
