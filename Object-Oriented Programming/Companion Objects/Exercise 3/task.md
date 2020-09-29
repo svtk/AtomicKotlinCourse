@@ -56,3 +56,7 @@ the `Account`, and `completeAccount()` takes an `ID`, adds an account `number`,
 and moves the `Account` from the `applied` to the `accounts` list.
 
 The starter code in `main()` will validate your solution.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

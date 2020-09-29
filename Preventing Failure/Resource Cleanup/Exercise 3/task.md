@@ -19,3 +19,7 @@ Define a function `verifyClose(opt: Option)`. `verifyClose()` creates a
   the middle of the `use()` block.
 
 `main()` tests your code.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

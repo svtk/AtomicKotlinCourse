@@ -15,3 +15,7 @@ Create a duplicate hierarchy from an interface `Animal2`, but in this case make
 for each one.
 
 Compare the type-checked hierarchy to the polymorphic hierarchy.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

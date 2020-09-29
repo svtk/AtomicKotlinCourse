@@ -12,3 +12,7 @@ five. Define `interspersed()` so that it captures and displays the first
 element and every other one, ignoring the elements in between.
 
 The starter code in `main()` tests your work.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

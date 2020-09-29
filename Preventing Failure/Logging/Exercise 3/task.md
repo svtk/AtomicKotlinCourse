@@ -6,3 +6,7 @@ called `debugLevel` at file scope, initialized to `Error`. Inside your new
 `Logger` class, modify the `log()` function so its signature is `private fun
 log(thisLevel: Level, msg: String)`. This will require small modifications to
 some other functions. The code in `main()` tests your solution.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

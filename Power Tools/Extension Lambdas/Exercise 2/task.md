@@ -9,3 +9,7 @@ Add a function `sandwich3()` which is an extension function for `Sandwich`. The
 user can provide a `Sandwich` receiver that may or may not be already toasted.
 
 The starter code and the code in `main()` tests your functions.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

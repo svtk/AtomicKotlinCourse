@@ -17,3 +17,7 @@ is within `range`. Finally, add a function `set(new: Int)` that first ensures
 that `new` is within `range` and then assigns `new` to `level`.
 
 `Level` is tested by the starter code in `main()`.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

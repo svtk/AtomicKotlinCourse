@@ -13,3 +13,7 @@ interactWithCrocodile(honestlyDuck.crocodile)
 Modify the solution to that exercise using class delegation so you can call a
 function `interactWithCrocodile(honestlyDuck)`. Make the `IAmHonestlyDuck`
 `crocodile` parameter `private` so you *cannot* expose `field`.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

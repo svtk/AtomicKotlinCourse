@@ -6,3 +6,7 @@ Create a class `Outer` containing an `inner class` called `Inner`, both with an
 name>.<property name>": `s1` and `s2` in `Outer`, and `si` in `Inner`. The
 initializers produce "Hi" for `s1`, "Hello $s1" for `s2`, and "Howdy $s2" for
 `si`. The starter code in `main()` tests your solution.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

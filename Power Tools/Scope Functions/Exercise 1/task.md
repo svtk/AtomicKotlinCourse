@@ -10,3 +10,7 @@ Define `val result1` initialized with `np1.run` where the lambda sums the
 results of `add()`, `subtract()`, and `multiply()`. Use `eq` to check the
 result. Duplicate this functionality creating `result2` using `let` and
 `result3` using `with`.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

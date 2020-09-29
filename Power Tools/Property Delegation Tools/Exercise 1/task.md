@@ -10,3 +10,7 @@ Using `capture` from `atomictest`, try reading from `d`, `s` and `f` before
 they are initialized and validate the output using `atomictest.eq`. Then set
 `d` to `1.1`, `s` to `"yes"` and `f` to `Flag(true)` and use `eq` to verify
 that they all take on the new values.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

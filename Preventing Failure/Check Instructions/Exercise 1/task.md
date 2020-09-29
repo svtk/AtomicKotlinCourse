@@ -17,3 +17,7 @@ that `d` is greater than zero and less than or equal to 10.0. Do not provide a
 custom error message for `require()`. If the `require()` succeeds, return `d`.
 
 The starter code in `main()` tests `f()` and `g()`.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

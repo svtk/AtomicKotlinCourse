@@ -9,3 +9,7 @@ Modify Exercise 1 by creating an `object Log` that contains a `private` mutable
 
 In `fail()`, add the `msg` to `Log` before throwing `Failure`. The starter
 code in `main()` tests your work.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

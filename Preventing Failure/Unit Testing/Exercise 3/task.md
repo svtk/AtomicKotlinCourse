@@ -13,3 +13,7 @@ infix fun <T> T.aeq(actual: T) =
 ```
 
 To use `aeq`: *expectedValue* `aeq` *actualValue*.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

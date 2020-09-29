@@ -28,3 +28,7 @@ from `Iterator<T>`. Add a standalone function `<T> traceAll2(ib: Iterable<T>)`
 that produces the same behavior as `traceAll()`.
 
 The starter code contains a `main()` with tests to verify your code.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

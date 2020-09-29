@@ -20,3 +20,7 @@ that returns their class name.
 Now define an `object MonkeysVsSnakes` which is an `AdventureGame`, using the
 various `create()` functions to initialize it. `populate()` only needs to add
 one `Monkey` and one `Snake`. The predefined `main()` will test your code.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

@@ -18,3 +18,7 @@ The calculation in `compareTo()` impacts numerous operations including those
 for using the object as a key in a `Map` and an element in a `Set`. As this
 exercise shows, you should be very reluctant to allow the values used in the
 `compareTo()` calculation to vary.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

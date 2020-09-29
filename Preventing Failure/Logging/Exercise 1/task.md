@@ -18,3 +18,7 @@ Create a member function `checkLevel()` that uses a `when` expression. When
 
 The log message for each call is just "Level " followed by the matched value.
 The starter code in `main()` tests your solution.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>

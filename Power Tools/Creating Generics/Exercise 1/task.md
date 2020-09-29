@@ -12,3 +12,7 @@ and increments `index`. When there are no more `items`, `next()` returns
 `null`.
 
 The code in `main()` tests your solution.
+
+<sub> This task doesn't contain the automatic tests,
+it's always marked as "Correct" on "Check".
+Please compare your solution with the provided one! </sub>
