@@ -3,11 +3,11 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 120
-    length: 1224
-    placeholder_text: // TODO
   - offset: 82
     length: 36
     placeholder_text: // import nestedClassesExercise4.Seat.*
+  - offset: 120
+    length: 1224
+    placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false

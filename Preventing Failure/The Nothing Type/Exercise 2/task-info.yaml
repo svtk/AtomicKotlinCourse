@@ -9,6 +9,9 @@ files:
   - offset: 184
     length: 17
     placeholder_text: TODO()
+  - offset: 241
+    length: 17
+    placeholder_text: TODO()
   - offset: 262
     length: 43
     placeholder_text: class Failure
@@ -20,9 +23,6 @@ files:
     placeholder_text: TODO()
   - offset: 476
     length: 31
-    placeholder_text: TODO()
-  - offset: 241
-    length: 17
     placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false

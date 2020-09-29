@@ -3,6 +3,9 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
+  - offset: 107
+    length: 31
+    placeholder_text: // import loggingExercise3.Level.*
   - offset: 140
     length: 679
     placeholder_text: // TODO
@@ -33,8 +36,5 @@ files:
         Error: debugLevel(Error)
         """
       */
-  - offset: 107
-    length: 31
-    placeholder_text: // import loggingExercise3.Level.*
 - name: test/Tests.kt
   visible: false

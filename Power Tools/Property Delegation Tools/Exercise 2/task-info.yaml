@@ -3,6 +3,9 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
+  - offset: 178
+    length: 96
+    placeholder_text: fun observe() {}
   - offset: 276
     length: 361
     placeholder_text: |-
@@ -24,8 +27,5 @@ files:
         """
       }
       */
-  - offset: 178
-    length: 96
-    placeholder_text: fun observe() {}
 - name: test/Tests.kt
   visible: false

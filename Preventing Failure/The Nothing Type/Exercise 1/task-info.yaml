@@ -3,6 +3,9 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
+  - offset: 88
+    length: 43
+    placeholder_text: class Failure
   - offset: 168
     length: 33
     placeholder_text: TODO()
@@ -12,8 +15,5 @@ files:
   - offset: 304
     length: 33
     placeholder_text: TODO()
-  - offset: 88
-    length: 43
-    placeholder_text: class Failure
 - name: test/Tests.kt
   visible: false
