@@ -2,13 +2,13 @@ type: edu
 files:
 - name: test/Tests.kt
   visible: false
-- name: src/UpdatedContainer2.kt
+- name: src/TaskA.kt
   visible: true
   placeholders:
   - offset: 53
     length: 1426
     placeholder_text: // TODO
-- name: src/UpdatedContainer3.kt
+- name: src/TaskB.kt
   visible: true
   placeholders:
   - offset: 78
