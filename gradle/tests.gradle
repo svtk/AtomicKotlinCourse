@@ -1,0 +1,25 @@
+configurations {
+    kotlinRuntime
+}
+
+dependencies {
+    kotlinRuntime "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+
+tasks.withType(Test) {
+    testLogging {
+        exceptionFormat "full"
+    }
+}
+
+task TestExamples(type: Test, dependsOn: testClasses) {
+    include 'TestAllExamples.class'
+    description = "Checks output and 'eq' for examples and exercise solutions"
+    systemProperty "random.testing.seed", new Random().nextInt()
+}
+
+task TestExercises(type: Test, dependsOn: testClasses) {
+    include 'TestAllExercises.class'
+    description = "Runs provided tests for exercises"
+    systemProperty "random.testing.seed", new Random().nextInt()
+}
