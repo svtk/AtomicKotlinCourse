@@ -8,13 +8,13 @@ fun calculate(n1: Int, n2: Int): Triple<Boolean, Int, Int> {
 }
 
 fun main() {
-//    val result = calculate(5, 7)
-//    result.first eq true
-//    result.second eq 12
-//    result.third eq 35
-//    val (success, plus, multiply) =
-//            calculate(11, 13)
-//    success eq true
-//    plus eq 24
-//    multiply eq 143
+    val result = calculate(5, 7)
+    result.first eq true
+    result.second eq 12
+    result.third eq 35
+    val (success, plus, multiply) =
+            calculate(11, 13)
+    success eq true
+    plus eq 24
+    multiply eq 143
 }

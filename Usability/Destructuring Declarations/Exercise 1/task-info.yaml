@@ -10,7 +10,7 @@ files:
     length: 88
     placeholder_text: TODO()
   - offset: 236
-    length: 243
+    length: 225
     placeholder_text: |-
       /*
           val result = calculate(5, 7)
