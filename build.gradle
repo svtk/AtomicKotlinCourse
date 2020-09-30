@@ -118,5 +118,6 @@ project(':util') {
         compile group: 'junit', name: 'junit', version: '4.12'
     }
 }
-
-apply from: 'gradle/tests.gradle'
+if (new File('gradle/tests.gradle').exists()) {
+    apply from: 'gradle/tests.gradle'
+}
