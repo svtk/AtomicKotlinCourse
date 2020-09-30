@@ -28,10 +28,9 @@ allprojects {
         implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.3")
 
         // kotlin.test
-        def junit_version = '5.6.0'
         compile "org.jetbrains.kotlin:kotlin-test"
-        compile "org.jetbrains.kotlin:kotlin-test-junit5"
-        compile "org.junit.jupiter:junit-jupiter:$junit_version"
+        compile "org.jetbrains.kotlin:kotlin-test-junit"
+        compile "junit:junit:4.12"
 
         // Logging support for samples:
         compile 'io.github.microutils:kotlin-logging:1.6.24'
@@ -62,7 +61,11 @@ rootProject.projectDir.eachDirRecurse {
         return
     }
     def srcDir = new File(it, "src")
-    srcList.add(srcDir)
+    if (it.path.contains("Unit Testing")) {
+        testList.add(srcDir)
+    } else {
+        srcList.add(srcDir)
+    }
     def testDir = new File(it, "test")
     testList.add(testDir)
 }
