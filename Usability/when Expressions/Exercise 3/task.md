@@ -1,15 +1,14 @@
 ## `when` Expressions (#3)
 
-Implement the function `balanced()` that takes a `String` parameter. The
+Implement the `balanced()` function, which takes a `String` parameter. The
 argument must consist of parentheses and optional spaces; for example:
-`"()(())"`. When you pass this argument to `balanced()`, it checks whether each
-opening parenthesis has a corresponding closing parenthesis and if all
-parentheses are properly nested.
+`"()(())"`. `balanced()` checks whether each opening parenthesis has a
+corresponding closing parenthesis and if all parentheses are properly nested.
 
 Ignore whitespace in the input `String`. If the `String` contains characters
 other than parentheses and whitespace, throw an `IllegalArgumentException`.
 
-Some examples:
+Examples:
 
 -   `"()"` is balanced
 

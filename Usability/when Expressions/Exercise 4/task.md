@@ -1,10 +1,8 @@
 ## Mastering the IDE: Conversion between `if` and `when`
 
-You can convert `if` to `when` automatically and backwards.
-For conversion, choose an intention action
+You can automatically convert `if` statements to `when` statements, and vice-versa.
+To convert a `when` to an `if`, put the caret on `when` keyword and choose the intention action
 <span class="control">`Replace 'when' with 'if'`</span>
-after putting the caret on `when` keyword.
-For backward conversion, choose <span class="control">`Replace 'if' with 'when'`</span>.
+To convert an `if` to a `when` select `if` and choose <span class="control">`Replace 'if' with 'when'`</span>.
 
-First, replace `when` in `getBmiStatus` function with `if` automatically.
-Then apply the backwards conversion.
+Convert the `when` in `getBmiStatus()` to `if`, then apply the reverse conversion.
