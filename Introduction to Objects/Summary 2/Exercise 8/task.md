@@ -1,21 +1,20 @@
 ## Summary 2 (#8)
 
 Convert from a Roman number into a natural number. For
-example: XXIII = 23, XLIV = 44, C = 100.
+example: XXIII is 23, XLIV is 44, and C is 100.
 
 <div class="hint">
 
-Simply iterate over each digit in the Roman number and calculate the
-answer. Traverse a Roman number in reverse order, a single digit at a time (for
-example, `IV` contains two digits) and store the maximum value found so far. If
-the next Roman digit is greater than or equal to the current maximum value, add
-it to the result. If it's less than the maximum, subtract it instead. For
-example, to convert `XLIV = 44`, iterate over `VILX` which is the reverse of
-`XLIV`. You add `V`(`5`) and `L`(`50`), but subtract `1`(`I`) because it's less
-than the current maximum `V`, and subtract `10`(`X`) because it's less than the
-updated maximum `X`:
+Iterate over each digit in the Roman number and calculate the answer. Traverse
+a Roman number in reverse order, a single digit at a time (for example, `IV`
+contains two digits) and store the maximum value found so far. If the next
+Roman digit is greater than or equal to the current maximum value, add it to
+the result. If it's less than the maximum, subtract it instead. For example, to
+convert XLIV, iterate over `VILX` which is the reverse of `XLIV`. Add `V`(`5`)
+and `L`(`50`), but subtract `1`(`I`) because it's less than the current maximum
+`V`, and subtract `10`(`X`) because it's less than the updated maximum `X`:
 
-| numeral | current maximum | action |
+| Numeral | Current Maximum | Action |
 | ------- |-----------------|--------|
 | V       | 5               | + 5    |
 | I       | 5               | - 1    |

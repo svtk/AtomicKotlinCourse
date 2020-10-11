@@ -11,7 +11,8 @@ is the top-left corner:
 ```
 
 Moving right increases the `x` coordinate, moving down increases the `y`
-coordinate, while moving left and up decrease the `x` and `y` coordinates.
+coordinate, while moving left and up decrease the `x` and `y` coordinates,
+respectively.
 
 Implement `Robot`'s member functions `right()`, `left()`, `up()` and `down()`,
 each of which takes a `steps` parameter. Also implement `getLocation()` which
