@@ -10,10 +10,10 @@ Use <span class="shortcut">&shortcut:EditorDown;</span> and
 <span class="shortcut">&shortcut:EditorUp;</span> to select the required member
 and press <span class="shortcut">&shortcut:EditorEnter;</span> to paste it.
 
-You can discover the possible operations on any class this way. You
-can type the meaningful letters of the member function or property to see all
-the available members starting with these letters, or simply containing
-these letters.
+<span class="shortcut">&shortcut:CodeCompletion;</span> discovers all possible
+operations for a class. You can type the first letters of a member function or
+property to see all the available members starting with these letters, or
+simply containing these letters.
 
 Type the identifier name `r` followed by a dot, then press
 <span class="shortcut">&shortcut:CodeCompletion;</span> to see

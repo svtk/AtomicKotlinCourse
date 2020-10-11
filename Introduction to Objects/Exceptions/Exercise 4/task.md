@@ -4,7 +4,7 @@ You can automatically navigate to the line where an exception was thrown by
 clicking on it in the stacktrace. Run `Task.kt` to see the stacktrace and
 navigate to different lines.
 
-You can also analyze the stacktrace copied from another place, like a bug
+You can also analyze the stacktrace copied from another place, such as a bug
 tracker. Copy the following stacktrace and call the action
 <span class="control">`Analyze stacktrace`</span>:
 

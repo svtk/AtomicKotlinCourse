@@ -1,6 +1,6 @@
 ## Exceptions (#1)
 
-Display to the console all of the following `String`s that can't be converted to
+Display on the console all the following `String`s that can't be converted to
 `Double` (that is, those where an attempt to convert it throws an exception):
 
 ```

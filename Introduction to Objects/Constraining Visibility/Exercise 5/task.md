@@ -18,4 +18,4 @@ Type the new function name `checkArgument` and press
 <span class="shortcut">&shortcut:EditorEnter;</span>.
 
 Agree to <span class="control">`Process Duplicates`</span>, so that the second
-occurrence of the same piece of code was also extracted.
+occurrence of the same piece of code is also extracted.
