@@ -7,7 +7,7 @@ to call the intention actions menu, and choose
 <span class="control">`Convert to expression body`</span>.
 After the conversion the type remains highlighted, which is
 convenient because you can either remove the type declaration by pressing
-`Delete` or leave it by navigating the caret to the right.
+`Delete` or leave it by moving the caret to the right.
 
 To apply the reverse intention, press
 <span class="shortcut">&shortcut:ShowIntentionActions;</span>

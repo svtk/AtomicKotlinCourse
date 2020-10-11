@@ -1,6 +1,6 @@
 ## Mastering the IDE: Moving the Caret
 
-You can move the caret over the words. The same works for selecting text:
+You can move the caret a word at a time. The same works for selecting text:
 
 | Operation                            | Shortcut                                                                 | Description                                       |
 |--------------------------------------|--------------------------------------------------------------------------|---------------------------------------------------|
@@ -9,5 +9,5 @@ You can move the caret over the words. The same works for selecting text:
 | Move to Next Word with Selection     | <span class="shortcut">&shortcut:EditorNextWordWithSelection;</span>     | Move the caret to the next word, selecting it.    |
 | Move to Previous Word with Selection | <span class="shortcut">&shortcut:EditorPreviousWordWithSelection;</span> | Move the caret to the previous word, selecting it.|
 
-Select `getFooResult()` by moving the caret over words and extract it into  a
+Select `getFooResult()` by moving the caret over words and extract it into a
 `val foo` by hand. Next we'll discuss how to extract a variable automatically.

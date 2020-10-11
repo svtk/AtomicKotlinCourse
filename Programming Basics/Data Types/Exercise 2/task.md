@@ -3,7 +3,7 @@
 Attempt to combine various `val`s of different types using the `+` operator.
 Only combine two at a time, and assign each combination to a `val` result. See
 which types combine. On the console, display the name of the type that can be
-combined with any other type if it goes first, and the name of the type that
+combined with any other type if it appears first, and the name of the type that
 can't be combined with itself using `+`.
 
 Replace the lines containing `TODO()` in the solution code with working code.
