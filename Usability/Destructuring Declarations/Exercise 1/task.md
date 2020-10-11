@@ -11,6 +11,6 @@ zeros. Otherwise, it returns a `Triple` containing:
 
 -   `n1` multiplied by `n2`
 
-The starter code contains a `main()` with tests, showing the different between
+The starter code contains a `main()` with tests, showing the difference between
 unpacking the `Triple` using `first`, `second` and `third` versus a
 destructuring declaration.

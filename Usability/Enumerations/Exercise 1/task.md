@@ -15,4 +15,5 @@ top-left corner:
 ```
 
 Moving right increases the `x` coordinate, moving down increases the `y`
-coordinate, moving left and up decrease the `x` and `y` coordinates.
+coordinate, moving left and up decrease the `x` and `y` coordinates,
+respectively.
