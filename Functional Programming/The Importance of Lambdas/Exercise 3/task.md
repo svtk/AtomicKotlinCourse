@@ -1,6 +1,6 @@
 ## The Importance of Lambdas (#3)
 
-Implement the function `other(s: String)` that returns a `String` containing
+Implement the function `other(s: String)` so it returns a `String` containing
 every other letter of `s`. For example, for an input of "cement" it returns
 "cmn".
 

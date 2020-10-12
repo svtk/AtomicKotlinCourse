@@ -12,7 +12,7 @@ Bob - Charlie
 `friendSuggestions()` should return Charlie for Alice, because Charlie is a
 friend of Alice's friend Bob and isn't yet a friend of Alice.
 
-The following example produces no friend suggestions for Alice, because Bob and
+The following example produces no friend suggestions for Alice because Bob and
 Charlie are already her friends:
 
 ```text
