@@ -6,7 +6,7 @@ action, and IntelliJ IDEA allows you to do that by clicking a shortcut. A
 shortcut is a special key combination that causes a specific command to be
 executed. Throughout this course, you'll learn common shortcuts.
 
-IntelliJ Idea is a *keyboard-centric IDE*, which means you can perform all
+IntelliJ IDEA is a *keyboard-centric IDE*, which means you can perform all
 actions using only the keyboard. We recommend learning to do everything
 with keyboard shortcuts.
 

@@ -8,7 +8,7 @@ change it in one place and forget to change elsewhere, which can lead to
 difficult-to-find bugs.
 
 When a constant appears in multiple places in your code, it's wise to extract
-it into a property. IntelliJ Idea allows you to do this automatically. Select
+it into a property. IntelliJ IDEA allows you to do this automatically. Select
 the constant `10` in the code sample, and call <span class="control">`Extract
 Property`</span> action. You can also use the <span
 class="shortcut">&shortcut:IntroduceField;</span> shortcut or choose <span

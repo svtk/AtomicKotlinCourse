@@ -1,6 +1,6 @@
 ## Mastering the IDE: Extract Function
 
-IntelliJ Idea allows you to extract repetitive code into a function. Select the
+IntelliJ IDEA allows you to extract repetitive code into a function. Select the
 following code in the body of the first function:
 
 ```

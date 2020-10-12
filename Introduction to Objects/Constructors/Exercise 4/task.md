@@ -1,6 +1,6 @@
 ## Mastering the IDE: Generating `toString`
 
-IntelliJ Idea can automatically generate the `toString()` member function.
+IntelliJ IDEA can automatically generate the `toString()` member function.
 
 Call the <span class="control">`Generate`</span> action, or use the shortcut
 <span class="shortcut">&shortcut:NewElement;</span>, or click on the main
