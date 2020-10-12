@@ -38,6 +38,6 @@ network connection isn't particularly problematic.
 Again, notice how rapidly things get complicated when attempting to recover
 from all possible failures.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

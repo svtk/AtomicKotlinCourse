@@ -8,6 +8,6 @@ to call for `File`). Use `useLines()` to read the file and display it with
 `println()`, then use `forEachLine()` to read the file and display it with
 `println()`. The starter code in `main()` tests `writeAndRead()`.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

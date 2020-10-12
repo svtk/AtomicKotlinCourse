@@ -5,6 +5,6 @@ Create your own `AutoCloseable` class called `Cleanup`, containing `f()`, `g()`,
 and `"close()"`, respectively. In `main()`, create a `Cleanup` object and call
 `f()`, `g()` and `h()` via `use()`.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

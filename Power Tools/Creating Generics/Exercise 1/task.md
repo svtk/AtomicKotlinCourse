@@ -2,7 +2,7 @@
 
 Create a generic interface called `Items` with a single function `next()` that
 returns an object of the generic type, or `null`. Make `Items` usable for
-[SAM conversions](#sam-conversions).
+SAM conversions.
 
 Create a generic function called `itemIter()` that takes a `vararg items` of
 the type parameter and returns an `Items` object produced with a SAM
@@ -13,6 +13,6 @@ and increments `index`. When there are no more `items`, `next()` returns
 
 The code in `main()` tests your solution.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

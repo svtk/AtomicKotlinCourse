@@ -8,6 +8,6 @@ Create a `lateinit` `car` at file scope, and a `lateinit` `truck` inside
 `main()`. Initialize `car` inside `main()`, giving it an electric motor,
 then initialize `truck`, giving it a combustion engine.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

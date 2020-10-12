@@ -1,7 +1,7 @@
 ## Logging (#1)
 
 The starter code includes `class Level`, which is the solution of Exercise 3
-from [Check Instructions].
+from the Check Instructions atom.
 
 Create a class called `Pipe` that takes `val level: Level` as a constructor
 parameter. Give this parameter a default argument with a range `0..10`.
@@ -19,6 +19,6 @@ Create a member function `checkLevel()` that uses a `when` expression. When
 The log message for each call is just "Level " followed by the matched value.
 The starter code in `main()` tests your solution.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

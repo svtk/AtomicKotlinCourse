@@ -1,8 +1,7 @@
 ## Check Instructions (#3)
 
-This exercise further explores ranges, introduced in [Looping &
-Ranges](#looping-and-ranges), and shows how they can be used with check
-instructions.
+This exercise further explores ranges, introduced in the atom Looping & Ranges,
+and shows how they can be used with check instructions.
 
 Create a class `Level` with two constructor arguments: `val range: IntRange`,
 and `private var level: Int`. `level` has a default argument that is the
@@ -18,6 +17,6 @@ that `new` is within `range` and then assigns `new` to `level`.
 
 `Level` is tested by the starter code in `main()`.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

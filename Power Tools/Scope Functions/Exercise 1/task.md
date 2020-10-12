@@ -11,6 +11,6 @@ results of `add()`, `subtract()`, and `multiply()`. Use `eq` to check the
 result. Duplicate this functionality creating `result2` using `let` and
 `result3` using `with`.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>
