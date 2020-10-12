@@ -25,6 +25,6 @@ within `move()`. The definitions of `playGame()` and `main()` are provided;
 complete the code in `Checkers` and `Chess` so it satisfies the tests in
 `main()`.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

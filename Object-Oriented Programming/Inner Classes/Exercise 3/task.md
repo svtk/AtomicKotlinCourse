@@ -22,13 +22,13 @@ Define a standalone function `<T> traceAll(select: Selector<T>)` that uses
 `select` to append all the values of `current()` to `trace` using `+=`, then
 returns `trace`.
 
-Now make `Container` inherit from `Iterable<T>`, and add a function called
+Inherit `Container` from `Iterable<T>`, and add a function called
 `iterator()` that returns an instance of an anonymous inner class that inherits
 from `Iterator<T>`. Add a standalone function `<T> traceAll2(ib: Iterable<T>)`
 that produces the same behavior as `traceAll()`.
 
 The starter code contains a `main()` with tests to verify your code.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

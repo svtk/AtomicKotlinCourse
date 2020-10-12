@@ -26,6 +26,6 @@ Now write a standalone function `consumer(factory: VendorFactory)` that uses
 `factory` to create a `Vendor`. Use that `Vendor` to call `pencil()` and
 `pen()`. The starter code in `main()` will validate your solution.
 
-<sub> This task doesn't contain the automatic tests,
-it's always marked as "Correct" on "Check".
-Please compare your solution with the provided one! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>
