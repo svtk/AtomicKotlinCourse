@@ -3,8 +3,24 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 1086
-    length: 829
-    placeholder_text: TODO()
+  - offset: 1272
+    length: 18
+    placeholder_text: println("Database Problem $e")
+  - offset: 1436
+    length: 70
+    placeholder_text: |-
+      catch (e: NetworkFail) {
+            println("Network Problem $e")
+            return Failed
+          } catch (e: DBWriteFail) {
+            println("Database Write Failed $e")
+            return Failed
+          }
+  - offset: 1603
+    length: 18
+    placeholder_text: println("Network Close Failed $e")
+  - offset: 1856
+    length: 18
+    placeholder_text: println("Database Problem $e")
 - name: test/Tests.kt
   visible: false

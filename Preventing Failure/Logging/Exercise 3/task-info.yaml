@@ -3,38 +3,31 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 107
+  - offset: 161
     length: 31
-    placeholder_text: // import loggingExercise3.Level.*
-  - offset: 140
-    length: 679
-    placeholder_text: // TODO
-  - offset: 834
-    length: 553
+    placeholder_text: '// TODO: add values'
+  - offset: 305
+    length: 154
     placeholder_text: |-
-      /*
-        Level.values().toList().forEach {
-          debugLevel = it
-          logger.report("debugLevel($debugLevel)")
-        }
-        logger.logFile.readText().trimIndent() eq
-        """
-        Trace: debugLevel(Trace)
-        Debug: debugLevel(Trace)
-        Info: debugLevel(Trace)
-        Warn: debugLevel(Trace)
-        Error: debugLevel(Trace)
-        Debug: debugLevel(Debug)
-        Info: debugLevel(Debug)
-        Warn: debugLevel(Debug)
-        Error: debugLevel(Debug)
-        Info: debugLevel(Info)
-        Warn: debugLevel(Info)
-        Error: debugLevel(Info)
-        Warn: debugLevel(Warn)
-        Error: debugLevel(Warn)
-        Error: debugLevel(Error)
-        """
-      */
+      private fun log(type: String, msg: String) =
+          logFile.appendText("$type: $msg\n")
+  - offset: 487
+    length: 15
+    placeholder_text: log("Trace", msg)
+  - offset: 530
+    length: 15
+    placeholder_text: log("Debug", msg)
+  - offset: 572
+    length: 14
+    placeholder_text: log("Info", msg)
+  - offset: 613
+    length: 14
+    placeholder_text: log("Warn", msg)
+  - offset: 655
+    length: 15
+    placeholder_text: log("Error", msg)
+  - offset: 220
+    length: 5
+    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false
