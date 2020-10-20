@@ -4,7 +4,7 @@ import atomictest.*
 
 class Level(
   val range: IntRange,
-  private var level: Int = range.start
+  private var level: Int = range.first
 ) {
   init {
     require(level in range) {
