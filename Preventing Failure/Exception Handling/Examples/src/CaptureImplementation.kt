@@ -6,7 +6,7 @@ fun capture(f: () -> Unit): CapturedException =
   try {                                 // [1]
     f()
     CapturedException(null,             // [2]
-      "[Error]: Expected an exception")
+      "<Error>: Expected an exception")
   } catch (e: Throwable) {              // [3]
     CapturedException(e::class,
       if (e.message != null) ": ${e.message}"
@@ -19,5 +19,5 @@ fun main() {
   } eq "Exception: !!!"
   capture {
     1
-  } eq "[Error]: Expected an exception"
+  } eq "<Error>: Expected an exception"
 }
