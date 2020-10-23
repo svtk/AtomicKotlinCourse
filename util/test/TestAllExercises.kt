@@ -9,25 +9,25 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#000 HelloWorld Exercise#1`() = testClass(helloWorldExercise1.TestHelloWorldExercise1::class)
 
   @Test
-  fun `test#001 HelloWorld Exercise#2`() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World/Exercise 2/test/output.txt"){ helloWorldExercise2.main() }
+  fun `test#001 HelloWorld Exercise#2`() = testOutput("Programming Basics/Hello, World/Exercise 2/test/output.txt"){ helloWorldExercise2.main() }
 
   @Test
-  fun `test#002 HelloWorld Exercise#3`() = testOutput("../AtomicKotlinCourse/Programming Basics/Hello, World/Exercise 3/test/output.txt"){ helloWorldExercise3.main() }
+  fun `test#002 HelloWorld Exercise#3`() = testOutput("Programming Basics/Hello, World/Exercise 3/test/output.txt"){ helloWorldExercise3.main() }
 
   @Test
-  fun `test#003 VarAndVal Exercise#1`() = testOutput("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 1/test/output.txt"){ varAndValExercise1.main() }
+  fun `test#003 VarAndVal Exercise#1`() = testOutput("Programming Basics/var & val/Exercise 1/test/output.txt"){ varAndValExercise1.main() }
 
   @Test
-  fun `test#004 VarAndVal Exercise#2`() = testOutput("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 2/test/output.txt"){ varAndValExercise2.main() }
+  fun `test#004 VarAndVal Exercise#2`() = testOutput("Programming Basics/var & val/Exercise 2/test/output.txt"){ varAndValExercise2.main() }
 
   @Test
-  fun `test#005 VarAndVal Exercise#3`() = testOutput("../AtomicKotlinCourse/Programming Basics/var & val/Exercise 3/test/output.txt"){ varAndValExercise3.main() }
+  fun `test#005 VarAndVal Exercise#3`() = testOutput("Programming Basics/var & val/Exercise 3/test/output.txt"){ varAndValExercise3.main() }
 
   @Test
   fun `test#006 DataTypes Exercise#1`() = testClass(dataTypesExercise1.TestDataTypesExercise1::class)
 
   @Test
-  fun `test#007 DataTypes Exercise#2`() = testOutput("../AtomicKotlinCourse/Programming Basics/Data Types/Exercise 2/test/output.txt"){ dataTypesExercise2.main() }
+  fun `test#007 DataTypes Exercise#2`() = testOutput("Programming Basics/Data Types/Exercise 2/test/output.txt"){ dataTypesExercise2.main() }
 
   @Test
   fun `test#008 DataTypes Exercise#3`() = testClass(dataTypesExercise3.TestDataTypesExercise3::class)
@@ -51,7 +51,7 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#014 IfExpressions Exercise#3`() = testClass(ifExpressionsExercise3.TestIfExpressionsExercise3::class)
 
   @Test
-  fun `test#015 StringTemplates Exercise#1`() = testOutput("../AtomicKotlinCourse/Programming Basics/String Templates/Exercise 1/test/output.txt"){ stringTemplatesExercise1.main() }
+  fun `test#015 StringTemplates Exercise#1`() = testOutput("Programming Basics/String Templates/Exercise 1/test/output.txt"){ stringTemplatesExercise1.main() }
 
   @Test
   fun `test#016 StringTemplates Exercise#2`() = testClass(stringTemplatesExercise2.TestStringTemplatesExercise2::class)
@@ -114,7 +114,7 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#035 TheInKeyword Exercise#4`() = testClass(theInKeywordExercise4.TestTheInKeywordExercise4::class)
 
   @Test
-  fun `test#036 ExpressionsAndStatements Exercise#1`() = testOutput("../AtomicKotlinCourse/Programming Basics/Expressions & Statements/Exercise 1/test/output.txt"){ expressionsAndStatementsExercise1.main() }
+  fun `test#036 ExpressionsAndStatements Exercise#1`() = testOutput("Programming Basics/Expressions & Statements/Exercise 1/test/output.txt"){ expressionsAndStatementsExercise1.main() }
 
   @Test
   fun `test#037 ExpressionsAndStatements Exercise#2`() = testClass(expressionsAndStatementsExercise2.TestExpressionsAndStatementsExercise2::class)
@@ -123,7 +123,7 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#038 ExpressionsAndStatements Exercise#3`() = testClass(expressionsAndStatementsExercise3.TestExpressionsAndStatementsExercise3::class)
 
   @Test
-  fun `test#039 SummaryI Exercise#1`() = testOutput("../AtomicKotlinCourse/Programming Basics/Summary 1/Exercise 1/test/output.txt"){ summaryIExercise1.main() }
+  fun `test#039 SummaryI Exercise#1`() = testOutput("Programming Basics/Summary 1/Exercise 1/test/output.txt"){ summaryIExercise1.main() }
 
   @Test
   fun `test#040 SummaryI Exercise#2`() = testClass(summaryIExercise2.TestSummaryIExercise2::class)
