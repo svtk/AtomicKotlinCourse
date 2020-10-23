@@ -1,7 +1,7 @@
 ## Logging (#2)
 
-Starting with the solution from Exercise 3 from the Exception
-Handling atom, use `AtomicLog.kt` to log exceptions into the
+Starting with the solution from Exercise 3 in [Exception
+Handling], use `AtomicLog.kt` to log exceptions into the
 `Logger` file `"LoggingSoln1.txt"`. You will need to modify `transact()`:
 
 - Add a call to `Logger`s `error()` function before any exception is thrown

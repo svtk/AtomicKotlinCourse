@@ -1,7 +1,7 @@
 ## Logging (#1)
 
 The starter code includes `class Level`, which is the solution of Exercise 3
-from the Check Instructions atom.
+from [Check Instructions].
 
 Create a class called `Pipe` that takes `val level: Level` as a constructor
 parameter. Give this parameter a default argument with a range `0..10`.

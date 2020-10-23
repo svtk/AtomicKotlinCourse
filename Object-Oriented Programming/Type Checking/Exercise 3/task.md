@@ -4,8 +4,8 @@ Modify `Insects.kt` so that `Insect` is a `sealed` class (this may require
 modifications to other components). Change `basic()` to use a `when`
 expression.
 
-What does this gain you, since the `else` clauses in the `when` expressions
-still make sense?
+The `else` clauses in the `when` expressions still make sense, so how does this
+benefit you?
 
 <sub> This task doesn't contain automatic tests,
 so it's always marked as "Correct" when you run "Check".

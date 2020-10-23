@@ -9,11 +9,11 @@ return the `String` result.
 
 - `createList()` behaves like `buildList()`. This function has one generic
 parameter. Create an `ArrayList<T>`, call the extension lambda argument on it,
-and return the `List` in immutable form.
+and return a read-only `List`.
 
 - `createMap()` behaves like `buildMap()`. This function has two generic
 parameters. Create a `HashMap<K, V>`, call the extension lambda argument on it,
-and return the `Map` in immutable form.
+and return a read-only `Map`.
 
 The code in `main()` tests your functions against the standard library
 versions. Notice that `buildList()` and `buildMap()` infer their generic

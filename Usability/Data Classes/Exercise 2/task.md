@@ -6,7 +6,7 @@ values during the copy:
 
 ```kotlin
 fun AirlineTicket.transferTicket(
-  newFirstName: String,
-  newLastName: String
+  otherFirstName: String,
+  otherLastName: String
 ): AirlineTicket
 ```

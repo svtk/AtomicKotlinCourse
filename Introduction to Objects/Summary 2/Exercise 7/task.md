@@ -2,30 +2,18 @@
 
 Convert a natural number into a number in the Roman numeral system.
 
-| Roman | Decimal |
-|-------|---------|
-| I     |   1     |
-| IV    |   4     |
-| V     |   5     |
-| IX    |   9     |
-| X     |   10    |
-| XL    |   40    |
-| L     |   50    |
-| XC    |   90    |
-| C     |   100   |
-| CD    |   400   |
-| D     |   500   |
-| CM    |   900   |
-| M     |   1000  |
+Roman numerals:
+1000 = M, 900 = CM, 500 = D, 400 = CD, 100 = C, 90 = XC,
+50 = L, 40 = XL, 10 = X, 9 = IX, 5 = V, 4 = IV, 1 = I.
 
 For example: 23 = XXIII, 44 = XLIV, 100 = C.
 
 <div class="hint">
 
-Perform the conversion in steps. Use an auxiliary `remainder` variable to store
-the remaining part of the converted integer and a `result` variable to store
-the resulting Roman numeral representation. For each step, the initial `number`
-equals the sum of `remainder` and `result`.
+Perform the conversion in steps. Use an auxiliary `remainder`
+variable to store the remaining part of the converted integer and the `result`
+variable to store the resulting Roman numeral representation. For each step,
+the initial `number` equals the sum of the `remainder` and `result`.
 
 Store the Roman numerals in a mapping from `Int` to the associated `String`
 representation. For each pair `int = roman` starting from `1000 = M`:

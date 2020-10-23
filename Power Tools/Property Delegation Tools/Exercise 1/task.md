@@ -7,7 +7,7 @@ default value of `false`. In `main()`, create three `var`s: `d` of type `Double`
 for `notNull()`.
 
 Using `capture` from `atomictest`, try reading from `d`, `s` and `f` before
-they are initialized. Validate the output using `atomictest.eq`. Then set
+they are initialized and validate the output using `atomictest.eq`. Then set
 `d` to `1.1`, `s` to `"yes"` and `f` to `Flag(true)` and use `eq` to verify
 that they all take on the new values.
 

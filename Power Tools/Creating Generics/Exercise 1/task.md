@@ -2,7 +2,7 @@
 
 Create a generic interface called `Items` with a single function `next()` that
 returns an object of the generic type, or `null`. Make `Items` usable for
-SAM conversions.
+SAM conversions (see [Interfaces]).
 
 Create a generic function called `itemIter()` that takes a `vararg items` of
 the type parameter and returns an `Items` object produced with a SAM

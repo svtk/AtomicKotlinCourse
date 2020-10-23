@@ -1,6 +1,6 @@
 ## Class Delegation (#2)
 
-Exercise 1 from the Inheritance & Extensions atom uses
+Exercise 1 in [Inheritance & Extensions] uses
 composition to adapt `Crocodile` to work with `interactWithDuck()`. This
 produces an inconsistency when using `IAmHonestlyDuck` with the
 `interactWithCrocodile()` function---the composed `crocodile` must be

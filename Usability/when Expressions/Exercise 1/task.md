@@ -4,4 +4,4 @@ Create a function `cloudiness(cloudPercent: Int)` that returns a description
 based on the percentage of cloudiness: "Sunny" (when `cloudPercent` is in the
 range 81..100), "Mostly Sunny" (61..80), "Partly Sunny" (41..60), "Mostly
 Cloudy" (21..40), and "Cloudy" (0..20). If the argument is not in the range
-0..100, throw an `IllegalArgumentException`.
+0..100, throw `IllegalArgumentException`.

@@ -12,4 +12,4 @@ three member functions:
     the `CountingSet`. If the element isn't present in `CountingSet` the result
     is zero.
 
--   `toSet()` returns a set containing the stored elements.
+-   `toSet()` returns a set of stored elements.

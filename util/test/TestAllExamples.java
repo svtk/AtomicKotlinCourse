@@ -1487,8 +1487,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testImmutableBlendMap() {
-        testExample("../AtomicKotlinCourse/Functional Programming/Building Maps/Examples/src/ImmutableBlendMap.kt", buildingmaps.ImmutableBlendMapKt::main);
+    public void testReadOnlyBlendMap() {
+        testExample("../AtomicKotlinCourse/Functional Programming/Building Maps/Examples/src/ReadOnlyBlendMap.kt", buildingmaps.ReadOnlyBlendMapKt::main);
     }
 
     @Test

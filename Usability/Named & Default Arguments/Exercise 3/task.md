@@ -7,6 +7,7 @@ the comment slashes along with any whitespace after the slashes (`// `).
 
 <div class="hint">
 
-Use the extension function `lines()` to split a `String` into a list of lines.
+Use the extension function `lines()` to split a `String` into a list of
+lines.
 
 </div>

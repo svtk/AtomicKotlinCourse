@@ -2,7 +2,7 @@
 
 Write a function `printArgs()` with a `String` as the first parameter, and a
 `vararg` parameter of `Int` as the second parameter. `printArgs()` displays its
-arguments on the console: first the `String`, then the `Int`s, separated by
+arguments to the console: first the `String`, then the `Int`s, separated by
 commas and surrounded by square brackets.
 
 For example, the output for `printArgs("Numbers: ", 1, 2, 3)` should be:

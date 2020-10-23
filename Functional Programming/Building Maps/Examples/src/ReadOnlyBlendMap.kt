@@ -1,4 +1,4 @@
-// BuildingMaps/ImmutableBlendMap.kt
+// BuildingMaps/ReadOnlyBlendMap.kt
 @file:OptIn(ExperimentalStdlibApi::class)
 package buildingmaps
 

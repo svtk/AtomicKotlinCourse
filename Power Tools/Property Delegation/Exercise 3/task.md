@@ -9,8 +9,9 @@ class Delegator {
 }
 ```
 
-Define `getValue()` and `setValue()` as extension functions to `List<String>`.
-The code in `main()` will test your solution.
+Define `getValue()` and `setValue()` as extension functions to `List<String>`
+(Hint: IntelliJ IDEA will generate skeletons for you). The code in `main()`
+will test your solution.
 
 BONUS: Try adjusting `getValue()` and `setValue()` to work with:
 
@@ -22,12 +23,6 @@ class Delegator {
 
 And explain what happens.
 
-<div class="hint">
-
-IntelliJ IDEA will generate skeletons for you.
-
-</div>
-
-<sub> This task doesn't contain automatic tests, so
-it's always marked as "Correct" when you run "Check".
-Please compare your solution to the one provided! </sub>
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

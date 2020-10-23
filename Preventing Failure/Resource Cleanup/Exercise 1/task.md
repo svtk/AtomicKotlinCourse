@@ -6,7 +6,7 @@ function that uses `java.io.File`. Create a `File` object initialized to
 and add `text` to the file (IntelliJ IDEA will give you hints to help choose
 the member functions to call for `File`). Use `useLines()` to read the file and
 display it with `println()`, then use `forEachLine()` to read the file and
-display it with `println()`. The starter code in `main()` tests
+display it with `println()`. The starter code in `main()` 
 `writeAndRead()`.
 
 <sub> This task doesn't contain automatic tests,

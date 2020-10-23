@@ -1,6 +1,6 @@
 ## Booleans (#1)
 
-Guess the answers for the following Boolean expressions and then check yourself
+Guess the answers for the following boolean expressions and then check yourself
 using Kotlin:
 
 ```kotlin

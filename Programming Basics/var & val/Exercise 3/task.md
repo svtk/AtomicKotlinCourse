@@ -12,7 +12,8 @@ println(y) // 1
 ```
 
 Your code should remain unchanged for different initializers, like `var x =
-"first"`, `var y = "second"`.
+"first"`, `var y = "second"`. Thus, using `x = 2`, `y = 1` is not the expected
+solution.
 
 <div class="hint">
 
