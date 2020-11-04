@@ -1,8 +1,9 @@
 // CreatingGenerics/ReificationC.kt
 package creatinggenerics
+import kotlin.reflect.KClass
 
-fun <T> c(class_: Class<T>) = a(class_)
+fun <T: Any> c(kClass: KClass<T>) = a(kClass)
 
 class K
 
-val kc = c(K::class.java)
+val kc = c(K::class)

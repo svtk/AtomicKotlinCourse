@@ -22,6 +22,13 @@ class GImplementation<T>(
   override fun f(): T = x
 }
 
+class ConcreteImplementation
+  : GInterface<String> {
+  override val x: String
+    get() = "x"
+  override fun f() = "f()"
+}
+
 fun basicGenerics() {
   gFunction("Yellow")
   gFunction(1)
@@ -41,4 +48,7 @@ fun basicGenerics() {
   GImplementation("Cyan").f()
   GImplementation(11).f()
   GImplementation(Dog()).f().bark()
+
+  ConcreteImplementation().f()
+  ConcreteImplementation().x
 }

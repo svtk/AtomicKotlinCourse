@@ -20,6 +20,8 @@ files:
   visible: true
 - name: src/Constraints.kt
   visible: true
+- name: src/Erasure.kt
+  visible: true
 - name: src/ReificationA.kt
   visible: true
 - name: src/ReificationB.kt

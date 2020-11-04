@@ -2,4 +2,4 @@
 package creatinggenerics
 
 // Doesn't compile because of erasure:
-// fun <T> b() = a(T::class.java)
+// fun <T: Any> b() = a(T::class)

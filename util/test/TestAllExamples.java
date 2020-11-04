@@ -2302,6 +2302,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testErasure() {
+        testExample("Power Tools/Creating Generics/Examples/src/Erasure.kt", creatinggenerics.ErasureKt::main);
+    }
+
+    @Test
     public void testCarCrate() {
         testExample("Power Tools/Creating Generics/Examples/src/CarCrate.kt", creatinggenerics.CarCrateKt::main);
     }
