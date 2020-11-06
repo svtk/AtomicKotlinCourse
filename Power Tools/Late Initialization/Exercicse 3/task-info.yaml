@@ -3,9 +3,6 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 203
-    length: 139
-    placeholder_text: '// val generator: Generator'
   - offset: 409
     length: 31
     placeholder_text: TODO()
@@ -18,5 +15,8 @@ files:
   - offset: 704
     length: 51
     placeholder_text: TODO()
+  - offset: 227
+    length: 115
+    placeholder_text: ' = Generator(0) // TODO'
 - name: test/Tests.kt
   visible: false

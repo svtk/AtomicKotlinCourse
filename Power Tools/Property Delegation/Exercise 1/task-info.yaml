@@ -5,7 +5,7 @@ files:
   placeholders:
   - offset: 103
     length: 141
-    placeholder_text: // TODO
+    placeholder_text: class Configuration
   - offset: 259
     length: 323
     placeholder_text: |-

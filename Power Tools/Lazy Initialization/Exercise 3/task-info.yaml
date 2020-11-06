@@ -3,29 +3,29 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 96
-    length: 316
+  - offset: 119
+    length: 22
     placeholder_text: // TODO
-  - offset: 427
-    length: 256
-    placeholder_text: |-
-      /*
-        val a by lazy {
-          trace("Initializing A")
-          A()
-        }
-        trace("'a' defined")
-        trace(a.f())
-        trace eq """
-          'a' defined
-          Initializing A
-          A constructor
-          Initializing A.i
-          Initializing A.b
-          B constructor
-          Initializing B.j
-          3
-        """
-      */
+  - offset: 154
+    length: 51
+    placeholder_text: = B() // TODO
+  - offset: 214
+    length: 49
+    placeholder_text: = 1 // TODO
+  - offset: 276
+    length: 9
+    placeholder_text: 0 // TODO
+  - offset: 312
+    length: 22
+    placeholder_text: // TODO
+  - offset: 347
+    length: 49
+    placeholder_text: = 2 // TODO
+  - offset: 435
+    length: 49
+    placeholder_text: = A() // TODO
+  - offset: 409
+    length: 1
+    placeholder_text: 0 // TODO
 - name: test/Tests.kt
   visible: false

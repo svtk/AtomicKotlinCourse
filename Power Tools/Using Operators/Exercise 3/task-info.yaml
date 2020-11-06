@@ -4,7 +4,24 @@ files:
   visible: true
   placeholders:
   - offset: 102
-    length: 658
-    placeholder_text: // TODO
+    length: 142
+    placeholder_text: 'data class N(var n: Int)'
+  - offset: 259
+    length: 337
+    placeholder_text: |-
+      /*
+      val rnd = Random(47) // For repeatability
+        val key = N(11)
+        val map = mutableMapOf(key to 47)
+        println(map[key])
+        key.n++
+        println(map[key])
+        val list = List(5) { N(it) }.shuffled(rnd)
+        println("list: $list")
+        val set = list.toSortedSet()
+        println("sorted set (1): $set")
+        set.min()!!.n += 2
+        println("sorted set (2): $set")
+      */
 - name: test/Tests.kt
   visible: false

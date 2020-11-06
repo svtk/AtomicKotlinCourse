@@ -1,7 +1,7 @@
 ## Scope Functions (#2)
 
-Import the `SpaceShipControls` class from
-`ClassDelegation/SpaceShipControls.kt`. Start your `main()` with:
+The starter code uses the `SpaceShipControls` class from
+`ClassDelegation/SpaceShipControls.kt`. It contains `main()` starting with:
 
 ```kotlin
 fun main() {
@@ -10,7 +10,7 @@ fun main() {
     trace(forward(velocity))
 ```
 
-also calling `right(velocity)` and `down(velocity)`, tracing the results of
+Add `right(velocity)` and `down(velocity)` calls, tracing the results of
 each. At the closing `}` of the scope function, chain the result to a `let`
 block, which increments `velocity`, then performs the same operations. At the
 end of that block, chain to a `run` block, then an `apply` block and an `also`
