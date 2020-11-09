@@ -2502,6 +2502,61 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testAnnotatedJava() {
+        testExample("Appendices/Java Interoperability/Examples/src/AnnotatedJava.kt", interop.AnnotatedJavaKt::main);
+    }
+
+    @Test
+    public void testReadOnlyCollections() {
+        testExample("Appendices/Java Interoperability/Examples/src/ReadOnlyCollections.kt", ReadOnlyCollectionsKt::main);
+    }
+
+    @Test
+    public void testPlatformTypes() {
+        testExample("Appendices/Java Interoperability/Examples/src/PlatformTypes.kt", interop.PlatformTypesKt::main);
+    }
+
+    @Test
+    public void testKotlinChecked() {
+        testExample("Appendices/Java Interoperability/Examples/src/KotlinChecked.kt", KotlinCheckedKt::main);
+    }
+
+    @Test
+    public void testHiddenArrayList() {
+        testExample("Appendices/Java Interoperability/Examples/src/HiddenArrayList.kt", HiddenArrayListKt::main);
+    }
+
+    @Test
+    public void testBigFibonacci() {
+        testExample("Appendices/Java Interoperability/Examples/src/BigFibonacci.kt", interop.BigFibonacciKt::main);
+    }
+
+    @Test
+    public void testExtensionsToJavaClass() {
+        testExample("Appendices/Java Interoperability/Examples/src/ExtensionsToJavaClass.kt", interop.ExtensionsToJavaClassKt::main);
+    }
+
+    @Test
+    public void testJavaList() {
+        testExample("Appendices/Java Interoperability/Examples/src/JavaList.kt", JavaListKt::main);
+    }
+
+    @Test
+    public void testUseBeanClass() {
+        testExample("Appendices/Java Interoperability/Examples/src/UseBeanClass.kt", UseBeanClassKt::main);
+    }
+
+    @Test
+    public void testRandom() {
+        testExample("Appendices/Java Interoperability/Examples/src/Random.kt", RandomKt::main);
+    }
+
+    @Test
+    public void testNPEOnPlatformType() {
+        testExample("Appendices/Java Interoperability/Examples/src/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
+    }
+
+    @Test
     public void testTask() {
         testExample("Programming Basics/Hello, World/Exercise 2/src/Task.kt", helloWorldExercise2.TaskKt::main);
     }
