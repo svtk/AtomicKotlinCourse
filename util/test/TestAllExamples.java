@@ -2522,6 +2522,41 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testUsingKotlinClass() {
+        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/UsingKotlinClass.java", Interoperability.UsingKotlinClass::main);
+    }
+
+    @Test
+    public void testMakeSalad() {
+        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/MakeSalad.java", Interoperability.MakeSalad::main);
+    }
+
+    @Test
+    public void testCallTopLevelFunction() {
+        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/CallTopLevelFunction.java", Interoperability.CallTopLevelFunction::main);
+    }
+
+    @Test
+    public void testCatchChecked() {
+        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/CatchChecked.java", Interoperability.CatchChecked::main);
+    }
+
+    @Test
+    public void testJavaChecked() {
+        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/JavaChecked.java", Interoperability.JavaChecked::main);
+    }
+
+    @Test
+    public void testCallTopLevelFunction2() {
+        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/CallTopLevelFunction2.java", Interoperability.CallTopLevelFunction2::main);
+    }
+
+    @Test
+    public void testUsingDataClass() {
+        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/UsingDataClass.java", Interoperability.UsingDataClass::main);
+    }
+
+    @Test
     public void testHiddenArrayList() {
         testExample("Appendices/Java Interoperability/Examples/src/HiddenArrayList.kt", HiddenArrayListKt::main);
     }

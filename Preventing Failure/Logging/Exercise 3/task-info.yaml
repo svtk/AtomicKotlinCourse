@@ -6,6 +6,9 @@ files:
   - offset: 161
     length: 31
     placeholder_text: '// TODO: add values'
+  - offset: 220
+    length: 5
+    placeholder_text: TODO()
   - offset: 305
     length: 154
     placeholder_text: |-
@@ -26,8 +29,5 @@ files:
   - offset: 655
     length: 15
     placeholder_text: log("Error", msg)
-  - offset: 220
-    length: 5
-    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false

@@ -8,8 +8,7 @@ public class JavaChecked {
   // Build path to current source file, based
   // on directory where Gradle is invoked:
   static Path thisFile = Paths.get(
-    "Examples", "Interoperability",
-    "JavaChecked.java");
+    "DataFiles", "file_real.txt");
   public static void main(String[] args) {
     BufferedReader source = null;
     try {
@@ -20,8 +19,7 @@ public class JavaChecked {
     }
     try {
       String first = source.readLine();
-      eq(first, "// Interoperability/" +
-        "JavaChecked.java");
+      eq(first, "wubba lubba dub dub");
     } catch(IOException e) {
       // Recover from read() error
     }
