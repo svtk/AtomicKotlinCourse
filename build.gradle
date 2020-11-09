@@ -38,14 +38,14 @@ allprojects {
     }
     compileKotlin.destinationDir = compileJava.destinationDir
     compileKotlin {
-        kotlinOptions.jvmTarget = "1.8"
+        kotlinOptions.jvmTarget = "9"
     }
     compileTestKotlin {
-        kotlinOptions.jvmTarget = "1.8"
+        kotlinOptions.jvmTarget = "9"
     }
 }
 apply plugin: 'application'
-sourceCompatibility = 1.8
+sourceCompatibility = 9
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
