@@ -6,9 +6,6 @@ files:
   - offset: 459
     length: 158
     placeholder_text: TODO()
-  - offset: 656
-    length: 202
-    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false
 feedback_link: |

@@ -29,25 +29,14 @@ class Cage(private val maxCapacity: Int) {
     }
     throw NoSuchElementException("No hamster called $name")
   }
-
-  fun remove(name: String) {
-    var hamsterWithGivenName: Hamster? = null
-    for (hamster in hamsters) {
-      if (hamster.name == name) {
-        hamsterWithGivenName = hamster
-      }
-    }
-    hamsters.remove(hamsterWithGivenName)
-  }
 }
 
 fun main() {
   val cage = Cage(2)
   cage.put(Hamster("Alice")) eq true
   cage.get("Alice") eq "Hamster('Alice')"
-  cage.remove("Alice")
   capture {
-    cage.get("Alice")
+    cage.get("Bob")
   } eq "NoSuchElementException: " +
-    "No hamster called Alice"
+    "No hamster called Bob"
 }

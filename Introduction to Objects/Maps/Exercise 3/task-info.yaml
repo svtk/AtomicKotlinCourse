@@ -23,18 +23,6 @@ files:
           }
           throw NoSuchElementException("No hamster called $name")
         }
-  - offset: 549
-    length: 21
-    placeholder_text: |-
-      {
-          var hamsterWithGivenName: Hamster? = null
-          for (hamster in hamsters) {
-            if (hamster.name == name) {
-              hamsterWithGivenName = hamster
-            }
-          }
-          hamsters.remove(hamsterWithGivenName)
-        }
 - name: test/Tests.kt
   visible: false
 feedback_link: |

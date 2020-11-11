@@ -7,6 +7,5 @@ For this exercise, `Hamster`s are stored in a `List`. In the next exercise,
 `Map` will be used instead of `List`.
 
 Implement `get(name: String)` as a member function for `Cage` so it returns the
-`Hamster` with `name`. Implement `remove(name: String)` as a member function
-for `Cage` so it removes the `Hamster` with `name`. In both cases, if there's
-no `Hamster` with that `name`, throw `NoSuchElementException`.
+`Hamster` with `name`. If there's no `Hamster` with that `name`, throw
+`NoSuchElementException`.

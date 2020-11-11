@@ -28,18 +28,4 @@ class TestMapsExercise2 {
         "NoSuchElementException: No hamster called Bob")
     }
   }
-
-  @Test(timeout = TIMEOUT)
-  fun test3HamsterIsRemoved() {
-    val cage = Cage(2)
-    cage.put(Hamster("Alice"))
-    cage.remove("Alice")
-    try {
-      cage.get("Alice")
-    } catch (e: NoSuchElementException) {
-      Assert.assertEquals("'remove' should remove the hamster from the cage",
-        e.javaClass.simpleName + (e.message?.let { ": $it" } ?: ""),
-        "NoSuchElementException: No hamster called Alice")
-    }
-  }
 }
