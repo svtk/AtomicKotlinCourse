@@ -10,7 +10,8 @@ import util.TIMEOUT
 class TestOverloadingExercise3 {
 
   private fun testList(actual: String, expected: String) {
-    Assert.assertEquals("Wrong result: ", expected, actual)
+    Assert.assertEquals(
+      "Wrong result: ", "MY: $expected", actual)
   }
 
   @Test(timeout = TIMEOUT)
