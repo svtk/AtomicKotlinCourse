@@ -3,24 +3,14 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 103
-    length: 141
-    placeholder_text: class Configuration
-  - offset: 259
-    length: 323
-    placeholder_text: |-
-      /*
-        val config = Configuration(mutableMapOf(
-          "user" to "Luciano",
-          "id" to "Ramalho47",
-          "project" to "MyLittlePython",
-        ))
-        config.project eq "MyLittlePython"
-        config.user = "Crocubot"
-        config.id = "C137"
-        config.project = "WhirlyDirly"
-        config.map eq "{user=Crocubot, " +
-          "id=C137, project=WhirlyDirly}"
-      */
+  - offset: 173
+    length: 3
+    placeholder_text: val
+  - offset: 297
+    length: 105
+    placeholder_text: // operator fun Sum.setValue
+  - offset: 469
+    length: 19
+    placeholder_text: //  addition.sum = 10
 - name: test/Tests.kt
   visible: false

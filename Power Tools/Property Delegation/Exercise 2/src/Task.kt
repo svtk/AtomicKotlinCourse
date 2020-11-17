@@ -1,28 +1,27 @@
-// PropertyDelegation/PropDelegationSoln2.kt
-package propertyDelegationExercise2
+// PropertyDelegation/PropDelegationSoln3.kt
+package propertyDelegationExercise3
 import atomictest.eq
 import kotlin.reflect.KProperty
 
-class Add(var a: Int, val b: Int) {
-  var sum by Sum()
-}
-
-class Sum
-
-operator fun Sum.getValue(
-  thisRef: Add, property: KProperty<*>
-) = thisRef.a + thisRef.b
-
-operator fun Sum.setValue(
-  thisRef: Add, property: KProperty<*>,
-  value: Int
-) {
-  thisRef.a = value
+class Delegator {
+  private var list = List(8) { "$it" }
+  var strings: List<String> by list
+  operator fun List<String>.getValue(
+    r: Delegator,
+    property: KProperty<*>
+  ): List<String> = r.list
+  operator fun List<String>.setValue(
+    w: Delegator,
+    property: KProperty<*>,
+    list: List<String>
+  ) {
+    w.list = list
+  }
 }
 
 fun main() {
-  val addition = Add(144, 12)
-  addition.sum eq 156
-  addition.sum = 10
-  addition.sum eq 22
+  val x = Delegator()
+  x.strings eq "[0, 1, 2, 3, 4, 5, 6, 7]"
+  x.strings = listOf("99", "17")
+  x.strings eq "[99, 17]"
 }

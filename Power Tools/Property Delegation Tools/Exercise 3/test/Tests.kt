@@ -1,9 +1,9 @@
-package propertyDelegationToolsExercise3
+package propertyDelegationToolsExercise2
 
 import org.junit.Test
 import util.unimplementedTest
 
-class TestPropertyDelegationToolsExercise3 {
+class TestPropertyDelegationToolsExercise2 {
     @Test fun testSolution() {
         unimplementedTest()
     }

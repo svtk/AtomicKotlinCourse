@@ -1,27 +1,35 @@
-// PropertyDelegation/PropDelegationSoln3.kt
-package propertyDelegationExercise3
+// PropertyDelegation/PropDelegationSoln4.kt
+package propertyDelegationExercise4
 import atomictest.eq
 import kotlin.reflect.KProperty
 
-class Delegator {
-  private var list = List(8) { "$it" }
-  var strings: List<String> by list
-  operator fun List<String>.getValue(
-    r: Delegator,
+class Holder<E> {
+  private var list = listOf<E>()
+  operator fun getValue(
+    delegator: Holders,
     property: KProperty<*>
-  ): List<String> = r.list
-  operator fun List<String>.setValue(
-    w: Delegator,
+  ): List<E> = list
+  operator fun setValue(
+    delegator: Holders,
     property: KProperty<*>,
-    list: List<String>
+    value: List<E>
   ) {
-    w.list = list
+    list = value
   }
 }
 
+class Holders {
+  var strings by Holder<String>()
+  var ints by Holder<Int>()
+  var bools by Holder<Boolean>()
+}
+
 fun main() {
-  val x = Delegator()
-  x.strings eq "[0, 1, 2, 3, 4, 5, 6, 7]"
+  val x = Holders()
   x.strings = listOf("99", "17")
   x.strings eq "[99, 17]"
+  x.ints = listOf(12, 23, 34, 45)
+  x.ints eq "[12, 23, 34, 45]"
+  x.bools = listOf(true, true, false, true)
+  x.bools eq "[true, true, false, true]"
 }

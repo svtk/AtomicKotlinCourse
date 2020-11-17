@@ -1,8 +1,27 @@
-## Property Delegation (#2)
+## Property Delegation (#3)
 
-Starting with `Add.kt`, add a `setValue()` extension function to `Sum` that
-assigns its `value` argument to `a` in `Add` (change `Add` to make this work).
-The starter code in `main()` tests your solution.
+Start with:
+
+```kotlin
+class Delegator {
+  private var list = List(8) { "$it" }
+  var strings by list
+}
+```
+
+Define `getValue()` and `setValue()` as extension functions to `List<String>`
+(Hint: IntelliJ IDEA will generate skeletons for you). The code in `main()`
+will test your solution.
+
+BONUS: Try adjusting `getValue()` and `setValue()` to work with:
+
+```kotlin
+class Delegator {
+  var strings by List(8) { "$it" }
+  ...
+```
+
+And explain what happens.
 
 <sub> This task doesn't contain automatic tests,
 so it's always marked as "Correct" when you run "Check".

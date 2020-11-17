@@ -3,8 +3,24 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 191
-    length: 509
-    placeholder_text: // TODO
+  - offset: 103
+    length: 141
+    placeholder_text: class Configuration
+  - offset: 259
+    length: 323
+    placeholder_text: |-
+      /*
+        val config = Configuration(mutableMapOf(
+          "user" to "Luciano",
+          "id" to "Ramalho47",
+          "project" to "MyLittlePython",
+        ))
+        config.project eq "MyLittlePython"
+        config.user = "Crocubot"
+        config.id = "C137"
+        config.project = "WhirlyDirly"
+        config.map eq "{user=Crocubot, " +
+          "id=C137, project=WhirlyDirly}"
+      */
 - name: test/Tests.kt
   visible: false

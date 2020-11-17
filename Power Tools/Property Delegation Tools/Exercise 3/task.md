@@ -1,8 +1,18 @@
-## Property Delegation Tools (#3)
+## Property Delegation Tools (#2)
 
-Create a `class PositiveInt(i: Int)` containing a property `var n` such that
-any value assigned to `n` can only be greater than zero. The starter code in
-`main()` will test your solution.
+Create a generic function `observe()` that uses `trace()` to capture
+`"$propertyName $oldValue to $newValue"` whenever a property changes. Ensure
+that it works with:
+
+```kotlin
+class Product(nm: String = "<0>", id: Int = -1) {
+  var name by observable(nm, ::observe)
+  var ident by observable(id, ::observe)
+  override fun toString() = "$name $ident"
+}
+```
+
+And that the starter code in `main()` successfully executes.
 
 <sub> This task doesn't contain automatic tests,
 so it's always marked as "Correct" when you run "Check".

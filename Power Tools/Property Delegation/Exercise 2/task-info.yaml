@@ -3,14 +3,11 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 173
-    length: 3
-    placeholder_text: val
-  - offset: 297
-    length: 105
-    placeholder_text: // operator fun Sum.setValue
-  - offset: 469
-    length: 19
-    placeholder_text: //  addition.sum = 10
+  - offset: 220
+    length: 7
+    placeholder_text: = mutableListOf() // replace with 'by list'
+  - offset: 230
+    length: 242
+    placeholder_text: // TODO getValue and setValue extensions
 - name: test/Tests.kt
   visible: false

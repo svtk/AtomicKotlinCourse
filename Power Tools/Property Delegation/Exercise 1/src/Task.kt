@@ -1,25 +1,28 @@
-// PropertyDelegation/PropDelegationSoln1.kt
-package propertyDelegationExercise1
+// PropertyDelegation/PropDelegationSoln2.kt
+package propertyDelegationExercise2
 import atomictest.eq
+import kotlin.reflect.KProperty
 
-class Configuration(
-  val map: MutableMap<String, Any?>
+class Add(var a: Int, val b: Int) {
+  var sum by Sum()
+}
+
+class Sum
+
+operator fun Sum.getValue(
+  thisRef: Add, property: KProperty<*>
+) = thisRef.a + thisRef.b
+
+operator fun Sum.setValue(
+  thisRef: Add, property: KProperty<*>,
+  value: Int
 ) {
-  var user: String by map
-  var id: String by map
-  var project: String by map
+  thisRef.a = value
 }
 
 fun main() {
-  val config = Configuration(mutableMapOf(
-    "user" to "Luciano",
-    "id" to "Ramalho47",
-    "project" to "MyLittlePython",
-  ))
-  config.project eq "MyLittlePython"
-  config.user = "Crocubot"
-  config.id = "C137"
-  config.project = "WhirlyDirly"
-  config.map eq "{user=Crocubot, " +
-    "id=C137, project=WhirlyDirly}"
+  val addition = Add(144, 12)
+  addition.sum eq 156
+  addition.sum = 10
+  addition.sum eq 22
 }

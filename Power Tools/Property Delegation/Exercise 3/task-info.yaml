@@ -3,11 +3,28 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 220
-    length: 7
-    placeholder_text: = mutableListOf() // replace with 'by list'
-  - offset: 230
-    length: 242
+  - offset: 188
+    length: 216
     placeholder_text: // TODO getValue and setValue extensions
+  - offset: 424
+    length: 94
+    placeholder_text: |-
+      /*
+        var strings by Holder<String>()
+        var ints by Holder<Int>()
+        var bools by Holder<Boolean>()
+      */
+  - offset: 535
+    length: 228
+    placeholder_text: |-
+      /*
+        val x = Holders()
+        x.strings = listOf("99", "17")
+        x.strings eq "[99, 17]"
+        x.ints = listOf(12, 23, 34, 45)
+        x.ints eq "[12, 23, 34, 45]"
+        x.bools = listOf(true, true, false, true)
+        x.bools eq "[true, true, false, true]"
+      */
 - name: test/Tests.kt
   visible: false

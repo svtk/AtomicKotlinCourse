@@ -3,8 +3,14 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 177
-    length: 55
-    placeholder_text: = TODO() // by ...
+  - offset: 178
+    length: 96
+    placeholder_text: fun observe() {}
+  - offset: 337
+    length: 28
+    placeholder_text: = "" // by observable(nm, ::observe)
+  - offset: 378
+    length: 28
+    placeholder_text: = 0 // by observable(id, ::observe)
 - name: test/Tests.kt
   visible: false

@@ -1,27 +1,24 @@
-## Property Delegation (#3)
+## Property Delegation (#4)
 
-Start with:
+Create a generic class that begins:
 
 ```kotlin
-class Delegator {
-  private var list = List(8) { "$it" }
-  var strings by list
+class Holder<E> {
+  private var list = listOf<E>()
+```
+
+Define `getValue()` and `setValue()` for `Holder`, so that you can successfully
+write:
+
+```kotlin
+class Holders {
+  var strings by Holder<String>()
+  var ints by Holder<Int>()
+  var bools by Holder<Boolean>()
 }
 ```
 
-Define `getValue()` and `setValue()` as extension functions to `List<String>`
-(Hint: IntelliJ IDEA will generate skeletons for you). The code in `main()`
-will test your solution.
-
-BONUS: Try adjusting `getValue()` and `setValue()` to work with:
-
-```kotlin
-class Delegator {
-  var strings by List(8) { "$it" }
-  ...
-```
-
-And explain what happens.
+The starter code in `main()` will test your solution.
 
 <sub> This task doesn't contain automatic tests,
 so it's always marked as "Correct" when you run "Check".

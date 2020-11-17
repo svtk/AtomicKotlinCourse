@@ -1,30 +1,25 @@
-// DelegationTools/DelegToolsSoln1.kt
-package propertyDelegationToolsExercise1
-import kotlin.properties.Delegates
-import atomictest.*
+// PropertyDelegation/PropDelegationSoln1.kt
+package propertyDelegationExercise1
+import atomictest.eq
 
-data class Flag(val b: Boolean = false)
+class Configuration(
+  val map: MutableMap<String, Any?>
+) {
+  var user: String by map
+  var id: String by map
+  var project: String by map
+}
 
 fun main() {
-  var d: Double by Delegates.notNull()
-  var s by Delegates.notNull<String>()
-  var f: Flag by Delegates.notNull()
-  capture {
-    d
-  } eq "IllegalStateException: Property " +
-    "d should be initialized before get."
-  capture {
-    s
-  } eq "IllegalStateException: Property " +
-    "s should be initialized before get."
-  capture {
-    f
-  } eq "IllegalStateException: Property " +
-    "f should be initialized before get."
-  d = 1.1
-  s = "yes"
-  f = Flag(true)
-  d eq 1.1
-  s eq "yes"
-  f eq "Flag(b=true)"
+  val config = Configuration(mutableMapOf(
+    "user" to "Luciano",
+    "id" to "Ramalho47",
+    "project" to "MyLittlePython",
+  ))
+  config.project eq "MyLittlePython"
+  config.user = "Crocubot"
+  config.id = "C137"
+  config.project = "WhirlyDirly"
+  config.map eq "{user=Crocubot, " +
+    "id=C137, project=WhirlyDirly}"
 }

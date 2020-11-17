@@ -1,28 +1,30 @@
-// DelegationTools/DelegToolsSoln2.kt
-package propertyDelegationToolsExercise2
-import kotlin.properties.Delegates.observable
-import kotlin.reflect.KProperty
+// DelegationTools/DelegToolsSoln1.kt
+package propertyDelegationToolsExercise1
+import kotlin.properties.Delegates
 import atomictest.*
 
-fun <T> observe(
-  prop: KProperty<*>, old: T, new: T
-) {
-  trace("${prop.name} $old to $new")
-}
-
-class Product(nm: String = "<0>", id: Int = -1) {
-  var name by observable(nm, ::observe)
-  var ident by observable(id, ::observe)
-  override fun toString() = "$name $ident"
-}
+data class Flag(val b: Boolean = false)
 
 fun main() {
-  val product = Product()
-  product.name = "Plumbus"
-  product.ident = 1193
-  product eq "Plumbus 1193"
-  trace eq """
-    name <0> to Plumbus
-    ident -1 to 1193
-  """
+  var d: Double by Delegates.notNull()
+  var s by Delegates.notNull<String>()
+  var f: Flag by Delegates.notNull()
+  capture {
+    d
+  } eq "IllegalStateException: Property " +
+    "d should be initialized before get."
+  capture {
+    s
+  } eq "IllegalStateException: Property " +
+    "s should be initialized before get."
+  capture {
+    f
+  } eq "IllegalStateException: Property " +
+    "f should be initialized before get."
+  d = 1.1
+  s = "yes"
+  f = Flag(true)
+  d eq 1.1
+  s eq "yes"
+  f eq "Flag(b=true)"
 }

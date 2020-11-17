@@ -1,19 +1,28 @@
-// DelegationTools/DelegToolsSoln3.kt
-package propertyDelegationToolsExercise3
-import atomictest.eq
-import kotlin.properties.Delegates
+// DelegationTools/DelegToolsSoln2.kt
+package propertyDelegationToolsExercise2
+import kotlin.properties.Delegates.observable
+import kotlin.reflect.KProperty
+import atomictest.*
 
-class PositiveInt(i: Int) {
-  var n: Int by Delegates.vetoable(i) {
-    _, _, new -> new > 0
-  }
+fun <T> observe(
+  prop: KProperty<*>, old: T, new: T
+) {
+  trace("${prop.name} $old to $new")
+}
+
+class Product(nm: String = "<0>", id: Int = -1) {
+  var name by observable(nm, ::observe)
+  var ident by observable(id, ::observe)
+  override fun toString() = "$name $ident"
 }
 
 fun main() {
-  var pi = PositiveInt(2)
-  pi.n eq 2
-  pi.n = 200
-  pi.n eq 200
-  pi.n = -1
-  pi.n eq 200
+  val product = Product()
+  product.name = "Plumbus"
+  product.ident = 1193
+  product eq "Plumbus 1193"
+  trace eq """
+    name <0> to Plumbus
+    ident -1 to 1193
+  """
 }
