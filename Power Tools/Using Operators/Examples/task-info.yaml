@@ -16,3 +16,5 @@ files:
   visible: true
 - name: src/DestructuringData.kt
   visible: true
+- name: src/ComparableRange.kt
+  visible: true

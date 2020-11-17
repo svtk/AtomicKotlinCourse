@@ -1,5 +1,5 @@
 // DelegationTools/DelegToolsSoln3.kt
-package propertyDelegationToolsExercise3
+package propertyDelegationToolsExercise4
 import atomictest.eq
 import kotlin.properties.Delegates
 

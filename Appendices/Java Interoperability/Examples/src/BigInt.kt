@@ -1,14 +1,13 @@
 // Interoperability/BigInt.kt
-package bigint
+package biginteger
 import java.math.BigInteger
 
-typealias BigInt = BigInteger
+fun Int.toBigInteger(): BigInteger =
+  BigInteger.valueOf(this.toLong())
 
-val Int.big: BigInt
-  get() = BigInt.valueOf(toLong())
+fun String.toBigInteger(): BigInteger =
+  BigInteger(this)
 
-val String.big: BigInt
-  get() = BigInt(this)
-
-val zero = BigInt.ZERO
-val one = BigInt.ONE
+operator fun BigInteger.plus(
+  other: BigInteger
+): BigInteger = this.add(other)

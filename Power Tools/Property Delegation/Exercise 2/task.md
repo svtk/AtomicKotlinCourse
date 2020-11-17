@@ -1,4 +1,4 @@
-## Property Delegation (#3)
+## Property Delegation (#2)
 
 Start with:
 

@@ -1,4 +1,4 @@
-## Property Delegation Tools (#2)
+## Property Delegation Tools (#3)
 
 Create a generic function `observe()` that uses `trace()` to capture
 `"$propertyName $oldValue to $newValue"` whenever a property changes. Ensure

@@ -1,7 +1,7 @@
 // Interoperability/KotlinDataClass.kt
 package Interoperability
 
-data class Data(
+data class Muppet(
   var name: String,
   var age: Int
 )

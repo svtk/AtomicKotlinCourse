@@ -1,7 +1,5 @@
 type: theory
 files:
-- name: src/Differences.kt
-  visible: true
 - name: src/Gnome.kt
   visible: true
 - name: src/NullGnome.kt
@@ -11,4 +9,8 @@ files:
 - name: src/NameTag.kt
   visible: true
 - name: src/Blob.kt
+  visible: true
+- name: src/AndNullability.kt
+  visible: true
+- name: src/Nesting.kt
   visible: true

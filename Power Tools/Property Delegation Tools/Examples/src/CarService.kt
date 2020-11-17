@@ -1,9 +1,9 @@
-// PropertyDelegation/CarService.kt
+// DelegationTools/CarService.kt
 package propertydelegation
 import atomictest.eq
 
 class Driver(
-  val map: MutableMap<String, Any?>
+  map: MutableMap<String, Any?>
 ) {
   var name: String by map
   var age: Int by map
@@ -20,7 +20,7 @@ fun main() {
     "available" to false,
     "coord" to Pair(111.93, 1231.12)
   )
-  val driver = Driver(info);
+  val driver = Driver(info)
   driver.available eq false
   driver.available = true
   info eq "{name=Bruno Fiat, age=22, " +

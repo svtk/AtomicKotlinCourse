@@ -1,5 +1,5 @@
 // PropertyDelegation/PropDelegationSoln1.kt
-package propertyDelegationExercise1
+package propertyDelegationToolsExercise1
 import atomictest.eq
 
 class Configuration(

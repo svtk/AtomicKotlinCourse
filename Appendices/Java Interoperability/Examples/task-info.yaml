@@ -14,7 +14,7 @@ files:
   visible: true
 - name: src/KotlinDataClass.kt
   visible: true
-- name: src/Interoperability/UsingDataClass.java
+- name: src/Interoperability/UseDataClass.java
   visible: true
 - name: src/TopLevelFunction.kt
   visible: true
@@ -57,4 +57,8 @@ files:
 - name: src/JavaList.kt
   visible: true
 - name: src/ReadOnlyCollections.kt
+  visible: true
+- name: src/Interoperability/JavaWrapper.java
+  visible: true
+- name: src/KotlinWrapper.kt
   visible: true

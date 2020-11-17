@@ -6,8 +6,6 @@ files:
   visible: true
 - name: src/Molecule.kt
   visible: true
-- name: src/AllOperators.kt
-  visible: true
 - name: src/Invoke.kt
   visible: true
 - name: src/StringInvoke.kt
@@ -15,4 +13,22 @@ files:
 - name: src/Backticks.kt
   visible: true
 - name: src/Swearing.kt
+  visible: true
+- name: src/DifferentTypes.kt
+  visible: true
+- name: src/Ranges.kt
+  visible: true
+- name: src/ContainerAccess.kt
+  visible: true
+- name: src/DefiningEquality.kt
+  visible: true
+- name: src/ArithmeticOperators.kt
+  visible: true
+- name: src/ConfusingPrecedence.kt
+  visible: true
+- name: src/EqualsForNullable.kt
+  visible: true
+- name: src/Comparison.kt
+  visible: true
+- name: src/DefaultEquality.kt
   visible: true

@@ -8,7 +8,7 @@ public class JavaChecked {
   // Build path to current source file, based
   // on directory where Gradle is invoked:
   static Path thisFile = Paths.get(
-    "DataFiles", "file_real.txt");
+    "DataFiles", "file_wubba.txt");
   public static void main(String[] args) {
     BufferedReader source = null;
     try {

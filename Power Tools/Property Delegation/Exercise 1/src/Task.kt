@@ -1,5 +1,5 @@
 // PropertyDelegation/PropDelegationSoln2.kt
-package propertyDelegationExercise2
+package propertyDelegationExercise1
 import atomictest.eq
 import kotlin.reflect.KProperty
 

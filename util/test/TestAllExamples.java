@@ -2202,31 +2202,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testBlob() {
-        testExample("Power Tools/Scope Functions/Examples/src/Blob.kt", scopefunctions.BlobKt::main);
-    }
-
-    @Test
-    public void testNullGnome() {
-        testExample("Power Tools/Scope Functions/Examples/src/NullGnome.kt", scopefunctions.NullGnomeKt::main);
-    }
-
-    @Test
-    public void testMapLookup() {
-        testExample("Power Tools/Scope Functions/Examples/src/MapLookup.kt", scopefunctions.MapLookupKt::main);
-    }
-
-    @Test
-    public void testNameTag() {
-        testExample("Power Tools/Scope Functions/Examples/src/NameTag.kt", scopefunctions.NameTagKt::main);
-    }
-
-    @Test
-    public void testDifferences() {
-        testExample("Power Tools/Scope Functions/Examples/src/Differences.kt", scopefunctions.DifferencesKt::main);
-    }
-
-    @Test
     public void testTransform() {
         testExample("Power Tools/Extension Lambdas/Examples/src/Transform.kt", extensionlambdas.TransformKt::main);
     }
@@ -2269,6 +2244,36 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testListsAndMaps() {
         testExample("Power Tools/Extension Lambdas/Examples/src/ListsAndMaps.kt", extensionlambdas.ListsAndMapsKt::main);
+    }
+
+    @Test
+    public void testAndNullability() {
+        testExample("Power Tools/Scope Functions/Examples/src/AndNullability.kt", scopefunctions.AndNullabilityKt::main);
+    }
+
+    @Test
+    public void testBlob() {
+        testExample("Power Tools/Scope Functions/Examples/src/Blob.kt", scopefunctions.BlobKt::main);
+    }
+
+    @Test
+    public void testNullGnome() {
+        testExample("Power Tools/Scope Functions/Examples/src/NullGnome.kt", scopefunctions.NullGnomeKt::main);
+    }
+
+    @Test
+    public void testNesting() {
+        testExample("Power Tools/Scope Functions/Examples/src/Nesting.kt", scopefunctions.NestingKt::main);
+    }
+
+    @Test
+    public void testMapLookup() {
+        testExample("Power Tools/Scope Functions/Examples/src/MapLookup.kt", scopefunctions.MapLookupKt::main);
+    }
+
+    @Test
+    public void testNameTag() {
+        testExample("Power Tools/Scope Functions/Examples/src/NameTag.kt", scopefunctions.NameTagKt::main);
     }
 
     @Test
@@ -2342,8 +2347,23 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testAllOperators() {
-        testExample("Power Tools/Operator Overloading/Examples/src/AllOperators.kt", operatoroverloading.AllOperatorsKt::main);
+    public void testDefiningEquality() {
+        testExample("Power Tools/Operator Overloading/Examples/src/DefiningEquality.kt", operatoroverloading.DefiningEqualityKt::main);
+    }
+
+    @Test
+    public void testComparison() {
+        testExample("Power Tools/Operator Overloading/Examples/src/Comparison.kt", operatoroverloading.ComparisonKt::main);
+    }
+
+    @Test
+    public void testContainerAccess() {
+        testExample("Power Tools/Operator Overloading/Examples/src/ContainerAccess.kt", operatoroverloading.ContainerAccessKt::main);
+    }
+
+    @Test
+    public void testRanges() {
+        testExample("Power Tools/Operator Overloading/Examples/src/Ranges.kt", operatoroverloading.RangesKt::main);
     }
 
     @Test
@@ -2352,13 +2372,38 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testConfusingPrecedence() {
+        testExample("Power Tools/Operator Overloading/Examples/src/ConfusingPrecedence.kt", operatoroverloading.ConfusingPrecedenceKt::main);
+    }
+
+    @Test
     public void testMolecule() {
         testExample("Power Tools/Operator Overloading/Examples/src/Molecule.kt", operatoroverloading.MoleculeKt::main);
     }
 
     @Test
+    public void testDifferentTypes() {
+        testExample("Power Tools/Operator Overloading/Examples/src/DifferentTypes.kt", operatoroverloading.DifferentTypesKt::main);
+    }
+
+    @Test
+    public void testDefaultEquality() {
+        testExample("Power Tools/Operator Overloading/Examples/src/DefaultEquality.kt", operatoroverloading.DefaultEqualityKt::main);
+    }
+
+    @Test
+    public void testEqualsForNullable() {
+        testExample("Power Tools/Operator Overloading/Examples/src/EqualsForNullable.kt", operatoroverloading.EqualsForNullableKt::main);
+    }
+
+    @Test
     public void testNum() {
         testExample("Power Tools/Operator Overloading/Examples/src/Num.kt", operatoroverloading.NumKt::main);
+    }
+
+    @Test
+    public void testArithmeticOperators() {
+        testExample("Power Tools/Operator Overloading/Examples/src/ArithmeticOperators.kt", operatoroverloading.ArithmeticOperatorsKt::main);
     }
 
     @Test
@@ -2397,6 +2442,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testComparableRange() {
+        testExample("Power Tools/Using Operators/Examples/src/ComparableRange.kt", usingoperators.ComparableRangeKt::main);
+    }
+
+    @Test
     public void testDestructuringDuo() {
         testExample("Power Tools/Using Operators/Examples/src/DestructuringDuo.kt", usingoperators.DestructuringDuoKt::main);
     }
@@ -2427,11 +2477,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testCarService() {
-        testExample("Power Tools/Property Delegation/Examples/src/CarService.kt", propertydelegation.CarServiceKt::main);
-    }
-
-    @Test
     public void testFibonacciProperty() {
         testExample("Power Tools/Property Delegation/Examples/src/FibonacciProperty.kt", propertydelegation.FibonacciPropertyKt::main);
     }
@@ -2447,8 +2492,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testDelegateProvider() {
-        testExample("Power Tools/Property Delegation Tools/Examples/src/DelegateProvider.kt", delegationtools.DelegateProviderKt::main);
+    public void testCarService() {
+        testExample("Power Tools/Property Delegation Tools/Examples/src/CarService.kt", propertydelegation.CarServiceKt::main);
     }
 
     @Test
@@ -2532,6 +2577,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testJavaWrapper() {
+        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/JavaWrapper.java", Interoperability.JavaWrapper::main);
+    }
+
+    @Test
     public void testCallTopLevelFunction() {
         testExample("Appendices/Java Interoperability/Examples/src/Interoperability/CallTopLevelFunction.java", Interoperability.CallTopLevelFunction::main);
     }
@@ -2552,8 +2602,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testUsingDataClass() {
-        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/UsingDataClass.java", Interoperability.UsingDataClass::main);
+    public void testUseDataClass() {
+        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/UseDataClass.java", Interoperability.UseDataClass::main);
     }
 
     @Test
@@ -2589,6 +2639,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testNPEOnPlatformType() {
         testExample("Appendices/Java Interoperability/Examples/src/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
+    }
+
+    @Test
+    public void testKotlinWrapper() {
+        testExample("Appendices/Java Interoperability/Examples/src/KotlinWrapper.kt", interop.KotlinWrapperKt::main);
     }
 
     @Test
@@ -3943,32 +3998,32 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask265() {
-        testExample("Power Tools/Scope Functions/Exercise 1/src/Task.kt", scopeFunctionsExercise1.TaskKt::main);
-    }
-
-    @Test
-    public void testTask266() {
-        testExample("Power Tools/Scope Functions/Exercise 2/src/Task.kt", scopeFunctionsExercise2.TaskKt::main);
-    }
-
-    @Test
-    public void testTask267() {
-        testExample("Power Tools/Scope Functions/Exercise 3/src/Task.kt", scopeFunctionsExercise3.TaskKt::main);
-    }
-
-    @Test
-    public void testTask268() {
         testExample("Power Tools/Extension Lambdas/Exercise 1/src/Task.kt", extensionLambdasExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask269() {
+    public void testTask266() {
         testExample("Power Tools/Extension Lambdas/Exercise 2/src/Task.kt", extensionLambdasExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask270() {
+    public void testTask267() {
         testExample("Power Tools/Extension Lambdas/Exercise 3/src/Task.kt", extensionLambdasExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask268() {
+        testExample("Power Tools/Scope Functions/Exercise 1/src/Task.kt", scopeFunctionsExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask269() {
+        testExample("Power Tools/Scope Functions/Exercise 2/src/Task.kt", scopeFunctionsExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask270() {
+        testExample("Power Tools/Scope Functions/Exercise 3/src/Task.kt", scopeFunctionsExercise3.TaskKt::main);
     }
 
     @Test
@@ -4033,22 +4088,22 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask283() {
-        testExample("Power Tools/Property Delegation/Exercise 4/src/Task.kt", propertyDelegationExercise4.TaskKt::main);
-    }
-
-    @Test
-    public void testTask284() {
         testExample("Power Tools/Property Delegation Tools/Exercise 1/src/Task.kt", propertyDelegationToolsExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask285() {
+    public void testTask284() {
         testExample("Power Tools/Property Delegation Tools/Exercise 2/src/Task.kt", propertyDelegationToolsExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask286() {
+    public void testTask285() {
         testExample("Power Tools/Property Delegation Tools/Exercise 3/src/Task.kt", propertyDelegationToolsExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask286() {
+        testExample("Power Tools/Property Delegation Tools/Exercise 4/src/Task.kt", propertyDelegationToolsExercise4.TaskKt::main);
     }
 
     @Test

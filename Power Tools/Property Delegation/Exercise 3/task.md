@@ -1,4 +1,4 @@
-## Property Delegation (#4)
+## Property Delegation (#3)
 
 Create a generic class that begins:
 

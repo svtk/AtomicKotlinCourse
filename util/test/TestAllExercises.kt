@@ -777,22 +777,22 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#256 UnitTesting Exercise#3`() = testClass(unitTestingExercise3.TestUnitTestingExercise3::class)
 
   @Test
-  fun `test#257 ScopeFunctions Exercise#1`() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
+  fun `test#257 ExtensionLambdas Exercise#1`() = testClass(extensionLambdasExercise1.TestExtensionLambdasExercise1::class)
 
   @Test
-  fun `test#258 ScopeFunctions Exercise#2`() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
+  fun `test#258 ExtensionLambdas Exercise#2`() = testClass(extensionLambdasExercise2.TestExtensionLambdasExercise2::class)
 
   @Test
-  fun `test#259 ScopeFunctions Exercise#3`() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
+  fun `test#259 ExtensionLambdas Exercise#3`() = testClass(extensionLambdasExercise3.TestExtensionLambdasExercise3::class)
 
   @Test
-  fun `test#260 ExtensionLambdas Exercise#1`() = testClass(extensionLambdasExercise1.TestExtensionLambdasExercise1::class)
+  fun `test#260 ScopeFunctions Exercise#1`() = testClass(scopeFunctionsExercise1.TestScopeFunctionsExercise1::class)
 
   @Test
-  fun `test#261 ExtensionLambdas Exercise#2`() = testClass(extensionLambdasExercise2.TestExtensionLambdasExercise2::class)
+  fun `test#261 ScopeFunctions Exercise#2`() = testClass(scopeFunctionsExercise2.TestScopeFunctionsExercise2::class)
 
   @Test
-  fun `test#262 ExtensionLambdas Exercise#3`() = testClass(extensionLambdasExercise3.TestExtensionLambdasExercise3::class)
+  fun `test#262 ScopeFunctions Exercise#3`() = testClass(scopeFunctionsExercise3.TestScopeFunctionsExercise3::class)
 
   @Test
   fun `test#263 CreatingGenerics Exercise#1`() = testClass(creatingGenericsExercise1.TestCreatingGenericsExercise1::class)
@@ -831,16 +831,16 @@ class TestAllExercises : AbstractTestExercises() {
   fun `test#274 PropertyDelegation Exercise#3`() = testClass(propertyDelegationExercise3.TestPropertyDelegationExercise3::class)
 
   @Test
-  fun `test#275 PropertyDelegation Exercise#4`() = testClass(propertyDelegationExercise4.TestPropertyDelegationExercise4::class)
+  fun `test#275 PropertyDelegationTools Exercise#1`() = testClass(propertyDelegationToolsExercise1.TestPropertyDelegationToolsExercise1::class)
 
   @Test
-  fun `test#276 PropertyDelegationTools Exercise#1`() = testClass(propertyDelegationToolsExercise1.TestPropertyDelegationToolsExercise1::class)
+  fun `test#276 PropertyDelegationTools Exercise#2`() = testClass(propertyDelegationToolsExercise2.TestPropertyDelegationToolsExercise2::class)
 
   @Test
-  fun `test#277 PropertyDelegationTools Exercise#2`() = testClass(propertyDelegationToolsExercise2.TestPropertyDelegationToolsExercise2::class)
+  fun `test#277 PropertyDelegationTools Exercise#3`() = testClass(propertyDelegationToolsExercise3.TestPropertyDelegationToolsExercise3::class)
 
   @Test
-  fun `test#278 PropertyDelegationTools Exercise#3`() = testClass(propertyDelegationToolsExercise3.TestPropertyDelegationToolsExercise3::class)
+  fun `test#278 PropertyDelegationTools Exercise#4`() = testClass(propertyDelegationToolsExercise4.TestPropertyDelegationToolsExercise4::class)
 
   @Test
   fun `test#279 LazyInitialization Exercise#1`() = testClass(lazyInitializationExercise1.TestLazyInitializationExercise1::class)

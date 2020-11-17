@@ -9,6 +9,6 @@ fun main() {
 }
 
 /* Output:
-1. [OK] Everything is fine.
-2. [Fail] Something has broken.
+1 [OK] Everything is fine.
+2 [Fail] Something has broken.
 */

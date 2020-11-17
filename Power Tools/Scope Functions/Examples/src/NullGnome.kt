@@ -11,14 +11,14 @@ fun whichGnome(gnome: Gnome?) {
 }
 
 fun main() {
-  whichGnome(null)
   whichGnome(Gnome("Bob"))
+  whichGnome(null)
   trace eq """
-    null
     Bob
     Gnome: Bob
     Gnome: Bob
     Gnome: Bob
     Gnome: Bob
+    null
   """
 }
