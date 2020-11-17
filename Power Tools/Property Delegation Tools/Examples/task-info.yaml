@@ -1,12 +1,12 @@
 type: theory
 files:
+- name: src/CarService.kt
+  visible: true
+- name: src/MapAccessors.kt
+  visible: true
 - name: src/Team.kt
   visible: true
 - name: src/TeamWithTraditions.kt
   visible: true
 - name: src/NeverNull.kt
-  visible: true
-- name: src/MapAccessors.kt
-  visible: true
-- name: src/CarService.kt
   visible: true
