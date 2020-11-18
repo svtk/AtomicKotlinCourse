@@ -1,5 +1,6 @@
 // Interoperability/JavaWrapper.java
 package Interoperability;
+import java.util.ArrayList;
 import java.util.List;
 
 public class JavaWrapper {
@@ -8,6 +9,6 @@ public class JavaWrapper {
     int i = 10;
     // Wrapper types
     Integer iOrNull = null;
-    List<Integer> list = List.of(1, 2, 3);
+    List<Integer> list = new ArrayList<>();
   }
 }
