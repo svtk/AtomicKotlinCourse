@@ -5,8 +5,8 @@ and passes it to the base-class constructor. Write a function `fail(msg:
 String)` that passes `msg` to `trace()`, and then throws a `Failure`.
 
 Now write your own versions of `require()` and `check()` (from [Check
-Instructions]) that use `fail()`. The starter code in `main()` tests your
-functions.
+Instructions](https://stepik.org/lesson/350665/step/1)) that use `fail()`. The starter code in
+`main()` tests your functions.
 
 <sub> This task doesn't contain automatic tests,
 so it's always marked as "Correct" when you run "Check".

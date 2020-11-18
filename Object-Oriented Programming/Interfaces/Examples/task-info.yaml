@@ -10,3 +10,5 @@ files:
   visible: true
 - name: src/SAMImplementation.kt
   visible: true
+- name: src/SamConversion.kt
+  visible: true

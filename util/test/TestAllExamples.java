@@ -1667,6 +1667,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testSamConversion() {
+        testExample("Object-Oriented Programming/Interfaces/Examples/src/SamConversion.kt", interfaces.SamConversionKt::main);
+    }
+
+    @Test
     public void testSAMImplementation() {
         testExample("Object-Oriented Programming/Interfaces/Examples/src/SAMImplementation.kt", interfaces.SAMImplementationKt::main);
     }
