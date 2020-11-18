@@ -17,7 +17,7 @@ const val TIMEOUT = 3000L
 val LINE_SEPARATOR: String = System.getProperty("line.separator")
 
 fun unimplementedTest() {
-  Assert.assertTrue("Tests not implemented for the task", true)
+  Assert.assertTrue("Tests are not implemented for the task", true)
 }
 
 fun String.normalizeLineSeparators(): String {
