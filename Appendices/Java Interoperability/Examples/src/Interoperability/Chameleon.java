@@ -1,5 +1,5 @@
-// Interoperability/Chameleon.java
-package Interoperability;
+// interoperability/Chameleon.java
+package interoperability;
 import java.io.Serializable;
 
 public class Chameleon

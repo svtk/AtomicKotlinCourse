@@ -1,6 +1,6 @@
-// Interoperability/AnnotatedJava.kt
+// interoperability/AnnotatedJava.kt
 package interop
-import Interoperability.AnnotatedJTool
+import interoperability.AnnotatedJTool
 import atomictest.eq
 
 object KotlinCode2 {
@@ -14,10 +14,10 @@ object KotlinCode2 {
 fun main() {
   with(KotlinCode2) {
     ::a.returnType eq
-      "Interoperability.JTool"
+      "interoperability.JTool"
     ::c.returnType eq
-      "Interoperability.JTool?"
+      "interoperability.JTool?"
     ::d.returnType eq
-      "Interoperability.JTool?"
+      "interoperability.JTool?"
   }
 }

@@ -1,4 +1,4 @@
-// Interoperability/KotlinWrapper.kt
+// interoperability/KotlinWrapper.kt
 package interop
 
 fun main() {

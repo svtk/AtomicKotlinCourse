@@ -2,7 +2,7 @@ type: theory
 files:
 - name: src/Random.kt
   visible: true
-- name: src/Interoperability/Chameleon.java
+- name: src/interoperability/Chameleon.java
   visible: true
 - name: src/UseBeanClass.kt
   visible: true
@@ -10,41 +10,41 @@ files:
   visible: true
 - name: src/KotlinClass.kt
   visible: true
-- name: src/Interoperability/UsingKotlinClass.java
+- name: src/interoperability/UsingKotlinClass.java
   visible: true
 - name: src/KotlinDataClass.kt
   visible: true
-- name: src/Interoperability/UseDataClass.java
+- name: src/interoperability/UseDataClass.java
   visible: true
 - name: src/TopLevelFunction.kt
   visible: true
-- name: src/Interoperability/CallTopLevelFunction.java
+- name: src/interoperability/CallTopLevelFunction.java
   visible: true
-- name: src/Interoperability/CallTopLevelFunction2.java
+- name: src/interoperability/CallTopLevelFunction2.java
   visible: true
 - name: src/ChangeName.kt
   visible: true
-- name: src/Interoperability/MakeSalad.java
+- name: src/interoperability/MakeSalad.java
   visible: true
 - name: src/BigInt.kt
   visible: true
 - name: src/BigFibonacci.kt
   visible: true
-- name: src/Interoperability/JavaChecked.java
+- name: src/interoperability/JavaChecked.java
   visible: true
 - name: src/KotlinChecked.kt
   visible: true
 - name: src/AnnotateThrows.kt
   visible: true
-- name: src/Interoperability/CatchChecked.java
+- name: src/interoperability/CatchChecked.java
   visible: true
-- name: src/Interoperability/JTool.java
+- name: src/interoperability/JTool.java
   visible: true
 - name: src/PlatformTypes.kt
   visible: true
 - name: src/NPEOnPlatformType.kt
   visible: true
-- name: src/Interoperability/AnnotatedJTool.java
+- name: src/interoperability/AnnotatedJTool.java
   visible: true
 - name: src/AnnotatedJava.kt
   visible: true
@@ -58,7 +58,7 @@ files:
   visible: true
 - name: src/ReadOnlyCollections.kt
   visible: true
-- name: src/Interoperability/JavaWrapper.java
+- name: src/interoperability/JavaWrapper.java
   visible: true
 - name: src/KotlinWrapper.kt
   visible: true

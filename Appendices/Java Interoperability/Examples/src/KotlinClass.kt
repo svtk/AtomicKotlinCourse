@@ -1,4 +1,4 @@
-// Interoperability/KotlinClass.kt
+// interoperability/KotlinClass.kt
 package interop
 
 class Basic {

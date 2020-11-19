@@ -1,7 +1,6 @@
-// Interoperability/JavaWrapper.java
-package Interoperability;
-import java.util.ArrayList;
-import java.util.List;
+// interoperability/JavaWrapper.java
+package interoperability;
+import java.util.*;
 
 public class JavaWrapper {
   public static void main(String[] args) {

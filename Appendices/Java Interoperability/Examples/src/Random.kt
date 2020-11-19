@@ -1,4 +1,4 @@
-// Interoperability/Random.kt
+// interoperability/Random.kt
 import atomictest.eq
 import java.util.Random
 

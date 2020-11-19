@@ -1,4 +1,4 @@
-// Interoperability/ReadOnlyCollections.kt
+// interoperability/ReadOnlyCollections.kt
 import atomictest.eq
 
 fun main() {

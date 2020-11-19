@@ -1,4 +1,4 @@
-// Interoperability/BigFibonacci.kt
+// interoperability/BigFibonacci.kt
 package interop
 import atomictest.eq
 import java.math.BigInteger

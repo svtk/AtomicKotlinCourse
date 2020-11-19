@@ -1,5 +1,5 @@
-// Interoperability/KotlinDataClass.kt
-package Interoperability
+// interoperability/KotlinDataClass.kt
+package interoperability
 
 data class Muppet(
   var name: String,

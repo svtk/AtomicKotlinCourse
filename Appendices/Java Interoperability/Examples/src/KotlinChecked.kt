@@ -1,4 +1,4 @@
-// Interoperability/KotlinChecked.kt
+// interoperability/KotlinChecked.kt
 import atomictest.eq
 import java.io.File
 

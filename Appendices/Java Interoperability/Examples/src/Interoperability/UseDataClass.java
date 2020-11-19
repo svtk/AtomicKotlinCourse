@@ -1,5 +1,5 @@
-// Interoperability/UseDataClass.java
-package Interoperability;
+// interoperability/UseDataClass.java
+package interoperability;
 import java.util.HashMap;
 import static atomictest.AtomicTestKt.eq;
 

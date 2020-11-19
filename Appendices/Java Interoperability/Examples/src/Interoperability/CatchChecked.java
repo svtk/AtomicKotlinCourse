@@ -1,5 +1,5 @@
-// Interoperability/CatchChecked.java
-package Interoperability;
+// interoperability/CatchChecked.java
+package interoperability;
 import interop.AnnotateThrowsKt;
 import java.io.IOException;
 import static atomictest.AtomicTestKt.eq;

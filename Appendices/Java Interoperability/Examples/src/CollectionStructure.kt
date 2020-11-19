@@ -1,4 +1,4 @@
-// Interoperability/CollectionStructure.kt
+// interoperability/CollectionStructure.kt
 package collectionstructure
 
 interface Collection<E>

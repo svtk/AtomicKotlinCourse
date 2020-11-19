@@ -1,5 +1,5 @@
-// Interoperability/UseBeanClass.kt
-import Interoperability.Chameleon
+// interoperability/UseBeanClass.kt
+import interoperability.Chameleon
 import atomictest.eq
 
 fun main() {

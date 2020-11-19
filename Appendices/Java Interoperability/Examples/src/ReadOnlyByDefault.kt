@@ -1,4 +1,4 @@
-// Interoperability/ReadOnlyByDefault.kt
+// interoperability/ReadOnlyByDefault.kt
 package interop
 
 data class Animal(val name: String)

@@ -1,4 +1,4 @@
-// Interoperability/ChangeName.kt
+// interoperability/ChangeName.kt
 @file:JvmName("Utils")
 package interop
 

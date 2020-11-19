@@ -1,5 +1,5 @@
-// Interoperability/CallTopLevelFunction.java
-package Interoperability;
+// interoperability/CallTopLevelFunction.java
+package interoperability;
 import interop.TopLevelFunctionKt;
 import static atomictest.AtomicTestKt.eq;
 

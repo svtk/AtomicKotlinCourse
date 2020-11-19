@@ -2573,42 +2573,42 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testUsingKotlinClass() {
-        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/UsingKotlinClass.java", Interoperability.UsingKotlinClass::main);
+        testExample("Appendices/Java Interoperability/Examples/src/interoperability/UsingKotlinClass.java", interoperability.UsingKotlinClass::main);
     }
 
     @Test
     public void testMakeSalad() {
-        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/MakeSalad.java", Interoperability.MakeSalad::main);
+        testExample("Appendices/Java Interoperability/Examples/src/interoperability/MakeSalad.java", interoperability.MakeSalad::main);
     }
 
     @Test
     public void testJavaWrapper() {
-        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/JavaWrapper.java", Interoperability.JavaWrapper::main);
+        testExample("Appendices/Java Interoperability/Examples/src/interoperability/JavaWrapper.java", interoperability.JavaWrapper::main);
     }
 
     @Test
     public void testCallTopLevelFunction() {
-        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/CallTopLevelFunction.java", Interoperability.CallTopLevelFunction::main);
+        testExample("Appendices/Java Interoperability/Examples/src/interoperability/CallTopLevelFunction.java", interoperability.CallTopLevelFunction::main);
     }
 
     @Test
     public void testCatchChecked() {
-        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/CatchChecked.java", Interoperability.CatchChecked::main);
+        testExample("Appendices/Java Interoperability/Examples/src/interoperability/CatchChecked.java", interoperability.CatchChecked::main);
     }
 
     @Test
     public void testJavaChecked() {
-        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/JavaChecked.java", Interoperability.JavaChecked::main);
+        testExample("Appendices/Java Interoperability/Examples/src/interoperability/JavaChecked.java", interoperability.JavaChecked::main);
     }
 
     @Test
     public void testCallTopLevelFunction2() {
-        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/CallTopLevelFunction2.java", Interoperability.CallTopLevelFunction2::main);
+        testExample("Appendices/Java Interoperability/Examples/src/interoperability/CallTopLevelFunction2.java", interoperability.CallTopLevelFunction2::main);
     }
 
     @Test
     public void testUseDataClass() {
-        testExample("Appendices/Java Interoperability/Examples/src/Interoperability/UseDataClass.java", Interoperability.UseDataClass::main);
+        testExample("Appendices/Java Interoperability/Examples/src/interoperability/UseDataClass.java", interoperability.UseDataClass::main);
     }
 
     @Test

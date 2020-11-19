@@ -1,6 +1,6 @@
-// Interoperability/ExtensionsToJavaClass.kt
+// interoperability/ExtensionsToJavaClass.kt
 package interop
-import Interoperability.Chameleon
+import interoperability.Chameleon
 import atomictest.eq
 
 fun Chameleon.adjustToTemperature(

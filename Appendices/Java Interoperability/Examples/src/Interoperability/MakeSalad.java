@@ -1,5 +1,5 @@
-// Interoperability/MakeSalad.java
-package Interoperability;
+// interoperability/MakeSalad.java
+package interoperability;
 import interop.Utils;
 import static atomictest.AtomicTestKt.eq;
 

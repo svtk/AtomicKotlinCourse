@@ -1,5 +1,5 @@
-// Interoperability/UsingKotlinClass.java
-package Interoperability;
+// interoperability/UsingKotlinClass.java
+package interoperability;
 import interop.Basic;
 import static atomictest.AtomicTestKt.eq;
 

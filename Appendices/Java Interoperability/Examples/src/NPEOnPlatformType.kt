@@ -1,5 +1,5 @@
-// Interoperability/NPEOnPlatformType.kt
-import Interoperability.JTool
+// interoperability/NPEOnPlatformType.kt
+import interoperability.JTool
 import atomictest.*
 
 fun main() {

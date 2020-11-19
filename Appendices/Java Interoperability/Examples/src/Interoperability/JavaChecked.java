@@ -1,5 +1,5 @@
-// Interoperability/JavaChecked.java
-package Interoperability;
+// interoperability/JavaChecked.java
+package interoperability;
 import java.io.*;
 import java.nio.file.*;
 import static atomictest.AtomicTestKt.eq;
