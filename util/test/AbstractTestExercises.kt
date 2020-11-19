@@ -1,7 +1,6 @@
 import org.junit.After
 import org.junit.Assert
 import org.junit.runner.JUnitCore
-import util.loadTraceContent
 import util.resetTraceContent
 import util.runAndCheckSystemOutput
 import java.io.File

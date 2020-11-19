@@ -2207,6 +2207,21 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testSampleTest() {
+        testUnitTest(unittesting.SampleTest.class);
+    }
+
+    @Test
+    public void testLearnerTest() {
+        testUnitTest(unittesting.LearnerTest.class);
+    }
+
+    @Test
+    public void testStateMachineTest() {
+        testUnitTest(unittesting.StateMachineTest.class);
+    }
+
+    @Test
     public void testTransform() {
         testExample("Power Tools/Extension Lambdas/Examples/src/Transform.kt", extensionlambdas.TransformKt::main);
     }

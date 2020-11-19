@@ -1,11 +1,14 @@
 import atomictest.ERROR_TAG
 import org.junit.Assert
+import org.junit.runner.JUnitCore
 import util.LINE_SEPARATOR
 import util.normalizeLineSeparators
 import java.io.*
 import java.util.function.Consumer
 
 abstract class AbstractTestExamples {
+  private val junit = JUnitCore()
+
   protected fun testExample(fileName: String, main: Runnable) {
     testExample(fileName, Consumer { main.run() })
   }
@@ -26,9 +29,9 @@ abstract class AbstractTestExamples {
     }
   }
 
-  protected fun testExercise(outputFileName: String, main: Consumer<Array<String>>) {
-    val output = File(outputFileName).readText()
-    testOutput(output, main, trim = false)
+  protected fun testUnitTest(testClass: Class<*>) {
+    val result = junit.run(testClass)
+    Assert.assertTrue(result.wasSuccessful())
   }
 
   private fun extractOutput(exampleCode: String, outputComment: String) =
