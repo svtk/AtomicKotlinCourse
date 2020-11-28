@@ -4,18 +4,18 @@ files:
   visible: true
   placeholders:
   - offset: 232
-    length: 151
-    placeholder_text: ""
-  - offset: 439
+    length: 150
+    placeholder_text: // countPercent
+  - offset: 438
+    length: 32
+    placeholder_text: TODO()
+  - offset: 527
     length: 33
     placeholder_text: TODO()
-  - offset: 529
-    length: 34
+  - offset: 619
+    length: 37
     placeholder_text: TODO()
-  - offset: 622
-    length: 38
-    placeholder_text: TODO()
-  - offset: 717
+  - offset: 713
     length: 75
     placeholder_text: TODO()
 - name: test/Tests.kt

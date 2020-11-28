@@ -2,11 +2,11 @@
 
 You can't safely change a function parameter name because a caller can specify
 this parameter name, so their code will no longer compile with the new name.
-IntelliJ IDEA can automatically fix this. Use the shortcut <span
-class="shortcut">&shortcut:ChangeSignature;</span> or choose <span
-class="control">`Refactor | Change Signature`</span>. You can change parameter
-names, or add more parameters to a function, and all the callers will be
-updated correspondingly.
+IntelliJ IDEA can automatically fix this. Use the shortcut
+<span class="shortcut">&shortcut:ChangeSignature;</span> or choose
+<span class="control">`Refactor | Change Signature`</span>. You can change
+parameter names, or add more parameters to a function, and all the callers will
+be updated correspondingly.
 
 Put the caret on `foo()` and select the <span class="control">`Change
 Signature`</span> refactoring. Press the icon with the plus symbol (`+`) to add

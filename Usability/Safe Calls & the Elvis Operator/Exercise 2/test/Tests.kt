@@ -13,13 +13,13 @@ class TestSafeCallsAndTheElvisOperatorExercise2 {
     val client = Client("Alice",
       PersonalInfo(address = Address("Germany", "Munich")))
     Assert.assertTrue("Client $client comes from Munich",
-      client.comesFromMunich())
+      client.fromMunich())
   }
 
   @Test(timeout = TIMEOUT)
   fun test2SampleNotFromMunich() {
     val client = Client("Bob")
     Assert.assertFalse("Client $client doesn't come from Munich",
-      client.comesFromMunich())
+      client.fromMunich())
   }
 }

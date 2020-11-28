@@ -45,7 +45,7 @@ class TestSequencesExercise3 : TestSchool() {
     Assert.assertEquals("Wrong result for ${instructor.name}, " +
       "$schoolLessons:",
       rating,
-      schl(schoolLessons).getAverageRatingForInstructor(instructor),
+      schl(schoolLessons).averageInstructorRating(instructor),
       0.0001)
   }
 

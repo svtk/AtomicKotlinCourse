@@ -7,7 +7,7 @@ files:
     length: 142
     placeholder_text: 'data class N(var n: Int)'
   - offset: 259
-    length: 337
+    length: 343
     placeholder_text: |-
       /*
       val rnd = Random(47) // For repeatability

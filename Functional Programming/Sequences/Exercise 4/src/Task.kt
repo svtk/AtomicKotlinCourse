@@ -4,5 +4,5 @@ fun School.favouriteInstructor(student: Student): Instructor? =
   lessons
     .filter { student in it.students }
     .groupBy { it.instructor }
-    .maxBy { (_, lessons) -> lessons.size }
+    .maxByOrNull { (_, lessons) -> lessons.size }
     ?.key

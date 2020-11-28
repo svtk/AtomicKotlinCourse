@@ -35,7 +35,7 @@ class TestSequencesExercise5 : TestSchool() {
   ) {
     Assert.assertEquals("Wrong result for $schoolLessons:",
       instructors.map { inst(it) }.toSet(),
-      schl(schoolLessons).findInstructorsWithLargestClass())
+      schl(schoolLessons).instructorsWithLargestClass())
   }
 
   @Test(timeout = TIMEOUT)

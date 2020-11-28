@@ -1,8 +1,8 @@
 ## Mastering the IDE: Converting between Property and Function
 
 You can automatically convert a property to a function and vice-versa. Put the
-caret on the property name, invoke the intention list and choose <span
-class="control">`Convert property to function`</span>. For the reverse
+caret on the property name, invoke the intention list and choose
+<span class="control">`Convert property to function`</span>. For the reverse
 conversion, choose the intention <span class="control">`Convert function to
 property`</span>.
 

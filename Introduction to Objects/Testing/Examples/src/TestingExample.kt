@@ -12,8 +12,6 @@ fun main() {
   // 'neq' means "not equal"
   v2 neq "Epistimology"
 
-  // [Error] Epistimology != Ontology
-  // v2 eq "Epistimology"
 }
 /* Output:
 11

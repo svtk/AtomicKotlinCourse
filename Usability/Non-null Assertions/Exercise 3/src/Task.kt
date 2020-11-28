@@ -5,7 +5,7 @@ import kotlin.math.absoluteValue
 
 fun absValueMaxEqualsMin(list: List<Int>): Boolean {
   if (list.isEmpty()) return false
-  return list.max()!!.absoluteValue == list.min()!!.absoluteValue
+  return list.maxOrNull()!!.absoluteValue == list.minOrNull()!!.absoluteValue
 }
 
 fun main() {

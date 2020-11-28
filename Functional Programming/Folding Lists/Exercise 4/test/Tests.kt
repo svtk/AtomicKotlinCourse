@@ -11,7 +11,7 @@ import kotlin.collections.any as anyLibrary
 class TestFoldingListsExercise4 {
 
   private fun checkSample(isEvenPositiveAndLessThan10: Condition, result: Boolean, value: Int) {
-    Assert.assertEquals("Wrong result for 'isEvenPositiveAndLessThan10.check(8)'",
+    Assert.assertEquals("Wrong result for 'isEvenPositiveAndLessThan10.check($value)'",
       result, isEvenPositiveAndLessThan10.check(value))
   }
 

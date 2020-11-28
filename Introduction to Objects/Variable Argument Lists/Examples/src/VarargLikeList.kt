@@ -4,8 +4,6 @@ package varargs
 fun evaluate(vararg ints: Int) {
   println("Size: ${ints.size}")
   println("Sum: ${ints.sum()}")
-  println("Min: ${ints.min()}")
-  println("Max: ${ints.max()}")
   println("Average: ${ints.average()}")
 }
 
@@ -15,7 +13,5 @@ fun main() {
 /* Output:
 Size: 5
 Sum: 25
-Min: -3
-Max: 10
 Average: 5.0
 */

@@ -18,10 +18,11 @@ fun winner(first: Rochambeau, second: Rochambeau): Result {
     ROCK to SCISSORS,
     SCISSORS to PAPER,
     PAPER to ROCK)
-  if (winningCombinations[first] == second) {
-    return FIRST_WINS
+  return if (winningCombinations[first] == second) {
+    FIRST_WINS
+  } else {
+    SECOND_WINS
   }
-  return SECOND_WINS
 }
 
 fun main() {

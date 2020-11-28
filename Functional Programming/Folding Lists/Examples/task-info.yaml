@@ -8,3 +8,5 @@ files:
   visible: true
 - name: src/FoldAndReduce.kt
   visible: true
+- name: src/RunningFold.kt
+  visible: true

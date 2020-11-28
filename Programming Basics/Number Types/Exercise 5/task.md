@@ -21,8 +21,8 @@ Try typing the names of the actions that you've learned so far:
 
 - <span class="control">`Navigate to declaration`</span>
 
-You can display the intention actions by calling the action <span
-class="control">`Show intention actions`</span>, but it's such a common
+You can display the intention actions by calling the action
+<span class="control">`Show intention actions`</span>, but it's such a common
 operation that it's better to memorize a shortcut for it.
 
 Rename `val x` and specify its type explicitly by calling the

@@ -11,14 +11,14 @@ class TestMemberReferencesExercise3 {
   @Test(timeout = TIMEOUT)
   fun test1Sample() {
     val range = 1..1000
-    val even = range.filter(/*<taskWindow>*/Int::isEven/*</taskWindow>*/)
+    val even = range.filter(Int::isEven)
     Assert.assertEquals("Wrong result for `even` collection:", 500, even.size)
 
-    val prime = range.filter(/*<taskWindow>*/Int::isPrime/*</taskWindow>*/)
+    val prime = range.filter(Int::isPrime)
     Assert.assertEquals("Wrong result for `prime` collection:",
       listOf(953, 967, 971, 977, 983, 991, 997), prime.takeLast(7))
 
-    val perfect = range.filter(/*<taskWindow>*/::isPerfect/*</taskWindow>*/)
+    val perfect = range.filter(::isPerfect)
     Assert.assertEquals("Wrong result for `perfect` collection:",
       listOf(6, 28, 496), perfect)
 

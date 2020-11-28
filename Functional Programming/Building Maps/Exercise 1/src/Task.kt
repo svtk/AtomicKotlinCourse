@@ -17,6 +17,4 @@ fun main() {
   demographic(people) eq
     mapOf(21 to listOf("Alice"),
       25 to listOf("Bob", "Charlie"))
-
-  buildString { }
 }

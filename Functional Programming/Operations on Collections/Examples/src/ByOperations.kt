@@ -12,7 +12,7 @@ fun main() {
     Product("bread", 2.0),
     Product("wine", 5.0)
   )
-  val cheapest = products.minBy { it.price }
+  val cheapest = products.minByOrNull { it.price }
   cheapest eq Product("bread", 2.0)
 
   val sum = products.sumByDouble { it.price }

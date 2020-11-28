@@ -11,7 +11,7 @@ files:
   placeholders:
   - offset: 27
     length: 38
-    placeholder_text: '     '
+    placeholder_text: // TODO import
   - offset: 82
     length: 76
     placeholder_text: |-

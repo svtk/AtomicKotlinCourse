@@ -15,21 +15,13 @@ fun main() {
 
   // without argument names
   println(Rectangle(1.1))
-  println(Rectangle(1.1, 2.2))
   println(Rectangle(1.1, 2.2, "blue"))
 
   // mixed positional and named arguments
-  println(Rectangle(1.1, side2 = 2.2))
-  println(Rectangle(1.1, color = "blue"))
-  println(Rectangle(1.1, side2 = 2.2, color = "blue"))
   println(Rectangle(1.1, 2.2, color = "blue"))
+  println(Rectangle(side1 = 1.1, side2 = 2.2, "blue"))
 
   // names for all arguments
-  println(Rectangle(side1 = 1.1))
-  println(Rectangle(side2 = 2.2))
   println(Rectangle(color = "blue"))
-  println(Rectangle(side1 = 1.1, side2 = 2.2))
-  println(Rectangle(side1 = 1.1, color = "blue"))
-  println(Rectangle(side2 = 2.2, color = "blue"))
   println(Rectangle(side1 = 1.1, side2 = 2.2, color = "blue"))
 }

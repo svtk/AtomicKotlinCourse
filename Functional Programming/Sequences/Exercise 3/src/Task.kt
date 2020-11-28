@@ -1,6 +1,6 @@
 package sequencesExercise3
 
-fun School.getAverageRatingForInstructor(instructor: Instructor): Double =
+fun School.averageInstructorRating(instructor: Instructor): Double =
   lessons
     .filter { it.instructor == instructor }
     .flatMap { it.rating.values.asSequence() }
