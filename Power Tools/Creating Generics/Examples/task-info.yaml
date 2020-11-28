@@ -34,13 +34,17 @@ files:
   visible: true
 - name: src/Select.kt
   visible: true
-- name: src/InAndOutCrates.kt
+- name: src/InAndOutBoxes.kt
   visible: true
-- name: src/GrapeSoda.kt
+- name: src/Pet.kt
   visible: true
-- name: src/CrateAssignment.kt
+- name: src/BoxAssignment.kt
   visible: true
-- name: src/OutCrateAssignment.kt
+- name: src/OutBoxAssignment.kt
   visible: true
-- name: src/InCrateAssignment.kt
+- name: src/InBoxAssignment.kt
+  visible: true
+- name: src/CovariantList.kt
+  visible: true
+- name: src/FunctionTypeAndVariance.kt
   visible: true

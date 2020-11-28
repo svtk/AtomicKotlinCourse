@@ -2317,11 +2317,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testInCrateAssignment() {
-        testExample("Power Tools/Creating Generics/Examples/src/InCrateAssignment.kt", creatinggenerics.InCrateAssignmentKt::main);
-    }
-
-    @Test
     public void testMapCrate() {
         testExample("Power Tools/Creating Generics/Examples/src/MapCrate.kt", creatinggenerics.MapCrateKt::main);
     }
@@ -2337,6 +2332,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testCovariantList() {
+        testExample("Power Tools/Creating Generics/Examples/src/CovariantList.kt", variance.CovariantListKt::main);
+    }
+
+    @Test
     public void testSelect() {
         testExample("Power Tools/Creating Generics/Examples/src/Select.kt", creatinggenerics.SelectKt::main);
     }
@@ -2344,6 +2344,16 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testErasure() {
         testExample("Power Tools/Creating Generics/Examples/src/Erasure.kt", creatinggenerics.ErasureKt::main);
+    }
+
+    @Test
+    public void testFunctionTypeAndVariance() {
+        testExample("Power Tools/Creating Generics/Examples/src/FunctionTypeAndVariance.kt", variance.FunctionTypeAndVarianceKt::main);
+    }
+
+    @Test
+    public void testInBoxAssignment() {
+        testExample("Power Tools/Creating Generics/Examples/src/InBoxAssignment.kt", variance.InBoxAssignmentKt::main);
     }
 
     @Test

@@ -1,18 +1,18 @@
 // CreatingGenerics/CreatingGenericsSoln3.kt
 package creatingGenericsExercise3
-import creatinggenerics.Can
-import creatinggenerics.Grape
 
-interface InCrate<in T> {
+import variance.Cat
+
+interface InBox<in T> {
   fun put(item: T)
 }
 
-interface OutCrate<out T> {
+interface OutBox<out T> {
   fun get(): T
 }
 
-class Crate<T>(private var contents: T) :
-  InCrate<T>, OutCrate<T> {
+class Box<T>(private var contents: T) :
+  InBox<T>, OutBox<T> {
   override fun put(item: T) {
     contents = item
   }
@@ -20,8 +20,10 @@ class Crate<T>(private var contents: T) :
 }
 
 fun main() {
-  val cg: Crate<Grape> = Crate(Grape())
-  val oc: OutCrate<Can> = cg
-  val cc: Crate<Can> = Crate(Can())
-  val ic: InCrate<Grape> = cc
+  val catBox: Box<Cat> = Box(Cat())
+  val outBoxAny: OutBox<Any> = catBox
+  val a: Any = outBoxAny.get()
+  val inBoxAny: InBox<Any> = Box(217)
+  val inBoxCat: InBox<Any> = inBoxAny
+  inBoxCat.put(Cat())
 }

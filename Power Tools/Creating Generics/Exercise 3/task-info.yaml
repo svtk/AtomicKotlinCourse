@@ -3,11 +3,11 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 138
-    length: 254
+  - offset: 101
+    length: 244
     placeholder_text: // TODO
-  - offset: 407
-    length: 134
+  - offset: 360
+    length: 202
     placeholder_text: |-
       /*
         val cg: Crate<Grape> = Crate(Grape())
