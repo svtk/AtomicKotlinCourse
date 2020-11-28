@@ -852,6 +852,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testUsingTrace() {
+        testExample("Introduction to Objects/Summary 2/Examples/src/UsingTrace.kt", UsingTraceKt::main);
+    }
+
+    @Test
     public void testPropertyReadWrite() {
         testExample("Introduction to Objects/Summary 2/Examples/src/PropertyReadWrite.kt", summary2.PropertyReadWriteKt::main);
     }
@@ -1622,6 +1627,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testRunningFold() {
+        testExample("Functional Programming/Folding Lists/Examples/src/RunningFold.kt", RunningFoldKt::main);
+    }
+
+    @Test
     public void testCallStack() {
         testExample("Functional Programming/Recursion/Examples/src/CallStack.kt", recursion.CallStackKt::main);
     }
@@ -2297,6 +2307,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testDifferences() {
+        testExample("Power Tools/Scope Functions/Examples/src/Differences.kt", scopefunctions.DifferencesKt::main);
+    }
+
+    @Test
     public void testSpeakers() {
         testExample("Power Tools/Creating Generics/Examples/src/Speakers.kt", creatinggenerics.SpeakersKt::main);
     }
@@ -2409,6 +2424,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testDefaultEquality() {
         testExample("Power Tools/Operator Overloading/Examples/src/DefaultEquality.kt", operatoroverloading.DefaultEqualityKt::main);
+    }
+
+    @Test
+    public void testInvokeFunctionType() {
+        testExample("Power Tools/Operator Overloading/Examples/src/InvokeFunctionType.kt", operatoroverloading.InvokeFunctionTypeKt::main);
     }
 
     @Test

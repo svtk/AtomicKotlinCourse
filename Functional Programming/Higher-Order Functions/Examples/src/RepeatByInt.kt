@@ -1,9 +1,10 @@
 // HigherOrderFunctions/RepeatByInt.kt
+import atomictest.*
 
 fun main() {
-  repeat(2) { println("hi!") }
+  repeat(2) { trace("hi!") }
+  trace eq """
+    hi!
+    hi!
+  """
 }
-/* Output:
-hi!
-hi!
-*/

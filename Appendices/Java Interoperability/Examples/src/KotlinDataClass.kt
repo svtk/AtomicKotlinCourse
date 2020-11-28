@@ -1,7 +1,7 @@
 // interoperability/KotlinDataClass.kt
 package interoperability
 
-data class Muppet(
+data class Staff(
   var name: String,
-  var age: Int
+  var role: String
 )

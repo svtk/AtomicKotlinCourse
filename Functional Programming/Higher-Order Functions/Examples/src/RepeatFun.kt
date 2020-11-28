@@ -1,5 +1,6 @@
 // HigherOrderFunctions/RepeatFun.kt
 package definingrepeat
+import atomictest.*
 
 fun repeat(
   times: Int,
@@ -11,10 +12,10 @@ fun repeat(
 }
 
 fun main() {
-  repeat(3) { println("#$it") }   // [3]
+  repeat(3) { trace("#$it") }     // [3]
+  trace eq """
+    #0
+    #1
+    #2
+  """
 }
-/* Output:
-#0
-#1
-#2
-*/

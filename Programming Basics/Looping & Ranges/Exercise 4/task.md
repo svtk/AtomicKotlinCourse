@@ -12,4 +12,4 @@ Display half of a triangle. For an argument of 6 the function
 ######
 ```
 
-Now rewrite the function to use `repeat` instead of a `for` loop.
+Now rewrite the function to use `repeat`.

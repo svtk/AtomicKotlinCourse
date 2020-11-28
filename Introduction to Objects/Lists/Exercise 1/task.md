@@ -1,6 +1,6 @@
 ## Lists (#1)
 
-The Kotlin standard library contains many functions that work with `Lists`.
+The Kotlin standard library contains many functions that work with `List`s.
 It's educational to implement some of them by hand.
 
 Write a function `findMax()` that finds the maximum value in a `List` of

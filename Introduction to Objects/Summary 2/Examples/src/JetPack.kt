@@ -1,5 +1,6 @@
 // Summary2/JetPack.kt
 package summary2
+import atomictest.eq
 
 class JetPack(
   private var fuel: Double     // [1]
@@ -22,14 +23,8 @@ class JetPack(
 fun main() {
   val jetPack = JetPack(3.0)
   while (jetPack.check() != "Warning") {
-    println(jetPack.check())
+    jetPack.check() eq "OK"
     jetPack.fly()
   }
-  println(jetPack.check())
+  jetPack.check() eq "Warning"
 }
-/* Output:
-OK
-OK
-OK
-Warning
-*/

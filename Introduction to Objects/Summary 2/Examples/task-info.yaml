@@ -6,6 +6,8 @@ files:
   visible: true
 - name: src/UsingAtomicTest.kt
   visible: true
+- name: src/UsingTrace.kt
+  visible: true
 - name: src/ListCollection.kt
   visible: true
 - name: src/ClassBodies.kt

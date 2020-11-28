@@ -1,17 +1,18 @@
 // Overloading/OverloadedVsDefaultArg.kt
 package overloadingvsdefaultargs
+import atomictest.*
 
-fun foo(n: Int = 99) = print("foo-1-$n")
+fun foo(n: Int = 99) = trace("foo-1-$n")
 
 fun foo() {
-  println("foo-2")
+  trace("foo-2")
   foo(14)
 }
 
 fun main() {
   foo()
+  trace eq """
+    foo-2
+    foo-1-14
+  """
 }
-/* Output:
-foo-2
-foo-1-14
-*/

@@ -1,5 +1,7 @@
 type: theory
 files:
+- name: src/Differences.kt
+  visible: true
 - name: src/AndNullability.kt
   visible: true
 - name: src/Gnome.kt

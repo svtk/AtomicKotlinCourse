@@ -1,11 +1,11 @@
 // Lambdas/ZeroArguments.kt
-import atomictest.eq
+import atomictest.*
 
 fun main() {
-  run { -> println("A Lambda") }
-  run { println("Without args") }
+  run { -> trace("A Lambda") }
+  run { trace("Without args") }
+  trace eq """
+    A Lambda
+    Without args
+  """
 }
-/* Output:
-A Lambda
-Without args
-*/

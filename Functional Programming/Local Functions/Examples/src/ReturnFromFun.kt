@@ -1,12 +1,16 @@
 // LocalFunctions/ReturnFromFun.kt
+import atomictest.eq
 
 fun main() {
   val list = listOf(1, 2, 3, 4, 5)
   val value = 3
+  var result = ""
   list.forEach {
-    if (it == value) return           // [1]
+    result += "$it"
+    if (it == value) {
+      result eq "123"
+      return                   // [1]
+    }
   }
-  println("This line is NOT called")  // [2]
+  result eq "Never gets here"  // [2]
 }
-/* Output:
-*/

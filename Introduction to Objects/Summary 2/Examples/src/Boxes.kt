@@ -1,5 +1,6 @@
 // Summary2/Boxes.kt
 package summary2
+import atomictest.*
 
 private var count = 0                   // [1]
 
@@ -11,7 +12,7 @@ private class Box(val dimension: Int) { // [2]
 }
 
 private fun countBox(box: Box) {        // [3]
-  println("$box")
+  trace("$box")
   count++
 }
 
@@ -22,10 +23,10 @@ fun countBoxes() {
 
 fun main() {
   countBoxes()
-  println("$count boxes")
+  trace("$count boxes")
+  trace eq """
+    Box volume: 64
+    Box volume: 125
+    2 boxes
+  """
 }
-/* Output:
-Box volume: 64
-Box volume: 125
-2 boxes
-*/

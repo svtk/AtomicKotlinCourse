@@ -28,9 +28,9 @@ files:
   visible: true
 - name: src/StringInvoke.kt
   visible: true
+- name: src/InvokeFunctionType.kt
+  visible: true
 - name: src/Backticks.kt
   visible: true
 - name: src/Swearing.kt
-  visible: true
-- name: src/InvokeFunctionType.kt
   visible: true
