@@ -1,5 +1,5 @@
 ## Non-`null` Assertions (#3)
 
-Implement `absMaxIsMin(ints: List<Int>)` that checks whether the maximum
-absolute value in `ints` equals the minimum absolute value in `ints`. If the
-list is empty, return `false`.
+Implement `absMinIsMax(ints: List<Int>)` that checks whether the absolute of
+the minimum value in `ints` equals the absolute of the maximum value in `ints`.
+If the list is empty, return `false`.

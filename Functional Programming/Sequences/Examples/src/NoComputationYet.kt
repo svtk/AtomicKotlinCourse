@@ -7,6 +7,6 @@ fun main() {
     .asSequence()
     .filter(Int::isEven)
     .map(Int::square)
-  r.toString().split("@")[0] eq
+  r.toString().substringBefore("@") eq
     "kotlin.sequences.TransformingSequence"
 }
