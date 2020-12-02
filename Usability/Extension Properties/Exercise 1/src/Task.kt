@@ -1,6 +1,5 @@
 // ExtensionProperties/Task1.kt
 package extensionPropertiesExercise1
-
 import atomictest.eq
 
 val <T> List<T>.secondOrNull: T?

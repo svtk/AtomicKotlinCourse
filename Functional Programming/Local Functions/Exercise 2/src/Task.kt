@@ -1,6 +1,5 @@
 // LocalFunctions/Task2.kt
 package localFunctionsExercise2
-
 import atomictest.eq
 
 fun createCounter(): Pair<() -> Unit, () -> Int> {

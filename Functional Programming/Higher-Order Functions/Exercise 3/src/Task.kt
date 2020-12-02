@@ -1,6 +1,5 @@
 // HigherOrderFunctions/Task3.kt
 package higherOrderFunctionsExercise3
-
 import atomictest.eq
 
 fun <T, R : Any> Iterable<T>.mapIndexedNotNull(

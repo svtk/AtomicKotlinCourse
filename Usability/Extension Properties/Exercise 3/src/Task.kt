@@ -1,6 +1,5 @@
 // ExtensionProperties/Task3.kt
 package extensionPropertiesExercise3
-
 import atomictest.eq
 
 class Rectangle(val width: Int, val height: Int)

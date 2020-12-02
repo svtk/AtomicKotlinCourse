@@ -1,6 +1,5 @@
 // Destructuring/Task1.kt
 package destructuringDeclarationsExercise1
-
 import atomictest.eq
 
 fun calculate(n1: Int, n2: Int): Triple<Boolean, Int, Int> {

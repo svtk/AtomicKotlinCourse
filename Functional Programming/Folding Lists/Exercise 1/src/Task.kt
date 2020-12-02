@@ -1,6 +1,5 @@
 // FoldingLists/Task1.kt
 package foldingListsExercise1
-
 import atomictest.eq
 
 fun <T> List<T>.size(): Int =

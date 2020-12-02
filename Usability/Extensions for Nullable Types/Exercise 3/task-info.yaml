@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 140
+  - offset: 139
     length: 91
     placeholder_text: // TODO Implement 'empty' and 'full' extension functions
 - name: test/Tests.kt

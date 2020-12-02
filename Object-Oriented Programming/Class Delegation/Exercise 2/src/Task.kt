@@ -1,6 +1,5 @@
 // ClassDelegation/Task2.kt
 package classDelegationExercise2
-
 import atomictest.trace
 
 // Duck Library

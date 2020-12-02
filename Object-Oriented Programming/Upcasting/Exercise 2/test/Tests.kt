@@ -1,5 +1,4 @@
 package upcastingExercise2
-
 import atomictest.trace
 import org.junit.FixMethodOrder
 import org.junit.Test

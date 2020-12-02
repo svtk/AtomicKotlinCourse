@@ -1,6 +1,5 @@
 // NamedAndDefaultArgs/Task3.kt
 package namedAndDefaultArgumentsExercise3
-
 import atomictest.eq
 
 fun joinComments(s: String): String =

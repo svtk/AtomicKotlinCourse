@@ -1,6 +1,5 @@
 // ManipulatingLists/Task2.kt
 package manipulatingListsExercise2
-
 import atomictest.eq
 
 fun <T> List<T>.zipWithIndex(): List<Pair<T, Int>> =

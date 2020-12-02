@@ -1,6 +1,5 @@
 // Lambdas/Task3.kt
 package lambdasExercise3
-
 import atomictest.eq
 
 data class Student(val id: Int, val name: String)

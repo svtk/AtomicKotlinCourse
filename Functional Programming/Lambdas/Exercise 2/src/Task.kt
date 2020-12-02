@@ -1,6 +1,5 @@
 // Lambdas/Task2.kt
 package lambdasExercise2
-
 import atomictest.eq
 
 data class Author(val name: String)

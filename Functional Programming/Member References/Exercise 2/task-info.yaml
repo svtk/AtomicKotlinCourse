@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 338
+  - offset: 337
     length: 95
     placeholder_text: TODO("compareByDescending(???).then(compareBy(???)))")
 - name: test/Tests.kt

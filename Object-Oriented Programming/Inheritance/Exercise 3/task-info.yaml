@@ -3,16 +3,16 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 96
+  - offset: 95
     length: 81
     placeholder_text: // TODO
-  - offset: 214
+  - offset: 213
     length: 39
     placeholder_text: // TODO
-  - offset: 286
+  - offset: 285
     length: 35
     placeholder_text: // TODO
-  - offset: 340
+  - offset: 339
     length: 85
     placeholder_text: |-
       val chess = Chess()

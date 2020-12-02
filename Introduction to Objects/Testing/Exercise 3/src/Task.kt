@@ -1,6 +1,5 @@
 // Testing/Task3.kt
 package testingExercise3
-
 import atomictest.eq
 
 fun squareArea(x: Int) = x * x

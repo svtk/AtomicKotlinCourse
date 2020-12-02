@@ -1,6 +1,5 @@
 // WhenExpressions/Task1.kt
 package whenExpressionsExercise1
-
 import atomictest.capture
 import atomictest.eq
 

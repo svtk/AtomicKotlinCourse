@@ -1,6 +1,5 @@
 // Sequences/School4.kt
 package sequencesExercise8
-
 import atomictest.eq
 
 fun fibonacci(): Sequence<Int> {

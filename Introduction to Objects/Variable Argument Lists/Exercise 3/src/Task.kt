@@ -1,6 +1,5 @@
 // Varargs/Task3.kt
 package variableArgumentListsExercise3
-
 import atomictest.eq
 
 fun listOfChunks(size: Int, vararg elements: String): List<List<String>> {

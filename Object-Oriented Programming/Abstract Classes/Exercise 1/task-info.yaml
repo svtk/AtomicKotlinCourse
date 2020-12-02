@@ -3,19 +3,19 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 80
+  - offset: 79
     length: 69
     placeholder_text: abstract class Shape
-  - offset: 151
+  - offset: 150
     length: 130
     placeholder_text: class Circle
-  - offset: 283
+  - offset: 282
     length: 130
     placeholder_text: class Square
-  - offset: 415
+  - offset: 414
     length: 136
     placeholder_text: class Triangle
-  - offset: 637
+  - offset: 636
     length: 62
     placeholder_text: |-
       /*

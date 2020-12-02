@@ -1,6 +1,5 @@
 // DataClasses/Task3.kt
 package dataClassesExercise3
-
 import atomictest.eq
 
 data class Book(val title: String, val authors: List<Author>)

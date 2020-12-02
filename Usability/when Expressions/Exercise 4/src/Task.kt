@@ -1,5 +1,4 @@
 package whenExpressionsExercise4
-
 import atomictest.eq
 
 fun getBmiStatus(

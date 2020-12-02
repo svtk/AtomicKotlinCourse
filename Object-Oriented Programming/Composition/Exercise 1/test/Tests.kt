@@ -1,5 +1,4 @@
 package compositionExercise1
-
 import atomictest.trace
 import org.junit.FixMethodOrder
 import org.junit.Test

@@ -1,6 +1,5 @@
 // BuildingMaps/Task1.kt
 package buildingMapsExercise1
-
 import atomictest.eq
 
 data class Person(val name: String, val age: Int)

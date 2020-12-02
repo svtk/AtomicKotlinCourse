@@ -1,5 +1,4 @@
 package packagesExercise3
-
 import pythagorean.EquilateralTriangle
 
 fun main() {

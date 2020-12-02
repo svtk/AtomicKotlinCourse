@@ -1,5 +1,4 @@
 package secondaryConstructorsExercise3
-
 import atomictest.eq
 import secondaryConstructorsExercise3.Material.*
 

@@ -1,6 +1,5 @@
 // ExtensionProperties/Task2.kt
 package extensionPropertiesExercise2
-
 import atomictest.eq
 
 val <T> List<T>.reversed: List<T>

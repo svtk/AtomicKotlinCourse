@@ -1,6 +1,5 @@
 // Summary2/Task8.kt
 package summaryIIExercise8
-
 import atomictest.eq
 
 val romanNumeralToIntMap: Map<String, Int> = mapOf(

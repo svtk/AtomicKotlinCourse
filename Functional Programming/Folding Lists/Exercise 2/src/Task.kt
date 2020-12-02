@@ -1,6 +1,5 @@
 // FoldingLists/Task2.kt
 package foldingListsExercise2
-
 import atomictest.eq
 
 fun <T> List<T>.count(predicate: (T) -> Boolean): Int =

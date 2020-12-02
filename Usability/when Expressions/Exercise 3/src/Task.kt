@@ -1,6 +1,5 @@
 // WhenExpressions/Task3.kt
 package whenExpressionsExercise3
-
 import atomictest.eq
 
 fun balanced(input: String): Boolean {

@@ -1,6 +1,5 @@
 // ExtensionFunctions/Task2.kt
 package extensionFunctionsExercise2
-
 import atomictest.eq
 
 fun Int.isOdd(): Boolean = this % 2 == 1

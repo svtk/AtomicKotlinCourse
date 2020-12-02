@@ -1,6 +1,5 @@
 // Maps/Task3.kt
 package mapsExercise3
-
 import atomictest.capture
 import atomictest.eq
 

@@ -1,6 +1,5 @@
 // InheritanceExtensions/InhExtensionsEx1.kt
 package inheritanceAndExtensionsExercise2
-
 import atomictest.*
 
 open class Dog {

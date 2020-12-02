@@ -1,5 +1,4 @@
 package sealedClassesExercise2
-
 import atomictest.trace
 import org.junit.Test
 import util.loadClass

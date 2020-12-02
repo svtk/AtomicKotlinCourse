@@ -3,19 +3,19 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 249
+  - offset: 248
     length: 150
     placeholder_text: // countPercent
-  - offset: 455
+  - offset: 454
     length: 32
     placeholder_text: TODO()
-  - offset: 544
+  - offset: 543
     length: 33
     placeholder_text: TODO()
-  - offset: 636
+  - offset: 635
     length: 37
     placeholder_text: TODO()
-  - offset: 730
+  - offset: 729
     length: 75
     placeholder_text: TODO()
 - name: test/Tests.kt

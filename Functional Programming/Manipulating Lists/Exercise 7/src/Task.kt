@@ -1,6 +1,5 @@
 // ManipulatingLists/Task7.kt
 package manipulatingListsExercise7
-
 import atomictest.eq
 
 fun <T> List<T>.filter(f: (T) -> Boolean): List<T> =

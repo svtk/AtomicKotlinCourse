@@ -1,6 +1,5 @@
 // PropertyAccessors/Task2.kt
 package propertyAccessorsExercise2
-
 import atomictest.eq
 
 class Accessible {

@@ -1,6 +1,5 @@
 // Upcasting/Task3.kt
 package upcastingExercise3
-
 import atomictest.trace
 
 interface Fighter {

@@ -1,6 +1,5 @@
 // ManipulatingLists/Task4.kt
 package manipulatingListsExercise4
-
 import atomictest.eq
 
 class Person(

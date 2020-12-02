@@ -1,6 +1,5 @@
 // Sets/Task2.kt
 package setsExercise2
-
 import kotlin.random.Random
 
 fun experiment(): Int {

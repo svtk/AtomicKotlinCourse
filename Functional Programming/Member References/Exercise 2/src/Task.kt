@@ -1,6 +1,5 @@
 // MemberReferences/Task2.kt
 package memberReferencesExercise2
-
 import atomictest.eq
 
 data class Student(

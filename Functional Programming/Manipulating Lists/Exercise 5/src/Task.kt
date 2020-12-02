@@ -1,6 +1,5 @@
 // ManipulatingLists/Task5.kt
 package manipulatingListsExercise5
-
 import atomictest.eq
 
 fun <T, R> List<T>.flatMap(f: (T) -> List<R>): List<R> =

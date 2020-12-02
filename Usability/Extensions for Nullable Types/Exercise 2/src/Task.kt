@@ -1,6 +1,5 @@
 // NullableExtensions/Task2.kt
 package extensionsForNullableTypesExercise2
-
 import atomictest.eq
 
 fun Boolean?.and(that: Boolean?): Boolean? =

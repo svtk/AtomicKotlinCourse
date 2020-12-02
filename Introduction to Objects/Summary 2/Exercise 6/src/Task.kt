@@ -1,6 +1,5 @@
 // Summary2/Task6.kt
 package summaryIIExercise6
-
 import atomictest.eq
 
 class Temperature {

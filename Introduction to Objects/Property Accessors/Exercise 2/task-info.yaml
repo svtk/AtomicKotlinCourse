@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 88
+  - offset: 87
     length: 279
     placeholder_text: '// TODO: create class Accessible'
 - name: test/Tests.kt

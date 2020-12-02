@@ -1,6 +1,5 @@
 // Inheritance/Task3.kt
 package inheritanceExercise3
-
 import atomictest.eq
 
 open class Game {

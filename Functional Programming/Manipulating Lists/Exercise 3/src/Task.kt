@@ -1,6 +1,5 @@
 // ManipulatingLists/Task3.kt
 package manipulatingListsExercise3
-
 import atomictest.eq
 
 data class Book(val title: String, val authors: List<Author>)

@@ -1,6 +1,5 @@
 // Summary2/Task2.kt
 package summaryIIExercise2
-
 import atomictest.eq
 
 class Boring2(val a: Double, val b: String, val c: Int) {

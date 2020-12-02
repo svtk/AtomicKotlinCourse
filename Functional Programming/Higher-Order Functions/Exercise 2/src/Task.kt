@@ -1,6 +1,5 @@
 // HigherOrderFunctions/Task2.kt
 package higherOrderFunctionsExercise2
-
 import atomictest.eq
 
 fun List<Int>.transformVersion1(): List<Int> =

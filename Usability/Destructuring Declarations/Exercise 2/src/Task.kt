@@ -1,6 +1,5 @@
 // Destructuring/Task2.kt
 package destructuringDeclarationsExercise2
-
 import atomictest.eq
 
 class Computation(

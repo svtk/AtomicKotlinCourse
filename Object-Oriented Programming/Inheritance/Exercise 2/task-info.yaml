@@ -3,10 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 114
+  - offset: 113
     length: 82
     placeholder_text: class Disinfectant
-  - offset: 211
+  - offset: 210
     length: 206
     placeholder_text: |-
       /*

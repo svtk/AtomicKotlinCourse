@@ -1,6 +1,5 @@
 // SecondaryConstructors/Task1.kt
 package secondaryConstructorsExercise1
-
 import atomictest.eq
 
 data class Flower1(val type: String) {

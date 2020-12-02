@@ -1,6 +1,5 @@
 // Abstract/Task3.kt
 package abstractClassesExercise3
-
 import atomictest.trace
 
 enum class Note {

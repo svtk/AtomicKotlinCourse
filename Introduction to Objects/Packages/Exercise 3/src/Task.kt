@@ -1,6 +1,5 @@
 // Packages/aaa.kt
 package pythagorean
-
 import kotlin.math.sqrt
 
 class EquilateralTriangle(val side: Double) {

@@ -1,5 +1,4 @@
 package namedAndDefaultArgumentsExercise4
-
 import atomictest.eq
 
 fun foo(i: Int, s: String) = "(i = $i, s = $s)"

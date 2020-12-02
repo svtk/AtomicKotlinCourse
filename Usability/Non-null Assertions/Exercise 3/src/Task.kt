@@ -1,6 +1,5 @@
 // NonNullAssertions/Task3.kt
 package nonNullAssertionsExercise3
-
 import atomictest.eq
 import kotlin.math.absoluteValue
 

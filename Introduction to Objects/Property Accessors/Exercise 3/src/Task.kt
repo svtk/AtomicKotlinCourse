@@ -1,6 +1,5 @@
 // PropertyAccessors/Task3.kt
 package propertyAccessorsExercise3
-
 import atomictest.eq
 
 class MessageStorage {

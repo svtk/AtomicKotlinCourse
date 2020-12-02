@@ -1,6 +1,5 @@
 // Recursion/Task2.kt
 package recursionExercise2
-
 import atomictest.eq
 
 fun factorial(n: Long): Long {

@@ -1,5 +1,4 @@
 package baseClassInitializationExercise3
-
 import atomictest.trace
 import org.junit.FixMethodOrder
 import org.junit.Test

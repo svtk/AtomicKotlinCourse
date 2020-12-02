@@ -1,6 +1,5 @@
 // Lambdas/Task1.kt
 package lambdasExercise1
-
 import atomictest.eq
 
 fun transform(list: List<String>): List<Int> {

@@ -1,6 +1,5 @@
 // SafeCallsAndElvis/Task2.kt
 package safeCallsAndTheElvisOperatorExercise2
-
 import atomictest.eq
 
 data class Client(

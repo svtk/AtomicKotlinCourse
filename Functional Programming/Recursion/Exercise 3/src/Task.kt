@@ -1,6 +1,5 @@
 // Recursion/Task3.kt
 package recursionExercise3
-
 import atomictest.eq
 
 // For comparison

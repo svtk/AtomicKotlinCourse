@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 148
+  - offset: 147
     length: 377
     placeholder_text: |-
       fun setFahrenheit(now: Double) {
@@ -24,7 +24,7 @@ files:
             current
           else
             (current - 32.0) * 5.0 / 9.0
-  - offset: 571
+  - offset: 570
     length: 121
     placeholder_text: |-
       temp.setFahrenheit(98.6)

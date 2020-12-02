@@ -3,10 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 67
+  - offset: 66
     length: 146
     placeholder_text: '/* TODO: Implement Animal, Cat and Dog classes */'
-  - offset: 228
+  - offset: 227
     length: 119
     placeholder_text: |-
       /*

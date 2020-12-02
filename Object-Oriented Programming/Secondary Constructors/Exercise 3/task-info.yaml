@@ -3,7 +3,7 @@ files:
 - name: src/GardenItem.kt
   visible: true
   placeholders:
-  - offset: 162
+  - offset: 161
     length: 142
     placeholder_text: |-
       class GardenItem(

@@ -1,6 +1,5 @@
 // ManipulatingLists/Task6.kt
 package manipulatingListsExercise6
-
 import atomictest.eq
 
 fun <T> List<List<T>>.flatten(): List<T> =

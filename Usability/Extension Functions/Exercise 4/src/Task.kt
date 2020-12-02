@@ -1,5 +1,4 @@
 package extensionFunctionsExercise4
-
 import atomictest.eq
 
 class Book(val title: String)

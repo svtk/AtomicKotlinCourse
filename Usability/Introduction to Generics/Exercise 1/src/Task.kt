@@ -1,6 +1,5 @@
 // IntroGenerics/Task1.kt
 package introductionToGenericsExercise1
-
 import atomictest.eq
 
 fun <T> List<T>.secondOrNull(): T? = getOrNull(1)

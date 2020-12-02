@@ -1,6 +1,5 @@
 // Upcasting/UpcastExercise1.kt
 package upcastingExercise1
-
 import atomictest.trace
 
 interface Rodent {

@@ -1,6 +1,5 @@
 // OperationsOnCollections/Task2.kt
 package operationsOnCollectionsExercise2
-
 import atomictest.eq
 
 val operation = { x: Int ->

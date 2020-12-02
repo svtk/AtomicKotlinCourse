@@ -4,15 +4,15 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 155
+    length: 154
     placeholder_text: /*TODO*/
 - name: src/Main.kt
   visible: true
   placeholders:
-  - offset: 27
+  - offset: 26
     length: 38
     placeholder_text: // TODO import
-  - offset: 82
+  - offset: 81
     length: 76
     placeholder_text: |-
       /*

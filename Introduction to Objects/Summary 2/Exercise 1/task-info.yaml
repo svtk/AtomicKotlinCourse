@@ -3,10 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 71
+  - offset: 70
     length: 69
     placeholder_text: // add Boring class
-  - offset: 157
+  - offset: 156
     length: 86
     placeholder_text: // test Boring
 - name: test/Tests.kt

@@ -1,6 +1,5 @@
 // Abstract/Task2.kt
 package abstractClassesExercise2
-
 import atomictest.eq
 
 interface Movable {

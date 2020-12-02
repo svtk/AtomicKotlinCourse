@@ -1,6 +1,5 @@
 // Lists/Task2.kt
 package listsExercise3
-
 import atomictest.eq
 
 fun checkAnagrams(s1: String, s2: String): Boolean {

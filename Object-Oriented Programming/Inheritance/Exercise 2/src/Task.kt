@@ -1,6 +1,5 @@
 // Inheritance/Task2.kt
 package inheritanceExercise2
-
 import inheritanceExercise1.Detergent
 import atomictest.eq
 

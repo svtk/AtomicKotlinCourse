@@ -1,6 +1,5 @@
 // NullableExtensions/Task3.kt
 package extensionsForNullableTypesExercise3
-
 import atomictest.eq
 
 data class Container(val contents: Any?)

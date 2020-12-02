@@ -1,6 +1,5 @@
 // Maps/Task1.kt
 package mapsExercise1
-
 import atomictest.eq
 
 class Contact(val name: String, val number: String) {

@@ -1,6 +1,5 @@
 // SecondaryConstructors/Task2.kt
 package secondaryConstructorsExercise2
-
 import atomictest.eq
 
 data class SpaceShip(val name: String) {

@@ -1,6 +1,5 @@
 // CreatingGenerics/CreatingGenericsSoln3.kt
 package creatingGenericsExercise3
-
 import variance.Cat
 
 interface InBox<in T> {

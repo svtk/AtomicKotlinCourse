@@ -1,6 +1,5 @@
 // PropertyAccessors/Task4.kt
 package propertyAccessorsExercise4
-
 import atomictest.eq
 
 class AccessCounter {

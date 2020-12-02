@@ -1,6 +1,5 @@
 // WhenExpressions/Task2.kt
 package whenExpressionsExercise2
-
 import atomictest.eq
 
 fun temperature(temperature: Int): String =

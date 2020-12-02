@@ -1,6 +1,5 @@
 // Enumerations/Task2.kt
 package enumerationsExercise2
-
 import atomictest.eq
 import enumerationsExercise2.Month.*
 import enumerationsExercise2.Season.*

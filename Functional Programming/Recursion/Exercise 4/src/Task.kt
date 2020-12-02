@@ -1,6 +1,5 @@
 // Recursion/Task4.kt
 package recursionExercise4
-
 import atomictest.eq
 
 class City(val name: String) {

@@ -5,7 +5,7 @@ files:
 - name: src/bbb.kt
   visible: true
   placeholders:
-  - offset: 13
+  - offset: 12
     length: 55
     placeholder_text: // TODO
 - name: src/aaa.kt
@@ -17,9 +17,9 @@ files:
 - name: src/task.kt
   visible: true
   placeholders:
-  - offset: 13
+  - offset: 12
     length: 12
     placeholder_text: // TODO
-  - offset: 42
+  - offset: 41
     length: 13
     placeholder_text: // TODO

@@ -1,5 +1,4 @@
 package propertyAccessorsExercise5
-
 import atomictest.eq
 
 class Hamster(val name: String)

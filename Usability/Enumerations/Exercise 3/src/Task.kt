@@ -1,6 +1,5 @@
 // Enumerations/Task3.kt
 package enumerationsExercise3
-
 import atomictest.eq
 import enumerationsExercise3.Result.*
 import enumerationsExercise3.Rochambeau.*

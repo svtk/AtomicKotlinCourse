@@ -1,6 +1,5 @@
 // BuildingMaps/Task3.kt
 package buildingMapsExercise3
-
 import atomictest.eq
 
 fun <T, R> List<T>.associateBy(keySelector: (T) -> R): Map<R, T> =

@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 465
+  - offset: 464
     length: 164
     placeholder_text: class PlaceSetting
 - name: test/Tests.kt

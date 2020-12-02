@@ -3,10 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 92
+  - offset: 91
     length: 5
     placeholder_text: data class
-  - offset: 160
+  - offset: 159
     length: 78
     placeholder_text: ""
 - name: test/Tests.kt

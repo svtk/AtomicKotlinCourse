@@ -1,5 +1,4 @@
 package ccc
-
 import bbb.*
 
 fun main() {

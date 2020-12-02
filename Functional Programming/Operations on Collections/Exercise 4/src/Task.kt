@@ -1,6 +1,5 @@
 // OperationsOnCollections/Task4.kt
 package operationsOnCollectionsExercise4
-
 import atomictest.eq
 
 fun List<Int>.allNonZero() = all { it != 0 }

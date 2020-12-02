@@ -3,16 +3,16 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 563
+  - offset: 562
     length: 147
     placeholder_text: |-
       class IAmHonestlyDuck(
         val crocodile: Crocodile
       )
-  - offset: 769
+  - offset: 768
     length: 28
     placeholder_text: TODO()
-  - offset: 860
+  - offset: 859
     length: 80
     placeholder_text: |-
       //  interactWithDuck(honestlyDuck)

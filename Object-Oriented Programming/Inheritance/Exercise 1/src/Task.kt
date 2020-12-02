@@ -1,6 +1,5 @@
 // Inheritance/Task1.kt
 package inheritanceExercise1
-
 import atomictest.eq
 
 open class Cleanser {

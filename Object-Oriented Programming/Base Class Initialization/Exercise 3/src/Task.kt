@@ -1,5 +1,4 @@
 package baseClassInitializationExercise3
-
 import atomictest.trace
 
 open class Animal(val sound: String = "???")

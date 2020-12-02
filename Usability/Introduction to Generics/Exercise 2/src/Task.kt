@@ -1,6 +1,5 @@
 // IntroGenerics/Task2.kt
 package introductionToGenericsExercise2
-
 import atomictest.eq
 
 fun <T> List<T>.reversed(): List<T> {

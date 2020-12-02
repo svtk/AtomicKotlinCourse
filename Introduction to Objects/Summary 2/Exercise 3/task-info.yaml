@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 70
+  - offset: 69
     length: 288
     placeholder_text: class FixedSizeHolder
 - name: test/Tests.kt

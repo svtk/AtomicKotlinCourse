@@ -1,6 +1,5 @@
 // HigherOrderFunctions/Task1.kt
 package higherOrderFunctionsExercise1
-
 import atomictest.eq
 
 fun <T, R> List<T>.map(transform: (T) -> R): List<R> {
