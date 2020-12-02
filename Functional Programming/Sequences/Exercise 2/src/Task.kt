@@ -1,4 +1,4 @@
-// Sequences/School1.kt
+// Sequences/Task2.kt
 package sequencesExercise2
 
 fun School.studentInstructors(

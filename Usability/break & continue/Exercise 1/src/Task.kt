@@ -1,30 +1,25 @@
 // BreakAndContinue/Task1.kt
 package breakAndContinueExercise1
+import atomictest.*
 
-fun readNumbers() {
+fun readNumbers(vararg n: String) {
   var sum = 0
-  while (true) {
-    val input = readLine()
-    val number = input?.toIntOrNull()
+  for (input in n) {
+    val number = input.toIntOrNull()
     if (number == null) {
-      println("Not a number: $input")
+      trace("Not a number: $input")
     } else {
       sum += number
     }
     if (number == 0) break
   }
-  println("Sum: $sum")
+  trace("Sum: $sum")
 }
 
 fun main() {
-  readNumbers()
+  readNumbers("1", "a", "3", "10", "0", "19")
+  trace eq """
+    Not a number: a
+    Sum: 14
+  """
 }
-/* Input/Output:
->>> 1
->>> a
-Not a number: a
->>> 3
->>> 10
->>> 0
-Sum: 14
- */

@@ -1,4 +1,4 @@
-// Packages/aaa.kt
+// Packages/EquilateralTriangle.kt
 package pythagorean
 import kotlin.math.sqrt
 

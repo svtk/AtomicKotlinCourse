@@ -4,7 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 98
-    length: 57
+    length: 59
     placeholder_text: fun downcase() {}
+  - offset: 172
+    length: 49
+    placeholder_text: |-
+      /*
+        downcase(null) eq ""
+        downcase("ABC") eq "abc"
+      */
 - name: test/Tests.kt
   visible: false

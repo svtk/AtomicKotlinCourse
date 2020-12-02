@@ -2,15 +2,14 @@ package nonNullAssertionsExercise1
 
 import org.junit.Assert
 import org.junit.Test
-import util.checkParametersOfMemberFunction
-import util.checkParametersOfTopLevelFunction
-import util.loadMemberFunction
-import util.runAndCheckSystemOutput
+import util.*
 import java.lang.reflect.InvocationTargetException
 import kotlin.reflect.full.createInstance
 
 class TestNonNullAssertionsExercise1 {
     @Test fun testRocket() {
+        unimplementedTest()
+/*
         val rocketClass = Rocket::class
         val rocketInstance = rocketClass.createInstance()
         val ignitionFunc = loadMemberFunction(rocketClass, "ignition")
@@ -30,5 +29,6 @@ class TestNonNullAssertionsExercise1 {
             Assert.assertEquals("Wrong result after calling 'launch(null)', expected NullPointerException",
               e.targetException::class.simpleName, "NullPointerException")
         }
+*/
     }
 }

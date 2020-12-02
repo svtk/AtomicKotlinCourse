@@ -1,4 +1,4 @@
-// BaseClassInit/Task3.kt
+// BaseClassInit/Task2.kt
 package baseClassInitializationExercise2
 import atomictest.trace
 

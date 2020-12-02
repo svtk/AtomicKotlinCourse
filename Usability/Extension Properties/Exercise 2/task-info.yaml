@@ -6,5 +6,12 @@ files:
   - offset: 91
     length: 54
     placeholder_text: '// TODO: implement ''reversed'''
+  - offset: 160
+    length: 63
+    placeholder_text: |-
+      /*
+        val list = listOf(1, 2, 3)
+        list.reversed eq listOf(3, 2, 1)
+      */
 - name: test/Tests.kt
   visible: false

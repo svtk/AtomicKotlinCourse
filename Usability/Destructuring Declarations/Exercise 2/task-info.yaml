@@ -6,8 +6,8 @@ files:
   - offset: 91
     length: 5
     placeholder_text: data class
-  - offset: 159
-    length: 78
+  - offset: 148
+    length: 74
     placeholder_text: ""
 - name: test/Tests.kt
   visible: false

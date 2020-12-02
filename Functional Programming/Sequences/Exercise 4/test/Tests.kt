@@ -37,7 +37,7 @@ class TestSequencesExercise4 : TestSchool() {
     Assert.assertEquals("Wrong result for ${student.name}, " +
       "$schoolLessons:",
       favInstructor,
-      schl(schoolLessons).favouriteInstructor(student))
+      schl(schoolLessons).favoriteInstructor(student))
   }
 
   @Test(timeout = TIMEOUT)

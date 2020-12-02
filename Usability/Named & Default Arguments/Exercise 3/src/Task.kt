@@ -7,9 +7,9 @@ fun joinComments(s: String): String =
 
 fun main() {
   val s = """
-        // first
-        // second
-        // third
+        // First
+        // Second
+        // Third
         """
-  joinComments(s) eq "first; second; third"
+  joinComments(s) eq "First; Second; Third"
 }

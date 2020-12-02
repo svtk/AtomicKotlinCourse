@@ -17,7 +17,6 @@ class CountingSet<E> {
 }
 
 fun main() {
-/*
   val cs = CountingSet<String>()
   cs.add("abc")
   cs.add("abc")
@@ -25,5 +24,4 @@ fun main() {
   cs.count("abc") eq 2
   cs.count("def") eq 1
   cs.count("xyz") eq 0
-*/
 }

@@ -3073,7 +3073,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testMain() {
-        testExample("Introduction to Objects/Packages/Exercise 3/src/Main.kt", packagesExercise3.MainKt::main);
+        testExample("Introduction to Objects/Packages/Exercise 3/src/Main.kt", packagesExercise3.Task3Kt::main);
     }
 
     @Test

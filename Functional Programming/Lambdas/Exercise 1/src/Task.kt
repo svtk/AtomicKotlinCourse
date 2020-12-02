@@ -2,9 +2,8 @@
 package lambdasExercise1
 import atomictest.eq
 
-fun transform(list: List<String>): List<Int> {
-  return list.map { it.length }
-}
+fun transform(list: List<String>): List<Int> =
+  list.map { it.length }
 
 fun main() {
   transform(listOf("abc", "ab")) eq listOf(3, 2)

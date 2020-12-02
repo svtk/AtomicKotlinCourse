@@ -4,7 +4,7 @@ import atomictest.eq
 
 val operation = { x: Int ->
   x in setOf(1, 5, 32)
-  // other options:
+  // Other options:
   // x % 5 == 0
   // x.toString().contains('5')
 }

@@ -1,23 +1,29 @@
 package breakAndContinueExercise1
 
+import atomictest.trace
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import util.checkInputOutput
+import util.loadTraceContent
+import util.resetTraceContent
+import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestBreakAndContinueExercise1 {
-  private fun testInput(input: String, expectedOutput: String) {
-    checkInputOutput("Wrong output for input:\n$input\n", input, expectedOutput, ::readNumbers)
+  private fun testData(expectedOutput: List<String>, input: List<String>) {
+    resetTraceContent()
+    readNumbers(*input.toTypedArray())
+    assertEquals(expectedOutput, loadTraceContent(),
+      "Wrong result for:\n$input\n")
   }
 
   @Test(timeout = TIMEOUT)
-  fun test1() = testInput("1\n0", "Sum: 1")
+  fun test1() = testData(listOf("Sum: 1"), listOf("1", "0"))
 
   @Test(timeout = TIMEOUT)
-  fun test2() = testInput("af\n1\n0", "Not a number: af\nSum: 1")
+  fun test2() = testData(listOf("Not a number: af", "Sum: 1"), listOf("af", "1", "0"))
 
   @Test(timeout = TIMEOUT)
-  fun test3() = testInput("1\n9\n5\n0", "Sum: 15")
+  fun test3() = testData(listOf("Sum: 15"), listOf("1", "9", "5", "0"))
 }

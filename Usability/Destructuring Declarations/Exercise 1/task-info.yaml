@@ -3,14 +3,14 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 124
+  - offset: 128
     length: 25
     placeholder_text: Any /* replace with required type */
-  - offset: 156
-    length: 88
+  - offset: 158
+    length: 86
     placeholder_text: TODO()
   - offset: 261
-    length: 225
+    length: 201
     placeholder_text: |-
       /*
           val result = calculate(5, 7)

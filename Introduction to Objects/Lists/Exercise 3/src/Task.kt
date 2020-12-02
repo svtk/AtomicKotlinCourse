@@ -1,4 +1,4 @@
-// Lists/Task2.kt
+// Lists/Task3.kt
 package listsExercise3
 import atomictest.eq
 

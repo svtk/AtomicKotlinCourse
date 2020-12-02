@@ -1,4 +1,4 @@
-// Sequences/School4.kt
+// Sequences/Task8.kt
 package sequencesExercise8
 import atomictest.eq
 

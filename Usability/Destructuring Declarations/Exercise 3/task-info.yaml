@@ -12,7 +12,7 @@ files:
       val (name, age) = person
       // TODO
   - offset: 281
-    length: 111
+    length: 112
     placeholder_text: |-
       val person = Person("Alice",  30)
       //  val person = Person("Alice", "Johnson", 30)

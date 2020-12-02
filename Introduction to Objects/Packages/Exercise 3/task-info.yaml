@@ -1,25 +1,25 @@
 type: edu
 files:
-- name: src/Task.kt
+- name: test/Tests.kt
+  visible: false
+- name: src/EquilateralTriangle.kt
   visible: true
   placeholders:
-  - offset: 0
-    length: 154
-    placeholder_text: /*TODO*/
-- name: src/Main.kt
+  - offset: 55
+    length: 115
+    placeholder_text: // TODO class EquilateralTriangle
+- name: src/Task3.kt
   visible: true
   placeholders:
-  - offset: 26
+  - offset: 47
     length: 38
     placeholder_text: // TODO import
-  - offset: 81
+  - offset: 102
     length: 76
     placeholder_text: |-
       /*
         val et = EquilateralTriangle(1.0)
         println(et.area()) // 0.4330127018922193
         */
-- name: test/Tests.kt
-  visible: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Imports+%26+Packages+%2F+Exercise1

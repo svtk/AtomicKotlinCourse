@@ -12,7 +12,6 @@ data class Pet(
 
 enum class Habitat {
   LAND, WATER, AMPHIBIOUS;
-
   fun livesIn(pet: Pet) = pet.habitat == this
 }
 

@@ -1,4 +1,4 @@
-// Sequences/Task4.kt
+// Sequences/Task7.kt
 package sequencesExercise7
 
 fun oddWithout1(): Sequence<Int> {

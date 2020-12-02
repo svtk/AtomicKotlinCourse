@@ -6,5 +6,13 @@ files:
   - offset: 54
     length: 143
     placeholder_text: // Implement AirlineTicket class
+  - offset: 212
+    length: 90
+    placeholder_text: |-
+      /*
+        val ticket = AirlineTicket("Bruce", "Eckel",
+          123456, "DEN", "HND")
+        println(ticket)
+      */
 - name: test/Tests.kt
   visible: false

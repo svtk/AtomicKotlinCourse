@@ -6,5 +6,17 @@ files:
   - offset: 88
     length: 238
     placeholder_text: class CountingSet
+  - offset: 341
+    length: 149
+    placeholder_text: |-
+      /*
+        val cs = CountingSet<String>()
+        cs.add("abc")
+        cs.add("abc")
+        cs.add("def")
+        cs.count("abc") eq 2
+        cs.count("def") eq 1
+        cs.count("xyz") eq 0
+      */
 - name: test/Tests.kt
   visible: false

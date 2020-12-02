@@ -6,5 +6,17 @@ files:
   - offset: 139
     length: 91
     placeholder_text: // TODO Implement 'empty' and 'full' extension functions
+  - offset: 245
+    length: 193
+    placeholder_text: |-
+      /*
+        val container = Container(42)
+        container.empty() eq false
+        container.full() eq true
+
+        val emptyContainer = Container(null)
+        emptyContainer.empty() eq true
+        emptyContainer.full() eq false
+      */
 - name: test/Tests.kt
   visible: false

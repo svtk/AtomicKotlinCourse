@@ -6,5 +6,15 @@ files:
   - offset: 91
     length: 98
     placeholder_text: // TODO
+  - offset: 204
+    length: 121
+    placeholder_text: |-
+      /*
+        val rectangle = Rectangle(1, 2)
+        rectangle.isSquare eq false
+
+        val square = Rectangle(3, 3)
+        square.isSquare eq true
+      */
 - name: test/Tests.kt
   visible: false

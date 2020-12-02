@@ -12,7 +12,7 @@ class Alien(val name: String, val species: String, private var planet: String) {
 }
 
 fun main() {
-  val alien1 = Alien("Arthricia",	"Cat Person",	"PurgeWorld")
+  val alien1 = Alien("Arthricia", "Cat Person", "PurgeWorld")
   println(alien1)
   alien1.movePlanet("Earth C-137")
   println(alien1)

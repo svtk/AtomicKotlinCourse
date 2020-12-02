@@ -8,8 +8,8 @@ data class SpaceShip(val name: String) {
 }
 
 fun main() {
-    SpaceShip("SuperhighspeedShip") eq
-      "SpaceShip(name=SuperhighspeedShip)"
+    SpaceShip("SuperHighSpeedShip") eq
+      "SpaceShip(name=SuperHighSpeedShip)"
     SpaceShip("MClass", 29321) eq
       "SpaceShip(name=MClass-29321)"
 }
