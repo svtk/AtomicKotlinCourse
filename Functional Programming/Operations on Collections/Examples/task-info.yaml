@@ -16,5 +16,5 @@ files:
   visible: true
 - name: src/TakeOrDrop.kt
   visible: true
-- name: src/OperationsOnSets.kt
+- name: src/SetOperations.kt
   visible: true

@@ -1,6 +1,5 @@
 // OperatorOverloading/InvokeFunctionType.kt
 package operatoroverloading
-
 import atomictest.eq
 
 fun main() {

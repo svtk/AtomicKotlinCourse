@@ -2,8 +2,7 @@
 
 The starter code contains a `data` class `Person` with two properties: `name:
 String` and `age: Int`. Write a `displayPersonInfo()` function that takes a
-parameter of `person: Person`, which it destructures using the following
-syntax:
+parameter of `person: Person`, which it destructures using the following syntax:
 
 ```kotlin
 val (name, age) = person
@@ -11,7 +10,7 @@ val (name, age) = person
 
 `displayPersonInfo()` should display the corresponding values on the console:
 
-```
+```text
 Name: $name
 Age: $age
 ```

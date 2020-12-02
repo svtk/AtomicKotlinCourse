@@ -1,4 +1,4 @@
-// OperationsOnCollections/OperationsOnSets.kt
+// OperationsOnCollections/SetOperations.kt
 import atomictest.eq
 
 fun main() {

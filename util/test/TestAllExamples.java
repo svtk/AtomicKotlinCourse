@@ -998,7 +998,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testCheckingOptions() {
-        testExample("Usability/Enumerations/Examples/src/CheckingOptions.kt", enumerations.CheckingOptionsKt::main);
+        testExample("Usability/Enumerations/Examples/src/CheckingOptions.kt", checkingoptions.CheckingOptionsKt::main);
     }
 
     @Test
@@ -1132,8 +1132,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testDefinition() {
-        testExample("Usability/Extensions for Nullable Types/Examples/src/Definition.kt", nullableextensions.DefinitionKt::main);
+    public void testNullableExtension() {
+        testExample("Usability/Extensions for Nullable Types/Examples/src/NullableExtension.kt", nullableextensions.NullableExtensionKt::main);
     }
 
     @Test
@@ -1317,6 +1317,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testSetOperations() {
+        testExample("Functional Programming/Operations on Collections/Examples/src/SetOperations.kt", SetOperationsKt::main);
+    }
+
+    @Test
     public void testPartition() {
         testExample("Functional Programming/Operations on Collections/Examples/src/Partition.kt", PartitionKt::main);
     }
@@ -1344,11 +1349,6 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testPredicates() {
         testExample("Functional Programming/Operations on Collections/Examples/src/Predicates.kt", PredicatesKt::main);
-    }
-
-    @Test
-    public void testOperationsOnSets() {
-        testExample("Functional Programming/Operations on Collections/Examples/src/OperationsOnSets.kt", OperationsOnSetsKt::main);
     }
 
     @Test
@@ -1472,11 +1472,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testColorBlend() {
-        testExample("Functional Programming/Building Maps/Examples/src/ColorBlend.kt", buildingmaps.ColorBlendKt::main);
-    }
-
-    @Test
     public void testGroupBy() {
         testExample("Functional Programming/Building Maps/Examples/src/GroupBy.kt", GroupByKt::main);
     }
@@ -1489,11 +1484,6 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testAssociateBy() {
         testExample("Functional Programming/Building Maps/Examples/src/AssociateBy.kt", AssociateByKt::main);
-    }
-
-    @Test
-    public void testReadOnlyBlendMap() {
-        testExample("Functional Programming/Building Maps/Examples/src/ReadOnlyBlendMap.kt", buildingmaps.ReadOnlyBlendMapKt::main);
     }
 
     @Test
@@ -1517,11 +1507,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testInputLines1() {
-        testExample("Functional Programming/Sequences/Examples/src/InputLines1.kt", InputLines1Kt::main);
-    }
-
-    @Test
     public void testDefineTakeIf() {
         testExample("Functional Programming/Sequences/Examples/src/DefineTakeIf.kt", usingsequences.DefineTakeIfKt::main);
     }
@@ -1537,6 +1522,16 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testGenerateSequence1() {
+        testExample("Functional Programming/Sequences/Examples/src/GenerateSequence1.kt", GenerateSequence1Kt::main);
+    }
+
+    @Test
+    public void testGenerateSequence2() {
+        testExample("Functional Programming/Sequences/Examples/src/GenerateSequence2.kt", GenerateSequence2Kt::main);
+    }
+
+    @Test
     public void testNumberSequence1() {
         testExample("Functional Programming/Sequences/Examples/src/NumberSequence1.kt", NumberSequence1Kt::main);
     }
@@ -1544,11 +1539,6 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testNoComputationYet() {
         testExample("Functional Programming/Sequences/Examples/src/NoComputationYet.kt", NoComputationYetKt::main);
-    }
-
-    @Test
-    public void testInputLines2() {
-        testExample("Functional Programming/Sequences/Examples/src/InputLines2.kt", InputLines2Kt::main);
     }
 
     @Test
@@ -1677,8 +1667,8 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testSamConversion() {
-        testExample("Object-Oriented Programming/Interfaces/Examples/src/SamConversion.kt", interfaces.SamConversionKt::main);
+    public void testSAMConversion() {
+        testExample("Object-Oriented Programming/Interfaces/Examples/src/SAMConversion.kt", interfaces.SAMConversionKt::main);
     }
 
     @Test
@@ -2344,11 +2334,6 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testErasure() {
         testExample("Power Tools/Creating Generics/Examples/src/Erasure.kt", creatinggenerics.ErasureKt::main);
-    }
-
-    @Test
-    public void testFunctionTypeAndVariance() {
-        testExample("Power Tools/Creating Generics/Examples/src/FunctionTypeAndVariance.kt", variance.FunctionTypeAndVarianceKt::main);
     }
 
     @Test

@@ -13,9 +13,5 @@ fun repeat(
 
 fun main() {
   repeat(3) { trace("#$it") }     // [3]
-  trace eq """
-    #0
-    #1
-    #2
-  """
+  trace eq "#0 #1 #2"
 }

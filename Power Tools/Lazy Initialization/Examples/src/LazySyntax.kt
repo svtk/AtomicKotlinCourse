@@ -9,13 +9,13 @@ val idle: String by lazy {
 
 val helpful: String by lazy {
   trace("Initializing 'helpful'")
-  "I'm being used!"
+  "I'm helping!"
 }
 
 fun main() {
   trace(helpful)
   trace eq """
     Initializing 'helpful'
-    I'm being used!
+    I'm helping!
   """
 }

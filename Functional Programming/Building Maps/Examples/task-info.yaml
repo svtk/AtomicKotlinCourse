@@ -20,9 +20,3 @@ files:
   visible: true
 - name: src/SimilarOperation.kt
   visible: true
-- name: src/PaintColors.kt
-  visible: true
-- name: src/ColorBlend.kt
-  visible: true
-- name: src/ReadOnlyBlendMap.kt
-  visible: true

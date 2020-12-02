@@ -2,13 +2,12 @@
 package variance
 
 fun main() {
-  val listOfCats: List<Cat> = listOf(Cat())
-  val listOfPets: List<Pet> = listOfCats
-
-  val mListOfCats: MutableList<Cat> =
+  val catList: List<Cat> = listOf(Cat())
+  val petList: List<Pet> = catList
+  var mutablePetList: MutableList<Pet> =
     mutableListOf(Cat())
-  // Doesn't compile:
-  // val mListOfPets: MutableList<Pet> =
-  //  mListOfCats                       // [1]
-  // mListOfPets.add(Dog())
+  mutablePetList.add(Dog())
+  // Type mismatch:
+  // mutablePetList =
+  //    mutableListOf<Cat>(Cat())     // [1]
 }

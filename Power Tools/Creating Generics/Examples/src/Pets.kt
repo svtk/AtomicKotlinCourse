@@ -1,4 +1,4 @@
-// CreatingGenerics/Pet.kt
+// CreatingGenerics/Pets.kt
 package variance
 
 open class Pet

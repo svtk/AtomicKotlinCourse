@@ -1,6 +1,7 @@
 // Enumerations/CheckingOptions.kt
-package enumerations
+package checkingoptions
 import atomictest.*
+import enumerations.Level
 import enumerations.Level.*
 
 fun checkLevel(level: Level) {

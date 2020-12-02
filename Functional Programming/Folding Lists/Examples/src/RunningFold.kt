@@ -2,12 +2,17 @@
 import atomictest.eq
 
 fun main() {
-  val list = listOf(1, 10, 100, 1000)
-  list.runningFold(0) { sum, n ->
+  val list = listOf(11, 13, 17, 19)
+  list.fold(7) { sum, n ->
     sum + n
-  } eq listOf(0, 1, 11, 111, 1111)
-
+  } eq 67
+  list.runningFold(7) { sum, n ->
+    sum + n
+  } eq "[7, 18, 31, 48, 67]"
+  list.reduce { sum, n ->
+    sum + n
+  } eq 60
   list.runningReduce { sum, n ->
     sum + n
-  } eq listOf(1, 11, 111, 1111)
+  } eq "[11, 24, 41, 60]"
 }

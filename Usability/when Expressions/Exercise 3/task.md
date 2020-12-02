@@ -11,15 +11,15 @@ other than parentheses and whitespace, throw an `IllegalArgumentException`.
 
 Some examples:
 
--   `"()"` is balanced
+- `"()"` is balanced
 
--   `"(()"` is unbalanced
+- `"(()"` is unbalanced
 
--   `")("` is unbalanced
+- `")("` is unbalanced
 
--   `"( ()() )"` is balanced
+- `"( ()() )"` is balanced
 
--   `"*()"` produces an `IllegalArgumentException`
+- `"*()"` produces an `IllegalArgumentException`
 
 <div class="hint">
 

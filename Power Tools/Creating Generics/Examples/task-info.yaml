@@ -36,7 +36,7 @@ files:
   visible: true
 - name: src/InAndOutBoxes.kt
   visible: true
-- name: src/Pet.kt
+- name: src/Pets.kt
   visible: true
 - name: src/BoxAssignment.kt
   visible: true
@@ -46,5 +46,5 @@ files:
   visible: true
 - name: src/CovariantList.kt
   visible: true
-- name: src/FunctionTypeAndVariance.kt
+- name: src/CovariantReturnTypes.kt
   visible: true

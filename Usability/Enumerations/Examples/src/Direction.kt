@@ -5,8 +5,7 @@ import enumerations.Direction.*
 
 enum class Direction(val notation: String) {
   North("N"), South("S"),
-  East("E"), West("W");
-
+  East("E"), West("W");  // Semicolon required
   val opposite: Direction
     get() = when (this) {
       North -> South
