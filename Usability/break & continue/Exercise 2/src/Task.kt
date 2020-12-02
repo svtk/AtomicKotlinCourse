@@ -1,3 +1,4 @@
+// BreakAndContinue/Task2.kt
 package breakAndContinueExercise2
 
 fun analyzeStrings1(strings: List<List<String>>) {

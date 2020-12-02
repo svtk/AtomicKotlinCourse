@@ -1,3 +1,4 @@
+// Booleans/Task2.kt
 package booleansExercise2
 
 fun showAnd(first: Boolean, second: Boolean) {

@@ -1,3 +1,4 @@
+// StringTemplates/Task1.kt
 package stringTemplatesExercise1
 
 fun findMax(first: Int, second: Int): Int =

@@ -1,3 +1,4 @@
+// Constructors/Task2.kt
 package constructorsExercise2
 
 class Robot(val fieldSize: Int, var x: Int, var y: Int) {

@@ -1,3 +1,4 @@
+// ExtensionProperties/Task2.kt
 package extensionPropertiesExercise2
 
 import atomictest.eq

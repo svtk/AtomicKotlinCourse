@@ -1,3 +1,4 @@
+// Summary1/Task10.kt
 package summaryIExercise10
 
 fun showSnake(rows: Int, columns: Int) {

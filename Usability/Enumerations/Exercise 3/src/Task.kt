@@ -1,3 +1,4 @@
+// Enumerations/Task3.kt
 package enumerationsExercise3
 
 import atomictest.eq

@@ -1,3 +1,4 @@
+// StringTemplates/Task3.kt
 package stringTemplatesExercise3
 
 fun show(i: Int, s: String, c: Char, d: Double) {

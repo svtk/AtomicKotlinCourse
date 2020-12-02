@@ -1,3 +1,4 @@
+// Summary1/Task3.kt
 package summaryIExercise3
 
 fun first(a: Boolean, b: Boolean, c: Boolean): Boolean =

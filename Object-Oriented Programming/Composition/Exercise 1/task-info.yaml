@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 50
+  - offset: 74
     length: 106
     placeholder_text: |-
       class Shape(
@@ -12,11 +12,11 @@ files:
       ) {
         fun draw() = "drawing $color $name"
       }
-  - offset: 158
+  - offset: 182
     length: 105
     placeholder_text: "class Circle(\n  val radius: Int, \n  val color: String\n)\
       \ {\n  val shape = Shape(\"circle of radius $radius\", color)\n}"
-  - offset: 265
+  - offset: 289
     length: 137
     placeholder_text: |-
       class Rectangle(
@@ -26,10 +26,10 @@ files:
       ) {
         val shape = Shape("rectangle of size ${height}x$width", color)
       }
-  - offset: 500
+  - offset: 524
     length: 13
     placeholder_text: circle.shape.draw()
-  - offset: 523
+  - offset: 547
     length: 16
     placeholder_text: rectangle.shape.draw()
 - name: test/Tests.kt

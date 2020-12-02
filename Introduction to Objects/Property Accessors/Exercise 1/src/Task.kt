@@ -1,3 +1,4 @@
+// PropertyAccessors/Task1.kt
 package propertyAccessorsExercise1
 
 class Hamster(val name: String) {

@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 50
+  - offset: 74
     length: 144
     placeholder_text: |-
       class Stack<E> : ArrayList<E>() {
@@ -14,7 +14,7 @@ files:
 
         fun pop(): E = removeAt(lastIndex)
       }
-  - offset: 196
+  - offset: 220
     length: 131
     placeholder_text: |-
       class Queue<E>: ArrayList<E>() {

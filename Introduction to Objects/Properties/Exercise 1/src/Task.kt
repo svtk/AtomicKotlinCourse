@@ -1,3 +1,4 @@
+// Properties/Task1.kt
 package propertiesExercise1
 
 class X {

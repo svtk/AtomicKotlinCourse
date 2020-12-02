@@ -1,3 +1,4 @@
+// Functions/Task2.kt
 package functionsExercise2
 
 fun getSum(a: Double, b: Double, c: Double): Double = a + b + c

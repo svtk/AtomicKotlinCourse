@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 38
+  - offset: 70
     length: 100
     placeholder_text: fun displayContent() {}
 - name: test/Tests.kt

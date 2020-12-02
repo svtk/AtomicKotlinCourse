@@ -1,3 +1,4 @@
+// StringTemplates/Task2.kt
 package stringTemplatesExercise2
 
 fun record(index: Int, status: String, message: String): String =

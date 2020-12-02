@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 82
+  - offset: 100
     length: 88
     placeholder_text: TODO()
 - name: src/IntList.kt

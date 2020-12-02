@@ -1,3 +1,4 @@
+// Lambdas/Task2.kt
 package lambdasExercise2
 
 import atomictest.eq

@@ -3,10 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 107
+  - offset: 141
     length: 76
     placeholder_text: // TODO add secondary constructor
-  - offset: 282
+  - offset: 316
     length: 70
     placeholder_text: |-
       //    SpaceShip("MClass", 29321) eq

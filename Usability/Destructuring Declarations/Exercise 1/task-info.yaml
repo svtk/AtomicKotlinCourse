@@ -3,13 +3,13 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 99
+  - offset: 125
     length: 25
     placeholder_text: Any /* replace with required type */
-  - offset: 131
+  - offset: 157
     length: 88
     placeholder_text: TODO()
-  - offset: 236
+  - offset: 262
     length: 225
     placeholder_text: |-
       /*

@@ -3,15 +3,15 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 85
+  - offset: 111
     length: 20
     placeholder_text: '// TODO: add property here'
-  - offset: 166
+  - offset: 192
     length: 72
     placeholder_text: |-
       val (name, age) = person
       // TODO
-  - offset: 255
+  - offset: 281
     length: 111
     placeholder_text: |-
       val person = Person("Alice",  30)

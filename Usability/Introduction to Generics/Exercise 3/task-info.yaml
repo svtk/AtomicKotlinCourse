@@ -2,5 +2,9 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 88
+    length: 238
+    placeholder_text: class CountingSet
 - name: test/Tests.kt
   visible: false

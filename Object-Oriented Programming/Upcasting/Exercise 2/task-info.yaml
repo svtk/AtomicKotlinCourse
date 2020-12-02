@@ -3,19 +3,19 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 98
+  - offset: 120
     length: 76
     placeholder_text: class GrannySmith
-  - offset: 176
+  - offset: 198
     length: 61
     placeholder_text: class Gala
-  - offset: 239
+  - offset: 261
     length: 62
     placeholder_text: class Fuji
-  - offset: 303
+  - offset: 325
     length: 69
     placeholder_text: class Braeburn
-  - offset: 491
+  - offset: 513
     length: 23
     placeholder_text: //    trace(it.consume())
 - name: test/Tests.kt

@@ -1,3 +1,4 @@
+// Enumerations/Task1.kt
 package enumerationsExercise1
 
 import enumerationsExercise1.Direction.*

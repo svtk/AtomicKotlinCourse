@@ -1,3 +1,4 @@
+// Sequences/School2.kt
 package sequencesExercise4
 
 fun School.favouriteInstructor(student: Student): Instructor? =

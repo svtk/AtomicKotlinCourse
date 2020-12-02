@@ -1,3 +1,4 @@
+// BuildingMaps/Task1.kt
 package buildingMapsExercise1
 
 import atomictest.eq

@@ -1,3 +1,4 @@
+// HigherOrderFunctions/Task2.kt
 package higherOrderFunctionsExercise2
 
 import atomictest.eq

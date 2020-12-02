@@ -3,13 +3,13 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 545
+  - offset: 573
     length: 7
     placeholder_text: /* private */
-  - offset: 586
+  - offset: 614
     length: 24
     placeholder_text: /* TODO */
-  - offset: 902
+  - offset: 930
     length: 12
     placeholder_text: honestlyDuck.crocodile
 - name: test/Tests.kt

@@ -1,3 +1,4 @@
+// LoopingAndRanges/Task4.kt
 package loopingAndRangesExercise4
 
 fun printHalfPyramid(n: Int) {

@@ -3,10 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 28
+  - offset: 49
     length: 86
     placeholder_text: fun va1() {}
-  - offset: 116
+  - offset: 137
     length: 60
     placeholder_text: fun va2() {}
 - name: test/Tests.kt

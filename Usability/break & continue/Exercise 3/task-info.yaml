@@ -3,22 +3,22 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 91
+  - offset: 120
     length: 17
     placeholder_text: |-
       for (i in list) {
           if (i == 0) break
           println("analyzing $i")
         }
-  - offset: 168
+  - offset: 197
     length: 72
     placeholder_text: // TODO
-  - offset: 325
+  - offset: 354
     length: 17
     placeholder_text: |-
       if (i == 0) continue
           println("analyzing $i")
-  - offset: 400
+  - offset: 429
     length: 44
     placeholder_text: // TODO
 - name: test/Tests.kt

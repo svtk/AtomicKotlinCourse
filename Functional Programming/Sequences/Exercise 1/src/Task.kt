@@ -1,3 +1,4 @@
+// Sequences/Task1.kt
 package sequencesExercise1
 
 fun School.commonLessons(

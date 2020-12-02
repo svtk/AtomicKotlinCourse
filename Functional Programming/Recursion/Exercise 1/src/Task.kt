@@ -1,3 +1,4 @@
+// Recursion/Task1.kt
 package recursionExercise1
 
 tailrec fun simulation(group: String, level: Int) {

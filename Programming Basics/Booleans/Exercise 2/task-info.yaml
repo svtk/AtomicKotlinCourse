@@ -3,13 +3,13 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 27
+  - offset: 48
     length: 101
     placeholder_text: fun showAnd() {}
-  - offset: 130
+  - offset: 151
     length: 100
     placeholder_text: fun showOr() {}
-  - offset: 257
+  - offset: 278
     length: 178
     placeholder_text: TODO()
 - name: test/Tests.kt

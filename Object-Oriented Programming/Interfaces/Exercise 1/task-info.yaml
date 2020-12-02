@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 104
+  - offset: 126
     length: 250
     placeholder_text: class Cloud
 - name: test/Tests.kt

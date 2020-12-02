@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 60
+  - offset: 92
     length: 54
     placeholder_text: '// TODO: implement ''reversed'''
 - name: test/Tests.kt

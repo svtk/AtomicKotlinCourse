@@ -1,3 +1,4 @@
+// CreatingClasses/Task2.kt
 package creatingClassesExercise2
 
 class Giraffe {

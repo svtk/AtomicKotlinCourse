@@ -1,3 +1,4 @@
+// Properties/Task2.kt
 package propertiesExercise2
 
 class Robot {

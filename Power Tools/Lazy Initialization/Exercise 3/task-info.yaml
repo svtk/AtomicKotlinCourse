@@ -21,11 +21,11 @@ files:
   - offset: 347
     length: 49
     placeholder_text: = 2 // TODO
-  - offset: 435
-    length: 49
-    placeholder_text: = A() // TODO
   - offset: 409
     length: 1
     placeholder_text: 0 // TODO
+  - offset: 435
+    length: 49
+    placeholder_text: = A() // TODO
 - name: test/Tests.kt
   visible: false

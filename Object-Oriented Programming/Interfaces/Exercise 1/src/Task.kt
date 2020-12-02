@@ -1,5 +1,5 @@
+// Interfaces/Task1.kt
 package interfacesExercise1
-
 import atomictest.eq
 
 interface Computer {

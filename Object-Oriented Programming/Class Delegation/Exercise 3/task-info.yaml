@@ -3,16 +3,16 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 136
+  - offset: 164
     length: 98
     placeholder_text: class AA
-  - offset: 236
+  - offset: 264
     length: 98
     placeholder_text: class BB
-  - offset: 336
+  - offset: 364
     length: 140
     placeholder_text: class Delegation
-  - offset: 491
+  - offset: 519
     length: 62
     placeholder_text: |-
       /*

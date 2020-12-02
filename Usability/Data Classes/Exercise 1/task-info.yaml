@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 30
+  - offset: 54
     length: 143
     placeholder_text: // Implement AirlineTicket class
 - name: test/Tests.kt

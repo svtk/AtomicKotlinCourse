@@ -1,3 +1,4 @@
+// Sequences/Task3.kt
 package sequencesExercise5
 
 fun School.instructorsWithLargestClass(): Set<Instructor> {

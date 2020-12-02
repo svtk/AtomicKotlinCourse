@@ -1,3 +1,4 @@
+// ObjectsEverywhere/Task2.kt
 package objectsEverywhereExercise2
 
 fun isPalindrome(s: String): Boolean =

@@ -1,3 +1,4 @@
+// Interfaces/Task2.kt
 package interfacesExercise2
 
 interface Pet {

@@ -1,3 +1,4 @@
+// NumberTypes/Task2.kt
 package numberTypesExercise2
 
 val million: Int = 1_000_000

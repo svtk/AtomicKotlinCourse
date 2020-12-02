@@ -1,3 +1,4 @@
+// LoopingAndRanges/Task2.kt
 package loopingAndRangesExercise2
 
 fun factorial(n: Int): Long {

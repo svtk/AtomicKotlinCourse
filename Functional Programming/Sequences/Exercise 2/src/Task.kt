@@ -1,3 +1,4 @@
+// Sequences/School1.kt
 package sequencesExercise2
 
 fun School.studentInstructors(

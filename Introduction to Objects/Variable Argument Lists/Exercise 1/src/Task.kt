@@ -1,3 +1,4 @@
+// Varargs/Task1.kt
 package variableArgumentListsExercise1
 
 // fun foo(vararg i: Int, vararg s: String) {}

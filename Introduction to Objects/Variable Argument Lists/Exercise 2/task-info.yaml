@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 40
+  - offset: 60
     length: 78
     placeholder_text: fun printArgs() {}
 - name: test/Tests.kt

@@ -3,7 +3,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 69
+  - offset: 99
     length: 57
     placeholder_text: fun downcase() {}
 - name: test/Tests.kt

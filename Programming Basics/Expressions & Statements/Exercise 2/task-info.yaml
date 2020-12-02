@@ -3,16 +3,16 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 43
+  - offset: 77
     length: 29
     placeholder_text: fun f() = 0
-  - offset: 74
+  - offset: 108
     length: 39
     placeholder_text: fun g() = ""
-  - offset: 115
+  - offset: 149
     length: 24
     placeholder_text: fun h() = '?'
-  - offset: 156
+  - offset: 190
     length: 136
     placeholder_text: TODO()
 - name: test/Tests.kt

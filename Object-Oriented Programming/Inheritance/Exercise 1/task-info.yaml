@@ -3,10 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 76
+  - offset: 100
     length: 154
     placeholder_text: // TODO add property and functions
-  - offset: 282
+  - offset: 306
     length: 148
     placeholder_text: |-
       /*

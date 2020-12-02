@@ -3,16 +3,16 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 245
+  - offset: 262
     length: 27
     placeholder_text: MutableList<Hamster>
-  - offset: 279
+  - offset: 296
     length: 14
     placeholder_text: mutableListOf<Hamster>()
-  - offset: 401
+  - offset: 418
     length: 32
     placeholder_text: hamsters += hamster
-  - offset: 485
+  - offset: 502
     length: 29
     placeholder_text: |-
       {
