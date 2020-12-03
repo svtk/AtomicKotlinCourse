@@ -1,16 +1,14 @@
 type: theory
 files:
-- name: src/SimpleOperation.kt
+- name: src/IsPlus.kt
   visible: true
-- name: src/TypeDeclarations.kt
+- name: src/CallingReference.kt
   visible: true
 - name: src/Any.kt
   visible: true
 - name: src/RepeatByInt.kt
   visible: true
-- name: src/RepeatVerbose.kt
-  visible: true
-- name: src/RepeatFun.kt
+- name: src/Repeat.kt
   visible: true
 - name: src/NullableReturn.kt
   visible: true

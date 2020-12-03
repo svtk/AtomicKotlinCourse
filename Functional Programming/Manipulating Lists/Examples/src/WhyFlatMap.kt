@@ -14,7 +14,6 @@ fun main() {
   )
   books.map { it.authors }.flatten() eq
     listOf("George Orwell", "James Joyce")
-
   books.flatMap { it.authors } eq
     listOf("George Orwell", "James Joyce")
 }

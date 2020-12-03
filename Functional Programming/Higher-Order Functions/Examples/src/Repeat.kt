@@ -1,5 +1,5 @@
-// HigherOrderFunctions/RepeatFun.kt
-package definingrepeat
+// HigherOrderFunctions/Repeat.kt
+package higherorderfunctions
 import atomictest.*
 
 fun repeat(
