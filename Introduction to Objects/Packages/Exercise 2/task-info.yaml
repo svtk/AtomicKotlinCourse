@@ -5,21 +5,21 @@ files:
 - name: src/bbb.kt
   visible: true
   placeholders:
-  - offset: 12
+  - offset: 31
     length: 55
     placeholder_text: // TODO
 - name: src/aaa.kt
   visible: true
   placeholders:
-  - offset: 13
+  - offset: 32
     length: 79
     placeholder_text: // TODO
-- name: src/task.kt
+- name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 12
+  - offset: 33
     length: 12
     placeholder_text: // TODO
-  - offset: 41
+  - offset: 62
     length: 13
     placeholder_text: // TODO

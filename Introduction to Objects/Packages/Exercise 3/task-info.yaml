@@ -8,7 +8,7 @@ files:
   - offset: 55
     length: 115
     placeholder_text: // TODO class EquilateralTriangle
-- name: src/Task3.kt
+- name: src/Task.kt
   visible: true
   placeholders:
   - offset: 47
