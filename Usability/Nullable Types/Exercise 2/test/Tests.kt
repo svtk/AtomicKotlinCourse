@@ -1,8 +1,10 @@
 package nullableTypesExercise2
 
 import org.junit.Test
-import util.untestable
+import util.unimplementedTest
 
 class TestNullableTypesExercise2 {
-    @Test fun testSolution() = untestable()
+    @Test fun testSolution() {
+        unimplementedTest()
+    }
 }

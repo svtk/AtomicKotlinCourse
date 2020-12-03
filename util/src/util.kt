@@ -533,10 +533,6 @@ private fun checkFunctionOrPropertyIsExtension(
       expectedReceiver.java == functionOrGetter.parameters.single().type)
 }
 
-fun untestable() {
-  Assert.assertTrue("No tests: tests always pass", true)
-}
-
 inline fun checkMainIsImplemented(main: () -> Unit) {
   try {
     main()

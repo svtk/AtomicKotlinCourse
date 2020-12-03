@@ -5,7 +5,6 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
-import util.untestable
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestDataTypesExercise3 {

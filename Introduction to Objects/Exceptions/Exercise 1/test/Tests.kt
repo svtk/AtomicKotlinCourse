@@ -4,7 +4,6 @@ import org.junit.Assert
 import org.junit.Test
 import util.TIMEOUT
 import util.runAndGetSystemOutput
-import util.untestable
 
 class TestExceptionsExercise1 {
   @Test(timeout = TIMEOUT)
