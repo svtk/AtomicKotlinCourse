@@ -9,7 +9,7 @@ import kotlin.reflect.full.createInstance
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestUpcastingExercise2 {
+class TestUpcastingExercise2: TestTrace() {
 
   private val packageName = "upcastingExercise2"
 
@@ -33,7 +33,6 @@ class TestUpcastingExercise2 {
 
   @Test
   fun `#02 consume apples`() {
-
     listOf("GrannySmith", "Gala", "Fuji", "Braeburn").forEach {
       loadClass("Apple").apply {
         val consume = assertDeclaredMemberFunction("consume")

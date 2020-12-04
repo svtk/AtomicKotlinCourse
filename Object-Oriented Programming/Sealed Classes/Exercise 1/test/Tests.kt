@@ -7,7 +7,7 @@ import util.*
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestSealedClassesExercise1 {
+class TestSealedClassesExercise1: TestTrace() {
 
     private val packageName = "sealedClassesExercise1"
 

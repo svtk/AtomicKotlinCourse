@@ -1,6 +1,5 @@
 package upcastingExercise3
 
-import logging.trace
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
@@ -10,7 +9,7 @@ import kotlin.reflect.full.createInstance
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestUpcastingExercise3 {
+class TestUpcastingExercise3: TestTrace() {
 
   private val packageName = "upcastingExercise3"
 
@@ -53,7 +52,6 @@ class TestUpcastingExercise3 {
 
   @Test
   fun `#02 hero actions`() {
-
     val fileFacade = loadFileFacade(packageName)
     val hero = loadClass("Hero").createInstance()
     listOf("tryFight", "trySwim", "tryFly", "doAction").map {

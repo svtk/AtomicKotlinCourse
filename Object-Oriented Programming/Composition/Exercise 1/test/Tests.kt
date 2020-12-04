@@ -7,7 +7,7 @@ import util.*
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestCompositionExercise1 {
+class TestCompositionExercise1: TestTrace() {
 
   private val packageName = "compositionExercise1"
 

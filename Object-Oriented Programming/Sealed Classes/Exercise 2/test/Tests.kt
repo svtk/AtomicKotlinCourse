@@ -1,11 +1,12 @@
 package sealedClassesExercise2
 import atomictest.trace
 import org.junit.Test
+import util.TestTrace
 import util.loadClass
 import util.loadTraceContent
 import kotlin.test.assertEquals
 
-class TestSealedClassesExercise2 {
+class TestSealedClassesExercise2: TestTrace() {
 
     @Test
     fun `#01 main iterates through sealed subclasses of transport`() {

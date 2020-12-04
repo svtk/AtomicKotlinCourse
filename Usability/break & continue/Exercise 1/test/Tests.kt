@@ -1,16 +1,16 @@
 package breakAndContinueExercise1
 
-import atomictest.trace
 import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
+import util.TestTrace
 import util.loadTraceContent
 import util.resetTraceContent
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBreakAndContinueExercise1 {
+class TestBreakAndContinueExercise1: TestTrace() {
   private fun testData(expectedOutput: List<String>, input: List<String>) {
     resetTraceContent()
     readNumbers(*input.toTypedArray())

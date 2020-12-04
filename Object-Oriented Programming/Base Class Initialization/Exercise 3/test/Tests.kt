@@ -8,7 +8,7 @@ import kotlin.reflect.full.createInstance
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBaseClassInitializationExercise3 {
+class TestBaseClassInitializationExercise3: TestTrace() {
 
   private val packageName = "baseClassInitializationExercise3"
 

@@ -4,12 +4,13 @@ import org.junit.FixMethodOrder
 import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
+import util.TestTrace
 import util.checkParametersOfTopLevelFunction
 import util.runAndCheckTraceOutput
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRecursionExercise1 {
+class TestRecursionExercise1: TestTrace() {
   @OptIn(ExperimentalStdlibApi::class)
   private fun expectedOutput(group: String, n: Int) = buildList {
     (n downTo 0).forEach {
