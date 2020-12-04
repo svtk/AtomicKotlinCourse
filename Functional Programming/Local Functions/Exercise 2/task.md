@@ -1,15 +1,15 @@
 ## Local Functions (#2)
 
-The `createCounter()` function creates a pair of functions for managing the
-counter. Instead of creating a class, we manipulate the counter using only
+The `createCounter()` function creates a pair of functions for managing a
+`counter`. Instead of creating a class, we manipulate the `counter` using only
 functions.
 
 In `createCounter()` define a local variable `counter`. Then define two local
 functions:
 
--   `inc()`: increases the `counter` value by one
++ `inc()`: increases the `counter` value by one
 
--   `value()`: returns the value of `counter`
++ `value()`: returns the value of `counter`
 
 Finally, return a pair of function references to these local functions:
 

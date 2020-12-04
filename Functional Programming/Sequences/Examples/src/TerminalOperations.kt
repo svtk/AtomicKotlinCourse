@@ -1,5 +1,5 @@
 // Sequences/TerminalOperations.kt
-import usingsequences.*
+import sequences.*
 import atomictest.*
 
 fun main() {

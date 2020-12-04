@@ -1,5 +1,6 @@
 // LocalFunctions/Task1.kt
 package localFunctionsExercise1
+import atomictest.eq
 
 fun f(): Int {
   fun g(): Int {
@@ -10,5 +11,5 @@ fun f(): Int {
 }
 
 fun main() {
-  println(f())
+  f() eq 47
 }

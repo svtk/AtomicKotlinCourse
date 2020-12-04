@@ -232,11 +232,6 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testRepeat() {
-        testExample("Programming Basics/Looping & Ranges/Examples/src/Repeat.kt", RepeatKt::main);
-    }
-
-    @Test
     public void testSumUsingRange() {
         testExample("Programming Basics/Looping & Ranges/Examples/src/SumUsingRange.kt", SumUsingRangeKt::main);
     }
@@ -244,6 +239,11 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testRepeatThreeTimes() {
         testExample("Programming Basics/Looping & Ranges/Examples/src/RepeatThreeTimes.kt", RepeatThreeTimesKt::main);
+    }
+
+    @Test
+    public void testRepeatHi() {
+        testExample("Programming Basics/Looping & Ranges/Examples/src/RepeatHi.kt", RepeatHiKt::main);
     }
 
     @Test
@@ -1397,7 +1397,7 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testRepeat1() {
+    public void testRepeat() {
         testExample("Functional Programming/Higher-Order Functions/Examples/src/Repeat.kt", higherorderfunctions.RepeatKt::main);
     }
 
@@ -1503,7 +1503,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testDefineTakeIf() {
-        testExample("Functional Programming/Sequences/Examples/src/DefineTakeIf.kt", usingsequences.DefineTakeIfKt::main);
+        testExample("Functional Programming/Sequences/Examples/src/DefineTakeIf.kt", sequences.DefineTakeIfKt::main);
     }
 
     @Test
@@ -1513,7 +1513,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testEagerVsLazyEvaluation() {
-        testExample("Functional Programming/Sequences/Examples/src/EagerVsLazyEvaluation.kt", usingsequences.EagerVsLazyEvaluationKt::main);
+        testExample("Functional Programming/Sequences/Examples/src/EagerVsLazyEvaluation.kt", sequences.EagerVsLazyEvaluationKt::main);
     }
 
     @Test
@@ -1524,11 +1524,6 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testGenerateSequence2() {
         testExample("Functional Programming/Sequences/Examples/src/GenerateSequence2.kt", GenerateSequence2Kt::main);
-    }
-
-    @Test
-    public void testNumberSequence1() {
-        testExample("Functional Programming/Sequences/Examples/src/NumberSequence1.kt", NumberSequence1Kt::main);
     }
 
     @Test
@@ -1602,13 +1597,13 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testFoldAndReduce() {
-        testExample("Functional Programming/Folding Lists/Examples/src/FoldAndReduce.kt", FoldAndReduceKt::main);
+    public void testFoldVsForLoop() {
+        testExample("Functional Programming/Folding Lists/Examples/src/FoldVsForLoop.kt", FoldVsForLoopKt::main);
     }
 
     @Test
-    public void testFoldVsForLoop() {
-        testExample("Functional Programming/Folding Lists/Examples/src/FoldVsForLoop.kt", FoldVsForLoopKt::main);
+    public void testReduceAndReduceRight() {
+        testExample("Functional Programming/Folding Lists/Examples/src/ReduceAndReduceRight.kt", ReduceAndReduceRightKt::main);
     }
 
     @Test

@@ -6,7 +6,7 @@ files:
   visible: true
 - name: src/FoldRight.kt
   visible: true
-- name: src/FoldAndReduce.kt
+- name: src/ReduceAndReduceRight.kt
   visible: true
 - name: src/RunningFold.kt
   visible: true

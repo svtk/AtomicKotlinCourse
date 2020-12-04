@@ -8,8 +8,6 @@ files:
   visible: true
 - name: src/TerminalOperations.kt
   visible: true
-- name: src/NumberSequence1.kt
-  visible: true
 - name: src/GenerateSequence1.kt
   visible: true
 - name: src/GenerateSequence2.kt

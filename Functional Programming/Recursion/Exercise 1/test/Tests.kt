@@ -5,13 +5,15 @@ import org.junit.Test
 import org.junit.runners.MethodSorters
 import util.TIMEOUT
 import util.checkParametersOfTopLevelFunction
-import util.runAndCheckSystemOutput
+import util.runAndCheckTraceOutput
+
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestRecursionExercise1 {
-  private fun expectedOutput(group: String, n: Int) = buildString {
+  @OptIn(ExperimentalStdlibApi::class)
+  private fun expectedOutput(group: String, n: Int) = buildList {
     (n downTo 0).forEach {
-      appendLine("Simulation: $group Reality: $it")
+      add("Simulation: $group Reality: $it")
     }
   }
 
@@ -26,7 +28,7 @@ class TestRecursionExercise1 {
     val simulationFunction = ::simulation
     checkParametersOfTopLevelFunction(simulationFunction, listOf("group" to "kotlin.String", "level" to "kotlin.Int"))
 
-    runAndCheckSystemOutput("Wrong result for 'simulation(\"$group\", $level)'",
+    runAndCheckTraceOutput("Wrong result for 'simulation(\"$group\", $level)'",
       expectedOutput(group, level)) {
       simulationFunction.call(group, level)
     }

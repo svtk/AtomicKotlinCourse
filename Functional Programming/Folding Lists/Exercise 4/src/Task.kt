@@ -18,7 +18,6 @@ fun main() {
   val isEvenPositiveAndLessThan10 = conditions.combineAll()
 
   isEvenPositiveAndLessThan10.check(8) eq true
-
   isEvenPositiveAndLessThan10.check(5) eq false
   isEvenPositiveAndLessThan10.check(12) eq false
 }

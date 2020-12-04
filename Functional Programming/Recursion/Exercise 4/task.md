@@ -1,13 +1,13 @@
 ## Recursion (#4)
 
 The starter code provides a class `City`. Implement an extension function
-`City.allReachable()` that builds a set of all cities reachable from the
-current `City`. Implement it in two ways: recursive and iterative.
+`City.allReachable()` that builds a set of all cities reachable from the current
+`City`. Implement it both recursively and iteratively.
 
-The direct connections for each `City` are stored in its `connections`
-property. `allReachable()` should return all the cities reachable from the
-given city via other cities. The city is reachable from itself, so it should be
-also present in the resulting set.
+The direct connections for each `City` are stored in its `connections` property.
+`allReachable()` should return all the cities reachable from the given city via
+other cities. The city is reachable from itself, so it should be also present in
+the resulting set.
 
 For example, consider the following connections graph:
 

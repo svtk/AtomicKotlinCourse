@@ -5,5 +5,5 @@ only one property `type` of the type `String`. Add a secondary constructor to
 the class `Flower1` that takes no arguments and initializes `type` to `Daisy`.
 Add a default value `Daisy` to the constructor argument of the `Flower2` class.
 
-Uncomment the code in `main()` to make sure you can now create both classes
-without constructor arguments.
+The code in `main()` tests that you can now create both classes without
+constructor arguments.

@@ -57,6 +57,13 @@ fun checkSystemOutput(message: String, expected: String, actual: String) {
   Assert.assertEquals(message, expected.trim().normalizeLineSeparators(), actual.trim().normalizeLineSeparators())
 }
 
+inline fun runAndCheckTraceOutput(message: String, expectedOutput: List<String>, action: () -> Unit) {
+  resetTraceContent()
+  action()
+  val traceContent = loadTraceContent()
+  assertEquals(expectedOutput, traceContent, message)
+}
+
 fun checkInputOutput(message: String, expectedInputAndOutput: String, action: () -> Unit) {
   val (inputLines, outputLines) = expectedInputAndOutput
       .lines()

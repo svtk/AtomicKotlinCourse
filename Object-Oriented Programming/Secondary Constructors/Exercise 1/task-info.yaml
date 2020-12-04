@@ -3,14 +3,14 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 138
+  - offset: 136
     length: 28
     placeholder_text: // TODO add constructor
-  - offset: 189
+  - offset: 187
     length: 26
     placeholder_text: 'val type: String'
-  - offset: 231
-    length: 59
+  - offset: 229
+    length: 55
     placeholder_text: |-
       //    Flower1().type eq "Daisy"
       //    Flower2().type eq "Daisy"

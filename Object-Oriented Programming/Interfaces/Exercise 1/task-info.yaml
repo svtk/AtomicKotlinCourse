@@ -4,7 +4,10 @@ files:
   visible: true
   placeholders:
   - offset: 126
-    length: 250
+    length: 249
     placeholder_text: class Cloud
+  - offset: 392
+    length: 33
+    placeholder_text: // Cloud(10).calculateAnswer() eq 45
 - name: test/Tests.kt
   visible: false

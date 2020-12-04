@@ -1,11 +1,16 @@
 // Sequences/GenerateSequence2.kt
-import atomictest.eq
+import atomictest.*
 
 fun main() {
-  val inputs = mutableListOf(
-    "first", "second", "third", "XXX", "4th")
-  val lines = generateSequence {
-    inputs.removeAt(0).takeIf { it != "XXX" }
+  val items = mutableListOf(
+    "first", "second", "third", "XXX", "4th"
+  )
+  val seq = generateSequence {
+    items.removeAt(0).takeIf { it != "XXX" }
   }
-  lines.toList() eq "[first, second, third]"
+  seq.toList() eq "[first, second, third]"
+  capture {
+    seq.toList()
+  } eq "IllegalStateException: This " +
+    "sequence can be consumed only once."
 }

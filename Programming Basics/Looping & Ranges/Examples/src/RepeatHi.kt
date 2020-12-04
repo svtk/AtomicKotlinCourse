@@ -1,4 +1,4 @@
-// LoopingAndRanges/Repeat.kt
+// LoopingAndRanges/RepeatHi.kt
 
 fun main() {
   repeat(2) {

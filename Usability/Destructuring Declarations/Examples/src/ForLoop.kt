@@ -7,7 +7,7 @@ fun main() {
   for ((key, value) in map) {
     result += "$key = $value, "
   }
-  result eq "1 = one, 2 = two, "
+  result eq "1 = one, 2 = two,"
 
   result = ""
   val listOfPairs =
@@ -15,5 +15,5 @@ fun main() {
   for ((i, s) in listOfPairs) {
     result += "($i, $s), "
   }
-  result eq "(1, one), (2, two), "
+  result eq "(1, one), (2, two),"
 }
