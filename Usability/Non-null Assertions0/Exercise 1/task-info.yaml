@@ -1,0 +1,23 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 86
+    length: 46
+    placeholder_text: class Rocket
+  - offset: 134
+    length: 49
+    placeholder_text: fun launch() {}
+  - offset: 198
+    length: 113
+    placeholder_text: |-
+      /*
+        val rocket = Rocket()
+        launch(rocket) eq "Liftoff!"
+        capture {
+          launch(null)
+        } eq "NullPointerException"
+      */
+- name: test/Tests.kt
+  visible: false
