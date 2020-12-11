@@ -8,7 +8,7 @@ files:
     placeholder_text: // private val arrayDeque
   - offset: 152
     length: 21
-    placeholder_text: TODO()
+    placeholder_text: '"TODO"'
   - offset: 192
     length: 24
     placeholder_text: TODO()

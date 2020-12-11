@@ -5,7 +5,7 @@ files:
   placeholders:
   - offset: 586
     length: 122
-    placeholder_text: TODO()
+    placeholder_text: '"TODO"'
   - offset: 737
     length: 183
     placeholder_text: TODO()
