@@ -31,7 +31,7 @@ class TestRecursionExercise1 : TestTrace() {
 
     runAndCheckTraceOutput("Wrong result for 'simulation(\"$group\", $level)'",
       expectedOutput(group, level)) {
-      simulationFunction.call(group, level)
+      simulationFunction.invoke(group, level)
     }
   }
 }
