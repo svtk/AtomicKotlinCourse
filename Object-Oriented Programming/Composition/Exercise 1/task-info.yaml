@@ -8,29 +8,32 @@ files:
     placeholder_text: |-
       class Shape(
         val name: String,
-        val color: String
+        open val color: String
       ) {
         fun draw() = "drawing $color $name"
       }
   - offset: 182
     length: 105
-    placeholder_text: "class Circle(\n  val radius: Int, \n  val color: String\n)\
-      \ {\n  val shape = Shape(\"circle of radius $radius\", color)\n}"
+    placeholder_text: |-
+      class Circle(
+        val radius: Int,
+        val color: String,
+        val shape: Shape =
+          Shape("circle of radius $radius", color)
+      ) {
+        fun draw() = shape.draw()
+      }
   - offset: 289
     length: 137
     placeholder_text: |-
       class Rectangle(
         val height: Int,
         val width: Int,
-        val color: String
+        val color: String,
+        val shape: Shape =
+          Shape("rectangle of size ${height}x$width", color)
       ) {
-        val shape = Shape("rectangle of size ${height}x$width", color)
+        fun draw() = shape.draw()
       }
-  - offset: 524
-    length: 13
-    placeholder_text: circle.shape.draw()
-  - offset: 547
-    length: 16
-    placeholder_text: rectangle.shape.draw()
 - name: test/Tests.kt
   visible: false

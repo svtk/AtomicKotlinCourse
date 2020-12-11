@@ -4,21 +4,12 @@ files:
   visible: true
   placeholders:
   - offset: 93
-    length: 37
-    placeholder_text: // private val list
-  - offset: 155
-    length: 9
-    placeholder_text: TODO()
-  - offset: 187
-    length: 29
-    placeholder_text: TODO()
-  - offset: 276
     length: 40
     placeholder_text: // private val arrayDeque
-  - offset: 340
+  - offset: 152
     length: 21
     placeholder_text: TODO()
-  - offset: 385
+  - offset: 192
     length: 24
     placeholder_text: TODO()
 - name: test/Tests.kt

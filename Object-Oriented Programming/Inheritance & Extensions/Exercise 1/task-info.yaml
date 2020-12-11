@@ -4,15 +4,15 @@ files:
   visible: true
   placeholders:
   - offset: 562
-    length: 147
+    length: 141
     placeholder_text: |-
-      class IAmHonestlyDuck(
+      class CrocoDuck(
         val crocodile: Crocodile
       )
-  - offset: 768
-    length: 28
+  - offset: 758
+    length: 20
     placeholder_text: TODO()
-  - offset: 859
+  - offset: 841
     length: 80
     placeholder_text: |-
       //  interactWithDuck(honestlyDuck)

@@ -1,4 +1,4 @@
-## Non-`null` Assertions (#2)
+## Non-Null Assertions (#2)
 
 Define an extension function `List<Int>.headPlusTail()` that returns a `Triple`
 containing (1) the first element in the `List<Int>`, (2) the last element in the

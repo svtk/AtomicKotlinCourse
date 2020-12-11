@@ -1,6 +1,6 @@
 // Upcasting/Task2.kt
 package upcastingExercise2
-import atomictest.trace
+import atomictest.eq
 
 interface Apple {
   fun consume(): String
@@ -29,13 +29,7 @@ fun main() {
     Fuji(),
     Braeburn()
   )
-  apples.forEach {
-    trace(it.consume())
-  }
-  trace eq """
-    chomp GrannySmith
-    bite Gala
-    press Fuji
-    peel Braeburn
-    """
+  apples.map { it.consume() } eq
+    "[chomp GrannySmith, " +
+    "bite Gala, press Fuji, peel Braeburn]"
 }

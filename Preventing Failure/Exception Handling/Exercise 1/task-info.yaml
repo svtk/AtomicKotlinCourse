@@ -3,14 +3,14 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 146
+  - offset: 156
     length: 380
     placeholder_text: // TODO exception classes
-  - offset: 641
-    length: 378
+  - offset: 651
+    length: 348
     placeholder_text: // TODO
-  - offset: 1191
-    length: 413
+  - offset: 1171
+    length: 366
     placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false

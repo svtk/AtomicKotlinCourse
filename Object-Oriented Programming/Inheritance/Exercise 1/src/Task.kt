@@ -7,11 +7,9 @@ open class Cleanser {
   fun dilute() {
     ops += "dilute"
   }
-
   fun apply() {
     ops += "apply"
   }
-
   fun scrub() {
     ops += "scrub"
   }

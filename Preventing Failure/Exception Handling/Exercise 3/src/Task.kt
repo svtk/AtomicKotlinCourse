@@ -1,5 +1,6 @@
-// ExceptionHandling/ExceptHandlingSoln3.kt
+// ExceptionHandling/Task3.kt
 package exceptionHandlingExercise3
+import atomictest.trace
 import exceptionHandlingExercise3.Status.*
 
 open class Except : Exception() {
@@ -49,7 +50,7 @@ fun transact(level: Int): Status {
   try {
     db.open(1, level)
   } catch (e: DBOpenFail) {
-    println("Database Problem $e")
+    trace("Database Problem $e")
     return Failed
   }
   fun transfer(net: NetConnection): Status {
@@ -57,16 +58,16 @@ fun transact(level: Int): Status {
       net.open(2, level)
       db.write(net.read(), 3, level)
     } catch (e: NetworkFail) {
-      println("Network Problem $e")
+      trace("Network Problem $e")
       return Failed
     } catch (e: DBWriteFail) {
-      println("Database Write Failed $e")
+      trace("Database Write Failed $e")
       return Failed
     } finally {
       try {
         net.close(4, level)
       } catch (e: NetworkCloseFail) {
-        println("Network Close Failed $e")
+        trace("Network Close Failed $e")
         return Failed
       }
     }
@@ -81,7 +82,7 @@ fun transact(level: Int): Status {
     try {
       db.close(5, level)
     } catch (e: DBCloseFail) {
-      println("Database Problem $e")
+      trace("Database Problem $e")
       throw e
     }
   }
@@ -91,23 +92,23 @@ fun transact(level: Int): Status {
 fun main() {
   for (level in 0..5)
     try {
-      println(transact(level))
+      trace(transact(level))
     } catch (e: DBCloseFail) {
-      println("main() Problem $e")
+      trace("main() Problem $e")
     } catch (e: NetworkCloseFail) {
-      println("main() Problem $e")
+      trace("main() Problem $e")
     }
+  trace eq """
+    Success
+    Database Problem DBOpenFail
+    Failed
+    Network Problem NetworkOpenFail
+    Failed
+    Database Write Failed DBWriteFail
+    Failed
+    Network Close Failed NetworkCloseFail
+    Failed
+    Database Problem DBCloseFail
+    main() Problem DBCloseFail
+  """
 }
-/* Output:
-Success
-Database Problem DBOpenFail
-Failed
-Network Problem NetworkOpenFail
-Failed
-Database Write Failed DBWriteFail
-Failed
-Network Close Failed NetworkCloseFail
-Failed
-Database Problem DBCloseFail
-main() Problem DBCloseFail
-*/

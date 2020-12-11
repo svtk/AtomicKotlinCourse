@@ -1,4 +1,4 @@
-## Non-`null` Assertions (#1)
+## Non-Null Assertions (#1)
 
 Create a class `Rocket` containing a member function `ignition()` that returns
 "Liftoff!". Create a function `launch()` that has a nullable `Rocket` parameter.

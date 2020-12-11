@@ -1,4 +1,4 @@
-// ScopeFunctions/ScopeFuncSoln3.kt
+// ScopeFunctions/Task3.kt
 package scopeFunctionsExercise3
 import atomictest.eq
 import scopeFunctionsExercise1.NumPair

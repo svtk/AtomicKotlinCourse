@@ -4,18 +4,16 @@ files:
   visible: true
   placeholders:
   - offset: 95
-    length: 81
+    length: 76
     placeholder_text: // TODO
-  - offset: 213
+  - offset: 208
     length: 39
     placeholder_text: // TODO
-  - offset: 285
+  - offset: 280
     length: 35
     placeholder_text: // TODO
-  - offset: 339
-    length: 85
-    placeholder_text: |-
-      val chess = Chess()
-      //  chess.initOrder eq listOf("???")
+  - offset: 334
+    length: 47
+    placeholder_text: // Chess().initOrder eq "[Game, BoardGame, Chess]"
 - name: test/Tests.kt
   visible: false

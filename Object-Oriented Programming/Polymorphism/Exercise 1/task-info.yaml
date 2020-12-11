@@ -9,8 +9,8 @@ files:
   - offset: 670
     length: 100
     placeholder_text: class Wizard
-  - offset: 976
-    length: 16
-    placeholder_text: //    c.playTurn()
+  - offset: 926
+    length: 13
+    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false

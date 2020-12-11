@@ -13,19 +13,22 @@ files:
     length: 39
     placeholder_text: |-
       class Wind : Instrument() {
-        override fun play(n: Note) = "Wind blow $n"
+        override fun play(n: Note) =
+          "Wind blow $n"
       }
   - offset: 277
     length: 53
     placeholder_text: |-
       class Percussion : Instrument() {
-        override fun play(n: Note) = "Percussion strike $n"
+        override fun play(n: Note) =
+          "Percussion strike $n"
       }
   - offset: 332
     length: 48
     placeholder_text: |-
       class Stringed : Instrument() {
-        override fun play(n: Note) = "Stringed pluck $n"
+        override fun play(n: Note) =
+          "Stringed pluck $n"
       }
 - name: test/Tests.kt
   visible: false

@@ -15,9 +15,5 @@ fun main() {
   trace(cat.sound)
   val dog = Dog()
   trace(dog.sound)
-  trace eq """
-    ???
-    meow
-    woof
-  """
+  trace eq "??? meow woof"
 }

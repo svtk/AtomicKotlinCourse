@@ -1,4 +1,4 @@
-## Non-`null` Assertions (#3)
+## Non-Null Assertions (#3)
 
 Implement `absMinIsMax(ints: List<Int>)` that checks whether the absolute of
 the minimum value in `ints` equals the absolute of the maximum value in `ints`.

@@ -3,20 +3,20 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 119
+  - offset: 116
     length: 76
     placeholder_text: class GrannySmith
-  - offset: 197
+  - offset: 194
     length: 61
     placeholder_text: class Gala
-  - offset: 260
+  - offset: 257
     length: 62
     placeholder_text: class Fuji
-  - offset: 324
+  - offset: 321
     length: 69
     placeholder_text: class Braeburn
-  - offset: 512
-    length: 23
-    placeholder_text: //    trace(it.consume())
+  - offset: 505
+    length: 12
+    placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false

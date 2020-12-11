@@ -3,11 +3,11 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 316
-    length: 378
-    placeholder_text: // TODO
   - offset: 86
     length: 213
     placeholder_text: // fun List<Int>.headPlusTail()
+  - offset: 316
+    length: 378
+    placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false

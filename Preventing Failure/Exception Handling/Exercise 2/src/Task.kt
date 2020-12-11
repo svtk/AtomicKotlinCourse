@@ -1,5 +1,6 @@
-// ExceptionHandling/ExceptHandlingSoln2.kt
+// ExceptionHandling/Task2.kt
 package exceptionHandlingExercise2
+import atomictest.trace
 
 open class NumberFail : Exception()
 open class NoNumber : NumberFail()
@@ -24,15 +25,14 @@ fun convertNumber(s: String): Int =
 
 fun embedNumber(n: Int) = "AbCdE${n}fGhIj"
 
-fun justFail(s: String) {
+fun justFail(s: String) =
   try {
-    println(embedNumber(
+    trace(embedNumber(
       convertNumber(
         findNumber(s))))
   } catch (e: NumberFail) {
-    println("$e")
+    trace("$e")
   }
-}
 
 fun recover(s: String) {
   val ns: String = try {
@@ -45,13 +45,13 @@ fun recover(s: String) {
   } catch (e: BadNumber) {
     -1
   }
-  println(embedNumber(n))
+  trace(embedNumber(n))
 }
 
 fun test(s: String) {
-  println("justFail($s)")
+  trace("justFail($s)")
   justFail(s)
-  println("recover($s)")
+  trace("recover($s)")
   recover(s)
 }
 
@@ -60,23 +60,22 @@ fun main() {
   test("NoDigitsHere")
   test("negative-11int")
   test("A float: 3.14159 (pi)")
+  trace eq """
+    justFail(The13thFloor9)
+    AbCdE13fGhIj
+    recover(The13thFloor9)
+    AbCdE13fGhIj
+    justFail(NoDigitsHere)
+    exceptionHandlingExercise2.NoNumber
+    recover(NoDigitsHere)
+    AbCdE0fGhIj
+    justFail(negative-11int)
+    AbCdE-11fGhIj
+    recover(negative-11int)
+    AbCdE-11fGhIj
+    justFail(A float: 3.14159 (pi))
+    exceptionHandlingExercise2.BadNumber
+    recover(A float: 3.14159 (pi))
+    AbCdE-1fGhIj
+  """
 }
-
-/* Output:
-justFail(The13thFloor9)
-AbCdE13fGhIj
-recover(The13thFloor9)
-AbCdE13fGhIj
-justFail(NoDigitsHere)
-exceptionHandlingExercise2.NoNumber
-recover(NoDigitsHere)
-AbCdE0fGhIj
-justFail(negative-11int)
-AbCdE-11fGhIj
-recover(negative-11int)
-AbCdE-11fGhIj
-justFail(A float: 3.14159 (pi))
-exceptionHandlingExercise2.BadNumber
-recover(A float: 3.14159 (pi))
-AbCdE-1fGhIj
- */

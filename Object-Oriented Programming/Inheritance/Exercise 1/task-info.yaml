@@ -4,9 +4,9 @@ files:
   visible: true
   placeholders:
   - offset: 99
-    length: 154
+    length: 152
     placeholder_text: // TODO add property and functions
-  - offset: 305
+  - offset: 303
     length: 148
     placeholder_text: |-
       /*

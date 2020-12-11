@@ -1,4 +1,4 @@
-// ScopeFunctions/ScopeFuncSoln1.kt
+// ScopeFunctions/Task1.kt
 package scopeFunctionsExercise1
 import atomictest.eq
 

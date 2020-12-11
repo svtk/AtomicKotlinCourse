@@ -4,22 +4,18 @@ files:
   visible: true
   placeholders:
   - offset: 74
-    length: 144
+    length: 124
     placeholder_text: |-
       class Stack<E> : ArrayList<E>() {
-
-        fun push(e: E) {
-          add(e)
-        }
-
-        fun pop(): E = removeAt(lastIndex)
+        fun push(e: E) = add(e)
+        fun pop(): E = removeLast()
       }
-  - offset: 220
-    length: 131
+  - offset: 200
+    length: 125
     placeholder_text: |-
       class Queue<E>: ArrayList<E>() {
-
-        fun poll(): E = removeAt(0)
+        fun put(e: E) = add(e)
+        fun poll(): E = removeFirst()
       }
 - name: test/Tests.kt
   visible: false
