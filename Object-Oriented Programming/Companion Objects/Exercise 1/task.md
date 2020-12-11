@@ -1,8 +1,8 @@
 ## Companion Objects (#1)
 
 The idea of the *Factory* shown in `CompanionFactory.kt` becomes more
-interesting when you introduce multiple factories, so the same configuration
-can easily create different types of objects.
+interesting when you introduce multiple factories, so the same configuration can
+easily create different types of objects.
 
 Start with two interfaces:
 
@@ -17,10 +17,10 @@ interface VendorFactory {
 }
 ```
 
-Create `Vendor1` and `Vendor2` that implement `Vendor`. The member functions
-use `trace()` to report the `Vendor` class name and "pencil" or "pen". Each
-`Vendor` implementation also has a companion object with a `factory` property
-containing an anonymous inner class that implements `VendorFactory`.
+Create `Vendor1` and `Vendor2` that implement `Vendor`. The member functions use
+`trace()` to report the `Vendor` class name and "pencil" or "pen". Each `Vendor`
+implementation also has a companion object with a `factory` property containing
+an anonymous inner class that implements `VendorFactory`.
 
 Now write a standalone function `consumer(factory: VendorFactory)` that uses
 `factory` to create a `Vendor`. Use that `Vendor` to call `pencil()` and

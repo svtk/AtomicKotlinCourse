@@ -7,5 +7,5 @@ The starter code contains the class hierarchy:
 - `Chess` which inherits from `BoardGame`
 
 Add a property `val initOrder = mutableListOf<String>()` to `Game`. Give each
-class an `init` clause that appends its class name to `initOrder`. Now create a
-`Chess` object and show the order of initialization of base classes.
+class an `init` clause that appends its class name to `initOrder`. In `main()`,
+create a `Chess` object and show the order of initialization of base classes.

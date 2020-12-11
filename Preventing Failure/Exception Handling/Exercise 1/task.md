@@ -5,17 +5,17 @@ String`.
 
 Now create a class `HamsterCageException` that inherits `Exception`.
 `HamsterCageException` takes a constructor parameter `val msg: String` and
-overrides `toString()` to produce `"HamsterCageException: $msg"`. Create three
-exceptions inherited from `HamsterCageException`:
+overrides `toString()` so it produces `"HamsterCageException: $msg"`. Create
+three exceptions inherited from `HamsterCageException`:
 
-- `CageFullException(val limit: Int)`: Calls the base-class constructor
-  with `"Cage full > $limit"`.
+- `CageFullException(val limit: Int)`: Calls the base-class constructor with
+  `"Cage full > $limit"`.
 
 - `NoSuchHamsterException(val id: String)`: Calls the base-class constructor
   with `"No Hamster $id"`.
 
-- `OutOfWaterException`: Calls the base-class constructor
-  with `"Cage out of water"`.
+- `OutOfWaterException`: Calls the base-class constructor with `"Cage out of
+  water"`.
 
 Create class `HamsterCage(val capacity: Int)`. You can't put another `Hamster`
 in a `HamsterCage` if it has reached `capacity`.
@@ -23,8 +23,8 @@ in a `HamsterCage` if it has reached `capacity`.
 In `HamsterCage`, store the `Hamsters` in a `HashSet`. Write the following
 member functions:
 
-- `add(h: Hamster)` throws `CageFullException(capacity)` if the cage has
-  reached `capacity`.
+- `add(h: Hamster)` throws `CageFullException(capacity)` if the cage has reached
+  `capacity`.
 
 - `get(name: String)` throws `NoSuchHamsterException(name)` if a `Hamster` by
   that `name` can't be found.
@@ -33,12 +33,12 @@ member functions:
   `OutOfWaterException()` if the result is greater than 8. If it succeeds, it
   returns `"Feeding complete"`.
 
-The starter code contains an initialized `List` of `Hamsters`. Write a
-function `test(hc: HamsterCage)` that exercises each member function:
+The starter code contains an initialized `List` of `Hamsters`. Write a function
+`test(hc: HamsterCage)` that exercises each member function:
 
 - `add()` by attempting to add each object in `hamsters`.
 
-- `get()` using the first `name` in `hamsters`, then use `"Morty"`.
+- `get()` using for `name` the first `Hamster` in `hamsters`, then use `"Morty"`.
 
 - Call `feed()` three times.
 

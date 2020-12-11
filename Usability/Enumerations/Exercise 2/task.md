@@ -6,10 +6,10 @@ default argument of `false`.
 
 In Australia, the seasons are defined by grouping the calendar months:
 
--   Spring: The transition months September, October and November
++ Spring: The transition months September, October and November
 
--   Summer: The hottest months December, January and February
++ Summer: The hottest months December, January and February
 
--   Autumn: The transition months March, April and May
++ Autumn: The transition months March, April and May
 
--   Winter: The coldest months June, July and August
++ Winter: The coldest months June, July and August

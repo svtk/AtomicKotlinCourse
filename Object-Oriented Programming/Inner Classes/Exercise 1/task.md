@@ -1,8 +1,9 @@
 ## Inner Classes (#1)
 
-Add a `hamster()` member function to `LocalInnerClasses.kt` with a local `val
-poke = "Squeak"` that returns an object of an anonymous inner class that
-extends `Pet`, with a `speak()` that produces `poke + home()`.
+Add a `goldfish()` member function to `LocalInnerClasses.kt` with a local `val
+blub = "Blub"`. `goldfish()` returns an object of a local inner classes that
+extends `Pet` using a SAM conversion, with a `speak()` that produces `blub +
+home()`.
 
 <sub> This task doesn't contain automatic tests,
 so it's always marked as "Correct" when you run "Check".

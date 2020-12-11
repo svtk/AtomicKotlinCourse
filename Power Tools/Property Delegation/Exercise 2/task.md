@@ -11,7 +11,7 @@ class Delegator {
 
 Define `getValue()` and `setValue()` as extension functions to `List<String>`
 (Hint: IntelliJ IDEA will generate skeletons for you). The code in `main()`
-will test your solution.
+tests your solution.
 
 BONUS: Try adjusting `getValue()` and `setValue()` to work with:
 

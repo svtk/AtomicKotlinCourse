@@ -6,4 +6,4 @@ The starter code contains the code from `FantasyGame.kt`. Add an interface
 - A `Dragon` that can fly, by implementing `Flyer`.
 - A `Wizard` that can perform magic and fly, by implementing `Magician` and `Flyer`.
 
-Uncomment the  call to `playTurn()` in `main()` and ensure it compiles.
+The code in `main()` tests your solution.

@@ -2,11 +2,11 @@
 
 Modify `NarrowingUpcast.kt` to call the functions in the extended interface.
 First, changed `Derived1` and `Derived2` by adding calls to `trace` for each
-function. The `trace` argument is the class name and function; for example
-`fun h() = trace("Derived2.h()")`.
+function. The `trace` argument is the class name and function. For example `fun
+h() = trace("Derived2.h()")`.
 
-Now write a function `checkAndCall(b: Base)` so that it calls the polymorphic
-member function, then uses a `when` to downcast and call the extended-interface
+Now write a function `checkAndCall(b: Base)` that calls the polymorphic member
+function, then uses a `when` to downcast and call the extended-interface
 functions.
 
 <sub> This task doesn't contain automatic tests,

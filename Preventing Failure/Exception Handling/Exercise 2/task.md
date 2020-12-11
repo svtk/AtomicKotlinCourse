@@ -14,12 +14,12 @@ Your job is to define two functions:
 
 - `justFail(s: String)` calls the above three functions, nesting calls within
   calls. It finds a number within a `String`, converts it to an `Int`, embeds
-  that `Int` inside a `String, and calls `trace()` with the result.
+  that `Int` inside a `String`, and calls `trace()` with the result.
 
 - `recover(s: String)` calls each of the above functions one at a time,
-  recovering from any failures after each call so the next call can be
-  successful. If `findNumber()` fails, the recovery produces the `String` `"0"`.
-  If `convertNumber()` fails, the recovery produces `-1`. At the end of of
+  recovering from any failures for each call so the next call can be successful.
+  If `findNumber()` fails, the recovery produces the `String` `"0"`. If
+  `convertNumber()` fails, the recovery produces `-1`. At the end of of
   `recover()`, call `trace()` with the result.
 
 The remaining starter code tests the above two functions.
@@ -27,10 +27,10 @@ The remaining starter code tests the above two functions.
 Notice the potential effects produced by exceptions:
 
 1. If a function might produce one or more exceptions, calls to that function
-can be significantly more complicated.
+   can be significantly more complicated.
 
 2. The concept of recovery assumes that there's a *way* you can recover from a
-failed function call. Often, however, this is simply not true.
+   failed function call. Often, however, this is simply not true.
 
 <sub> This task doesn't contain automatic tests,
 so it's always marked as "Correct" when you run "Check".

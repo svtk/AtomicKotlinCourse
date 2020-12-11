@@ -7,14 +7,13 @@ following error strings (infer the tests from the strings):
 
 - `"s must not be blank, is [$s]"`
 
-- `"s must contain 3 parts " +
-    "separated by '-', is [$s]"`
+- `"s must contain 3 parts separated by '-', is [$s]"`
 
 If all `require()`s succeed, return `s`.
 
-Create a function `fun g(d: Double): Double` that uses `require()` to ensure
-that `d` is greater than zero and less than or equal to 10.0. Do not provide a
-custom error message for `require()`. If the `require()` succeeds, return `d`.
+Create a function `g(d: Double): Double` that uses `require()` to ensure that
+`d` is greater than zero and less than or equal to 10.0. Do not provide a custom
+error message for `require()`. If the `require()` succeeds, return `d`.
 
 The starter code in `main()` tests `f()` and `g()`.
 

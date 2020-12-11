@@ -6,8 +6,8 @@ with a member function `slide()` that calls `trace("Slide")`. Inherit a class
 `Beetle1` with a member function `walk()` that calls `trace("Walk")`.
 
 Write a function `move(a1: Animal1)` that uses a `when` to detect each type and
-call that type's function. In `main()`, create a `List` of `Animal1` objects
-and call `move()` for each one.
+call that type's function. In `main()`, create a `List` of `Animal1` objects and
+call `move()` for each one.
 
 Create a duplicate hierarchy from an interface `Animal2`, but in this case make
 `move()` a member of `Animal2` and implement it in `Worm2`, `Snail2`, and

@@ -1,7 +1,7 @@
 ## Check Instructions (#2)
 
-Modify Exercise 1 by making the function parameters nullable, writing the
-new functions as:
+Modify Exercise 1 by making the function parameters nullable, writing the new
+functions as:
 
 - `fn(s: String?): String`
 

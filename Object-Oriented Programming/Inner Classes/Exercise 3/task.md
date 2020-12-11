@@ -14,9 +14,11 @@ interface Selector<T> {
 }
 ```
 
-`end()` tells whether you're at the end of the `items` `List`, `current()`
-returns the current element pointed to by the `Selector`, and `next()` moves
-to the next element in the `List`.
+- `end()` tells whether you're at the end of the `items` `List`
+
+- `current()` returns the current element pointed to by the `Selector`
+
+- `next()` moves to the next element in the `List`.
 
 Define a standalone function `<T> traceAll(select: Selector<T>)` that uses
 `select` to append all the values of `current()` to `trace` using `+=`, then

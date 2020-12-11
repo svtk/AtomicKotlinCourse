@@ -5,16 +5,16 @@ Ranges](https://stepik.org/lesson/104311/step/1), and shows how they can be used
 instructions.
 
 Create a class `Level` with two constructor arguments: `val range: IntRange`,
-and `private var level: Int`. `level` has a default argument that is the
-bottom value of `range`. The constructor should ensure that `level` is one
-of the values in `range`.
+and `private var level: Int`. `level` has a default argument that is the bottom
+value of `range`. The constructor should ensure that `level` is one of the
+values in `range`.
 
 Add a read-only `value` property that produces the value of `level`.
 
 Add a function `up()` that increments `level` only if the result is within
-`range`, and a function `down()` that decrements `level` only if the result
-is within `range`. Finally, add a function `set(new: Int)` that first ensures
-that `new` is within `range` and then assigns `new` to `level`.
+`range`, and a function `down()` that decrements `level` only if the result is
+within `range`. Finally, add a function `set(new: Int)` that first ensures that
+`new` is within `range` and then assigns `new` to `level`.
 
 `Level` is tested by the starter code in `main()`.
 

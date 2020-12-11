@@ -1,7 +1,7 @@
 ## Scope Functions (#2)
 
 The starter code uses the `SpaceShipControls` class from
-`ClassDelegation/SpaceShipControls.kt`. It contains `main()` starting with:
+`ClassDelegation/SpaceShipControls.kt`. It contains a `main()` that starts with:
 
 ```kotlin
 fun main() {

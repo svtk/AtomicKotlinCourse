@@ -2,7 +2,7 @@
 
 Create an exception class called `Failure` that takes a `msg: String` parameter
 and passes it to the base-class constructor. Write a function `fail(msg:
-String)` that passes `msg` to `trace()`, and then throws a `Failure`.
+String)` that passes `msg` to `trace()`, and then throws a `Failure(msg)`.
 
 Now write your own versions of `require()` and `check()` (from [Check
 Instructions](https://stepik.org/lesson/350665/step/1)) that use `fail()`. The starter code in

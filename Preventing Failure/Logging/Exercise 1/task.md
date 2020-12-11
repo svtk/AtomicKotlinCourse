@@ -6,9 +6,9 @@ from [Check Instructions].
 Create a class called `Pipe` that takes `val level: Level` as a constructor
 parameter. Give this parameter a default argument with a range `0..10`.
 
-Inside `Pipe`, define a `val logger` with an associated file `"PipeLog.txt"`.
-Create a member function `checkLevel()` that uses a `when` expression. When
-`value` is:
+Inside `Pipe`, define a `val logger` using `atomiclog` with an associated file
+`"PipeLog.txt"`. Create a member function `checkLevel()` that uses a `when`
+expression. When `value` is:
 
 - 2: call `trace()`
 - 4: call `debug()`

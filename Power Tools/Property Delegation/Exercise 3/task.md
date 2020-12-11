@@ -18,7 +18,7 @@ class Holders {
 }
 ```
 
-The starter code in `main()` will test your solution.
+The starter code in `main()` tests your solution.
 
 <sub> This task doesn't contain automatic tests,
 so it's always marked as "Correct" when you run "Check".

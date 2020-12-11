@@ -9,14 +9,14 @@ Define a function `verifyClose(opt: Option)`. `verifyClose()` creates a
 `Cleanup` object and invokes `use()` on it. The lambda for `use()` contains a
 `when` expression that implements these rules. When `opt` is:
 
-- `Normal`: `f()` is called, then `g()` (inside the `when`
-  expression), then `h()`, before leaving the `use()` block.
+- `Normal`: `f()` is called, then `g()` (inside the `when` expression), then
+  `h()`, before leaving the `use()` block.
 
-- `Return`: `f()` is called and then `return`. This exits the
-  middle of the `use()` block.
+- `Return`: `f()` is called and then `return`. This exits the middle of the
+  `use()` block.
 
-- `Throw`: `f()` is called and then an `Exception` is thrown from
-  the middle of the `use()` block.
+- `Throw`: `f()` is called and then an `Exception` is thrown from the middle of
+  the `use()` block.
 
 `main()` tests your code.
 
