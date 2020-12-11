@@ -5,7 +5,7 @@ import atomictest.eq
 class DelegatedControls(
   private val controls: SpaceShipControls =
     SpaceShipControls()
-): ShipControls by controls {
+): Controls by controls {
   override fun turboBoost(): String =
     "${controls.turboBoost()}... boooooost!"
 }

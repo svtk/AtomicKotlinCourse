@@ -2,9 +2,9 @@ type: theory
 files:
 - name: src/GreatApe3.kt
   visible: true
+- name: src/NoArgConstructor.kt
+  visible: true
 - name: src/House.kt
   visible: true
 - name: src/OtherConstructors.kt
-  visible: true
-- name: src/NoArgConstructor.kt
   visible: true

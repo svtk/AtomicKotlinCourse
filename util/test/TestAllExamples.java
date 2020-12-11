@@ -1113,17 +1113,17 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testNonNullAssertCall() {
-        testExample("Usability/Non-null Assertions/Examples/src/NonNullAssertCall.kt", NonNullAssertCallKt::main);
+        testExample("Usability/Non-Null Assertions/Examples/src/NonNullAssertCall.kt", NonNullAssertCallKt::main);
     }
 
     @Test
     public void testNonNullAssert() {
-        testExample("Usability/Non-null Assertions/Examples/src/NonNullAssert.kt", NonNullAssertKt::main);
+        testExample("Usability/Non-Null Assertions/Examples/src/NonNullAssert.kt", NonNullAssertKt::main);
     }
 
     @Test
     public void testValueFromMap() {
-        testExample("Usability/Non-null Assertions/Examples/src/ValueFromMap.kt", ValueFromMapKt::main);
+        testExample("Usability/Non-Null Assertions/Examples/src/ValueFromMap.kt", ValueFromMapKt::main);
     }
 
     @Test
@@ -1722,6 +1722,11 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testPropertyAccessor() {
+        testExample("Object-Oriented Programming/Abstract Classes/Examples/src/PropertyAccessor.kt", abstractclasses.PropertyAccessorKt::main);
+    }
+
+    @Test
     public void testImplementations() {
         testExample("Object-Oriented Programming/Abstract Classes/Examples/src/Implementations.kt", abstractclasses.ImplementationsKt::main);
     }
@@ -1734,11 +1739,6 @@ public class TestAllExamples extends AbstractTestExamples {
     @Test
     public void testStateOfAClass() {
         testExample("Object-Oriented Programming/Abstract Classes/Examples/src/StateOfAClass.kt", abstractstate.StateOfAClassKt::main);
-    }
-
-    @Test
-    public void testWithPropertyAccessor() {
-        testExample("Object-Oriented Programming/Abstract Classes/Examples/src/WithPropertyAccessor.kt", abstractclasses.WithPropertyAccessorKt::main);
     }
 
     @Test
@@ -3408,17 +3408,17 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testTask146() {
-        testExample("Usability/Non-null Assertions/Exercise 1/src/Task.kt", nonNullAssertionsExercise1.TaskKt::main);
+        testExample("Usability/Non-Null Assertions/Exercise 1/src/Task.kt", nonNullAssertionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask147() {
-        testExample("Usability/Non-null Assertions/Exercise 2/src/Task.kt", nonNullAssertionsExercise2.TaskKt::main);
+        testExample("Usability/Non-Null Assertions/Exercise 2/src/Task.kt", nonNullAssertionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask148() {
-        testExample("Usability/Non-null Assertions/Exercise 3/src/Task.kt", nonNullAssertionsExercise3.TaskKt::main);
+        testExample("Usability/Non-Null Assertions/Exercise 3/src/Task.kt", nonNullAssertionsExercise3.TaskKt::main);
     }
 
     @Test

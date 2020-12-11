@@ -12,10 +12,7 @@ class DataFile(val fileName: String) :
     if (!targetDir.exists())
       targetDir.mkdir()
   }
-  fun erase() {
-    if (exists())
-      delete()
-  }
+  fun erase() { if (exists()) delete() }
   fun reset(): File {
     erase()
     createNewFile()

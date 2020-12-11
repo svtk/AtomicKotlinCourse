@@ -17,7 +17,6 @@ class Actual(
 class Other : Parent {
   override val ch: Char        // [3]
     get() = 'B'
-
   override fun f() = 34        // [4]
 }
 

@@ -10,11 +10,11 @@ files:
   visible: true
 - name: src/Implementations.kt
   visible: true
-- name: src/WithPropertyAccessor.kt
-  visible: true
 - name: src/NoMultipleInheritance.kt
   visible: true
 - name: src/MultipleInterfaceInheritance.kt
   visible: true
 - name: src/InterfaceCollision.kt
+  visible: true
+- name: src/PropertyAccessor.kt
   visible: true
