@@ -8,7 +8,7 @@ content:
 - Destructuring Declarations
 - Nullable Types
 - Safe Calls & the Elvis Operator
-- Non-null Assertions0
+- Non-Null Assertions
 - Extensions for Nullable Types
 - Introduction to Generics
 - Extension Properties
