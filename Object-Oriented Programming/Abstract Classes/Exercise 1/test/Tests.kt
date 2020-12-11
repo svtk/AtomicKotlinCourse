@@ -8,7 +8,7 @@ import kotlin.reflect.KClass
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestAbstractClassesExercise1: TestTrace() {
+class TestAbstractClassesExercise1 : TestTrace() {
 
   private val packageName = "abstractClassesExercise1"
 

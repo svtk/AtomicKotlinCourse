@@ -10,7 +10,7 @@ import util.runAndCheckTraceOutput
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestRecursionExercise1: TestTrace() {
+class TestRecursionExercise1 : TestTrace() {
   @OptIn(ExperimentalStdlibApi::class)
   private fun expectedOutput(group: String, n: Int) = buildList {
     (n downTo 0).forEach {

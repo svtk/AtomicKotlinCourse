@@ -8,7 +8,7 @@ import kotlin.reflect.full.createInstance
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestPolymorphismExercise2: TestTrace() {
+class TestPolymorphismExercise2 : TestTrace() {
 
     private val packageName = "polymorphismExercise2"
 

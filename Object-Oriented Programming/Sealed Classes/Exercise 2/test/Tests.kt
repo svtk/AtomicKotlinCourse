@@ -6,7 +6,7 @@ import util.loadClass
 import util.loadTraceContent
 import kotlin.test.assertEquals
 
-class TestSealedClassesExercise2: TestTrace() {
+class TestSealedClassesExercise2 : TestTrace() {
 
     @Test
     fun `#01 main iterates through sealed subclasses of transport`() {

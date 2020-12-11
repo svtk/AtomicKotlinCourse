@@ -10,7 +10,7 @@ import util.resetTraceContent
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestBreakAndContinueExercise1: TestTrace() {
+class TestBreakAndContinueExercise1 : TestTrace() {
   private fun testData(expectedOutput: List<String>, input: List<String>) {
     resetTraceContent()
     readNumbers(*input.toTypedArray())
