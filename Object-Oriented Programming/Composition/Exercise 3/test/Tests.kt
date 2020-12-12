@@ -13,54 +13,21 @@ class TestCompositionExercise3 {
     private val packageName = "compositionExercise3"
 
     @Test
-    fun `#01 stack structure`() {
-        loadClass(packageName, "Stack").apply {
-            assertConstructorNumber(1)
-            assertParametersOfFirstConstructor()
-            assertMemberFunction("push")
-            assertMemberFunction("pop")
-            assertNoMemberFunction("get")
-        }
-    }
-
-    @Test
-    fun `#02 stack functioning`() {
-        val stackClass = loadClass(packageName, "Stack")
-        val stack = stackClass.createInstance()
-        val push = loadMemberFunction(stackClass, "push")
-        val pop = loadMemberFunction(stackClass, "pop")
-        push.call(stack, 1)
-        push.call(stack, 2)
-        push.call(stack, 3)
-        push.call(stack, 4)
-        assertEquals(
-            message = "First call of pop() in {1, 2, 3, 4} stack should return 4",
-            expected = 4,
-            actual = pop.call(stack)
-        )
-        assertEquals(
-            message = "Second call of pop() in {1, 2, 3, 4} stack should return 3",
-            expected = 3,
-            actual = pop.call(stack)
-        )
-    }
-
-    @Test
-    fun `#03 queue structure`() {
+    fun `#01 queue structure`() {
         loadClass(packageName, "Queue").apply {
             assertConstructorNumber(1)
             assertParametersOfFirstConstructor()
-            assertMemberFunction("add")
+            assertMemberFunction("put")
             assertMemberFunction("poll")
             assertNoMemberFunction("get")
         }
     }
 
     @Test
-    fun `#04 queue functioning`() {
+    fun `#02 queue functioning`() {
         val queueClass = loadClass(packageName, "Queue")
         val queue = queueClass.createInstance()
-        val add = loadMemberFunction(queueClass, "add")
+        val add = loadMemberFunction(queueClass, "put")
         val poll = loadMemberFunction(queueClass, "poll")
         add.call(queue, "a")
         add.call(queue, "b")

@@ -50,7 +50,7 @@ class TestCompositionExercise2 {
     loadClass(packageName, "Queue").apply {
       assertConstructorNumber(1)
       assertParametersOfFirstConstructor()
-      loadMemberFunction(this, "add")
+      loadMemberFunction(this, "put")
       loadMemberFunction(this, "poll")
       assertNoMemberFunction("get")
     }
@@ -60,7 +60,7 @@ class TestCompositionExercise2 {
   fun `#04 queue functioning`() {
     val queueClass = loadClass(packageName, "Queue")
     val queue = queueClass.createInstance()
-    val add = loadMemberFunction(queueClass, "add")
+    val add = loadMemberFunction(queueClass, "put")
     val poll = loadMemberFunction(queueClass, "poll")
     add.call(queue, "a")
     add.call(queue, "b")

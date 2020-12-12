@@ -38,7 +38,7 @@ class TestInheritanceAndExtensionsExercise1 : TestTrace() {
       assertInheritance("Crocodile")
       assertDeclaredMemberFunction("bite")
     }
-    loadClass("IAmHonestlyDuck").apply {
+    loadClass("CrocoDuck").apply {
       assertInheritance("Duck")
       assertDeclaredMemberProperty("crocodile", crocodileClass)
       assertDeclaredMemberFunction("quack")
@@ -62,7 +62,7 @@ class TestInheritanceAndExtensionsExercise1 : TestTrace() {
         .createInstance())
     interactWithDuck(null, honestlyDuck)
 
-    val crocodile = loadClass("IAmHonestlyDuck")
+    val crocodile = loadClass("CrocoDuck")
         .assertMemberProperty("crocodile")
         .call(honestlyDuck)
     interactWithCrocodile(null, crocodile)

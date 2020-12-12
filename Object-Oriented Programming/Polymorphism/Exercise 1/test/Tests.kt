@@ -8,7 +8,7 @@ import kotlin.reflect.full.createInstance
 import kotlin.test.assertEquals
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-class TestPolymorphismExercise1 : TestTrace() {
+class TestPolymorphismExercise1 {
 
   private val packageName = "polymorphismExercise1"
 
@@ -38,13 +38,13 @@ class TestPolymorphismExercise1 : TestTrace() {
 
   @Test
   fun `#02 what do the characters`() {
-    listOf("Warrior", "Elf", "FightingElf", "Dragon", "Wizard")
+    val result = listOf("Warrior", "Elf", "FightingElf", "Dragon", "Wizard")
       .map { loadClass(packageName, it).createInstance() as Character }
-      .forEach { c -> c.playTurn() }
+      .map { c -> c.playTurn() }
 
     assertEquals(
       message = "Incorrect result of playTurn() for all characters",
-      actual = loadTraceContent(),
+      actual = result,
       expected = listOf(
         "Warrior: Fight!",
         "Elf: Magic!",
