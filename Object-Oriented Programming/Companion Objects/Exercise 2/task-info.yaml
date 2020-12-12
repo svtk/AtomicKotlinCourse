@@ -7,7 +7,7 @@ files:
     length: 665
     placeholder_text: // TODO
   - offset: 1057
-    length: 241
+    length: 259
     placeholder_text: |-
       /*
         playGame(Checkers.Factory)

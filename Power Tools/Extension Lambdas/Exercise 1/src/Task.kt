@@ -1,7 +1,6 @@
 // ExtensionLambdas/ExtensionLambdasSoln1.kt
 package extensionLambdasExercise1
 import atomictest.eq
-import kotlinx.collections.immutable.*
 
 fun createString(
   build: StringBuilder.() -> Unit

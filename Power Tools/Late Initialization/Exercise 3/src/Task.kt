@@ -1,5 +1,5 @@
 // LateInitialization/LateInitSoln3.kt
-package lateinitializationsoln3
+package lateInitializationExercise3
 import atomictest.*
 
 data class Generator(val id: Int)

@@ -5,12 +5,8 @@ import atomictest.*
 object Log {
   private val messages =
     mutableListOf<String>()
-
-  fun add(msg: String) {
-    messages.add(msg)
-  }
-  fun report(): List<String> =
-    messages.toList()
+  fun add(msg: String) = messages.add(msg)
+  fun report(): List<String> = messages.toList()
 }
 
 class Failure(msg: String) : Exception(msg)

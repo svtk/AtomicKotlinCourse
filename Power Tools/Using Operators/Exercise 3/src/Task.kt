@@ -1,5 +1,6 @@
 // UsingOperators/UsingOperatorsSoln3.kt
 package usingOperatorsExercise3
+import atomictest.trace
 import kotlin.random.Random
 
 data class N(var n: Int) : Comparable<N> {
@@ -12,20 +13,20 @@ fun main() {
   val rnd = Random(47) // For repeatability
   val key = N(11)
   val map = mutableMapOf(key to 47)
-  println(map[key])
+  trace(map[key])
   key.n++
-  println(map[key])
+  trace(map[key])
   val list = List(5) { N(it) }.shuffled(rnd)
-  println("list: $list")
+  trace("list: $list")
   val set = list.toSortedSet()
-  println("sorted set (1): $set")
+  trace("sorted set (1): $set")
   set.minOrNull()!!.n += 2
-  println("sorted set (2): $set")
+  trace("sorted set (2): $set")
+  trace eq """
+    47
+    null
+    list: [N(4), N(0), N(2), N(3), N(1)]
+    sorted set (1): [N(0), N(1), N(2), N(3), N(4)]
+    sorted set (2): [N(2), N(1), N(2), N(3), N(4)]
+  """
 }
-/* Exercise Output:
-47
-null
-list: [N(4), N(0), N(2), N(3), N(1)]
-sorted set (1): [N(0), N(1), N(2), N(3), N(4)]
-sorted set (2): [N(2), N(1), N(2), N(3), N(4)]
-*/

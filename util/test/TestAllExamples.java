@@ -2687,1187 +2687,1192 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testCcc() {
-        testExample("Programming Basics/var & val/Exercise 2/src/ccc.kt", varAndValExercise2.CccKt::main);
-    }
-
-    @Test
     public void testTask3() {
-        testExample("Programming Basics/var & val/Exercise 3/src/Task.kt", varAndValExercise3.TaskKt::main);
+        testExample("Programming Basics/var & val/Exercise 2/src/Task.kt", varAndValExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask4() {
-        testExample("Programming Basics/Data Types/Exercise 1/src/Task.kt", dataTypesExercise1.TaskKt::main);
+        testExample("Programming Basics/var & val/Exercise 3/src/Task.kt", varAndValExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask5() {
-        testExample("Programming Basics/Data Types/Exercise 2/src/Task.kt", dataTypesExercise2.TaskKt::main);
+        testExample("Programming Basics/Data Types/Exercise 1/src/Task.kt", dataTypesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask6() {
-        testExample("Programming Basics/Data Types/Exercise 4/src/Task.kt", dataTypesExercise4.TaskKt::main);
+        testExample("Programming Basics/Data Types/Exercise 2/src/Task.kt", dataTypesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask7() {
-        testExample("Programming Basics/Data Types/Exercise 5/src/Task.kt", dataTypesExercise5.TaskKt::main);
+        testExample("Programming Basics/Data Types/Exercise 4/src/Task.kt", dataTypesExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask8() {
-        testExample("Programming Basics/Functions/Exercise 1/src/Task.kt", functionsExercise1.TaskKt::main);
+        testExample("Programming Basics/Data Types/Exercise 5/src/Task.kt", dataTypesExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask9() {
-        testExample("Programming Basics/Functions/Exercise 2/src/Task.kt", functionsExercise2.TaskKt::main);
+        testExample("Programming Basics/Functions/Exercise 1/src/Task.kt", functionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask10() {
-        testExample("Programming Basics/Functions/Exercise 3/src/Task.kt", functionsExercise3.TaskKt::main);
+        testExample("Programming Basics/Functions/Exercise 2/src/Task.kt", functionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask11() {
-        testExample("Programming Basics/Functions/Exercise 4/src/Task.kt", functionsExercise4.TaskKt::main);
+        testExample("Programming Basics/Functions/Exercise 3/src/Task.kt", functionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask12() {
-        testExample("Programming Basics/if Expressions/Exercise 1/src/Task.kt", ifExpressionsExercise1.TaskKt::main);
+        testExample("Programming Basics/Functions/Exercise 4/src/Task.kt", functionsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask13() {
-        testExample("Programming Basics/if Expressions/Exercise 2/src/Task.kt", ifExpressionsExercise2.TaskKt::main);
+        testExample("Programming Basics/if Expressions/Exercise 1/src/Task.kt", ifExpressionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask14() {
-        testExample("Programming Basics/if Expressions/Exercise 3/src/Task.kt", ifExpressionsExercise3.TaskKt::main);
+        testExample("Programming Basics/if Expressions/Exercise 2/src/Task.kt", ifExpressionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask15() {
-        testExample("Programming Basics/if Expressions/Exercise 4/src/Task.kt", ifExpressionsExercise4.TaskKt::main);
+        testExample("Programming Basics/if Expressions/Exercise 3/src/Task.kt", ifExpressionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask16() {
-        testExample("Programming Basics/String Templates/Exercise 1/src/Task.kt", stringTemplatesExercise1.TaskKt::main);
+        testExample("Programming Basics/if Expressions/Exercise 4/src/Task.kt", ifExpressionsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask17() {
-        testExample("Programming Basics/String Templates/Exercise 2/src/Task.kt", stringTemplatesExercise2.TaskKt::main);
+        testExample("Programming Basics/String Templates/Exercise 1/src/Task.kt", stringTemplatesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask18() {
-        testExample("Programming Basics/String Templates/Exercise 3/src/Task.kt", stringTemplatesExercise3.TaskKt::main);
+        testExample("Programming Basics/String Templates/Exercise 2/src/Task.kt", stringTemplatesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask19() {
-        testExample("Programming Basics/String Templates/Exercise 4/src/Task.kt", stringTemplatesExercise4.TaskKt::main);
+        testExample("Programming Basics/String Templates/Exercise 3/src/Task.kt", stringTemplatesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask20() {
-        testExample("Programming Basics/String Templates/Exercise 5/src/Task.kt", stringTemplatesExercise5.TaskKt::main);
+        testExample("Programming Basics/String Templates/Exercise 4/src/Task.kt", stringTemplatesExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask21() {
-        testExample("Programming Basics/Number Types/Exercise 3/src/Task.kt", numberTypesExercise3.TaskKt::main);
+        testExample("Programming Basics/String Templates/Exercise 5/src/Task.kt", stringTemplatesExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask22() {
-        testExample("Programming Basics/Number Types/Exercise 4/src/Task.kt", numberTypesExercise4.TaskKt::main);
+        testExample("Programming Basics/Number Types/Exercise 3/src/Task.kt", numberTypesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask23() {
-        testExample("Programming Basics/Number Types/Exercise 5/src/Task.kt", numberTypesExercise5.TaskKt::main);
+        testExample("Programming Basics/Number Types/Exercise 4/src/Task.kt", numberTypesExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask24() {
-        testExample("Programming Basics/Booleans/Exercise 2/src/Task.kt", booleansExercise2.TaskKt::main);
+        testExample("Programming Basics/Number Types/Exercise 5/src/Task.kt", numberTypesExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask25() {
-        testExample("Programming Basics/Booleans/Exercise 3/src/Task.kt", booleansExercise3.TaskKt::main);
+        testExample("Programming Basics/Booleans/Exercise 2/src/Task.kt", booleansExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask26() {
-        testExample("Programming Basics/Booleans/Exercise 4/src/Task.kt", booleansExercise4.TaskKt::main);
+        testExample("Programming Basics/Booleans/Exercise 3/src/Task.kt", booleansExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask27() {
-        testExample("Programming Basics/Repetition with while/Exercise 1/src/Task.kt", repetitionWithWhileExercise1.TaskKt::main);
+        testExample("Programming Basics/Booleans/Exercise 4/src/Task.kt", booleansExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask28() {
-        testExample("Programming Basics/Repetition with while/Exercise 2/src/Task.kt", repetitionWithWhileExercise2.TaskKt::main);
+        testExample("Programming Basics/Repetition with while/Exercise 1/src/Task.kt", repetitionWithWhileExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask29() {
-        testExample("Programming Basics/Repetition with while/Exercise 3/src/Task.kt", repetitionWithWhileExercise3.TaskKt::main);
+        testExample("Programming Basics/Repetition with while/Exercise 2/src/Task.kt", repetitionWithWhileExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask30() {
-        testExample("Programming Basics/Repetition with while/Exercise 4/src/Task.kt", repetitionWithWhileExercise4.TaskKt::main);
+        testExample("Programming Basics/Repetition with while/Exercise 3/src/Task.kt", repetitionWithWhileExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask31() {
-        testExample("Programming Basics/Repetition with while/Exercise 5/src/Task.kt", repetitionWithWhileExercise5.TaskKt::main);
+        testExample("Programming Basics/Repetition with while/Exercise 4/src/Task.kt", repetitionWithWhileExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask32() {
-        testExample("Programming Basics/Looping & Ranges/Exercise 1/src/Task.kt", loopingAndRangesExercise1.TaskKt::main);
+        testExample("Programming Basics/Repetition with while/Exercise 5/src/Task.kt", repetitionWithWhileExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask33() {
-        testExample("Programming Basics/Looping & Ranges/Exercise 2/src/Task.kt", loopingAndRangesExercise2.TaskKt::main);
+        testExample("Programming Basics/Looping & Ranges/Exercise 1/src/Task.kt", loopingAndRangesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask34() {
-        testExample("Programming Basics/Looping & Ranges/Exercise 3/src/Task.kt", loopingAndRangesExercise3.TaskKt::main);
+        testExample("Programming Basics/Looping & Ranges/Exercise 2/src/Task.kt", loopingAndRangesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask35() {
-        testExample("Programming Basics/Looping & Ranges/Exercise 4/src/Task.kt", loopingAndRangesExercise4.TaskKt::main);
+        testExample("Programming Basics/Looping & Ranges/Exercise 3/src/Task.kt", loopingAndRangesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask36() {
-        testExample("Programming Basics/Looping & Ranges/Exercise 5/src/Task.kt", loopingAndRangesExercise5.TaskKt::main);
+        testExample("Programming Basics/Looping & Ranges/Exercise 4/src/Task.kt", loopingAndRangesExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask37() {
-        testExample("Programming Basics/The in Keyword/Exercise 1/src/Task.kt", theInKeywordExercise1.TaskKt::main);
+        testExample("Programming Basics/Looping & Ranges/Exercise 5/src/Task.kt", loopingAndRangesExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask38() {
-        testExample("Programming Basics/The in Keyword/Exercise 2/src/Task.kt", theInKeywordExercise2.TaskKt::main);
+        testExample("Programming Basics/The in Keyword/Exercise 1/src/Task.kt", theInKeywordExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask39() {
-        testExample("Programming Basics/The in Keyword/Exercise 3/src/Task.kt", theInKeywordExercise3.TaskKt::main);
+        testExample("Programming Basics/The in Keyword/Exercise 2/src/Task.kt", theInKeywordExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask40() {
-        testExample("Programming Basics/The in Keyword/Exercise 4/src/Task.kt", theInKeywordExercise4.TaskKt::main);
+        testExample("Programming Basics/The in Keyword/Exercise 3/src/Task.kt", theInKeywordExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask41() {
-        testExample("Programming Basics/Expressions & Statements/Exercise 1/src/Task.kt", expressionsAndStatementsExercise1.TaskKt::main);
+        testExample("Programming Basics/The in Keyword/Exercise 4/src/Task.kt", theInKeywordExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask42() {
-        testExample("Programming Basics/Expressions & Statements/Exercise 2/src/Task.kt", expressionsAndStatementsExercise2.TaskKt::main);
+        testExample("Programming Basics/Expressions & Statements/Exercise 1/src/Task.kt", expressionsAndStatementsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask43() {
-        testExample("Programming Basics/Expressions & Statements/Exercise 4/src/Task.kt", expressionsAndStatementsExercise4.TaskKt::main);
+        testExample("Programming Basics/Expressions & Statements/Exercise 2/src/Task.kt", expressionsAndStatementsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask44() {
-        testExample("Programming Basics/Summary 1/Exercise 1/src/Task.kt", summaryIExercise1.TaskKt::main);
+        testExample("Programming Basics/Expressions & Statements/Exercise 4/src/Task.kt", expressionsAndStatementsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask45() {
-        testExample("Programming Basics/Summary 1/Exercise 2/src/Task.kt", summaryIExercise2.TaskKt::main);
+        testExample("Programming Basics/Summary 1/Exercise 1/src/Task.kt", summaryIExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask46() {
-        testExample("Programming Basics/Summary 1/Exercise 3/src/Task.kt", summaryIExercise3.TaskKt::main);
+        testExample("Programming Basics/Summary 1/Exercise 2/src/Task.kt", summaryIExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask47() {
-        testExample("Programming Basics/Summary 1/Exercise 4/src/Task.kt", summaryIExercise4.TaskKt::main);
+        testExample("Programming Basics/Summary 1/Exercise 3/src/Task.kt", summaryIExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask48() {
-        testExample("Programming Basics/Summary 1/Exercise 5/src/Task.kt", summaryIExercise5.TaskKt::main);
+        testExample("Programming Basics/Summary 1/Exercise 4/src/Task.kt", summaryIExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask49() {
-        testExample("Programming Basics/Summary 1/Exercise 6/src/Task.kt", summaryIExercise6.TaskKt::main);
+        testExample("Programming Basics/Summary 1/Exercise 5/src/Task.kt", summaryIExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask50() {
-        testExample("Programming Basics/Summary 1/Exercise 7/src/Task.kt", summaryIExercise7.TaskKt::main);
+        testExample("Programming Basics/Summary 1/Exercise 6/src/Task.kt", summaryIExercise6.TaskKt::main);
     }
 
     @Test
     public void testTask51() {
-        testExample("Programming Basics/Summary 1/Exercise 8/src/Task.kt", summaryIExercise8.TaskKt::main);
+        testExample("Programming Basics/Summary 1/Exercise 7/src/Task.kt", summaryIExercise7.TaskKt::main);
     }
 
     @Test
     public void testTask52() {
-        testExample("Programming Basics/Summary 1/Exercise 9/src/Task.kt", summaryIExercise9.TaskKt::main);
+        testExample("Programming Basics/Summary 1/Exercise 8/src/Task.kt", summaryIExercise8.TaskKt::main);
     }
 
     @Test
     public void testTask53() {
-        testExample("Programming Basics/Summary 1/Exercise 10/src/Task.kt", summaryIExercise10.TaskKt::main);
+        testExample("Programming Basics/Summary 1/Exercise 9/src/Task.kt", summaryIExercise9.TaskKt::main);
     }
 
     @Test
     public void testTask54() {
-        testExample("Introduction to Objects/Objects Everywhere/Exercise 1/src/Task.kt", objectsEverywhereExercise1.TaskKt::main);
+        testExample("Programming Basics/Summary 1/Exercise 10/src/Task.kt", summaryIExercise10.TaskKt::main);
     }
 
     @Test
     public void testTask55() {
-        testExample("Introduction to Objects/Objects Everywhere/Exercise 2/src/Task.kt", objectsEverywhereExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Objects Everywhere/Exercise 1/src/Task.kt", objectsEverywhereExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask56() {
-        testExample("Introduction to Objects/Objects Everywhere/Exercise 3/src/Task.kt", objectsEverywhereExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Objects Everywhere/Exercise 2/src/Task.kt", objectsEverywhereExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask57() {
-        testExample("Introduction to Objects/Objects Everywhere/Exercise 4/src/Task.kt", objectsEverywhereExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Objects Everywhere/Exercise 3/src/Task.kt", objectsEverywhereExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask58() {
-        testExample("Introduction to Objects/Objects Everywhere/Exercise 5/src/Task.kt", objectsEverywhereExercise5.TaskKt::main);
+        testExample("Introduction to Objects/Objects Everywhere/Exercise 4/src/Task.kt", objectsEverywhereExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask59() {
-        testExample("Introduction to Objects/Creating Classes/Exercise 2/src/Task.kt", creatingClassesExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Objects Everywhere/Exercise 5/src/Task.kt", objectsEverywhereExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask60() {
-        testExample("Introduction to Objects/Creating Classes/Exercise 3/src/Task.kt", creatingClassesExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Creating Classes/Exercise 2/src/Task.kt", creatingClassesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask61() {
-        testExample("Introduction to Objects/Creating Classes/Exercise 4/src/Task.kt", creatingClassesExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Creating Classes/Exercise 3/src/Task.kt", creatingClassesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask62() {
-        testExample("Introduction to Objects/Creating Classes/Exercise 5/src/Task.kt", creatingClassesExercise5.TaskKt::main);
+        testExample("Introduction to Objects/Creating Classes/Exercise 4/src/Task.kt", creatingClassesExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask63() {
-        testExample("Introduction to Objects/Properties/Exercise 1/src/Task.kt", propertiesExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Creating Classes/Exercise 5/src/Task.kt", creatingClassesExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask64() {
-        testExample("Introduction to Objects/Properties/Exercise 2/src/Task.kt", propertiesExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Properties/Exercise 1/src/Task.kt", propertiesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask65() {
-        testExample("Introduction to Objects/Properties/Exercise 3/src/Task.kt", propertiesExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Properties/Exercise 2/src/Task.kt", propertiesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask66() {
-        testExample("Introduction to Objects/Constructors/Exercise 1/src/Task.kt", constructorsExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Properties/Exercise 3/src/Task.kt", propertiesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask67() {
-        testExample("Introduction to Objects/Constructors/Exercise 2/src/Task.kt", constructorsExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Constructors/Exercise 1/src/Task.kt", constructorsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask68() {
-        testExample("Introduction to Objects/Constructors/Exercise 3/src/Task.kt", constructorsExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Constructors/Exercise 2/src/Task.kt", constructorsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask69() {
-        testExample("Introduction to Objects/Constructors/Exercise 4/src/Task.kt", constructorsExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Constructors/Exercise 3/src/Task.kt", constructorsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask70() {
-        testExample("Introduction to Objects/Constraining Visibility/Exercise 1/src/Task.kt", constrainingVisibilityExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Constructors/Exercise 4/src/Task.kt", constructorsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask71() {
-        testExample("Introduction to Objects/Constraining Visibility/Exercise 2/src/Task.kt", constrainingVisibilityExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Constraining Visibility/Exercise 1/src/Task.kt", constrainingVisibilityExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask72() {
-        testExample("Introduction to Objects/Constraining Visibility/Exercise 3/src/Task.kt", constrainingVisibilityExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Constraining Visibility/Exercise 2/src/Task.kt", constrainingVisibilityExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask73() {
-        testExample("Introduction to Objects/Constraining Visibility/Exercise 4/src/Task.kt", constrainingVisibilityExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Constraining Visibility/Exercise 3/src/Task.kt", constrainingVisibilityExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask74() {
-        testExample("Introduction to Objects/Constraining Visibility/Exercise 5/src/Task.kt", constrainingVisibilityExercise5.TaskKt::main);
+        testExample("Introduction to Objects/Constraining Visibility/Exercise 4/src/Task.kt", constrainingVisibilityExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask75() {
-        testExample("Introduction to Objects/Packages/Exercise 1/src/Task.kt", packagesExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Constraining Visibility/Exercise 5/src/Task.kt", constrainingVisibilityExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask76() {
-        testExample("Introduction to Objects/Packages/Exercise 2/src/Task.kt", ccc.TaskKt::main);
+        testExample("Introduction to Objects/Packages/Exercise 1/src/Task.kt", packagesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask77() {
-        testExample("Introduction to Objects/Packages/Exercise 3/src/Task.kt", packagesExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Packages/Exercise 2/src/Task.kt", ccc.TaskKt::main);
     }
 
     @Test
     public void testTask78() {
-        testExample("Introduction to Objects/Packages/Exercise 4/src/Task.kt", packagesExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Packages/Exercise 3/src/Task.kt", packagesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask79() {
-        testExample("Introduction to Objects/Testing/Exercise 1/src/Task.kt", testingExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Packages/Exercise 4/src/Task.kt", packagesExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask80() {
-        testExample("Introduction to Objects/Testing/Exercise 2/src/Task.kt", testingExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Testing/Exercise 1/src/Task.kt", testingExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask81() {
-        testExample("Introduction to Objects/Testing/Exercise 3/src/Task.kt", testingExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Testing/Exercise 2/src/Task.kt", testingExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask82() {
-        testExample("Introduction to Objects/Testing/Exercise 4/src/Task.kt", testingExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Testing/Exercise 3/src/Task.kt", testingExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask83() {
-        testExample("Introduction to Objects/Exceptions/Exercise 1/src/Task.kt", exceptionsExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Testing/Exercise 4/src/Task.kt", testingExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask84() {
-        testExample("Introduction to Objects/Exceptions/Exercise 2/src/Task.kt", exceptionsExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Exceptions/Exercise 1/src/Task.kt", exceptionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask85() {
-        testExample("Introduction to Objects/Exceptions/Exercise 3/src/Task.kt", exceptionsExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Exceptions/Exercise 2/src/Task.kt", exceptionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask86() {
-        testExample("Introduction to Objects/Lists/Exercise 1/src/Task.kt", listsExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Exceptions/Exercise 3/src/Task.kt", exceptionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask87() {
-        testExample("Introduction to Objects/Lists/Exercise 2/src/Task.kt", listsExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Lists/Exercise 1/src/Task.kt", listsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask88() {
-        testExample("Introduction to Objects/Lists/Exercise 3/src/Task.kt", listsExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Lists/Exercise 2/src/Task.kt", listsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask89() {
-        testExample("Introduction to Objects/Lists/Exercise 4/src/Task.kt", listsExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Lists/Exercise 3/src/Task.kt", listsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask90() {
-        testExample("Introduction to Objects/Variable Argument Lists/Exercise 1/src/Task.kt", variableArgumentListsExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Lists/Exercise 4/src/Task.kt", listsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask91() {
-        testExample("Introduction to Objects/Variable Argument Lists/Exercise 2/src/Task.kt", variableArgumentListsExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Variable Argument Lists/Exercise 1/src/Task.kt", variableArgumentListsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask92() {
-        testExample("Introduction to Objects/Variable Argument Lists/Exercise 3/src/Task.kt", variableArgumentListsExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Variable Argument Lists/Exercise 2/src/Task.kt", variableArgumentListsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask93() {
-        testExample("Introduction to Objects/Variable Argument Lists/Exercise 4/src/Task.kt", variableArgumentListsExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Variable Argument Lists/Exercise 3/src/Task.kt", variableArgumentListsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask94() {
-        testExample("Introduction to Objects/Sets/Exercise 1/src/Task.kt", setsExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Variable Argument Lists/Exercise 4/src/Task.kt", variableArgumentListsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask95() {
-        testExample("Introduction to Objects/Sets/Exercise 2/src/Task.kt", setsExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Sets/Exercise 1/src/Task.kt", setsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask96() {
-        testExample("Introduction to Objects/Sets/Exercise 3/src/Task.kt", setsExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Sets/Exercise 2/src/Task.kt", setsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask97() {
-        testExample("Introduction to Objects/Sets/Exercise 4/src/Task.kt", setsExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Sets/Exercise 3/src/Task.kt", setsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask98() {
-        testExample("Introduction to Objects/Maps/Exercise 1/src/Task.kt", mapsExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Sets/Exercise 4/src/Task.kt", setsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask99() {
-        testExample("Introduction to Objects/Maps/Exercise 2/src/Task.kt", mapsExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Maps/Exercise 1/src/Task.kt", mapsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask100() {
-        testExample("Introduction to Objects/Maps/Exercise 3/src/Task.kt", mapsExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Maps/Exercise 2/src/Task.kt", mapsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask101() {
-        testExample("Introduction to Objects/Maps/Exercise 4/src/Task.kt", mapsExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Maps/Exercise 3/src/Task.kt", mapsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask102() {
-        testExample("Introduction to Objects/Property Accessors/Exercise 1/src/Task.kt", propertyAccessorsExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Maps/Exercise 4/src/Task.kt", mapsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask103() {
-        testExample("Introduction to Objects/Property Accessors/Exercise 2/src/Task.kt", propertyAccessorsExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Property Accessors/Exercise 1/src/Task.kt", propertyAccessorsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask104() {
-        testExample("Introduction to Objects/Property Accessors/Exercise 3/src/Task.kt", propertyAccessorsExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Property Accessors/Exercise 2/src/Task.kt", propertyAccessorsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask105() {
-        testExample("Introduction to Objects/Property Accessors/Exercise 4/src/Task.kt", propertyAccessorsExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Property Accessors/Exercise 3/src/Task.kt", propertyAccessorsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask106() {
-        testExample("Introduction to Objects/Property Accessors/Exercise 5/src/Task.kt", propertyAccessorsExercise5.TaskKt::main);
+        testExample("Introduction to Objects/Property Accessors/Exercise 4/src/Task.kt", propertyAccessorsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask107() {
-        testExample("Introduction to Objects/Summary 2/Exercise 1/src/Task.kt", summaryIIExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Property Accessors/Exercise 5/src/Task.kt", propertyAccessorsExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask108() {
-        testExample("Introduction to Objects/Summary 2/Exercise 2/src/Task.kt", summaryIIExercise2.TaskKt::main);
+        testExample("Introduction to Objects/Summary 2/Exercise 1/src/Task.kt", summaryIIExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask109() {
-        testExample("Introduction to Objects/Summary 2/Exercise 3/src/Task.kt", summaryIIExercise3.TaskKt::main);
+        testExample("Introduction to Objects/Summary 2/Exercise 2/src/Task.kt", summaryIIExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask110() {
-        testExample("Introduction to Objects/Summary 2/Exercise 4/src/Task.kt", summaryIIExercise4.TaskKt::main);
+        testExample("Introduction to Objects/Summary 2/Exercise 3/src/Task.kt", summaryIIExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask111() {
-        testExample("Introduction to Objects/Summary 2/Exercise 5/src/Task.kt", summaryIIExercise5.TaskKt::main);
+        testExample("Introduction to Objects/Summary 2/Exercise 4/src/Task.kt", summaryIIExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask112() {
-        testExample("Introduction to Objects/Summary 2/Exercise 6/src/Task.kt", summaryIIExercise6.TaskKt::main);
+        testExample("Introduction to Objects/Summary 2/Exercise 5/src/Task.kt", summaryIIExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask113() {
-        testExample("Introduction to Objects/Summary 2/Exercise 7/src/Task.kt", summaryIIExercise7.TaskKt::main);
+        testExample("Introduction to Objects/Summary 2/Exercise 6/src/Task.kt", summaryIIExercise6.TaskKt::main);
     }
 
     @Test
     public void testTask114() {
-        testExample("Introduction to Objects/Summary 2/Exercise 8/src/Task.kt", summaryIIExercise8.TaskKt::main);
+        testExample("Introduction to Objects/Summary 2/Exercise 7/src/Task.kt", summaryIIExercise7.TaskKt::main);
     }
 
     @Test
     public void testTask115() {
-        testExample("Usability/Extension Functions/Exercise 1/src/Task.kt", extensionFunctionsExercise1.TaskKt::main);
+        testExample("Introduction to Objects/Summary 2/Exercise 8/src/Task.kt", summaryIIExercise8.TaskKt::main);
     }
 
     @Test
     public void testTask116() {
-        testExample("Usability/Extension Functions/Exercise 2/src/Task.kt", extensionFunctionsExercise2.TaskKt::main);
+        testExample("Usability/Extension Functions/Exercise 1/src/Task.kt", extensionFunctionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask117() {
-        testExample("Usability/Extension Functions/Exercise 3/src/Task.kt", extensionFunctionsExercise3.TaskKt::main);
+        testExample("Usability/Extension Functions/Exercise 2/src/Task.kt", extensionFunctionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask118() {
-        testExample("Usability/Extension Functions/Exercise 4/src/Task.kt", extensionFunctionsExercise4.TaskKt::main);
+        testExample("Usability/Extension Functions/Exercise 3/src/Task.kt", extensionFunctionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask119() {
-        testExample("Usability/Named & Default Arguments/Exercise 1/src/Task.kt", namedAndDefaultArgumentsExercise1.TaskKt::main);
+        testExample("Usability/Extension Functions/Exercise 4/src/Task.kt", extensionFunctionsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask120() {
-        testExample("Usability/Named & Default Arguments/Exercise 2/src/Task.kt", namedAndDefaultArgumentsExercise2.TaskKt::main);
+        testExample("Usability/Named & Default Arguments/Exercise 1/src/Task.kt", namedAndDefaultArgumentsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask121() {
-        testExample("Usability/Named & Default Arguments/Exercise 3/src/Task.kt", namedAndDefaultArgumentsExercise3.TaskKt::main);
+        testExample("Usability/Named & Default Arguments/Exercise 2/src/Task.kt", namedAndDefaultArgumentsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask122() {
-        testExample("Usability/Named & Default Arguments/Exercise 4/src/Task.kt", namedAndDefaultArgumentsExercise4.TaskKt::main);
+        testExample("Usability/Named & Default Arguments/Exercise 3/src/Task.kt", namedAndDefaultArgumentsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask123() {
-        testExample("Usability/Overloading/Exercise 1/src/Task.kt", overloadingExercise1.TaskKt::main);
+        testExample("Usability/Named & Default Arguments/Exercise 4/src/Task.kt", namedAndDefaultArgumentsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask124() {
-        testExample("Usability/Overloading/Exercise 2/src/Task.kt", overloadingExercise2.TaskKt::main);
+        testExample("Usability/Overloading/Exercise 1/src/Task.kt", overloadingExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask125() {
-        testExample("Usability/Overloading/Exercise 3/src/Task.kt", overloadingExercise3.TaskKt::main);
+        testExample("Usability/Overloading/Exercise 2/src/Task.kt", overloadingExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask126() {
-        testExample("Usability/Overloading/Exercise 4/src/Task.kt", overloadingExercise4.TaskKt::main);
+        testExample("Usability/Overloading/Exercise 3/src/Task.kt", overloadingExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask127() {
-        testExample("Usability/when Expressions/Exercise 1/src/Task.kt", whenExpressionsExercise1.TaskKt::main);
+        testExample("Usability/Overloading/Exercise 4/src/Task.kt", overloadingExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask128() {
-        testExample("Usability/when Expressions/Exercise 2/src/Task.kt", whenExpressionsExercise2.TaskKt::main);
+        testExample("Usability/when Expressions/Exercise 1/src/Task.kt", whenExpressionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask129() {
-        testExample("Usability/when Expressions/Exercise 3/src/Task.kt", whenExpressionsExercise3.TaskKt::main);
+        testExample("Usability/when Expressions/Exercise 2/src/Task.kt", whenExpressionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask130() {
-        testExample("Usability/when Expressions/Exercise 4/src/Task.kt", whenExpressionsExercise4.TaskKt::main);
+        testExample("Usability/when Expressions/Exercise 3/src/Task.kt", whenExpressionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask131() {
-        testExample("Usability/Enumerations/Exercise 1/src/Task.kt", enumerationsExercise1.TaskKt::main);
+        testExample("Usability/when Expressions/Exercise 4/src/Task.kt", whenExpressionsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask132() {
-        testExample("Usability/Enumerations/Exercise 2/src/Task.kt", enumerationsExercise2.TaskKt::main);
+        testExample("Usability/Enumerations/Exercise 1/src/Task.kt", enumerationsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask133() {
-        testExample("Usability/Enumerations/Exercise 3/src/Task.kt", enumerationsExercise3.TaskKt::main);
+        testExample("Usability/Enumerations/Exercise 2/src/Task.kt", enumerationsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask134() {
-        testExample("Usability/Data Classes/Exercise 1/src/Task.kt", dataClassesExercise1.TaskKt::main);
+        testExample("Usability/Enumerations/Exercise 3/src/Task.kt", enumerationsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask135() {
-        testExample("Usability/Data Classes/Exercise 2/src/Task.kt", dataClassesExercise2.TaskKt::main);
+        testExample("Usability/Data Classes/Exercise 1/src/Task.kt", dataClassesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask136() {
-        testExample("Usability/Data Classes/Exercise 3/src/Task.kt", dataClassesExercise3.TaskKt::main);
+        testExample("Usability/Data Classes/Exercise 2/src/Task.kt", dataClassesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask137() {
-        testExample("Usability/Destructuring Declarations/Exercise 1/src/Task.kt", destructuringDeclarationsExercise1.TaskKt::main);
+        testExample("Usability/Data Classes/Exercise 3/src/Task.kt", dataClassesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask138() {
-        testExample("Usability/Destructuring Declarations/Exercise 2/src/Task.kt", destructuringDeclarationsExercise2.TaskKt::main);
+        testExample("Usability/Destructuring Declarations/Exercise 1/src/Task.kt", destructuringDeclarationsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask139() {
-        testExample("Usability/Destructuring Declarations/Exercise 3/src/Task.kt", destructuringDeclarationsExercise3.TaskKt::main);
+        testExample("Usability/Destructuring Declarations/Exercise 2/src/Task.kt", destructuringDeclarationsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask140() {
-        testExample("Usability/Nullable Types/Exercise 1/src/Task.kt", nullableTypesExercise1.TaskKt::main);
+        testExample("Usability/Destructuring Declarations/Exercise 3/src/Task.kt", destructuringDeclarationsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask141() {
-        testExample("Usability/Nullable Types/Exercise 2/src/Task.kt", nullableTypesExercise2.TaskKt::main);
+        testExample("Usability/Nullable Types/Exercise 1/src/Task.kt", nullableTypesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask142() {
-        testExample("Usability/Nullable Types/Exercise 3/src/Task.kt", nullableTypesExercise3.TaskKt::main);
+        testExample("Usability/Nullable Types/Exercise 2/src/Task.kt", nullableTypesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask143() {
-        testExample("Usability/Safe Calls & the Elvis Operator/Exercise 1/src/Task.kt", safeCallsAndTheElvisOperatorExercise1.TaskKt::main);
+        testExample("Usability/Nullable Types/Exercise 3/src/Task.kt", nullableTypesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask144() {
-        testExample("Usability/Safe Calls & the Elvis Operator/Exercise 2/src/Task.kt", safeCallsAndTheElvisOperatorExercise2.TaskKt::main);
+        testExample("Usability/Safe Calls & the Elvis Operator/Exercise 1/src/Task.kt", safeCallsAndTheElvisOperatorExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask145() {
-        testExample("Usability/Safe Calls & the Elvis Operator/Exercise 3/src/Task.kt", safeCallsAndTheElvisOperatorExercise3.TaskKt::main);
+        testExample("Usability/Safe Calls & the Elvis Operator/Exercise 2/src/Task.kt", safeCallsAndTheElvisOperatorExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask146() {
-        testExample("Usability/Non-Null Assertions/Exercise 1/src/Task.kt", nonNullAssertionsExercise1.TaskKt::main);
+        testExample("Usability/Safe Calls & the Elvis Operator/Exercise 3/src/Task.kt", safeCallsAndTheElvisOperatorExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask147() {
-        testExample("Usability/Non-Null Assertions/Exercise 2/src/Task.kt", nonNullAssertionsExercise2.TaskKt::main);
+        testExample("Usability/Non-Null Assertions/Exercise 1/src/Task.kt", nonNullAssertionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask148() {
-        testExample("Usability/Non-Null Assertions/Exercise 3/src/Task.kt", nonNullAssertionsExercise3.TaskKt::main);
+        testExample("Usability/Non-Null Assertions/Exercise 2/src/Task.kt", nonNullAssertionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask149() {
-        testExample("Usability/Extensions for Nullable Types/Exercise 1/src/Task.kt", extensionsForNullableTypesExercise1.TaskKt::main);
+        testExample("Usability/Non-Null Assertions/Exercise 3/src/Task.kt", nonNullAssertionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask150() {
-        testExample("Usability/Extensions for Nullable Types/Exercise 2/src/Task.kt", extensionsForNullableTypesExercise2.TaskKt::main);
+        testExample("Usability/Extensions for Nullable Types/Exercise 1/src/Task.kt", extensionsForNullableTypesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask151() {
-        testExample("Usability/Extensions for Nullable Types/Exercise 3/src/Task.kt", extensionsForNullableTypesExercise3.TaskKt::main);
+        testExample("Usability/Extensions for Nullable Types/Exercise 2/src/Task.kt", extensionsForNullableTypesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask152() {
-        testExample("Usability/Introduction to Generics/Exercise 1/src/Task.kt", introductionToGenericsExercise1.TaskKt::main);
+        testExample("Usability/Extensions for Nullable Types/Exercise 3/src/Task.kt", extensionsForNullableTypesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask153() {
-        testExample("Usability/Introduction to Generics/Exercise 2/src/Task.kt", introductionToGenericsExercise2.TaskKt::main);
+        testExample("Usability/Introduction to Generics/Exercise 1/src/Task.kt", introductionToGenericsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask154() {
-        testExample("Usability/Introduction to Generics/Exercise 3/src/Task.kt", introductionToGenericsExercise3.TaskKt::main);
+        testExample("Usability/Introduction to Generics/Exercise 2/src/Task.kt", introductionToGenericsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask155() {
-        testExample("Usability/Extension Properties/Exercise 1/src/Task.kt", extensionPropertiesExercise1.TaskKt::main);
+        testExample("Usability/Introduction to Generics/Exercise 3/src/Task.kt", introductionToGenericsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask156() {
-        testExample("Usability/Extension Properties/Exercise 2/src/Task.kt", extensionPropertiesExercise2.TaskKt::main);
+        testExample("Usability/Extension Properties/Exercise 1/src/Task.kt", extensionPropertiesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask157() {
-        testExample("Usability/Extension Properties/Exercise 3/src/Task.kt", extensionPropertiesExercise3.TaskKt::main);
+        testExample("Usability/Extension Properties/Exercise 2/src/Task.kt", extensionPropertiesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask158() {
-        testExample("Usability/break & continue/Exercise 1/src/Task.kt", breakAndContinueExercise1.TaskKt::main);
+        testExample("Usability/Extension Properties/Exercise 3/src/Task.kt", extensionPropertiesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask159() {
-        testExample("Usability/break & continue/Exercise 2/src/Task.kt", breakAndContinueExercise2.TaskKt::main);
+        testExample("Usability/break & continue/Exercise 1/src/Task.kt", breakAndContinueExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask160() {
-        testExample("Usability/break & continue/Exercise 3/src/Task.kt", breakAndContinueExercise3.TaskKt::main);
+        testExample("Usability/break & continue/Exercise 2/src/Task.kt", breakAndContinueExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask161() {
-        testExample("Functional Programming/Lambdas/Exercise 1/src/Task.kt", lambdasExercise1.TaskKt::main);
+        testExample("Usability/break & continue/Exercise 3/src/Task.kt", breakAndContinueExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask162() {
-        testExample("Functional Programming/Lambdas/Exercise 2/src/Task.kt", lambdasExercise2.TaskKt::main);
+        testExample("Functional Programming/Lambdas/Exercise 1/src/Task.kt", lambdasExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask163() {
-        testExample("Functional Programming/Lambdas/Exercise 3/src/Task.kt", lambdasExercise3.TaskKt::main);
+        testExample("Functional Programming/Lambdas/Exercise 2/src/Task.kt", lambdasExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask164() {
-        testExample("Functional Programming/The Importance of Lambdas/Exercise 1/src/Task.kt", theImportanceOfLambdasExercise1.TaskKt::main);
+        testExample("Functional Programming/Lambdas/Exercise 3/src/Task.kt", lambdasExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask165() {
-        testExample("Functional Programming/The Importance of Lambdas/Exercise 2/src/Task.kt", theImportanceOfLambdasExercise2.TaskKt::main);
+        testExample("Functional Programming/The Importance of Lambdas/Exercise 1/src/Task.kt", theImportanceOfLambdasExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask166() {
-        testExample("Functional Programming/The Importance of Lambdas/Exercise 3/src/Task.kt", theImportanceOfLambdasExercise3.TaskKt::main);
+        testExample("Functional Programming/The Importance of Lambdas/Exercise 2/src/Task.kt", theImportanceOfLambdasExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask167() {
-        testExample("Functional Programming/Operations on Collections/Exercise 1/src/Task.kt", operationsOnCollectionsExercise1.TaskKt::main);
+        testExample("Functional Programming/The Importance of Lambdas/Exercise 3/src/Task.kt", theImportanceOfLambdasExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask168() {
-        testExample("Functional Programming/Operations on Collections/Exercise 2/src/Task.kt", operationsOnCollectionsExercise2.TaskKt::main);
+        testExample("Functional Programming/Operations on Collections/Exercise 1/src/Task.kt", operationsOnCollectionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask169() {
-        testExample("Functional Programming/Operations on Collections/Exercise 3/src/Task.kt", operationsOnCollectionsExercise3.TaskKt::main);
+        testExample("Functional Programming/Operations on Collections/Exercise 2/src/Task.kt", operationsOnCollectionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask170() {
-        testExample("Functional Programming/Operations on Collections/Exercise 4/src/Task.kt", operationsOnCollectionsExercise4.TaskKt::main);
+        testExample("Functional Programming/Operations on Collections/Exercise 3/src/Task.kt", operationsOnCollectionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask171() {
-        testExample("Functional Programming/Member References/Exercise 1/src/Task.kt", memberReferencesExercise1.TaskKt::main);
+        testExample("Functional Programming/Operations on Collections/Exercise 4/src/Task.kt", operationsOnCollectionsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask172() {
-        testExample("Functional Programming/Member References/Exercise 2/src/Task.kt", memberReferencesExercise2.TaskKt::main);
+        testExample("Functional Programming/Member References/Exercise 1/src/Task.kt", memberReferencesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask173() {
-        testExample("Functional Programming/Member References/Exercise 3/src/Task.kt", memberReferencesExercise3.TaskKt::main);
+        testExample("Functional Programming/Member References/Exercise 2/src/Task.kt", memberReferencesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask174() {
-        testExample("Functional Programming/Higher-Order Functions/Exercise 1/src/Task.kt", higherOrderFunctionsExercise1.TaskKt::main);
+        testExample("Functional Programming/Member References/Exercise 3/src/Task.kt", memberReferencesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask175() {
-        testExample("Functional Programming/Higher-Order Functions/Exercise 2/src/Task.kt", higherOrderFunctionsExercise2.TaskKt::main);
+        testExample("Functional Programming/Higher-Order Functions/Exercise 1/src/Task.kt", higherOrderFunctionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask176() {
-        testExample("Functional Programming/Higher-Order Functions/Exercise 3/src/Task.kt", higherOrderFunctionsExercise3.TaskKt::main);
+        testExample("Functional Programming/Higher-Order Functions/Exercise 2/src/Task.kt", higherOrderFunctionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask177() {
-        testExample("Functional Programming/Higher-Order Functions/Exercise 4/src/Task.kt", higherOrderFunctionsExercise4.TaskKt::main);
+        testExample("Functional Programming/Higher-Order Functions/Exercise 3/src/Task.kt", higherOrderFunctionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask178() {
-        testExample("Functional Programming/Manipulating Lists/Exercise 1/src/Task.kt", manipulatingListsExercise1.TaskKt::main);
+        testExample("Functional Programming/Higher-Order Functions/Exercise 4/src/Task.kt", higherOrderFunctionsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask179() {
-        testExample("Functional Programming/Manipulating Lists/Exercise 2/src/Task.kt", manipulatingListsExercise2.TaskKt::main);
+        testExample("Functional Programming/Manipulating Lists/Exercise 1/src/Task.kt", manipulatingListsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask180() {
-        testExample("Functional Programming/Manipulating Lists/Exercise 3/src/Task.kt", manipulatingListsExercise3.TaskKt::main);
+        testExample("Functional Programming/Manipulating Lists/Exercise 2/src/Task.kt", manipulatingListsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask181() {
-        testExample("Functional Programming/Manipulating Lists/Exercise 4/src/Task.kt", manipulatingListsExercise4.TaskKt::main);
+        testExample("Functional Programming/Manipulating Lists/Exercise 3/src/Task.kt", manipulatingListsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask182() {
-        testExample("Functional Programming/Manipulating Lists/Exercise 5/src/Task.kt", manipulatingListsExercise5.TaskKt::main);
+        testExample("Functional Programming/Manipulating Lists/Exercise 4/src/Task.kt", manipulatingListsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask183() {
-        testExample("Functional Programming/Manipulating Lists/Exercise 6/src/Task.kt", manipulatingListsExercise6.TaskKt::main);
+        testExample("Functional Programming/Manipulating Lists/Exercise 5/src/Task.kt", manipulatingListsExercise5.TaskKt::main);
     }
 
     @Test
     public void testTask184() {
-        testExample("Functional Programming/Manipulating Lists/Exercise 7/src/Task.kt", manipulatingListsExercise7.TaskKt::main);
+        testExample("Functional Programming/Manipulating Lists/Exercise 6/src/Task.kt", manipulatingListsExercise6.TaskKt::main);
     }
 
     @Test
     public void testTask185() {
-        testExample("Functional Programming/Building Maps/Exercise 1/src/Task.kt", buildingMapsExercise1.TaskKt::main);
+        testExample("Functional Programming/Manipulating Lists/Exercise 7/src/Task.kt", manipulatingListsExercise7.TaskKt::main);
     }
 
     @Test
     public void testTask186() {
-        testExample("Functional Programming/Building Maps/Exercise 2/src/Task.kt", buildingMapsExercise2.TaskKt::main);
+        testExample("Functional Programming/Building Maps/Exercise 1/src/Task.kt", buildingMapsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask187() {
-        testExample("Functional Programming/Building Maps/Exercise 3/src/Task.kt", buildingMapsExercise3.TaskKt::main);
+        testExample("Functional Programming/Building Maps/Exercise 2/src/Task.kt", buildingMapsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask188() {
-        testExample("Functional Programming/Sequences/Exercise 6/src/Task.kt", sequencesExercise6.TaskKt::main);
+        testExample("Functional Programming/Building Maps/Exercise 3/src/Task.kt", buildingMapsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask189() {
-        testExample("Functional Programming/Sequences/Exercise 7/src/Task.kt", sequencesExercise7.TaskKt::main);
+        testExample("Functional Programming/Sequences/Exercise 6/src/Task.kt", sequencesExercise6.TaskKt::main);
     }
 
     @Test
     public void testTask190() {
-        testExample("Functional Programming/Sequences/Exercise 8/src/Task.kt", sequencesExercise8.TaskKt::main);
+        testExample("Functional Programming/Sequences/Exercise 7/src/Task.kt", sequencesExercise7.TaskKt::main);
     }
 
     @Test
     public void testTask191() {
-        testExample("Functional Programming/Local Functions/Exercise 1/src/Task.kt", localFunctionsExercise1.TaskKt::main);
+        testExample("Functional Programming/Sequences/Exercise 8/src/Task.kt", sequencesExercise8.TaskKt::main);
     }
 
     @Test
     public void testTask192() {
-        testExample("Functional Programming/Local Functions/Exercise 2/src/Task.kt", localFunctionsExercise2.TaskKt::main);
+        testExample("Functional Programming/Local Functions/Exercise 1/src/Task.kt", localFunctionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask193() {
-        testExample("Functional Programming/Local Functions/Exercise 3/src/Task.kt", localFunctionsExercise3.TaskKt::main);
+        testExample("Functional Programming/Local Functions/Exercise 2/src/Task.kt", localFunctionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask194() {
-        testExample("Functional Programming/Folding Lists/Exercise 1/src/Task.kt", foldingListsExercise1.TaskKt::main);
+        testExample("Functional Programming/Local Functions/Exercise 3/src/Task.kt", localFunctionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask195() {
-        testExample("Functional Programming/Folding Lists/Exercise 2/src/Task.kt", foldingListsExercise2.TaskKt::main);
+        testExample("Functional Programming/Folding Lists/Exercise 1/src/Task.kt", foldingListsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask196() {
-        testExample("Functional Programming/Folding Lists/Exercise 3/src/Task.kt", foldingListsExercise3.TaskKt::main);
+        testExample("Functional Programming/Folding Lists/Exercise 2/src/Task.kt", foldingListsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask197() {
-        testExample("Functional Programming/Folding Lists/Exercise 4/src/Task.kt", foldingListsExercise4.TaskKt::main);
+        testExample("Functional Programming/Folding Lists/Exercise 3/src/Task.kt", foldingListsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask198() {
-        testExample("Functional Programming/Recursion/Exercise 1/src/Task.kt", recursionExercise1.TaskKt::main);
+        testExample("Functional Programming/Folding Lists/Exercise 4/src/Task.kt", foldingListsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask199() {
-        testExample("Functional Programming/Recursion/Exercise 2/src/Task.kt", recursionExercise2.TaskKt::main);
+        testExample("Functional Programming/Recursion/Exercise 1/src/Task.kt", recursionExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask200() {
-        testExample("Functional Programming/Recursion/Exercise 3/src/Task.kt", recursionExercise3.TaskKt::main);
+        testExample("Functional Programming/Recursion/Exercise 2/src/Task.kt", recursionExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask201() {
-        testExample("Functional Programming/Recursion/Exercise 4/src/Task.kt", recursionExercise4.TaskKt::main);
+        testExample("Functional Programming/Recursion/Exercise 3/src/Task.kt", recursionExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask202() {
-        testExample("Object-Oriented Programming/Interfaces/Exercise 1/src/Task.kt", interfacesExercise1.TaskKt::main);
+        testExample("Functional Programming/Recursion/Exercise 4/src/Task.kt", recursionExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask203() {
-        testExample("Object-Oriented Programming/Interfaces/Exercise 2/src/Task.kt", interfacesExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Interfaces/Exercise 1/src/Task.kt", interfacesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask204() {
-        testExample("Object-Oriented Programming/Interfaces/Exercise 3/src/Task.kt", interfacesExercise3.TaskKt::main);
+        testExample("Object-Oriented Programming/Interfaces/Exercise 2/src/Task.kt", interfacesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask205() {
-        testExample("Object-Oriented Programming/Complex Constructors/Exercise 1/src/Task.kt", complexConstructorsExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Interfaces/Exercise 3/src/Task.kt", interfacesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask206() {
-        testExample("Object-Oriented Programming/Complex Constructors/Exercise 2/src/Task.kt", complexConstructorsExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Complex Constructors/Exercise 1/src/Task.kt", complexConstructorsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask207() {
-        testExample("Object-Oriented Programming/Complex Constructors/Exercise 3/src/Task.kt", complexConstructorsExercise3.TaskKt::main);
+        testExample("Object-Oriented Programming/Complex Constructors/Exercise 2/src/Task.kt", complexConstructorsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask208() {
-        testExample("Object-Oriented Programming/Secondary Constructors/Exercise 1/src/Task.kt", secondaryConstructorsExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Complex Constructors/Exercise 3/src/Task.kt", complexConstructorsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask209() {
-        testExample("Object-Oriented Programming/Secondary Constructors/Exercise 2/src/Task.kt", secondaryConstructorsExercise2.TaskKt::main);
-    }
-
-    @Test
-    public void testGardenItem1() {
-        testExample("Object-Oriented Programming/Secondary Constructors/Exercise 3/src/GardenItem.kt", secondaryConstructorsExercise3.GardenItemKt::main);
+        testExample("Object-Oriented Programming/Secondary Constructors/Exercise 1/src/Task.kt", secondaryConstructorsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask210() {
-        testExample("Object-Oriented Programming/Inheritance/Exercise 1/src/Task.kt", inheritanceExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Secondary Constructors/Exercise 2/src/Task.kt", secondaryConstructorsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask211() {
-        testExample("Object-Oriented Programming/Inheritance/Exercise 2/src/Task.kt", inheritanceExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Secondary Constructors/Exercise 3/src/Task.kt", secondaryConstructorsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask212() {
-        testExample("Object-Oriented Programming/Inheritance/Exercise 3/src/Task.kt", inheritanceExercise3.TaskKt::main);
+        testExample("Object-Oriented Programming/Inheritance/Exercise 1/src/Task.kt", inheritanceExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask213() {
-        testExample("Object-Oriented Programming/Base Class Initialization/Exercise 2/src/Task.kt", baseClassInitializationExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Inheritance/Exercise 2/src/Task.kt", inheritanceExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask214() {
-        testExample("Object-Oriented Programming/Base Class Initialization/Exercise 3/src/Task.kt", baseClassInitializationExercise3.TaskKt::main);
+        testExample("Object-Oriented Programming/Inheritance/Exercise 3/src/Task.kt", inheritanceExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask215() {
-        testExample("Object-Oriented Programming/Abstract Classes/Exercise 1/src/Task.kt", abstractClassesExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Base Class Initialization/Exercise 2/src/Task.kt", baseClassInitializationExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask216() {
-        testExample("Object-Oriented Programming/Abstract Classes/Exercise 2/src/Task.kt", abstractClassesExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Base Class Initialization/Exercise 3/src/Task.kt", baseClassInitializationExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask217() {
-        testExample("Object-Oriented Programming/Abstract Classes/Exercise 3/src/Task.kt", abstractClassesExercise3.TaskKt::main);
+        testExample("Object-Oriented Programming/Abstract Classes/Exercise 1/src/Task.kt", abstractClassesExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask218() {
-        testExample("Object-Oriented Programming/Upcasting/Exercise 1/src/Task.kt", upcastingExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Abstract Classes/Exercise 2/src/Task.kt", abstractClassesExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask219() {
-        testExample("Object-Oriented Programming/Upcasting/Exercise 2/src/Task.kt", upcastingExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Abstract Classes/Exercise 3/src/Task.kt", abstractClassesExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask220() {
-        testExample("Object-Oriented Programming/Upcasting/Exercise 3/src/Task.kt", upcastingExercise3.TaskKt::main);
+        testExample("Object-Oriented Programming/Upcasting/Exercise 1/src/Task.kt", upcastingExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask221() {
-        testExample("Object-Oriented Programming/Polymorphism/Exercise 1/src/Task.kt", polymorphismExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Upcasting/Exercise 2/src/Task.kt", upcastingExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask222() {
-        testExample("Object-Oriented Programming/Polymorphism/Exercise 2/src/Task.kt", polymorphismExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Upcasting/Exercise 3/src/Task.kt", upcastingExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask223() {
-        testExample("Object-Oriented Programming/Composition/Exercise 1/src/Task.kt", compositionExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Polymorphism/Exercise 1/src/Task.kt", polymorphismExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask224() {
-        testExample("Object-Oriented Programming/Composition/Exercise 2/src/Task.kt", compositionExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Polymorphism/Exercise 2/src/Task.kt", polymorphismExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask225() {
-        testExample("Object-Oriented Programming/Composition/Exercise 3/src/Task.kt", compositionExercise3.TaskKt::main);
+        testExample("Object-Oriented Programming/Polymorphism/Exercise 3/src/Task.kt", polymorphismExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask226() {
-        testExample("Object-Oriented Programming/Inheritance & Extensions/Exercise 1/src/Task.kt", inheritanceAndExtensionsExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Composition/Exercise 1/src/Task.kt", compositionExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask227() {
-        testExample("Object-Oriented Programming/Inheritance & Extensions/Exercise 2/src/Task.kt", inheritanceAndExtensionsExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Composition/Exercise 2/src/Task.kt", compositionExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask228() {
-        testExample("Object-Oriented Programming/Class Delegation/Exercise 1/src/Task.kt", classDelegationExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Composition/Exercise 3/src/Task.kt", compositionExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask229() {
-        testExample("Object-Oriented Programming/Class Delegation/Exercise 2/src/Task.kt", classDelegationExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Inheritance & Extensions/Exercise 1/src/Task.kt", inheritanceAndExtensionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask230() {
-        testExample("Object-Oriented Programming/Class Delegation/Exercise 3/src/Task.kt", classDelegationExercise3.TaskKt::main);
+        testExample("Object-Oriented Programming/Inheritance & Extensions/Exercise 2/src/Task.kt", inheritanceAndExtensionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask231() {
-        testExample("Object-Oriented Programming/Downcasting/Exercise 1/src/Task.kt", downcastingExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Class Delegation/Exercise 1/src/Task.kt", classDelegationExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask232() {
-        testExample("Object-Oriented Programming/Downcasting/Exercise 2/src/Task.kt", downcastingExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Class Delegation/Exercise 2/src/Task.kt", classDelegationExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask233() {
-        testExample("Object-Oriented Programming/Downcasting/Exercise 3/src/Task.kt", downcastingExercise3.TaskKt::main);
+        testExample("Object-Oriented Programming/Class Delegation/Exercise 3/src/Task.kt", classDelegationExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask234() {
-        testExample("Object-Oriented Programming/Sealed Classes/Exercise 1/src/Task.kt", sealedClassesExercise1.TaskKt::main);
+        testExample("Object-Oriented Programming/Downcasting/Exercise 1/src/Task.kt", downcastingExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask235() {
-        testExample("Object-Oriented Programming/Sealed Classes/Exercise 2/src/Task.kt", sealedClassesExercise2.TaskKt::main);
+        testExample("Object-Oriented Programming/Downcasting/Exercise 2/src/Task.kt", downcastingExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask236() {
-        testExample("Object-Oriented Programming/Sealed Classes/Exercise 3/src/Task.kt", sealedClassesExercise3.TaskKt::main);
+        testExample("Object-Oriented Programming/Downcasting/Exercise 3/src/Task.kt", downcastingExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask237() {
+        testExample("Object-Oriented Programming/Sealed Classes/Exercise 1/src/Task.kt", sealedClassesExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask238() {
+        testExample("Object-Oriented Programming/Sealed Classes/Exercise 2/src/Task.kt", sealedClassesExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask239() {
+        testExample("Object-Oriented Programming/Sealed Classes/Exercise 3/src/Task.kt", sealedClassesExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask240() {
         testExample("Object-Oriented Programming/Type Checking/Exercise 1/src/Task.kt", typeCheckingExercise1.TaskKt::main);
     }
 
@@ -3882,282 +3887,292 @@ public class TestAllExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testTask238() {
+    public void testTask241() {
         testExample("Object-Oriented Programming/Type Checking/Exercise 3/src/Task.kt", typeCheckingExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask239() {
+    public void testTask242() {
         testExample("Object-Oriented Programming/Nested Classes/Exercise 1/src/Task.kt", nestedClassesExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask240() {
+    public void testTask243() {
         testExample("Object-Oriented Programming/Nested Classes/Exercise 2/src/Task.kt", nestedClassesExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask241() {
+    public void testTask244() {
         testExample("Object-Oriented Programming/Nested Classes/Exercise 3/src/Task.kt", nestedClassesExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask242() {
+    public void testTask245() {
         testExample("Object-Oriented Programming/Nested Classes/Exercise 4/src/Task.kt", nestedClassesExercise4.TaskKt::main);
     }
 
     @Test
-    public void testTask243() {
+    public void testTask246() {
         testExample("Object-Oriented Programming/Objects/Exercise 1/src/Task.kt", objectsExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask244() {
+    public void testTask247() {
         testExample("Object-Oriented Programming/Objects/Exercise 2/src/Task.kt", objectsExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask245() {
+    public void testTask248() {
         testExample("Object-Oriented Programming/Objects/Exercise 3/src/Task.kt", objectsExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask246() {
+    public void testTask249() {
         testExample("Object-Oriented Programming/Inner Classes/Exercise 1/src/Task.kt", innerClassesExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask247() {
+    public void testTask250() {
         testExample("Object-Oriented Programming/Inner Classes/Exercise 2/src/Task.kt", innerClassesExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask248() {
+    public void testTask251() {
         testExample("Object-Oriented Programming/Inner Classes/Exercise 3/src/Task.kt", innerClassesExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask249() {
+    public void testTask252() {
         testExample("Object-Oriented Programming/Companion Objects/Exercise 1/src/Task.kt", companionObjectsExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask250() {
+    public void testTask253() {
         testExample("Object-Oriented Programming/Companion Objects/Exercise 2/src/Task.kt", companionObjectsExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask251() {
+    public void testTask254() {
         testExample("Object-Oriented Programming/Companion Objects/Exercise 3/src/Task.kt", companionObjectsExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask252() {
+    public void testTask255() {
         testExample("Preventing Failure/Exception Handling/Exercise 1/src/Task.kt", exceptionHandlingExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask253() {
+    public void testTask256() {
         testExample("Preventing Failure/Exception Handling/Exercise 2/src/Task.kt", exceptionHandlingExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask254() {
+    public void testTask257() {
         testExample("Preventing Failure/Exception Handling/Exercise 3/src/Task.kt", exceptionHandlingExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask255() {
+    public void testTask258() {
         testExample("Preventing Failure/Check Instructions/Exercise 1/src/Task.kt", checkInstructionsExercise1.TaskKt::main);
     }
 
     @Test
-    public void testTask256() {
+    public void testTask259() {
         testExample("Preventing Failure/Check Instructions/Exercise 2/src/Task.kt", checkInstructionsExercise2.TaskKt::main);
     }
 
     @Test
-    public void testTask257() {
+    public void testTask260() {
         testExample("Preventing Failure/Check Instructions/Exercise 3/src/Task.kt", checkInstructionsExercise3.TaskKt::main);
     }
 
     @Test
-    public void testTask258() {
-        testExample("Preventing Failure/The Nothing Type/Exercise 1/src/Task.kt", theNothingTypeExercise1.TaskKt::main);
-    }
-
-    @Test
-    public void testTask259() {
-        testExample("Preventing Failure/The Nothing Type/Exercise 2/src/Task.kt", theNothingTypeExercise2.TaskKt::main);
-    }
-
-    @Test
-    public void testTask260() {
-        testExample("Preventing Failure/The Nothing Type/Exercise 3/src/Task.kt", theNothingTypeExercise3.TaskKt::main);
-    }
-
-    @Test
     public void testTask261() {
-        testExample("Preventing Failure/Resource Cleanup/Exercise 1/src/Task.kt", resourceCleanupExercise1.TaskKt::main);
+        testExample("Preventing Failure/Check Instructions/Exercise 4/src/Task.kt", checkInstructionsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask262() {
-        testExample("Preventing Failure/Resource Cleanup/Exercise 2/src/Task.kt", resourceCleanupExercise2.TaskKt::main);
+        testExample("Preventing Failure/The Nothing Type/Exercise 1/src/Task.kt", theNothingTypeExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask263() {
-        testExample("Preventing Failure/Resource Cleanup/Exercise 3/src/Task.kt", resourceCleanupExercise3.TaskKt::main);
+        testExample("Preventing Failure/The Nothing Type/Exercise 2/src/Task.kt", theNothingTypeExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask264() {
-        testExample("Preventing Failure/Logging/Exercise 1/src/Task.kt", loggingExercise1.TaskKt::main);
+        testExample("Preventing Failure/The Nothing Type/Exercise 3/src/Task.kt", theNothingTypeExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask265() {
-        testExample("Preventing Failure/Logging/Exercise 2/src/Task.kt", loggingExercise2.TaskKt::main);
+        testExample("Preventing Failure/Resource Cleanup/Exercise 1/src/Task.kt", resourceCleanupExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask266() {
-        testExample("Preventing Failure/Logging/Exercise 3/src/Task.kt", loggingExercise3.TaskKt::main);
+        testExample("Preventing Failure/Resource Cleanup/Exercise 2/src/Task.kt", resourceCleanupExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask267() {
-        testExample("Power Tools/Extension Lambdas/Exercise 1/src/Task.kt", extensionLambdasExercise1.TaskKt::main);
+        testExample("Preventing Failure/Resource Cleanup/Exercise 3/src/Task.kt", resourceCleanupExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask268() {
-        testExample("Power Tools/Extension Lambdas/Exercise 2/src/Task.kt", extensionLambdasExercise2.TaskKt::main);
+        testExample("Preventing Failure/Logging/Exercise 1/src/Task.kt", loggingExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask269() {
-        testExample("Power Tools/Extension Lambdas/Exercise 3/src/Task.kt", extensionLambdasExercise3.TaskKt::main);
+        testExample("Preventing Failure/Logging/Exercise 2/src/Task.kt", loggingExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask270() {
-        testExample("Power Tools/Scope Functions/Exercise 1/src/Task.kt", scopeFunctionsExercise1.TaskKt::main);
+        testExample("Preventing Failure/Logging/Exercise 3/src/Task.kt", loggingExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask271() {
-        testExample("Power Tools/Scope Functions/Exercise 2/src/Task.kt", scopeFunctionsExercise2.TaskKt::main);
+        testExample("Power Tools/Extension Lambdas/Exercise 1/src/Task.kt", extensionLambdasExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask272() {
-        testExample("Power Tools/Scope Functions/Exercise 3/src/Task.kt", scopeFunctionsExercise3.TaskKt::main);
+        testExample("Power Tools/Extension Lambdas/Exercise 2/src/Task.kt", extensionLambdasExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask273() {
-        testExample("Power Tools/Creating Generics/Exercise 1/src/Task.kt", creatingGenericsExercise1.TaskKt::main);
+        testExample("Power Tools/Extension Lambdas/Exercise 3/src/Task.kt", extensionLambdasExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask274() {
-        testExample("Power Tools/Creating Generics/Exercise 2/src/Task.kt", creatingGenericsExercise2.TaskKt::main);
+        testExample("Power Tools/Scope Functions/Exercise 1/src/Task.kt", scopeFunctionsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask275() {
-        testExample("Power Tools/Creating Generics/Exercise 3/src/Task.kt", creatingGenericsExercise3.TaskKt::main);
+        testExample("Power Tools/Scope Functions/Exercise 2/src/Task.kt", scopeFunctionsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask276() {
-        testExample("Power Tools/Operator Overloading/Exercise 1/src/Task.kt", operatorOverloadingExercise1.TaskKt::main);
+        testExample("Power Tools/Scope Functions/Exercise 3/src/Task.kt", scopeFunctionsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask277() {
-        testExample("Power Tools/Operator Overloading/Exercise 2/src/Task.kt", operatorOverloadingExercise2.TaskKt::main);
+        testExample("Power Tools/Creating Generics/Exercise 1/src/Task.kt", creatingGenericsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask278() {
-        testExample("Power Tools/Operator Overloading/Exercise 3/src/Task.kt", operatorOverloadingExercise3.TaskKt::main);
+        testExample("Power Tools/Creating Generics/Exercise 2/src/Task.kt", creatingGenericsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask279() {
-        testExample("Power Tools/Using Operators/Exercise 1/src/Task.kt", usingOperatorsExercise1.TaskKt::main);
+        testExample("Power Tools/Creating Generics/Exercise 3/src/Task.kt", creatingGenericsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask280() {
-        testExample("Power Tools/Using Operators/Exercise 2/src/Task.kt", usingOperatorsExercise2.TaskKt::main);
+        testExample("Power Tools/Operator Overloading/Exercise 1/src/Task.kt", operatorOverloadingExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask281() {
-        testExample("Power Tools/Using Operators/Exercise 3/src/Task.kt", usingOperatorsExercise3.TaskKt::main);
+        testExample("Power Tools/Operator Overloading/Exercise 2/src/Task.kt", operatorOverloadingExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask282() {
-        testExample("Power Tools/Property Delegation/Exercise 1/src/Task.kt", propertyDelegationExercise1.TaskKt::main);
+        testExample("Power Tools/Operator Overloading/Exercise 3/src/Task.kt", operatorOverloadingExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask283() {
-        testExample("Power Tools/Property Delegation/Exercise 2/src/Task.kt", propertyDelegationExercise2.TaskKt::main);
+        testExample("Power Tools/Using Operators/Exercise 1/src/Task.kt", usingOperatorsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask284() {
-        testExample("Power Tools/Property Delegation/Exercise 3/src/Task.kt", propertyDelegationExercise3.TaskKt::main);
+        testExample("Power Tools/Using Operators/Exercise 2/src/Task.kt", usingOperatorsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask285() {
-        testExample("Power Tools/Property Delegation Tools/Exercise 1/src/Task.kt", propertyDelegationToolsExercise1.TaskKt::main);
+        testExample("Power Tools/Using Operators/Exercise 3/src/Task.kt", usingOperatorsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask286() {
-        testExample("Power Tools/Property Delegation Tools/Exercise 2/src/Task.kt", propertyDelegationToolsExercise2.TaskKt::main);
+        testExample("Power Tools/Property Delegation/Exercise 1/src/Task.kt", propertyDelegationExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask287() {
-        testExample("Power Tools/Property Delegation Tools/Exercise 3/src/Task.kt", propertyDelegationToolsExercise3.TaskKt::main);
+        testExample("Power Tools/Property Delegation/Exercise 2/src/Task.kt", propertyDelegationExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask288() {
-        testExample("Power Tools/Property Delegation Tools/Exercise 4/src/Task.kt", propertyDelegationToolsExercise4.TaskKt::main);
+        testExample("Power Tools/Property Delegation/Exercise 3/src/Task.kt", propertyDelegationExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask289() {
-        testExample("Power Tools/Lazy Initialization/Exercise 1/src/Task.kt", lazyInitializationExercise1.TaskKt::main);
+        testExample("Power Tools/Property Delegation Tools/Exercise 1/src/Task.kt", propertyDelegationToolsExercise1.TaskKt::main);
     }
 
     @Test
     public void testTask290() {
-        testExample("Power Tools/Lazy Initialization/Exercise 2/src/Task.kt", lazyInitializationExercise2.TaskKt::main);
+        testExample("Power Tools/Property Delegation Tools/Exercise 2/src/Task.kt", propertyDelegationToolsExercise2.TaskKt::main);
     }
 
     @Test
     public void testTask291() {
-        testExample("Power Tools/Lazy Initialization/Exercise 3/src/Task.kt", lazyInitializationExercise3.TaskKt::main);
+        testExample("Power Tools/Property Delegation Tools/Exercise 3/src/Task.kt", propertyDelegationToolsExercise3.TaskKt::main);
     }
 
     @Test
     public void testTask292() {
-        testExample("Power Tools/Late Initialization/Exercise 1/src/Task.kt", lateInitializationExercise1.TaskKt::main);
+        testExample("Power Tools/Property Delegation Tools/Exercise 4/src/Task.kt", propertyDelegationToolsExercise4.TaskKt::main);
     }
 
     @Test
     public void testTask293() {
+        testExample("Power Tools/Lazy Initialization/Exercise 1/src/Task.kt", lazyInitializationExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask294() {
+        testExample("Power Tools/Lazy Initialization/Exercise 2/src/Task.kt", lazyInitializationExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask295() {
+        testExample("Power Tools/Lazy Initialization/Exercise 3/src/Task.kt", lazyInitializationExercise3.TaskKt::main);
+    }
+
+    @Test
+    public void testTask296() {
+        testExample("Power Tools/Late Initialization/Exercise 1/src/Task.kt", lateInitializationExercise1.TaskKt::main);
+    }
+
+    @Test
+    public void testTask297() {
         testExample("Power Tools/Late Initialization/Exercise 2/src/Task.kt", lateInitializationExercise2.TaskKt::main);
+    }
+
+    @Test
+    public void testTask298() {
+        testExample("Power Tools/Late Initialization/Exercise 3/src/Task.kt", lateInitializationExercise3.TaskKt::main);
     }
 }

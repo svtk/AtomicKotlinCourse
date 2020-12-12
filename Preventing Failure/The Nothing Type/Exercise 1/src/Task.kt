@@ -5,7 +5,7 @@ import atomictest.*
 class Failure(msg: String) : Exception(msg)
 
 fun fail(msg: String): Nothing {
-  println(msg)
+  trace(msg)
   throw Failure(msg)
 }
 
@@ -26,10 +26,8 @@ fun main() {
   capture {
     check(false)
   } eq "Failure: check() failed"
+  trace eq """
+    require() failed
+    check() failed
+  """
 }
-/* Output:
-require() failed
-Failure: require() failed
-check() failed
-Failure: check() failed
- */

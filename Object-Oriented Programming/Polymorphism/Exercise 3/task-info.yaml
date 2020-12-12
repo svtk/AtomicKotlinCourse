@@ -1,0 +1,25 @@
+type: edu
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 80
+    length: 471
+    placeholder_text: // TODO
+  - offset: 566
+    length: 204
+    placeholder_text: |-
+      /*
+        listOf(
+          Message("We", Text()),
+          Message("Are", Phone()),
+          Message("Fine", Email())
+        ).forEach { it.transmit() }
+        trace eq """
+          'We' via Text
+          'Are' via Phone
+          'Fine' via Email
+        """
+      */
+- name: test/Tests.kt
+  visible: false

@@ -8,7 +8,7 @@ fun compute(i: Int): Int {
   return i
 }
 
-object Properties {
+class Properties {
   val atDefinition = compute(1)
   val getter
     get() = compute(2)
@@ -17,16 +17,16 @@ object Properties {
 }
 
 fun main() {
-  listOf(
-    Properties::atDefinition,
-    Properties::getter,
-    Properties::lazyInit,
-    Properties::never
-  ).forEach {
-    trace("${it.name}:")
-    trace("${it.get()}")
-    trace("${it.get()}")
+  val p = Properties()
+  fun show(prop: KProperty1<Properties, *>) {
+    trace("${prop.name}:")
+    trace("${prop.get(p)}")
+    trace("${prop.get(p)}")
   }
+  show(Properties::atDefinition)
+  show(Properties::getter)
+  show(Properties::lazyInit)
+  show(Properties::never)
   trace eq """
     Compute 1
     atDefinition:

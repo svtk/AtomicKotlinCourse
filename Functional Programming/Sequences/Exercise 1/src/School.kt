@@ -1,3 +1,4 @@
+// Sequences/School1.kt
 package sequencesExercise1
 
 data class Instructor(val name: String)

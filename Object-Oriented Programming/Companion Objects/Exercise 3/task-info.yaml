@@ -23,11 +23,11 @@ files:
     placeholder_text: TODO()
   - offset: 1102
     length: 26
-    placeholder_text: TODO()
-  - offset: 1159
-    length: 46
-    placeholder_text: TODO()
-  - offset: 1254
+    placeholder_text: '"TODO"'
+  - offset: 1151
+    length: 51
+    placeholder_text: '"TODO"'
+  - offset: 1247
     length: 132
     placeholder_text: TODO()
 - name: test/Tests.kt

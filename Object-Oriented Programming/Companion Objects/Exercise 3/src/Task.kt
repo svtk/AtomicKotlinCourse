@@ -41,12 +41,10 @@ class Bank(val name: String) {
     }
     override fun toString() = "$id $number"
   }
-  fun applyForAccount(name: String) {
+  fun applyForAccount(name: String) =
     applied.add(Account(name))
-  }
-  fun addID(id: ID) {
-    applied.first { it.name == id.name }.addID(id)
-  }
+  fun addID(id: ID) = applied
+    .first { it.name == id.name }.addID(id)
   fun completeAccount(verifiedID: ID) {
     val account =
       applied.first { it.id == verifiedID }
@@ -76,5 +74,5 @@ fun main() {
   ID(name=Morty Smith, id=ePkc0HjTAU) 1000
   ID(name=Beth Smith, id=jjePlEO93w) 1001
   ID(name=Summer Smith, id=C8yaeFEgv6) 1002
-  """.trimIndent()
+  """
 }

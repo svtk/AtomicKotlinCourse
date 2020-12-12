@@ -36,6 +36,6 @@ fun main() {
   dog.play()
   trace eq """
     b.a.r.k.
-    Sitting...    
+    Sitting...
   """
 }

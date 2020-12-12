@@ -50,5 +50,5 @@ fun main() {
   [Z, X, Z, X, Y, Z, Z, Z]
   [Y, Y, X, Y, Z, Z, Z, X]
   [Y, X, Z, Y, Y, X, X, Z]
-  """.trimIndent()
+  """
 }

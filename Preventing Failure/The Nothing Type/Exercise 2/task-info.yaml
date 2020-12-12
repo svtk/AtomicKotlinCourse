@@ -6,22 +6,22 @@ files:
   - offset: 103
     length: 50
     placeholder_text: // TODO
-  - offset: 184
+  - offset: 179
     length: 17
-    placeholder_text: TODO()
-  - offset: 241
+    placeholder_text: '"TODO"'
+  - offset: 228
     length: 17
-    placeholder_text: TODO()
-  - offset: 262
+    placeholder_text: '"TODO"'
+  - offset: 249
     length: 43
     placeholder_text: class Failure
-  - offset: 342
+  - offset: 329
     length: 33
     placeholder_text: TODO()
-  - offset: 410
+  - offset: 397
     length: 33
     placeholder_text: TODO()
-  - offset: 476
+  - offset: 463
     length: 31
     placeholder_text: TODO()
 - name: test/Tests.kt

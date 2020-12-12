@@ -7,7 +7,7 @@ files:
     length: 41
     placeholder_text: // import nestedClassesExercise1.Game.Mark.*
   - offset: 191
-    length: 984
+    length: 971
     placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false

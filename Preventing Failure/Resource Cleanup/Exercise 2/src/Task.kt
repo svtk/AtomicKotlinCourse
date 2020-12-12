@@ -1,11 +1,12 @@
 // ResourceCleanup/ResourceCleanupSoln2.kt
 package resourceCleanupExercise2
+import atomictest.trace
 
 class Cleanup : AutoCloseable {
-  fun f() = println("f()")
-  fun g() = println("g()")
-  fun h() = println("h()")
-  override fun close() = println("close()")
+  fun f() = trace("f()")
+  fun g() = trace("g()")
+  fun h() = trace("h()")
+  override fun close() = trace("close()")
 }
 
 fun main() {
@@ -14,10 +15,5 @@ fun main() {
     it.g()
     it.h()
   }
+  trace eq "f() g() h() close()"
 }
-/* Output:
-f()
-g()
-h()
-close()
- */

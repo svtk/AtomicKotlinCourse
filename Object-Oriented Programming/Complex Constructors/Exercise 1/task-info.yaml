@@ -5,6 +5,13 @@ files:
   placeholders:
   - offset: 95
     length: 81
-    placeholder_text: 'class Alien(val name: String)'
+    placeholder_text: // TODO class Alien
+  - offset: 191
+    length: 68
+    placeholder_text: |-
+      /*
+        val alien = Alien("Pencilvester")
+        alien.myName eq "Pencilvester"
+      */
 - name: test/Tests.kt
   visible: false

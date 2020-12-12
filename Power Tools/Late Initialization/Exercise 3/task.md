@@ -29,3 +29,7 @@ Finish the initialization for `turbines`, then add
 is in range, then returns the desired generator. Finally, add a `status()`
 member function that uses `forEach` to show the status of each generator in the
 `PowerPlant`. The code in `main()` tests your solution.
+
+<sub> This task doesn't contain automatic tests,
+so it's always marked as "Correct" when you run "Check".
+Please compare your solution with the one provided! </sub>

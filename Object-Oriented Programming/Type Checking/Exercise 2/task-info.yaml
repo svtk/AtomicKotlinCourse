@@ -5,12 +5,12 @@ files:
 - name: src/TaskA.kt
   visible: true
   placeholders:
-  - offset: 53
+  - offset: 91
     length: 1426
     placeholder_text: // TODO
 - name: src/TaskB.kt
   visible: true
   placeholders:
-  - offset: 78
+  - offset: 116
     length: 1239
     placeholder_text: // TODO

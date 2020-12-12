@@ -42,7 +42,7 @@ class NetConnection(val url: String) {
 
 enum class Status { Success, Failed }
 
-private val logger = Logger("LoggingSoln1.txt")
+private val logger = Logger("LoggingSoln2.txt")
 
 fun transact(level: Int): Status {
   val db = DataBase()
@@ -96,7 +96,7 @@ fun main() {
     } catch (e: Except) {
       logger.error("main(): $e")
     }
-  logger.logFile.readText().trimIndent() eq
+  logger.logFile.readText() eq
   """
   Error: DBOpenFail
   Error: NetworkOpenFail

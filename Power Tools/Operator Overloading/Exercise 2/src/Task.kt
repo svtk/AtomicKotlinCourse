@@ -1,5 +1,6 @@
 // OperatorOverloading/OpOverloadingSoln2.kt
 package operatorOverloadingExercise2
+import atomictest.trace
 
 enum class Count {
   Eeny, Meeny, Miney, Moe;
@@ -22,39 +23,39 @@ operator fun Count.dec(): Count =
 fun main() {
   var c = Count.Eeny
   for (n in 1..4) {
-    println("${c++} -> $c")
+    trace("${c++} -> $c")
   }
-  println("---------------")
+  trace("---------------")
   for (n in 1..4) {
-    println("${++c} -> $c")
+    trace("${++c} -> $c")
   }
-  println("---------------")
+  trace("---------------")
   for (n in 1..4) {
-    println("${c--} -> $c")
+    trace("${c--} -> $c")
   }
-  println("---------------")
+  trace("---------------")
   for (n in 1..4) {
-    println("${--c} -> $c")
+    trace("${--c} -> $c")
   }
+  trace eq """
+    Eeny -> Meeny
+    Meeny -> Miney
+    Miney -> Moe
+    Moe -> Eeny
+    ---------------
+    Meeny -> Meeny
+    Miney -> Miney
+    Moe -> Moe
+    Eeny -> Eeny
+    ---------------
+    Eeny -> Moe
+    Moe -> Miney
+    Miney -> Meeny
+    Meeny -> Eeny
+    ---------------
+    Moe -> Moe
+    Miney -> Miney
+    Meeny -> Meeny
+    Eeny -> Eeny
+  """
 }
-/* Exercise Output:
-Eeny -> Meeny
-Meeny -> Miney
-Miney -> Moe
-Moe -> Eeny
----------------
-Meeny -> Meeny
-Miney -> Miney
-Moe -> Moe
-Eeny -> Eeny
----------------
-Eeny -> Moe
-Moe -> Miney
-Miney -> Meeny
-Meeny -> Eeny
----------------
-Moe -> Moe
-Miney -> Miney
-Meeny -> Meeny
-Eeny -> Eeny
-*/

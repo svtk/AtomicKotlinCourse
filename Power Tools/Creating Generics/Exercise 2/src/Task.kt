@@ -9,7 +9,6 @@ class CrateList<T> : ArrayList<Crate<T>>() {
   ) : Crate<T>(contents) {
     override fun toString() = "[${get()}]"
   }
-
   fun add(item: T) {
     add(DecoratedCrate(item))
   }

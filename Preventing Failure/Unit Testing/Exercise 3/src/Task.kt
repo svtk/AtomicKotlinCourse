@@ -1,4 +1,4 @@
-// Tests/unitTestingExercise3/UnitTestingSoln3.kt
+// Tests/unittesting/UnitTestingSoln3.kt
 package unitTestingExercise3
 import classdelegation.SpaceShipControls
 import kotlin.test.*

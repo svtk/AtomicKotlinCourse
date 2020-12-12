@@ -7,7 +7,7 @@ files:
     length: 314
     placeholder_text: class Pipe
   - offset: 917
-    length: 248
+    length: 235
     placeholder_text: |-
       /*
         val pipe = Pipe()

@@ -1,4 +1,4 @@
-// Tests/unitTestingExercise1/UnitTestingSoln1.kt
+// Tests/unittesting/UnitTestingSoln1.kt
 package unitTestingExercise1
 import sealedclasses.Bus
 import sealedclasses.Train

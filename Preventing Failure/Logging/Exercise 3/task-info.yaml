@@ -10,23 +10,23 @@ files:
     length: 5
     placeholder_text: TODO()
   - offset: 305
-    length: 154
+    length: 138
     placeholder_text: |-
       private fun log(type: String, msg: String) =
           logFile.appendText("$type: $msg\n")
-  - offset: 487
+  - offset: 471
     length: 15
     placeholder_text: log("Trace", msg)
-  - offset: 530
+  - offset: 514
     length: 15
     placeholder_text: log("Debug", msg)
-  - offset: 572
+  - offset: 556
     length: 14
     placeholder_text: log("Info", msg)
-  - offset: 613
+  - offset: 597
     length: 14
     placeholder_text: log("Warn", msg)
-  - offset: 655
+  - offset: 639
     length: 15
     placeholder_text: log("Error", msg)
 - name: test/Tests.kt

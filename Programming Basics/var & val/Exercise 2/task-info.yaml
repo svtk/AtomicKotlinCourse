@@ -2,9 +2,9 @@ type: output
 files:
 - name: test/output.txt
   visible: false
-- name: src/ccc.kt
+- name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 43
+  - offset: 65
     length: 57
     placeholder_text: // TODO
