@@ -6,17 +6,17 @@ files:
   - offset: 231
     length: 115
     placeholder_text: ' = Generator(0) // TODO'
-  - offset: 413
+  - offset: 411
     length: 31
     placeholder_text: TODO()
-  - offset: 531
+  - offset: 529
     length: 31
     placeholder_text: TODO()
-  - offset: 609
+  - offset: 607
     length: 73
     placeholder_text: TODO()
-  - offset: 708
-    length: 51
+  - offset: 702
+    length: 47
     placeholder_text: TODO()
 - name: test/Tests.kt
   visible: false

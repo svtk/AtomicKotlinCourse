@@ -2,7 +2,7 @@
 package operatorOverloadingExercise3
 import atomictest.*
 
-class Repository<T>(val initSize: Int = 10) {
+class Repository<T>(initSize: Int = 10) {
   private val list =
     MutableList<T?>(initSize) { null }
   operator fun plusAssign(rv: T) {

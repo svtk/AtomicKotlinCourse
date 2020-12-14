@@ -14,7 +14,7 @@ class Turbine(val id: Int) {
     }
   override fun toString() =
     "Generator $id running: " +
-      "${::_generator.isInitialized}"
+    "${::_generator.isInitialized}"
 }
 
 class PowerPlant(nTurbines: Int = 4) {
@@ -24,10 +24,8 @@ class PowerPlant(nTurbines: Int = 4) {
     require(number in 0..turbines.size)
     return turbines[number].generator
   }
-  fun status() {
-    turbines.forEach {
-      trace(it.toString())
-    }
+  fun status() = turbines.forEach {
+    trace(it.toString())
   }
 }
 

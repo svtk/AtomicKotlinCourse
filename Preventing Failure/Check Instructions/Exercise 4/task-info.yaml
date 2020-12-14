@@ -3,10 +3,10 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 86
+  - offset: 103
     length: 985
     placeholder_text: class Tank
-  - offset: 1086
+  - offset: 1103
     length: 422
     placeholder_text: |-
       /*

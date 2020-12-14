@@ -1,4 +1,4 @@
-// CheckInstructions/Task4.kt
+// CheckInstructions/CheckInstructionsSoln4.kt
 package checkInstructionsExercise4
 import atomictest.*
 
