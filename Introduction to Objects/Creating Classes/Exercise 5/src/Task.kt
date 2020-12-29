@@ -1,3 +1,4 @@
+// CreatingClasses/Task5.kt
 package creatingClassesExercise5
 
 fun cap(s: String) = s.capitalize()

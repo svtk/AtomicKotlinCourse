@@ -1,6 +1,6 @@
 // Enumerations/EnumImport.kt
 import atomictest.eq
-import enumerations.Level.*    // [1]
+import enumerations.Level.*   // [1]
 
 fun main() {
   Overflow eq "Overflow"

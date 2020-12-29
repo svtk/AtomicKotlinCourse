@@ -11,7 +11,7 @@ files:
     placeholder_text: '"TODO"'
   - offset: 228
     length: 17
-    placeholder_text: '"TODO"'
+    placeholder_text: TODO()
   - offset: 249
     length: 43
     placeholder_text: class Failure

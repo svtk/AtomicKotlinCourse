@@ -22,7 +22,7 @@ class VacationHouse(
   zip: String,
   val startMonth: String,
   val endMonth: String
-): House(address, state, zip) {
+) : House(address, state, zip) {
   override fun toString() =
     "Vacation house at $fullAddress " +
     "from $startMonth to $endMonth"
@@ -30,7 +30,7 @@ class VacationHouse(
 
 class TreeHouse(
   val name: String
-): House("Tree Street, TR 00000") {
+) : House("Tree Street, TR 00000") {
   override fun toString() =
     "$name tree house at $fullAddress"
 }

@@ -1,3 +1,4 @@
+// Properties/Task4.kt
 package propertiesExercise4
 
 class Counter {

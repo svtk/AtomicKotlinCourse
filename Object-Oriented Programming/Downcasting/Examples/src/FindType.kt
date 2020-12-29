@@ -8,6 +8,6 @@ val group: List<Creature> = listOf(
 
 fun main() {
   val dog = group
-    .find { it is Dog } as Dog?      // [1]
-  dog?.bark() eq "Yip!"              // [2]
+    .find { it is Dog } as Dog?    // [1]
+  dog?.bark() eq "Yip!"            // [2]
 }

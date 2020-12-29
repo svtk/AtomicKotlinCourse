@@ -1,3 +1,4 @@
+// Exceptions/Task4.kt
 package exceptionsExercise4
 
 fun foo() {
@@ -9,5 +10,5 @@ fun bar() {
 }
 
 fun main() {
-  bar()
+  // bar() // Uncomment this to see exception
 }

@@ -17,6 +17,6 @@ files:
     placeholder_text: TODO()
   - offset: 702
     length: 47
-    placeholder_text: TODO()
+    placeholder_text: '"TODO"'
 - name: test/Tests.kt
   visible: false

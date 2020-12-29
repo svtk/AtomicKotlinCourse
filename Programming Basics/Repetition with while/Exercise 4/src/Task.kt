@@ -1,3 +1,4 @@
+// RepetitionWithWhile/Task4.kt
 package repetitionWithWhileExercise4
 
 fun getFooResult(): Int = 736

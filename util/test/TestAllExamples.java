@@ -1673,7 +1673,7 @@ public class TestAllExamples extends AbstractTestExamples {
 
     @Test
     public void testPlayerInterface() {
-        testExample("Object-Oriented Programming/Interfaces/Examples/src/PlayerInterface.kt", propertiesininterfaces.PlayerInterfaceKt::main);
+        testExample("Object-Oriented Programming/Interfaces/Examples/src/PlayerInterface.kt", interfaces.PlayerInterfaceKt::main);
     }
 
     @Test

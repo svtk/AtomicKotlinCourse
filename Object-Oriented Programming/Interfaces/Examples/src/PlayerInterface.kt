@@ -1,5 +1,5 @@
 // Interfaces/PlayerInterface.kt
-package propertiesininterfaces
+package interfaces
 import atomictest.eq
 
 interface Player {
