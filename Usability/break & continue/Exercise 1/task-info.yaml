@@ -1,4 +1,4 @@
-type: output
+type: edu
 files:
 - name: src/Task.kt
   visible: true
