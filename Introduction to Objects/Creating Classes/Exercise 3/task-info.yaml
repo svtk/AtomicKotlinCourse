@@ -6,6 +6,13 @@ files:
   - offset: 62
     length: 264
     placeholder_text: // create Robot class
+  - offset: 341
+    length: 36
+    placeholder_text: |-
+      /*
+        val robot = Robot()
+        robot.up(11)
+      */
 - name: test/Tests.kt
   visible: false
 feedback_link: |

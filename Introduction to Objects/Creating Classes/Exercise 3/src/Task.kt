@@ -20,10 +20,8 @@ class Robot {
 }
 
 fun main() {
-/*
   val robot = Robot()
-  robot.goUp(11)
-*/
+  robot.up(11)
 }
 /* Expected output:
 Up 11 steps
