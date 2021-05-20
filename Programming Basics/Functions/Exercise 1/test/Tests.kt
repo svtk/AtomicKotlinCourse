@@ -9,8 +9,8 @@ import util.TIMEOUT
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class TestFunctionsExercise1 {
   private fun testFunction(i: Int) {
-    Assert.assertEquals("getSquare($i) should return ${i * i}",
-      i * i, getSquare(i))
+    Assert.assertEquals("squareInt($i) should return ${i * i}",
+      i * i, squareInt(i))
   }
 
   @Test(timeout = TIMEOUT)
