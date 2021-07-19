@@ -11,7 +11,7 @@ be updated correspondingly.
 Put the caret on `foo()` and select the <span class="control">`Change
 Signature`</span> refactoring. Press the icon with the plus symbol (`+`) to add
 one more parameter. Specify its name as `d` and its type as `Double` with a
-default value of `1.0`. Press <span class="control">`EditorEnter`</span> or
+default value of `1.0`. Press <span class="control">`Enter`</span> or
 click the <span class="control">`Refactor`</span> button. Note how the callers
 change: the default value is now used for all the callers. Add the same
 parameter to `bar()` without specifying the default value.
