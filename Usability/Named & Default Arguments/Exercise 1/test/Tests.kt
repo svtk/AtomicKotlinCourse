@@ -33,7 +33,7 @@ class TestNamedAndDefaultArgumentsExercise1 {
       val side1Value = map["side1"] ?: 1.0
       val side2Value = map["side2"] ?: 2.0
       val colorValue = map["color"] ?: "yellow"
-      val expected = "Rectangle ${side1Value}x$side2Value of '$colorValue' color"
+      val expected = "$colorValue rectangle $side1Value x $side2Value"
       val message = "Wrong result for " + if (map.isEmpty()) "no parameters" else "parameters $map"
       Assert.assertEquals(message, expected, instance.toString())
     }

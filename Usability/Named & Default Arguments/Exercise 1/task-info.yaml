@@ -4,9 +4,9 @@ files:
   visible: true
   placeholders:
   - offset: 75
-    length: 204
+    length: 193
     placeholder_text: class Rectangle
-  - offset: 320
+  - offset: 309
     length: 365
     placeholder_text: // TODO
 - name: test/Tests.kt
