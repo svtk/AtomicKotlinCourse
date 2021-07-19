@@ -2,7 +2,7 @@
 
 IntelliJ IDEA is a powerful tool that allows you to carry out common actions
 in an efficient way. Running the `main()` function is an example of such an
-action, and IntelliJ IDEA allows you to do that by clicking a shortcut. A
+action, and IntelliJ IDEA allows you to do that by pressing a shortcut. A
 shortcut is a special key combination that causes a specific command to be
 executed. Throughout this course, you'll learn common shortcuts.
 
