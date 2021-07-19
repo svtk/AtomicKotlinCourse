@@ -18,8 +18,8 @@ the beginning of a line:
 |-----------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------|
 | Up with selection                 | <span class="shortcut">&shortcut:EditorUpWithSelection;</span>        | Move the caret one line up, selecting the text.                |
 | Right with selection              | <span class="shortcut">&shortcut:EditorRightWithSelection;</span>     | Move the caret one character to the right, selecting the text. |
-| Move to line end with selection   | <span class="shortcut">&shortcut:EditorTextEndWithSelection;</span>   | Move the caret to the end of line, selecting the text.         |
-| Move to line start with selection | <span class="shortcut">&shortcut:EditorTextStartWithSelection;</span> | Move the caret to the beginning of line, selecting the text.   |
+| Move to line end with selection   | <span class="shortcut">&shortcut:EditorLineEndWithSelection;</span>   | Move the caret to the end of line, selecting the text.         |
+| Move to line start with selection | <span class="shortcut">&shortcut:EditorLineStartWithSelection;</span> | Move the caret to the beginning of line, selecting the text.   |
 
 Duplicate the line `println("Hello, Kotlin!")` in the example by selecting it
 and then copy-pasting it.
