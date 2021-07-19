@@ -15,7 +15,7 @@ class TestSummaryIExercise6 {
       .joinToString("\n")
     runAndCheckSystemOutput("Wrong result for 'everyFifthNonWhitespace()'",
       expected) {
-      everyFifthNonWhitespace(s)
+      everyFifthNonSpace(s)
     }
   }
 
