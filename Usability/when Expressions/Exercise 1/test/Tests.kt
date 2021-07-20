@@ -10,11 +10,11 @@ import util.TIMEOUT
 class TestWhenExpressionsExercise1 {
   private fun expected(cloudiness: Int): String =
     when (cloudiness) {
-      in 81..100 -> "Sunny"
-      in 61..80 -> "Mostly Sunny"
+      in 81..100 -> "Cloudy"
+      in 61..80 -> "Mostly Cloudy"
       in 41..60 -> "Partly Sunny"
-      in 21..40 -> "Mostly Cloudy"
-      in 0..20 -> "Cloudy"
+      in 21..40 -> "Mostly Sunny"
+      in 0..20 -> "Sunny"
       else -> throw IllegalArgumentException(
         "Cloudiness value should be between 0 and 100")
     }
