@@ -21,9 +21,17 @@ the following:
 
 - Press <span class="shortcut">&shortcut:ToggleLineBreakpoint;</span>.
 
-Set breakpoints on lines 4 and 5. Then begin debugging the program again and
-notice how it stops at the first breakpoint. The debug window below the screen
-shows you the values of all the variables. Continue the process by clicking on
+Set breakpoints on lines 6 and 7:
+
+```kotlin
+x = 2
+println(x)
+```
+
+Then begin debugging
+the program again and  notice how it stops at the first breakpoint.
+The debug window below the screen  shows you the values of all the variables.
+Continue the process by clicking on
 <span class="control">`Resume program`</span> on the left of the debug window
 or pressing <span class="shortcut">&shortcut:Resume;</span>.
 Notice how the value of the variable `x` changes after the assignment.
