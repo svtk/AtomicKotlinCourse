@@ -2,5 +2,16 @@ type: edu
 files:
 - name: src/Task.kt
   visible: true
+  placeholders:
+  - offset: 58
+    length: 59
+    placeholder_text: |-
+      // fun zilch()
+      // fun zilch2()
+  - offset: 134
+    length: 52
+    placeholder_text: |-
+      // var x
+        // var y
 - name: test/Tests.kt
   visible: false
