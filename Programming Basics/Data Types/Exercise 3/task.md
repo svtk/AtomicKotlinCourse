@@ -14,7 +14,7 @@ You can open the hint within IntelliJ IDEA to understand the results.
 <div class="hint">
 
 Characters are stored as numbers corresponding to their
-[ASCII codes](https://en.wikipedia.org/wiki/ASCII), so adding an integer to a
-character produces a new character corresponding to the new code value.
+[Unicode](https://en.wikipedia.org/wiki/Unicode) values, so adding an integer to
+a character produces a new character corresponding to the new code value.
 
 </div>
