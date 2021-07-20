@@ -17,5 +17,5 @@ The IDE allows you to rename a declaration automatically. Put the caret on the
 You can also choose <span class="control">`Refactor`</span> from the
 application menu, then choose <span class="control">`Rename`</span>.
 
-Rename the `val` name to `result` without renaming "answer" in the string
-literal.
+Rename the `val` name to `result` without changing the word "answer" in the
+string literal. The string should become: "The answer is $result".
