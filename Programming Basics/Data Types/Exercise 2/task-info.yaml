@@ -12,8 +12,5 @@ files:
   - offset: 682
     length: 89
     placeholder_text: TODO() // write some examples
-  - offset: 861
-    length: 7
-    placeholder_text: ???
 - name: test/output.txt
   visible: false
