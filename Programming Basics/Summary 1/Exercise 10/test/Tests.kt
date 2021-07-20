@@ -10,7 +10,8 @@ import util.runAndCheckSystemOutput
 class TestSummaryIExercise10 {
   private fun checkOutput(rows: Int, columns: Int, expected: String) {
     runAndCheckSystemOutput(
-      "Incorrect output for rows = $rows, columns = $columns:",
+      "Incorrect output for rows = $rows, columns = $columns " +
+        "(pay attention to the spaces!):",
       expected) {
       showSnake(rows, columns)
     }
