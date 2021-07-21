@@ -5,10 +5,10 @@ files:
   placeholders:
   - offset: 307
     length: 82
-    placeholder_text: // TODO
+    placeholder_text: // class Tram
   - offset: 391
     length: 90
-    placeholder_text: // TODO
+    placeholder_text: // class Plane
   - offset: 651
     length: 112
     placeholder_text: // TODO
@@ -20,6 +20,6 @@ files:
     placeholder_text: // TODO
   - offset: 109
     length: 26
-    placeholder_text: TODO()
+    placeholder_text: // TODO
 - name: test/Tests.kt
   visible: false
