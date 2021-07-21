@@ -4,6 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import util.*
 import java.lang.reflect.InvocationTargetException
+import kotlin.reflect.KFunction
 import kotlin.reflect.full.createInstance
 import kotlin.test.assertEquals
 
@@ -14,7 +15,7 @@ class TestNonNullAssertionsExercise1 {
         val ignitionFunc = loadMemberFunction(rocketClass, "ignition")
         checkParametersOfMemberFunction(ignitionFunc, listOf())
         assertEquals("Liftoff!", ignitionFunc.call(rocketInstance), "Wrong result after calling 'rocket.ignition()'")
-        val launchFunc = ::launch
+        val launchFunc: KFunction<*> = ::launch
         checkParametersOfTopLevelFunction(launchFunc, listOf("rocket" to "nonNullAssertionsExercise1.Rocket?"))
         assertEquals("Liftoff!", launchFunc.call(rocketInstance), "Wrong result after calling 'launch(rocket)'")
         try {
