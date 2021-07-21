@@ -5,7 +5,7 @@ Create a `Robot` class with the following four member functions:
 `up(steps: Int)`. Each function should display one of the following
 phrases on the console:
 
-```
+```text
 Right N steps
 Left N steps
 Down N steps

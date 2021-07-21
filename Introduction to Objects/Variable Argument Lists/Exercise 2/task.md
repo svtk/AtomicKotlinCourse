@@ -7,7 +7,7 @@ commas and surrounded by square brackets.
 
 For example, the output for `printArgs("Numbers: ", 1, 2, 3)` should be:
 
-```
+```text
 Numbers: [1, 2, 3]
 ```
 

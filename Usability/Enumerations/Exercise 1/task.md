@@ -8,7 +8,7 @@ movement.
 The location is stored as a pair of coordinates `(x, y)`, where `(0, 0)` is the
 top-left corner:
 
-```
+```text
 (x, y)
 (0, 0) (1, 0)
 (0, 1) (1, 1)

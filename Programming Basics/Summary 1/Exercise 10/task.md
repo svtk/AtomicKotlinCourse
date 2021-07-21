@@ -4,7 +4,7 @@ Create a function `showSnake(rows: Int, columns: Int)` that displays a table
 filled with sequential numbers in a form of snake. For example, `showSnake(3,
 3)` should produce the following:
 
-```
+```text
  0 1 2
  5 4 3
  6 7 8
@@ -19,6 +19,6 @@ It depends on the biggest number, the last one: put exactly one space before it.
 
 Use the string `"%${width}d".format(value)`, where the `width` variable stores
 the width of each number cell, to format the value based on the actual input
-(`rows` and `columns`). 
+(`rows` and `columns`).
 
 </div>

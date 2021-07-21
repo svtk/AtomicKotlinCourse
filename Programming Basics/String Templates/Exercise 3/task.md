@@ -8,7 +8,7 @@ and the `Char` value with single quotes.
 
 Sample output:
 
-```
+```text
 i: 10
 s: "abc"
 c: 'a'

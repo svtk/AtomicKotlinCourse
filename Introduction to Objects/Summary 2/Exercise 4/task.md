@@ -2,7 +2,7 @@
 
 Create a `Dictionary` class that stores translations for words. It includes a
 member function `addTranslations(word: String, translations: String)`. The
-`translations` for `word` are delimited by whitespaces. If `word` is already
+`translations` for `word` are delimited by whitespace. If `word` is already
 present in the `Dictionary`, `addTranslations()` throws an
 `IllegalArgumentException` with the message
 `"Dictionary already has translations for '$word'"`.

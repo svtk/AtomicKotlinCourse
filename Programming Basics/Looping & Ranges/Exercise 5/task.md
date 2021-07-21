@@ -7,7 +7,7 @@ expands into a `for` expression. You type the expression you want to iterate
 over, along with the name for the index variable. IntelliJ IDEA automatically
 suggests the variable name to iterate over if it's available in the context.
 
-```
+```text
 iter + tab
 
 for (i in iterable) {

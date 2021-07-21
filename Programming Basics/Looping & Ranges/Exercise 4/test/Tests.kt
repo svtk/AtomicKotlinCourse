@@ -12,7 +12,7 @@ class TestLoopingAndRangesExercise4 {
     runAndCheckSystemOutput(
       "Incorrect output for n = $n:",
       expected) {
-      printHalfPyramid(n)
+      showHalfTriangle(n)
     }
   }
 

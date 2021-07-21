@@ -3,7 +3,7 @@
 IntelliJ IDEA allows you to extract repetitive code into a function. Select the
 following code in the body of the first function:
 
-```
+```text
 if (x <= 0) {
     println("Incorrect input: $x should be positive")
     return

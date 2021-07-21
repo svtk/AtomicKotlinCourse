@@ -86,7 +86,7 @@ class TestMemberReferencesExercise1 {
     ) {
         assertEquals(
                 expected = expected.let { (pos, neg) -> pos.toSet() to neg.toSet() },
-                actual = initial.partAmphibious().let { (pos, neg) -> pos.toSet() to neg.toSet() },
+                actual = initial.partitionAmphibious().let { (pos, neg) -> pos.toSet() to neg.toSet() },
                 message = "Wrong result for 'partAmphibious()' called on $initial:"
         )
     }

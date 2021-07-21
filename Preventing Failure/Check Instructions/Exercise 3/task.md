@@ -1,7 +1,7 @@
 ## Check Instructions (#3)
 
 This exercise further explores ranges, introduced in [Looping &
-Ranges](https://stepik.org/lesson/104311/step/1), and shows how they can be used with check
+Ranges], and shows how they can be used with check
 instructions.
 
 Create a class `Level` with two constructor arguments: `val range: IntRange`,

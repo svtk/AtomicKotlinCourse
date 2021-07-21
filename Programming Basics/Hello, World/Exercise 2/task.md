@@ -3,7 +3,7 @@
 Display "Hello, Kotlin!" on the console, but with "Kotlin" appearing on the
 next line. You can display two separate `String`s to achieve this:
 
-```
+```text
 Hello,
 Kotlin!
 ```

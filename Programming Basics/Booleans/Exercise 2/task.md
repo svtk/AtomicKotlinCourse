@@ -7,7 +7,7 @@ Write a similar function for `showOr()`.
 
 The sample output for `showAnd(true, true)` should be:
 
-```
+```text
 true && true == true
 ```
 

@@ -5,7 +5,7 @@ number. For `right()`, `left()`, `down()` and `up()`, a negative or zero
 `steps` argument should not update the location. Instead it should produce
 console output using this `String`:
 
-```
+```text
 "steps argument must be positive, is $steps"
 ```
 

@@ -10,5 +10,5 @@ The `main()` starter code creates a `List<Pet>`. Using `filter()` together with
 member references, implement three functions `liveOnLand()`, `liveInWater()`
 and `areAmphibious()` that discover which pets in the list live on land, in the
 water, or are amphibious. Lastly, use `partition()` to implement the
-`partAmphibious()` function that divides the pets into those that are
+`partitionAmphibious()` function that divides the pets into those that are
 amphibious and those that are not.

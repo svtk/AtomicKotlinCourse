@@ -2,12 +2,12 @@
 
 Create a `data` class called `AirlineTicket` containing the following fields:
 
--   `firstName: String`
+- `firstName: String`
 
--   `lastName: String`
+- `lastName: String`
 
--   `ticket: Int`
+- `ticket: Int`
 
--   `origin: String`
+- `origin: String`
 
--   `destination: String`
+- `destination: String`
