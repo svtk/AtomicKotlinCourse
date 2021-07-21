@@ -9,11 +9,11 @@ operations for a `Repository` named `r`:
   there are no `null` locations remaining, appends `rv` to the end of `list`.
 
 - `r[n] = rv` Places `rv` into location `n` in `list`. Requires that `n` be
-  equal to or greater than zero and less than `list.size`. Requires that `list[n]` be
-  non-`null`.
+  greater than or equal to zero and less than `list.size`. Requires that
+  `list[n]` be non-`null`.
 
-- `r[n]` Retrieves the value `list[n]`. Requires that `n` be equal to or greater 
-  than zero and less than `list.size`. Requires that `list[n]` be non-`null`.
+- `r[n]` Retrieves the value `list[n]`. Requires that `n` be greater than or
+  equal to zero and less than `list.size`. Requires that `list[n]` be non-`null`.
 
 Add a `toString()` that produces `list` separated by commas.
 

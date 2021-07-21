@@ -4,9 +4,9 @@ files:
   visible: true
   placeholders:
   - offset: 103
-    length: 736
+    length: 722
     placeholder_text: class Repository
-  - offset: 854
+  - offset: 840
     length: 833
     placeholder_text: |-
       /*
