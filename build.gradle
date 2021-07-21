@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.4.0'
+    ext.kotlin_version = '1.5.20'
     repositories {
         mavenCentral()
     }
@@ -34,8 +34,8 @@ allprojects {
         compile "junit:junit:4.12"
 
         // Logging support for samples:
-        compile 'io.github.microutils:kotlin-logging:1.6.24'
-        compile 'org.slf4j:slf4j-simple:1.8.0-beta4'
+        compile 'io.github.microutils:kotlin-logging:2.0.10'
+        compile 'org.slf4j:slf4j-simple:1.7.32'
     }
     compileKotlin.destinationDir = compileJava.destinationDir
     compileKotlin {
