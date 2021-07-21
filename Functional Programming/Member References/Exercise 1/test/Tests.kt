@@ -32,7 +32,7 @@ class TestMemberReferencesExercise1 {
         loadToplevelFunction(loadFileFacade("memberReferencesExercise1"), "liveOnLand")
         loadToplevelFunction(loadFileFacade("memberReferencesExercise1"), "liveInWater")
         loadToplevelFunction(loadFileFacade("memberReferencesExercise1"), "areAmphibious")
-        loadToplevelFunction(loadFileFacade("memberReferencesExercise1"), "partAmphibious")
+        loadToplevelFunction(loadFileFacade("memberReferencesExercise1"), "partitionAmphibious")
     }
 
     @Test
@@ -73,7 +73,7 @@ class TestMemberReferencesExercise1 {
     }
 
     @Test
-    fun `#05 part amphibious`() {
+    fun `#05 partition amphibious`() {
         assertPartition(emptyPets, expected = emptyPets to emptyPets)
         assertPartition(landPets, expected = emptyPets to landPets)
         assertPartition(noLandPets, expected = amphibious to noLandPets.subList(0, 1))
@@ -87,7 +87,7 @@ class TestMemberReferencesExercise1 {
         assertEquals(
                 expected = expected.let { (pos, neg) -> pos.toSet() to neg.toSet() },
                 actual = initial.partitionAmphibious().let { (pos, neg) -> pos.toSet() to neg.toSet() },
-                message = "Wrong result for 'partAmphibious()' called on $initial:"
+                message = "Wrong result for 'partitionAmphibious()' called on $initial:"
         )
     }
 }
