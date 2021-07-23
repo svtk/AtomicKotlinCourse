@@ -32,8 +32,9 @@ object CreatePet {
 }
 
 fun main() {
-  CreatePet.dog().speak() eq "Bark home!"
+/*  CreatePet.dog().speak() eq "Bark home!"
   CreatePet.cat().speak() eq "Meow home!"
   CreatePet.hamster().speak() eq "Squeak home!"
   CreatePet.goldfish().speak() eq "Blub home!"
+*/
 }
