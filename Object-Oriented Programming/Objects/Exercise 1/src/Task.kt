@@ -16,12 +16,13 @@ private object Space2 {
 }
 
 fun main() {
-  f()
+/*  f()
   Space.f()
   Space2.f()
   trace eq """
     f() p
     Space.f() Space.p
     Space2.f() Space2.p
-  """
+  """ 
+ */
 }
