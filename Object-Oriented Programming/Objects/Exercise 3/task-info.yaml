@@ -3,8 +3,25 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 234
-    length: 748
-    placeholder_text: // TODO
+  - offset: 277
+    length: 50
+    placeholder_text: /*TODO*/
+  - offset: 372
+    length: 87
+    placeholder_text: /*TODO*/
+  - offset: 503
+    length: 85
+    placeholder_text: /*TODO*/
+  - offset: 765
+    length: 116
+    placeholder_text: |-
+      override fun populate() {
+          TODO("Not yet implemented")
+        }
+  - offset: 635
+    length: 54
+    placeholder_text: |-
+      override val environment =
+          TODO("Not yet implemented")
 - name: test/Tests.kt
   visible: false
