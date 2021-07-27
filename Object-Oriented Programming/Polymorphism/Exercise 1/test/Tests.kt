@@ -50,7 +50,7 @@ class TestPolymorphismExercise1 {
         "Elf: Magic!",
         "FightingElf: Magic!Fight!",
         "Dragon: Fly!",
-        "Magician: Magic!Fly!"
+        "Wizard: Magic!Fly!"
       )
     )
   }
