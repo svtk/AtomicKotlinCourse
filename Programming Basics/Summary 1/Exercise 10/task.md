@@ -10,7 +10,7 @@ filled with sequential numbers in a form of snake. For example, `showSnake(3,
  6 7 8
 ```
 
-For proper alignment, use a format string such as `"%3d".format(number)` to
+For proper alignment, use a [format string](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/format.html) such as `"%3d".format(number)` to
 place additional spaces before the number. The number before `d` indicates how
 many characters the number should occupy together with the additional spaces.
 It depends on the biggest number, the last one: put exactly one space before it.
