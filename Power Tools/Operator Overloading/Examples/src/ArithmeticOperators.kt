@@ -25,8 +25,8 @@ fun unary(a: E) {
 operator fun E.plus(e: E) = E(v + e.v)
 operator fun E.minus(e: E) = E(v - e.v)
 operator fun E.times(e: E) = E(v * e.v)
-operator fun E.div(e: E) = E(v % e.v)
-operator fun E.rem(e: E) = E(v / e.v)
+operator fun E.div(e: E) = E(v / e.v)
+operator fun E.rem(e: E) = E(v % e.v)
 
 fun binary(a: E, b: E) {
   a + b            // a.plus(b)
