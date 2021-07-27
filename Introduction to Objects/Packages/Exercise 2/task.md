@@ -21,5 +21,5 @@ function `g()`, which takes an `Int` parameter `i` and returns the following
 ```
 
 Import everything from `bbb` into `package ccc`. In `main()`, call
-`println(g(1))`. You can see for yourself that without importing the 
+`println(g(1))`. You can see that without importing the 
 components from `package aaa` you cannot access any of them.
