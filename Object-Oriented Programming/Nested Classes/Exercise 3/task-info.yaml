@@ -3,11 +3,26 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 674
+  - offset: 366
+    length: 32
+    placeholder_text: class Shelf
+  - offset: 400
+    length: 90
+    placeholder_text: class Closet
+  - offset: 492
+    length: 34
+    placeholder_text: class Toilet
+  - offset: 528
+    length: 30
+    placeholder_text: class Sink
+  - offset: 560
+    length: 94
+    placeholder_text: class Bathroom
+  - offset: 796
     length: 92
     placeholder_text: /*TODO*/
-  - offset: 244
-    length: 391
-    placeholder_text: /*TODO*/
+  - offset: 656
+    length: 101
+    placeholder_text: class Bedroom
 - name: test/Tests.kt
   visible: false
