@@ -21,7 +21,7 @@ class HasObject {
 }
 
 fun main() {
-/*  Outer.Nested.a eq
+  Outer.Nested.a eq
     "Outer.Nested.a"
   HasObject.Nested.a eq
     "HasObject.Nested.a"
@@ -29,5 +29,4 @@ fun main() {
     "Outer.Nested.Nested.a"
   HasObject.Nested.Nested.a eq
     "HasObject.Nested.Nested.a"
-*/
 }

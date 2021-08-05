@@ -9,5 +9,12 @@ files:
   - offset: 277
     length: 63
     placeholder_text: /*TODO*/
+  - offset: 453
+    length: 115
+    placeholder_text: |-
+      /* Outer.Nested.Nested.a eq
+          "Outer.Nested.Nested.a"
+        HasObject.Nested.Nested.a eq
+          "HasObject.Nested.Nested.a" */
 - name: test/Tests.kt
   visible: false

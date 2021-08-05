@@ -42,7 +42,7 @@ object MonkeysVsSnakes : AdventureGame {
 }
 
 fun main() {
-//  MonkeysVsSnakes.populate()
-//  MonkeysVsSnakes.characters eq
-//    "[Monkey, Snake]"
+  MonkeysVsSnakes.populate()
+  MonkeysVsSnakes.characters eq
+    "[Monkey, Snake]"
 }

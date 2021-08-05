@@ -16,7 +16,6 @@ class Box(contains: String, label: String) {
 }
 
 fun main() {
-/*  Box("Computer", "Tasmania").manifest() eq
+  Box("Computer", "Tasmania").manifest() eq
     "Computer: Tasmania Any-based"
-*/
 }
