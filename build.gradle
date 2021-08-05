@@ -25,17 +25,17 @@ allprojects {
         mavenCentral()
     }
     dependencies {
-        compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-        compile "org.jetbrains.kotlin:kotlin-reflect"
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+        implementation "org.jetbrains.kotlin:kotlin-reflect"
 
         // kotlin.test
-        compile "org.jetbrains.kotlin:kotlin-test"
-        compile "org.jetbrains.kotlin:kotlin-test-junit"
-        compile "junit:junit:4.12"
+        implementation "org.jetbrains.kotlin:kotlin-test"
+        implementation "org.jetbrains.kotlin:kotlin-test-junit"
+        implementation "junit:junit:4.12"
 
         // Logging support for samples:
-        compile 'io.github.microutils:kotlin-logging:2.0.10'
-        compile 'org.slf4j:slf4j-simple:1.7.32'
+        implementation 'io.github.microutils:kotlin-logging:2.0.10'
+        implementation 'org.slf4j:slf4j-simple:1.7.32'
     }
     compileKotlin.destinationDir = compileJava.destinationDir
     compileKotlin {
@@ -54,12 +54,12 @@ allprojects {
 apply plugin: 'application'
 sourceCompatibility = 8
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
-    testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
 
-    compile project(':util').sourceSets.main.output
-    testCompile project(':util').sourceSets.test.output
+    implementation project(':util').sourceSets.main.output
+    testImplementation project(':util').sourceSets.test.output
 }
 def srcList = []
 def testList = []
@@ -122,7 +122,7 @@ tasks.run.setStandardOutput(runOutput)
 tasks.run.doLast { printOutput(runOutput) }
 project(':util') {
     dependencies {
-        compile group: 'junit', name: 'junit', version: '4.12'
+        implementation group: 'junit', name: 'junit', version: '4.12'
     }
 }
 if (new File('gradle/tests.gradle').exists()) {
