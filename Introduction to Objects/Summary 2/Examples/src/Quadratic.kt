@@ -21,8 +21,8 @@ fun quadraticZeroes(
     throw IllegalArgumentException(
       "Negative underRadical: $underRadical")
   val squareRoot = sqrt(underRadical)
-  val root1 = (-b - squareRoot) / 2 * a
-  val root2 = (-b + squareRoot) / 2 * a
+  val root1 = (-b - squareRoot) / (2 * a)
+  val root2 = (-b + squareRoot) / (2 * a)
   return Roots(root1, root2)
 }
 
