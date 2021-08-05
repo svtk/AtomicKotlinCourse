@@ -9,4 +9,4 @@ property`</span>.
 You can see the intention list by using the
 <span class="shortcut">&shortcut:ShowIntentionActions;</span> shortcut.
 
-Convert the `capacity` and `isFull` properties to functions and back.
+Convert the `capacity` and `full` properties to functions and back.
