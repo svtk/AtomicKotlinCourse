@@ -1,7 +1,7 @@
 ## Sequences (#7)
 
-Write a function `oddWithout1()` that creates an infinite sequence of odd
-numbers starting with `3` that do not contain the digit `1` in its decimal
+Write a function `oddWithout1()` that creates an infinite sequence of positive odd
+numbers that do not contain the digit `1` in its decimal
 representation:
 
 ```text
