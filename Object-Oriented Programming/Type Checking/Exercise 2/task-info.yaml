@@ -5,12 +5,21 @@ files:
 - name: src/TaskA.kt
   visible: true
   placeholders:
-  - offset: 91
-    length: 985
-    placeholder_text: /*TODO*/
+  - offset: 610
+    length: 42
+    placeholder_text: // class DecomposableBottle
+  - offset: 1012
+    length: 45
+    placeholder_text: // TODO return "Decomposition tank" for DecomposableBottle
+  - offset: 1204
+    length: 20
+    placeholder_text: // DecomposableBottle()
 - name: src/TaskB.kt
   visible: true
   placeholders:
-  - offset: 116
-    length: 792
-    placeholder_text: /*TODO*/
+  - offset: 813
+    length: 94
+    placeholder_text: // class DecomposableBottle
+  - offset: 1036
+    length: 20
+    placeholder_text: // DecomposableBottle()

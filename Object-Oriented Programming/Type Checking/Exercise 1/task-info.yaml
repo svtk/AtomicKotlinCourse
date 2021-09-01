@@ -5,6 +5,30 @@ files:
   placeholders:
   - offset: 114
     length: 265
-    placeholder_text: /*TODO*/
+    placeholder_text: |-
+      sealed class Shape {
+        fun draw() = "$name: Draw"
+      }
+
+      class Circle : Shape()
+
+      class Square : Shape() {
+        fun rotate() = "Square: Rotate"
+      }
+
+      class Triangle : Shape() {
+        fun rotate() = "Triangle: Rotate"
+      }
+
+      fun turn(s: Shape) = when(s) {
+        is Circle -> ""
+        is Square -> s.rotate()
+        is Triangle -> s.rotate()
+      }
+  - offset: 557
+    length: 54
+    placeholder_text: |-
+      /*  shapes.map { it.rotate() } eq
+          "[, Square: Rotate]"*/
 - name: test/Tests.kt
   visible: false
