@@ -4,9 +4,9 @@ files:
   visible: true
   placeholders:
   - offset: 95
-    length: 120
+    length: 117
     placeholder_text: class SumChars
-  - offset: 232
+  - offset: 229
     length: 28
     placeholder_text: // SumChars("What?").sum eq 467
 - name: test/Tests.kt
