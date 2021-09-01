@@ -13,20 +13,17 @@ class WrapRange(
   }
   override fun toString() = "$current"
   operator fun inc(): WrapRange {
-    current = (current + 1) % (range.last + 1)
+    current = if (current == range.last) range.first else current + 1
     return this
   }
   operator fun dec(): WrapRange {
-    if (current - 1 < 0)
-      current = range.last
-    else
-      current--
+    current = if (current == range.first) range.last else current - 1
     return this
   }
 }
 
 fun main() {
-  val range = 0..5
+  val range = 2..5
   var wr = WrapRange(range)
   fun testUp() =
     trace("${wr}, ${wr++}")
@@ -42,18 +39,14 @@ fun main() {
     "IllegalArgumentException: " +
     "'current' out of range: -1"
   trace eq """
-    0, 1
-    1, 2
     2, 3
     3, 4
     4, 5
-    5, 0
+    5, 2
     -----------
-    0, 5
+    2, 5
     5, 4
     4, 3
     3, 2
-    2, 1
-    1, 0
   """
 }
