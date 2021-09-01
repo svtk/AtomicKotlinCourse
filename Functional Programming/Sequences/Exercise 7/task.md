@@ -1,6 +1,6 @@
 ## Sequences (#7)
 
-Write a function `oddWithout1()` that creates an infinite sequence of odd
+Write a function `oddWithoutDigitOne()` that creates an infinite sequence of odd
 numbers starting with `3` that do not contain the digit `1` in its decimal
 representation:
 

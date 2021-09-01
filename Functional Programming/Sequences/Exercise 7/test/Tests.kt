@@ -13,7 +13,7 @@ class TestSequencesExercise7 {
 
     @Test(timeout = TIMEOUT)
     fun `#01 no 1 digit in first 10`() {
-        val result = oddWithout1().take(10).joinToString(" ")
+        val result = oddWithoutDigitOne().take(10).joinToString(" ")
         assertFalse("First 10 members contains \"1\": $result") {
             result.contains("1")
         }
@@ -21,7 +21,7 @@ class TestSequencesExercise7 {
 
     @Test(timeout = TIMEOUT)
     fun `#02 no 1 digit in first 100`() {
-        val result = oddWithout1().take(100).joinToString(" ")
+        val result = oddWithoutDigitOne().take(100).joinToString(" ")
         assertFalse("First 100 members contains \"1\": $result") {
             result.contains("1")
         }
@@ -30,7 +30,7 @@ class TestSequencesExercise7 {
     @Test(timeout = TIMEOUT)
     fun `#03 first member`() {
         expect(3, "Incorrect initial sequence member") {
-            oddWithout1().first()
+            oddWithoutDigitOne().first()
         }
     }
 
@@ -40,7 +40,7 @@ class TestSequencesExercise7 {
                 expected = listOf(3, 5, 7, 9, 23, 25, 27, 29),
                 message = "Incorrect initial sequence member"
         ) {
-            oddWithout1().take(8).toList()
+            oddWithoutDigitOne().take(8).toList()
         }
     }
 
