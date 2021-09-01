@@ -23,6 +23,6 @@ class TestCreatingClassesExercise2 {
     val message = "The 'displayID' function should display the address of the object, " +
       "something like '30c7da1e'\n" +
       "was: $output"
-    Assert.assertTrue(message, output.trim().toIntOrNull(16) != null)
+    Assert.assertTrue(message, output.trim().toLongOrNull(16) != null)
   }
 }
