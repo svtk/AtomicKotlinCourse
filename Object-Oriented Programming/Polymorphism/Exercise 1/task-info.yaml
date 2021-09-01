@@ -7,9 +7,9 @@ files:
     length: 76
     placeholder_text: class Dragon
   - offset: 670
-    length: 100
+    length: 98
     placeholder_text: class Wizard
-  - offset: 926
+  - offset: 924
     length: 13
     placeholder_text: TODO()
 - name: test/Tests.kt

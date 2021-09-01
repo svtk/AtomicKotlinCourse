@@ -40,7 +40,7 @@ class Dragon:
 }
 
 class Wizard:
-  Character("Magician"), Magician, Flyer {
+  Character("Wizard"), Magician, Flyer {
   override fun play() = doMagic() + fly()
 }
 
@@ -56,5 +56,5 @@ fun main() {
   ).map { it.playTurn() } eq
     "[Warrior: Fight!, Elf: Magic!, " +
     "FightingElf: Magic!Fight!, " +
-    "Dragon: Fly!, Magician: Magic!Fly!]"
+    "Dragon: Fly!, Wizard: Magic!Fly!]"
 }
