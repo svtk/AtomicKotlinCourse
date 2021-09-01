@@ -43,7 +43,7 @@ fun BeverageContainer.recycle2() =
   }
 
 fun main() {
-  val refrigerator = listOf(
+/*  val refrigerator = listOf(
     SteelCan(), AluminumCan(),
     GlassBottle(),
     PETBottle(), HDPEBottle(),
@@ -57,4 +57,5 @@ fun main() {
     "Recycle Glass, " +
     "Recycle PET, Recycle HDPE, " +
     "Decomposition tank]"
+*/
 }

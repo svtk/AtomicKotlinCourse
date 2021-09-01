@@ -6,11 +6,11 @@ files:
   visible: true
   placeholders:
   - offset: 91
-    length: 1426
-    placeholder_text: // TODO
+    length: 985
+    placeholder_text: /*TODO*/
 - name: src/TaskB.kt
   visible: true
   placeholders:
   - offset: 116
-    length: 1232
-    placeholder_text: // TODO
+    length: 792
+    placeholder_text: /*TODO*/

@@ -45,7 +45,7 @@ fun Insect.water() =
   }
 
 fun main() {
-  val insects = listOf(
+/*  val insects = listOf(
     HouseFly(), Flea(), WaterStrider(),
     WaterBeetle(), WhirligigBeetle()
   )
@@ -61,4 +61,5 @@ fun main() {
     "WaterStrider: walk on water, " +
     "WaterBeetle: swim, " +
     "WhirligigBeetle: swim]"
+*/
 }
