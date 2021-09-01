@@ -9,7 +9,7 @@ class TestSafeCallsAndTheElvisOperatorExercise1 {
         val downcaseFunc = ::downcase
         checkParametersOfTopLevelFunction(downcaseFunc, listOf("" to "kotlin.String?"))
         val actual = downcaseFunc.call(s)
-        Assert.assertEquals("Wrong result for calling downcase(\"$s\")", s?.toLowerCase() ?: "", actual)
+        Assert.assertEquals("Wrong result for calling downcase(\"$s\")", s?.lowercase() ?: "", actual)
     }
 
     @Test
