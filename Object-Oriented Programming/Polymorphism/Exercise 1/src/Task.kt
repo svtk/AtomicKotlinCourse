@@ -47,7 +47,7 @@ class Wizard:
 fun Character.playTurn() = name + ": " + play()
 
 fun main() {
-  listOf(
+/*  listOf(
     Warrior(),
     Elf(),
     FightingElf(),
@@ -57,4 +57,5 @@ fun main() {
     "[Warrior: Fight!, Elf: Magic!, " +
     "FightingElf: Magic!Fight!, " +
     "Dragon: Fly!, Wizard: Magic!Fly!]"
+*/
 }

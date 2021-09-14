@@ -5,12 +5,9 @@ files:
   placeholders:
   - offset: 592
     length: 76
-    placeholder_text: class Dragon
+    placeholder_text: '// class Dragon:'
   - offset: 670
     length: 98
-    placeholder_text: class Wizard
-  - offset: 924
-    length: 13
-    placeholder_text: TODO()
+    placeholder_text: '// class Wizard:'
 - name: test/Tests.kt
   visible: false
