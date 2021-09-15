@@ -21,7 +21,7 @@ interface Selector<T> {
 - `next()` moves to the next element in the `List`.
 
 Define a standalone function `<T> traceAll(select: Selector<T>)` that uses
-`select` to append all the values of `current()` to `trace` using `+=`, then
+`select` to append all the values of `current()` to `trace`, then
 returns `trace`.
 
 Now make `Container` inherit from `Iterable<T>`, and add a function called
