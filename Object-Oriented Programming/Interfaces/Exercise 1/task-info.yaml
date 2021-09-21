@@ -6,14 +6,14 @@ files:
   - offset: 126
     length: 171
     placeholder_text: class Cloud
-  - offset: 412
-    length: 33
-    placeholder_text: // Cloud(10).calculateAnswer() eq 45
   - offset: 299
     length: 96
     placeholder_text: |-
       data class Node(
         private val result: Int
       )
+  - offset: 412
+    length: 33
+    placeholder_text: // Cloud(10).calculateAnswer() eq 45
 - name: test/Tests.kt
   visible: false
