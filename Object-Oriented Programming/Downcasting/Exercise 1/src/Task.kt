@@ -25,7 +25,7 @@ fun checkAndCall(b: Base) {
 }
 
 fun main() {
-  checkAndCall(Derived1()) // Upcast
+/*  checkAndCall(Derived1()) // Upcast
   checkAndCall(Derived2()) // Upcast
   trace eq """
     Derived1.f()
@@ -33,4 +33,5 @@ fun main() {
     Derived2.f()
     Derived2.h()
   """
+ */
 }
