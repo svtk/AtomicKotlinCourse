@@ -21,10 +21,11 @@ class Triangle : Shape {
 fun turn(s: Shape) = s.rotate()
 
 fun main() {
-/*  val shapes = listOf(Circle(), Square())
+  val shapes = listOf(Circle(), Square())
   shapes.map { it.draw() } eq
     "[Circle: Draw, Square: Draw]"
   shapes.map { turn(it) } eq
     "[, Square: Rotate]"
-*/
+  shapes.map { it.rotate() } eq
+    "[, Square: Rotate]"
 }

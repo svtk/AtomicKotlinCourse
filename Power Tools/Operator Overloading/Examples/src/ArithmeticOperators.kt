@@ -52,11 +52,14 @@ fun assignment(a: E, b: E) {
 }
 
 fun main() {
-  val a = E(2)
-  val b = E(3)
-  a + b eq E(5)
-  a * b eq E(6)
-  val x = E(1)
-  x += b * b
-  x eq E(10)
+  val two = E(2)
+  val three = E(3)
+  two + three eq E(5)
+  two * three eq E(6)
+  val thirteen = E(13)
+  thirteen / three eq E(4)
+  thirteen % three eq E(1)
+  val one = E(1)
+  one += three * three
+  one eq E(10)
 }

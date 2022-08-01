@@ -20,7 +20,7 @@ class TestDataTypesExercise1 {
   fun checkTypeMismatch() {
     val output = runAndGetSystemOutput {
       main()
-    }.toLowerCase()
+    }.lowercase()
 
     Assert.assertTrue("The first line of the error the compiler produces is expected: Type mismatch",
       output.contains("type")

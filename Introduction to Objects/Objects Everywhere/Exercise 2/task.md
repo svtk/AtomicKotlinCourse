@@ -5,7 +5,7 @@ palindromes. "Bob" should now be considered a palindrome.
 
 <div class="hint">
 
-Use `toLowerCase()` to produce a `String` with all lower-case characters.
-You can also use `toUpperCase()`.
+Use `lowercase()` to produce a `String` with all lower-case characters.
+You can also use `uppercase()`.
 
 </div>

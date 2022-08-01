@@ -7,6 +7,6 @@ operator fun String.invoke(
 ) = f(this)
 
 fun main() {
-  "mumbling" { it.toUpperCase() } eq
+  "mumbling" { it.uppercase() } eq
     "MUMBLING"
 }

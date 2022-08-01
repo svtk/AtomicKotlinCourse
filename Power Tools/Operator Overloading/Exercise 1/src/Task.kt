@@ -4,7 +4,7 @@ import atomictest.*
 
 class WrapRange(
   val range: IntRange,
-  private var current: Int = range.start
+  private var current: Int = range.first
 ) {
   init {
     require(current in range) {
@@ -25,28 +25,22 @@ class WrapRange(
 fun main() {
   val range = 2..5
   var wr = WrapRange(range)
-  fun testUp() =
-    trace("${wr}, ${wr++}")
-  fun testDown() =
-    trace("${wr}, ${wr--}")
-  range.forEach { testUp() }
-  trace("-----------")
-  range.forEach { testDown() }
+  trace(wr)
+  repeat(5) {
+    wr++
+    trace(wr)
+  }
+  trace("-")
+  repeat(2) {
+    wr--
+    trace(wr)
+  }
+  trace eq "2 3 4 5 2 3 - 2 5"
+
   capture { WrapRange(range, 6) } eq
     "IllegalArgumentException: " +
     "'current' out of range: 6"
   capture { WrapRange(range, -1) } eq
     "IllegalArgumentException: " +
     "'current' out of range: -1"
-  trace eq """
-    2, 3
-    3, 4
-    4, 5
-    5, 2
-    -----------
-    2, 5
-    5, 4
-    4, 3
-    3, 2
-  """
 }

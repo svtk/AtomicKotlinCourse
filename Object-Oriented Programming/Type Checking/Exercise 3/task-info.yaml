@@ -4,7 +4,41 @@ files:
   visible: true
   placeholders:
   - offset: 114
-    length: 762
-    placeholder_text: /*TODO*/
+    length: 12
+    placeholder_text: interface
+  - offset: 138
+    length: 8
+    placeholder_text: fun
+  - offset: 172
+    length: 8
+    placeholder_text: fun
+  - offset: 222
+    length: 8
+    placeholder_text: Insect
+  - offset: 245
+    length: 8
+    placeholder_text: Insect
+  - offset: 393
+    length: 63
+    placeholder_text: |-
+      if (this is Flea)
+          crawl()
+        else
+          fly()
+  - offset: 468
+    length: 14
+    placeholder_text: 'SwimmingInsect: Insect'
+  - offset: 527
+    length: 11
+    placeholder_text: 'WaterWalker: Insect'
+  - offset: 611
+    length: 24
+    placeholder_text: SwimmingInsect
+  - offset: 657
+    length: 21
+    placeholder_text: WaterWalker
+  - offset: 703
+    length: 39
+    placeholder_text: SwimmingInsect, WaterWalker
 - name: test/Tests.kt
   visible: false

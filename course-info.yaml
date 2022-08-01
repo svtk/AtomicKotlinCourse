@@ -1,14 +1,23 @@
 title: AtomicKotlin
 type: marketplace
 language: English
-summary: The examples and exercises accompanying the AtomicKotlin book
+summary: <p>These are examples and exercises accompanying the <a href ="https://www.atomickotlin.com/">Atomic Kotlin book</a>. These materials are designed for both dedicated novices and experienced programmers – no programming background is necessary.</p>
+
+  <p>Kotlin is powerful – not only does it have a rich set of features, but you can
+  also express those features in numerous ways. These features are discussed in the book and presented in the exercises.</p>
+
+  <p>Each atom in Atomic Kotlin is accompanied by several exercises to cement your understanding of the material. We recommend solving the exercises directly after reading an atom.</p>
 programming_language: Kotlin
+vendor:
+  name: JetBrains
+  email: support@jetbrains.com
+  url: https://www.jetbrains.com/
 content:
-- Programming Basics
-- Introduction to Objects
-- Usability
-- Functional Programming
-- Object-Oriented Programming
-- Preventing Failure
-- Power Tools
-- Appendices
+  - Programming Basics
+  - Introduction to Objects
+  - Usability
+  - Functional Programming
+  - Object-Oriented Programming
+  - Preventing Failure
+  - Power Tools
+  - Appendices

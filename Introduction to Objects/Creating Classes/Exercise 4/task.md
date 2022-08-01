@@ -7,7 +7,7 @@ Press <span class="shortcut">&shortcut:QuickJavaDoc;</span> when the caret is
 on a class or a function usage, and IntelliJ IDEA will show you the available
 documentation for this function or class.
 
-Put the caret on the `String` type and its `toUpperCase()` and `toLowerCase()` member
+Put the caret on the `String` type and its `uppercase()` and `lowercase()` member
 functions, then use <span class="control">`Quick Documentation`</span>.
 Press <span class="shortcut">&shortcut:EditorEscape;</span> to close the
 quick documentation pop-up.

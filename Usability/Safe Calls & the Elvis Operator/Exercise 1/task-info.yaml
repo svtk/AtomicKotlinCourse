@@ -4,9 +4,9 @@ files:
   visible: true
   placeholders:
   - offset: 98
-    length: 59
+    length: 57
     placeholder_text: fun downcase() {}
-  - offset: 172
+  - offset: 170
     length: 49
     placeholder_text: |-
       /*
